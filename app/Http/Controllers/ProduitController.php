@@ -73,9 +73,10 @@ class ProduitController extends Controller
     }
     public function mouvements(Produit $produit)
     {
-        $mouvements = $produit->mouvementsStock;
+        $mouvements = $produit->mouvementsStock ?? collect(); // Assure un tableau vide si null
         return view('produits.mouvements', compact('produit', 'mouvements'));
     }
+    
     public function ajouterMouvement(Request $request, Produit $produit)
     {
         $request->validate([

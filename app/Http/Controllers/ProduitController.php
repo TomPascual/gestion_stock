@@ -71,4 +71,30 @@ class ProduitController extends Controller
         $produit->delete();
         return redirect()->route('produits.index')->with('success', 'Produit supprimé.');
     }
+    public function mouvements(Produit $produit)
+    {
+        $mouvements = $produit->mouvementsStock;
+        return view('produits.mouvements', compact('produit', 'mouvements'));
+    }
+    public function ajouterMouvement(Request $request, Produit $produit)
+    {
+        $request->validate([
+            'type' => 'required|in:entrée,sortie',
+            'quantite' => 'required|integer|min:1',
+        ]);
+
+        $produit->mouvementsStock()->create([
+            'type' => $request->type,
+            'quantite' => $request->quantite,
+        ]);
+
+        if ($request->type == 'entrée') {
+            $produit->increment('quantite', $request->quantite);
+        } else {
+            $produit->decrement('quantite', $request->quantite);
+        }
+
+        return redirect()->route('produits.mouvements', $produit)->with('success', 'Mouvement ajouté avec succès.');
+    }
+
 }

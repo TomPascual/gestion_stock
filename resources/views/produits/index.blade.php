@@ -27,6 +27,7 @@
                     <td>{{ $produit->prix }} €</td>
                     <td>{{ $produit->categorie->nom ?? 'Aucune' }}</td>
                     <td>
+                        <a href="{{ route('produits.mouvements', $produit) }}" class="btn btn-secondary">Mouvements</a>
                         <a href="{{ route('produits.edit', $produit) }}" class="btn btn-warning">Modifier</a>
                         <form action="{{ route('produits.destroy', $produit) }}" method="POST" style="display:inline;">
                             @csrf
@@ -34,6 +35,7 @@
                             <button class="btn btn-danger">Supprimer</button>
                         </form>
                     </td>
+
                 </tr>
             @endforeach
         </tbody>

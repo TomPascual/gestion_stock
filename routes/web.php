@@ -9,3 +9,5 @@ Route::get('/', function () {
 
 // Ressources pour les produits
 Route::resource('produits', ProduitController::class);
+Route::get('produits/{produit}/mouvements', [ProduitController::class, 'mouvements'])->name('produits.mouvements');
+Route::post('produits/{produit}/mouvements', [ProduitController::class, 'ajouterMouvement'])->name('produits.ajouterMouvement');

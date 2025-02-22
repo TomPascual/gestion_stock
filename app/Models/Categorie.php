@@ -11,7 +11,6 @@ class Categorie extends Model
 
     protected $fillable = ['nom'];
 
-    // Relation : Une catégorie a plusieurs produits
     public function produits()
     {
         return $this->hasMany(Produit::class);

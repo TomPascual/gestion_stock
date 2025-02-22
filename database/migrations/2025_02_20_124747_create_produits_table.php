@@ -10,10 +10,9 @@ return new class extends Migration {
         Schema::create('produits', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
-            $table->text('description')->nullable();
             $table->integer('quantite')->default(0);
             $table->decimal('prix', 10, 2);
-            $table->foreignId('categorie_id')->constrained()->onDelete('cascade');
+            $table->foreignId('categorie_id')->constrained('categories')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -1,25 +1,45 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Gestion de Stock')</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gestion Stock</title>
+
+    <!-- Bootstrap & Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">Gestion Stock</a>
-        </div>
-    </nav>
+<body class="bg-gray-100">
 
-    <div class="container mt-4">
-        @yield('content')
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container d-flex justify-content-between">
+        <!-- Lien vers la page principale -->
+        <a class="navbar-brand" href="{{ route('home') }}">Gestion Stock</a>
+
+        <!-- Liens du menu visibles tout le temps -->
+        <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item mx-2">
+                <a class="nav-link {{ request()->routeIs('produits.index') ? 'active' : '' }}" 
+                   href="{{ route('produits.index') }}">
+                    📦 Produits
+                </a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link {{ request()->routeIs('mouvements.index') ? 'active' : '' }}" 
+                   href="{{ route('mouvements.index') }}">
+                    📜 Mouvements
+                </a>
+            </li>
+        </ul>
     </div>
-    <li class="nav-item">
-    <a class="nav-link" href="{{ route('mouvements.index') }}">Historique des Stocks</a>
-</li>
+</nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ✅ Contenu principal -->
+<div class="container mt-4">
+    @yield('content')
+</div>
+
 </body>
 </html>

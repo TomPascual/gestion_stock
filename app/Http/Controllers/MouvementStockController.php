@@ -2,15 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\MouvementStock;
-use App\Models\Produit;
+use Illuminate\Http\Request;
 
 class MouvementStockController extends Controller
 {
     public function index()
     {
-        $mouvements = MouvementStock::with('produit')->orderBy('created_at', 'desc')->get();
+        $mouvements = MouvementStock::with('produit')->latest()->get();
         return view('mouvements.index', compact('mouvements'));
     }
 }

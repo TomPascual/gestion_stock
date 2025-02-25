@@ -27,12 +27,16 @@
                     <td>{{ $produit->prix }} €</td>
                     <td>{{ $produit->categorie->nom ?? 'Aucune' }}</td>
                     <td>
-                        <a href="{{ route('produits.mouvements', $produit) }}" class="btn btn-secondary">Mouvements</a>
-                        <a href="{{ route('produits.edit', $produit) }}" class="btn btn-warning">Modifier</a>
-                        <form action="{{ route('produits.destroy', $produit) }}" method="POST" style="display:inline;">
+                        <a href="{{ route('produits.mouvements', ['produit' => $produit->id]) }}" class="btn btn-outline-secondary btn-sm">
+                            🔄 Mouvements
+                        </a>
+                        <a href="{{ route('produits.edit', ['produit' => $produit->id]) }}" class="btn btn-outline-warning btn-sm">
+                            ✏️ Modifier
+                        </a>
+                        <form action="{{ route('produits.destroy', $produit->id) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
-                            <button class="btn btn-danger">Supprimer</button>
+                            <button class="btn btn-outline-danger btn-sm">❌ Supprimer</button>
                         </form>
                     </td>
 

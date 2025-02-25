@@ -2,14 +2,14 @@
 
 @section('content')
 <div class="container">
-    <h1>📜 Historique des Mouvements</h1>
+    <h1 class="mb-4">📜 Historique des Mouvements</h1>
 
     @if (session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
     @endif
 
-    <table class="table table-striped">
-        <thead>
+    <table class="table table-hover">
+        <thead class="table-dark">
             <tr>
                 <th>ID</th>
                 <th>Type</th>
@@ -22,7 +22,13 @@
             @foreach ($mouvements as $mouvement)
                 <tr>
                     <td>{{ $mouvement->id }}</td>
-                    <td>{{ $mouvement->type }}</td>
+                    <td>
+                        @if ($mouvement->type === 'entrée')
+                            <span class="badge bg-success">Entrée</span>
+                        @else
+                            <span class="badge bg-danger">Sortie</span>
+                        @endif
+                    </td>
                     <td>{{ $mouvement->produit->nom ?? 'Produit supprimé' }}</td>
                     <td>{{ $mouvement->quantite }}</td>
                     <td>{{ $mouvement->created_at->format('d/m/Y H:i') }}</td>

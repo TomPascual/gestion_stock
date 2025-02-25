@@ -18,10 +18,12 @@ class Produit extends Model
     }
 
    
-
-public function mouvementsStock()
-{
-    return $this->hasMany(MouvementStock::class, 'produit_id');
-}
+    public function mouvements()
+    {
+        return $this->hasMany(MouvementStock::class, 'produit_id');
+    }
+    
+    
+    
 
 }

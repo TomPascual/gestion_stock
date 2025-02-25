@@ -73,9 +73,14 @@ class ProduitController extends Controller
     }
     public function mouvements(Produit $produit)
     {
-        $mouvements = $produit->mouvementsStock ?? collect(); // Assure un tableau vide si null
+        // ✅ Assure que $mouvements est toujours une collection même si vide
+        $mouvements = $produit->mouvements ?? collect(); 
+    
         return view('produits.mouvements', compact('produit', 'mouvements'));
     }
+    
+    
+    
     
     public function ajouterMouvement(Request $request, Produit $produit)
     {
@@ -83,18 +88,19 @@ class ProduitController extends Controller
             'type' => 'required|in:entrée,sortie',
             'quantite' => 'required|integer|min:1',
         ]);
-
-        $produit->mouvementsStock()->create([
+    
+        // ✅ Utilisation correcte de la relation
+        $produit->mouvements()->create([
             'type' => $request->type,
             'quantite' => $request->quantite,
         ]);
-
+    
         if ($request->type == 'entrée') {
             $produit->increment('quantite', $request->quantite);
         } else {
             $produit->decrement('quantite', $request->quantite);
         }
-
+    
         return redirect()->route('produits.mouvements', $produit)->with('success', 'Mouvement ajouté avec succès.');
     }
 

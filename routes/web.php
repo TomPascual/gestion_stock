@@ -12,6 +12,9 @@ Route::get('/', function () {
 // Liste des produits
 Route::resource('produits', ProduitController::class);
 Route::get('produits/{produit}/mouvements', [ProduitController::class, 'mouvements'])->name('produits.mouvements');
+Route::post('produits/{produit}/ajouter-mouvement', [ProduitController::class, 'ajouterMouvement'])->name('produits.ajouterMouvement');
+
+
 
 // Historique des mouvements
 Route::get('/mouvements', [MouvementStockController::class, 'index'])->name('mouvements.index');

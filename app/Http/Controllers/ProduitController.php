@@ -11,10 +11,31 @@ use App\Models\MouvementStock;
 class ProduitController extends Controller
 {
     // Afficher la liste des produits
-    public function index()
+    public function index(Request $request)
     {
-        $produits = Produit::with('categorie')->get();
-        return view('produits.index', compact('produits'));
+        // Récupération des filtres
+        $search = $request->input('search');
+        $categorie_id = $request->input('categorie_id');
+        $fournisseur_id = $request->input('fournisseur_id');
+    
+        // Récupération des produits avec les filtres appliqués
+        $produits = Produit::with(['categorie', 'fournisseur'])
+                    ->when($search, function ($query, $search) {
+                        return $query->where('nom', 'LIKE', "%{$search}%");
+                    })
+                    ->when($categorie_id, function ($query, $categorie_id) {
+                        return $query->where('categorie_id', $categorie_id);
+                    })
+                    ->when($fournisseur_id, function ($query, $fournisseur_id) {
+                        return $query->where('fournisseur_id', $fournisseur_id);
+                    })
+                    ->get();
+    
+        // Charger toutes les catégories et fournisseurs pour les filtres
+        $categories = Categorie::all();
+        $fournisseurs = Fournisseur::all();
+    
+        return view('produits.index', compact('produits', 'categories', 'fournisseurs'));
     }
 
     // Afficher le formulaire de création
@@ -35,8 +56,7 @@ class ProduitController extends Controller
             'categorie_id' => 'required|exists:categories,id',
             'fournisseur_id' => 'nullable|exists:fournisseurs,id',
         ]);
-    
-        // ✅ Stocker le produit dans une variable avant de l'utiliser
+
         $produit = Produit::create([
             'nom' => $request->nom,
             'quantite' => $request->quantite,
@@ -45,7 +65,6 @@ class ProduitController extends Controller
             'fournisseur_id' => $request->fournisseur_id, 
         ]);
     
-        // ✅ Maintenant on peut utiliser $produit->id correctement
         MouvementStock::create([
             'produit_id' => $produit->id,
             'type' => 'entrée',
@@ -99,7 +118,7 @@ class ProduitController extends Controller
     }
     public function mouvements(Produit $produit)
     {
-        // ✅ Assure que $mouvements est toujours une collection même si vide
+       
         $mouvements = $produit->mouvements ?? collect(); 
     
         return view('produits.mouvements', compact('produit', 'mouvements'));
@@ -115,7 +134,7 @@ class ProduitController extends Controller
             'quantite' => 'required|integer|min:1',
         ]);
     
-        // ✅ Utilisation correcte de la relation
+
         $produit->mouvements()->create([
             'type' => $request->type,
             'quantite' => $request->quantite,

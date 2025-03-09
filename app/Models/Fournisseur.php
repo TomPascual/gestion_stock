@@ -16,9 +16,7 @@ class Fournisseur extends Model
         'adresse'
     ];
 
-    /**
-     * Un fournisseur peut fournir plusieurs produits
-     */
+
     public function produits()
     {
         return $this->hasMany(Produit::class);

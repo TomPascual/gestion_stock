@@ -16,6 +16,7 @@ class FournisseurController extends Controller
         $fournisseurs = Fournisseur::all();
         return view('fournisseurs.index', compact('fournisseurs'));
     }
+    
 
     /**
      * Afficher le formulaire de création d'un fournisseur.

@@ -26,6 +26,9 @@
             <a href="{{ route('mouvements.index') }}" class="btn btn-secondary btn-lg shadow">
                 📜 Historique des Mouvements
             </a>
+            <a href="{{ route('fournisseurs.index') }}" class="btn btn-info btn-lg shadow">
+                🚚 Liste des Fournisseurs
+            </a>
         </div>
     </div>
 

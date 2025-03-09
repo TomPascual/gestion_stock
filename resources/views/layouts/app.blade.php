@@ -30,13 +30,20 @@
                     📜 Mouvements
                 </a>
             </li>
+            <!-- Nouveau lien vers la liste des fournisseurs -->
+            <li class="nav-item mx-2">
+                <a class="nav-link {{ request()->routeIs('fournisseurs.index') ? 'active' : '' }}" 
+                   href="{{ route('fournisseurs.index') }}">
+                    🚚 Fournisseurs
+                </a>
+            </li>
         </ul>
     </div>
 </nav>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- ✅ Contenu principal -->
+<!-- Contenu principal -->
 <div class="container mt-4">
     @yield('content')
 </div>

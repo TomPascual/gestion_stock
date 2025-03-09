@@ -45,7 +45,17 @@
                         @endforeach
                     </select>
                 </div>
-
+                <div class="mb-3">
+                <label for="fournisseur_id" class="form-label">Fournisseur</label>
+                <select name="fournisseur_id" class="form-control">
+                    <option value="">-- Sélectionner un fournisseur --</option>
+                    @foreach ($fournisseurs as $fournisseur)
+                        <option value="{{ $fournisseur->id }}" {{ $produit->fournisseur_id == $fournisseur->id ? 'selected' : '' }}>
+                            {{ $fournisseur->nom }}
+                        </option>
+                    @endforeach
+                </select>
+            </div>
                 <button type="submit" class="btn btn-success">✅ Enregistrer les modifications</button>
             </form>
         </div>

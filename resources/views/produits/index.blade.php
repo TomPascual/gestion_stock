@@ -22,6 +22,7 @@
                 <th>Quantité</th>
                 <th>Prix</th>
                 <th>Catégorie</th>
+                <th>Fournisseur</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -33,6 +34,9 @@
                     <td>{{ $produit->quantite }}</td>
                     <td>{{ $produit->prix }} €</td>
                     <td>{{ $produit->categorie->nom ?? 'Aucune' }}</td>
+                    <td>
+                            {{ $produit->fournisseur ? $produit->fournisseur->nom : 'Non attribué' }}
+                        </td>
                     <td class="d-flex gap-2">
                         <!-- Mouvements -->
                         <a href="{{ route('produits.mouvements', ['produit' => $produit->id]) }}" class="btn btn-primary">

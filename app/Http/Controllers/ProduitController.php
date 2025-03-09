@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Produit;
 use App\Models\Categorie;
 use Illuminate\Http\Request;
+use App\Models\Fournisseur;
 
 class ProduitController extends Controller
 {
@@ -18,8 +19,9 @@ class ProduitController extends Controller
     // Afficher le formulaire de création
     public function create()
     {
-        $categories = Categorie::all();
-        return view('produits.create', compact('categories'));
+        $categories = Categorie::all(); // Charger les catégories existantes
+        $fournisseurs = Fournisseur::all(); // Charger les fournisseurs existants
+        return view('produits.create', compact('categories', 'fournisseurs'));
     }
 
     // Enregistrer un nouveau produit
@@ -27,15 +29,23 @@ class ProduitController extends Controller
     {
         $request->validate([
             'nom' => 'required|string|max:255',
-            'quantite' => 'required|integer|min:0',
-            'prix' => 'required|numeric|min:0',
+            'quantite' => 'required|integer|min:1',
+            'prix' => 'required|numeric',
             'categorie_id' => 'required|exists:categories,id',
+            'fournisseur_id' => 'nullable|exists:fournisseurs,id',
         ]);
-
-        Produit::create($request->all());
-
+    
+        Produit::create([
+            'nom' => $request->nom,
+            'quantite' => $request->quantite,
+            'prix' => $request->prix,
+            'categorie_id' => $request->categorie_id,
+            'fournisseur_id' => $request->fournisseur_id, // Enregistre le fournisseur
+        ]);
+    
         return redirect()->route('produits.index')->with('success', 'Produit ajouté avec succès.');
     }
+    
 
     // Afficher un produit
     public function show(Produit $produit)
@@ -47,23 +57,27 @@ class ProduitController extends Controller
     public function edit(Produit $produit)
     {
         $categories = Categorie::all();
-        return view('produits.edit', compact('produit', 'categories'));
+        $fournisseurs = Fournisseur::all(); // Charger tous les fournisseurs
+        return view('produits.edit', compact('produit', 'categories', 'fournisseurs'));
     }
+    
 
     // Mettre à jour un produit
     public function update(Request $request, Produit $produit)
     {
         $request->validate([
             'nom' => 'required|string|max:255',
-            'quantite' => 'required|integer|min:0',
-            'prix' => 'required|numeric|min:0',
+            'quantite' => 'required|integer|min:1',
+            'prix' => 'required|numeric',
             'categorie_id' => 'required|exists:categories,id',
+            'fournisseur_id' => 'nullable|exists:fournisseurs,id',
         ]);
-
+    
         $produit->update($request->all());
-
+    
         return redirect()->route('produits.index')->with('success', 'Produit mis à jour avec succès.');
     }
+    
 
     // Supprimer un produit
     public function destroy(Produit $produit)

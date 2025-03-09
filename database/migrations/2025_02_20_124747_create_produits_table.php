@@ -13,6 +13,7 @@ return new class extends Migration {
             $table->integer('quantite')->default(0);
             $table->decimal('prix', 10, 2);
             $table->foreignId('categorie_id')->constrained('categories')->onDelete('cascade');
+            $table->foreignId('fournisseur_id')->nullable()->constrained('fournisseurs')->onDelete('set null');
             $table->timestamps();
         });
     }

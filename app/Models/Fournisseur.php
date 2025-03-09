@@ -23,4 +23,5 @@ class Fournisseur extends Model
     {
         return $this->hasMany(Produit::class);
     }
+    
 }

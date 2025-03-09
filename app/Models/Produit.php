@@ -23,7 +23,11 @@ class Produit extends Model
         return $this->hasMany(MouvementStock::class, 'produit_id');
     }
     
-    
+    public function fournisseur()
+{
+    return $this->belongsTo(Fournisseur::class);
+}
+
     
 
 }

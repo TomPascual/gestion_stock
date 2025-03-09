@@ -53,12 +53,13 @@
                 <div class="mb-3">
                     <label for="fournisseur_id" class="form-label">Fournisseur</label>
                     <select name="fournisseur_id" class="form-control">
-                        <option value="" disabled selected>Choisir un fournisseur</option>
+                        <option value="">-- Sélectionner un fournisseur --</option>
                         @foreach ($fournisseurs as $fournisseur)
                             <option value="{{ $fournisseur->id }}">{{ $fournisseur->nom }}</option>
                         @endforeach
                     </select>
-                </div>
+                </div>      
+
 
 
                 <button type="submit" class="btn btn-success">✅ Ajouter le produit</button>

@@ -35,16 +35,20 @@ class ProduitController extends Controller
             'fournisseur_id' => 'nullable|exists:fournisseurs,id',
         ]);
     
+       
+    
         Produit::create([
             'nom' => $request->nom,
             'quantite' => $request->quantite,
             'prix' => $request->prix,
             'categorie_id' => $request->categorie_id,
-            'fournisseur_id' => $request->fournisseur_id, // Enregistre le fournisseur
+            'fournisseur_id' => $request->fournisseur_id, 
         ]);
     
         return redirect()->route('produits.index')->with('success', 'Produit ajouté avec succès.');
     }
+    
+
     
 
     // Afficher un produit

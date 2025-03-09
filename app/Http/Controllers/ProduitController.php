@@ -6,6 +6,7 @@ use App\Models\Produit;
 use App\Models\Categorie;
 use Illuminate\Http\Request;
 use App\Models\Fournisseur;
+use App\Models\MouvementStock;
 
 class ProduitController extends Controller
 {
@@ -35,9 +36,8 @@ class ProduitController extends Controller
             'fournisseur_id' => 'nullable|exists:fournisseurs,id',
         ]);
     
-       
-    
-        Produit::create([
+        // ✅ Stocker le produit dans une variable avant de l'utiliser
+        $produit = Produit::create([
             'nom' => $request->nom,
             'quantite' => $request->quantite,
             'prix' => $request->prix,
@@ -45,8 +45,16 @@ class ProduitController extends Controller
             'fournisseur_id' => $request->fournisseur_id, 
         ]);
     
+        // ✅ Maintenant on peut utiliser $produit->id correctement
+        MouvementStock::create([
+            'produit_id' => $produit->id,
+            'type' => 'entrée',
+            'quantite' => $request->quantite,
+        ]);
+    
         return redirect()->route('produits.index')->with('success', 'Produit ajouté avec succès.');
     }
+    
     
 
     

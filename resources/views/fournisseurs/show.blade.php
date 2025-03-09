@@ -22,12 +22,17 @@
                     <tr>
                         <td>{{ $produit->nom }}</td>
                         <td>{{ $produit->description }}</td>
-                        <td>{{ $produit->price }} €</td>
-                        <td>{{ $produit->quantity }}</td>
+                        <td>{{ number_format($produit->prix, 2, ',', ' ') }} €</td>
+                        <td>{{ $produit->quantite }}</td>
                     </tr>
                 @endforeach
             </tbody>
         </table>
+        
+        @if ($produits->isEmpty())
+            <p class="text-muted">Ce fournisseur n'a aucun produit associé.</p>
+        @endif
+        
         <a href="{{ route('fournisseurs.index') }}" class="btn btn-secondary">Retour</a>
     </div>
 @endsection

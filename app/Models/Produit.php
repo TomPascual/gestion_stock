@@ -5,11 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\MouvementStock;
+use Database\Factories\ProduitFactory;
 
 class Produit extends Model
 {
     use HasFactory;
 
+     protected static function newFactory()
+    {
+        return ProduitFactory::new();
+    }
     protected $fillable = ['nom', 'quantite', 'prix', 'categorie_id', 'fournisseur_id'];
     
 

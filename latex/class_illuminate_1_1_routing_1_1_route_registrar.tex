@@ -1,0 +1,330 @@
+\doxysection{Illuminate\textbackslash{}Routing\textbackslash{}Route\+Registrar Class Reference}
+\hypertarget{class_illuminate_1_1_routing_1_1_route_registrar}{}\label{class_illuminate_1_1_routing_1_1_route_registrar}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_registrar_a0c61de3e9a19f62b97ceceac0b10b912}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router}{Router}} \$router)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_registrar_a3ec1fb0f08d9d9fd20efdfc1f821c869}{attribute}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_registrar_a4eabd81362fb00597c9ae23a169de4aa}{resource}} (\$name, \$controller, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_registrar_a929f4516c8b395abec72c744df3a8ab7}{api\+Resource}} (\$name, \$controller, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_registrar_ae535808907e30d7a322dfc694b8ec82a}{singleton}} (\$name, \$controller, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_registrar_a1d195739ee2a967da32c2d1e9b11e05a}{api\+Singleton}} (\$name, \$controller, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_registrar_ae0ee8e1d373d52550290c76387ab5f7d}{group}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_registrar_a7d937db7a6286f036777747c55335f0e}{match}} (\$methods, \$uri, \$action=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_registrar_ab018160929b27161f13ea4af6ecb90b6}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_registrar_a5094753624dd74f4b1e443e98521b6c7}{register\+Route}} (\$method, \$uri, \$action=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_registrar_add171e3c41340efc59ffc105b11da448}{compile\+Action}} (\$action)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_registrar_ad244976b89b6940234e5b6f05bcde20a}\label{class_illuminate_1_1_routing_1_1_route_registrar_ad244976b89b6940234e5b6f05bcde20a} 
+{\bfseries \$router}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_registrar_a3ad8afa3fd37d38ed17cc048a82c5dda}\label{class_illuminate_1_1_routing_1_1_route_registrar_a3ad8afa3fd37d38ed17cc048a82c5dda} 
+{\bfseries \$attributes} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_registrar_a9dba631c25f83b7aff094be7e7130b87}{\$passthru}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_registrar_ac7c731b8bdcf6f158d628eff4c1d6546}{\$allowed\+Attributes}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_registrar_aedbdef762b68a3bb2847a5487dd97925}{\$aliases}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route any(string \$uri, \textbackslash{}\+Closure\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$action = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route delete(string \$uri, \textbackslash{}\+Closure\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$action = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route get(string \$uri, \textbackslash{}\+Closure\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$action = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route options(string \$uri, \textbackslash{}\+Closure\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$action = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route patch(string \$uri, \textbackslash{}\+Closure\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$action = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route post(string \$uri, \textbackslash{}\+Closure\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$action = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route put(string \$uri, \textbackslash{}\+Closure\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$action = null) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar as(string \$value) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar can(\textbackslash{}\+Unit\+Enum\texorpdfstring{$\vert$}{|}string \$ability, array\texorpdfstring{$\vert$}{|}string \$models = \mbox{[}\mbox{]}) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar controller(string \$controller) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar domain(\textbackslash{}\+Backed\+Enum\texorpdfstring{$\vert$}{|}string \$value) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar middleware(array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$middleware) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar missing(\textbackslash{}\+Closure \$missing) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar name(\textbackslash{}\+Backed\+Enum\texorpdfstring{$\vert$}{|}string \$value) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar namespace(string\texorpdfstring{$\vert$}{|}null \$value) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar prefix(string \$prefix) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar scope\+Bindings() @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar where(array \$where) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar without\+Middleware(array\texorpdfstring{$\vert$}{|}string \$middleware) @method \textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar without\+Scoped\+Bindings() 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_registrar_a0c61de3e9a19f62b97ceceac0b10b912}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_registrar_a0c61de3e9a19f62b97ceceac0b10b912} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_router}{Router}}}]{\$router}{}\end{DoxyParamCaption})}
+
+Create a new route registrar instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Router & {\em \$router} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_registrar_ab018160929b27161f13ea4af6ecb90b6}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_registrar_ab018160929b27161f13ea4af6ecb90b6} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar\+::\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Dynamically handle calls into the route registrar.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\texorpdfstring{$\vert$}{|}\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Bad\+Method\+Call\+Exception \Hypertarget{class_illuminate_1_1_routing_1_1_route_registrar_a929f4516c8b395abec72c744df3a8ab7}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}!apiResource@{apiResource}}
+\index{apiResource@{apiResource}!Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}}
+\doxysubsubsection{\texorpdfstring{apiResource()}{apiResource()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_registrar_a929f4516c8b395abec72c744df3a8ab7} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar\+::api\+Resource (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$controller}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Route an API resource to a controller.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$controller} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Pending\+Resource\+Registration 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_registrar_a1d195739ee2a967da32c2d1e9b11e05a}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}!apiSingleton@{apiSingleton}}
+\index{apiSingleton@{apiSingleton}!Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}}
+\doxysubsubsection{\texorpdfstring{apiSingleton()}{apiSingleton()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_registrar_a1d195739ee2a967da32c2d1e9b11e05a} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar\+::api\+Singleton (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$controller}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Route an API singleton resource to a controller.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$controller} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Pending\+Singleton\+Resource\+Registration 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_registrar_a3ec1fb0f08d9d9fd20efdfc1f821c869}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}!attribute@{attribute}}
+\index{attribute@{attribute}!Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}}
+\doxysubsubsection{\texorpdfstring{attribute()}{attribute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_registrar_a3ec1fb0f08d9d9fd20efdfc1f821c869} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar\+::attribute (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Set the value for a given attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_routing_1_1_route_registrar_add171e3c41340efc59ffc105b11da448}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}!compileAction@{compileAction}}
+\index{compileAction@{compileAction}!Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}}
+\doxysubsubsection{\texorpdfstring{compileAction()}{compileAction()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_registrar_add171e3c41340efc59ffc105b11da448} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar\+::compile\+Action (\begin{DoxyParamCaption}\item[{}]{\$action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Compile the action into an array including the attributes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | array | string | null & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_registrar_ae0ee8e1d373d52550290c76387ab5f7d}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}!group@{group}}
+\index{group@{group}!Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}}
+\doxysubsubsection{\texorpdfstring{group()}{group()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_registrar_ae0ee8e1d373d52550290c76387ab5f7d} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar\+::group (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Create a route group with shared attributes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | array | string & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_registrar_a7d937db7a6286f036777747c55335f0e}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}!match@{match}}
+\index{match@{match}!Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_registrar_a7d937db7a6286f036777747c55335f0e} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar\+::match (\begin{DoxyParamCaption}\item[{}]{\$methods}{, }\item[{}]{\$uri}{, }\item[{}]{\$action}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Register a new route with the given verbs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$methods} & \\
+\hline
+string & {\em \$uri} & \\
+\hline
+\textbackslash{}\+Closure | array | string | null & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_registrar_a5094753624dd74f4b1e443e98521b6c7}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}!registerRoute@{registerRoute}}
+\index{registerRoute@{registerRoute}!Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}}
+\doxysubsubsection{\texorpdfstring{registerRoute()}{registerRoute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_registrar_a5094753624dd74f4b1e443e98521b6c7} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar\+::register\+Route (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$uri}{, }\item[{}]{\$action}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register a new route with the router.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+string & {\em \$uri} & \\
+\hline
+\textbackslash{}\+Closure | array | string | null & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_registrar_a4eabd81362fb00597c9ae23a169de4aa}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}!resource@{resource}}
+\index{resource@{resource}!Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}}
+\doxysubsubsection{\texorpdfstring{resource()}{resource()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_registrar_a4eabd81362fb00597c9ae23a169de4aa} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar\+::resource (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$controller}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Route a resource to a controller.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$controller} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Pending\+Resource\+Registration 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_registrar_ae535808907e30d7a322dfc694b8ec82a}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}!singleton@{singleton}}
+\index{singleton@{singleton}!Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}}
+\doxysubsubsection{\texorpdfstring{singleton()}{singleton()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_registrar_ae535808907e30d7a322dfc694b8ec82a} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar\+::singleton (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$controller}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Route a singleton resource to a controller.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$controller} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Pending\+Singleton\+Resource\+Registration 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_registrar_aedbdef762b68a3bb2847a5487dd97925}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}!\$aliases@{\$aliases}}
+\index{\$aliases@{\$aliases}!Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}}
+\doxysubsubsection{\texorpdfstring{\$aliases}{\$aliases}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_registrar_aedbdef762b68a3bb2847a5487dd97925} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar\+::\$aliases\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'name'}\ =>\ \textcolor{stringliteral}{'as'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'scopeBindings'}\ =>\ \textcolor{stringliteral}{'scope\_bindings'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'withoutScopedBindings'}\ =>\ \textcolor{stringliteral}{'scope\_bindings'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'withoutMiddleware'}\ =>\ \textcolor{stringliteral}{'excluded\_middleware'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_registrar_ac7c731b8bdcf6f158d628eff4c1d6546}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}!\$allowedAttributes@{\$allowedAttributes}}
+\index{\$allowedAttributes@{\$allowedAttributes}!Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}}
+\doxysubsubsection{\texorpdfstring{\$allowedAttributes}{\$allowedAttributes}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_registrar_ac7c731b8bdcf6f158d628eff4c1d6546} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar\+::\$allowed\+Attributes\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'as'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'can'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'controller'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'domain'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'middleware'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'missing'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'name'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'namespace'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'prefix'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'scopeBindings'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'where'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'withoutMiddleware'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'withoutScopedBindings'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_registrar_a9dba631c25f83b7aff094be7e7130b87}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}!\$passthru@{\$passthru}}
+\index{\$passthru@{\$passthru}!Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar@{Illuminate\textbackslash{}Routing\textbackslash{}RouteRegistrar}}
+\doxysubsubsection{\texorpdfstring{\$passthru}{\$passthru}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_registrar_a9dba631c25f83b7aff094be7e7130b87} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Registrar\+::\$passthru\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'get'},\ \textcolor{stringliteral}{'post'},\ \textcolor{stringliteral}{'put'},\ \textcolor{stringliteral}{'patch'},\ \textcolor{stringliteral}{'delete'},\ \textcolor{stringliteral}{'options'},\ \textcolor{stringliteral}{'any'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Routing/Route\+Registrar.\+php\end{DoxyCompactItemize}

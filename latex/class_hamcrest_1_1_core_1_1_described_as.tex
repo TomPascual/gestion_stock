@@ -1,0 +1,97 @@
+\doxysection{Hamcrest\textbackslash{}Core\textbackslash{}Described\+As Class Reference}
+\hypertarget{class_hamcrest_1_1_core_1_1_described_as}{}\label{class_hamcrest_1_1_core_1_1_described_as}\index{Hamcrest\textbackslash{}Core\textbackslash{}DescribedAs@{Hamcrest\textbackslash{}Core\textbackslash{}DescribedAs}}
+Inheritance diagram for Hamcrest\textbackslash{}Core\textbackslash{}Described\+As\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_hamcrest_1_1_core_1_1_described_as}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_hamcrest_1_1_core_1_1_described_as_a46d1a792aa2e74105928ef70a55054ac}\label{class_hamcrest_1_1_core_1_1_described_as_a46d1a792aa2e74105928ef70a55054ac} 
+{\bfseries \+\_\+\+\_\+construct} (\$description\+Template, \mbox{\hyperlink{interface_hamcrest_1_1_matcher}{Matcher}} \$matcher, array \$values)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_core_1_1_described_as_a7c1bd534753b80c750b41201d8ff0d4b}{matches}} (\$item)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_core_1_1_described_as_a67e0f5fda7fbfc6ef5952bf74f492b7f}{describe\+To}} (\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$description)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hamcrest_1_1_base_matcher}{Hamcrest\textbackslash{}\+Base\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_base_matcher_ae071961005d0f24d2ee1b3c62d9fe660}{describe\+Mismatch}} (\$item, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$description)
+\item 
+{\bfseries \+\_\+\+\_\+to\+String} ()
+\item 
+{\bfseries \+\_\+\+\_\+invoke} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_described_as_a51ce3d7984560731d57414d3316bf6b0}{described\+As}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_hamcrest_1_1_core_1_1_described_as_a4b2144d5fabee7e267492fdaae079b18}\label{class_hamcrest_1_1_core_1_1_described_as_a4b2144d5fabee7e267492fdaae079b18} 
+const {\bfseries ARG\+\_\+\+PATTERN} = \textquotesingle{}/\%(\mbox{[}0-\/9\mbox{]}+)/\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides a custom description to another matcher. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hamcrest_1_1_core_1_1_described_as_a51ce3d7984560731d57414d3316bf6b0}\index{Hamcrest\textbackslash{}Core\textbackslash{}DescribedAs@{Hamcrest\textbackslash{}Core\textbackslash{}DescribedAs}!describedAs@{describedAs}}
+\index{describedAs@{describedAs}!Hamcrest\textbackslash{}Core\textbackslash{}DescribedAs@{Hamcrest\textbackslash{}Core\textbackslash{}DescribedAs}}
+\doxysubsubsection{\texorpdfstring{describedAs()}{describedAs()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_described_as_a51ce3d7984560731d57414d3316bf6b0} 
+static Hamcrest\textbackslash{}\+Core\textbackslash{}\+Described\+As\+::described\+As (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Wraps an existing matcher and overrides the description when it fails.
+
+@factory ... \Hypertarget{class_hamcrest_1_1_core_1_1_described_as_a67e0f5fda7fbfc6ef5952bf74f492b7f}\index{Hamcrest\textbackslash{}Core\textbackslash{}DescribedAs@{Hamcrest\textbackslash{}Core\textbackslash{}DescribedAs}!describeTo@{describeTo}}
+\index{describeTo@{describeTo}!Hamcrest\textbackslash{}Core\textbackslash{}DescribedAs@{Hamcrest\textbackslash{}Core\textbackslash{}DescribedAs}}
+\doxysubsubsection{\texorpdfstring{describeTo()}{describeTo()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_described_as_a67e0f5fda7fbfc6ef5952bf74f492b7f} 
+Hamcrest\textbackslash{}\+Core\textbackslash{}\+Described\+As\+::describe\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$description}{}\end{DoxyParamCaption})}
+
+Generates a description of the object. The description may be part of a description of a larger object of which this is just a component, so it should be worded appropriately.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Hamcrest\textbackslash{}\+Description & {\em \$description} & The description to be built or appended to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hamcrest_1_1_self_describing_a5358337d01bd2b3a048fa446f9e901d2}{Hamcrest\textbackslash{}\+Self\+Describing}}.
+
+\Hypertarget{class_hamcrest_1_1_core_1_1_described_as_a7c1bd534753b80c750b41201d8ff0d4b}\index{Hamcrest\textbackslash{}Core\textbackslash{}DescribedAs@{Hamcrest\textbackslash{}Core\textbackslash{}DescribedAs}!matches@{matches}}
+\index{matches@{matches}!Hamcrest\textbackslash{}Core\textbackslash{}DescribedAs@{Hamcrest\textbackslash{}Core\textbackslash{}DescribedAs}}
+\doxysubsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_described_as_a7c1bd534753b80c750b41201d8ff0d4b} 
+Hamcrest\textbackslash{}\+Core\textbackslash{}\+Described\+As\+::matches (\begin{DoxyParamCaption}\item[{}]{\$item}{}\end{DoxyParamCaption})}
+
+Evaluates the matcher for argument {\itshape \$item}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$item} & the object against which the matcher is evaluated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean {\ttfamily true} if {\itshape \$item} matches, otherwise {\ttfamily false}.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Hamcrest\textbackslash{}\+Base\+Matcher 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interface_hamcrest_1_1_matcher_a11ade9b98c2cf2e1871c2bb0e6d0de94}{Hamcrest\textbackslash{}\+Matcher}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/hamcrest/hamcrest-\/php/hamcrest/\+Hamcrest/\+Core/Described\+As.\+php\end{DoxyCompactItemize}

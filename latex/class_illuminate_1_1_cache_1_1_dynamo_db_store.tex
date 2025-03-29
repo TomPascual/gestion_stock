@@ -1,0 +1,498 @@
+\doxysection{Illuminate\textbackslash{}Cache\textbackslash{}Dynamo\+Db\+Store Class Reference}
+\hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store}{}\label{class_illuminate_1_1_cache_1_1_dynamo_db_store}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+Inheritance diagram for Illuminate\textbackslash{}Cache\textbackslash{}Dynamo\+Db\+Store\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_cache_1_1_dynamo_db_store}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_ac3df3b1e702de7e6f93a9c24208feb0d}{\+\_\+\+\_\+construct}} (Dynamo\+Db\+Client \$dynamo, \$table, \$key\+Attribute=\textquotesingle{}key\textquotesingle{}, \$value\+Attribute=\textquotesingle{}value\textquotesingle{}, \$expiration\+Attribute=\textquotesingle{}expires\+\_\+at\textquotesingle{}, \$prefix=\textquotesingle{}\textquotesingle{},)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_a85512d8d653ca273f73288deff5d326b}{get}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_adc20a7c102508a7fe9a0fefc43f1234a}{many}} (array \$keys)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_aa569c3e4ce60007c4705f7f55fe57dc6}{put}} (\$key, \$value, \$seconds)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_a465ca66047466c09218f23e7c0b4da1f}{put\+Many}} (array \$values, \$seconds)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_abadaac479e2a8baeb37c0d9d2e5fb734}{add}} (\$key, \$value, \$seconds)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_ae805f4be8d64fa1fb5f30e7deddc12f4}{increment}} (\$key, \$value=1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_a3f8a3ea38d72e7c37b3dcb1b7ba5802b}{decrement}} (\$key, \$value=1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_ae73840fcdb24c45b4ca3f61630f06602}{forever}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_ae14f2f878da47ba3993e28b5749dae72}{lock}} (\$name, \$seconds=0, \$owner=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_a46b7961e9229342b1f67cb740918bb6f}{restore\+Lock}} (\$name, \$owner)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_a7b632d2237d5b93cead1961b0828ad77}{forget}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_a2a8f419850594f8b2dfadef2c95081e7}{flush}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_a0bec4bf0fc5e8105e8b8b2a9516432c5}{get\+Prefix}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_a640b407124b03f717516503cd994e4a7}{set\+Prefix}} (\$prefix)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_a6f5bfd8b4d9fb76005ce1d5a4c851f46}{get\+Client}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_adb54b13858391b42f14d445834cf9a35}{is\+Expired}} (array \$item, \$expiration=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_a56a621be8432f487732ea8377ef4809c}{to\+Timestamp}} (\$seconds)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_a4031a54fb6440b4fcff7ecd78587c38d}{serialize}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_abbc87a36f5d4a58fe8b069d886bc9c62}{unserialize}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_a1d7649e5240c1caf86806ab5e73e4d96}{type}} (\$value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_a3f01b2f7303e32264b156754dd87a2dd}\label{class_illuminate_1_1_cache_1_1_dynamo_db_store_a3f01b2f7303e32264b156754dd87a2dd} 
+{\bfseries \$dynamo}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_a1fb3aef59e23ee3cdff96209433938d0}\label{class_illuminate_1_1_cache_1_1_dynamo_db_store_a1fb3aef59e23ee3cdff96209433938d0} 
+{\bfseries \$table}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_a7226f61c76c30f61dd7bbb724a2d9c58}\label{class_illuminate_1_1_cache_1_1_dynamo_db_store_a7226f61c76c30f61dd7bbb724a2d9c58} 
+{\bfseries \$key\+Attribute}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_ac840d3e8c61e9792d4696fc0fd720f35}\label{class_illuminate_1_1_cache_1_1_dynamo_db_store_ac840d3e8c61e9792d4696fc0fd720f35} 
+{\bfseries \$value\+Attribute}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_ada7122f8d088d6f1f913963df404551a}\label{class_illuminate_1_1_cache_1_1_dynamo_db_store_ada7122f8d088d6f1f913963df404551a} 
+{\bfseries \$expiration\+Attribute}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_a88d0f4eb283a3a1c688e2ab7c3517312}\label{class_illuminate_1_1_cache_1_1_dynamo_db_store_a88d0f4eb283a3a1c688e2ab7c3517312} 
+{\bfseries \$prefix}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_ac3df3b1e702de7e6f93a9c24208feb0d}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_ac3df3b1e702de7e6f93a9c24208feb0d} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Dynamo\+Db\+Client}]{\$dynamo}{, }\item[{}]{\$table}{, }\item[{}]{\$key\+Attribute}{ = {\ttfamily \textquotesingle{}key\textquotesingle{}}, }\item[{}]{\$value\+Attribute}{ = {\ttfamily \textquotesingle{}value\textquotesingle{}}, }\item[{}]{\$expiration\+Attribute}{ = {\ttfamily \textquotesingle{}expires\+\_\+at\textquotesingle{}}, }\item[{}]{\$prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a new store instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Aws\textbackslash{}\+Dynamo\+Db\textbackslash{}\+Dynamo\+Db\+Client & {\em \$dynamo} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+string & {\em \$key\+Attribute} & \\
+\hline
+string & {\em \$value\+Attribute} & \\
+\hline
+string & {\em \$expiration\+Attribute} & \\
+\hline
+string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_abadaac479e2a8baeb37c0d9d2e5fb734}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!add@{add}}
+\index{add@{add}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_abadaac479e2a8baeb37c0d9d2e5fb734} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::add (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{, }\item[{}]{\$seconds}{}\end{DoxyParamCaption})}
+
+Store an item in the cache if the key doesn\textquotesingle{}t exist.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_a3f8a3ea38d72e7c37b3dcb1b7ba5802b}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!decrement@{decrement}}
+\index{decrement@{decrement}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{decrement()}{decrement()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_a3f8a3ea38d72e7c37b3dcb1b7ba5802b} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::decrement (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Decrement the value of an item in the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a5535f41edfe28cf81a37b164283cbeae}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_a2a8f419850594f8b2dfadef2c95081e7}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!flush@{flush}}
+\index{flush@{flush}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_a2a8f419850594f8b2dfadef2c95081e7} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::flush (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Remove all items from the cache.
+
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception 
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_ac0f8554721326578beed63e536cacb4c}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_ae73840fcdb24c45b4ca3f61630f06602}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!forever@{forever}}
+\index{forever@{forever}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{forever()}{forever()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_ae73840fcdb24c45b4ca3f61630f06602} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::forever (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Store an item in the cache indefinitely.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_acc81ba5be408507d39f43560c8c3b097}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_a7b632d2237d5b93cead1961b0828ad77}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!forget@{forget}}
+\index{forget@{forget}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{forget()}{forget()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_a7b632d2237d5b93cead1961b0828ad77} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::forget (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Remove an item from the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_ac735132a55c57063607508d3ddf1bbcc}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_a85512d8d653ca273f73288deff5d326b}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!get@{get}}
+\index{get@{get}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_a85512d8d653ca273f73288deff5d326b} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::get (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Retrieve an item from the cache by key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a76a1f3cd25865c30893e5498b7f9f22f}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_a6f5bfd8b4d9fb76005ce1d5a4c851f46}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!getClient@{getClient}}
+\index{getClient@{getClient}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{getClient()}{getClient()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_a6f5bfd8b4d9fb76005ce1d5a4c851f46} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::get\+Client (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the Dynamo\+Db Client instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Aws\textbackslash{}\+Dynamo\+Db\textbackslash{}\+Dynamo\+Db\+Client 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_a0bec4bf0fc5e8105e8b8b2a9516432c5}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!getPrefix@{getPrefix}}
+\index{getPrefix@{getPrefix}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{getPrefix()}{getPrefix()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_a0bec4bf0fc5e8105e8b8b2a9516432c5} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::get\+Prefix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the cache key prefix.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a7052d7e499811475bfab1cda35aaa24a}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_ae805f4be8d64fa1fb5f30e7deddc12f4}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!increment@{increment}}
+\index{increment@{increment}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_ae805f4be8d64fa1fb5f30e7deddc12f4} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::increment (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Increment the value of an item in the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a6c0f3189449cee80c854f9f2b9a84aa8}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_adb54b13858391b42f14d445834cf9a35}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!isExpired@{isExpired}}
+\index{isExpired@{isExpired}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{isExpired()}{isExpired()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_adb54b13858391b42f14d445834cf9a35} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::is\+Expired (\begin{DoxyParamCaption}\item[{array}]{\$item}{, }\item[{}]{\$expiration}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the given item is expired.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$item} & \\
+\hline
+\textbackslash{}\+Date\+Time\+Interface | null & {\em \$expiration} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_ae14f2f878da47ba3993e28b5749dae72}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!lock@{lock}}
+\index{lock@{lock}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{lock()}{lock()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_ae14f2f878da47ba3993e28b5749dae72} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::lock (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$seconds}{ = {\ttfamily 0}, }\item[{}]{\$owner}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a lock instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+string | null & {\em \$owner} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_provider_a401c9363d4bed96466eae103e293f442}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock\+Provider}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_adc20a7c102508a7fe9a0fefc43f1234a}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!many@{many}}
+\index{many@{many}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{many()}{many()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_adc20a7c102508a7fe9a0fefc43f1234a} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::many (\begin{DoxyParamCaption}\item[{array}]{\$keys}{}\end{DoxyParamCaption})}
+
+Retrieve multiple items from the cache by key.
+
+Items not found in the cache will have a null value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$keys} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_acd26c0fb0e85829dca6cf34497caa605}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_aa569c3e4ce60007c4705f7f55fe57dc6}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!put@{put}}
+\index{put@{put}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_aa569c3e4ce60007c4705f7f55fe57dc6} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::put (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{, }\item[{}]{\$seconds}{}\end{DoxyParamCaption})}
+
+Store an item in the cache for a given number of seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a1b289bda788cce15cbbb698d8c48b745}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_a465ca66047466c09218f23e7c0b4da1f}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!putMany@{putMany}}
+\index{putMany@{putMany}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{putMany()}{putMany()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_a465ca66047466c09218f23e7c0b4da1f} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::put\+Many (\begin{DoxyParamCaption}\item[{array}]{\$values}{, }\item[{}]{\$seconds}{}\end{DoxyParamCaption})}
+
+Store multiple items in the cache for a given number of seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$values} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_af1c13c5ce3d6ae7cdb92954316da33ac}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_a46b7961e9229342b1f67cb740918bb6f}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!restoreLock@{restoreLock}}
+\index{restoreLock@{restoreLock}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{restoreLock()}{restoreLock()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_a46b7961e9229342b1f67cb740918bb6f} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::restore\+Lock (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$owner}{}\end{DoxyParamCaption})}
+
+Restore a lock instance using the owner identifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$owner} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_provider_af4d5f5cf5f39cf69a9aaa1096686cbbf}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock\+Provider}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_a4031a54fb6440b4fcff7ecd78587c38d}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!serialize@{serialize}}
+\index{serialize@{serialize}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_a4031a54fb6440b4fcff7ecd78587c38d} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::serialize (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Serialize the value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_a640b407124b03f717516503cd994e4a7}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!setPrefix@{setPrefix}}
+\index{setPrefix@{setPrefix}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{setPrefix()}{setPrefix()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_a640b407124b03f717516503cd994e4a7} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::set\+Prefix (\begin{DoxyParamCaption}\item[{}]{\$prefix}{}\end{DoxyParamCaption})}
+
+Set the cache key prefix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_a56a621be8432f487732ea8377ef4809c}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!toTimestamp@{toTimestamp}}
+\index{toTimestamp@{toTimestamp}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{toTimestamp()}{toTimestamp()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_a56a621be8432f487732ea8377ef4809c} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::to\+Timestamp (\begin{DoxyParamCaption}\item[{}]{\$seconds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the UNIX timestamp for the given number of seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_a1d7649e5240c1caf86806ab5e73e4d96}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!type@{type}}
+\index{type@{type}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_a1d7649e5240c1caf86806ab5e73e4d96} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::type (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the Dynamo\+DB type for the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_store_abbc87a36f5d4a58fe8b069d886bc9c62}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}!unserialize@{unserialize}}
+\index{unserialize@{unserialize}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbStore}}
+\doxysubsubsection{\texorpdfstring{unserialize()}{unserialize()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_store_abbc87a36f5d4a58fe8b069d886bc9c62} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store\+::unserialize (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Unserialize the value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Cache/Dynamo\+Db\+Store.\+php\end{DoxyCompactItemize}

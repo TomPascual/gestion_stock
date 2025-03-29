@@ -1,0 +1,229 @@
+\doxysection{League\textbackslash{}Flysystem\textbackslash{}Filesystem\+Reader Interface Reference}
+\hypertarget{interface_league_1_1_flysystem_1_1_filesystem_reader}{}\label{interface_league_1_1_flysystem_1_1_filesystem_reader}\index{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}}
+Inheritance diagram for League\textbackslash{}Flysystem\textbackslash{}Filesystem\+Reader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_league_1_1_flysystem_1_1_filesystem_reader}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_league_1_1_flysystem_1_1_filesystem_reader_a34816cb13900b76f75b7ec170db6cfb4}{file\+Exists}} (string \$location)
+\item 
+\mbox{\hyperlink{interface_league_1_1_flysystem_1_1_filesystem_reader_ab7c38b0ca17a929821c9562f5e0645e6}{directory\+Exists}} (string \$location)
+\item 
+\mbox{\hyperlink{interface_league_1_1_flysystem_1_1_filesystem_reader_a5df51c4826423171052519ce3de10d71}{has}} (string \$location)
+\item 
+\mbox{\hyperlink{interface_league_1_1_flysystem_1_1_filesystem_reader_aaad002c48d3b653eb9dc175820130902}{read}} (string \$location)
+\item 
+\mbox{\hyperlink{interface_league_1_1_flysystem_1_1_filesystem_reader_a9965ca1afc1ecb47b32d674dd04e6f43}{read\+Stream}} (string \$location)
+\item 
+\mbox{\hyperlink{interface_league_1_1_flysystem_1_1_filesystem_reader_a198dcb4c2d34b0dc1d098b1e9bbddcfc}{list\+Contents}} (string \$location, bool \$deep=self\+::\+LIST\+\_\+\+SHALLOW)
+\item 
+\mbox{\hyperlink{interface_league_1_1_flysystem_1_1_filesystem_reader_a90ef512206d7c5330850aa15b8f14380}{last\+Modified}} (string \$path)
+\item 
+\mbox{\hyperlink{interface_league_1_1_flysystem_1_1_filesystem_reader_af30928059facc6291f6eb4c841d70230}{file\+Size}} (string \$path)
+\item 
+\mbox{\hyperlink{interface_league_1_1_flysystem_1_1_filesystem_reader_aba63e27e93fd7c5b5768750577d6463a}{mime\+Type}} (string \$path)
+\item 
+\mbox{\hyperlink{interface_league_1_1_flysystem_1_1_filesystem_reader_acb0b59fe6ac6fa88096b52c667dd0452}{visibility}} (string \$path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_league_1_1_flysystem_1_1_filesystem_reader_a2010d2f03b49d8699a9daa435cd02c72}\label{interface_league_1_1_flysystem_1_1_filesystem_reader_a2010d2f03b49d8699a9daa435cd02c72} 
+const {\bfseries LIST\+\_\+\+SHALLOW} = false
+\item 
+\Hypertarget{interface_league_1_1_flysystem_1_1_filesystem_reader_af7d54e2a2b559ed6d76db83f4a70ae82}\label{interface_league_1_1_flysystem_1_1_filesystem_reader_af7d54e2a2b559ed6d76db83f4a70ae82} 
+const {\bfseries LIST\+\_\+\+DEEP} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface contains everything to read from and inspect a filesystem. All methods containing are non-\/destructive.
+
+@method string public\+Url(string \$path, array \$config = \mbox{[}\mbox{]}) Will be added in 4.\+0 @method string temporary\+Url(string \$path, Date\+Time\+Interface \$expires\+At, array \$config = \mbox{[}\mbox{]}) Will be added in 4.\+0 @method string checksum(string \$path, array \$config = \mbox{[}\mbox{]}) Will be added in 4.\+0 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_league_1_1_flysystem_1_1_filesystem_reader_ab7c38b0ca17a929821c9562f5e0645e6}\index{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}!directoryExists@{directoryExists}}
+\index{directoryExists@{directoryExists}!League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}}
+\doxysubsubsection{\texorpdfstring{directoryExists()}{directoryExists()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_flysystem_1_1_filesystem_reader_ab7c38b0ca17a929821c9562f5e0645e6} 
+League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem\+Reader\+::directory\+Exists (\begin{DoxyParamCaption}\item[{string}]{\$location}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Filesystem\+Exception} & \\
+\hline
+{\em Unable\+To\+Check\+Existence} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_flysystem_1_1_filesystem_a5bcd4d77eedbb33715c48afa31d1825e}{League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem}}.
+
+\Hypertarget{interface_league_1_1_flysystem_1_1_filesystem_reader_a34816cb13900b76f75b7ec170db6cfb4}\index{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}!fileExists@{fileExists}}
+\index{fileExists@{fileExists}!League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}}
+\doxysubsubsection{\texorpdfstring{fileExists()}{fileExists()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_flysystem_1_1_filesystem_reader_a34816cb13900b76f75b7ec170db6cfb4} 
+League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem\+Reader\+::file\+Exists (\begin{DoxyParamCaption}\item[{string}]{\$location}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Filesystem\+Exception} & \\
+\hline
+{\em Unable\+To\+Check\+Existence} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_flysystem_1_1_filesystem_a0539e1092ef07b2269c2d761e88c33d3}{League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem}}.
+
+\Hypertarget{interface_league_1_1_flysystem_1_1_filesystem_reader_af30928059facc6291f6eb4c841d70230}\index{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}!fileSize@{fileSize}}
+\index{fileSize@{fileSize}!League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}}
+\doxysubsubsection{\texorpdfstring{fileSize()}{fileSize()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_flysystem_1_1_filesystem_reader_af30928059facc6291f6eb4c841d70230} 
+League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem\+Reader\+::file\+Size (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unable\+To\+Retrieve\+Metadata} & \\
+\hline
+{\em Filesystem\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_flysystem_1_1_filesystem_a00f685a5095a54975f8d4427d5961095}{League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem}}.
+
+\Hypertarget{interface_league_1_1_flysystem_1_1_filesystem_reader_a5df51c4826423171052519ce3de10d71}\index{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}!has@{has}}
+\index{has@{has}!League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_flysystem_1_1_filesystem_reader_a5df51c4826423171052519ce3de10d71} 
+League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem\+Reader\+::has (\begin{DoxyParamCaption}\item[{string}]{\$location}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Filesystem\+Exception} & \\
+\hline
+{\em Unable\+To\+Check\+Existence} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_flysystem_1_1_filesystem_adf4a6968d3774018decc0191c21d69f0}{League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem}}.
+
+\Hypertarget{interface_league_1_1_flysystem_1_1_filesystem_reader_a90ef512206d7c5330850aa15b8f14380}\index{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}!lastModified@{lastModified}}
+\index{lastModified@{lastModified}!League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}}
+\doxysubsubsection{\texorpdfstring{lastModified()}{lastModified()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_flysystem_1_1_filesystem_reader_a90ef512206d7c5330850aa15b8f14380} 
+League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem\+Reader\+::last\+Modified (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unable\+To\+Retrieve\+Metadata} & \\
+\hline
+{\em Filesystem\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_flysystem_1_1_filesystem_affbf56f0a1aa57e11d82e676d02191a3}{League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem}}.
+
+\Hypertarget{interface_league_1_1_flysystem_1_1_filesystem_reader_a198dcb4c2d34b0dc1d098b1e9bbddcfc}\index{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}!listContents@{listContents}}
+\index{listContents@{listContents}!League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}}
+\doxysubsubsection{\texorpdfstring{listContents()}{listContents()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_flysystem_1_1_filesystem_reader_a198dcb4c2d34b0dc1d098b1e9bbddcfc} 
+League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem\+Reader\+::list\+Contents (\begin{DoxyParamCaption}\item[{string}]{\$location}{, }\item[{bool}]{\$deep}{ = {\ttfamily self\+:\+:LIST\+\_\+SHALLOW}}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Directory\+Listing$<$\+Storage\+Attributes$>$
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Filesystem\+Exception} & \\
+\hline
+{\em Unable\+To\+List\+Contents} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_flysystem_1_1_filesystem_ab207ead71dbf4886c3b883449b21e85a}{League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem}}.
+
+\Hypertarget{interface_league_1_1_flysystem_1_1_filesystem_reader_aba63e27e93fd7c5b5768750577d6463a}\index{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}!mimeType@{mimeType}}
+\index{mimeType@{mimeType}!League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}}
+\doxysubsubsection{\texorpdfstring{mimeType()}{mimeType()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_flysystem_1_1_filesystem_reader_aba63e27e93fd7c5b5768750577d6463a} 
+League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem\+Reader\+::mime\+Type (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unable\+To\+Retrieve\+Metadata} & \\
+\hline
+{\em Filesystem\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_flysystem_1_1_filesystem_a0d1f2531bfb5cfbb63ac27cd2b20c557}{League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem}}.
+
+\Hypertarget{interface_league_1_1_flysystem_1_1_filesystem_reader_aaad002c48d3b653eb9dc175820130902}\index{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}!read@{read}}
+\index{read@{read}!League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_flysystem_1_1_filesystem_reader_aaad002c48d3b653eb9dc175820130902} 
+League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem\+Reader\+::read (\begin{DoxyParamCaption}\item[{string}]{\$location}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unable\+To\+Read\+File} & \\
+\hline
+{\em Filesystem\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_flysystem_1_1_filesystem_a61e92f2a5f7a60efa73f33dad6ccf217}{League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem}}.
+
+\Hypertarget{interface_league_1_1_flysystem_1_1_filesystem_reader_a9965ca1afc1ecb47b32d674dd04e6f43}\index{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}!readStream@{readStream}}
+\index{readStream@{readStream}!League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}}
+\doxysubsubsection{\texorpdfstring{readStream()}{readStream()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_flysystem_1_1_filesystem_reader_a9965ca1afc1ecb47b32d674dd04e6f43} 
+League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem\+Reader\+::read\+Stream (\begin{DoxyParamCaption}\item[{string}]{\$location}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+resource
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unable\+To\+Read\+File} & \\
+\hline
+{\em Filesystem\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_flysystem_1_1_filesystem_a2f3e6a196a00b7926b8ef21e46287056}{League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem}}.
+
+\Hypertarget{interface_league_1_1_flysystem_1_1_filesystem_reader_acb0b59fe6ac6fa88096b52c667dd0452}\index{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}!visibility@{visibility}}
+\index{visibility@{visibility}!League\textbackslash{}Flysystem\textbackslash{}FilesystemReader@{League\textbackslash{}Flysystem\textbackslash{}FilesystemReader}}
+\doxysubsubsection{\texorpdfstring{visibility()}{visibility()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_flysystem_1_1_filesystem_reader_acb0b59fe6ac6fa88096b52c667dd0452} 
+League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem\+Reader\+::visibility (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Unable\+To\+Retrieve\+Metadata} & \\
+\hline
+{\em Filesystem\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_flysystem_1_1_filesystem_a29a2c5ec3579a00b7ce586c5506c8cbb}{League\textbackslash{}\+Flysystem\textbackslash{}\+Filesystem}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/league/flysystem/src/Filesystem\+Reader.\+php\end{DoxyCompactItemize}

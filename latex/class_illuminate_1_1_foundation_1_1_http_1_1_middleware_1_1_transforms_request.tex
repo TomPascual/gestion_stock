@@ -1,0 +1,146 @@
+\doxysection{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}Transforms\+Request Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request}{}\label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest@{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest}}
+Inheritance diagram for Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}Transforms\+Request\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.424936cm]{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a4bd8f465358ea733f5df583ca49be0c6}{handle}} (\$request, Closure \$next)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_ab48c161bc0c5a940245a491029e53f33}{clean}} (\$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a7c622f17df8eed04288a4bb68656edb3}{clean\+Parameter\+Bag}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag}{Parameter\+Bag}} \$bag)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a0139c8dbe79560a02a5efc9963eba722}{clean\+Array}} (array \$data, \$key\+Prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a9a4688bc6edddb3be1adb9580d9dba29}{clean\+Value}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a14011d2dff471c40e6668d94b387cfb4}{transform}} (\$key, \$value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_ab48c161bc0c5a940245a491029e53f33}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest@{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest}!clean@{clean}}
+\index{clean@{clean}!Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest@{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest}}
+\doxysubsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_ab48c161bc0c5a940245a491029e53f33} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Transforms\+Request\+::clean (\begin{DoxyParamCaption}\item[{}]{\$request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Clean the request\textquotesingle{}s data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a0139c8dbe79560a02a5efc9963eba722}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest@{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest}!cleanArray@{cleanArray}}
+\index{cleanArray@{cleanArray}!Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest@{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest}}
+\doxysubsubsection{\texorpdfstring{cleanArray()}{cleanArray()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a0139c8dbe79560a02a5efc9963eba722} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Transforms\+Request\+::clean\+Array (\begin{DoxyParamCaption}\item[{array}]{\$data}{, }\item[{}]{\$key\+Prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Clean the data in the given array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+string & {\em \$key\+Prefix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a7c622f17df8eed04288a4bb68656edb3}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest@{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest}!cleanParameterBag@{cleanParameterBag}}
+\index{cleanParameterBag@{cleanParameterBag}!Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest@{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest}}
+\doxysubsubsection{\texorpdfstring{cleanParameterBag()}{cleanParameterBag()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a7c622f17df8eed04288a4bb68656edb3} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Transforms\+Request\+::clean\+Parameter\+Bag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_parameter_bag}{Parameter\+Bag}}}]{\$bag}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Clean the data in the parameter bag.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Parameter\+Bag & {\em \$bag} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a9a4688bc6edddb3be1adb9580d9dba29}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest@{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest}!cleanValue@{cleanValue}}
+\index{cleanValue@{cleanValue}!Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest@{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest}}
+\doxysubsubsection{\texorpdfstring{cleanValue()}{cleanValue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a9a4688bc6edddb3be1adb9580d9dba29} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Transforms\+Request\+::clean\+Value (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Clean the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a4bd8f465358ea733f5df583ca49be0c6}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest@{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest}!handle@{handle}}
+\index{handle@{handle}!Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest@{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a4bd8f465358ea733f5df583ca49be0c6} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Transforms\+Request\+::handle (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{Closure}]{\$next}{}\end{DoxyParamCaption})}
+
+Handle an incoming request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$next} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_convert_empty_strings_to_null_a36c4265d7dbbae11e9d24429559a2dc0}{Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Convert\+Empty\+Strings\+To\+Null}}, and \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a9d380a2362965d542af0a1423325bf3a}{Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Trim\+Strings}}.
+
+\Hypertarget{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a14011d2dff471c40e6668d94b387cfb4}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest@{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest}!transform@{transform}}
+\index{transform@{transform}!Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest@{Illuminate\textbackslash{}Foundation\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TransformsRequest}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_transforms_request_a14011d2dff471c40e6668d94b387cfb4} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Transforms\+Request\+::transform (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Transform the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_convert_empty_strings_to_null_a3e1126740a60d870ef0a4956c20f1755}{Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Convert\+Empty\+Strings\+To\+Null}}, and \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_http_1_1_middleware_1_1_trim_strings_a04909daff510c0a3a42d68f1fb9917d7}{Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Trim\+Strings}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Http/\+Middleware/Transforms\+Request.\+php\end{DoxyCompactItemize}

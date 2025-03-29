@@ -1,0 +1,276 @@
+\doxysection{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}Message\+Interface Interface Reference}
+\hypertarget{interface_psr_1_1_http_1_1_message_1_1_message_interface}{}\label{interface_psr_1_1_http_1_1_message_1_1_message_interface}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}}
+Inheritance diagram for Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}Message\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.905318cm]{interface_psr_1_1_http_1_1_message_1_1_message_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_af9eb3a7d44050ba1b4792c0332635121}{get\+Protocol\+Version}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_ae0fba5f0d505bc1d88bfabebbb31c61c}{with\+Protocol\+Version}} (string \$version)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_a510ab87eb5cce38a8bb4cbec8f3f7565}{get\+Headers}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_a4e841b9a91c717afea7ffd0645a18905}{has\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_ac8635b198b86934da52d8e13efb1eb8b}{get\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_a8196467162c8496a4a244dd1b4948a0c}{get\+Header\+Line}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_a518e298e6ed5f00e66f3aa2304354737}{with\+Header}} (string \$name, \$value)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_aaaa70dba5f8b3ed9006d576ae5aeb74a}{with\+Added\+Header}} (string \$name, \$value)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_a1c7ff8d96b16217ba8cb1ae54e797102}{without\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_a7d016c18bd79d98029cf538a59827421}{get\+Body}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_a45af72ddafb601548ea60d0ddd961e65}{with\+Body}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$body)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+HTTP messages consist of requests from a client to a server and responses from a server to a client. This interface defines the methods common to each.
+
+Messages are considered immutable; all methods that might change state MUST be implemented such that they retain the internal state of the current message and return an instance that contains the changed state.
+
+\doxylink{}{\href{http://www.ietf.org/rfc/rfc7231.txt}{\texttt{ http\+://www.\+ietf.\+org/rfc/rfc7231.\+txt}} }
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_message_interface_a7d016c18bd79d98029cf538a59827421}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}!getBody@{getBody}}
+\index{getBody@{getBody}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{getBody()}{getBody()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_message_interface_a7d016c18bd79d98029cf538a59827421} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Message\+Interface\+::get\+Body (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the body of the message.
+
+\begin{DoxyReturn}{Returns}
+Stream\+Interface Returns the body as a stream. 
+\end{DoxyReturn}
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_message_interface_ac8635b198b86934da52d8e13efb1eb8b}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}!getHeader@{getHeader}}
+\index{getHeader@{getHeader}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{getHeader()}{getHeader()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_message_interface_ac8635b198b86934da52d8e13efb1eb8b} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Message\+Interface\+::get\+Header (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Retrieves a message header value by the given case-\/insensitive name.
+
+This method returns an array of all the header values of the given case-\/insensitive header name.
+
+If the header does not appear in the message, this method MUST return an empty array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Case-\/insensitive header field name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} An array of string values as provided for the given header. If the header does not appear in the message, this method MUST return an empty array. 
+\end{DoxyReturn}
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_message_interface_a8196467162c8496a4a244dd1b4948a0c}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}!getHeaderLine@{getHeaderLine}}
+\index{getHeaderLine@{getHeaderLine}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{getHeaderLine()}{getHeaderLine()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_message_interface_a8196467162c8496a4a244dd1b4948a0c} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Message\+Interface\+::get\+Header\+Line (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Retrieves a comma-\/separated string of the values for a single header.
+
+This method returns all of the header values of the given case-\/insensitive header name as a string concatenated together using a comma.
+
+NOTE\+: Not all header values may be appropriately represented using comma concatenation. For such headers, use get\+Header() instead and supply your own delimiter when concatenating.
+
+If the header does not appear in the message, this method MUST return an empty string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Case-\/insensitive header field name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string A string of values as provided for the given header concatenated together using a comma. If the header does not appear in the message, this method MUST return an empty string. 
+\end{DoxyReturn}
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_message_interface_a510ab87eb5cce38a8bb4cbec8f3f7565}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}!getHeaders@{getHeaders}}
+\index{getHeaders@{getHeaders}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{getHeaders()}{getHeaders()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_message_interface_a510ab87eb5cce38a8bb4cbec8f3f7565} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Message\+Interface\+::get\+Headers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieves all message header values.
+
+The keys represent the header name as it will be sent over the wire, and each value is an array of strings associated with the header. \begin{DoxyVerb}// Represent the headers as a string
+foreach ($message->getHeaders() as $name => $values) {
+    echo $name . ": " . implode(", ", $values);
+}
+
+// Emit headers iteratively:
+foreach ($message->getHeaders() as $name => $values) {
+    foreach ($values as $value) {
+        header(sprintf('%s: %s', $name, $value), false);
+    }
+}
+\end{DoxyVerb}
+
+
+While header names are not case-\/sensitive, get\+Headers() will preserve the exact case in which headers were originally specified.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]}\mbox{[}\mbox{]} Returns an associative array of the message\textquotesingle{}s headers. Each key MUST be a header name, and each value MUST be an array of strings for that header. 
+\end{DoxyReturn}
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_message_interface_af9eb3a7d44050ba1b4792c0332635121}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}!getProtocolVersion@{getProtocolVersion}}
+\index{getProtocolVersion@{getProtocolVersion}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{getProtocolVersion()}{getProtocolVersion()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_message_interface_af9eb3a7d44050ba1b4792c0332635121} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Message\+Interface\+::get\+Protocol\+Version (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieves the HTTP protocol version as a string.
+
+The string MUST contain only the HTTP version number (e.\+g., "{}1.\+1"{}, "{}1.\+0"{}).
+
+\begin{DoxyReturn}{Returns}
+string HTTP protocol version. 
+\end{DoxyReturn}
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_message_interface_a4e841b9a91c717afea7ffd0645a18905}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}!hasHeader@{hasHeader}}
+\index{hasHeader@{hasHeader}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{hasHeader()}{hasHeader()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_message_interface_a4e841b9a91c717afea7ffd0645a18905} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Message\+Interface\+::has\+Header (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Checks if a header exists by the given case-\/insensitive name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Case-\/insensitive header field name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Returns true if any header names match the given header name using a case-\/insensitive string comparison. Returns false if no matching header name is found in the message. 
+\end{DoxyReturn}
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_message_interface_aaaa70dba5f8b3ed9006d576ae5aeb74a}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}!withAddedHeader@{withAddedHeader}}
+\index{withAddedHeader@{withAddedHeader}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{withAddedHeader()}{withAddedHeader()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_message_interface_aaaa70dba5f8b3ed9006d576ae5aeb74a} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Message\+Interface\+::with\+Added\+Header (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Return an instance with the specified header appended with the given value.
+
+Existing values for the specified header will be maintained. The new value(s) will be appended to the existing list. If the header did not exist previously, it will be added.
+
+This method MUST be implemented in such a way as to retain the immutability of the message, and MUST return an instance that has the new header and/or value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Case-\/insensitive header field name to add. \\
+\hline
+string | string\mbox{[}$\,$\mbox{]} & {\em \$value} & Header value(s). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception for invalid header names or values. \Hypertarget{interface_psr_1_1_http_1_1_message_1_1_message_interface_a45af72ddafb601548ea60d0ddd961e65}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}!withBody@{withBody}}
+\index{withBody@{withBody}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{withBody()}{withBody()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_message_interface_a45af72ddafb601548ea60d0ddd961e65} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Message\+Interface\+::with\+Body (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}}}]{\$body}{}\end{DoxyParamCaption})}
+
+Return an instance with the specified message body.
+
+The body MUST be a Stream\+Interface object.
+
+This method MUST be implemented in such a way as to retain the immutability of the message, and MUST return a new instance that has the new body stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Stream\+Interface & {\em \$body} & Body. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception When the body is not valid. \Hypertarget{interface_psr_1_1_http_1_1_message_1_1_message_interface_a518e298e6ed5f00e66f3aa2304354737}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}!withHeader@{withHeader}}
+\index{withHeader@{withHeader}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{withHeader()}{withHeader()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_message_interface_a518e298e6ed5f00e66f3aa2304354737} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Message\+Interface\+::with\+Header (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Return an instance with the provided value replacing the specified header.
+
+While header names are case-\/insensitive, the casing of the header will be preserved by this function, and returned from get\+Headers().
+
+This method MUST be implemented in such a way as to retain the immutability of the message, and MUST return an instance that has the new and/or updated header and value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Case-\/insensitive header field name. \\
+\hline
+string | string\mbox{[}$\,$\mbox{]} & {\em \$value} & Header value(s). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception for invalid header names or values. \Hypertarget{interface_psr_1_1_http_1_1_message_1_1_message_interface_a1c7ff8d96b16217ba8cb1ae54e797102}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}!withoutHeader@{withoutHeader}}
+\index{withoutHeader@{withoutHeader}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{withoutHeader()}{withoutHeader()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_message_interface_a1c7ff8d96b16217ba8cb1ae54e797102} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Message\+Interface\+::without\+Header (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Return an instance without the specified header.
+
+Header resolution MUST be done without case-\/sensitivity.
+
+This method MUST be implemented in such a way as to retain the immutability of the message, and MUST return an instance that removes the named header.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & Case-\/insensitive header field name to remove. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_message_interface_ae0fba5f0d505bc1d88bfabebbb31c61c}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}!withProtocolVersion@{withProtocolVersion}}
+\index{withProtocolVersion@{withProtocolVersion}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}MessageInterface}}
+\doxysubsubsection{\texorpdfstring{withProtocolVersion()}{withProtocolVersion()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_message_interface_ae0fba5f0d505bc1d88bfabebbb31c61c} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Message\+Interface\+::with\+Protocol\+Version (\begin{DoxyParamCaption}\item[{string}]{\$version}{}\end{DoxyParamCaption})}
+
+Return an instance with the specified HTTP protocol version.
+
+The version string MUST contain only the HTTP version number (e.\+g., "{}1.\+1"{}, "{}1.\+0"{}).
+
+This method MUST be implemented in such a way as to retain the immutability of the message, and MUST return an instance that has the new protocol version.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$version} & HTTP protocol version \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psr/http-\/message/src/Message\+Interface.\+php\end{DoxyCompactItemize}

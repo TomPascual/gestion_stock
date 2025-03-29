@@ -1,0 +1,340 @@
+\doxysection{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection Class Reference}
+\hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection}{}\label{class_illuminate_1_1_redis_1_1_connections_1_1_connection}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+Inheritance diagram for Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.456140cm]{class_illuminate_1_1_redis_1_1_connections_1_1_connection}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a8fc35b0477120d7c06b9ae8ffa114a28}{create\+Subscription}} (\$channels, Closure \$callback, \$method=\textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a456cc1e2f4247e5285281d246688a752}{subscribe}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_aa0a47e26b7f72916256b3d09539010f5}{funnel}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a19dda1e98104c12ab5d6acd659fea595}{throttle}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a7adfa7512f165d1ddcf6c91c2e679c17}{client}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a456cc1e2f4247e5285281d246688a752}{subscribe}} (\$channels, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a433a3557fbb66ecba459edd456ea3097}{psubscribe}} (\$channels, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a43cd15447d50cac0c1422aeace4ac56a}{command}} (\$method, array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a453d81d399b8040d325d17e5d90b2ce3}{listen}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a4ed45c462bdd97c13248a31de8f203b2}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a71291783a8f6ffb7997c66940db56c95}{set\+Name}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_ab65bf815c8017ccbd956d0540a1aa559}{get\+Event\+Dispatcher}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a8ba9e1c06420c4ea6324c2dbf70c7214}{set\+Event\+Dispatcher}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}} \$events)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a8cc47f36aa95212e687e6314b638e411}{unset\+Event\+Dispatcher}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a4ad6ab1d7f98da346a5d31a7811c911e}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_abe5130483c1f31a1bdd142e3d34a16f6}{parse\+Parameters\+For\+Event}} (array \$parameters)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_ab74927712804eab6f2f862f36987a09d}{event}} (\$event)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a4af9882ee06846c09e3ac9a800dae5f7}\label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a4af9882ee06846c09e3ac9a800dae5f7} 
+{\bfseries \$client}
+\item 
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a8b44c884ee20f62acb661c998df6244d}\label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a8b44c884ee20f62acb661c998df6244d} 
+{\bfseries \$name}
+\item 
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_ac3493a55bbbbe39cc1a63becdeb6d948}\label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_ac3493a55bbbbe39cc1a63becdeb6d948} 
+{\bfseries \$events}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a4ad6ab1d7f98da346a5d31a7811c911e}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a4ad6ab1d7f98da346a5d31a7811c911e} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection\+::\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Pass other method calls down to the underlying client.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_php_redis_connection_a3e21bf1abe1fdf647dc066359050f3af}{Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Php\+Redis\+Connection}}.
+
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a7adfa7512f165d1ddcf6c91c2e679c17}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}!client@{client}}
+\index{client@{client}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{client()}{client()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a7adfa7512f165d1ddcf6c91c2e679c17} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection\+::client (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the underlying Redis client.
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a43cd15447d50cac0c1422aeace4ac56a}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}!command@{command}}
+\index{command@{command}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{command()}{command()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a43cd15447d50cac0c1422aeace4ac56a} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection\+::command (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Run a command against the Redis database.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_php_redis_connection_abc0299ef182eb110b22e5f7adeb348cc}{Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Php\+Redis\+Connection}}.
+
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a8fc35b0477120d7c06b9ae8ffa114a28}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}!createSubscription@{createSubscription}}
+\index{createSubscription@{createSubscription}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{createSubscription()}{createSubscription()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a8fc35b0477120d7c06b9ae8ffa114a28} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection\+::create\+Subscription (\begin{DoxyParamCaption}\item[{}]{\$channels}{, }\item[{Closure}]{\$callback}{, }\item[{}]{\$method}{ = {\ttfamily \textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a456cc1e2f4247e5285281d246688a752}{subscribe}}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Subscribe to a set of given channels for messages.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$channels} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+string & {\em \$method} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_php_redis_connection_aa7c2457d6f1070f69962bbe05daa609a}{Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Php\+Redis\+Connection}}, and \mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_predis_connection_a5ce37192e98ea5de3ed09598537daf0e}{Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Predis\+Connection}}.
+
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_ab74927712804eab6f2f862f36987a09d}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}!event@{event}}
+\index{event@{event}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{event()}{event()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_ab74927712804eab6f2f862f36987a09d} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection\+::event (\begin{DoxyParamCaption}\item[{}]{\$event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Fire the given event if possible.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$event} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000064}{Deprecated}}]since Laravel 11.\+x \end{DoxyRefDesc}
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_aa0a47e26b7f72916256b3d09539010f5}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}!funnel@{funnel}}
+\index{funnel@{funnel}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{funnel()}{funnel()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_aa0a47e26b7f72916256b3d09539010f5} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection\+::funnel (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Funnel a callback for a maximum number of simultaneous executions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Limiters\textbackslash{}\+Concurrency\+Limiter\+Builder 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_ab65bf815c8017ccbd956d0540a1aa559}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}!getEventDispatcher@{getEventDispatcher}}
+\index{getEventDispatcher@{getEventDispatcher}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{getEventDispatcher()}{getEventDispatcher()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_ab65bf815c8017ccbd956d0540a1aa559} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection\+::get\+Event\+Dispatcher (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the event dispatcher used by the connection.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Events\textbackslash{}\+Dispatcher 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a4ed45c462bdd97c13248a31de8f203b2}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}!getName@{getName}}
+\index{getName@{getName}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a4ed45c462bdd97c13248a31de8f203b2} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the connection name.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a453d81d399b8040d325d17e5d90b2ce3}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}!listen@{listen}}
+\index{listen@{listen}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{listen()}{listen()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a453d81d399b8040d325d17e5d90b2ce3} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection\+::listen (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a Redis command listener with the connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_abe5130483c1f31a1bdd142e3d34a16f6}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}!parseParametersForEvent@{parseParametersForEvent}}
+\index{parseParametersForEvent@{parseParametersForEvent}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{parseParametersForEvent()}{parseParametersForEvent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_abe5130483c1f31a1bdd142e3d34a16f6} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection\+::parse\+Parameters\+For\+Event (\begin{DoxyParamCaption}\item[{array}]{\$parameters}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse the command\textquotesingle{}s parameters for event dispatching.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_predis_connection_a7ca04aeaff7cd17c4f923374eb2c2a96}{Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Predis\+Connection}}.
+
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a433a3557fbb66ecba459edd456ea3097}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}!psubscribe@{psubscribe}}
+\index{psubscribe@{psubscribe}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{psubscribe()}{psubscribe()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a433a3557fbb66ecba459edd456ea3097} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection\+::psubscribe (\begin{DoxyParamCaption}\item[{}]{\$channels}{, }\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Subscribe to a set of given channels with wildcards.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$channels} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_php_redis_connection_ae8a023ec97c0f60e190d5881f23d5382}{Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Php\+Redis\+Connection}}.
+
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a8ba9e1c06420c4ea6324c2dbf70c7214}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}!setEventDispatcher@{setEventDispatcher}}
+\index{setEventDispatcher@{setEventDispatcher}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{setEventDispatcher()}{setEventDispatcher()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a8ba9e1c06420c4ea6324c2dbf70c7214} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection\+::set\+Event\+Dispatcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}}}]{\$events}{}\end{DoxyParamCaption})}
+
+Set the event dispatcher instance on the connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Events\textbackslash{}\+Dispatcher & {\em \$events} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a71291783a8f6ffb7997c66940db56c95}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}!setName@{setName}}
+\index{setName@{setName}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a71291783a8f6ffb7997c66940db56c95} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection\+::set\+Name (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Set the connections name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a456cc1e2f4247e5285281d246688a752}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}!subscribe@{subscribe}}
+\index{subscribe@{subscribe}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{subscribe()}{subscribe()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a456cc1e2f4247e5285281d246688a752} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection\+::subscribe (\begin{DoxyParamCaption}\item[{}]{\$channels}{, }\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Subscribe to a set of given channels for messages.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$channels} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_php_redis_connection_a8f5ea41ac57a8c3c14d1557a7b337219}{Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Php\+Redis\+Connection}}.
+
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a19dda1e98104c12ab5d6acd659fea595}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}!throttle@{throttle}}
+\index{throttle@{throttle}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{throttle()}{throttle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a19dda1e98104c12ab5d6acd659fea595} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection\+::throttle (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Throttle a callback for a maximum number of executions over a given duration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Limiters\textbackslash{}\+Duration\+Limiter\+Builder 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a8cc47f36aa95212e687e6314b638e411}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}!unsetEventDispatcher@{unsetEventDispatcher}}
+\index{unsetEventDispatcher@{unsetEventDispatcher}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{unsetEventDispatcher()}{unsetEventDispatcher()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a8cc47f36aa95212e687e6314b638e411} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection\+::unset\+Event\+Dispatcher (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Unset the event dispatcher instance on the connection.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Redis/\+Connections/Connection.\+php\end{DoxyCompactItemize}

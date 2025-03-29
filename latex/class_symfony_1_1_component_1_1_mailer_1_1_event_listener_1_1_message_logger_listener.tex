@@ -1,0 +1,88 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Event\+Listener\textbackslash{}Message\+Logger\+Listener Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_logger_listener}{}\label{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_logger_listener}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageLoggerListener@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageLoggerListener}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Event\+Listener\textbackslash{}Message\+Logger\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.410579cm]{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_logger_listener}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_logger_listener_a90857694fdee091c0cd843680c749317}{reset}} ()
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_logger_listener_a62aae0b97617c1f617dc64be8a6b2781}\label{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_logger_listener_a62aae0b97617c1f617dc64be8a6b2781} 
+{\bfseries on\+Message} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_event_1_1_message_event}{Message\+Event}} \$event)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_logger_listener_aa42e67500cc46a9a909018b1d5276867}\label{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_logger_listener_aa42e67500cc46a9a909018b1d5276867} 
+{\bfseries get\+Events} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_logger_listener_a7289d667ef17c470cde023d20366fe58}{get\+Subscribed\+Events}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Logs Messages.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_logger_listener_a7289d667ef17c470cde023d20366fe58}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageLoggerListener@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageLoggerListener}!getSubscribedEvents@{getSubscribedEvents}}
+\index{getSubscribedEvents@{getSubscribedEvents}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageLoggerListener@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageLoggerListener}}
+\doxysubsubsection{\texorpdfstring{getSubscribedEvents()}{getSubscribedEvents()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_logger_listener_a7289d667ef17c470cde023d20366fe58} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Event\+Listener\textbackslash{}\+Message\+Logger\+Listener\+::get\+Subscribed\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an array of event names this subscriber wants to listen to.
+
+The array keys are event names and the value can be\+:
+
+
+\begin{DoxyItemize}
+\item The method name to call (priority defaults to 0)
+\item An array composed of the method name to call and the priority
+\item An array of arrays composed of the method names to call and respective priorities, or 0 if unset
+\end{DoxyItemize}
+
+For instance\+:
+
+
+\begin{DoxyItemize}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}method\+Name\textquotesingle{}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\textquotesingle{}method\+Name\textquotesingle{}, \$priority\mbox{]}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\mbox{[}\textquotesingle{}method\+Name1\textquotesingle{}, \$priority\mbox{]}, \mbox{[}\textquotesingle{}method\+Name2\textquotesingle{}\mbox{]}\mbox{]}\mbox{]}
+\end{DoxyItemize}
+
+The code must not depend on runtime state as it will only be called at compile time. All logic depending on runtime state must be put into the individual methods handling the events.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, string\texorpdfstring{$\vert$}{|}array\{0\+: string, 1\+: int\}\texorpdfstring{$\vert$}{|}list\texorpdfstring{$<$}{<}array\{0\+: string, 1?\+: int\}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface_a1f40b93f2c531f690bb4cd5bc5764c73}{Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event\+Subscriber\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_logger_listener_a90857694fdee091c0cd843680c749317}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageLoggerListener@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageLoggerListener}!reset@{reset}}
+\index{reset@{reset}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageLoggerListener@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageLoggerListener}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_logger_listener_a90857694fdee091c0cd843680c749317} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Event\+Listener\textbackslash{}\+Message\+Logger\+Listener\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_service_1_1_reset_interface_a9f973c7897c549bbd6547aa4487e6872}{Symfony\textbackslash{}\+Contracts\textbackslash{}\+Service\textbackslash{}\+Reset\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/mailer/\+Event\+Listener/Message\+Logger\+Listener.\+php\end{DoxyCompactItemize}

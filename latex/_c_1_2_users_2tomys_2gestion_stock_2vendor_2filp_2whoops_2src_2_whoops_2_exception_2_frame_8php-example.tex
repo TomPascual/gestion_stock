@@ -1,0 +1,214 @@
+\doxysection{C\+:/\+Users/tomys/gestion\+\_\+stock/vendor/filp/whoops/src/\+Whoops/\+Exception/\+Frame.\+php}
+\hypertarget{_c_1_2_users_2tomys_2gestion_stock_2vendor_2filp_2whoops_2src_2_whoops_2_exception_2_frame_8php-example}{}\label{_c_1_2_users_2tomys_2gestion_stock_2vendor_2filp_2whoops_2src_2_whoops_2_exception_2_frame_8php-example}Returns the contents of the file for this frame as an array of lines, and optionally as a clamped range of lines.
+
+NOTE\+: lines are 0-\/indexed
+
+Get all lines for this file \$frame-\/\texorpdfstring{$>$}{>}get\+File\+Lines(); // =\texorpdfstring{$>$}{>} array( 0 =\texorpdfstring{$>$}{>} \textquotesingle{}\texorpdfstring{$<$}{<}?php\textquotesingle{}, 1 =\texorpdfstring{$>$}{>} \textquotesingle{}...\textquotesingle{}, ...)
+
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{namespace\ }Whoops\(\backslash\)Exception;}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ InvalidArgumentException;}
+\DoxyCodeLine{use\ Serializable;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class\ }\mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame}{Frame}}\ \textcolor{keyword}{implements}\ Serializable}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \$frame;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \$fileContentsCache;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \$comments\ =\ [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \$application;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \_\_construct(array\ \$frame)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>frame\ =\ \$frame;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_ac81399335254f56eb4a00d8aa6357813}{getFile}}(\$shortened\ =\ \textcolor{keyword}{false})}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (empty(\$this-\/>frame[\textcolor{stringliteral}{'file'}]))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$file\ =\ \$this-\/>frame[\textcolor{stringliteral}{'file'}];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Check\ if\ this\ frame\ occurred\ within\ an\ eval().}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ @todo:\ This\ can\ be\ made\ more\ reliable\ by\ checking\ if\ we've\ entered}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ eval()\ in\ a\ previous\ trace,\ but\ will\ need\ some\ more\ work\ on\ the\ upper}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ trace\ collector(s).}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (preg\_match(\textcolor{stringliteral}{'/\string^(.*)\(\backslash\)((\(\backslash\)d+)\(\backslash\))\ :\ (?:eval\(\backslash\)(\(\backslash\))\(\backslash\)'d|assert)\ code\$/'},\ \$file,\ \$matches))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$file\ =\ \$this-\/>frame[\textcolor{stringliteral}{'file'}]\ =\ \$matches[1];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>frame[\textcolor{stringliteral}{'line'}]\ =\ (int)\ \$matches[2];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$shortened\ \&\&\ is\_string(\$file))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Replace\ the\ part\ of\ the\ path\ that\ all\ frames\ have\ in\ common,\ and\ add\ 'soft\ hyphens'\ for\ smoother\ line-\/breaks.}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$dirname\ =\ dirname(dirname(dirname(dirname(dirname(dirname(\_\_DIR\_\_))))));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$dirname\ !==\ \textcolor{charliteral}{'/'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$file\ =\ str\_replace(\$dirname,\ \textcolor{stringliteral}{"{}\&hellip;"{}},\ \$file);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$file\ =\ str\_replace(\textcolor{stringliteral}{"{}/"{}},\ \textcolor{stringliteral}{"{}/\&shy;"{}},\ \$file);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$file;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_a7f631aa7dfee0a071c88911cca8f82d6}{getLine}}()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ isset(\$this-\/>frame[\textcolor{stringliteral}{'line'}])\ ?\ \$this-\/>frame[\textcolor{stringliteral}{'line'}]\ :\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_abf7097adffa69ab07e68c3d1bbe424ce}{getClass}}()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ isset(\$this-\/>frame[\textcolor{stringliteral}{'class'}])\ ?\ \$this-\/>frame[\textcolor{stringliteral}{'class'}]\ :\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_ad8109aba74f870d27e1bf66ab87dac29}{getFunction}}()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ isset(\$this-\/>frame[\textcolor{stringliteral}{'function'}])\ ?\ \$this-\/>frame[\textcolor{stringliteral}{'function'}]\ :\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_adc6d3a08fe75cb6fc1e2fa3ab1525091}{getArgs}}()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ isset(\$this-\/>frame[\textcolor{stringliteral}{'args'}])\ ?\ (array)\ \$this-\/>frame[\textcolor{stringliteral}{'args'}]\ :\ [];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_a947fd2c4cfeef880bc7a1a3beb3b061f}{getFileContents}}()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$this-\/>fileContentsCache\ ===\ \textcolor{keyword}{null}\ \&\&\ \$filePath\ =\ \$this-\/>\mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_ac81399335254f56eb4a00d8aa6357813}{getFile}}())\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Leave\ the\ stage\ early\ when\ 'Unknown'\ or\ '[internal]'\ is\ passed}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ this\ would\ otherwise\ raise\ an\ exception\ when}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ open\_basedir\ is\ enabled.}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$filePath\ ===\ \textcolor{stringliteral}{"{}Unknown"{}}\ ||\ \$filePath\ ===\ \textcolor{stringliteral}{'[internal]'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>fileContentsCache\ =\ file\_get\_contents(\$filePath);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (ErrorException\ \$exception)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Internal\ file\ paths\ of\ PHP\ extensions\ cannot\ be\ opened}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>fileContentsCache;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_a5437b44502ae67cf709eb623e26c59a7}{addComment}}(\$comment,\ \$context\ =\ \textcolor{stringliteral}{'global'})}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>comments[]\ =\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'comment'}\ =>\ \$comment,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'context'}\ =>\ \$context,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_abc72982ffcaee954da3826612c46d3aa}{getComments}}(\$filter\ =\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$comments\ =\ \$this-\/>comments;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$filter\ !==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$comments\ =\ array\_filter(\$comments,\ \textcolor{keyword}{function}\ (\$c)\ use\ (\$filter)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$c[\textcolor{stringliteral}{'context'}]\ ==\ \$filter;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$comments;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_ae00e665246de015afb0d57d1c8bccd54}{getRawFrame}}()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>frame;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ getFileLines(\$start\ =\ 0,\ \$length\ =\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{null}\ !==\ (\$contents\ =\ \$this-\/>\mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_a947fd2c4cfeef880bc7a1a3beb3b061f}{getFileContents}}()))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$lines\ =\ explode(\textcolor{stringliteral}{"{}\(\backslash\)n"{}},\ \$contents);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Get\ a\ subset\ of\ lines\ from\ \$start\ to\ \$end}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$length\ !==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$start\ \ =\ (int)\ \$start;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$length\ =\ (int)\ \$length;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$start\ <\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$start\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$length\ <=\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ InvalidArgumentException(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\(\backslash\)\$length(\$length)\ cannot\ be\ lower\ or\ equal\ to\ 0"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$lines\ =\ array\_slice(\$lines,\ \$start,\ \$length,\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$lines;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_a83821842b50c4618042701ad64642146}{serialize}}()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$frame\ =\ \$this-\/>frame;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!empty(\$this-\/>comments))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$frame[\textcolor{stringliteral}{'\_comments'}]\ =\ \$this-\/>comments;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_a83821842b50c4618042701ad64642146}{serialize}}(\$frame);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \_\_serialize()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$frame\ =\ \$this-\/>frame;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!empty(\$this-\/>comments))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$frame[\textcolor{stringliteral}{'\_comments'}]\ =\ \$this-\/>comments;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$frame;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_acceb00d8fbf9f201a008512a771c20e4}{unserialize}}(\$serializedFrame)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$frame\ =\ \mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_acceb00d8fbf9f201a008512a771c20e4}{unserialize}}(\$serializedFrame);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!empty(\$frame[\textcolor{stringliteral}{'\_comments'}]))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>comments\ =\ \$frame[\textcolor{stringliteral}{'\_comments'}];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ unset(\$frame[\textcolor{stringliteral}{'\_comments'}]);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>frame\ =\ \$frame;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \_\_unserialize(\$frame)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!empty(\$frame[\textcolor{stringliteral}{'\_comments'}]))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>comments\ =\ \$frame[\textcolor{stringliteral}{'\_comments'}];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ unset(\$frame[\textcolor{stringliteral}{'\_comments'}]);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>frame\ =\ \$frame;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_aa9de9a9b12a55b59c6f5dd96fd549513}{equals}}(Frame\ \$frame)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\$this-\/>\mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_ac81399335254f56eb4a00d8aa6357813}{getFile}}()\ ||\ \$this-\/>\mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_ac81399335254f56eb4a00d8aa6357813}{getFile}}()\ ===\ \textcolor{stringliteral}{'Unknown'}\ ||\ !\$this-\/>\mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_a7f631aa7dfee0a071c88911cca8f82d6}{getLine}}())\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$frame-\/>getFile()\ ===\ \$this-\/>\mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_ac81399335254f56eb4a00d8aa6357813}{getFile}}()\ \&\&\ \$frame-\/>getLine()\ ===\ \$this-\/>\mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_a7f631aa7dfee0a071c88911cca8f82d6}{getLine}}();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_a892290e4ee471b4da781720c6523cede}{isApplication}}()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>application;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_whoops_1_1_exception_1_1_frame_a0d421d9416454fcf38ecc95aa1c4c7ea}{setApplication}}(\$application)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>application\ =\ \$application;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCodeInclude}
+ 

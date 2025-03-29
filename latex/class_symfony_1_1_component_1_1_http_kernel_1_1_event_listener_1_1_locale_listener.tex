@@ -1,0 +1,79 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Event\+Listener\textbackslash{}Locale\+Listener Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_locale_listener}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_locale_listener}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}LocaleListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}LocaleListener}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Event\+Listener\textbackslash{}Locale\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_locale_listener}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_locale_listener_a22043387711ee704476d8279c9d63ab0}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_locale_listener_a22043387711ee704476d8279c9d63ab0} 
+{\bfseries \+\_\+\+\_\+construct} (private \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack}{Request\+Stack}} \$request\+Stack, private string \$default\+Locale=\textquotesingle{}en\textquotesingle{}, private ?\mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_request_context_aware_interface}{Request\+Context\+Aware\+Interface}} \$router=null, private bool \$use\+Accept\+Language\+Header=false, private array \$enabled\+Locales=\mbox{[}$\,$\mbox{]},)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_locale_listener_abb085f7c64aa0c075314dc173c947bcc}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_locale_listener_abb085f7c64aa0c075314dc173c947bcc} 
+{\bfseries set\+Default\+Locale} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event}{Kernel\+Event}} \$event)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_locale_listener_ab7ab15a93a919212195106ac334ef768}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_locale_listener_ab7ab15a93a919212195106ac334ef768} 
+{\bfseries on\+Kernel\+Request} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_request_event}{Request\+Event}} \$event)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_locale_listener_aa71f17bb96abe645fed127e9e2688b91}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_locale_listener_aa71f17bb96abe645fed127e9e2688b91} 
+{\bfseries on\+Kernel\+Finish\+Request} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_finish_request_event}{Finish\+Request\+Event}} \$event)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_locale_listener_a430465fd882db0cf59b47617ff4587c9}{get\+Subscribed\+Events}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Initializes the locale based on the current request.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}}
+\end{DoxyAuthor}
+@final 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_locale_listener_a430465fd882db0cf59b47617ff4587c9}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}LocaleListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}LocaleListener}!getSubscribedEvents@{getSubscribedEvents}}
+\index{getSubscribedEvents@{getSubscribedEvents}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}LocaleListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}LocaleListener}}
+\doxysubsubsection{\texorpdfstring{getSubscribedEvents()}{getSubscribedEvents()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_locale_listener_a430465fd882db0cf59b47617ff4587c9} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Locale\+Listener\+::get\+Subscribed\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an array of event names this subscriber wants to listen to.
+
+The array keys are event names and the value can be\+:
+
+
+\begin{DoxyItemize}
+\item The method name to call (priority defaults to 0)
+\item An array composed of the method name to call and the priority
+\item An array of arrays composed of the method names to call and respective priorities, or 0 if unset
+\end{DoxyItemize}
+
+For instance\+:
+
+
+\begin{DoxyItemize}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}method\+Name\textquotesingle{}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\textquotesingle{}method\+Name\textquotesingle{}, \$priority\mbox{]}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\mbox{[}\textquotesingle{}method\+Name1\textquotesingle{}, \$priority\mbox{]}, \mbox{[}\textquotesingle{}method\+Name2\textquotesingle{}\mbox{]}\mbox{]}\mbox{]}
+\end{DoxyItemize}
+
+The code must not depend on runtime state as it will only be called at compile time. All logic depending on runtime state must be put into the individual methods handling the events.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, string\texorpdfstring{$\vert$}{|}array\{0\+: string, 1\+: int\}\texorpdfstring{$\vert$}{|}list\texorpdfstring{$<$}{<}array\{0\+: string, 1?\+: int\}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface_a1f40b93f2c531f690bb4cd5bc5764c73}{Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event\+Subscriber\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/kernel/\+Event\+Listener/Locale\+Listener.\+php\end{DoxyCompactItemize}

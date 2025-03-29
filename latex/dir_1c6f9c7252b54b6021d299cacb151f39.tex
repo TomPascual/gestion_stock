@@ -1,0 +1,132 @@
+\doxysection{vendor/nesbot/carbon Directory Reference}
+\hypertarget{dir_1c6f9c7252b54b6021d299cacb151f39}{}\label{dir_1c6f9c7252b54b6021d299cacb151f39}\index{vendor/nesbot/carbon Directory Reference@{vendor/nesbot/carbon Directory Reference}}
+
+
+\doxysubsection{Detailed Description}
+\href{https://packagist.org/packages/nesbot/carbon}{\texttt{ }} \href{https://packagist.org/packages/nesbot/carbon}{\texttt{ }} \href{https://github.com/CarbonPHP/carbon/actions}{\texttt{ }} \href{https://codecov.io/github/CarbonPHP/carbon/actions?branch=master}{\texttt{ }}
+
+An international PHP extension for Date\+Time. \href{https://carbon.nesbot.com}{\texttt{ https\+://carbon.\+nesbot.\+com}}
+
+\begin{DoxyNote}{Note}
+We\textquotesingle{}re migrating the repository from \href{https://github.com/briannesbitt/Carbon}{\texttt{ briannesbitt/\+Carbon}} to \href{https://github.com/CarbonPHP/carbon}{\texttt{ Carbon\+PHP/carbon}}, which means if you\textquotesingle{}re looking specific issues/pull-\/requests, you may have to search both. No other impact as code on both will be kept up to date.
+\end{DoxyNote}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_carbon}{Carbon\(\backslash\)Carbon}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{printf(\textcolor{stringliteral}{"{}Right\ now\ is\ \%s"{}},\ \mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a9ec1aeae2b196df5cd267723b862b3a7}{Carbon::now}}()-\/>toDateTimeString());}
+\DoxyCodeLine{printf(\textcolor{stringliteral}{"{}Right\ now\ in\ Vancouver\ is\ \%s"{}},\ \mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a9ec1aeae2b196df5cd267723b862b3a7}{Carbon::now}}(\textcolor{stringliteral}{'America/Vancouver'}));\ \ \textcolor{comment}{//implicit\ \_\_toString()}}
+\DoxyCodeLine{\$tomorrow\ =\ \mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a9ec1aeae2b196df5cd267723b862b3a7}{Carbon::now}}()-\/>addDay();}
+\DoxyCodeLine{\$lastWeek\ =\ \mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a9ec1aeae2b196df5cd267723b862b3a7}{Carbon::now}}()-\/>subWeek();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$officialDate\ =\ \mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a9ec1aeae2b196df5cd267723b862b3a7}{Carbon::now}}()-\/>toRfc2822String();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$howOldAmI\ =\ Carbon::createFromDate(1975,\ 5,\ 21)-\/>age;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$noonTodayLondonTime\ =\ Carbon::createFromTime(12,\ 0,\ 0,\ \textcolor{stringliteral}{'Europe/London'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$internetWillBlowUpOn\ =\ Carbon::create(2038,\ 01,\ 19,\ 3,\ 14,\ 7,\ \textcolor{stringliteral}{'GMT'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Don't\ really\ want\ this\ to\ happen\ so\ mock\ now}}
+\DoxyCodeLine{Carbon::setTestNow(Carbon::createFromDate(2000,\ 1,\ 1));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ comparisons\ are\ always\ done\ in\ UTC}}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (\mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a9ec1aeae2b196df5cd267723b862b3a7}{Carbon::now}}()-\/>gte(\$internetWillBlowUpOn))\ \{}
+\DoxyCodeLine{\ \ \ \ die();}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Phew!\ Return\ to\ normal\ behaviour}}
+\DoxyCodeLine{Carbon::setTestNow();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (\mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a9ec1aeae2b196df5cd267723b862b3a7}{Carbon::now}}()-\/>isWeekend())\ \{}
+\DoxyCodeLine{\ \ \ \ echo\ \textcolor{stringliteral}{'Party!'};}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\textcolor{comment}{//\ Over\ 200\ languages\ (and\ over\ 500\ regional\ variants)\ supported:}}
+\DoxyCodeLine{echo\ \mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a9ec1aeae2b196df5cd267723b862b3a7}{Carbon::now}}()-\/>subMinutes(2)-\/>diffForHumans();\ \textcolor{comment}{//\ '2\ minutes\ ago'}}
+\DoxyCodeLine{echo\ \mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a9ec1aeae2b196df5cd267723b862b3a7}{Carbon::now}}()-\/>subMinutes(2)-\/>locale(\textcolor{stringliteral}{'zh\_CN'})-\/>diffForHumans();\ \textcolor{comment}{//\ '2分钟前'}}
+\DoxyCodeLine{echo\ Carbon::parse(\textcolor{stringliteral}{'2019-\/07-\/23\ 14:51'})-\/>isoFormat(\textcolor{stringliteral}{'LLLL'});\ \textcolor{comment}{//\ 'Tuesday,\ July\ 23,\ 2019\ 2:51\ PM'}}
+\DoxyCodeLine{echo\ Carbon::parse(\textcolor{stringliteral}{'2019-\/07-\/23\ 14:51'})-\/>locale(\textcolor{stringliteral}{'fr\_FR'})-\/>isoFormat(\textcolor{stringliteral}{'LLLL'});\ \textcolor{comment}{//\ 'mardi\ 23\ juillet\ 2019\ 14:51'}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ ...\ but\ also\ does\ 'from\ now',\ 'after'\ and\ 'before'}}
+\DoxyCodeLine{\textcolor{comment}{//\ rolling\ up\ to\ seconds,\ minutes,\ hours,\ days,\ months,\ years}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$daysSinceEpoch\ =\ Carbon::createFromTimestamp(0)-\/>diffInDays();\ \textcolor{comment}{//\ something\ such\ as:}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 19817.6771}}
+\DoxyCodeLine{\$daysUntilInternetBlowUp\ =\ \$internetWillBlowUpOn-\/>diffInDays();\ \textcolor{comment}{//\ Negative\ value\ since\ it's\ in\ the\ future:}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ -\/5037.4560}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Without\ parameter,\ difference\ is\ calculated\ from\ now,\ but\ doing\ \$a-\/>diff(\$b)}}
+\DoxyCodeLine{\textcolor{comment}{//\ it\ will\ count\ time\ from\ \$a\ to\ \$b.}}
+\DoxyCodeLine{Carbon::createFromTimestamp(0)-\/>diffInDays(\$internetWillBlowUpOn);\ \textcolor{comment}{//\ 24855.1348}}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md1293}{}\doxysubsection{\texorpdfstring{Installation}{Installation}}\label{readme.md_autotoc_md1293}
+\hypertarget{readme.md_autotoc_md1294}{}\doxysubsubsection{\texorpdfstring{With Composer}{With Composer}}\label{readme.md_autotoc_md1294}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ composer\ require\ nesbot/carbon}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ "{}require"{}:\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ "{}nesbot/carbon"{}:\ "{}\string^3"{}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{require\ \textcolor{stringliteral}{'vendor/autoload.php'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_carbon}{Carbon\(\backslash\)Carbon}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{printf(\textcolor{stringliteral}{"{}Now:\ \%s"{}},\ \mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a9ec1aeae2b196df5cd267723b862b3a7}{Carbon::now}}());}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md1295}{}\doxysubsubsection{\texorpdfstring{Without Composer}{Without Composer}}\label{readme.md_autotoc_md1295}
+Why are you not using \href{https://getcomposer.org/}{\texttt{ composer}}? Download the Carbon \href{https://github.com/briannesbitt/Carbon/releases}{\texttt{ latest release}} and put the contents of the ZIP archive into a directory in your project. Then require the file {\ttfamily autoload.\+php} to get all classes and dependencies loaded on need.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{require\ \textcolor{stringliteral}{'path-\/to-\/Carbon-\/directory/autoload.php'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_carbon}{Carbon\(\backslash\)Carbon}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{printf(\textcolor{stringliteral}{"{}Now:\ \%s"{}},\ \mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a9ec1aeae2b196df5cd267723b862b3a7}{Carbon::now}}());}
+
+\end{DoxyCode}
+\hypertarget{readme.md_autotoc_md1296}{}\doxysubsection{\texorpdfstring{Documentation}{Documentation}}\label{readme.md_autotoc_md1296}
+\href{https://carbon.nesbot.com/docs}{\texttt{ https\+://carbon.\+nesbot.\+com/docs}}\hypertarget{readme.md_autotoc_md1297}{}\doxysubsection{\texorpdfstring{Security contact information}{Security contact information}}\label{readme.md_autotoc_md1297}
+To report a security vulnerability, please use the \href{https://tidelift.com/security}{\texttt{ Tidelift security contact}}. Tidelift will coordinate the fix and disclosure.\hypertarget{readme.md_autotoc_md1298}{}\doxysubsection{\texorpdfstring{Credits}{Credits}}\label{readme.md_autotoc_md1298}
+\hypertarget{readme.md_autotoc_md1299}{}\doxysubsubsection{\texorpdfstring{Contributors}{Contributors}}\label{readme.md_autotoc_md1299}
+This project exists thanks to all the people who contribute.
+
+\href{https://github.com/briannesbitt/Carbon/graphs/contributors}{\texttt{ }}\hypertarget{readme.md_autotoc_md1300}{}\doxysubsubsection{\texorpdfstring{Translators}{Translators}}\label{readme.md_autotoc_md1300}
+\href{https://carbon.nesbot.com/contribute/translators/}{\texttt{ Thanks to people helping us to translate Carbon in so many languages}}\hypertarget{readme.md_autotoc_md1301}{}\doxysubsubsection{\texorpdfstring{Sponsors}{Sponsors}}\label{readme.md_autotoc_md1301}
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website.
+
+\href{https://777.ua/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://nogamstopcasinos.org.uk/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://onlinecasinoskiwi.co.nz/real-money-pokies/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://nongamstopbookies.com/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://casinohex.org/canada/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://route4me.com/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://betking.com.ua/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://www.stjamestheatre.co.uk/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://westnews.com.ua/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://sportarena.com/casino/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://y-k.com.ua/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://www.probukmacher.pl?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://onlinecasinosgr.com/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://inkedin.com?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://uk.onlinecasino.in.ua/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://onlinecasinosspelen.com?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://guidebook.betwinner.com/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://casino.ua/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://payid-gambler.net/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://betking.com.ua/sports-book/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://legal-casino.net/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://casino-portugal.pt/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://www.sportsbookreviewsonline.com/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://www.nongamstopbets.com/casinos-not-on-gamstop/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://tidelift.com/subscription/pkg/packagist-nesbot-carbon?utm_source=packagist-nesbot-carbon&amp;utm_medium=referral&amp;utm_campaign=docs}{\texttt{ }} \href{https://vegas.ua?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://wildwinz.com?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://slotscity.ua/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://onlinecasino.in.ua/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://betking.com.ua/games/all-slots/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://www.c19.cl/resenas/casino-pin-up/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://www.slotozilla.com/nz/free-spins}{\texttt{ }} \href{https://casinononaams.online?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://creditzaim.com.ua/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://rdtaxcredits.uk?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }} \href{https://www.kompozisyontv.com.tr/?utm_source=opencollective&amp;utm_medium=github&amp;utm_campaign=Carbon}{\texttt{ }}
+
+\mbox{[}\href{https://carbon.nesbot.com/\#sponsors}{\texttt{ See all}}\mbox{]} \mbox{[}\href{https://opencollective.com/Carbon\#sponsor}{\texttt{ Become a sponsor via Open\+Collective}}\mbox{]}
+
+\href{https://github.com/ssddanbrown}{\texttt{ }}
+
+\mbox{[}\href{https://github.com/sponsors/kylekatarnls}{\texttt{ Become a sponsor via Git\+Hub}}\mbox{]}\hypertarget{readme.md_autotoc_md1302}{}\doxysubsubsection{\texorpdfstring{Backers}{Backers}}\label{readme.md_autotoc_md1302}
+Thank you to all our backers! 🙏
+
+\href{https://opencollective.com/Carbon\#backers}{\texttt{ }}
+
+\mbox{[}\href{https://opencollective.com/Carbon\#backer}{\texttt{ Become a backer}}\mbox{]}\hypertarget{readme.md_autotoc_md1303}{}\doxysubsection{\texorpdfstring{Carbon for enterprise}{Carbon for enterprise}}\label{readme.md_autotoc_md1303}
+Available as part of the Tidelift Subscription.
+
+The maintainers of {\ttfamily Carbon} and thousands of other packages are working with Tidelift to deliver commercial support and maintenance for the open source dependencies you use to build your applications. Save time, reduce risk, and improve code health, while paying the maintainers of the exact dependencies you use. \href{https://tidelift.com/subscription/pkg/packagist-nesbot-carbon?utm_source=packagist-nesbot-carbon&utm_medium=referral&utm_campaign=enterprise&utm_term=repo}{\texttt{ Learn more.}} 

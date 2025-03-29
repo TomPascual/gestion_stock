@@ -1,0 +1,96 @@
+\doxysection{Psy\textbackslash{}Version\+Updater\textbackslash{}Installer Class Reference}
+\hypertarget{class_psy_1_1_version_updater_1_1_installer}{}\label{class_psy_1_1_version_updater_1_1_installer}\index{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_psy_1_1_version_updater_1_1_installer_a23e16a9e73c4e797cd7a06abc5dcc519}\label{class_psy_1_1_version_updater_1_1_installer_a23e16a9e73c4e797cd7a06abc5dcc519} 
+{\bfseries \+\_\+\+\_\+construct} (?string \$temp\+Directory=null)
+\item 
+\mbox{\hyperlink{class_psy_1_1_version_updater_1_1_installer_ad4e4ba05f739951bf8d621df8e390e9f}{get\+Temp\+Directory}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_version_updater_1_1_installer_a14202900508c0cbb9e29424c5dd90daf}{is\+Install\+Location\+Writable}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_version_updater_1_1_installer_adcf6094e0fff1e838d58efccde101698}{is\+Temp\+Directory\+Writable}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_version_updater_1_1_installer_aad760088e39a43d41c77a807867a9722}{is\+Valid\+Source}} (string \$source\+Archive)
+\item 
+\mbox{\hyperlink{class_psy_1_1_version_updater_1_1_installer_ad9ba810b5cb7d082cfc73e69f358daff}{install}} (string \$source\+Archive)
+\item 
+\mbox{\hyperlink{class_psy_1_1_version_updater_1_1_installer_af1b074917f5949e169fbd99d07293bb0}{create\+Backup}} (string \$version)
+\item 
+\mbox{\hyperlink{class_psy_1_1_version_updater_1_1_installer_ad72ad985705ebab9bc3ca5c203e38b7d}{restore\+From\+Backup}} (string \$version)
+\item 
+\mbox{\hyperlink{class_psy_1_1_version_updater_1_1_installer_ac1b7d3a183539d2d47cd9c698fbb4100}{get\+Backup\+Filename}} (string \$version)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_psy_1_1_version_updater_1_1_installer_ada619be689ca4f84ec895c2fc5b7ae1b}\label{class_psy_1_1_version_updater_1_1_installer_ada619be689ca4f84ec895c2fc5b7ae1b} 
+{\bfseries \$install\+Location}
+\item 
+\Hypertarget{class_psy_1_1_version_updater_1_1_installer_acf173cbf5f7e1cc0e8241e7270a5a792}\label{class_psy_1_1_version_updater_1_1_installer_acf173cbf5f7e1cc0e8241e7270a5a792} 
+{\bfseries \$temp\+Directory}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_version_updater_1_1_installer_af1b074917f5949e169fbd99d07293bb0}\index{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}!createBackup@{createBackup}}
+\index{createBackup@{createBackup}!Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}}
+\doxysubsubsection{\texorpdfstring{createBackup()}{createBackup()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_version_updater_1_1_installer_af1b074917f5949e169fbd99d07293bb0} 
+Psy\textbackslash{}\+Version\+Updater\textbackslash{}\+Installer\+::create\+Backup (\begin{DoxyParamCaption}\item[{string}]{\$version}{}\end{DoxyParamCaption})}
+
+Create a backup of the currently installed Psy\+SH phar in the temporary directory with a version number postfix. \Hypertarget{class_psy_1_1_version_updater_1_1_installer_ac1b7d3a183539d2d47cd9c698fbb4100}\index{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}!getBackupFilename@{getBackupFilename}}
+\index{getBackupFilename@{getBackupFilename}!Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}}
+\doxysubsubsection{\texorpdfstring{getBackupFilename()}{getBackupFilename()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_version_updater_1_1_installer_ac1b7d3a183539d2d47cd9c698fbb4100} 
+Psy\textbackslash{}\+Version\+Updater\textbackslash{}\+Installer\+::get\+Backup\+Filename (\begin{DoxyParamCaption}\item[{string}]{\$version}{}\end{DoxyParamCaption})}
+
+Get the full path for the backup target file location. \Hypertarget{class_psy_1_1_version_updater_1_1_installer_ad4e4ba05f739951bf8d621df8e390e9f}\index{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}!getTempDirectory@{getTempDirectory}}
+\index{getTempDirectory@{getTempDirectory}!Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}}
+\doxysubsubsection{\texorpdfstring{getTempDirectory()}{getTempDirectory()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_version_updater_1_1_installer_ad4e4ba05f739951bf8d621df8e390e9f} 
+Psy\textbackslash{}\+Version\+Updater\textbackslash{}\+Installer\+::get\+Temp\+Directory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Public to allow the Downloader to use the temporary directory if it\textquotesingle{}s been set. \Hypertarget{class_psy_1_1_version_updater_1_1_installer_ad9ba810b5cb7d082cfc73e69f358daff}\index{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}!install@{install}}
+\index{install@{install}!Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}}
+\doxysubsubsection{\texorpdfstring{install()}{install()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_version_updater_1_1_installer_ad9ba810b5cb7d082cfc73e69f358daff} 
+Psy\textbackslash{}\+Version\+Updater\textbackslash{}\+Installer\+::install (\begin{DoxyParamCaption}\item[{string}]{\$source\+Archive}{}\end{DoxyParamCaption})}
+
+Extract the "{}psysh"{} phar from the archive and move it, replacing the currently installed phar. \Hypertarget{class_psy_1_1_version_updater_1_1_installer_a14202900508c0cbb9e29424c5dd90daf}\index{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}!isInstallLocationWritable@{isInstallLocationWritable}}
+\index{isInstallLocationWritable@{isInstallLocationWritable}!Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}}
+\doxysubsubsection{\texorpdfstring{isInstallLocationWritable()}{isInstallLocationWritable()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_version_updater_1_1_installer_a14202900508c0cbb9e29424c5dd90daf} 
+Psy\textbackslash{}\+Version\+Updater\textbackslash{}\+Installer\+::is\+Install\+Location\+Writable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Verify the currently installed Psy\+SH phar is writable so it can be replaced. \Hypertarget{class_psy_1_1_version_updater_1_1_installer_adcf6094e0fff1e838d58efccde101698}\index{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}!isTempDirectoryWritable@{isTempDirectoryWritable}}
+\index{isTempDirectoryWritable@{isTempDirectoryWritable}!Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}}
+\doxysubsubsection{\texorpdfstring{isTempDirectoryWritable()}{isTempDirectoryWritable()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_version_updater_1_1_installer_adcf6094e0fff1e838d58efccde101698} 
+Psy\textbackslash{}\+Version\+Updater\textbackslash{}\+Installer\+::is\+Temp\+Directory\+Writable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Verify the temporary directory is writable so downloads and backups can be saved there. \Hypertarget{class_psy_1_1_version_updater_1_1_installer_aad760088e39a43d41c77a807867a9722}\index{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}!isValidSource@{isValidSource}}
+\index{isValidSource@{isValidSource}!Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}}
+\doxysubsubsection{\texorpdfstring{isValidSource()}{isValidSource()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_version_updater_1_1_installer_aad760088e39a43d41c77a807867a9722} 
+Psy\textbackslash{}\+Version\+Updater\textbackslash{}\+Installer\+::is\+Valid\+Source (\begin{DoxyParamCaption}\item[{string}]{\$source\+Archive}{}\end{DoxyParamCaption})}
+
+Verifies the downloaded archive can be extracted with \textbackslash{}\+Phar\+Data. \Hypertarget{class_psy_1_1_version_updater_1_1_installer_ad72ad985705ebab9bc3ca5c203e38b7d}\index{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}!restoreFromBackup@{restoreFromBackup}}
+\index{restoreFromBackup@{restoreFromBackup}!Psy\textbackslash{}VersionUpdater\textbackslash{}Installer@{Psy\textbackslash{}VersionUpdater\textbackslash{}Installer}}
+\doxysubsubsection{\texorpdfstring{restoreFromBackup()}{restoreFromBackup()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_version_updater_1_1_installer_ad72ad985705ebab9bc3ca5c203e38b7d} 
+Psy\textbackslash{}\+Version\+Updater\textbackslash{}\+Installer\+::restore\+From\+Backup (\begin{DoxyParamCaption}\item[{string}]{\$version}{}\end{DoxyParamCaption})}
+
+Restore the backup file to the original Psy\+SH install location.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Error\+Exception} & If the backup file could not be found \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Version\+Updater/Installer.\+php\end{DoxyCompactItemize}

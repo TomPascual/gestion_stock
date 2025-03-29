@@ -1,0 +1,93 @@
+\doxysection{Monolog\textbackslash{}Formatter\textbackslash{}Fluentd\+Formatter Class Reference}
+\hypertarget{class_monolog_1_1_formatter_1_1_fluentd_formatter}{}\label{class_monolog_1_1_formatter_1_1_fluentd_formatter}\index{Monolog\textbackslash{}Formatter\textbackslash{}FluentdFormatter@{Monolog\textbackslash{}Formatter\textbackslash{}FluentdFormatter}}
+Inheritance diagram for Monolog\textbackslash{}Formatter\textbackslash{}Fluentd\+Formatter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_monolog_1_1_formatter_1_1_fluentd_formatter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_monolog_1_1_formatter_1_1_fluentd_formatter_adc7889c71b5877b417a0f61cbd5f5906}\label{class_monolog_1_1_formatter_1_1_fluentd_formatter_adc7889c71b5877b417a0f61cbd5f5906} 
+{\bfseries \+\_\+\+\_\+construct} (bool \$level\+Tag=false)
+\item 
+\Hypertarget{class_monolog_1_1_formatter_1_1_fluentd_formatter_a8e12a6641d67bc9e1f3949562efeb883}\label{class_monolog_1_1_formatter_1_1_fluentd_formatter_a8e12a6641d67bc9e1f3949562efeb883} 
+{\bfseries is\+Using\+Levels\+In\+Tag} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_formatter_1_1_fluentd_formatter_a5535462e3e75d057c308aff20604467c}{format}} (\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}} \$record)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_formatter_1_1_fluentd_formatter_a83569d48dc2578a8eefde3a93e43dd2f}{format\+Batch}} (array \$records)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_monolog_1_1_formatter_1_1_fluentd_formatter_a65706b22059d4dd21a85cbc271c1f3bb}\label{class_monolog_1_1_formatter_1_1_fluentd_formatter_a65706b22059d4dd21a85cbc271c1f3bb} 
+bool {\bfseries \$level\+Tag} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class Fluentd\+Formatter
+
+Serializes a log message to Fluentd unix socket protocol
+
+Fluentd config\+:
+
+$<$source$>$ type unix path /var/run/td-\/agent/td-\/agent.sock $<$/source$>$
+
+Monolog setup\+:
+
+\$logger = new Monolog\textbackslash{}\+Logger(\textquotesingle{}fluent.\+tag\textquotesingle{}); \$fluent\+Handler = new Monolog\textbackslash{}\+Handler\textbackslash{}\+Socket\+Handler(\textquotesingle{}unix\+:///var/run/td-\/agent/td-\/agent.sock\textquotesingle{}); \$fluent\+Handler-\/\texorpdfstring{$>$}{>}set\+Formatter(new Monolog\textbackslash{}\+Formatter\textbackslash{}\+Fluentd\+Formatter()); \$logger-\/\texorpdfstring{$>$}{>}push\+Handler(\$fluent\+Handler);
+
+\begin{DoxyAuthor}{Author}
+Andrius Putna \href{mailto:fordnox@gmail.com}{\texttt{ fordnox@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_monolog_1_1_formatter_1_1_fluentd_formatter_a5535462e3e75d057c308aff20604467c}\index{Monolog\textbackslash{}Formatter\textbackslash{}FluentdFormatter@{Monolog\textbackslash{}Formatter\textbackslash{}FluentdFormatter}!format@{format}}
+\index{format@{format}!Monolog\textbackslash{}Formatter\textbackslash{}FluentdFormatter@{Monolog\textbackslash{}Formatter\textbackslash{}FluentdFormatter}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_formatter_1_1_fluentd_formatter_a5535462e3e75d057c308aff20604467c} 
+Monolog\textbackslash{}\+Formatter\textbackslash{}\+Fluentd\+Formatter\+::format (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}}}]{\$record}{}\end{DoxyParamCaption})}
+
+Formats a log record.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Log\+Record & {\em \$record} & A record to format \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The formatted record 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_formatter_1_1_formatter_interface_ab85727b404977c3e097d17925e3a2068}{Monolog\textbackslash{}\+Formatter\textbackslash{}\+Formatter\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_formatter_1_1_fluentd_formatter_a83569d48dc2578a8eefde3a93e43dd2f}\index{Monolog\textbackslash{}Formatter\textbackslash{}FluentdFormatter@{Monolog\textbackslash{}Formatter\textbackslash{}FluentdFormatter}!formatBatch@{formatBatch}}
+\index{formatBatch@{formatBatch}!Monolog\textbackslash{}Formatter\textbackslash{}FluentdFormatter@{Monolog\textbackslash{}Formatter\textbackslash{}FluentdFormatter}}
+\doxysubsubsection{\texorpdfstring{formatBatch()}{formatBatch()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_formatter_1_1_fluentd_formatter_a83569d48dc2578a8eefde3a93e43dd2f} 
+Monolog\textbackslash{}\+Formatter\textbackslash{}\+Fluentd\+Formatter\+::format\+Batch (\begin{DoxyParamCaption}\item[{array}]{\$records}{}\end{DoxyParamCaption})}
+
+Formats a set of log records.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$\+Log\+Record$>$} & \$records A set of records to format \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The formatted set of records 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_formatter_1_1_formatter_interface_a8ed55c9038438190263a0f97087c083b}{Monolog\textbackslash{}\+Formatter\textbackslash{}\+Formatter\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/monolog/monolog/src/\+Monolog/\+Formatter/Fluentd\+Formatter.\+php\end{DoxyCompactItemize}

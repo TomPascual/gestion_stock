@@ -1,0 +1,177 @@
+\doxysection{League\textbackslash{}Uri\textbackslash{}Query\+String Class Reference}
+\hypertarget{class_league_1_1_uri_1_1_query_string}{}\label{class_league_1_1_uri_1_1_query_string}\index{League\textbackslash{}Uri\textbackslash{}QueryString@{League\textbackslash{}Uri\textbackslash{}QueryString}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_query_string_a257c88b97cdcc95c82802a29557b5681}{build}} (iterable \$pairs, string \$separator=\textquotesingle{}\&\textquotesingle{}, int \$enc\+Type=PHP\+\_\+\+QUERY\+\_\+\+RFC3986)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_query_string_af950d5c25cb033b96b087636246b8baa}{build\+From\+Pairs}} (iterable \$pairs, ?\mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_converter}{Converter}} \$converter=null)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_query_string_a4ece46442a483cd01610c6e01a0667ac}{extract}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}null \$query, string \$separator=\textquotesingle{}\&\textquotesingle{}, int \$enc\+Type=PHP\+\_\+\+QUERY\+\_\+\+RFC3986)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_query_string_a937a5175a72232f6234ab6d2ac9b3c00}{extract\+From\+Value}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}null \$query, ?\mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_converter}{Converter}} \$converter=null)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_query_string_a96cc40192c23b4c86cb3c06a2cbf2f12}{parse}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}null \$query, string \$separator=\textquotesingle{}\&\textquotesingle{}, int \$enc\+Type=PHP\+\_\+\+QUERY\+\_\+\+RFC3986)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_query_string_a6670a5b6d54980304f72c2dbcc1e1677}{parse\+From\+Value}} (Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}null \$query, ?\mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_converter}{Converter}} \$converter=null)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_query_string_a04031a18da044677ea474c9648c11d39}{convert}} (iterable \$pairs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to parse the URI query string.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://tools.ietf.org/html/rfc3986\#section-3.4}{\texttt{ https\+://tools.\+ietf.\+org/html/rfc3986\#section-\/3.\+4}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_league_1_1_uri_1_1_query_string_a257c88b97cdcc95c82802a29557b5681}\index{League\textbackslash{}Uri\textbackslash{}QueryString@{League\textbackslash{}Uri\textbackslash{}QueryString}!build@{build}}
+\index{build@{build}!League\textbackslash{}Uri\textbackslash{}QueryString@{League\textbackslash{}Uri\textbackslash{}QueryString}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_query_string_a257c88b97cdcc95c82802a29557b5681} 
+static League\textbackslash{}\+Uri\textbackslash{}\+Query\+String\+::build (\begin{DoxyParamCaption}\item[{iterable}]{\$pairs}{, }\item[{string}]{\$separator}{ = {\ttfamily \textquotesingle{}\&\textquotesingle{}}, }\item[{int}]{\$enc\+Type}{ = {\ttfamily PHP\+\_\+QUERY\+\_\+RFC3986}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Build a query string from a list of pairs.
+
+\begin{DoxySeeAlso}{See also}
+Query\+String\+::build\+From\+Pairs() 
+
+\href{https://datatracker.ietf.org/doc/html/rfc3986\#section-2.2}{\texttt{ https\+://datatracker.\+ietf.\+org/doc/html/rfc3986\#section-\/2.\+2}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em iterable$<$array\{0\+:string,1\+:string\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}null\}$>$} & \$pairs \\
+\hline
+non-\/empty-\/string & {\em \$separator} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error} & If the encoding type is invalid \\
+\hline
+{\em Syntax\+Error} & If a pair is invalid \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_league_1_1_uri_1_1_query_string_af950d5c25cb033b96b087636246b8baa}\index{League\textbackslash{}Uri\textbackslash{}QueryString@{League\textbackslash{}Uri\textbackslash{}QueryString}!buildFromPairs@{buildFromPairs}}
+\index{buildFromPairs@{buildFromPairs}!League\textbackslash{}Uri\textbackslash{}QueryString@{League\textbackslash{}Uri\textbackslash{}QueryString}}
+\doxysubsubsection{\texorpdfstring{buildFromPairs()}{buildFromPairs()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_query_string_af950d5c25cb033b96b087636246b8baa} 
+static League\textbackslash{}\+Uri\textbackslash{}\+Query\+String\+::build\+From\+Pairs (\begin{DoxyParamCaption}\item[{iterable}]{\$pairs}{, }\item[{?\mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_converter}{Converter}}}]{\$converter}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Build a query string from a list of pairs.
+
+The method expects the return value from Query\+::parse to build a valid query string. This method differs from PHP http\+\_\+build\+\_\+query as it does not modify parameters keys.
+
+If a reserved character is found in a URI component and no delimiting role is known for that character, then it must be interpreted as representing the data octet corresponding to that character\textquotesingle{}s encoding in US-\/\+ASCII.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://datatracker.ietf.org/doc/html/rfc3986\#section-2.2}{\texttt{ https\+://datatracker.\+ietf.\+org/doc/html/rfc3986\#section-\/2.\+2}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$array\{0\+:string,1\+:string\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}null\}$>$} & \$pairs\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error} & If the encoding type is invalid \\
+\hline
+{\em Syntax\+Error} & If a pair is invalid \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_league_1_1_uri_1_1_query_string_a04031a18da044677ea474c9648c11d39}\index{League\textbackslash{}Uri\textbackslash{}QueryString@{League\textbackslash{}Uri\textbackslash{}QueryString}!convert@{convert}}
+\index{convert@{convert}!League\textbackslash{}Uri\textbackslash{}QueryString@{League\textbackslash{}Uri\textbackslash{}QueryString}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_query_string_a04031a18da044677ea474c9648c11d39} 
+static League\textbackslash{}\+Uri\textbackslash{}\+Query\+String\+::convert (\begin{DoxyParamCaption}\item[{iterable}]{\$pairs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts a collection of key/value pairs and returns the store PHP variables as elements of an array. \Hypertarget{class_league_1_1_uri_1_1_query_string_a4ece46442a483cd01610c6e01a0667ac}\index{League\textbackslash{}Uri\textbackslash{}QueryString@{League\textbackslash{}Uri\textbackslash{}QueryString}!extract@{extract}}
+\index{extract@{extract}!League\textbackslash{}Uri\textbackslash{}QueryString@{League\textbackslash{}Uri\textbackslash{}QueryString}}
+\doxysubsubsection{\texorpdfstring{extract()}{extract()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_query_string_a4ece46442a483cd01610c6e01a0667ac} 
+static League\textbackslash{}\+Uri\textbackslash{}\+Query\+String\+::extract (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}null}]{\$query}{, }\item[{string}]{\$separator}{ = {\ttfamily \textquotesingle{}\&\textquotesingle{}}, }\item[{int}]{\$enc\+Type}{ = {\ttfamily PHP\+\_\+QUERY\+\_\+RFC3986}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses the query string like parse\+\_\+str without mangling the results.
+
+\begin{DoxySeeAlso}{See also}
+Query\+String\+::extract\+From\+Value() 
+
+\href{http://php.net/parse_str}{\texttt{ http\+://php.\+net/parse\+\_\+str}} 
+
+\href{https://wiki.php.net/rfc/on_demand_name_mangling}{\texttt{ https\+://wiki.\+php.\+net/rfc/on\+\_\+demand\+\_\+name\+\_\+mangling}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$separator} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_league_1_1_uri_1_1_query_string_a937a5175a72232f6234ab6d2ac9b3c00}\index{League\textbackslash{}Uri\textbackslash{}QueryString@{League\textbackslash{}Uri\textbackslash{}QueryString}!extractFromValue@{extractFromValue}}
+\index{extractFromValue@{extractFromValue}!League\textbackslash{}Uri\textbackslash{}QueryString@{League\textbackslash{}Uri\textbackslash{}QueryString}}
+\doxysubsubsection{\texorpdfstring{extractFromValue()}{extractFromValue()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_query_string_a937a5175a72232f6234ab6d2ac9b3c00} 
+static League\textbackslash{}\+Uri\textbackslash{}\+Query\+String\+::extract\+From\+Value (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}null}]{\$query}{, }\item[{?\mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_converter}{Converter}}}]{\$converter}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses the query string like parse\+\_\+str without mangling the results.
+
+The result is similar as PHP parse\+\_\+str when used with its second argument with the difference that variable names are not mangled.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://php.net/parse_str}{\texttt{ http\+://php.\+net/parse\+\_\+str}} 
+
+\href{https://wiki.php.net/rfc/on_demand_name_mangling}{\texttt{ https\+://wiki.\+php.\+net/rfc/on\+\_\+demand\+\_\+name\+\_\+mangling}}
+\end{DoxySeeAlso}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_league_1_1_uri_1_1_query_string_a96cc40192c23b4c86cb3c06a2cbf2f12}\index{League\textbackslash{}Uri\textbackslash{}QueryString@{League\textbackslash{}Uri\textbackslash{}QueryString}!parse@{parse}}
+\index{parse@{parse}!League\textbackslash{}Uri\textbackslash{}QueryString@{League\textbackslash{}Uri\textbackslash{}QueryString}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_query_string_a96cc40192c23b4c86cb3c06a2cbf2f12} 
+static League\textbackslash{}\+Uri\textbackslash{}\+Query\+String\+::parse (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}null}]{\$query}{, }\item[{string}]{\$separator}{ = {\ttfamily \textquotesingle{}\&\textquotesingle{}}, }\item[{int}]{\$enc\+Type}{ = {\ttfamily PHP\+\_\+QUERY\+\_\+RFC3986}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses a query string into a collection of key/value pairs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/empty-\/string & {\em \$separator} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}int, array\{0\+:string, 1\+:string\texorpdfstring{$\vert$}{|}null\}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_league_1_1_uri_1_1_query_string_a6670a5b6d54980304f72c2dbcc1e1677}\index{League\textbackslash{}Uri\textbackslash{}QueryString@{League\textbackslash{}Uri\textbackslash{}QueryString}!parseFromValue@{parseFromValue}}
+\index{parseFromValue@{parseFromValue}!League\textbackslash{}Uri\textbackslash{}QueryString@{League\textbackslash{}Uri\textbackslash{}QueryString}}
+\doxysubsubsection{\texorpdfstring{parseFromValue()}{parseFromValue()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_query_string_a6670a5b6d54980304f72c2dbcc1e1677} 
+static League\textbackslash{}\+Uri\textbackslash{}\+Query\+String\+::parse\+From\+Value (\begin{DoxyParamCaption}\item[{Stringable\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}null}]{\$query}{, }\item[{?\mbox{\hyperlink{class_league_1_1_uri_1_1_idna_1_1_converter}{Converter}}}]{\$converter}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses a query string into a collection of key/value pairs.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}int, array\{0\+:string, 1\+:string\texorpdfstring{$\vert$}{|}null\}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/league/uri-\/interfaces/Query\+String.\+php\end{DoxyCompactItemize}

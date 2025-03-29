@@ -1,0 +1,4 @@
+var class_league_1_1_common_mark_1_1_extension_1_1_common_mark_1_1_parser_1_1_block_1_1_block_quote_start_parser =
+[
+    [ "tryStart", "class_league_1_1_common_mark_1_1_extension_1_1_common_mark_1_1_parser_1_1_block_1_1_block_quote_start_parser.html#ad4ad849227d599cbdf0e369e16519242", null ]
+];

@@ -1,0 +1,190 @@
+\doxysection{Illuminate\textbackslash{}Cache\textbackslash{}Database\+Lock Class Reference}
+\hypertarget{class_illuminate_1_1_cache_1_1_database_lock}{}\label{class_illuminate_1_1_cache_1_1_database_lock}\index{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock@{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock}}
+Inheritance diagram for Illuminate\textbackslash{}Cache\textbackslash{}Database\+Lock\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_cache_1_1_database_lock}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_database_lock_a522c160eeb4411b9ca80b1f6cb7d5e6d}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Connection}} \$connection, \$table, \$name, \$seconds, \$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}}=null, \$lottery=\mbox{[}2, 100\mbox{]}, \$default\+Timeout\+In\+Seconds=86400)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_database_lock_ac2da6d9835635616925151fe555285d3}{acquire}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_database_lock_a40158cc4ceb6615cbf91b555d8611dd0}{release}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_database_lock_ab05f47e3e5c4b362476d889eabac9f16}{force\+Release}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_database_lock_afd9337ec7747f5cb6da0c560d9e0715a}{get\+Connection\+Name}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a5a673e886da30fb119a806d893714e28}{\+\_\+\+\_\+construct}} (\$name, \$seconds, \$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_adbb7043056ffa08ae70ac55a99aee0fc}{get}} (\$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_aed6219de240abd5f817b91e9f9d695ee}{block}} (\$seconds, \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a78af018332d21c9300867728619ee758}{is\+Owned\+By\+Current\+Process}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a5246eab1e8daf252b65fde2a261ba759}{is\+Owned\+By}} (\$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a0e0b2dc71964911fb5e1dc2be72c6980}{between\+Blocked\+Attempts\+Sleep\+For}} (\$milliseconds)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_database_lock_a62f235cbc858450bb382e55691a75942}{expires\+At}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_database_lock_ac6b827e51f515b5bf5c2586004954bc7}{get\+Current\+Owner}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_database_lock_a38a11ed68b77075f546ea9be184e3ef0}\label{class_illuminate_1_1_cache_1_1_database_lock_a38a11ed68b77075f546ea9be184e3ef0} 
+{\bfseries \$connection}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_database_lock_aabf8507a03aa4f64e51ac83a6e6e1eaa}\label{class_illuminate_1_1_cache_1_1_database_lock_aabf8507a03aa4f64e51ac83a6e6e1eaa} 
+{\bfseries \$table}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_database_lock_a7e16208bd71f414086d090d87fd35c5b}\label{class_illuminate_1_1_cache_1_1_database_lock_a7e16208bd71f414086d090d87fd35c5b} 
+{\bfseries \$lottery}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_database_lock_aaf462a9148c7b39ad9e4915447894c8c}\label{class_illuminate_1_1_cache_1_1_database_lock_aaf462a9148c7b39ad9e4915447894c8c} 
+{\bfseries \$default\+Timeout\+In\+Seconds}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$name}
+\item 
+{\bfseries \$seconds}
+\item 
+{\bfseries \$owner}
+\item 
+{\bfseries \$sleep\+Milliseconds} = 250
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_database_lock_a522c160eeb4411b9ca80b1f6cb7d5e6d}\index{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock@{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock@{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_database_lock_a522c160eeb4411b9ca80b1f6cb7d5e6d} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Database\+Lock\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Connection}}}]{\$connection}{, }\item[{}]{\$table}{, }\item[{}]{\$name}{, }\item[{}]{\$seconds}{, }\item[{}]{\$owner}{ = {\ttfamily null}, }\item[{}]{\$lottery}{ = {\ttfamily \mbox{[}2,~100\mbox{]}}, }\item[{}]{\$default\+Timeout\+In\+Seconds}{ = {\ttfamily 86400}}\end{DoxyParamCaption})}
+
+Create a new lock instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection & {\em \$connection} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+string | null & {\em \$owner} & \\
+\hline
+array & {\em \$lottery} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_database_lock_ac2da6d9835635616925151fe555285d3}\index{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock@{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock}!acquire@{acquire}}
+\index{acquire@{acquire}!Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock@{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock}}
+\doxysubsubsection{\texorpdfstring{acquire()}{acquire()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_database_lock_ac2da6d9835635616925151fe555285d3} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Database\+Lock\+::acquire (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Attempt to acquire the lock.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a3e02d90803c0e5e6b7bdf4fc17ea8857}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_database_lock_a62f235cbc858450bb382e55691a75942}\index{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock@{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock}!expiresAt@{expiresAt}}
+\index{expiresAt@{expiresAt}!Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock@{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock}}
+\doxysubsubsection{\texorpdfstring{expiresAt()}{expiresAt()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_database_lock_a62f235cbc858450bb382e55691a75942} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Database\+Lock\+::expires\+At (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the UNIX timestamp indicating when the lock should expire.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_database_lock_ab05f47e3e5c4b362476d889eabac9f16}\index{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock@{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock}!forceRelease@{forceRelease}}
+\index{forceRelease@{forceRelease}!Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock@{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock}}
+\doxysubsubsection{\texorpdfstring{forceRelease()}{forceRelease()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_database_lock_ab05f47e3e5c4b362476d889eabac9f16} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Database\+Lock\+::force\+Release (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Releases this lock in disregard of ownership.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_aebc99079ee6e82c29cc0e35460a95c85}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_database_lock_afd9337ec7747f5cb6da0c560d9e0715a}\index{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock@{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock}!getConnectionName@{getConnectionName}}
+\index{getConnectionName@{getConnectionName}!Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock@{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock}}
+\doxysubsubsection{\texorpdfstring{getConnectionName()}{getConnectionName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_database_lock_afd9337ec7747f5cb6da0c560d9e0715a} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Database\+Lock\+::get\+Connection\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of the database connection being used to manage the lock.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_database_lock_ac6b827e51f515b5bf5c2586004954bc7}\index{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock@{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock}!getCurrentOwner@{getCurrentOwner}}
+\index{getCurrentOwner@{getCurrentOwner}!Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock@{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock}}
+\doxysubsubsection{\texorpdfstring{getCurrentOwner()}{getCurrentOwner()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_database_lock_ac6b827e51f515b5bf5c2586004954bc7} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Database\+Lock\+::get\+Current\+Owner (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the owner value written into the driver for this lock.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a334cff7e658bcc2ede6d9fb0e27d252b}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_database_lock_a40158cc4ceb6615cbf91b555d8611dd0}\index{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock@{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock}!release@{release}}
+\index{release@{release}!Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock@{Illuminate\textbackslash{}Cache\textbackslash{}DatabaseLock}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_database_lock_a40158cc4ceb6615cbf91b555d8611dd0} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Database\+Lock\+::release (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Release the lock.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a6b0d063e5c735c23e9a56aa18b6b7d88}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Cache/Database\+Lock.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,177 @@
+\doxysection{Hamcrest\textbackslash{}Xml\textbackslash{}Has\+XPath Class Reference}
+\hypertarget{class_hamcrest_1_1_xml_1_1_has_x_path}{}\label{class_hamcrest_1_1_xml_1_1_has_x_path}\index{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath@{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath}}
+Inheritance diagram for Hamcrest\textbackslash{}Xml\textbackslash{}Has\+XPath\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_hamcrest_1_1_xml_1_1_has_x_path}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_hamcrest_1_1_xml_1_1_has_x_path_a548757dc7dc97ab9c3c2f451ac38186f}\label{class_hamcrest_1_1_xml_1_1_has_x_path_a548757dc7dc97ab9c3c2f451ac38186f} 
+{\bfseries \+\_\+\+\_\+construct} (\$xpath, \mbox{\hyperlink{interface_hamcrest_1_1_matcher}{Matcher}} \$matcher=null)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_xml_1_1_has_x_path_aa8f7598106b67831386e9566ef8f633f}{describe\+To}} (\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$description)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hamcrest_1_1_diagnosing_matcher}{Hamcrest\textbackslash{}\+Diagnosing\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_diagnosing_matcher_a65babc0264e96bd2256652f4b8f3332a}{matches}} (\$item)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_diagnosing_matcher_a558c787ed9062e6f6aa283fd9754176c}{describe\+Mismatch}} (\$item, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$mismatch\+Description)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hamcrest_1_1_base_matcher}{Hamcrest\textbackslash{}\+Base\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+to\+String} ()
+\item 
+{\bfseries \+\_\+\+\_\+invoke} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_xml_1_1_has_x_path_ac3426f07593d13caca48a6bca5b28d5b}{has\+XPath}} (\$xpath, \$matcher=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_xml_1_1_has_x_path_a8fa52deec1219ddb4cfff1ff81b1967c}{matches\+With\+Diagnostic\+Description}} (\$actual, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$mismatch\+Description)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_xml_1_1_has_x_path_a950770da53e03b5c22ed760527afbcf5}{create\+Document}} (\$text)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_xml_1_1_has_x_path_ab65d32de06382225199c240ace40b799}{evaluate}} (\textbackslash{}DOMNode \$node)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_xml_1_1_has_x_path_a86e836816acca3abc34bb3389219f7bf}{matches\+Content}} (\textbackslash{}DOMNode\+List \$nodes, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$mismatch\+Description)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_xml_1_1_has_x_path_ae7fbdbdb346fdfaab23d32ecf2105058}{matches\+Expression}} (\$result, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$mismatch\+Description)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Matches if XPath applied to XML/\+HTML/\+XHTML document either evaluates to result matching the matcher or returns at least one node, matching the matcher if present. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hamcrest_1_1_xml_1_1_has_x_path_a950770da53e03b5c22ed760527afbcf5}\index{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath@{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath}!createDocument@{createDocument}}
+\index{createDocument@{createDocument}!Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath@{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath}}
+\doxysubsubsection{\texorpdfstring{createDocument()}{createDocument()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_xml_1_1_has_x_path_a950770da53e03b5c22ed760527afbcf5} 
+Hamcrest\textbackslash{}\+Xml\textbackslash{}\+Has\+XPath\+::create\+Document (\begin{DoxyParamCaption}\item[{}]{\$text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates and returns a {\ttfamily DOMDocument} from the given XML or HTML string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+DOMDocument built from {\ttfamily \$text} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception if the document is not valid \Hypertarget{class_hamcrest_1_1_xml_1_1_has_x_path_aa8f7598106b67831386e9566ef8f633f}\index{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath@{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath}!describeTo@{describeTo}}
+\index{describeTo@{describeTo}!Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath@{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath}}
+\doxysubsubsection{\texorpdfstring{describeTo()}{describeTo()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_xml_1_1_has_x_path_aa8f7598106b67831386e9566ef8f633f} 
+Hamcrest\textbackslash{}\+Xml\textbackslash{}\+Has\+XPath\+::describe\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$description}{}\end{DoxyParamCaption})}
+
+Generates a description of the object. The description may be part of a description of a larger object of which this is just a component, so it should be worded appropriately.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Hamcrest\textbackslash{}\+Description & {\em \$description} & The description to be built or appended to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hamcrest_1_1_self_describing_a5358337d01bd2b3a048fa446f9e901d2}{Hamcrest\textbackslash{}\+Self\+Describing}}.
+
+\Hypertarget{class_hamcrest_1_1_xml_1_1_has_x_path_ab65d32de06382225199c240ace40b799}\index{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath@{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath@{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_xml_1_1_has_x_path_ab65d32de06382225199c240ace40b799} 
+Hamcrest\textbackslash{}\+Xml\textbackslash{}\+Has\+XPath\+::evaluate (\begin{DoxyParamCaption}\item[{\textbackslash{}DOMNode}]{\$node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Applies the configured XPath to the DOM node and returns either the result if it\textquotesingle{}s an expression or the node list if it\textquotesingle{}s a query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+DOMNode & {\em \$node} & context from which to issue query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed result of expression or DOMNode\+List from query 
+\end{DoxyReturn}
+\Hypertarget{class_hamcrest_1_1_xml_1_1_has_x_path_ac3426f07593d13caca48a6bca5b28d5b}\index{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath@{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath}!hasXPath@{hasXPath}}
+\index{hasXPath@{hasXPath}!Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath@{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath}}
+\doxysubsubsection{\texorpdfstring{hasXPath()}{hasXPath()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_xml_1_1_has_x_path_ac3426f07593d13caca48a6bca5b28d5b} 
+static Hamcrest\textbackslash{}\+Xml\textbackslash{}\+Has\+XPath\+::has\+XPath (\begin{DoxyParamCaption}\item[{}]{\$xpath}{, }\item[{}]{\$matcher}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Wraps {\ttfamily \$matcher} with {\ttfamily \doxylink{}{) if it\textquotesingle{}s not a matcher and the XPath in {\ttfamily count()} if it\textquotesingle{}s an integer.  }}\Hypertarget{class_hamcrest_1_1_xml_1_1_has_x_path_a86e836816acca3abc34bb3389219f7bf}\index{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath@{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath}!matchesContent@{matchesContent}}
+\index{matchesContent@{matchesContent}!Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath@{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath}}
+\doxysubsubsection{\texorpdfstring{matchesContent()}{matchesContent()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_xml_1_1_has_x_path_a86e836816acca3abc34bb3389219f7bf} 
+Hamcrest\textbackslash{}\+Xml\textbackslash{}\+Has\+XPath\+::matches\+Content (\begin{DoxyParamCaption}\item[{\textbackslash{}DOMNode\+List}]{\$nodes}{, }\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$mismatch\+Description}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Matches if the list of nodes is not empty and the content of at least one node matches the configured matcher, if supplied.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+DOMNode\+List & {\em \$nodes} & selected by the XPath query \\
+\hline
+Description & {\em \$mismatch\+Description} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_hamcrest_1_1_xml_1_1_has_x_path_ae7fbdbdb346fdfaab23d32ecf2105058}\index{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath@{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath}!matchesExpression@{matchesExpression}}
+\index{matchesExpression@{matchesExpression}!Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath@{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath}}
+\doxysubsubsection{\texorpdfstring{matchesExpression()}{matchesExpression()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_xml_1_1_has_x_path_ae7fbdbdb346fdfaab23d32ecf2105058} 
+Hamcrest\textbackslash{}\+Xml\textbackslash{}\+Has\+XPath\+::matches\+Expression (\begin{DoxyParamCaption}\item[{}]{\$result}{, }\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$mismatch\+Description}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Matches if the result of the XPath expression matches the configured matcher or evaluates to {\ttfamily true} if there is none.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$result} & result of the XPath expression \\
+\hline
+Description & {\em \$mismatch\+Description} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_hamcrest_1_1_xml_1_1_has_x_path_a8fa52deec1219ddb4cfff1ff81b1967c}\index{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath@{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath}!matchesWithDiagnosticDescription@{matchesWithDiagnosticDescription}}
+\index{matchesWithDiagnosticDescription@{matchesWithDiagnosticDescription}!Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath@{Hamcrest\textbackslash{}Xml\textbackslash{}HasXPath}}
+\doxysubsubsection{\texorpdfstring{matchesWithDiagnosticDescription()}{matchesWithDiagnosticDescription()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_xml_1_1_has_x_path_a8fa52deec1219ddb4cfff1ff81b1967c} 
+Hamcrest\textbackslash{}\+Xml\textbackslash{}\+Has\+XPath\+::matches\+With\+Diagnostic\+Description (\begin{DoxyParamCaption}\item[{}]{\$actual}{, }\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$mismatch\+Description}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Matches if the XPath matches against the DOM node and the matcher.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+DOMNode & {\em \$actual} & \\
+\hline
+Description & {\em \$mismatch\+Description} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_hamcrest_1_1_diagnosing_matcher}{Hamcrest\textbackslash{}\+Diagnosing\+Matcher}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/hamcrest/hamcrest-\/php/hamcrest/\+Hamcrest/\+Xml/Has\+XPath.\+php\end{DoxyCompactItemize}

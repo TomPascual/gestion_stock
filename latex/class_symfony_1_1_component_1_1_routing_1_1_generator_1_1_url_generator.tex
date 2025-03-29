@@ -1,0 +1,219 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}Url\+Generator Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator}{}\label{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}Url\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.516854cm]{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_ac5b087376bd93c8922f9c67abaea5d57}\label{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_ac5b087376bd93c8922f9c67abaea5d57} 
+{\bfseries \+\_\+\+\_\+construct} (protected \mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_route_collection}{Route\+Collection}} \$routes, protected \mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_request_context}{Request\+Context}} \$context, protected ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null, private ?string \$default\+Locale=null,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a3a212c9f4f947c59410428d1c8c04564}{set\+Context}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_request_context}{Request\+Context}} \$context)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a3d8466b55fcf35afade1136263082b9c}{get\+Context}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a2f18559db42e0ea1cf9dc0389497837a}{set\+Strict\+Requirements}} (?bool \$enabled)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a19fd48baff7a5d7f2d710897d8392c3f}{is\+Strict\+Requirements}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_ae2e7a2e9241105f43f0c51b7f679aeae}{generate}} (string \$name, array \$parameters=\mbox{[}$\,$\mbox{]}, int \$reference\+Type=self\+::\+ABSOLUTE\+\_\+\+PATH)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_ade38ca1c7bdba7dfc5d6cb40d5ba0deb}{get\+Relative\+Path}} (string \$base\+Path, string \$target\+Path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a4809613c1d6ccb8cdb0d1e91d24e8d62}{do\+Generate}} (array \$variables, array \$defaults, array \$requirements, array \$tokens, array \$parameters, string \$name, int \$reference\+Type, array \$host\+Tokens, array \$required\+Schemes=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a22c1e7636d36d187ce887f237be82ef8}\label{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a22c1e7636d36d187ce887f237be82ef8} 
+bool {\bfseries \$strict\+Requirements} = true
+\item 
+array \mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a2fa9012782625a892be170b0606d0c44}{\$decoded\+Chars}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Url\+Generator\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface_ab63738022a126499c9a408ea2d94ac82}{ABSOLUTE\+\_\+\+URL}} = 0
+\item 
+const \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface_a8be266fca6d8c5e74c23674935efba50}{ABSOLUTE\+\_\+\+PATH}} = 1
+\item 
+const \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface_ad9f0f70794b29744229890dca6b49876}{RELATIVE\+\_\+\+PATH}} = 2
+\item 
+const \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface_a5a3d861947183074b954968bd2cdab1d}{NETWORK\+\_\+\+PATH}} = 3
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Url\+Generator can generate a URL or a path for any route in the Route\+Collection based on the passed parameters.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+
+Tobias Schultze \href{http://tobion.de}{\texttt{ http\+://tobion.\+de}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a4809613c1d6ccb8cdb0d1e91d24e8d62}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}!doGenerate@{doGenerate}}
+\index{doGenerate@{doGenerate}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{doGenerate()}{doGenerate()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a4809613c1d6ccb8cdb0d1e91d24e8d62} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Url\+Generator\+::do\+Generate (\begin{DoxyParamCaption}\item[{array}]{\$variables}{, }\item[{array}]{\$defaults}{, }\item[{array}]{\$requirements}{, }\item[{array}]{\$tokens}{, }\item[{array}]{\$parameters}{, }\item[{string}]{\$name}{, }\item[{int}]{\$reference\+Type}{, }\item[{array}]{\$host\+Tokens}{, }\item[{array}]{\$required\+Schemes}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Missing\+Mandatory\+Parameters\+Exception} & When some parameters are missing that are mandatory for the route \\
+\hline
+{\em Invalid\+Parameter\+Exception} & When a parameter value for a placeholder is not correct because it does not match the requirement \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_ae2e7a2e9241105f43f0c51b7f679aeae}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}!generate@{generate}}
+\index{generate@{generate}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_ae2e7a2e9241105f43f0c51b7f679aeae} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Url\+Generator\+::generate (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{int}]{\$reference\+Type}{ = {\ttfamily self\+:\+:ABSOLUTE\+\_\+PATH}}\end{DoxyParamCaption})}
+
+Generates a URL or path for a specific route based on the given parameters.
+
+Parameters that reference placeholders in the route pattern will substitute them in the path or host. Extra params are added as query string to the URL.
+
+When the passed reference type cannot be generated for the route because it requires a different host or scheme than the current one, the method will return a more comprehensive reference that includes the required params. For example, when you call this method with \$reference\+Type = ABSOLUTE\+\_\+\+PATH but the route requires the https scheme whereas the current scheme is http, it will instead return an ABSOLUTE\+\_\+\+URL with the https scheme and the current host. This makes sure the generated URL matches the route in any case.
+
+If there is no route with the given name, the generator must throw the Route\+Not\+Found\+Exception.
+
+The special parameter \+\_\+fragment will be used as the document fragment suffixed to the final URL.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Route\+Not\+Found\+Exception} & If the named route doesn\textquotesingle{}t exist \\
+\hline
+{\em Missing\+Mandatory\+Parameters\+Exception} & When some parameters are missing that are mandatory for the route \\
+\hline
+{\em Invalid\+Parameter\+Exception} & When a parameter value for a placeholder is not correct because it does not match the requirement \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface_a5866e4cf5e898c0915f01c52e68911d6}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Url\+Generator\+Interface}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_compiled_url_generator_adbdc192aa853e8a48ad97711da9a0a31}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Compiled\+Url\+Generator}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a3d8466b55fcf35afade1136263082b9c}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}!getContext@{getContext}}
+\index{getContext@{getContext}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{getContext()}{getContext()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a3d8466b55fcf35afade1136263082b9c} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Url\+Generator\+::get\+Context (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the request context. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_request_context_aware_interface_a2bac55ce4790b56572e3f11c4bbae028}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Request\+Context\+Aware\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_ade38ca1c7bdba7dfc5d6cb40d5ba0deb}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}!getRelativePath@{getRelativePath}}
+\index{getRelativePath@{getRelativePath}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{getRelativePath()}{getRelativePath()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_ade38ca1c7bdba7dfc5d6cb40d5ba0deb} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Url\+Generator\+::get\+Relative\+Path (\begin{DoxyParamCaption}\item[{string}]{\$base\+Path}{, }\item[{string}]{\$target\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the target path as relative reference from the base path.
+
+Only the URIs path component (no schema, host etc.) is relevant and must be given, starting with a slash. Both paths must be absolute and not contain relative parts. Relative URLs from one resource to another are useful when generating self-\/contained downloadable document archives. Furthermore, they can be used to reduce the link size in documents.
+
+Example target paths, given a base path of "{}/a/b/c/d"{}\+:
+\begin{DoxyItemize}
+\item "{}/a/b/c/d"{} -\/\texorpdfstring{$>$}{>} "{}"{}
+\item "{}/a/b/c/"{} -\/\texorpdfstring{$>$}{>} "{}./"{}
+\item "{}/a/b/"{} -\/\texorpdfstring{$>$}{>} "{}../"{}
+\item "{}/a/b/c/other"{} -\/\texorpdfstring{$>$}{>} "{}other"{}
+\item "{}/a/x/y"{} -\/\texorpdfstring{$>$}{>} "{}../../x/y"{}
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$base\+Path} & The base path \\
+\hline
+string & {\em \$target\+Path} & The target path \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a19fd48baff7a5d7f2d710897d8392c3f}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}!isStrictRequirements@{isStrictRequirements}}
+\index{isStrictRequirements@{isStrictRequirements}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{isStrictRequirements()}{isStrictRequirements()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a19fd48baff7a5d7f2d710897d8392c3f} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Url\+Generator\+::is\+Strict\+Requirements (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns whether to throw an exception on incorrect parameters. Null means the requirements check is deactivated completely. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_configurable_requirements_interface_a60718684e57cc71f73b9e4a941a0e9d8}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Configurable\+Requirements\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a3a212c9f4f947c59410428d1c8c04564}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}!setContext@{setContext}}
+\index{setContext@{setContext}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{setContext()}{setContext()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a3a212c9f4f947c59410428d1c8c04564} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Url\+Generator\+::set\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_request_context}{Request\+Context}}}]{\$context}{}\end{DoxyParamCaption})}
+
+Sets the request context. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_request_context_aware_interface_a6dfa45b8d2ac2292c28dd816ccf2dae1}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Request\+Context\+Aware\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a2f18559db42e0ea1cf9dc0389497837a}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}!setStrictRequirements@{setStrictRequirements}}
+\index{setStrictRequirements@{setStrictRequirements}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{setStrictRequirements()}{setStrictRequirements()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a2f18559db42e0ea1cf9dc0389497837a} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Url\+Generator\+::set\+Strict\+Requirements (\begin{DoxyParamCaption}\item[{?bool}]{\$enabled}{}\end{DoxyParamCaption})}
+
+Enables or disables the exception on incorrect parameters. Passing null will deactivate the requirements check completely. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_configurable_requirements_interface_a6f0a2e8a0477409e8e978cbea68f726c}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Configurable\+Requirements\+Interface}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a2fa9012782625a892be170b0606d0c44}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}!\$decodedChars@{\$decodedChars}}
+\index{\$decodedChars@{\$decodedChars}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Generator\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{\$decodedChars}{\$decodedChars}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_a2fa9012782625a892be170b0606d0c44} 
+array Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Url\+Generator\+::\$decoded\+Chars\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\%2F'}\ =>\ \textcolor{charliteral}{'/'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\%252F'}\ =>\ \textcolor{stringliteral}{'\%2F'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\%40'}\ =>\ \textcolor{charliteral}{'@'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\%3A'}\ =>\ \textcolor{charliteral}{':'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\%3B'}\ =>\ \textcolor{charliteral}{';'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\%2C'}\ =>\ \textcolor{charliteral}{','},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\%3D'}\ =>\ \textcolor{charliteral}{'='},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\%2B'}\ =>\ \textcolor{charliteral}{'+'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\%21'}\ =>\ \textcolor{charliteral}{'!'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\%2A'}\ =>\ \textcolor{charliteral}{'*'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\%7C'}\ =>\ \textcolor{charliteral}{'|'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+This array defines the characters (besides alphanumeric ones) that will not be percent-\/encoded in the path segment of the generated URL.
+
+PHP\textquotesingle{}s rawurlencode() encodes all chars except "{}a-\/z\+A-\/\+Z0-\/9-\/.\+\_\+\texorpdfstring{$\sim$}{\string~}"{} according to RFC 3986. But we want to allow some chars to be used in their literal form (reasons below). Other chars inside the path must of course be encoded, e.\+g. "{}?"{} and "{}\#"{} (would be interpreted wrongly as query and fragment identifier), "{}\textquotesingle{}"{} and "{}"{}"{} (are used as delimiters in HTML). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/routing/\+Generator/Url\+Generator.\+php\end{DoxyCompactItemize}

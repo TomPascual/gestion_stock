@@ -1,0 +1,625 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ClassName
+%%Creator: Doxygen
+%%CreationDate: Time
+%%For: 
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 0 0 500 365.111572
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%EndComments
+
+% ----- variables -----
+
+/boxwidth 0 def
+/boxheight 40 def
+/fontheight 24 def
+/marginwidth 10 def
+/distx 20 def
+/disty 40 def
+/boundaspect 1.369444 def  % aspect ratio of the BoundingBox (width/height)
+/boundx 500 def
+/boundy boundx boundaspect div def
+/xspacing 0 def
+/yspacing 0 def
+/rows 72 def
+/cols 8 def
+/scalefactor 0 def
+/boxfont /Times-Roman findfont fontheight scalefont def
+
+% ----- procedures -----
+
+/dotted { [1 4] 0 setdash } def
+/dashed { [5] 0 setdash } def
+/solid  { [] 0 setdash } def
+
+/max % result = MAX(arg1,arg2)
+{
+  /a exch def
+  /b exch def
+  a b gt {a} {b} ifelse
+} def
+
+/xoffset % result = MAX(0,(scalefactor-(boxwidth*cols+distx*(cols-1)))/2)
+{
+  0 scalefactor boxwidth cols mul distx cols 1 sub mul add sub 2 div max
+} def
+
+/cw % boxwidth = MAX(boxwidth, stringwidth(arg1))
+{
+  /str exch def
+  /boxwidth boxwidth str stringwidth pop max def
+} def
+
+/box % draws a box with text 'arg1' at grid pos (arg2,arg3)
+{ gsave
+  2 setlinewidth
+  newpath
+  exch xspacing mul xoffset add
+  exch yspacing mul
+  moveto
+  boxwidth 0 rlineto 
+  0 boxheight rlineto 
+  boxwidth neg 0 rlineto 
+  0 boxheight neg rlineto 
+  closepath
+  dup stringwidth pop neg boxwidth add 2 div
+  boxheight fontheight 2 div sub 2 div
+  rmoveto show stroke
+  grestore
+} def  
+
+/mark
+{ newpath
+  exch xspacing mul xoffset add boxwidth add
+  exch yspacing mul
+  moveto
+  0 boxheight 4 div rlineto
+  boxheight neg 4 div boxheight neg 4 div rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/arrow
+{ newpath
+  moveto
+  3 -8 rlineto
+  -6 0 rlineto
+  3 8 rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/out % draws an output connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight add
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto 
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/in % draws an input connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul disty 2 div sub
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/hedge
+{
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight 2 div sub
+  /y exch def
+  /x exch def
+  newpath
+  x y moveto
+  boxwidth 2 div distx add 0 rlineto
+  stroke
+  1 eq
+  { newpath x boxwidth 2 div distx add add y moveto
+    -8 3 rlineto
+    0 -6 rlineto
+    8 3 rlineto
+    closepath
+    eofill
+    stroke
+  } if
+} def
+
+/vedge
+{
+  /ye exch def
+  /ys exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add dup
+  ys yspacing mul boxheight 2 div sub
+  moveto
+  ye yspacing mul boxheight 2 div sub
+  lineto
+  stroke
+} def
+
+/conn % connections the blocks from col 'arg1' to 'arg2' of row 'arg3'
+{
+  /ys exch def
+  /xe exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add
+  ys yspacing mul disty 2 div sub
+  moveto
+  xspacing xe xs sub mul 0
+  rlineto
+  stroke
+} def
+
+% ----- main ------
+
+boxfont setfont
+1 boundaspect scale
+(PHPUnit\Framework\SelfDescribing) cw
+(PHPUnit\Framework\AssertionFailedError) cw
+(PHPUnit\Framework\Constraint\Constraint) cw
+(PHPUnit\Framework\MockObject\Invocation) cw
+(PHPUnit\Framework\MockObject\Rule\InvocationOrder) cw
+(PHPUnit\Framework\TestCase) cw
+(PHPUnit\Runner\PhptTestCase) cw
+(PHPUnit\Framework\ExpectationFailedException) cw
+(PHPUnit\Framework\IncompleteTestError) cw
+(PHPUnit\Framework\InvalidDependencyException) cw
+(PHPUnit\Framework\PhptAssertionFailedError) cw
+(PHPUnit\Framework\SkippedTestSuiteError) cw
+(PHPUnit\Framework\SkippedWithMessageException) cw
+(Illuminate\Testing\Constraints\ArraySubset) cw
+(Illuminate\Testing\Constraints\CountInDatabase) cw
+(Illuminate\Testing\Constraints\HasInDatabase) cw
+(Illuminate\Testing\Constraints\NotSoftDeletedInDatabase) cw
+(Illuminate\Testing\Constraints\SeeInOrder) cw
+(Illuminate\Testing\Constraints\SoftDeletedInDatabase) cw
+(PHPUnit\Framework\Constraint\ArrayHasKey) cw
+(PHPUnit\Framework\Constraint\Callback) cw
+(PHPUnit\Framework\Constraint\Count) cw
+(PHPUnit\Framework\Constraint\DirectoryExists) cw
+(PHPUnit\Framework\Constraint\Exception) cw
+(PHPUnit\Framework\Constraint\ExceptionCode) cw
+(PHPUnit\Framework\Constraint\ExceptionMessageIsOrContains) cw
+(PHPUnit\Framework\Constraint\ExceptionMessageMatchesRegularExpression) cw
+(PHPUnit\Framework\Constraint\FileExists) cw
+(PHPUnit\Framework\Constraint\GreaterThan) cw
+(PHPUnit\Framework\Constraint\IsAnything) cw
+(PHPUnit\Framework\Constraint\IsEmpty) cw
+(PHPUnit\Framework\Constraint\IsEqual) cw
+(PHPUnit\Framework\Constraint\IsEqualCanonicalizing) cw
+(PHPUnit\Framework\Constraint\IsEqualIgnoringCase) cw
+(PHPUnit\Framework\Constraint\IsEqualWithDelta) cw
+(PHPUnit\Framework\Constraint\IsFalse) cw
+(PHPUnit\Framework\Constraint\IsFinite) cw
+(PHPUnit\Framework\Constraint\IsIdentical) cw
+(PHPUnit\Framework\Constraint\IsInfinite) cw
+(PHPUnit\Framework\Constraint\IsInstanceOf) cw
+(PHPUnit\Framework\Constraint\IsJson) cw
+(PHPUnit\Framework\Constraint\IsList) cw
+(PHPUnit\Framework\Constraint\IsNan) cw
+(PHPUnit\Framework\Constraint\IsNull) cw
+(PHPUnit\Framework\Constraint\IsReadable) cw
+(PHPUnit\Framework\Constraint\IsTrue) cw
+(PHPUnit\Framework\Constraint\IsType) cw
+(PHPUnit\Framework\Constraint\IsWritable) cw
+(PHPUnit\Framework\Constraint\JsonMatches) cw
+(PHPUnit\Framework\Constraint\LessThan) cw
+(PHPUnit\Framework\Constraint\ObjectEquals) cw
+(PHPUnit\Framework\Constraint\ObjectHasProperty) cw
+(PHPUnit\Framework\Constraint\Operator) cw
+(PHPUnit\Framework\Constraint\RegularExpression) cw
+(PHPUnit\Framework\Constraint\StringContains) cw
+(PHPUnit\Framework\Constraint\StringEndsWith) cw
+(PHPUnit\Framework\Constraint\StringEqualsStringIgnoringLineEndings) cw
+(PHPUnit\Framework\Constraint\StringMatchesFormatDescription) cw
+(PHPUnit\Framework\Constraint\StringStartsWith) cw
+(PHPUnit\Framework\Constraint\TraversableContains) cw
+(PHPUnit\Framework\Constraint\TraversableContainsOnly) cw
+(PHPUnit\Framework\MockObject\MethodNameConstraint) cw
+(Symfony\Component\Console\Tester\Constraint\CommandIsSuccessful) cw
+(Symfony\Component\HttpFoundation\Test\Constraint\RequestAttributeValueSame) cw
+(Symfony\Component\HttpFoundation\Test\Constraint\ResponseCookieValueSame) cw
+(Symfony\Component\HttpFoundation\Test\Constraint\ResponseFormatSame) cw
+(Symfony\Component\HttpFoundation\Test\Constraint\ResponseHasCookie) cw
+(Symfony\Component\HttpFoundation\Test\Constraint\ResponseHasHeader) cw
+(Symfony\Component\HttpFoundation\Test\Constraint\ResponseHeaderLocationSame) cw
+(Symfony\Component\HttpFoundation\Test\Constraint\ResponseHeaderSame) cw
+(Symfony\Component\HttpFoundation\Test\Constraint\ResponseIsRedirected) cw
+(Symfony\Component\HttpFoundation\Test\Constraint\ResponseIsSuccessful) cw
+(Symfony\Component\HttpFoundation\Test\Constraint\ResponseIsUnprocessable) cw
+(Symfony\Component\HttpFoundation\Test\Constraint\ResponseStatusCodeSame) cw
+(Symfony\Component\Mailer\Test\Constraint\EmailCount) cw
+(Symfony\Component\Mailer\Test\Constraint\EmailIsQueued) cw
+(Symfony\Component\Mime\Test\Constraint\EmailAddressContains) cw
+(Symfony\Component\Mime\Test\Constraint\EmailAttachmentCount) cw
+(Symfony\Component\Mime\Test\Constraint\EmailHasHeader) cw
+(Symfony\Component\Mime\Test\Constraint\EmailHeaderSame) cw
+(Symfony\Component\Mime\Test\Constraint\EmailHtmlBodyContains) cw
+(Symfony\Component\Mime\Test\Constraint\EmailSubjectContains) cw
+(Symfony\Component\Mime\Test\Constraint\EmailTextBodyContains) cw
+(PHPUnit\Framework\MockObject\Rule\AnyInvokedCount) cw
+(PHPUnit\Framework\MockObject\Rule\InvokedAtLeastCount) cw
+(PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce) cw
+(PHPUnit\Framework\MockObject\Rule\InvokedAtMostCount) cw
+(PHPUnit\Framework\MockObject\Rule\InvokedCount) cw
+(Hamcrest\AbstractMatcherTest) cw
+(Hamcrest\InvokedMatcherTest) cw
+(Hamcrest\MatcherAssertTest) cw
+(Hamcrest\StringDescriptionTest) cw
+(Hamcrest\UtilTest) cw
+(Mockery\Adapter\Phpunit\MockeryTestCase) cw
+(Monolog\Test\TestCase) cw
+(Symfony\Component\Mailer\Test\AbstractTransportFactoryTestCase) cw
+(Symfony\Component\Translation\Test\AbstractProviderFactoryTestCase) cw
+(Symfony\Component\Translation\Test\ProviderTestCase) cw
+(Symfony\Contracts\Service\Test\ServiceLocatorTestCase) cw
+(Symfony\Contracts\Translation\Test\TranslatorTest) cw
+(Tests\Unit\FournisseurControllerTest) cw
+(Tests\Unit\MouvementStockControllerTest) cw
+(Tests\Unit\ProduitControllerTest) cw
+/boxwidth boxwidth marginwidth 2 mul add def
+/xspacing boxwidth distx add def
+/yspacing boxheight disty add def
+/scalefactor 
+  boxwidth cols mul distx cols 1 sub mul add
+  boxheight rows mul disty rows 1 sub mul add boundaspect mul 
+  max def
+boundx scalefactor div boundy scalefactor div scale
+
+% ----- classes -----
+
+ (PHPUnit\Framework\SelfDescribing) 3.500000 71.000000 box
+ (PHPUnit\Framework\AssertionFailedError) 0.000000 70.000000 box
+ (PHPUnit\Framework\Constraint\Constraint) 2.000000 70.000000 box
+ (PHPUnit\Framework\MockObject\Invocation) 3.000000 70.000000 box
+ (PHPUnit\Framework\MockObject\Rule\InvocationOrder) 4.000000 70.000000 box
+ (PHPUnit\Framework\TestCase) 6.000000 70.000000 box
+ (PHPUnit\Runner\PhptTestCase) 7.000000 70.000000 box
+ (PHPUnit\Framework\ExpectationFailedException) 1.000000 69.000000 box
+ (PHPUnit\Framework\IncompleteTestError) 1.000000 68.000000 box
+ (PHPUnit\Framework\InvalidDependencyException) 1.000000 67.000000 box
+ (PHPUnit\Framework\PhptAssertionFailedError) 1.000000 66.000000 box
+ (PHPUnit\Framework\SkippedTestSuiteError) 1.000000 65.000000 box
+ (PHPUnit\Framework\SkippedWithMessageException) 1.000000 64.000000 box
+ (Illuminate\Testing\Constraints\ArraySubset) 3.000000 69.000000 box
+ (Illuminate\Testing\Constraints\CountInDatabase) 3.000000 68.000000 box
+ (Illuminate\Testing\Constraints\HasInDatabase) 3.000000 67.000000 box
+ (Illuminate\Testing\Constraints\NotSoftDeletedInDatabase) 3.000000 66.000000 box
+ (Illuminate\Testing\Constraints\SeeInOrder) 3.000000 65.000000 box
+ (Illuminate\Testing\Constraints\SoftDeletedInDatabase) 3.000000 64.000000 box
+ (PHPUnit\Framework\Constraint\ArrayHasKey) 3.000000 63.000000 box
+ (PHPUnit\Framework\Constraint\Callback) 3.000000 62.000000 box
+ (PHPUnit\Framework\Constraint\Count) 3.000000 61.000000 box
+3.000000 61.000000 mark
+ (PHPUnit\Framework\Constraint\DirectoryExists) 3.000000 60.000000 box
+ (PHPUnit\Framework\Constraint\Exception) 3.000000 59.000000 box
+ (PHPUnit\Framework\Constraint\ExceptionCode) 3.000000 58.000000 box
+ (PHPUnit\Framework\Constraint\ExceptionMessageIsOrContains) 3.000000 57.000000 box
+ (PHPUnit\Framework\Constraint\ExceptionMessageMatchesRegularExpression) 3.000000 56.000000 box
+ (PHPUnit\Framework\Constraint\FileExists) 3.000000 55.000000 box
+ (PHPUnit\Framework\Constraint\GreaterThan) 3.000000 54.000000 box
+ (PHPUnit\Framework\Constraint\IsAnything) 3.000000 53.000000 box
+ (PHPUnit\Framework\Constraint\IsEmpty) 3.000000 52.000000 box
+ (PHPUnit\Framework\Constraint\IsEqual) 3.000000 51.000000 box
+ (PHPUnit\Framework\Constraint\IsEqualCanonicalizing) 3.000000 50.000000 box
+ (PHPUnit\Framework\Constraint\IsEqualIgnoringCase) 3.000000 49.000000 box
+ (PHPUnit\Framework\Constraint\IsEqualWithDelta) 3.000000 48.000000 box
+ (PHPUnit\Framework\Constraint\IsFalse) 3.000000 47.000000 box
+ (PHPUnit\Framework\Constraint\IsFinite) 3.000000 46.000000 box
+ (PHPUnit\Framework\Constraint\IsIdentical) 3.000000 45.000000 box
+ (PHPUnit\Framework\Constraint\IsInfinite) 3.000000 44.000000 box
+ (PHPUnit\Framework\Constraint\IsInstanceOf) 3.000000 43.000000 box
+ (PHPUnit\Framework\Constraint\IsJson) 3.000000 42.000000 box
+ (PHPUnit\Framework\Constraint\IsList) 3.000000 41.000000 box
+ (PHPUnit\Framework\Constraint\IsNan) 3.000000 40.000000 box
+ (PHPUnit\Framework\Constraint\IsNull) 3.000000 39.000000 box
+ (PHPUnit\Framework\Constraint\IsReadable) 3.000000 38.000000 box
+ (PHPUnit\Framework\Constraint\IsTrue) 3.000000 37.000000 box
+ (PHPUnit\Framework\Constraint\IsType) 3.000000 36.000000 box
+ (PHPUnit\Framework\Constraint\IsWritable) 3.000000 35.000000 box
+ (PHPUnit\Framework\Constraint\JsonMatches) 3.000000 34.000000 box
+ (PHPUnit\Framework\Constraint\LessThan) 3.000000 33.000000 box
+ (PHPUnit\Framework\Constraint\ObjectEquals) 3.000000 32.000000 box
+ (PHPUnit\Framework\Constraint\ObjectHasProperty) 3.000000 31.000000 box
+ (PHPUnit\Framework\Constraint\Operator) 3.000000 30.000000 box
+3.000000 30.000000 mark
+ (PHPUnit\Framework\Constraint\RegularExpression) 3.000000 29.000000 box
+ (PHPUnit\Framework\Constraint\StringContains) 3.000000 28.000000 box
+ (PHPUnit\Framework\Constraint\StringEndsWith) 3.000000 27.000000 box
+ (PHPUnit\Framework\Constraint\StringEqualsStringIgnoringLineEndings) 3.000000 26.000000 box
+ (PHPUnit\Framework\Constraint\StringMatchesFormatDescription) 3.000000 25.000000 box
+ (PHPUnit\Framework\Constraint\StringStartsWith) 3.000000 24.000000 box
+ (PHPUnit\Framework\Constraint\TraversableContains) 3.000000 23.000000 box
+3.000000 23.000000 mark
+ (PHPUnit\Framework\Constraint\TraversableContainsOnly) 3.000000 22.000000 box
+ (PHPUnit\Framework\MockObject\MethodNameConstraint) 3.000000 21.000000 box
+ (Symfony\Component\Console\Tester\Constraint\CommandIsSuccessful) 3.000000 20.000000 box
+ (Symfony\Component\HttpFoundation\Test\Constraint\RequestAttributeValueSame) 3.000000 19.000000 box
+ (Symfony\Component\HttpFoundation\Test\Constraint\ResponseCookieValueSame) 3.000000 18.000000 box
+ (Symfony\Component\HttpFoundation\Test\Constraint\ResponseFormatSame) 3.000000 17.000000 box
+ (Symfony\Component\HttpFoundation\Test\Constraint\ResponseHasCookie) 3.000000 16.000000 box
+ (Symfony\Component\HttpFoundation\Test\Constraint\ResponseHasHeader) 3.000000 15.000000 box
+ (Symfony\Component\HttpFoundation\Test\Constraint\ResponseHeaderLocationSame) 3.000000 14.000000 box
+ (Symfony\Component\HttpFoundation\Test\Constraint\ResponseHeaderSame) 3.000000 13.000000 box
+ (Symfony\Component\HttpFoundation\Test\Constraint\ResponseIsRedirected) 3.000000 12.000000 box
+ (Symfony\Component\HttpFoundation\Test\Constraint\ResponseIsSuccessful) 3.000000 11.000000 box
+ (Symfony\Component\HttpFoundation\Test\Constraint\ResponseIsUnprocessable) 3.000000 10.000000 box
+ (Symfony\Component\HttpFoundation\Test\Constraint\ResponseStatusCodeSame) 3.000000 9.000000 box
+ (Symfony\Component\Mailer\Test\Constraint\EmailCount) 3.000000 8.000000 box
+ (Symfony\Component\Mailer\Test\Constraint\EmailIsQueued) 3.000000 7.000000 box
+ (Symfony\Component\Mime\Test\Constraint\EmailAddressContains) 3.000000 6.000000 box
+ (Symfony\Component\Mime\Test\Constraint\EmailAttachmentCount) 3.000000 5.000000 box
+ (Symfony\Component\Mime\Test\Constraint\EmailHasHeader) 3.000000 4.000000 box
+ (Symfony\Component\Mime\Test\Constraint\EmailHeaderSame) 3.000000 3.000000 box
+ (Symfony\Component\Mime\Test\Constraint\EmailHtmlBodyContains) 3.000000 2.000000 box
+ (Symfony\Component\Mime\Test\Constraint\EmailSubjectContains) 3.000000 1.000000 box
+ (Symfony\Component\Mime\Test\Constraint\EmailTextBodyContains) 3.000000 0.000000 box
+ (PHPUnit\Framework\MockObject\Rule\AnyInvokedCount) 5.000000 69.000000 box
+ (PHPUnit\Framework\MockObject\Rule\InvokedAtLeastCount) 5.000000 68.000000 box
+ (PHPUnit\Framework\MockObject\Rule\InvokedAtLeastOnce) 5.000000 67.000000 box
+ (PHPUnit\Framework\MockObject\Rule\InvokedAtMostCount) 5.000000 66.000000 box
+ (PHPUnit\Framework\MockObject\Rule\InvokedCount) 5.000000 65.000000 box
+ (Hamcrest\AbstractMatcherTest) 7.000000 69.000000 box
+7.000000 69.000000 mark
+ (Hamcrest\InvokedMatcherTest) 7.000000 68.000000 box
+ (Hamcrest\MatcherAssertTest) 7.000000 67.000000 box
+ (Hamcrest\StringDescriptionTest) 7.000000 66.000000 box
+ (Hamcrest\UtilTest) 7.000000 65.000000 box
+ (Mockery\Adapter\Phpunit\MockeryTestCase) 7.000000 64.000000 box
+ (Monolog\Test\TestCase) 7.000000 63.000000 box
+ (Symfony\Component\Mailer\Test\AbstractTransportFactoryTestCase) 7.000000 62.000000 box
+7.000000 62.000000 mark
+ (Symfony\Component\Translation\Test\AbstractProviderFactoryTestCase) 7.000000 61.000000 box
+7.000000 61.000000 mark
+ (Symfony\Component\Translation\Test\ProviderTestCase) 7.000000 60.000000 box
+ (Symfony\Contracts\Service\Test\ServiceLocatorTestCase) 7.000000 59.000000 box
+ (Symfony\Contracts\Translation\Test\TranslatorTest) 7.000000 58.000000 box
+ (Tests\Unit\FournisseurControllerTest) 7.000000 57.000000 box
+ (Tests\Unit\MouvementStockControllerTest) 7.000000 56.000000 box
+ (Tests\Unit\ProduitControllerTest) 7.000000 55.000000 box
+
+% ----- relations -----
+
+solid
+1 3.500000 70.250000 out
+solid
+0.000000 7.000000 71.000000 conn
+solid
+0 0.000000 70.750000 in
+solid
+1 0.000000 69.250000 out
+solid
+0 2.000000 70.750000 in
+solid
+1 2.000000 69.250000 out
+solid
+0 3.000000 70.750000 in
+solid
+0 4.000000 70.750000 in
+solid
+1 4.000000 69.250000 out
+solid
+0 6.000000 70.750000 in
+solid
+1 6.000000 69.250000 out
+solid
+0 7.000000 70.750000 in
+solid
+0 0.000000 69.500000 hedge
+solid
+0 0.000000 68.500000 hedge
+solid
+0 0.000000 67.500000 hedge
+solid
+0 0.000000 66.500000 hedge
+solid
+0 0.000000 65.500000 hedge
+solid
+0 0.000000 64.500000 hedge
+solid
+0.000000 70.000000 64.500000 vedge
+solid
+0 2.000000 69.500000 hedge
+solid
+0 2.000000 68.500000 hedge
+solid
+0 2.000000 67.500000 hedge
+solid
+0 2.000000 66.500000 hedge
+solid
+0 2.000000 65.500000 hedge
+solid
+0 2.000000 64.500000 hedge
+solid
+0 2.000000 63.500000 hedge
+solid
+0 2.000000 62.500000 hedge
+solid
+0 2.000000 61.500000 hedge
+solid
+0 2.000000 60.500000 hedge
+solid
+0 2.000000 59.500000 hedge
+solid
+0 2.000000 58.500000 hedge
+solid
+0 2.000000 57.500000 hedge
+solid
+0 2.000000 56.500000 hedge
+solid
+0 2.000000 55.500000 hedge
+solid
+0 2.000000 54.500000 hedge
+solid
+0 2.000000 53.500000 hedge
+solid
+0 2.000000 52.500000 hedge
+solid
+0 2.000000 51.500000 hedge
+solid
+0 2.000000 50.500000 hedge
+solid
+0 2.000000 49.500000 hedge
+solid
+0 2.000000 48.500000 hedge
+solid
+0 2.000000 47.500000 hedge
+solid
+0 2.000000 46.500000 hedge
+solid
+0 2.000000 45.500000 hedge
+solid
+0 2.000000 44.500000 hedge
+solid
+0 2.000000 43.500000 hedge
+solid
+0 2.000000 42.500000 hedge
+solid
+0 2.000000 41.500000 hedge
+solid
+0 2.000000 40.500000 hedge
+solid
+0 2.000000 39.500000 hedge
+solid
+0 2.000000 38.500000 hedge
+solid
+0 2.000000 37.500000 hedge
+solid
+0 2.000000 36.500000 hedge
+solid
+0 2.000000 35.500000 hedge
+solid
+0 2.000000 34.500000 hedge
+solid
+0 2.000000 33.500000 hedge
+solid
+0 2.000000 32.500000 hedge
+solid
+0 2.000000 31.500000 hedge
+solid
+0 2.000000 30.500000 hedge
+solid
+0 2.000000 29.500000 hedge
+solid
+0 2.000000 28.500000 hedge
+solid
+0 2.000000 27.500000 hedge
+solid
+0 2.000000 26.500000 hedge
+solid
+0 2.000000 25.500000 hedge
+solid
+0 2.000000 24.500000 hedge
+solid
+0 2.000000 23.500000 hedge
+solid
+0 2.000000 22.500000 hedge
+solid
+0 2.000000 21.500000 hedge
+solid
+0 2.000000 20.500000 hedge
+solid
+0 2.000000 19.500000 hedge
+solid
+0 2.000000 18.500000 hedge
+solid
+0 2.000000 17.500000 hedge
+solid
+0 2.000000 16.500000 hedge
+solid
+0 2.000000 15.500000 hedge
+solid
+0 2.000000 14.500000 hedge
+solid
+0 2.000000 13.500000 hedge
+solid
+0 2.000000 12.500000 hedge
+solid
+0 2.000000 11.500000 hedge
+solid
+0 2.000000 10.500000 hedge
+solid
+0 2.000000 9.500000 hedge
+solid
+0 2.000000 8.500000 hedge
+solid
+0 2.000000 7.500000 hedge
+solid
+0 2.000000 6.500000 hedge
+solid
+0 2.000000 5.500000 hedge
+solid
+0 2.000000 4.500000 hedge
+solid
+0 2.000000 3.500000 hedge
+solid
+0 2.000000 2.500000 hedge
+solid
+0 2.000000 1.500000 hedge
+solid
+0 2.000000 0.500000 hedge
+solid
+2.000000 70.000000 0.500000 vedge
+solid
+0 4.000000 69.500000 hedge
+solid
+0 4.000000 68.500000 hedge
+solid
+0 4.000000 67.500000 hedge
+solid
+0 4.000000 66.500000 hedge
+solid
+0 4.000000 65.500000 hedge
+solid
+4.000000 70.000000 65.500000 vedge
+solid
+0 6.000000 69.500000 hedge
+solid
+0 6.000000 68.500000 hedge
+solid
+0 6.000000 67.500000 hedge
+solid
+0 6.000000 66.500000 hedge
+solid
+0 6.000000 65.500000 hedge
+solid
+0 6.000000 64.500000 hedge
+solid
+0 6.000000 63.500000 hedge
+solid
+0 6.000000 62.500000 hedge
+solid
+0 6.000000 61.500000 hedge
+solid
+0 6.000000 60.500000 hedge
+solid
+0 6.000000 59.500000 hedge
+solid
+0 6.000000 58.500000 hedge
+solid
+0 6.000000 57.500000 hedge
+solid
+0 6.000000 56.500000 hedge
+solid
+0 6.000000 55.500000 hedge
+solid
+6.000000 70.000000 55.500000 vedge

@@ -1,0 +1,122 @@
+\doxysection{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event Class Reference}
+\hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_event}{}\label{class_psy_1_1_readline_1_1_hoa_1_1_event}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_event_a704273d191fbdb0f9709ad18b7ea6552}{attach}} (\$callable)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_event_a64ebdb56c0ecbd7e4b35baf2aace8a3a}{detach}} (\$callable)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_event_ab02cbc12a5934a732d5ac6e1ca935cd5}{is\+Listened}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_event_a946905fa1d82b694af43363f4e0f4ee4}{get\+Event}} (string \$event\+Id)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_event_af36360a6da4fd16763f4bd981757d51e}{register}} (string \$event\+Id, \$source)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_event_a00186eb983bb679cd8297dcf90fc1da0}{unregister}} (string \$event\+Id, bool \$hard=false)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_event_ac6041f98e3d2d790450cd9aff15be943}{notify}} (string \$event\+Id, \mbox{\hyperlink{interface_psy_1_1_readline_1_1_hoa_1_1_event_source}{Event\+Source}} \$source, \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_event_bucket}{Event\+Bucket}} \$data)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_event_adfb016449640d4d9203a1e76dcabdcb9}{event\+Exists}} (string \$event\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_event_a33a03c7b3137aba4c5bb280fce3177fa}{KEY\+\_\+\+EVENT}} = 0
+\item 
+const \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_event_a2ddcaec86744b41a330986017b60246a}{KEY\+\_\+\+SOURCE}} = 1
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_event_ae602edb8f43bc68db088437d951eed9b}{\$\+\_\+callable}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Events are asynchronous at registration, anonymous at use (until we receive a bucket) and useful to largely spread data through components without any known connection between them. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_event_a704273d191fbdb0f9709ad18b7ea6552}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}!attach@{attach}}
+\index{attach@{attach}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_event_a704273d191fbdb0f9709ad18b7ea6552} 
+Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Event\+::attach (\begin{DoxyParamCaption}\item[{}]{\$callable}{}\end{DoxyParamCaption})}
+
+Attach an object to an event.
+
+It can be a callable or an accepted callable form (please, see the {\ttfamily Hoa\textbackslash{}Consistency\textbackslash{}Xcallable} class). \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_event_a64ebdb56c0ecbd7e4b35baf2aace8a3a}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}!detach@{detach}}
+\index{detach@{detach}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{detach()}{detach()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_event_a64ebdb56c0ecbd7e4b35baf2aace8a3a} 
+Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Event\+::detach (\begin{DoxyParamCaption}\item[{}]{\$callable}{}\end{DoxyParamCaption})}
+
+Detaches an object to an event.
+
+Please see {\ttfamily self\+::attach} method. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_event_adfb016449640d4d9203a1e76dcabdcb9}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}!eventExists@{eventExists}}
+\index{eventExists@{eventExists}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{eventExists()}{eventExists()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_event_adfb016449640d4d9203a1e76dcabdcb9} 
+static Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Event\+::event\+Exists (\begin{DoxyParamCaption}\item[{string}]{\$event\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks whether an event exists. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_event_a946905fa1d82b694af43363f4e0f4ee4}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}!getEvent@{getEvent}}
+\index{getEvent@{getEvent}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{getEvent()}{getEvent()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_event_a946905fa1d82b694af43363f4e0f4ee4} 
+static Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Event\+::get\+Event (\begin{DoxyParamCaption}\item[{string}]{\$event\+Id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Manage multiton of events, with the principle of asynchronous attachments. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_event_ab02cbc12a5934a732d5ac6e1ca935cd5}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}!isListened@{isListened}}
+\index{isListened@{isListened}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{isListened()}{isListened()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_event_ab02cbc12a5934a732d5ac6e1ca935cd5} 
+Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Event\+::is\+Listened (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks if at least one callable is attached to an event. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_event_ac6041f98e3d2d790450cd9aff15be943}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}!notify@{notify}}
+\index{notify@{notify}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_event_ac6041f98e3d2d790450cd9aff15be943} 
+static Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Event\+::notify (\begin{DoxyParamCaption}\item[{string}]{\$event\+Id}{, }\item[{\mbox{\hyperlink{interface_psy_1_1_readline_1_1_hoa_1_1_event_source}{Event\+Source}}}]{\$source}{, }\item[{\mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_event_bucket}{Event\+Bucket}}}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Notifies, i.\+e. send data to observers. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_event_af36360a6da4fd16763f4bd981757d51e}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}!register@{register}}
+\index{register@{register}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_event_af36360a6da4fd16763f4bd981757d51e} 
+static Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Event\+::register (\begin{DoxyParamCaption}\item[{string}]{\$event\+Id}{, }\item[{}]{\$source}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Declares a new object in the observable collection. Note\+: Hoa\textquotesingle{}s libraries use {\ttfamily hoa\+://\+Event/an\+ID} for their observable objects. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_event_a00186eb983bb679cd8297dcf90fc1da0}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}!unregister@{unregister}}
+\index{unregister@{unregister}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{unregister()}{unregister()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_event_a00186eb983bb679cd8297dcf90fc1da0} 
+static Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Event\+::unregister (\begin{DoxyParamCaption}\item[{string}]{\$event\+Id}{, }\item[{bool}]{\$hard}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Undeclares an object in the observable collection.
+
+If {\ttfamily \$hard} is set to \`{}true, then the source and its attached callables will be deleted. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_event_ae602edb8f43bc68db088437d951eed9b}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}!\$\_callable@{\$\_callable}}
+\index{\$\_callable@{\$\_callable}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{\$\_callable}{\$\_callable}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_event_ae602edb8f43bc68db088437d951eed9b} 
+Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Event\+::\$\+\_\+callable = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Collection of callables, i.\+e. observer objects. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_event_a33a03c7b3137aba4c5bb280fce3177fa}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}!KEY\_EVENT@{KEY\_EVENT}}
+\index{KEY\_EVENT@{KEY\_EVENT}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{KEY\_EVENT}{KEY\_EVENT}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_event_a33a03c7b3137aba4c5bb280fce3177fa} 
+const Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Event\+::\+KEY\+\_\+\+EVENT = 0}
+
+Event ID key. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_event_a2ddcaec86744b41a330986017b60246a}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}!KEY\_SOURCE@{KEY\_SOURCE}}
+\index{KEY\_SOURCE@{KEY\_SOURCE}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Event}}
+\doxysubsubsection{\texorpdfstring{KEY\_SOURCE}{KEY\_SOURCE}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_event_a2ddcaec86744b41a330986017b60246a} 
+const Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Event\+::\+KEY\+\_\+\+SOURCE = 1}
+
+Source object key. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Readline/\+Hoa/Event.\+php\end{DoxyCompactItemize}

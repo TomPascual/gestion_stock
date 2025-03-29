@@ -1,0 +1,68 @@
+\doxysection{Cron\textbackslash{}Field\+Interface Interface Reference}
+\hypertarget{interface_cron_1_1_field_interface}{}\label{interface_cron_1_1_field_interface}\index{Cron\textbackslash{}FieldInterface@{Cron\textbackslash{}FieldInterface}}
+Inheritance diagram for Cron\textbackslash{}Field\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.210526cm]{interface_cron_1_1_field_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_cron_1_1_field_interface_a07a0031fe6d9874aea423e6210ac0312}{is\+Satisfied\+By}} (Date\+Time\+Interface \$date, \$value, bool \$invert)
+\item 
+\mbox{\hyperlink{interface_cron_1_1_field_interface_a9016d6370d4622c5ec6b358650485a97}{increment}} (Date\+Time\+Interface \&\$date, \$invert=false, \$parts=null)
+\item 
+\mbox{\hyperlink{interface_cron_1_1_field_interface_a4fa26022a4c7454e2e4e31edf247c190}{validate}} (string \$value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+CRON field interface. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_cron_1_1_field_interface_a9016d6370d4622c5ec6b358650485a97}\index{Cron\textbackslash{}FieldInterface@{Cron\textbackslash{}FieldInterface}!increment@{increment}}
+\index{increment@{increment}!Cron\textbackslash{}FieldInterface@{Cron\textbackslash{}FieldInterface}}
+\doxysubsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily \label{interface_cron_1_1_field_interface_a9016d6370d4622c5ec6b358650485a97} 
+Cron\textbackslash{}\+Field\+Interface\+::increment (\begin{DoxyParamCaption}\item[{Date\+Time\+Interface \&}]{\$date}{, }\item[{}]{\$invert}{ = {\ttfamily false}, }\item[{}]{\$parts}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+When a CRON expression is not satisfied, this method is used to increment or decrement a Date\+Time object by the unit of the cron field. 
+
+Implemented in \mbox{\hyperlink{class_cron_1_1_day_of_month_field_a6bfe3bee60c06a2d6f246efc34736ba1}{Cron\textbackslash{}\+Day\+Of\+Month\+Field}}, \mbox{\hyperlink{class_cron_1_1_day_of_week_field_a1c7243e8f739921a295711b1afd8fbb9}{Cron\textbackslash{}\+Day\+Of\+Week\+Field}}, \mbox{\hyperlink{class_cron_1_1_hours_field_a75404229bb0424fe1eead22bbd575ec2}{Cron\textbackslash{}\+Hours\+Field}}, \mbox{\hyperlink{class_cron_1_1_minutes_field_a5fc142f42a220575554f1d2796f23884}{Cron\textbackslash{}\+Minutes\+Field}}, and \mbox{\hyperlink{class_cron_1_1_month_field_af88aeb1d7cbdb5b4f6de44994297503d}{Cron\textbackslash{}\+Month\+Field}}.
+
+\Hypertarget{interface_cron_1_1_field_interface_a07a0031fe6d9874aea423e6210ac0312}\index{Cron\textbackslash{}FieldInterface@{Cron\textbackslash{}FieldInterface}!isSatisfiedBy@{isSatisfiedBy}}
+\index{isSatisfiedBy@{isSatisfiedBy}!Cron\textbackslash{}FieldInterface@{Cron\textbackslash{}FieldInterface}}
+\doxysubsubsection{\texorpdfstring{isSatisfiedBy()}{isSatisfiedBy()}}
+{\footnotesize\ttfamily \label{interface_cron_1_1_field_interface_a07a0031fe6d9874aea423e6210ac0312} 
+Cron\textbackslash{}\+Field\+Interface\+::is\+Satisfied\+By (\begin{DoxyParamCaption}\item[{Date\+Time\+Interface}]{\$date}{, }\item[{}]{\$value}{, }\item[{bool}]{\$invert}{}\end{DoxyParamCaption})}
+
+Check if the respective value of a Date\+Time field satisfies a CRON exp. 
+
+Implemented in \mbox{\hyperlink{class_cron_1_1_day_of_month_field_a9e1e724dd5b9f756fa96909bb79a74e2}{Cron\textbackslash{}\+Day\+Of\+Month\+Field}}, \mbox{\hyperlink{class_cron_1_1_day_of_week_field_a4272183d457c7dd6648307d8a2c13387}{Cron\textbackslash{}\+Day\+Of\+Week\+Field}}, \mbox{\hyperlink{class_cron_1_1_hours_field_a0ca869279b2bcdef53f0c373e941bded}{Cron\textbackslash{}\+Hours\+Field}}, \mbox{\hyperlink{class_cron_1_1_minutes_field_a8ba3ced7cf81fd0d70c552d8802466ec}{Cron\textbackslash{}\+Minutes\+Field}}, and \mbox{\hyperlink{class_cron_1_1_month_field_afd83e2b18b408d6f56592b079230b0ab}{Cron\textbackslash{}\+Month\+Field}}.
+
+\Hypertarget{interface_cron_1_1_field_interface_a4fa26022a4c7454e2e4e31edf247c190}\index{Cron\textbackslash{}FieldInterface@{Cron\textbackslash{}FieldInterface}!validate@{validate}}
+\index{validate@{validate}!Cron\textbackslash{}FieldInterface@{Cron\textbackslash{}FieldInterface}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{interface_cron_1_1_field_interface_a4fa26022a4c7454e2e4e31edf247c190} 
+Cron\textbackslash{}\+Field\+Interface\+::validate (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Validates a CRON expression for a given field.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & CRON expression value to validate\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Returns TRUE if valid, FALSE otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_cron_1_1_abstract_field_a048886300b82bda36dd029593f5d22a7}{Cron\textbackslash{}\+Abstract\+Field}}, \mbox{\hyperlink{class_cron_1_1_day_of_month_field_af5658620a1b363e0d7b5483c35b193da}{Cron\textbackslash{}\+Day\+Of\+Month\+Field}}, and \mbox{\hyperlink{class_cron_1_1_day_of_week_field_ad921d3d6563ea22cc63c3d3a0390efce}{Cron\textbackslash{}\+Day\+Of\+Week\+Field}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/dragonmantank/cron-\/expression/src/\+Cron/Field\+Interface.\+php\end{DoxyCompactItemize}

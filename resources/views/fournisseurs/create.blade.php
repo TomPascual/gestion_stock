@@ -1,3 +1,11 @@
+{{-- 
+    Vue : fournisseurs/create.blade.php
+    Description : Affiche le formulaire de création d’un fournisseur.
+    
+    Action du formulaire :
+        - POST vers la route 'fournisseurs.store'
+--}}
+
 @extends('layouts.app')
 
 @section('content')

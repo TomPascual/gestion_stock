@@ -1,0 +1,122 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Foundation\textbackslash{}File\textbackslash{}File Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file}{}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Foundation\textbackslash{}File\textbackslash{}File\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.560976cm]{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a5e403ea743fe76f967b74baec8fe18ec}{\+\_\+\+\_\+construct}} (string \$path, bool \$check\+Path=true)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a11d0112cbc6c1bd2e16e7c6c71c6a83e}{guess\+Extension}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a458b52fcc4fa414cc2819db6c30b4641}{get\+Mime\+Type}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a2bbbfccf70bf99d1ac71d8a9154e37c2}{move}} (string \$directory, ?string \$name=null)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_ab7145488cc284091717803b12091ed21}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_ab7145488cc284091717803b12091ed21} 
+{\bfseries get\+Content} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_aca9b83afcdf08d949b2c2f4cee836ffb}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_aca9b83afcdf08d949b2c2f4cee836ffb} 
+{\bfseries get\+Target\+File} (string \$directory, ?string \$name=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a099822325d2847ed9fd5621bec852e27}{get\+Name}} (string \$name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A file in the file system.
+
+\begin{DoxyAuthor}{Author}
+Bernhard Schussek \href{mailto:bschussek@gmail.com}{\texttt{ bschussek@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a5e403ea743fe76f967b74baec8fe18ec}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a5e403ea743fe76f967b74baec8fe18ec} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+File\textbackslash{}\+File\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{bool}]{\$check\+Path}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Constructs a new file from the given path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & The path to the file \\
+\hline
+bool & {\em \$check\+Path} & Whether to check the path or not\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em File\+Not\+Found\+Exception} & If the given path is not a file \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a458b52fcc4fa414cc2819db6c30b4641}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File}!getMimeType@{getMimeType}}
+\index{getMimeType@{getMimeType}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File}}
+\doxysubsubsection{\texorpdfstring{getMimeType()}{getMimeType()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a458b52fcc4fa414cc2819db6c30b4641} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+File\textbackslash{}\+File\+::get\+Mime\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the mime type of the file.
+
+The mime type is guessed using a Mime\+Type\+Guesser\+Interface instance, which uses finfo\+\_\+file() then the "{}file"{} system binary, depending on which of those are available.
+
+\begin{DoxySeeAlso}{See also}
+Mime\+Types 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a099822325d2847ed9fd5621bec852e27}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File}!getName@{getName}}
+\index{getName@{getName}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a099822325d2847ed9fd5621bec852e27} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+File\textbackslash{}\+File\+::get\+Name (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns locale independent base name of the given path. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a11d0112cbc6c1bd2e16e7c6c71c6a83e}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File}!guessExtension@{guessExtension}}
+\index{guessExtension@{guessExtension}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File}}
+\doxysubsubsection{\texorpdfstring{guessExtension()}{guessExtension()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a11d0112cbc6c1bd2e16e7c6c71c6a83e} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+File\textbackslash{}\+File\+::guess\+Extension (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the extension based on the mime type.
+
+If the mime type is unknown, returns null.
+
+This method uses the mime type as guessed by get\+Mime\+Type() to guess the file extension.
+
+\begin{DoxySeeAlso}{See also}
+Mime\+Types 
+
+get\+Mime\+Type() 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a2bbbfccf70bf99d1ac71d8a9154e37c2}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File}!move@{move}}
+\index{move@{move}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}File\textbackslash{}File}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_file_a2bbbfccf70bf99d1ac71d8a9154e37c2} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+File\textbackslash{}\+File\+::move (\begin{DoxyParamCaption}\item[{string}]{\$directory}{, }\item[{?string}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Moves the file to a new location.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em File\+Exception} & if the target file could not be created \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_file_1_1_uploaded_file_a6baf7be837b76389db69d42ce96a3c67}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+File\textbackslash{}\+Uploaded\+File}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/foundation/\+File/File.\+php\end{DoxyCompactItemize}

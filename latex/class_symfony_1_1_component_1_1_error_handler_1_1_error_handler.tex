@@ -1,0 +1,233 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Error\+Handler\textbackslash{}Error\+Handler Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler}{}\label{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a97ad0baa6d4cb7d57a3a8ffe8afb4718}\label{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a97ad0baa6d4cb7d57a3a8ffe8afb4718} 
+{\bfseries \+\_\+\+\_\+construct} (?\mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_buffering_logger}{Buffering\+Logger}} \$bootstrapping\+Logger=null, private bool \$debug=false,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a4d6a5fb0ba47a511a525659f50cceab4}{set\+Default\+Logger}} (\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger, array\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null \$levels=\textbackslash{}E\+\_\+\+ALL, bool \$replace=false)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a3834894917e37976ccf7f67a651af663}{set\+Loggers}} (array \$loggers)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a576a8d24b29d94ab60c3465bb114e10b}\label{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a576a8d24b29d94ab60c3465bb114e10b} 
+{\bfseries set\+Exception\+Handler} (?callable \$handler)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a4654fab884e0bab2f352aab6ab1b328b}{throw\+At}} (int \$levels, bool \$replace=false)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a5053b89c6cc061a6a5e9855f140250af}{scope\+At}} (int \$levels, bool \$replace=false)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a1317101724fdcc7d91bd7cd016f518bc}{trace\+At}} (int \$levels, bool \$replace=false)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_aed7b0c552ec95af5729413b798d3d992}{scream\+At}} (int \$levels, bool \$replace=false)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_ab358e7af49b969ae78a27a2dc056dd5e}{handle\+Error}} (int \$type, string \$message, string \$file, int \$line)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a65db059d463a184c05cca13471c334f7}{handle\+Exception}} (\textbackslash{}Throwable \$exception)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a52740420df103449cba996daf6b7d1ca}\label{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a52740420df103449cba996daf6b7d1ca} 
+{\bfseries enhance\+Error} (\textbackslash{}Throwable \$exception)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a69473c42ee06a6d6675d265c34056398}{register}} (?self \$handler=null, bool \$replace=true)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_af841844692b0a1605b259b6ffd05bc96}{call}} (callable \$function, mixed ... \$arguments)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_ac8244c1300ed015538ee2ddd9a2e79d6}{handle\+Fatal\+Error}} (?array \$error=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_ad9ee88ca4817487f011d0b51594439e6}{get\+Error\+Enhancers}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A generic Error\+Handler for the PHP engine.
+
+Provides five bit fields that control how errors are handled\+:
+\begin{DoxyItemize}
+\item thrown\+Errors\+: errors thrown as \textbackslash{}\+Error\+Exception
+\item logged\+Errors\+: logged errors, when not -\/silenced
+\item scoped\+Errors\+: errors thrown or logged with their local context
+\item traced\+Errors\+: errors logged with their stack trace
+\item screamed\+Errors\+: never -\/silenced errors
+\end{DoxyItemize}
+
+Each error level can be logged by a dedicated PSR-\/3 logger object. Screaming only applies to logging. Throwing takes precedence over logging. Uncaught exceptions are logged as E\+\_\+\+ERROR. E\+\_\+\+DEPRECATED and E\+\_\+\+USER\+\_\+\+DEPRECATED levels never throw. E\+\_\+\+RECOVERABLE\+\_\+\+ERROR and E\+\_\+\+USER\+\_\+\+ERROR levels always throw. Non catchable errors that can be detected at shutdown time are logged when the scream bit field allows so. As errors have a performance cost, repeated errors are all logged, so that the developer can see them and weight them as more important to fix than others of the same level.
+
+\begin{DoxyAuthor}{Author}
+Nicolas Grekas \href{mailto:p@tchwork.com}{\texttt{ p@tchwork.\+com}} 
+
+Grégoire Pineau \href{mailto:lyrixx@lyrixx.info}{\texttt{ lyrixx@lyrixx.\+info}}
+\end{DoxyAuthor}
+@final 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_af841844692b0a1605b259b6ffd05bc96}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}!call@{call}}
+\index{call@{call}!Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_af841844692b0a1605b259b6ffd05bc96} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Error\+Handler\+::call (\begin{DoxyParamCaption}\item[{callable}]{\$function}{, }\item[{mixed ...}]{\$arguments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calls a function and turns any PHP error into \textbackslash{}\+Error\+Exception.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Error\+Exception When \$function(...\$arguments) triggers a PHP error \Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_ad9ee88ca4817487f011d0b51594439e6}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}!getErrorEnhancers@{getErrorEnhancers}}
+\index{getErrorEnhancers@{getErrorEnhancers}!Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{getErrorEnhancers()}{getErrorEnhancers()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_ad9ee88ca4817487f011d0b51594439e6} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Error\+Handler\+::get\+Error\+Enhancers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Override this method if you want to define more error enhancers.
+
+\begin{DoxyReturn}{Returns}
+Error\+Enhancer\+Interface\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_ab358e7af49b969ae78a27a2dc056dd5e}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}!handleError@{handleError}}
+\index{handleError@{handleError}!Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{handleError()}{handleError()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_ab358e7af49b969ae78a27a2dc056dd5e} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Error\+Handler\+::handle\+Error (\begin{DoxyParamCaption}\item[{int}]{\$type}{, }\item[{string}]{\$message}{, }\item[{string}]{\$file}{, }\item[{int}]{\$line}{}\end{DoxyParamCaption})}
+
+Handles errors by filtering then logging them according to the configured bit fields.
+
+\begin{DoxyReturn}{Returns}
+bool Returns false when no handling happens so that the PHP engine can handle the error itself
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Error\+Exception When \$this-\/\texorpdfstring{$>$}{>}thrown\+Errors requests so \Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a65db059d463a184c05cca13471c334f7}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}!handleException@{handleException}}
+\index{handleException@{handleException}!Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{handleException()}{handleException()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a65db059d463a184c05cca13471c334f7} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Error\+Handler\+::handle\+Exception (\begin{DoxyParamCaption}\item[{\textbackslash{}Throwable}]{\$exception}{}\end{DoxyParamCaption})}
+
+Handles an exception by logging then forwarding it to another handler. \Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_ac8244c1300ed015538ee2ddd9a2e79d6}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}!handleFatalError@{handleFatalError}}
+\index{handleFatalError@{handleFatalError}!Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{handleFatalError()}{handleFatalError()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_ac8244c1300ed015538ee2ddd9a2e79d6} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Error\+Handler\+::handle\+Fatal\+Error (\begin{DoxyParamCaption}\item[{?array}]{\$error}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Shutdown registered function for handling PHP fatal errors.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | null & {\em \$error} & An array as returned by error\+\_\+get\+\_\+last() \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a69473c42ee06a6d6675d265c34056398}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}!register@{register}}
+\index{register@{register}!Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a69473c42ee06a6d6675d265c34056398} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Error\+Handler\+::register (\begin{DoxyParamCaption}\item[{?self}]{\$handler}{ = {\ttfamily null}, }\item[{bool}]{\$replace}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registers the error handler. \Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a5053b89c6cc061a6a5e9855f140250af}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}!scopeAt@{scopeAt}}
+\index{scopeAt@{scopeAt}!Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{scopeAt()}{scopeAt()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a5053b89c6cc061a6a5e9855f140250af} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Error\+Handler\+::scope\+At (\begin{DoxyParamCaption}\item[{int}]{\$levels}{, }\item[{bool}]{\$replace}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Sets the PHP error levels for which local variables are preserved.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$levels} & A bit field of E\+\_\+\texorpdfstring{$\ast$}{*} constants for scoped errors \\
+\hline
+bool & {\em \$replace} & Replace or amend the previous value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_aed7b0c552ec95af5729413b798d3d992}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}!screamAt@{screamAt}}
+\index{screamAt@{screamAt}!Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{screamAt()}{screamAt()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_aed7b0c552ec95af5729413b798d3d992} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Error\+Handler\+::scream\+At (\begin{DoxyParamCaption}\item[{int}]{\$levels}{, }\item[{bool}]{\$replace}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Sets the error levels where the -\/operator is ignored.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$levels} & A bit field of E\+\_\+\texorpdfstring{$\ast$}{*} constants for screamed errors \\
+\hline
+bool & {\em \$replace} & Replace or amend the previous value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a4d6a5fb0ba47a511a525659f50cceab4}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}!setDefaultLogger@{setDefaultLogger}}
+\index{setDefaultLogger@{setDefaultLogger}!Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{setDefaultLogger()}{setDefaultLogger()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a4d6a5fb0ba47a511a525659f50cceab4} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Error\+Handler\+::set\+Default\+Logger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}}]{\$logger}{, }\item[{array\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}null}]{\$levels}{ = {\ttfamily \textbackslash{}E\+\_\+ALL}, }\item[{bool}]{\$replace}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Sets a logger to non assigned errors levels.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Logger\+Interface & {\em \$logger} & A PSR-\/3 logger to put as default for the given levels \\
+\hline
+array | int | null & {\em \$levels} & An array map of E\+\_\+\texorpdfstring{$\ast$}{*} to Log\+Level\+:\+:\texorpdfstring{$\ast$}{*} or an integer bit field of E\+\_\+\texorpdfstring{$\ast$}{*} constants \\
+\hline
+bool & {\em \$replace} & Whether to replace or not any existing logger \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a3834894917e37976ccf7f67a651af663}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}!setLoggers@{setLoggers}}
+\index{setLoggers@{setLoggers}!Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{setLoggers()}{setLoggers()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a3834894917e37976ccf7f67a651af663} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Error\+Handler\+::set\+Loggers (\begin{DoxyParamCaption}\item[{array}]{\$loggers}{}\end{DoxyParamCaption})}
+
+Sets a logger for each error level.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$loggers} & Error levels to \mbox{[}Logger\+Interface\texorpdfstring{$\vert$}{|}null, Log\+Level\+:\+:\texorpdfstring{$\ast$}{*}\mbox{]} map\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a4654fab884e0bab2f352aab6ab1b328b}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}!throwAt@{throwAt}}
+\index{throwAt@{throwAt}!Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{throwAt()}{throwAt()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a4654fab884e0bab2f352aab6ab1b328b} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Error\+Handler\+::throw\+At (\begin{DoxyParamCaption}\item[{int}]{\$levels}{, }\item[{bool}]{\$replace}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Sets the PHP error levels that throw an exception when a PHP error occurs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$levels} & A bit field of E\+\_\+\texorpdfstring{$\ast$}{*} constants for thrown errors \\
+\hline
+bool & {\em \$replace} & Replace or amend the previous value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a1317101724fdcc7d91bd7cd016f518bc}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}!traceAt@{traceAt}}
+\index{traceAt@{traceAt}!Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{traceAt()}{traceAt()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_error_handler_a1317101724fdcc7d91bd7cd016f518bc} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Error\+Handler\+::trace\+At (\begin{DoxyParamCaption}\item[{int}]{\$levels}{, }\item[{bool}]{\$replace}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Sets the PHP error levels for which the stack trace is preserved.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$levels} & A bit field of E\+\_\+\texorpdfstring{$\ast$}{*} constants for traced errors \\
+\hline
+bool & {\em \$replace} & Replace or amend the previous value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/error-\/handler/Error\+Handler.\+php\end{DoxyCompactItemize}

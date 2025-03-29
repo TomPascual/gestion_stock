@@ -1,0 +1,43 @@
+\doxysection{Psr\textbackslash{}Event\+Dispatcher\textbackslash{}Stoppable\+Event\+Interface Interface Reference}
+\hypertarget{interface_psr_1_1_event_dispatcher_1_1_stoppable_event_interface}{}\label{interface_psr_1_1_event_dispatcher_1_1_stoppable_event_interface}\index{Psr\textbackslash{}EventDispatcher\textbackslash{}StoppableEventInterface@{Psr\textbackslash{}EventDispatcher\textbackslash{}StoppableEventInterface}}
+Inheritance diagram for Psr\textbackslash{}Event\+Dispatcher\textbackslash{}Stoppable\+Event\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.353293cm]{interface_psr_1_1_event_dispatcher_1_1_stoppable_event_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_stoppable_event_interface_a465b694112b1c3722b46890fe00c03c1}{is\+Propagation\+Stopped}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An Event whose processing may be interrupted when the event has been handled.
+
+A Dispatcher implementation MUST check to determine if an Event is marked as stopped after each listener is called. If it is then it should return immediately without calling any further Listeners. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_psr_1_1_event_dispatcher_1_1_stoppable_event_interface_a465b694112b1c3722b46890fe00c03c1}\index{Psr\textbackslash{}EventDispatcher\textbackslash{}StoppableEventInterface@{Psr\textbackslash{}EventDispatcher\textbackslash{}StoppableEventInterface}!isPropagationStopped@{isPropagationStopped}}
+\index{isPropagationStopped@{isPropagationStopped}!Psr\textbackslash{}EventDispatcher\textbackslash{}StoppableEventInterface@{Psr\textbackslash{}EventDispatcher\textbackslash{}StoppableEventInterface}}
+\doxysubsubsection{\texorpdfstring{isPropagationStopped()}{isPropagationStopped()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_event_dispatcher_1_1_stoppable_event_interface_a465b694112b1c3722b46890fe00c03c1} 
+Psr\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Stoppable\+Event\+Interface\+::is\+Propagation\+Stopped (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Is propagation stopped?
+
+This will typically only be used by the Dispatcher to determine if the previous listener halted propagation.
+
+\begin{DoxyReturn}{Returns}
+bool True if the Event is complete and no further listeners should be called. False to continue calling listeners. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_common_mark_1_1_event_1_1_abstract_event_a4d2efce5aec5f20d2ee75f574e0e8d7f}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Event\textbackslash{}\+Abstract\+Event}}, and \mbox{\hyperlink{class_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_a3d0f60a43ef2306a752386b611e888ca}{Symfony\textbackslash{}\+Contracts\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psr/event-\/dispatcher/src/Stoppable\+Event\+Interface.\+php\end{DoxyCompactItemize}

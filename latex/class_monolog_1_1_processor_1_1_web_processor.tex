@@ -1,0 +1,97 @@
+\doxysection{Monolog\textbackslash{}Processor\textbackslash{}Web\+Processor Class Reference}
+\hypertarget{class_monolog_1_1_processor_1_1_web_processor}{}\label{class_monolog_1_1_processor_1_1_web_processor}\index{Monolog\textbackslash{}Processor\textbackslash{}WebProcessor@{Monolog\textbackslash{}Processor\textbackslash{}WebProcessor}}
+Inheritance diagram for Monolog\textbackslash{}Processor\textbackslash{}Web\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_monolog_1_1_processor_1_1_web_processor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monolog_1_1_processor_1_1_web_processor_a2d671157a7ca999c802d83a1c57ec8d1}{\+\_\+\+\_\+construct}} (array\texorpdfstring{$\vert$}{|}Array\+Access\texorpdfstring{$\vert$}{|}null \$server\+Data=null, array\texorpdfstring{$\vert$}{|}null \$extra\+Fields=null)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_processor_1_1_web_processor_a1eb5f1df8e450a5a2542d124d70081fe}{\+\_\+\+\_\+invoke}} (\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}} \$record)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_processor_1_1_web_processor_a9eae6f7d400c165d70bc5845c5280b5e}{add\+Extra\+Field}} (string \$extra\+Name, string \$server\+Name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_monolog_1_1_processor_1_1_web_processor_a044bf4ceab19c883343181367b229821}\label{class_monolog_1_1_processor_1_1_web_processor_a044bf4ceab19c883343181367b229821} 
+array Array\+Access {\bfseries \$server\+Data}
+\item 
+array \mbox{\hyperlink{class_monolog_1_1_processor_1_1_web_processor_a0077f5977a5ddc2a4bb3d335eab40714}{\$extra\+Fields}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Injects url/method and remote IP of the current web request in all records
+
+\begin{DoxyAuthor}{Author}
+Jordi Boggiano \href{mailto:j.boggiano@seld.be}{\texttt{ j.\+boggiano@seld.\+be}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_monolog_1_1_processor_1_1_web_processor_a2d671157a7ca999c802d83a1c57ec8d1}\index{Monolog\textbackslash{}Processor\textbackslash{}WebProcessor@{Monolog\textbackslash{}Processor\textbackslash{}WebProcessor}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Monolog\textbackslash{}Processor\textbackslash{}WebProcessor@{Monolog\textbackslash{}Processor\textbackslash{}WebProcessor}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_processor_1_1_web_processor_a2d671157a7ca999c802d83a1c57ec8d1} 
+Monolog\textbackslash{}\+Processor\textbackslash{}\+Web\+Processor\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}Array\+Access\texorpdfstring{$\vert$}{|}null}]{\$server\+Data}{ = {\ttfamily null}, }\item[{array\texorpdfstring{$\vert$}{|}null}]{\$extra\+Fields}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$\texorpdfstring{$\vert$}{|}\+Array\+Access$<$string,mixed$>$\texorpdfstring{$\vert$}{|}null} & \$server\+Data Array or object w/ Array\+Access that provides access to the \$\+\_\+\+SERVER data \\
+\hline
+{\em array$<$string,string$>$\texorpdfstring{$\vert$}{|}array$<$string$>$\texorpdfstring{$\vert$}{|}null} & \$extra\+Fields Field names and the related key inside \$server\+Data to be added (or just a list of field names to use the default configured \$server\+Data mapping). If not provided it defaults to\+: \mbox{[}url, ip, http\+\_\+method, server, referrer\mbox{]} + unique\+\_\+id if present in server data \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_monolog_1_1_processor_1_1_web_processor_a1eb5f1df8e450a5a2542d124d70081fe}\index{Monolog\textbackslash{}Processor\textbackslash{}WebProcessor@{Monolog\textbackslash{}Processor\textbackslash{}WebProcessor}!\_\_invoke@{\_\_invoke}}
+\index{\_\_invoke@{\_\_invoke}!Monolog\textbackslash{}Processor\textbackslash{}WebProcessor@{Monolog\textbackslash{}Processor\textbackslash{}WebProcessor}}
+\doxysubsubsection{\texorpdfstring{\_\_invoke()}{\_\_invoke()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_processor_1_1_web_processor_a1eb5f1df8e450a5a2542d124d70081fe} 
+Monolog\textbackslash{}\+Processor\textbackslash{}\+Web\+Processor\+::\+\_\+\+\_\+invoke (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}}}]{\$record}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_processor_1_1_processor_interface_ab269cbd743464f92846036dfa68d3cf8}{Monolog\textbackslash{}\+Processor\textbackslash{}\+Processor\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_processor_1_1_web_processor_a9eae6f7d400c165d70bc5845c5280b5e}\index{Monolog\textbackslash{}Processor\textbackslash{}WebProcessor@{Monolog\textbackslash{}Processor\textbackslash{}WebProcessor}!addExtraField@{addExtraField}}
+\index{addExtraField@{addExtraField}!Monolog\textbackslash{}Processor\textbackslash{}WebProcessor@{Monolog\textbackslash{}Processor\textbackslash{}WebProcessor}}
+\doxysubsubsection{\texorpdfstring{addExtraField()}{addExtraField()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_processor_1_1_web_processor_a9eae6f7d400c165d70bc5845c5280b5e} 
+Monolog\textbackslash{}\+Processor\textbackslash{}\+Web\+Processor\+::add\+Extra\+Field (\begin{DoxyParamCaption}\item[{string}]{\$extra\+Name}{, }\item[{string}]{\$server\+Name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_monolog_1_1_processor_1_1_web_processor_a0077f5977a5ddc2a4bb3d335eab40714}\index{Monolog\textbackslash{}Processor\textbackslash{}WebProcessor@{Monolog\textbackslash{}Processor\textbackslash{}WebProcessor}!\$extraFields@{\$extraFields}}
+\index{\$extraFields@{\$extraFields}!Monolog\textbackslash{}Processor\textbackslash{}WebProcessor@{Monolog\textbackslash{}Processor\textbackslash{}WebProcessor}}
+\doxysubsubsection{\texorpdfstring{\$extraFields}{\$extraFields}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_processor_1_1_web_processor_a0077f5977a5ddc2a4bb3d335eab40714} 
+array Monolog\textbackslash{}\+Processor\textbackslash{}\+Web\+Processor\+::\$extra\+Fields\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'url'}\ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'REQUEST\_URI'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'ip'}\ \ \ \ \ \ \ \ \ \ =>\ \textcolor{stringliteral}{'REMOTE\_ADDR'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'http\_method'}\ =>\ \textcolor{stringliteral}{'REQUEST\_METHOD'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'server'}\ \ \ \ \ \ =>\ \textcolor{stringliteral}{'SERVER\_NAME'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'referrer'}\ \ \ \ =>\ \textcolor{stringliteral}{'HTTP\_REFERER'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'user\_agent'}\ \ =>\ \textcolor{stringliteral}{'HTTP\_USER\_AGENT'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/monolog/monolog/src/\+Monolog/\+Processor/Web\+Processor.\+php\end{DoxyCompactItemize}

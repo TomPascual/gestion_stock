@@ -1,0 +1,137 @@
+\doxysection{Nette\textbackslash{}Utils\textbackslash{}Date\+Time Class Reference}
+\hypertarget{class_nette_1_1_utils_1_1_date_time}{}\label{class_nette_1_1_utils_1_1_date_time}\index{Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}}
+Inheritance diagram for Nette\textbackslash{}Utils\textbackslash{}Date\+Time\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_nette_1_1_utils_1_1_date_time}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_date_time_a4a20490501b3e51a51a119caf42d9e5a}{json\+Serialize}} ()
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_date_time_a89e888de70223f70228658df55305d3b}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_date_time_ab11d770d880141a8fb46dbd2ff0d394c}{modify\+Clone}} (string \$modify=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_date_time_a48db79942aea8a65b99158d06d8b4c4a}{from}} (string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}\textbackslash{}Date\+Time\+Interface\texorpdfstring{$\vert$}{|}null \$time)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_date_time_a1f9957f017df2f30ff0455559f4cd51f}{from\+Parts}} (int \$year, int \$month, int \$day, int \$hour=0, int \$minute=0, float \$second=0.\+0,)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_date_time_acf125d22bb4b58c388634c0b370790ae}{create\+From\+Format}} (string \$format, string \$time, string\texorpdfstring{$\vert$}{|}\textbackslash{}Date\+Time\+Zone\texorpdfstring{$\vert$}{|}null \$timezone=null,)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_nette_1_1_utils_1_1_date_time_ab75df8e42a3974323fea44e34c5d535c}{MINUTE}} = 60
+\item 
+const \mbox{\hyperlink{class_nette_1_1_utils_1_1_date_time_a380cd84ddb7f47635e578103653662c0}{HOUR}} = 60 \texorpdfstring{$\ast$}{*} self\+::\+MINUTE
+\item 
+const \mbox{\hyperlink{class_nette_1_1_utils_1_1_date_time_a0136e6166ab865080c8756ee34cc2944}{DAY}} = 24 \texorpdfstring{$\ast$}{*} self\+::\+HOUR
+\item 
+const \mbox{\hyperlink{class_nette_1_1_utils_1_1_date_time_a9ba3eacae17d36134778224ef4bc9692}{WEEK}} = 7 \texorpdfstring{$\ast$}{*} self\+::\+DAY
+\item 
+const \mbox{\hyperlink{class_nette_1_1_utils_1_1_date_time_a92379ec84b32bb4f0a85c801973a59d8}{MONTH}} = 2\+\_\+629\+\_\+800
+\item 
+const \mbox{\hyperlink{class_nette_1_1_utils_1_1_date_time_a3919f9389ff40a0e6e192b362af1c6b8}{YEAR}} = 31\+\_\+557\+\_\+600
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Date\+Time. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_nette_1_1_utils_1_1_date_time_a89e888de70223f70228658df55305d3b}\index{Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_date_time_a89e888de70223f70228658df55305d3b} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Date\+Time\+::\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the date and time in the format \textquotesingle{}Y-\/m-\/d H\+:i\+:s\textquotesingle{}. \Hypertarget{class_nette_1_1_utils_1_1_date_time_acf125d22bb4b58c388634c0b370790ae}\index{Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}!createFromFormat@{createFromFormat}}
+\index{createFromFormat@{createFromFormat}!Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}}
+\doxysubsubsection{\texorpdfstring{createFromFormat()}{createFromFormat()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_date_time_acf125d22bb4b58c388634c0b370790ae} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Date\+Time\+::create\+From\+Format (\begin{DoxyParamCaption}\item[{string}]{\$format}{, }\item[{string}]{\$time}{, }\item[{string\texorpdfstring{$\vert$}{|}\textbackslash{}Date\+Time\+Zone\texorpdfstring{$\vert$}{|}null}]{\$timezone}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns new Date\+Time object formatted according to the specified format. \Hypertarget{class_nette_1_1_utils_1_1_date_time_a48db79942aea8a65b99158d06d8b4c4a}\index{Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}!from@{from}}
+\index{from@{from}!Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}}
+\doxysubsubsection{\texorpdfstring{from()}{from()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_date_time_a48db79942aea8a65b99158d06d8b4c4a} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Date\+Time\+::from (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}\textbackslash{}Date\+Time\+Interface\texorpdfstring{$\vert$}{|}null}]{\$time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a Date\+Time object from a string, UNIX timestamp, or other Date\+Time\+Interface object. 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception if the date and time are not valid. \Hypertarget{class_nette_1_1_utils_1_1_date_time_a1f9957f017df2f30ff0455559f4cd51f}\index{Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}!fromParts@{fromParts}}
+\index{fromParts@{fromParts}!Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}}
+\doxysubsubsection{\texorpdfstring{fromParts()}{fromParts()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_date_time_a1f9957f017df2f30ff0455559f4cd51f} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Date\+Time\+::from\+Parts (\begin{DoxyParamCaption}\item[{int}]{\$year}{, }\item[{int}]{\$month}{, }\item[{int}]{\$day}{, }\item[{int}]{\$hour}{ = {\ttfamily 0}, }\item[{int}]{\$minute}{ = {\ttfamily 0}, }\item[{float}]{\$second}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates Date\+Time object. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Nette} & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception if the date and time are not valid. \Hypertarget{class_nette_1_1_utils_1_1_date_time_a4a20490501b3e51a51a119caf42d9e5a}\index{Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}!jsonSerialize@{jsonSerialize}}
+\index{jsonSerialize@{jsonSerialize}!Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}}
+\doxysubsubsection{\texorpdfstring{jsonSerialize()}{jsonSerialize()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_date_time_a4a20490501b3e51a51a119caf42d9e5a} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Date\+Time\+::json\+Serialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns JSON representation in ISO 8601 (used by Java\+Script). \Hypertarget{class_nette_1_1_utils_1_1_date_time_ab11d770d880141a8fb46dbd2ff0d394c}\index{Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}!modifyClone@{modifyClone}}
+\index{modifyClone@{modifyClone}!Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}}
+\doxysubsubsection{\texorpdfstring{modifyClone()}{modifyClone()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_date_time_ab11d770d880141a8fb46dbd2ff0d394c} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Date\+Time\+::modify\+Clone (\begin{DoxyParamCaption}\item[{string}]{\$modify}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+You\textquotesingle{}d better use\+: (clone \$dt)-\/\texorpdfstring{$>$}{>}modify(...) 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_nette_1_1_utils_1_1_date_time_a0136e6166ab865080c8756ee34cc2944}\index{Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}!DAY@{DAY}}
+\index{DAY@{DAY}!Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}}
+\doxysubsubsection{\texorpdfstring{DAY}{DAY}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_date_time_a0136e6166ab865080c8756ee34cc2944} 
+const Nette\textbackslash{}\+Utils\textbackslash{}\+Date\+Time\+::\+DAY = 24 \texorpdfstring{$\ast$}{*} self\+::\+HOUR}
+
+day in seconds \Hypertarget{class_nette_1_1_utils_1_1_date_time_a380cd84ddb7f47635e578103653662c0}\index{Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}!HOUR@{HOUR}}
+\index{HOUR@{HOUR}!Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}}
+\doxysubsubsection{\texorpdfstring{HOUR}{HOUR}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_date_time_a380cd84ddb7f47635e578103653662c0} 
+const Nette\textbackslash{}\+Utils\textbackslash{}\+Date\+Time\+::\+HOUR = 60 \texorpdfstring{$\ast$}{*} self\+::\+MINUTE}
+
+hour in seconds \Hypertarget{class_nette_1_1_utils_1_1_date_time_ab75df8e42a3974323fea44e34c5d535c}\index{Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}!MINUTE@{MINUTE}}
+\index{MINUTE@{MINUTE}!Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}}
+\doxysubsubsection{\texorpdfstring{MINUTE}{MINUTE}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_date_time_ab75df8e42a3974323fea44e34c5d535c} 
+const Nette\textbackslash{}\+Utils\textbackslash{}\+Date\+Time\+::\+MINUTE = 60}
+
+minute in seconds \Hypertarget{class_nette_1_1_utils_1_1_date_time_a92379ec84b32bb4f0a85c801973a59d8}\index{Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}!MONTH@{MONTH}}
+\index{MONTH@{MONTH}!Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}}
+\doxysubsubsection{\texorpdfstring{MONTH}{MONTH}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_date_time_a92379ec84b32bb4f0a85c801973a59d8} 
+const Nette\textbackslash{}\+Utils\textbackslash{}\+Date\+Time\+::\+MONTH = 2\+\_\+629\+\_\+800}
+
+average month in seconds \Hypertarget{class_nette_1_1_utils_1_1_date_time_a9ba3eacae17d36134778224ef4bc9692}\index{Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}!WEEK@{WEEK}}
+\index{WEEK@{WEEK}!Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}}
+\doxysubsubsection{\texorpdfstring{WEEK}{WEEK}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_date_time_a9ba3eacae17d36134778224ef4bc9692} 
+const Nette\textbackslash{}\+Utils\textbackslash{}\+Date\+Time\+::\+WEEK = 7 \texorpdfstring{$\ast$}{*} self\+::\+DAY}
+
+week in seconds \Hypertarget{class_nette_1_1_utils_1_1_date_time_a3919f9389ff40a0e6e192b362af1c6b8}\index{Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}!YEAR@{YEAR}}
+\index{YEAR@{YEAR}!Nette\textbackslash{}Utils\textbackslash{}DateTime@{Nette\textbackslash{}Utils\textbackslash{}DateTime}}
+\doxysubsubsection{\texorpdfstring{YEAR}{YEAR}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_date_time_a3919f9389ff40a0e6e192b362af1c6b8} 
+const Nette\textbackslash{}\+Utils\textbackslash{}\+Date\+Time\+::\+YEAR = 31\+\_\+557\+\_\+600}
+
+average year in seconds 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/nette/utils/src/\+Utils/Date\+Time.\+php\end{DoxyCompactItemize}

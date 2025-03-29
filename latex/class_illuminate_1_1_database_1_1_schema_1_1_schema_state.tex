@@ -1,0 +1,195 @@
+\doxysection{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}Schema\+State Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_schema_state}{}\label{class_illuminate_1_1_database_1_1_schema_1_1_schema_state}\index{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}}
+Inheritance diagram for Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}Schema\+State\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.842105cm]{class_illuminate_1_1_database_1_1_schema_1_1_schema_state}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a722f4bd318f3eb57ab3de5dfc0b5d112}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Connection}} \$connection, ?\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem}{Filesystem}} \$files=null, ?callable \$process\+Factory=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a40739f7fa98b61a243fec2abe47f7179}{dump}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Connection}} \$connection, \$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_ac1b7e9cee44a585d70be9defcffeedda}{load}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_ab03486746859fc88948dc0a5d04fcf91}{make\+Process}} (... \$arguments)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a02f2b71ffdc65dd8634bebf944c14c0c}{has\+Migration\+Table}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_ab3cead42319f9a54eee71d4e2e346928}{with\+Migration\+Table}} (string \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a4e9a4233aba4ba078126faca9c919420}{handle\+Output\+Using}} (callable \$output)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a0f40d43212386740b2838fc298f2fb08}{get\+Migration\+Table}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a1b88cc0153f80f951fda61917172a44f}\label{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a1b88cc0153f80f951fda61917172a44f} 
+{\bfseries \$connection}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a52bef29cef11691df34671009421710f}\label{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a52bef29cef11691df34671009421710f} 
+{\bfseries \$files}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_afefafaa5c9229a495f6b702fc174aef8}\label{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_afefafaa5c9229a495f6b702fc174aef8} 
+{\bfseries \$migration\+Table} = \textquotesingle{}migrations\textquotesingle{}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_afc2e185dfd5f0cc7b9f9d5ae27caf925}\label{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_afc2e185dfd5f0cc7b9f9d5ae27caf925} 
+{\bfseries \$process\+Factory}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a51612a3be6f1439e7120bbd4ed8c71d7}\label{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a51612a3be6f1439e7120bbd4ed8c71d7} 
+{\bfseries \$output}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a722f4bd318f3eb57ab3de5dfc0b5d112}\index{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a722f4bd318f3eb57ab3de5dfc0b5d112} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Schema\+State\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Connection}}}]{\$connection}{, }\item[{?\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem}{Filesystem}}}]{\$files}{ = {\ttfamily null}, }\item[{?callable}]{\$process\+Factory}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new dumper instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection & {\em \$connection} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem | null & {\em \$files} & \\
+\hline
+callable | null & {\em \$process\+Factory} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a40739f7fa98b61a243fec2abe47f7179}\index{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}!dump@{dump}}
+\index{dump@{dump}!Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a40739f7fa98b61a243fec2abe47f7179} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Schema\+State\+::dump (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Connection}}}]{\$connection}{, }\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Dump the database\textquotesingle{}s schema into a file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection & {\em \$connection} & \\
+\hline
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_my_sql_schema_state_aecc4b062d10b20b7f39c1ba686cab44f}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+My\+Sql\+Schema\+State}}, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_postgres_schema_state_a689f5da970de6907eef1965bb550409b}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Postgres\+Schema\+State}}, and \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_sqlite_schema_state_aba35fa8a5cc3ccfe0cd963b28eb31a3e}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Sqlite\+Schema\+State}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a0f40d43212386740b2838fc298f2fb08}\index{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}!getMigrationTable@{getMigrationTable}}
+\index{getMigrationTable@{getMigrationTable}!Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}}
+\doxysubsubsection{\texorpdfstring{getMigrationTable()}{getMigrationTable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a0f40d43212386740b2838fc298f2fb08} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Schema\+State\+::get\+Migration\+Table (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the name of the application\textquotesingle{}s migration table.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_postgres_schema_state_aedb4cf343e709a1b0774f70a8baaf112}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Postgres\+Schema\+State}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a4e9a4233aba4ba078126faca9c919420}\index{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}!handleOutputUsing@{handleOutputUsing}}
+\index{handleOutputUsing@{handleOutputUsing}!Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}}
+\doxysubsubsection{\texorpdfstring{handleOutputUsing()}{handleOutputUsing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a4e9a4233aba4ba078126faca9c919420} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Schema\+State\+::handle\+Output\+Using (\begin{DoxyParamCaption}\item[{callable}]{\$output}{}\end{DoxyParamCaption})}
+
+Specify the callback that should be used to handle process output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$output} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a02f2b71ffdc65dd8634bebf944c14c0c}\index{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}!hasMigrationTable@{hasMigrationTable}}
+\index{hasMigrationTable@{hasMigrationTable}!Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}}
+\doxysubsubsection{\texorpdfstring{hasMigrationTable()}{hasMigrationTable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_a02f2b71ffdc65dd8634bebf944c14c0c} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Schema\+State\+::has\+Migration\+Table (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the current connection has a migration table.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_ac1b7e9cee44a585d70be9defcffeedda}\index{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}!load@{load}}
+\index{load@{load}!Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_ac1b7e9cee44a585d70be9defcffeedda} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Schema\+State\+::load (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Load the given schema file into the database.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_my_sql_schema_state_af5eb7e75fef209b5b88abcdf97e2b765}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+My\+Sql\+Schema\+State}}, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_postgres_schema_state_a0e5be55b1daf879a4269fe817865d3d0}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Postgres\+Schema\+State}}, and \mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_sqlite_schema_state_a22bf48ba6a4d8e305fbc20af9b4cb6dc}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Sqlite\+Schema\+State}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_ab03486746859fc88948dc0a5d04fcf91}\index{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}!makeProcess@{makeProcess}}
+\index{makeProcess@{makeProcess}!Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}}
+\doxysubsubsection{\texorpdfstring{makeProcess()}{makeProcess()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_ab03486746859fc88948dc0a5d04fcf91} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Schema\+State\+::make\+Process (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Create a new process instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & ...\$arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Process 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_ab3cead42319f9a54eee71d4e2e346928}\index{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}!withMigrationTable@{withMigrationTable}}
+\index{withMigrationTable@{withMigrationTable}!Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState@{Illuminate\textbackslash{}Database\textbackslash{}Schema\textbackslash{}SchemaState}}
+\doxysubsubsection{\texorpdfstring{withMigrationTable()}{withMigrationTable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_schema_1_1_schema_state_ab3cead42319f9a54eee71d4e2e346928} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Schema\+State\+::with\+Migration\+Table (\begin{DoxyParamCaption}\item[{string}]{\$table}{}\end{DoxyParamCaption})}
+
+Specify the name of the application\textquotesingle{}s migration table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Database/\+Schema/Schema\+State.\+php\end{DoxyCompactItemize}

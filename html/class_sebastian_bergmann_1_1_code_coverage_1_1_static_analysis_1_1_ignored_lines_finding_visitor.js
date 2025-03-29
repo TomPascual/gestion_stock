@@ -1,0 +1,4 @@
+var class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_ignored_lines_finding_visitor =
+[
+    [ "ignoredLines", "class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_ignored_lines_finding_visitor.html#a68d6cf7e3f077e04f7573653e7a47a89", null ]
+];

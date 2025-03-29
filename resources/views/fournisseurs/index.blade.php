@@ -1,3 +1,11 @@
+{{-- 
+    Vue : fournisseurs/index.blade.php
+    Description : Affiche la liste des fournisseurs avec actions (voir, modifier, supprimer).
+    Fonctions :
+        - Lien vers la création d’un nouveau fournisseur
+        - Actions pour chaque fournisseur (show, edit, delete)
+--}}
+
 @extends('layouts.app')
 
 @section('content')

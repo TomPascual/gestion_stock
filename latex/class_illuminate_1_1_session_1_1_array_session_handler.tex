@@ -1,0 +1,148 @@
+\doxysection{Illuminate\textbackslash{}Session\textbackslash{}Array\+Session\+Handler Class Reference}
+\hypertarget{class_illuminate_1_1_session_1_1_array_session_handler}{}\label{class_illuminate_1_1_session_1_1_array_session_handler}\index{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}}
+Inheritance diagram for Illuminate\textbackslash{}Session\textbackslash{}Array\+Session\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_session_1_1_array_session_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_array_session_handler_a105c19c8a0ed9bdb1f732f319216147c}{\+\_\+\+\_\+construct}} (\$minutes)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_array_session_handler_acd9fa0da57ffa808300a656f4ef3b3d7}{open}} (\$save\+Path, \$session\+Name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_array_session_handler_a5a0c18af107854565afe8a1801238df9}{close}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_array_session_handler_ad1a4bf1c67be13ca9e9f9c09593c81df}{read}} (\$session\+Id)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_array_session_handler_a5763b37ff44b5f3b08b9b97287569db9}{write}} (\$session\+Id, \$data)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_array_session_handler_aa7d1ea2bd6e040df955ef1c6bdaa8e6e}{destroy}} (\$session\+Id)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_array_session_handler_a36391477a1e24bd00a681050fdc42762}{gc}} (\$lifetime)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_array_session_handler_a8823efd753444835186cf149af3f0cdb}{calculate\+Expiration}} (\$seconds)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_session_1_1_array_session_handler_a52ceb641057393815e08b721df53900a}\label{class_illuminate_1_1_session_1_1_array_session_handler_a52ceb641057393815e08b721df53900a} 
+{\bfseries \$storage} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_session_1_1_array_session_handler_ae33b4c899948235f12dcc5efbeb94498}\label{class_illuminate_1_1_session_1_1_array_session_handler_ae33b4c899948235f12dcc5efbeb94498} 
+{\bfseries \$minutes}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_session_1_1_array_session_handler_a105c19c8a0ed9bdb1f732f319216147c}\index{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_array_session_handler_a105c19c8a0ed9bdb1f732f319216147c} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Array\+Session\+Handler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$minutes}{}\end{DoxyParamCaption})}
+
+Create a new array driven handler instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$minutes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_session_1_1_array_session_handler_a8823efd753444835186cf149af3f0cdb}\index{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}!calculateExpiration@{calculateExpiration}}
+\index{calculateExpiration@{calculateExpiration}!Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}}
+\doxysubsubsection{\texorpdfstring{calculateExpiration()}{calculateExpiration()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_array_session_handler_a8823efd753444835186cf149af3f0cdb} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Array\+Session\+Handler\+::calculate\+Expiration (\begin{DoxyParamCaption}\item[{}]{\$seconds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the expiration time of the session.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_array_session_handler_a5a0c18af107854565afe8a1801238df9}\index{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}!close@{close}}
+\index{close@{close}!Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_array_session_handler_a5a0c18af107854565afe8a1801238df9} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Array\+Session\+Handler\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\{\}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_array_session_handler_aa7d1ea2bd6e040df955ef1c6bdaa8e6e}\index{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}!destroy@{destroy}}
+\index{destroy@{destroy}!Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_array_session_handler_aa7d1ea2bd6e040df955ef1c6bdaa8e6e} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Array\+Session\+Handler\+::destroy (\begin{DoxyParamCaption}\item[{}]{\$session\+Id}{}\end{DoxyParamCaption})}
+
+\{\}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_array_session_handler_a36391477a1e24bd00a681050fdc42762}\index{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}!gc@{gc}}
+\index{gc@{gc}!Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}}
+\doxysubsubsection{\texorpdfstring{gc()}{gc()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_array_session_handler_a36391477a1e24bd00a681050fdc42762} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Array\+Session\+Handler\+::gc (\begin{DoxyParamCaption}\item[{}]{\$lifetime}{}\end{DoxyParamCaption})}
+
+\{\}
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_array_session_handler_acd9fa0da57ffa808300a656f4ef3b3d7}\index{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}!open@{open}}
+\index{open@{open}!Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_array_session_handler_acd9fa0da57ffa808300a656f4ef3b3d7} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Array\+Session\+Handler\+::open (\begin{DoxyParamCaption}\item[{}]{\$save\+Path}{, }\item[{}]{\$session\+Name}{}\end{DoxyParamCaption})}
+
+\{\}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_array_session_handler_ad1a4bf1c67be13ca9e9f9c09593c81df}\index{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}!read@{read}}
+\index{read@{read}!Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_array_session_handler_ad1a4bf1c67be13ca9e9f9c09593c81df} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Array\+Session\+Handler\+::read (\begin{DoxyParamCaption}\item[{}]{\$session\+Id}{}\end{DoxyParamCaption})}
+
+\{\}
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_array_session_handler_a5763b37ff44b5f3b08b9b97287569db9}\index{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}!write@{write}}
+\index{write@{write}!Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler@{Illuminate\textbackslash{}Session\textbackslash{}ArraySessionHandler}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_array_session_handler_a5763b37ff44b5f3b08b9b97287569db9} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Array\+Session\+Handler\+::write (\begin{DoxyParamCaption}\item[{}]{\$session\+Id}{, }\item[{}]{\$data}{}\end{DoxyParamCaption})}
+
+\{\}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Session/Array\+Session\+Handler.\+php\end{DoxyCompactItemize}

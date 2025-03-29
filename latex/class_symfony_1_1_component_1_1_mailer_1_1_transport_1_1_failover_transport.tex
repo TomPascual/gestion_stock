@@ -1,0 +1,78 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}Failover\+Transport Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_failover_transport}{}\label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_failover_transport}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}FailoverTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}FailoverTransport}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}Failover\+Transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_failover_transport}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_failover_transport_aa096aa88ce31472bcaab193826827e16}{get\+Next\+Transport}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_failover_transport_add3f4e36331549323292c00620f589f4}{get\+Initial\+Cursor}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_failover_transport_af6896448d4500341cb6885433c081c5a}{get\+Name\+Symbol}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Round\+Robin\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries is\+Transport\+Dead} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_transport_interface}{Transport\+Interface}} \$transport)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Round\+Robin\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_ab714e3aee17e9955e524a3fa94c12578}{\+\_\+\+\_\+construct}} (private array \$transports, private int \$retry\+Period=60,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_aec06e37dcb4050114d4a26a520bc5362}{send}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_raw_message}{Raw\+Message}} \$message, ?\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope}{Envelope}} \$envelope=null)
+\item 
+{\bfseries \+\_\+\+\_\+to\+String} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Uses several Transports using a failover algorithm.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_failover_transport_add3f4e36331549323292c00620f589f4}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}FailoverTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}FailoverTransport}!getInitialCursor@{getInitialCursor}}
+\index{getInitialCursor@{getInitialCursor}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}FailoverTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}FailoverTransport}}
+\doxysubsubsection{\texorpdfstring{getInitialCursor()}{getInitialCursor()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_failover_transport_add3f4e36331549323292c00620f589f4} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Failover\+Transport\+::get\+Initial\+Cursor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Round\+Robin\+Transport}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_failover_transport_af6896448d4500341cb6885433c081c5a}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}FailoverTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}FailoverTransport}!getNameSymbol@{getNameSymbol}}
+\index{getNameSymbol@{getNameSymbol}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}FailoverTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}FailoverTransport}}
+\doxysubsubsection{\texorpdfstring{getNameSymbol()}{getNameSymbol()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_failover_transport_af6896448d4500341cb6885433c081c5a} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Failover\+Transport\+::get\+Name\+Symbol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Round\+Robin\+Transport}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_failover_transport_aa096aa88ce31472bcaab193826827e16}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}FailoverTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}FailoverTransport}!getNextTransport@{getNextTransport}}
+\index{getNextTransport@{getNextTransport}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}FailoverTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}FailoverTransport}}
+\doxysubsubsection{\texorpdfstring{getNextTransport()}{getNextTransport()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_failover_transport_aa096aa88ce31472bcaab193826827e16} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Failover\+Transport\+::get\+Next\+Transport (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Rotates the transport list around and returns the first instance. 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_round_robin_transport_a42d42a08ec33869408b470e3d2ec461b}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Round\+Robin\+Transport}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/mailer/\+Transport/Failover\+Transport.\+php\end{DoxyCompactItemize}

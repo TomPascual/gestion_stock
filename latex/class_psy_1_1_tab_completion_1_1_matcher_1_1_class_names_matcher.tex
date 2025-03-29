@@ -1,0 +1,143 @@
+\doxysection{Psy\textbackslash{}Tab\+Completion\textbackslash{}Matcher\textbackslash{}Class\+Names\+Matcher Class Reference}
+\hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_names_matcher}{}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_names_matcher}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}ClassNamesMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}ClassNamesMatcher}}
+Inheritance diagram for Psy\textbackslash{}Tab\+Completion\textbackslash{}Matcher\textbackslash{}Class\+Names\+Matcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_names_matcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_names_matcher_a48c7b95001e3e58b88c6dafce5953597}{get\+Matches}} (array \$tokens, array \$info=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_names_matcher_a17b176d26d9974b74b3ffd5c35525641}{has\+Matched}} (array \$tokens)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a2f14333da3bbc9518e5cf6a5b7f10e7e}{starts\+With}} (string \$prefix, string \$word)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ad9b27ec2182b641752c46771961b1ac8}{has\+Syntax}} (\$token, string \$syntax=self\+::\+VAR\+\_\+\+SYNTAX)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ae6fd6865e01fcdd21cfccd600a4ccf43}{token\+Is}} (\$token, string \$which)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a0ac518819dbff1fbf0fff986aeb95f7c}{is\+Operator}} (\$token)
+\item 
+static {\bfseries need\+Complete\+Class} (\$token)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a0b2c2bc757b0ce7498ba728a89796a4d}{has\+Token}} (array \$coll, \$token)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ac95f9ab563f880b1370073b93b55ab31}{CONSTANT\+\_\+\+SYNTAX}} = \textquotesingle{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[}a-\/zA-\/Z\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\mbox{[}a-\/zA-\/Z0-\/9\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\texorpdfstring{$\ast$}{*}\$\textquotesingle{}
+\item 
+const {\bfseries VAR\+\_\+\+SYNTAX} = \textquotesingle{}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\$\mbox{[}a-\/zA-\/Z\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\mbox{[}a-\/zA-\/Z0-\/9\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\texorpdfstring{$\ast$}{*}\$\textquotesingle{}
+\item 
+const {\bfseries MISC\+\_\+\+OPERATORS} = \textquotesingle{}+-\/\texorpdfstring{$\ast$}{*}/\texorpdfstring{$^\wedge$}{\string^}\texorpdfstring{$\vert$}{|}\&\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a1d02f86dda52eea4c99ff7105592121d}{T\+\_\+\+OPEN\+\_\+\+TAG}} = \textquotesingle{}T\+\_\+\+OPEN\+\_\+\+TAG\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+VARIABLE} = \textquotesingle{}T\+\_\+\+VARIABLE\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+OBJECT\+\_\+\+OPERATOR} = \textquotesingle{}T\+\_\+\+OBJECT\+\_\+\+OPERATOR\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+DOUBLE\+\_\+\+COLON} = \textquotesingle{}T\+\_\+\+DOUBLE\+\_\+\+COLON\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+NEW} = \textquotesingle{}T\+\_\+\+NEW\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+CLONE} = \textquotesingle{}T\+\_\+\+CLONE\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+NS\+\_\+\+SEPARATOR} = \textquotesingle{}T\+\_\+\+NS\+\_\+\+SEPARATOR\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+STRING} = \textquotesingle{}T\+\_\+\+STRING\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+NAME\+\_\+\+QUALIFIED} = \textquotesingle{}T\+\_\+\+NAME\+\_\+\+QUALIFIED\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+WHITESPACE} = \textquotesingle{}T\+\_\+\+WHITESPACE\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+AND\+\_\+\+EQUAL} = \textquotesingle{}T\+\_\+\+AND\+\_\+\+EQUAL\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+BOOLEAN\+\_\+\+AND} = \textquotesingle{}T\+\_\+\+BOOLEAN\+\_\+\+AND\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+BOOLEAN\+\_\+\+OR} = \textquotesingle{}T\+\_\+\+BOOLEAN\+\_\+\+OR\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+ENCAPSED\+\_\+\+AND\+\_\+\+WHITESPACE} = \textquotesingle{}T\+\_\+\+ENCAPSED\+\_\+\+AND\+\_\+\+WHITESPACE\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+REQUIRE} = \textquotesingle{}T\+\_\+\+REQUIRE\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+REQUIRE\+\_\+\+ONCE} = \textquotesingle{}T\+\_\+\+REQUIRE\+\_\+\+ONCE\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+INCLUDE} = \textquotesingle{}T\+\_\+\+INCLUDE\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+INCLUDE\+\_\+\+ONCE} = \textquotesingle{}T\+\_\+\+INCLUDE\+\_\+\+ONCE\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a67510cbf91a59519d4c689d6db97942b}{get\+Input}} (array \$tokens)
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a33af8313690303c97cfea60506bb8b76}{get\+Namespace\+And\+Class}} (array \$tokens)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class name tab completion Matcher.
+
+This matcher provides completion for all declared classes.
+
+\begin{DoxyAuthor}{Author}
+Marc Garcia \href{mailto:markcial@gmail.com}{\texttt{ markcial@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_names_matcher_a48c7b95001e3e58b88c6dafce5953597}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}ClassNamesMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}ClassNamesMatcher}!getMatches@{getMatches}}
+\index{getMatches@{getMatches}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}ClassNamesMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}ClassNamesMatcher}}
+\doxysubsubsection{\texorpdfstring{getMatches()}{getMatches()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_names_matcher_a48c7b95001e3e58b88c6dafce5953597} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Class\+Names\+Matcher\+::get\+Matches (\begin{DoxyParamCaption}\item[{array}]{\$tokens}{, }\item[{array}]{\$info}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+\{Provide tab completion matches for readline input.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$tokens} & information substracted with get\+\_\+token\+\_\+all \\
+\hline
+array & {\em \$info} & readline\+\_\+info object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The matches resulting from the query
+\end{DoxyReturn}
+\} 
+
+Reimplemented from \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a654b67904d664c879ace8f2efe669ca4}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher}}.
+
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_names_matcher_a17b176d26d9974b74b3ffd5c35525641}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}ClassNamesMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}ClassNamesMatcher}!hasMatched@{hasMatched}}
+\index{hasMatched@{hasMatched}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}ClassNamesMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}ClassNamesMatcher}}
+\doxysubsubsection{\texorpdfstring{hasMatched()}{hasMatched()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_names_matcher_a17b176d26d9974b74b3ffd5c35525641} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Class\+Names\+Matcher\+::has\+Matched (\begin{DoxyParamCaption}\item[{array}]{\$tokens}{}\end{DoxyParamCaption})}
+
+\{Check whether this matcher can provide completions for \$tokens.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$tokens} & Tokenized readline input\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false
+\end{DoxyReturn}
+\} 
+
+Reimplemented from \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a50ee14d731ccbd03288948f3cd005e5a}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Tab\+Completion/\+Matcher/Class\+Names\+Matcher.\+php\end{DoxyCompactItemize}

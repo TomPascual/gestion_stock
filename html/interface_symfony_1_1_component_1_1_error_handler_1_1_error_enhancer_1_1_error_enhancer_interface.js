@@ -1,0 +1,4 @@
+var interface_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer_1_1_error_enhancer_interface =
+[
+    [ "enhance", "interface_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer_1_1_error_enhancer_interface.html#a214eb4630bacd4334044a3d3c5e457aa", null ]
+];

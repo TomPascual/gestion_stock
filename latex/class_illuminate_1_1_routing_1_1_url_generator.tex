@@ -1,0 +1,1027 @@
+\doxysection{Illuminate\textbackslash{}Routing\textbackslash{}Url\+Generator Class Reference}
+\hypertarget{class_illuminate_1_1_routing_1_1_url_generator}{}\label{class_illuminate_1_1_routing_1_1_url_generator}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+Inheritance diagram for Illuminate\textbackslash{}Routing\textbackslash{}Url\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_routing_1_1_url_generator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_ad67ceeb4fe4b5093635e55d55c53819c}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_routing_1_1_route_collection_interface}{Route\+Collection\+Interface}} \$routes, \mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request, \$asset\+Root=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a09b781720ced2547357119a8285d34b5}{full}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a0193532abf759788507f5f3308393656}{current}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_aec9a26baebe2f94ba8ce9c4f154f2580}{previous}} (\$fallback=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a633f768e5281d70bb25aa25225cb2630}{previous\+Path}} (\$fallback=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a5b525403fec683cd1ee09f5d9411ad21}{to}} (\$path, \$extra=\mbox{[}$\,$\mbox{]}, \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a6f0ffa86bc12fc0483f508acff1c031f}{secure}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_aa432f2485c1650fcdf02bda3a60a6167}{query}} (\$path, \$query=\mbox{[}$\,$\mbox{]}, \$extra=\mbox{[}$\,$\mbox{]}, \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a6f0ffa86bc12fc0483f508acff1c031f}{secure}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a6f0ffa86bc12fc0483f508acff1c031f}{secure}} (\$path, \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a5775129cb830d930dc90177878e49e61}{asset}} (\$path, \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a6f0ffa86bc12fc0483f508acff1c031f}{secure}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a3fe960a16785117d9b25e77e5ea7f3cd}{secure\+Asset}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_ac2c6b29e827c30b4ee5631d4bcc9d946}{asset\+From}} (\$root, \$path, \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a6f0ffa86bc12fc0483f508acff1c031f}{secure}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_aa8be9b3e58e9ef59885dec6c4205e0e7}{format\+Scheme}} (\$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a6f0ffa86bc12fc0483f508acff1c031f}{secure}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_ac93c80a04db9bd5072937ed55a46073f}{signed\+Route}} (\$name, \$parameters=\mbox{[}$\,$\mbox{]}, \$expiration=null, \$absolute=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a0dd92fa25dad82fdd5fa9c0eb12bc89d}{temporary\+Signed\+Route}} (\$name, \$expiration, \$parameters=\mbox{[}$\,$\mbox{]}, \$absolute=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_ad9b636043da987cb7e6dcab881bc28ca}{has\+Valid\+Signature}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request, \$absolute=true, array \$ignore\+Query=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a902ab5c8fb65e9891499300613200816}{has\+Valid\+Relative\+Signature}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request, array \$ignore\+Query=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a881c9de30bc6f6479a9d06cbacf4009d}{has\+Correct\+Signature}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request, \$absolute=true, array \$ignore\+Query=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_aca26d0fa39c1b8494a4acb32e7b8c0fd}{signature\+Has\+Not\+Expired}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a31c31e6bae80e4d942e6a21b1ff47bb1}{route}} (\$name, \$parameters=\mbox{[}$\,$\mbox{]}, \$absolute=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_ae447d77cd79b50c910000a71c3cbba94}{to\+Route}} (\$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a31c31e6bae80e4d942e6a21b1ff47bb1}{route}}, \$parameters, \$absolute)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_acfef00c40651f3cda3b2175b6626255e}{action}} (\$action, \$parameters=\mbox{[}$\,$\mbox{]}, \$absolute=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a42276bb20ca530cef30d55d9e1c30972}{format\+Parameters}} (\$parameters)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a867947d57306dd6c4af42aef6731c2ca}{format\+Root}} (\$scheme, \$root=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_aca684ce1dee361e7e144a61e513b9ef6}{format}} (\$root, \$path, \$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a31c31e6bae80e4d942e6a21b1ff47bb1}{route}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_aa13f0b8bcc355e2129a04bb6404d6fb5}{is\+Valid\+Url}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a9e7d7f1373f1eb8a2e416a1ece888ea9}{defaults}} (array \$defaults)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_ad5c108c5b6bde1f4cb589ba1af4eabe2}{get\+Default\+Parameters}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_ab2157a250c0232bd112249df12eeb2e6}{force\+Scheme}} (\$scheme)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a863ea27dc977cc1270a1bbffd5a19fa7}{force\+Https}} (\$force=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_ad21850f3f30dc4055ff46a6bf5d0c95c}{use\+Origin}} (?string \$root)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_aada7314435134e73319b30ae210f2e30}{force\+Root\+Url}} (\$root)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_ac967f43d4573cae141b5bc1de73d5885}{use\+Asset\+Origin}} (?string \$root)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_afc5bd29db29f8f95e98cd637d6b018a3}{format\+Host\+Using}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a5171bb18d1cf7ab2b1a49fc1a01ead9c}{format\+Path\+Using}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a6b99099835702db169dea54b06d5d49a}{path\+Formatter}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_acd23ff21c2dc6cbfdae1eddcd20ea06c}{get\+Request}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a0963822dba1049e7cca7f6d953d53e52}{set\+Request}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a511d12b0d72b9ee0edc317494053066c}{set\+Routes}} (\mbox{\hyperlink{interface_illuminate_1_1_routing_1_1_route_collection_interface}{Route\+Collection\+Interface}} \$routes)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a6943919a0a233344c9f00c8a93ccb1b9}{set\+Session\+Resolver}} (callable \$session\+Resolver)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_af7293798117f97aecef02756b9be818b}{set\+Key\+Resolver}} (callable \$key\+Resolver)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_ab39e62e209a2ff224715f27a7fcd6c4d}{with\+Key\+Resolver}} (callable \$key\+Resolver)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_afeed96122b20c4afb09e24c02f8f05c5}{resolve\+Missing\+Named\+Routes\+Using}} (callable \$missing\+Named\+Route\+Resolver)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a44fadc0a2df85918f77efd611d017041}{get\+Root\+Controller\+Namespace}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a47183a15aaa4cdaf220b4c7a5f2b85df}{set\+Root\+Controller\+Namespace}} (\$root\+Namespace)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_afbdfaa05cb10fa1e15a75137890b85fd}{get\+Previous\+Url\+From\+Session}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_abc8b66b34dec2d85b3f94900d8ce6147}{remove\+Index}} (\$root)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_afda8c6057bbad451f8d09d0ebd5db5a6}{ensure\+Signed\+Route\+Parameters\+Are\+Not\+Reserved}} (\$parameters)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a887d3b732a17801610f0551cdb629d37}{format\+Action}} (\$\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_acfef00c40651f3cda3b2175b6626255e}{action}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_aea72094d97e5382790d497b8ecc8c83b}{extract\+Query\+String}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a3a9836521fae71ac2381f358243dc756}{route\+Url}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_url_generator_a2d03cf9b71939d474724ab3c07998bdb}{get\+Session}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a0033ac2097343d539b3daebdb882a76e}\label{class_illuminate_1_1_routing_1_1_url_generator_a0033ac2097343d539b3daebdb882a76e} 
+{\bfseries \$routes}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a6616915af32f70e00fa0f69e2758aa17}\label{class_illuminate_1_1_routing_1_1_url_generator_a6616915af32f70e00fa0f69e2758aa17} 
+{\bfseries \$request}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a1f67992d9e99b02c9a083cf647d7378c}\label{class_illuminate_1_1_routing_1_1_url_generator_a1f67992d9e99b02c9a083cf647d7378c} 
+{\bfseries \$asset\+Root}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a9a721d6549221a5c84452dc0361d71f4}\label{class_illuminate_1_1_routing_1_1_url_generator_a9a721d6549221a5c84452dc0361d71f4} 
+{\bfseries \$forced\+Root}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_ae45f11495c31c2afabf2629edcf56e13}\label{class_illuminate_1_1_routing_1_1_url_generator_ae45f11495c31c2afabf2629edcf56e13} 
+{\bfseries \$force\+Scheme}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_afb7bb499d5bfc54ab293efd205ab5320}\label{class_illuminate_1_1_routing_1_1_url_generator_afb7bb499d5bfc54ab293efd205ab5320} 
+{\bfseries \$cached\+Root}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a5bc4c6cd160e6af53516dfe53b86da73}\label{class_illuminate_1_1_routing_1_1_url_generator_a5bc4c6cd160e6af53516dfe53b86da73} 
+{\bfseries \$cached\+Scheme}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a60b6efa941fdd456a64e72bd881fd4e3}\label{class_illuminate_1_1_routing_1_1_url_generator_a60b6efa941fdd456a64e72bd881fd4e3} 
+{\bfseries \$root\+Namespace}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a23b909f0a2c8fbc7016d1f7b76f85ad0}\label{class_illuminate_1_1_routing_1_1_url_generator_a23b909f0a2c8fbc7016d1f7b76f85ad0} 
+{\bfseries \$session\+Resolver}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a33415e212ed3cc5b3f8eaa1664b7ab91}\label{class_illuminate_1_1_routing_1_1_url_generator_a33415e212ed3cc5b3f8eaa1664b7ab91} 
+{\bfseries \$key\+Resolver}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a23ffaf6ab66981216fa945a99a2276aa}\label{class_illuminate_1_1_routing_1_1_url_generator_a23ffaf6ab66981216fa945a99a2276aa} 
+{\bfseries \$missing\+Named\+Route\+Resolver}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a8e05ee566c3b8c4c6422f111bad98d3d}\label{class_illuminate_1_1_routing_1_1_url_generator_a8e05ee566c3b8c4c6422f111bad98d3d} 
+{\bfseries \$format\+Host\+Using}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_ae1acfc5c51b2cfbd51f602994d6ec96d}\label{class_illuminate_1_1_routing_1_1_url_generator_ae1acfc5c51b2cfbd51f602994d6ec96d} 
+{\bfseries \$format\+Path\+Using}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a2213b391d43964bfe428e3fa58df8abf}\label{class_illuminate_1_1_routing_1_1_url_generator_a2213b391d43964bfe428e3fa58df8abf} 
+{\bfseries \$route\+Generator}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_ad67ceeb4fe4b5093635e55d55c53819c}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_ad67ceeb4fe4b5093635e55d55c53819c} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_routing_1_1_route_collection_interface}{Route\+Collection\+Interface}}}]{\$routes}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{, }\item[{}]{\$asset\+Root}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new URL Generator instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Collection\+Interface & {\em \$routes} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+string | null & {\em \$asset\+Root} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_acfef00c40651f3cda3b2175b6626255e}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!action@{action}}
+\index{action@{action}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{action()}{action()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_acfef00c40651f3cda3b2175b6626255e} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::action (\begin{DoxyParamCaption}\item[{}]{\$action}{, }\item[{}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$absolute}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Get the URL to a controller action.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$action} & \\
+\hline
+mixed & {\em \$parameters} & \\
+\hline
+bool & {\em \$absolute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a5775129cb830d930dc90177878e49e61}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!asset@{asset}}
+\index{asset@{asset}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{asset()}{asset()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a5775129cb830d930dc90177878e49e61} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::asset (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$secure}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Generate the URL to an application asset.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+bool | null & {\em \$secure} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_ac2c6b29e827c30b4ee5631d4bcc9d946}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!assetFrom@{assetFrom}}
+\index{assetFrom@{assetFrom}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{assetFrom()}{assetFrom()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_ac2c6b29e827c30b4ee5631d4bcc9d946} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::asset\+From (\begin{DoxyParamCaption}\item[{}]{\$root}{, }\item[{}]{\$path}{, }\item[{}]{\$secure}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Generate the URL to an asset from a custom root domain such as CDN, etc.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$root} & \\
+\hline
+string & {\em \$path} & \\
+\hline
+bool | null & {\em \$secure} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a0193532abf759788507f5f3308393656}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!current@{current}}
+\index{current@{current}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a0193532abf759788507f5f3308393656} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::current (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the current URL for the request.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a9e7d7f1373f1eb8a2e416a1ece888ea9}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!defaults@{defaults}}
+\index{defaults@{defaults}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{defaults()}{defaults()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a9e7d7f1373f1eb8a2e416a1ece888ea9} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::defaults (\begin{DoxyParamCaption}\item[{array}]{\$defaults}{}\end{DoxyParamCaption})}
+
+Set the default named parameters used by the URL generator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$defaults} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_afda8c6057bbad451f8d09d0ebd5db5a6}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!ensureSignedRouteParametersAreNotReserved@{ensureSignedRouteParametersAreNotReserved}}
+\index{ensureSignedRouteParametersAreNotReserved@{ensureSignedRouteParametersAreNotReserved}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{ensureSignedRouteParametersAreNotReserved()}{ensureSignedRouteParametersAreNotReserved()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_afda8c6057bbad451f8d09d0ebd5db5a6} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::ensure\+Signed\+Route\+Parameters\+Are\+Not\+Reserved (\begin{DoxyParamCaption}\item[{}]{\$parameters}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure the given signed route parameters are not reserved.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_aea72094d97e5382790d497b8ecc8c83b}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!extractQueryString@{extractQueryString}}
+\index{extractQueryString@{extractQueryString}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{extractQueryString()}{extractQueryString()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_aea72094d97e5382790d497b8ecc8c83b} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::extract\+Query\+String (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Extract the query string from the given path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a863ea27dc977cc1270a1bbffd5a19fa7}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!forceHttps@{forceHttps}}
+\index{forceHttps@{forceHttps}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{forceHttps()}{forceHttps()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a863ea27dc977cc1270a1bbffd5a19fa7} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::force\+Https (\begin{DoxyParamCaption}\item[{}]{\$force}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Force the use of the HTTPS scheme for all generated URLs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$force} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_aada7314435134e73319b30ae210f2e30}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!forceRootUrl@{forceRootUrl}}
+\index{forceRootUrl@{forceRootUrl}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{forceRootUrl()}{forceRootUrl()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_aada7314435134e73319b30ae210f2e30} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::force\+Root\+Url (\begin{DoxyParamCaption}\item[{}]{\$root}{}\end{DoxyParamCaption})}
+
+Set the forced root URL.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$root} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000067}{Deprecated}}]Use use\+Origin \end{DoxyRefDesc}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_ab2157a250c0232bd112249df12eeb2e6}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!forceScheme@{forceScheme}}
+\index{forceScheme@{forceScheme}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{forceScheme()}{forceScheme()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_ab2157a250c0232bd112249df12eeb2e6} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::force\+Scheme (\begin{DoxyParamCaption}\item[{}]{\$scheme}{}\end{DoxyParamCaption})}
+
+Force the scheme for URLs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$scheme} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_aca684ce1dee361e7e144a61e513b9ef6}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!format@{format}}
+\index{format@{format}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_aca684ce1dee361e7e144a61e513b9ef6} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::format (\begin{DoxyParamCaption}\item[{}]{\$root}{, }\item[{}]{\$path}{, }\item[{}]{\$route}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Format the given URL segments into a single URL.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$root} & \\
+\hline
+string & {\em \$path} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route | null & {\em \$route} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a887d3b732a17801610f0551cdb629d37}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!formatAction@{formatAction}}
+\index{formatAction@{formatAction}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{formatAction()}{formatAction()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a887d3b732a17801610f0551cdb629d37} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::format\+Action (\begin{DoxyParamCaption}\item[{}]{\$action}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Format the given controller action.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$action} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_afc5bd29db29f8f95e98cd637d6b018a3}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!formatHostUsing@{formatHostUsing}}
+\index{formatHostUsing@{formatHostUsing}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{formatHostUsing()}{formatHostUsing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_afc5bd29db29f8f95e98cd637d6b018a3} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::format\+Host\+Using (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Set a callback to be used to format the host of generated URLs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a42276bb20ca530cef30d55d9e1c30972}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!formatParameters@{formatParameters}}
+\index{formatParameters@{formatParameters}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{formatParameters()}{formatParameters()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a42276bb20ca530cef30d55d9e1c30972} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::format\+Parameters (\begin{DoxyParamCaption}\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Format the array of URL parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a5171bb18d1cf7ab2b1a49fc1a01ead9c}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!formatPathUsing@{formatPathUsing}}
+\index{formatPathUsing@{formatPathUsing}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{formatPathUsing()}{formatPathUsing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a5171bb18d1cf7ab2b1a49fc1a01ead9c} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::format\+Path\+Using (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Set a callback to be used to format the path of generated URLs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a867947d57306dd6c4af42aef6731c2ca}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!formatRoot@{formatRoot}}
+\index{formatRoot@{formatRoot}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{formatRoot()}{formatRoot()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a867947d57306dd6c4af42aef6731c2ca} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::format\+Root (\begin{DoxyParamCaption}\item[{}]{\$scheme}{, }\item[{}]{\$root}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get the base URL for the request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$scheme} & \\
+\hline
+string | null & {\em \$root} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_aa8be9b3e58e9ef59885dec6c4205e0e7}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!formatScheme@{formatScheme}}
+\index{formatScheme@{formatScheme}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{formatScheme()}{formatScheme()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_aa8be9b3e58e9ef59885dec6c4205e0e7} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::format\+Scheme (\begin{DoxyParamCaption}\item[{}]{\$secure}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get the default scheme for a raw URL.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool | null & {\em \$secure} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a09b781720ced2547357119a8285d34b5}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!full@{full}}
+\index{full@{full}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{full()}{full()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a09b781720ced2547357119a8285d34b5} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::full (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the full URL for the current request.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_ad5c108c5b6bde1f4cb589ba1af4eabe2}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!getDefaultParameters@{getDefaultParameters}}
+\index{getDefaultParameters@{getDefaultParameters}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{getDefaultParameters()}{getDefaultParameters()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_ad5c108c5b6bde1f4cb589ba1af4eabe2} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::get\+Default\+Parameters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the default named parameters used by the URL generator.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_afbdfaa05cb10fa1e15a75137890b85fd}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!getPreviousUrlFromSession@{getPreviousUrlFromSession}}
+\index{getPreviousUrlFromSession@{getPreviousUrlFromSession}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{getPreviousUrlFromSession()}{getPreviousUrlFromSession()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_afbdfaa05cb10fa1e15a75137890b85fd} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::get\+Previous\+Url\+From\+Session (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the previous URL from the session if possible.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_acd23ff21c2dc6cbfdae1eddcd20ea06c}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!getRequest@{getRequest}}
+\index{getRequest@{getRequest}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{getRequest()}{getRequest()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_acd23ff21c2dc6cbfdae1eddcd20ea06c} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::get\+Request (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the request instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a44fadc0a2df85918f77efd611d017041}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!getRootControllerNamespace@{getRootControllerNamespace}}
+\index{getRootControllerNamespace@{getRootControllerNamespace}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{getRootControllerNamespace()}{getRootControllerNamespace()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a44fadc0a2df85918f77efd611d017041} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::get\+Root\+Controller\+Namespace (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the root controller namespace.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a2d03cf9b71939d474724ab3c07998bdb}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!getSession@{getSession}}
+\index{getSession@{getSession}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{getSession()}{getSession()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a2d03cf9b71939d474724ab3c07998bdb} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::get\+Session (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the session implementation from the resolver.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Session\textbackslash{}\+Store\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a881c9de30bc6f6479a9d06cbacf4009d}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!hasCorrectSignature@{hasCorrectSignature}}
+\index{hasCorrectSignature@{hasCorrectSignature}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{hasCorrectSignature()}{hasCorrectSignature()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a881c9de30bc6f6479a9d06cbacf4009d} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::has\+Correct\+Signature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{, }\item[{}]{\$absolute}{ = {\ttfamily true}, }\item[{array}]{\$ignore\+Query}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Determine if the signature from the given request matches the URL.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+bool & {\em \$absolute} & \\
+\hline
+array & {\em \$ignore\+Query} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a902ab5c8fb65e9891499300613200816}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!hasValidRelativeSignature@{hasValidRelativeSignature}}
+\index{hasValidRelativeSignature@{hasValidRelativeSignature}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{hasValidRelativeSignature()}{hasValidRelativeSignature()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a902ab5c8fb65e9891499300613200816} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::has\+Valid\+Relative\+Signature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{, }\item[{array}]{\$ignore\+Query}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Determine if the given request has a valid signature for a relative URL.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+array & {\em \$ignore\+Query} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_ad9b636043da987cb7e6dcab881bc28ca}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!hasValidSignature@{hasValidSignature}}
+\index{hasValidSignature@{hasValidSignature}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{hasValidSignature()}{hasValidSignature()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_ad9b636043da987cb7e6dcab881bc28ca} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::has\+Valid\+Signature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{, }\item[{}]{\$absolute}{ = {\ttfamily true}, }\item[{array}]{\$ignore\+Query}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Determine if the given request has a valid signature.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+bool & {\em \$absolute} & \\
+\hline
+array & {\em \$ignore\+Query} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_aa13f0b8bcc355e2129a04bb6404d6fb5}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!isValidUrl@{isValidUrl}}
+\index{isValidUrl@{isValidUrl}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{isValidUrl()}{isValidUrl()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_aa13f0b8bcc355e2129a04bb6404d6fb5} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::is\+Valid\+Url (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Determine if the given path is a valid URL.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a6b99099835702db169dea54b06d5d49a}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!pathFormatter@{pathFormatter}}
+\index{pathFormatter@{pathFormatter}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{pathFormatter()}{pathFormatter()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a6b99099835702db169dea54b06d5d49a} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::path\+Formatter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the path formatter being used by the URL generator.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_aec9a26baebe2f94ba8ce9c4f154f2580}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!previous@{previous}}
+\index{previous@{previous}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{previous()}{previous()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_aec9a26baebe2f94ba8ce9c4f154f2580} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::previous (\begin{DoxyParamCaption}\item[{}]{\$fallback}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Get the URL for the previous request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$fallback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a633f768e5281d70bb25aa25225cb2630}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!previousPath@{previousPath}}
+\index{previousPath@{previousPath}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{previousPath()}{previousPath()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a633f768e5281d70bb25aa25225cb2630} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::previous\+Path (\begin{DoxyParamCaption}\item[{}]{\$fallback}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Get the previous path info for the request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$fallback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_aa432f2485c1650fcdf02bda3a60a6167}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!query@{query}}
+\index{query@{query}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_aa432f2485c1650fcdf02bda3a60a6167} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::query (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$query}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$extra}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$secure}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Generate an absolute URL with the given query parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+array & {\em \$query} & \\
+\hline
+mixed & {\em \$extra} & \\
+\hline
+bool | null & {\em \$secure} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_abc8b66b34dec2d85b3f94900d8ce6147}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!removeIndex@{removeIndex}}
+\index{removeIndex@{removeIndex}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{removeIndex()}{removeIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_abc8b66b34dec2d85b3f94900d8ce6147} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::remove\+Index (\begin{DoxyParamCaption}\item[{}]{\$root}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Remove the index.\+php file from a path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$root} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_afeed96122b20c4afb09e24c02f8f05c5}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!resolveMissingNamedRoutesUsing@{resolveMissingNamedRoutesUsing}}
+\index{resolveMissingNamedRoutesUsing@{resolveMissingNamedRoutesUsing}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{resolveMissingNamedRoutesUsing()}{resolveMissingNamedRoutesUsing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_afeed96122b20c4afb09e24c02f8f05c5} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::resolve\+Missing\+Named\+Routes\+Using (\begin{DoxyParamCaption}\item[{callable}]{\$missing\+Named\+Route\+Resolver}{}\end{DoxyParamCaption})}
+
+Set the callback that should be used to attempt to resolve missing named routes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$missing\+Named\+Route\+Resolver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a31c31e6bae80e4d942e6a21b1ff47bb1}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!route@{route}}
+\index{route@{route}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{route()}{route()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a31c31e6bae80e4d942e6a21b1ff47bb1} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::route (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$absolute}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Get the URL to a named route.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Backed\+Enum | string & {\em \$name} & \\
+\hline
+mixed & {\em \$parameters} & \\
+\hline
+bool & {\em \$absolute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Exception\textbackslash{}\+Route\+Not\+Found\+Exception\texorpdfstring{$\vert$}{|}\textbackslash{}\+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a3a9836521fae71ac2381f358243dc756}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!routeUrl@{routeUrl}}
+\index{routeUrl@{routeUrl}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{routeUrl()}{routeUrl()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a3a9836521fae71ac2381f358243dc756} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::route\+Url (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the Route URL generator instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Url\+Generator 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a6f0ffa86bc12fc0483f508acff1c031f}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!secure@{secure}}
+\index{secure@{secure}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{secure()}{secure()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a6f0ffa86bc12fc0483f508acff1c031f} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::secure (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Generate a secure, absolute URL to the given path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a3fe960a16785117d9b25e77e5ea7f3cd}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!secureAsset@{secureAsset}}
+\index{secureAsset@{secureAsset}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{secureAsset()}{secureAsset()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a3fe960a16785117d9b25e77e5ea7f3cd} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::secure\+Asset (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Generate the URL to a secure asset.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_af7293798117f97aecef02756b9be818b}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!setKeyResolver@{setKeyResolver}}
+\index{setKeyResolver@{setKeyResolver}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{setKeyResolver()}{setKeyResolver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_af7293798117f97aecef02756b9be818b} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::set\+Key\+Resolver (\begin{DoxyParamCaption}\item[{callable}]{\$key\+Resolver}{}\end{DoxyParamCaption})}
+
+Set the encryption key resolver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$key\+Resolver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a0963822dba1049e7cca7f6d953d53e52}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!setRequest@{setRequest}}
+\index{setRequest@{setRequest}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{setRequest()}{setRequest()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a0963822dba1049e7cca7f6d953d53e52} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::set\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Set the current request instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a47183a15aaa4cdaf220b4c7a5f2b85df}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!setRootControllerNamespace@{setRootControllerNamespace}}
+\index{setRootControllerNamespace@{setRootControllerNamespace}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{setRootControllerNamespace()}{setRootControllerNamespace()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a47183a15aaa4cdaf220b4c7a5f2b85df} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::set\+Root\+Controller\+Namespace (\begin{DoxyParamCaption}\item[{}]{\$root\+Namespace}{}\end{DoxyParamCaption})}
+
+Set the root controller namespace.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$root\+Namespace} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a511d12b0d72b9ee0edc317494053066c}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!setRoutes@{setRoutes}}
+\index{setRoutes@{setRoutes}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{setRoutes()}{setRoutes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a511d12b0d72b9ee0edc317494053066c} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::set\+Routes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_routing_1_1_route_collection_interface}{Route\+Collection\+Interface}}}]{\$routes}{}\end{DoxyParamCaption})}
+
+Set the route collection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Collection\+Interface & {\em \$routes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a6943919a0a233344c9f00c8a93ccb1b9}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!setSessionResolver@{setSessionResolver}}
+\index{setSessionResolver@{setSessionResolver}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{setSessionResolver()}{setSessionResolver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a6943919a0a233344c9f00c8a93ccb1b9} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::set\+Session\+Resolver (\begin{DoxyParamCaption}\item[{callable}]{\$session\+Resolver}{}\end{DoxyParamCaption})}
+
+Set the session resolver for the generator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$session\+Resolver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_aca26d0fa39c1b8494a4acb32e7b8c0fd}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!signatureHasNotExpired@{signatureHasNotExpired}}
+\index{signatureHasNotExpired@{signatureHasNotExpired}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{signatureHasNotExpired()}{signatureHasNotExpired()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_aca26d0fa39c1b8494a4acb32e7b8c0fd} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::signature\+Has\+Not\+Expired (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Determine if the expires timestamp from the given request is not from the past.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_ac93c80a04db9bd5072937ed55a46073f}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!signedRoute@{signedRoute}}
+\index{signedRoute@{signedRoute}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{signedRoute()}{signedRoute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_ac93c80a04db9bd5072937ed55a46073f} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::signed\+Route (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$expiration}{ = {\ttfamily null}, }\item[{}]{\$absolute}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Create a signed route URL for a named route.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Backed\+Enum | string & {\em \$name} & \\
+\hline
+mixed & {\em \$parameters} & \\
+\hline
+\textbackslash{}\+Date\+Time\+Interface | \textbackslash{}\+Date\+Interval | int | null & {\em \$expiration} & \\
+\hline
+bool & {\em \$absolute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a0dd92fa25dad82fdd5fa9c0eb12bc89d}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!temporarySignedRoute@{temporarySignedRoute}}
+\index{temporarySignedRoute@{temporarySignedRoute}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{temporarySignedRoute()}{temporarySignedRoute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a0dd92fa25dad82fdd5fa9c0eb12bc89d} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::temporary\+Signed\+Route (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$expiration}{, }\item[{}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$absolute}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Create a temporary signed route URL for a named route.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Backed\+Enum | string & {\em \$name} & \\
+\hline
+\textbackslash{}\+Date\+Time\+Interface | \textbackslash{}\+Date\+Interval | int & {\em \$expiration} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+bool & {\em \$absolute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_a5b525403fec683cd1ee09f5d9411ad21}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!to@{to}}
+\index{to@{to}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{to()}{to()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_a5b525403fec683cd1ee09f5d9411ad21} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::to (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$extra}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$secure}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Generate an absolute URL to the given path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+mixed & {\em \$extra} & \\
+\hline
+bool | null & {\em \$secure} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_ae447d77cd79b50c910000a71c3cbba94}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!toRoute@{toRoute}}
+\index{toRoute@{toRoute}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{toRoute()}{toRoute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_ae447d77cd79b50c910000a71c3cbba94} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::to\+Route (\begin{DoxyParamCaption}\item[{}]{\$route}{, }\item[{}]{\$parameters}{, }\item[{}]{\$absolute}{}\end{DoxyParamCaption})}
+
+Get the URL for a given route instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route & {\em \$route} & \\
+\hline
+mixed & {\em \$parameters} & \\
+\hline
+bool & {\em \$absolute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Exceptions\textbackslash{}\+Url\+Generation\+Exception \Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_ac967f43d4573cae141b5bc1de73d5885}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!useAssetOrigin@{useAssetOrigin}}
+\index{useAssetOrigin@{useAssetOrigin}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{useAssetOrigin()}{useAssetOrigin()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_ac967f43d4573cae141b5bc1de73d5885} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::use\+Asset\+Origin (\begin{DoxyParamCaption}\item[{?string}]{\$root}{}\end{DoxyParamCaption})}
+
+Set the URL origin for all generated asset URLs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$root} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_ad21850f3f30dc4055ff46a6bf5d0c95c}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!useOrigin@{useOrigin}}
+\index{useOrigin@{useOrigin}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{useOrigin()}{useOrigin()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_ad21850f3f30dc4055ff46a6bf5d0c95c} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::use\+Origin (\begin{DoxyParamCaption}\item[{?string}]{\$root}{}\end{DoxyParamCaption})}
+
+Set the URL origin for all generated URLs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$root} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_url_generator_ab39e62e209a2ff224715f27a7fcd6c4d}\index{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}!withKeyResolver@{withKeyResolver}}
+\index{withKeyResolver@{withKeyResolver}!Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator@{Illuminate\textbackslash{}Routing\textbackslash{}UrlGenerator}}
+\doxysubsubsection{\texorpdfstring{withKeyResolver()}{withKeyResolver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_url_generator_ab39e62e209a2ff224715f27a7fcd6c4d} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator\+::with\+Key\+Resolver (\begin{DoxyParamCaption}\item[{callable}]{\$key\+Resolver}{}\end{DoxyParamCaption})}
+
+Clone a new instance of the URL generator with a different encryption key resolver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$key\+Resolver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Url\+Generator 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Routing/Url\+Generator.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,107 @@
+\doxysection{Illuminate\textbackslash{}Process\textbackslash{}Pipe Class Reference}
+\hypertarget{class_illuminate_1_1_process_1_1_pipe}{}\label{class_illuminate_1_1_process_1_1_pipe}\index{Illuminate\textbackslash{}Process\textbackslash{}Pipe@{Illuminate\textbackslash{}Process\textbackslash{}Pipe}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_pipe_a79b7fd533cc483b36eca0345f0a2e71b}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory}{Factory}} \$factory, callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_pipe_a061d321c5f07663bdce72ac8076d2b90}{as}} (string \$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_pipe_a9d3e95e2d4386a88702dc48a6d2d3e4e}{run}} (?callable \$output=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_pipe_a98f95977bb06384c3b7ec17522e89846}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_process_1_1_pipe_a929b707695ec6d786992c2c85b06a477}\label{class_illuminate_1_1_process_1_1_pipe_a929b707695ec6d786992c2c85b06a477} 
+{\bfseries \$factory}
+\item 
+\Hypertarget{class_illuminate_1_1_process_1_1_pipe_a5edbca0265ec36204ae64bbc334cf047}\label{class_illuminate_1_1_process_1_1_pipe_a5edbca0265ec36204ae64bbc334cf047} 
+{\bfseries \$callback}
+\item 
+\Hypertarget{class_illuminate_1_1_process_1_1_pipe_a1200d3fd156fd2515b694a65568f8f66}\label{class_illuminate_1_1_process_1_1_pipe_a1200d3fd156fd2515b694a65568f8f66} 
+{\bfseries \$pending\+Processes} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@mixin \textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory @mixin \textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pending\+Process 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_process_1_1_pipe_a79b7fd533cc483b36eca0345f0a2e71b}\index{Illuminate\textbackslash{}Process\textbackslash{}Pipe@{Illuminate\textbackslash{}Process\textbackslash{}Pipe}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Process\textbackslash{}Pipe@{Illuminate\textbackslash{}Process\textbackslash{}Pipe}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_pipe_a79b7fd533cc483b36eca0345f0a2e71b} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pipe\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory}{Factory}}}]{\$factory}{, }\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Create a new series of piped processes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory & {\em \$factory} & \\
+\hline
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_process_1_1_pipe_a98f95977bb06384c3b7ec17522e89846}\index{Illuminate\textbackslash{}Process\textbackslash{}Pipe@{Illuminate\textbackslash{}Process\textbackslash{}Pipe}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!Illuminate\textbackslash{}Process\textbackslash{}Pipe@{Illuminate\textbackslash{}Process\textbackslash{}Pipe}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_pipe_a98f95977bb06384c3b7ec17522e89846} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pipe\+::\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Dynamically proxy methods calls to a new pending process.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pending\+Process 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_pipe_a061d321c5f07663bdce72ac8076d2b90}\index{Illuminate\textbackslash{}Process\textbackslash{}Pipe@{Illuminate\textbackslash{}Process\textbackslash{}Pipe}!as@{as}}
+\index{as@{as}!Illuminate\textbackslash{}Process\textbackslash{}Pipe@{Illuminate\textbackslash{}Process\textbackslash{}Pipe}}
+\doxysubsubsection{\texorpdfstring{as()}{as()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_pipe_a061d321c5f07663bdce72ac8076d2b90} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pipe\+::as (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Add a process to the pipe with a key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pending\+Process 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_pipe_a9d3e95e2d4386a88702dc48a6d2d3e4e}\index{Illuminate\textbackslash{}Process\textbackslash{}Pipe@{Illuminate\textbackslash{}Process\textbackslash{}Pipe}!run@{run}}
+\index{run@{run}!Illuminate\textbackslash{}Process\textbackslash{}Pipe@{Illuminate\textbackslash{}Process\textbackslash{}Pipe}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_pipe_a9d3e95e2d4386a88702dc48a6d2d3e4e} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pipe\+::run (\begin{DoxyParamCaption}\item[{?callable}]{\$output}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Runs the processes in the pipe.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | null & {\em \$output} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Process\textbackslash{}\+Process\+Result 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Process/Pipe.\+php\end{DoxyCompactItemize}

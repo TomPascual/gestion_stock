@@ -1,0 +1,308 @@
+\doxysection{Illuminate\textbackslash{}Queue\textbackslash{}Call\+Queued\+Handler Class Reference}
+\hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler}{}\label{class_illuminate_1_1_queue_1_1_call_queued_handler}\index{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_call_queued_handler_a4f2b61fb26a941204af60c730bb6b41b}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher}{Dispatcher}} \$dispatcher, \mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_call_queued_handler_a5ce35b80a461be68172049eb90d1e707}{call}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_job}{Job}} \$job, array \$data)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_call_queued_handler_a16a9f255a193dd714d24066e738f7d89}{failed}} (array \$data, \$e, string \$uuid)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_call_queued_handler_a4a0e687fd8c4cfd2c10df056a66da552}{get\+Command}} (array \$data)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_call_queued_handler_a7012e5b5447727b874b07e59e6444132}{dispatch\+Through\+Middleware}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_job}{Job}} \$job, \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_call_queued_handler_adfa110053fc4ec5c2c42e769f940625f}{resolve\+Handler}} (\$job, \$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_call_queued_handler_ab6eb03154a68a65185ddd1c67c67debf}{set\+Job\+Instance\+If\+Necessary}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_job}{Job}} \$job, \$instance)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_call_queued_handler_a9bf55e740f1681a33f1413ce40220ec9}{ensure\+Next\+Job\+In\+Chain\+Is\+Dispatched}} (\$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_call_queued_handler_a669fbe9883de34cac85d0c81afa13ed6}{ensure\+Successful\+Batch\+Job\+Is\+Recorded}} (\$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_call_queued_handler_a0dae219cae4ddc7c588711fe4122d716}{ensure\+Unique\+Job\+Lock\+Is\+Released}} (\$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_call_queued_handler_a87e23cc1b9026392373ac0d244780938}{handle\+Model\+Not\+Found}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_job}{Job}} \$job, \$e)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_call_queued_handler_a47c65a565a2132e5eccdbb592e27444f}{ensure\+Unique\+Job\+Lock\+Is\+Released\+Via\+Context}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_call_queued_handler_aa7d5e7dcd1973403359955b09fa8cc0e}{ensure\+Failed\+Batch\+Job\+Is\+Recorded}} (string \$uuid, \$command, \$e)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_call_queued_handler_aafc151bfb3c0b4ea895a61d78f828adb}{ensure\+Chain\+Catch\+Callbacks\+Are\+Invoked}} (string \$uuid, \$command, \$e)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler_a875167d6e76bcd8a924b6ec8721e7d14}\label{class_illuminate_1_1_queue_1_1_call_queued_handler_a875167d6e76bcd8a924b6ec8721e7d14} 
+{\bfseries \$dispatcher}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler_affec3486e13df0f729e9f8527132c282}\label{class_illuminate_1_1_queue_1_1_call_queued_handler_affec3486e13df0f729e9f8527132c282} 
+{\bfseries \$container}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler_a4f2b61fb26a941204af60c730bb6b41b}\index{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_call_queued_handler_a4f2b61fb26a941204af60c730bb6b41b} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Call\+Queued\+Handler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher}{Dispatcher}}}]{\$dispatcher}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}}}]{\$container}{}\end{DoxyParamCaption})}
+
+Create a new handler instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Bus\textbackslash{}\+Dispatcher & {\em \$dispatcher} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler_a5ce35b80a461be68172049eb90d1e707}\index{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}!call@{call}}
+\index{call@{call}!Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_call_queued_handler_a5ce35b80a461be68172049eb90d1e707} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Call\+Queued\+Handler\+::call (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_job}{Job}}}]{\$job}{, }\item[{array}]{\$data}{}\end{DoxyParamCaption})}
+
+Handle the queued job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler_a7012e5b5447727b874b07e59e6444132}\index{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}!dispatchThroughMiddleware@{dispatchThroughMiddleware}}
+\index{dispatchThroughMiddleware@{dispatchThroughMiddleware}!Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}}
+\doxysubsubsection{\texorpdfstring{dispatchThroughMiddleware()}{dispatchThroughMiddleware()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_call_queued_handler_a7012e5b5447727b874b07e59e6444132} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Call\+Queued\+Handler\+::dispatch\+Through\+Middleware (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_job}{Job}}}]{\$job}{, }\item[{}]{\$command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Dispatch the given job / command through its specified middleware.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+mixed & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler_aafc151bfb3c0b4ea895a61d78f828adb}\index{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}!ensureChainCatchCallbacksAreInvoked@{ensureChainCatchCallbacksAreInvoked}}
+\index{ensureChainCatchCallbacksAreInvoked@{ensureChainCatchCallbacksAreInvoked}!Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}}
+\doxysubsubsection{\texorpdfstring{ensureChainCatchCallbacksAreInvoked()}{ensureChainCatchCallbacksAreInvoked()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_call_queued_handler_aafc151bfb3c0b4ea895a61d78f828adb} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Call\+Queued\+Handler\+::ensure\+Chain\+Catch\+Callbacks\+Are\+Invoked (\begin{DoxyParamCaption}\item[{string}]{\$uuid}{, }\item[{}]{\$command}{, }\item[{}]{\$e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure the chained job catch callbacks are invoked.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uuid} & \\
+\hline
+mixed & {\em \$command} & \\
+\hline
+\textbackslash{}\+Throwable & {\em \$e} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler_aa7d5e7dcd1973403359955b09fa8cc0e}\index{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}!ensureFailedBatchJobIsRecorded@{ensureFailedBatchJobIsRecorded}}
+\index{ensureFailedBatchJobIsRecorded@{ensureFailedBatchJobIsRecorded}!Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}}
+\doxysubsubsection{\texorpdfstring{ensureFailedBatchJobIsRecorded()}{ensureFailedBatchJobIsRecorded()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_call_queued_handler_aa7d5e7dcd1973403359955b09fa8cc0e} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Call\+Queued\+Handler\+::ensure\+Failed\+Batch\+Job\+Is\+Recorded (\begin{DoxyParamCaption}\item[{string}]{\$uuid}{, }\item[{}]{\$command}{, }\item[{}]{\$e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure the batch is notified of the failed job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uuid} & \\
+\hline
+mixed & {\em \$command} & \\
+\hline
+\textbackslash{}\+Throwable & {\em \$e} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler_a9bf55e740f1681a33f1413ce40220ec9}\index{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}!ensureNextJobInChainIsDispatched@{ensureNextJobInChainIsDispatched}}
+\index{ensureNextJobInChainIsDispatched@{ensureNextJobInChainIsDispatched}!Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}}
+\doxysubsubsection{\texorpdfstring{ensureNextJobInChainIsDispatched()}{ensureNextJobInChainIsDispatched()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_call_queued_handler_a9bf55e740f1681a33f1413ce40220ec9} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Call\+Queued\+Handler\+::ensure\+Next\+Job\+In\+Chain\+Is\+Dispatched (\begin{DoxyParamCaption}\item[{}]{\$command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure the next job in the chain is dispatched if applicable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler_a669fbe9883de34cac85d0c81afa13ed6}\index{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}!ensureSuccessfulBatchJobIsRecorded@{ensureSuccessfulBatchJobIsRecorded}}
+\index{ensureSuccessfulBatchJobIsRecorded@{ensureSuccessfulBatchJobIsRecorded}!Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}}
+\doxysubsubsection{\texorpdfstring{ensureSuccessfulBatchJobIsRecorded()}{ensureSuccessfulBatchJobIsRecorded()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_call_queued_handler_a669fbe9883de34cac85d0c81afa13ed6} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Call\+Queued\+Handler\+::ensure\+Successful\+Batch\+Job\+Is\+Recorded (\begin{DoxyParamCaption}\item[{}]{\$command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure the batch is notified of the successful job completion.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler_a0dae219cae4ddc7c588711fe4122d716}\index{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}!ensureUniqueJobLockIsReleased@{ensureUniqueJobLockIsReleased}}
+\index{ensureUniqueJobLockIsReleased@{ensureUniqueJobLockIsReleased}!Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}}
+\doxysubsubsection{\texorpdfstring{ensureUniqueJobLockIsReleased()}{ensureUniqueJobLockIsReleased()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_call_queued_handler_a0dae219cae4ddc7c588711fe4122d716} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Call\+Queued\+Handler\+::ensure\+Unique\+Job\+Lock\+Is\+Released (\begin{DoxyParamCaption}\item[{}]{\$command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure the lock for a unique job is released.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler_a47c65a565a2132e5eccdbb592e27444f}\index{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}!ensureUniqueJobLockIsReleasedViaContext@{ensureUniqueJobLockIsReleasedViaContext}}
+\index{ensureUniqueJobLockIsReleasedViaContext@{ensureUniqueJobLockIsReleasedViaContext}!Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}}
+\doxysubsubsection{\texorpdfstring{ensureUniqueJobLockIsReleasedViaContext()}{ensureUniqueJobLockIsReleasedViaContext()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_call_queued_handler_a47c65a565a2132e5eccdbb592e27444f} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Call\+Queued\+Handler\+::ensure\+Unique\+Job\+Lock\+Is\+Released\+Via\+Context (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure the lock for a unique job is released via context.
+
+This is required when we can\textquotesingle{}t unserialize the job due to missing models.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler_a16a9f255a193dd714d24066e738f7d89}\index{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}!failed@{failed}}
+\index{failed@{failed}!Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}}
+\doxysubsubsection{\texorpdfstring{failed()}{failed()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_call_queued_handler_a16a9f255a193dd714d24066e738f7d89} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Call\+Queued\+Handler\+::failed (\begin{DoxyParamCaption}\item[{array}]{\$data}{, }\item[{}]{\$e}{, }\item[{string}]{\$uuid}{}\end{DoxyParamCaption})}
+
+Call the failed method on the job instance.
+
+The exception that caused the failure will be passed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+\textbackslash{}\+Throwable | null & {\em \$e} & \\
+\hline
+string & {\em \$uuid} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler_a4a0e687fd8c4cfd2c10df056a66da552}\index{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}!getCommand@{getCommand}}
+\index{getCommand@{getCommand}!Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}}
+\doxysubsubsection{\texorpdfstring{getCommand()}{getCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_call_queued_handler_a4a0e687fd8c4cfd2c10df056a66da552} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Call\+Queued\+Handler\+::get\+Command (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the command from the given payload.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler_a87e23cc1b9026392373ac0d244780938}\index{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}!handleModelNotFound@{handleModelNotFound}}
+\index{handleModelNotFound@{handleModelNotFound}!Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}}
+\doxysubsubsection{\texorpdfstring{handleModelNotFound()}{handleModelNotFound()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_call_queued_handler_a87e23cc1b9026392373ac0d244780938} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Call\+Queued\+Handler\+::handle\+Model\+Not\+Found (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_job}{Job}}}]{\$job}{, }\item[{}]{\$e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handle a model not found exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+\textbackslash{}\+Throwable & {\em \$e} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler_adfa110053fc4ec5c2c42e769f940625f}\index{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}!resolveHandler@{resolveHandler}}
+\index{resolveHandler@{resolveHandler}!Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}}
+\doxysubsubsection{\texorpdfstring{resolveHandler()}{resolveHandler()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_call_queued_handler_adfa110053fc4ec5c2c42e769f940625f} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Call\+Queued\+Handler\+::resolve\+Handler (\begin{DoxyParamCaption}\item[{}]{\$job}{, }\item[{}]{\$command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolve the handler for the given command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+mixed & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_call_queued_handler_ab6eb03154a68a65185ddd1c67c67debf}\index{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}!setJobInstanceIfNecessary@{setJobInstanceIfNecessary}}
+\index{setJobInstanceIfNecessary@{setJobInstanceIfNecessary}!Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler@{Illuminate\textbackslash{}Queue\textbackslash{}CallQueuedHandler}}
+\doxysubsubsection{\texorpdfstring{setJobInstanceIfNecessary()}{setJobInstanceIfNecessary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_call_queued_handler_ab6eb03154a68a65185ddd1c67c67debf} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Call\+Queued\+Handler\+::set\+Job\+Instance\+If\+Necessary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_job}{Job}}}]{\$job}{, }\item[{}]{\$instance}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set the job instance of the given class if necessary.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+mixed & {\em \$instance} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Queue/Call\+Queued\+Handler.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,135 @@
+\doxysection{Hamcrest\textbackslash{}Core\textbackslash{}Set Class Reference}
+\hypertarget{class_hamcrest_1_1_core_1_1_set}{}\label{class_hamcrest_1_1_core_1_1_set}\index{Hamcrest\textbackslash{}Core\textbackslash{}Set@{Hamcrest\textbackslash{}Core\textbackslash{}Set}}
+Inheritance diagram for Hamcrest\textbackslash{}Core\textbackslash{}Set\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_hamcrest_1_1_core_1_1_set}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_hamcrest_1_1_core_1_1_set_afc88b2bd4715251bef71a5eff38a90c4}\label{class_hamcrest_1_1_core_1_1_set_afc88b2bd4715251bef71a5eff38a90c4} 
+{\bfseries \+\_\+\+\_\+construct} (\$property, \$not=false)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_core_1_1_set_a19c4f8989271eb57d1758490d05e0473}{matches}} (\$item)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_core_1_1_set_a8e1088a07b81004d0aee376d8b3563c8}{describe\+To}} (\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$description)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_core_1_1_set_aab6327dd4be6c6ee6c1fa2693d0ad5b0}{describe\+Mismatch}} (\$item, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$description)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hamcrest_1_1_base_matcher}{Hamcrest\textbackslash{}\+Base\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+to\+String} ()
+\item 
+{\bfseries \+\_\+\+\_\+invoke} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_set_acd7761b7dd87f794e579547571f24acc}{set}} (\$property)
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_set_a83fa6fec4f3f90c2f8b5af3d380b337b}{not\+Set}} (\$property)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{namespace_tests}{Tests} if a value (class, object, or array) has a named property.
+
+For example\+: 
+\begin{DoxyPre}
+assertThat(array('a', 'b'), set('b'));
+assertThat(\$foo, set('bar'));
+assertThat('Server', notSet('defaultPort'));
+\end{DoxyPre}
+
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000009}{Todo}}]Replace \$property with a matcher and iterate all property names. \end{DoxyRefDesc}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hamcrest_1_1_core_1_1_set_aab6327dd4be6c6ee6c1fa2693d0ad5b0}\index{Hamcrest\textbackslash{}Core\textbackslash{}Set@{Hamcrest\textbackslash{}Core\textbackslash{}Set}!describeMismatch@{describeMismatch}}
+\index{describeMismatch@{describeMismatch}!Hamcrest\textbackslash{}Core\textbackslash{}Set@{Hamcrest\textbackslash{}Core\textbackslash{}Set}}
+\doxysubsubsection{\texorpdfstring{describeMismatch()}{describeMismatch()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_set_aab6327dd4be6c6ee6c1fa2693d0ad5b0} 
+Hamcrest\textbackslash{}\+Core\textbackslash{}\+Set\+::describe\+Mismatch (\begin{DoxyParamCaption}\item[{}]{\$item}{, }\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$description}{}\end{DoxyParamCaption})}
+
+Generate a description of why the matcher has not accepted the item. The description will be part of a larger description of why a matching failed, so it should be concise. This method assumes that {\ttfamily matches(\$item)} is false, but will not check this.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$item} & The item that the Matcher has rejected. \\
+\hline
+Description & {\em \$description} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_hamcrest_1_1_base_matcher_ae071961005d0f24d2ee1b3c62d9fe660}{Hamcrest\textbackslash{}\+Base\+Matcher}}.
+
+\Hypertarget{class_hamcrest_1_1_core_1_1_set_a8e1088a07b81004d0aee376d8b3563c8}\index{Hamcrest\textbackslash{}Core\textbackslash{}Set@{Hamcrest\textbackslash{}Core\textbackslash{}Set}!describeTo@{describeTo}}
+\index{describeTo@{describeTo}!Hamcrest\textbackslash{}Core\textbackslash{}Set@{Hamcrest\textbackslash{}Core\textbackslash{}Set}}
+\doxysubsubsection{\texorpdfstring{describeTo()}{describeTo()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_set_a8e1088a07b81004d0aee376d8b3563c8} 
+Hamcrest\textbackslash{}\+Core\textbackslash{}\+Set\+::describe\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$description}{}\end{DoxyParamCaption})}
+
+Generates a description of the object. The description may be part of a description of a larger object of which this is just a component, so it should be worded appropriately.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Hamcrest\textbackslash{}\+Description & {\em \$description} & The description to be built or appended to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hamcrest_1_1_self_describing_a5358337d01bd2b3a048fa446f9e901d2}{Hamcrest\textbackslash{}\+Self\+Describing}}.
+
+\Hypertarget{class_hamcrest_1_1_core_1_1_set_a19c4f8989271eb57d1758490d05e0473}\index{Hamcrest\textbackslash{}Core\textbackslash{}Set@{Hamcrest\textbackslash{}Core\textbackslash{}Set}!matches@{matches}}
+\index{matches@{matches}!Hamcrest\textbackslash{}Core\textbackslash{}Set@{Hamcrest\textbackslash{}Core\textbackslash{}Set}}
+\doxysubsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_set_a19c4f8989271eb57d1758490d05e0473} 
+Hamcrest\textbackslash{}\+Core\textbackslash{}\+Set\+::matches (\begin{DoxyParamCaption}\item[{}]{\$item}{}\end{DoxyParamCaption})}
+
+Evaluates the matcher for argument {\itshape \$item}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$item} & the object against which the matcher is evaluated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean {\ttfamily true} if {\itshape \$item} matches, otherwise {\ttfamily false}.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Hamcrest\textbackslash{}\+Base\+Matcher 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interface_hamcrest_1_1_matcher_a11ade9b98c2cf2e1871c2bb0e6d0de94}{Hamcrest\textbackslash{}\+Matcher}}.
+
+\Hypertarget{class_hamcrest_1_1_core_1_1_set_a83fa6fec4f3f90c2f8b5af3d380b337b}\index{Hamcrest\textbackslash{}Core\textbackslash{}Set@{Hamcrest\textbackslash{}Core\textbackslash{}Set}!notSet@{notSet}}
+\index{notSet@{notSet}!Hamcrest\textbackslash{}Core\textbackslash{}Set@{Hamcrest\textbackslash{}Core\textbackslash{}Set}}
+\doxysubsubsection{\texorpdfstring{notSet()}{notSet()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_set_a83fa6fec4f3f90c2f8b5af3d380b337b} 
+static Hamcrest\textbackslash{}\+Core\textbackslash{}\+Set\+::not\+Set (\begin{DoxyParamCaption}\item[{}]{\$property}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Matches if value (class, object, or array) does not have named \$property.
+
+@factory \Hypertarget{class_hamcrest_1_1_core_1_1_set_acd7761b7dd87f794e579547571f24acc}\index{Hamcrest\textbackslash{}Core\textbackslash{}Set@{Hamcrest\textbackslash{}Core\textbackslash{}Set}!set@{set}}
+\index{set@{set}!Hamcrest\textbackslash{}Core\textbackslash{}Set@{Hamcrest\textbackslash{}Core\textbackslash{}Set}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_set_acd7761b7dd87f794e579547571f24acc} 
+static Hamcrest\textbackslash{}\+Core\textbackslash{}\+Set\+::set (\begin{DoxyParamCaption}\item[{}]{\$property}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Matches if value (class, object, or array) has named \$property.
+
+@factory 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/hamcrest/hamcrest-\/php/hamcrest/\+Hamcrest/\+Core/Set.\+php\end{DoxyCompactItemize}

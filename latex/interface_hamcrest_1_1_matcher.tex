@@ -1,0 +1,87 @@
+\doxysection{Hamcrest\textbackslash{}Matcher Interface Reference}
+\hypertarget{interface_hamcrest_1_1_matcher}{}\label{interface_hamcrest_1_1_matcher}\index{Hamcrest\textbackslash{}Matcher@{Hamcrest\textbackslash{}Matcher}}
+Inheritance diagram for Hamcrest\textbackslash{}Matcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_hamcrest_1_1_matcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_hamcrest_1_1_matcher_a11ade9b98c2cf2e1871c2bb0e6d0de94}{matches}} (\$item)
+\item 
+\mbox{\hyperlink{interface_hamcrest_1_1_matcher_a1b62d6f1a891b631896133908af83306}{describe\+Mismatch}} (\$item, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$description)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_hamcrest_1_1_self_describing}{Hamcrest\textbackslash{}\+Self\+Describing}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_hamcrest_1_1_self_describing_a5358337d01bd2b3a048fa446f9e901d2}{describe\+To}} (\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$description)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A matcher over acceptable values. A matcher is able to describe itself to give feedback when it fails. 
+
+Matcher implementations should {\bfseries{NOT directly implement this interface}}. Instead, {\bfseries{extend}} the {\ttfamily \doxylink{}{Hamcrest\textbackslash{}\+Base\+Matcher}} abstract class, which will ensure that the Matcher API can grow to support new features and remain compatible with all Matcher implementations. 
+
+For easy access to common Matcher implementations, use the static factory methods in {\ttfamily \doxylink{}{Hamcrest\textbackslash{}\+Core\+Matchers}}.
+
+\begin{DoxySeeAlso}{See also}
+Hamcrest\textbackslash{}\+Core\+Matchers 
+
+Hamcrest\textbackslash{}\+Base\+Matcher 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_hamcrest_1_1_matcher_a1b62d6f1a891b631896133908af83306}\index{Hamcrest\textbackslash{}Matcher@{Hamcrest\textbackslash{}Matcher}!describeMismatch@{describeMismatch}}
+\index{describeMismatch@{describeMismatch}!Hamcrest\textbackslash{}Matcher@{Hamcrest\textbackslash{}Matcher}}
+\doxysubsubsection{\texorpdfstring{describeMismatch()}{describeMismatch()}}
+{\footnotesize\ttfamily \label{interface_hamcrest_1_1_matcher_a1b62d6f1a891b631896133908af83306} 
+Hamcrest\textbackslash{}\+Matcher\+::describe\+Mismatch (\begin{DoxyParamCaption}\item[{}]{\$item}{, }\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$description}{}\end{DoxyParamCaption})}
+
+Generate a description of why the matcher has not accepted the item. The description will be part of a larger description of why a matching failed, so it should be concise. This method assumes that {\ttfamily matches(\$item)} is false, but will not check this.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$item} & The item that the Matcher has rejected. \\
+\hline
+Description & {\em \$description} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_hamcrest_1_1_base_matcher_ae071961005d0f24d2ee1b3c62d9fe660}{Hamcrest\textbackslash{}\+Base\+Matcher}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_is_a019a517face7ca8a6362c1df1d82186b}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_is_type_of_a92f697b4d1b03c9f916583499b143ab1}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is\+Type\+Of}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_set_aab6327dd4be6c6ee6c1fa2693d0ad5b0}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Set}}, \mbox{\hyperlink{class_hamcrest_1_1_diagnosing_matcher_a558c787ed9062e6f6aa283fd9754176c}{Hamcrest\textbackslash{}\+Diagnosing\+Matcher}}, and \mbox{\hyperlink{class_hamcrest_1_1_type_safe_matcher_aa81354a42b826cf3fec764da1e02c1af}{Hamcrest\textbackslash{}\+Type\+Safe\+Matcher}}.
+
+\Hypertarget{interface_hamcrest_1_1_matcher_a11ade9b98c2cf2e1871c2bb0e6d0de94}\index{Hamcrest\textbackslash{}Matcher@{Hamcrest\textbackslash{}Matcher}!matches@{matches}}
+\index{matches@{matches}!Hamcrest\textbackslash{}Matcher@{Hamcrest\textbackslash{}Matcher}}
+\doxysubsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily \label{interface_hamcrest_1_1_matcher_a11ade9b98c2cf2e1871c2bb0e6d0de94} 
+Hamcrest\textbackslash{}\+Matcher\+::matches (\begin{DoxyParamCaption}\item[{}]{\$item}{}\end{DoxyParamCaption})}
+
+Evaluates the matcher for argument {\itshape \$item}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$item} & the object against which the matcher is evaluated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean {\ttfamily true} if {\itshape \$item} matches, otherwise {\ttfamily false}.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Hamcrest\textbackslash{}\+Base\+Matcher 
+\end{DoxySeeAlso}
+
+
+Implemented in \mbox{\hyperlink{class_hamcrest_1_1_base_matcher_test_ad9ef8a19c7c9c78534379ccc2165f7b6}{Hamcrest\textbackslash{}\+Base\+Matcher\+Test}}, \mbox{\hyperlink{class_hamcrest_1_1_collection_1_1_is_empty_traversable_a0c7684d4fdc610912bcaedc29a16f22d}{Hamcrest\textbackslash{}\+Collection\textbackslash{}\+Is\+Empty\+Traversable}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_any_of_af17eef1366249e2d3e5e42524f7b79e6}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Any\+Of}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_combinable_matcher_a626eb1ef3320b8cf69df5880591f0d39}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Combinable\+Matcher}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_described_as_a7c1bd534753b80c750b41201d8ff0d4b}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Described\+As}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_is_aebdf18f5365ad2e26a2661250febd4bf}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_is_anything_adb3aa2ae7ea189e636b80b329c381f9c}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is\+Anything}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_is_equal_a61eb47c9327fc7232f0dbe76f5c93cdf}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is\+Equal}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_is_not_aa8c23794ea109b2cb1724d3a2fe5b181}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is\+Not}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_is_null_a798ab262f5df7b7ac6c7baa1e1132470}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is\+Null}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_is_same_a44d8c04bed94b4efb49a45908d49694e}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is\+Same}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_is_type_of_a49ea7f512fb3b5082b078d3107cf8e3d}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is\+Type\+Of}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_set_a19c4f8989271eb57d1758490d05e0473}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Set}}, \mbox{\hyperlink{class_hamcrest_1_1_diagnosing_matcher_a65babc0264e96bd2256652f4b8f3332a}{Hamcrest\textbackslash{}\+Diagnosing\+Matcher}}, \mbox{\hyperlink{class_hamcrest_1_1_sample_invoke_matcher_adeac04bc8b0d4bc1e6777c9cad306c02}{Hamcrest\textbackslash{}\+Sample\+Invoke\+Matcher}}, \mbox{\hyperlink{class_hamcrest_1_1_text_1_1_is_empty_string_aa278c3ebc8f605c11bc90a5393001fe5}{Hamcrest\textbackslash{}\+Text\textbackslash{}\+Is\+Empty\+String}}, \mbox{\hyperlink{class_hamcrest_1_1_type_1_1_is_callable_a8178b6a05e413151ac569123114865dd}{Hamcrest\textbackslash{}\+Type\textbackslash{}\+Is\+Callable}}, \mbox{\hyperlink{class_hamcrest_1_1_type_1_1_is_numeric_af337fa597ae29eb6ad3d92854884c6bc}{Hamcrest\textbackslash{}\+Type\textbackslash{}\+Is\+Numeric}}, \mbox{\hyperlink{class_hamcrest_1_1_type_1_1_is_scalar_af3c2c44bf2121fdf07a6109e9e5924af}{Hamcrest\textbackslash{}\+Type\textbackslash{}\+Is\+Scalar}}, and \mbox{\hyperlink{class_hamcrest_1_1_type_safe_matcher_a3b478b57cc6f0f3fc8b6e313bae224ba}{Hamcrest\textbackslash{}\+Type\+Safe\+Matcher}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/hamcrest/hamcrest-\/php/hamcrest/\+Hamcrest/Matcher.\+php\end{DoxyCompactItemize}

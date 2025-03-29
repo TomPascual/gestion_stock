@@ -1,0 +1,151 @@
+\doxysection{Illuminate\textbackslash{}Cache\textbackslash{}Memcached\+Lock Class Reference}
+\hypertarget{class_illuminate_1_1_cache_1_1_memcached_lock}{}\label{class_illuminate_1_1_cache_1_1_memcached_lock}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock}}
+Inheritance diagram for Illuminate\textbackslash{}Cache\textbackslash{}Memcached\+Lock\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_cache_1_1_memcached_lock}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_lock_ae8c5d8222357d1659ae8415dd6d7aa70}{\+\_\+\+\_\+construct}} (\$memcached, \$name, \$seconds, \$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_lock_aa488a1854e720ac36aada1c3c1a28107}{acquire}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_lock_a10ef051c37f7e7f31a947473e307a848}{release}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_lock_a46376c3ca3bef0c4b65bd47857bbd413}{force\+Release}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a5a673e886da30fb119a806d893714e28}{\+\_\+\+\_\+construct}} (\$name, \$seconds, \$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_adbb7043056ffa08ae70ac55a99aee0fc}{get}} (\$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_aed6219de240abd5f817b91e9f9d695ee}{block}} (\$seconds, \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a78af018332d21c9300867728619ee758}{is\+Owned\+By\+Current\+Process}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a5246eab1e8daf252b65fde2a261ba759}{is\+Owned\+By}} (\$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a0e0b2dc71964911fb5e1dc2be72c6980}{between\+Blocked\+Attempts\+Sleep\+For}} (\$milliseconds)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_lock_a6e7e174e736c977f8d90e3a00ddbc913}{get\+Current\+Owner}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_lock_a3c92fd354a5f51f9cc84cdbd67d18f68}\label{class_illuminate_1_1_cache_1_1_memcached_lock_a3c92fd354a5f51f9cc84cdbd67d18f68} 
+{\bfseries \$memcached}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$name}
+\item 
+{\bfseries \$seconds}
+\item 
+{\bfseries \$owner}
+\item 
+{\bfseries \$sleep\+Milliseconds} = 250
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_lock_ae8c5d8222357d1659ae8415dd6d7aa70}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_lock_ae8c5d8222357d1659ae8415dd6d7aa70} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Lock\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$memcached}{, }\item[{}]{\$name}{, }\item[{}]{\$seconds}{, }\item[{}]{\$owner}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new lock instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Memcached & {\em \$memcached} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+string | null & {\em \$owner} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_lock_aa488a1854e720ac36aada1c3c1a28107}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock}!acquire@{acquire}}
+\index{acquire@{acquire}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock}}
+\doxysubsubsection{\texorpdfstring{acquire()}{acquire()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_lock_aa488a1854e720ac36aada1c3c1a28107} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Lock\+::acquire (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Attempt to acquire the lock.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a3e02d90803c0e5e6b7bdf4fc17ea8857}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_lock_a46376c3ca3bef0c4b65bd47857bbd413}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock}!forceRelease@{forceRelease}}
+\index{forceRelease@{forceRelease}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock}}
+\doxysubsubsection{\texorpdfstring{forceRelease()}{forceRelease()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_lock_a46376c3ca3bef0c4b65bd47857bbd413} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Lock\+::force\+Release (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Releases this lock in disregard of ownership.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_aebc99079ee6e82c29cc0e35460a95c85}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_lock_a6e7e174e736c977f8d90e3a00ddbc913}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock}!getCurrentOwner@{getCurrentOwner}}
+\index{getCurrentOwner@{getCurrentOwner}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock}}
+\doxysubsubsection{\texorpdfstring{getCurrentOwner()}{getCurrentOwner()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_lock_a6e7e174e736c977f8d90e3a00ddbc913} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Lock\+::get\+Current\+Owner (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the owner value written into the driver for this lock.
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a334cff7e658bcc2ede6d9fb0e27d252b}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_lock_a10ef051c37f7e7f31a947473e307a848}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock}!release@{release}}
+\index{release@{release}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedLock}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_lock_a10ef051c37f7e7f31a947473e307a848} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Lock\+::release (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Release the lock.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a6b0d063e5c735c23e9a56aa18b6b7d88}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Cache/Memcached\+Lock.\+php\end{DoxyCompactItemize}

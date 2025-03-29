@@ -1,0 +1,319 @@
+\doxysection{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}Start\+Session Class Reference}
+\hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session}{}\label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a61c78b08fcb0576f54907fdee462662b}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_session_1_1_session_manager}{Session\+Manager}} \$manager, ?callable \$cache\+Factory\+Resolver=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_aa161bbbe5331641cf2b3932c2aafede9}{handle}} (\$request, Closure \$next)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_aac9ea0c65ce474e378f07139d1e7db38}{get\+Session}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a753bdbb7e7ef217e5de1980f83cfb966}{handle\+Request\+While\+Blocking}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request, \$session, Closure \$next)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a8612fb9033cc70326cbae1aac7827d1d}{handle\+Stateful\+Request}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request, \$session, Closure \$next)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a0a1eeaf39aad2065bb121b29fb974660}{start\+Session}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request, \$session)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a6324144528cf9675fb05ad467157ff4e}{collect\+Garbage}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_session_1_1_session}{Session}} \$session)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a6f9b5f366a789d6b334207c3182882aa}{config\+Hits\+Lottery}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a6eef3b635642fae4bc77abed0028e83a}{store\+Current\+Url}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request, \$session)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a54aa974a3c978d1781c551ab877095cd}{add\+Cookie\+To\+Response}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response, \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_session_1_1_session}{Session}} \$session)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a02e30dd677d62d2605f28e70e5bbfb6d}{save\+Session}} (\$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_ac11d70022d71ab5bab93b295e1b7518c}{get\+Session\+Lifetime\+In\+Seconds}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_ad7e31fd92b69a9c8aa5190fd3fa73f44}{get\+Cookie\+Expiration\+Date}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_ad8380dc3661c8ec0bc458cd57fb87afd}{session\+Configured}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_af08498fd0121ba91f47fae0f12aaa71c}{session\+Is\+Persistent}} (?array \$config=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a9f80b14d26cf6c44a52e54aa4b240a96}{cache}} (\$driver)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_ae393c059cc73164163ec961b0f038fda}\label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_ae393c059cc73164163ec961b0f038fda} 
+{\bfseries \$manager}
+\item 
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_ab26f5543f6c2b0e399dc8e2f85961016}\label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_ab26f5543f6c2b0e399dc8e2f85961016} 
+{\bfseries \$cache\+Factory\+Resolver}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a61c78b08fcb0576f54907fdee462662b}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a61c78b08fcb0576f54907fdee462662b} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Middleware\textbackslash{}\+Start\+Session\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_session_1_1_session_manager}{Session\+Manager}}}]{\$manager}{, }\item[{?callable}]{\$cache\+Factory\+Resolver}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new session middleware.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Session\textbackslash{}\+Session\+Manager & {\em \$manager} & \\
+\hline
+callable | null & {\em \$cache\+Factory\+Resolver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a54aa974a3c978d1781c551ab877095cd}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}!addCookieToResponse@{addCookieToResponse}}
+\index{addCookieToResponse@{addCookieToResponse}!Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection{\texorpdfstring{addCookieToResponse()}{addCookieToResponse()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a54aa974a3c978d1781c551ab877095cd} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Middleware\textbackslash{}\+Start\+Session\+::add\+Cookie\+To\+Response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}}}]{\$response}{, }\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_session_1_1_session}{Session}}}]{\$session}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add the session cookie to the application response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Response & {\em \$response} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Session\textbackslash{}\+Session & {\em \$session} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a9f80b14d26cf6c44a52e54aa4b240a96}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}!cache@{cache}}
+\index{cache@{cache}!Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection{\texorpdfstring{cache()}{cache()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a9f80b14d26cf6c44a52e54aa4b240a96} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Middleware\textbackslash{}\+Start\+Session\+::cache (\begin{DoxyParamCaption}\item[{}]{\$driver}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolve the given cache driver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$driver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Store 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a6324144528cf9675fb05ad467157ff4e}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}!collectGarbage@{collectGarbage}}
+\index{collectGarbage@{collectGarbage}!Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection{\texorpdfstring{collectGarbage()}{collectGarbage()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a6324144528cf9675fb05ad467157ff4e} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Middleware\textbackslash{}\+Start\+Session\+::collect\+Garbage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_session_1_1_session}{Session}}}]{\$session}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Remove the garbage from the session if necessary.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Session\textbackslash{}\+Session & {\em \$session} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a6f9b5f366a789d6b334207c3182882aa}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}!configHitsLottery@{configHitsLottery}}
+\index{configHitsLottery@{configHitsLottery}!Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection{\texorpdfstring{configHitsLottery()}{configHitsLottery()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a6f9b5f366a789d6b334207c3182882aa} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Middleware\textbackslash{}\+Start\+Session\+::config\+Hits\+Lottery (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the configuration odds hit the lottery.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_ad7e31fd92b69a9c8aa5190fd3fa73f44}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}!getCookieExpirationDate@{getCookieExpirationDate}}
+\index{getCookieExpirationDate@{getCookieExpirationDate}!Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection{\texorpdfstring{getCookieExpirationDate()}{getCookieExpirationDate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_ad7e31fd92b69a9c8aa5190fd3fa73f44} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Middleware\textbackslash{}\+Start\+Session\+::get\+Cookie\+Expiration\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the cookie lifetime in seconds.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Date\+Time\+Interface\texorpdfstring{$\vert$}{|}int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_aac9ea0c65ce474e378f07139d1e7db38}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}!getSession@{getSession}}
+\index{getSession@{getSession}!Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection{\texorpdfstring{getSession()}{getSession()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_aac9ea0c65ce474e378f07139d1e7db38} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Middleware\textbackslash{}\+Start\+Session\+::get\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Get the session implementation from the manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Session\textbackslash{}\+Session 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_ac11d70022d71ab5bab93b295e1b7518c}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}!getSessionLifetimeInSeconds@{getSessionLifetimeInSeconds}}
+\index{getSessionLifetimeInSeconds@{getSessionLifetimeInSeconds}!Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection{\texorpdfstring{getSessionLifetimeInSeconds()}{getSessionLifetimeInSeconds()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_ac11d70022d71ab5bab93b295e1b7518c} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Middleware\textbackslash{}\+Start\+Session\+::get\+Session\+Lifetime\+In\+Seconds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the session lifetime in seconds.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_aa161bbbe5331641cf2b3932c2aafede9}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}!handle@{handle}}
+\index{handle@{handle}!Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_aa161bbbe5331641cf2b3932c2aafede9} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Middleware\textbackslash{}\+Start\+Session\+::handle (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{Closure}]{\$next}{}\end{DoxyParamCaption})}
+
+Handle an incoming request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$next} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a753bdbb7e7ef217e5de1980f83cfb966}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}!handleRequestWhileBlocking@{handleRequestWhileBlocking}}
+\index{handleRequestWhileBlocking@{handleRequestWhileBlocking}!Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection{\texorpdfstring{handleRequestWhileBlocking()}{handleRequestWhileBlocking()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a753bdbb7e7ef217e5de1980f83cfb966} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Middleware\textbackslash{}\+Start\+Session\+::handle\+Request\+While\+Blocking (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{, }\item[{}]{\$session}{, }\item[{Closure}]{\$next}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handle the given request within session state.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Session\textbackslash{}\+Session & {\em \$session} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$next} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a8612fb9033cc70326cbae1aac7827d1d}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}!handleStatefulRequest@{handleStatefulRequest}}
+\index{handleStatefulRequest@{handleStatefulRequest}!Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection{\texorpdfstring{handleStatefulRequest()}{handleStatefulRequest()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a8612fb9033cc70326cbae1aac7827d1d} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Middleware\textbackslash{}\+Start\+Session\+::handle\+Stateful\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{, }\item[{}]{\$session}{, }\item[{Closure}]{\$next}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handle the given request within session state.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Session\textbackslash{}\+Session & {\em \$session} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$next} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a02e30dd677d62d2605f28e70e5bbfb6d}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}!saveSession@{saveSession}}
+\index{saveSession@{saveSession}!Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection{\texorpdfstring{saveSession()}{saveSession()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a02e30dd677d62d2605f28e70e5bbfb6d} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Middleware\textbackslash{}\+Start\+Session\+::save\+Session (\begin{DoxyParamCaption}\item[{}]{\$request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Save the session data to storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_ad8380dc3661c8ec0bc458cd57fb87afd}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}!sessionConfigured@{sessionConfigured}}
+\index{sessionConfigured@{sessionConfigured}!Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection{\texorpdfstring{sessionConfigured()}{sessionConfigured()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_ad8380dc3661c8ec0bc458cd57fb87afd} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Middleware\textbackslash{}\+Start\+Session\+::session\+Configured (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if a session driver has been configured.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_af08498fd0121ba91f47fae0f12aaa71c}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}!sessionIsPersistent@{sessionIsPersistent}}
+\index{sessionIsPersistent@{sessionIsPersistent}!Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection{\texorpdfstring{sessionIsPersistent()}{sessionIsPersistent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_af08498fd0121ba91f47fae0f12aaa71c} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Middleware\textbackslash{}\+Start\+Session\+::session\+Is\+Persistent (\begin{DoxyParamCaption}\item[{?array}]{\$config}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the configured session driver is persistent.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | null & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a0a1eeaf39aad2065bb121b29fb974660}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}!startSession@{startSession}}
+\index{startSession@{startSession}!Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection{\texorpdfstring{startSession()}{startSession()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a0a1eeaf39aad2065bb121b29fb974660} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Middleware\textbackslash{}\+Start\+Session\+::start\+Session (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{, }\item[{}]{\$session}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Start the session for the given request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Session\textbackslash{}\+Session & {\em \$session} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Session\textbackslash{}\+Session 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a6eef3b635642fae4bc77abed0028e83a}\index{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}!storeCurrentUrl@{storeCurrentUrl}}
+\index{storeCurrentUrl@{storeCurrentUrl}!Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession@{Illuminate\textbackslash{}Session\textbackslash{}Middleware\textbackslash{}StartSession}}
+\doxysubsubsection{\texorpdfstring{storeCurrentUrl()}{storeCurrentUrl()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_session_1_1_middleware_1_1_start_session_a6eef3b635642fae4bc77abed0028e83a} 
+Illuminate\textbackslash{}\+Session\textbackslash{}\+Middleware\textbackslash{}\+Start\+Session\+::store\+Current\+Url (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{, }\item[{}]{\$session}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Store the current URL for the request if necessary.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Session\textbackslash{}\+Session & {\em \$session} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Session/\+Middleware/Start\+Session.\+php\end{DoxyCompactItemize}

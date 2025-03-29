@@ -1,0 +1,948 @@
+\doxysection{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem Class Reference}
+\hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem}{}\label{class_illuminate_1_1_filesystem_1_1_filesystem}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_ad0def220860de456fb2392e8d15e3ba1}{exists}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a24ed3a8533c08a20d516f3847f8184c3}{missing}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a7390b8ae98d5f8f04f5d471ac246d0e2}{get}} (\$path, \$lock=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_ac91514e2c6ea92e678dadff068f439ba}{json}} (\$path, \$flags=0, \$lock=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_acef3aedaa77663e96d3fa2046a5648f2}{shared\+Get}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a604199fe929a6cdf1b314951d7ea1cfc}{get\+Require}} (\$path, array \$data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_aca5b9826f5b46b283397949244200ecd}{require\+Once}} (\$path, array \$data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a4546f3a33718e60ac3ca18aee0d5db6f}{lines}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a04a91287963dcdfb5592ebf93a31340c}{hash}} (\$path, \$algorithm=\textquotesingle{}md5\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a5be3b920b7273e21f85f4e53f7048c5e}{put}} (\$path, \$contents, \$lock=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_af2f896bc5e6768d55c5f6822c58c250c}{replace}} (\$path, \$content, \$mode=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a5cf6dd48dd8285bbe776f83e28249d77}{replace\+In\+File}} (\$search, \$\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_af2f896bc5e6768d55c5f6822c58c250c}{replace}}, \$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_aedd228033dcf6482dbea9f4bc6048f55}{prepend}} (\$path, \$data)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a42a6ccdbccd1a71e973f392fb8b36d6b}{append}} (\$path, \$data, \$lock=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a37446566922b0473573837891daba09c}{chmod}} (\$path, \$mode=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a7988d47114b78bf8ed431230d78b6393}{delete}} (\$paths)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a1f07a0bf57a457cc9134a018d5f1ca96}{move}} (\$path, \$target)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_ab3bb5318f4279104122a320a3c882a60}{copy}} (\$path, \$target)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a85456f8b3927868ca78e4908efafd7e5}{link}} (\$target, \$link)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a66477c76941a2e595248de2024fc4839}{relative\+Link}} (\$target, \$\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a85456f8b3927868ca78e4908efafd7e5}{link}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a83d25ea3dfde6485fe976cd0e1eea1d4}{name}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a7e5a3126344803bfcd05d1b81e033e8a}{basename}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a1f61e5ded07164af600e6a22d6ad4c41}{dirname}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a68d8e0e9d9f00fc9245c21346fc53514}{extension}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a029165f070a914e9fb069e5af56efb32}{guess\+Extension}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a55df74a58ff57596edbc6668284cdb79}{type}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a363382e96ed0d9f697481e8d3cb336f2}{mime\+Type}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a042543edd545ad2a12884e08459863f4}{size}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a29b7b99698e96f3079bbe351876f23d3}{last\+Modified}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a40dfb5d3a5588f7f0a0a446fe4847248}{is\+Directory}} (\$directory)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a2f46334f75b0f6bac5a00b2e91c08178}{is\+Empty\+Directory}} (\$directory, \$ignore\+Dot\+Files=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_aa4f164bd7621d0e2a6f22088d6a2f0bb}{is\+Readable}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a5d512c3abc096140dad0a772c5971383}{is\+Writable}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_ac5bef15d6a2bbfdaa6d788689f503e18}{has\+Same\+Hash}} (\$first\+File, \$second\+File)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_afe3d5b869ffbb3aca8920aa3f76e9063}{is\+File}} (\$file)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_ad19716fe825f0809be8f6f6cfec11a4a}{glob}} (\$pattern, \$flags=0)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a2f5586102d4fec72561a4d78c8c9d51b}{files}} (\$directory, \$hidden=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a25e4b864090f2eb56fdbb09be2595f23}{all\+Files}} (\$directory, \$hidden=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a0c2ba716114895565fe7a6d04d7f0f2f}{directories}} (\$directory)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a9151d801e3225932df01b8370abf88ff}{ensure\+Directory\+Exists}} (\$path, \$mode=0755, \$recursive=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a1ece803ea34f149b26f45ff4f2d4cf3c}{make\+Directory}} (\$path, \$mode=0755, \$recursive=false, \$force=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a0cf0e5ef67ec488c90d243bd3e1d8487}{move\+Directory}} (\$from, \$to, \$overwrite=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a123ace01749089c92b210e5424f429c2}{copy\+Directory}} (\$directory, \$destination, \$options=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a9c0e38c086820570ab1ef5b9d0809938}{delete\+Directory}} (\$directory, \$preserve=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_a743524d8e5c9384fefca28adce26a891}{delete\+Directories}} (\$directory)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem_ae82ab5612274bdc8f2d20e8d0337aa43}{clean\+Directory}} (\$directory)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a25e4b864090f2eb56fdbb09be2595f23}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!allFiles@{allFiles}}
+\index{allFiles@{allFiles}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{allFiles()}{allFiles()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a25e4b864090f2eb56fdbb09be2595f23} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::all\+Files (\begin{DoxyParamCaption}\item[{}]{\$directory}{, }\item[{}]{\$hidden}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Get all of the files from the given directory (recursive).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+bool & {\em \$hidden} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Finder\textbackslash{}\+Spl\+File\+Info\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a42a6ccdbccd1a71e973f392fb8b36d6b}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!append@{append}}
+\index{append@{append}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a42a6ccdbccd1a71e973f392fb8b36d6b} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::append (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$data}{, }\item[{}]{\$lock}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Append to a file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+string & {\em \$data} & \\
+\hline
+bool & {\em \$lock} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a7e5a3126344803bfcd05d1b81e033e8a}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!basename@{basename}}
+\index{basename@{basename}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{basename()}{basename()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a7e5a3126344803bfcd05d1b81e033e8a} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::basename (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Extract the trailing name component from a file path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a37446566922b0473573837891daba09c}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!chmod@{chmod}}
+\index{chmod@{chmod}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{chmod()}{chmod()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a37446566922b0473573837891daba09c} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::chmod (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$mode}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get or set UNIX mode of a file or directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+int | null & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_ae82ab5612274bdc8f2d20e8d0337aa43}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!cleanDirectory@{cleanDirectory}}
+\index{cleanDirectory@{cleanDirectory}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{cleanDirectory()}{cleanDirectory()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_ae82ab5612274bdc8f2d20e8d0337aa43} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::clean\+Directory (\begin{DoxyParamCaption}\item[{}]{\$directory}{}\end{DoxyParamCaption})}
+
+Empty the specified directory of all files and folders.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_ab3bb5318f4279104122a320a3c882a60}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!copy@{copy}}
+\index{copy@{copy}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_ab3bb5318f4279104122a320a3c882a60} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::copy (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$target}{}\end{DoxyParamCaption})}
+
+Copy a file to a new location.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+string & {\em \$target} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a123ace01749089c92b210e5424f429c2}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!copyDirectory@{copyDirectory}}
+\index{copyDirectory@{copyDirectory}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{copyDirectory()}{copyDirectory()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a123ace01749089c92b210e5424f429c2} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::copy\+Directory (\begin{DoxyParamCaption}\item[{}]{\$directory}{, }\item[{}]{\$destination}{, }\item[{}]{\$options}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Copy a directory from one location to another.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+string & {\em \$destination} & \\
+\hline
+int | null & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a7988d47114b78bf8ed431230d78b6393}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!delete@{delete}}
+\index{delete@{delete}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a7988d47114b78bf8ed431230d78b6393} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::delete (\begin{DoxyParamCaption}\item[{}]{\$paths}{}\end{DoxyParamCaption})}
+
+Delete the file at a given path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$paths} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a743524d8e5c9384fefca28adce26a891}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!deleteDirectories@{deleteDirectories}}
+\index{deleteDirectories@{deleteDirectories}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{deleteDirectories()}{deleteDirectories()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a743524d8e5c9384fefca28adce26a891} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::delete\+Directories (\begin{DoxyParamCaption}\item[{}]{\$directory}{}\end{DoxyParamCaption})}
+
+Remove all of the directories within a given directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a9c0e38c086820570ab1ef5b9d0809938}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!deleteDirectory@{deleteDirectory}}
+\index{deleteDirectory@{deleteDirectory}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{deleteDirectory()}{deleteDirectory()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a9c0e38c086820570ab1ef5b9d0809938} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::delete\+Directory (\begin{DoxyParamCaption}\item[{}]{\$directory}{, }\item[{}]{\$preserve}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Recursively delete a directory.
+
+The directory itself may be optionally preserved.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+bool & {\em \$preserve} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a0c2ba716114895565fe7a6d04d7f0f2f}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!directories@{directories}}
+\index{directories@{directories}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{directories()}{directories()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a0c2ba716114895565fe7a6d04d7f0f2f} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::directories (\begin{DoxyParamCaption}\item[{}]{\$directory}{}\end{DoxyParamCaption})}
+
+Get all of the directories within a given directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a1f61e5ded07164af600e6a22d6ad4c41}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!dirname@{dirname}}
+\index{dirname@{dirname}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{dirname()}{dirname()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a1f61e5ded07164af600e6a22d6ad4c41} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::dirname (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Extract the parent directory from a file path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a9151d801e3225932df01b8370abf88ff}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!ensureDirectoryExists@{ensureDirectoryExists}}
+\index{ensureDirectoryExists@{ensureDirectoryExists}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{ensureDirectoryExists()}{ensureDirectoryExists()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a9151d801e3225932df01b8370abf88ff} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::ensure\+Directory\+Exists (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$mode}{ = {\ttfamily 0755}, }\item[{}]{\$recursive}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Ensure a directory exists.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+int & {\em \$mode} & \\
+\hline
+bool & {\em \$recursive} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_ad0def220860de456fb2392e8d15e3ba1}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!exists@{exists}}
+\index{exists@{exists}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_ad0def220860de456fb2392e8d15e3ba1} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::exists (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Determine if a file or directory exists.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a68d8e0e9d9f00fc9245c21346fc53514}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!extension@{extension}}
+\index{extension@{extension}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{extension()}{extension()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a68d8e0e9d9f00fc9245c21346fc53514} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::extension (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Extract the file extension from a file path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a2f5586102d4fec72561a4d78c8c9d51b}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!files@{files}}
+\index{files@{files}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{files()}{files()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a2f5586102d4fec72561a4d78c8c9d51b} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::files (\begin{DoxyParamCaption}\item[{}]{\$directory}{, }\item[{}]{\$hidden}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Get an array of all files in a directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+bool & {\em \$hidden} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Finder\textbackslash{}\+Spl\+File\+Info\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a7390b8ae98d5f8f04f5d471ac246d0e2}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!get@{get}}
+\index{get@{get}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a7390b8ae98d5f8f04f5d471ac246d0e2} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::get (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$lock}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Get the contents of a file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+bool & {\em \$lock} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Filesystem\textbackslash{}\+File\+Not\+Found\+Exception \Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a604199fe929a6cdf1b314951d7ea1cfc}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!getRequire@{getRequire}}
+\index{getRequire@{getRequire}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{getRequire()}{getRequire()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a604199fe929a6cdf1b314951d7ea1cfc} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::get\+Require (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Get the returned value of a file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Filesystem\textbackslash{}\+File\+Not\+Found\+Exception \Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_ad19716fe825f0809be8f6f6cfec11a4a}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!glob@{glob}}
+\index{glob@{glob}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{glob()}{glob()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_ad19716fe825f0809be8f6f6cfec11a4a} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::glob (\begin{DoxyParamCaption}\item[{}]{\$pattern}{, }\item[{}]{\$flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Find path names matching a given pattern.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & \\
+\hline
+int & {\em \$flags} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a029165f070a914e9fb069e5af56efb32}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!guessExtension@{guessExtension}}
+\index{guessExtension@{guessExtension}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{guessExtension()}{guessExtension()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a029165f070a914e9fb069e5af56efb32} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::guess\+Extension (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Guess the file extension from the mime-\/type of a given file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a04a91287963dcdfb5592ebf93a31340c}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!hash@{hash}}
+\index{hash@{hash}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{hash()}{hash()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a04a91287963dcdfb5592ebf93a31340c} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::hash (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$algorithm}{ = {\ttfamily \textquotesingle{}md5\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Get the hash of the file at the given path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+string & {\em \$algorithm} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_ac5bef15d6a2bbfdaa6d788689f503e18}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!hasSameHash@{hasSameHash}}
+\index{hasSameHash@{hasSameHash}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{hasSameHash()}{hasSameHash()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_ac5bef15d6a2bbfdaa6d788689f503e18} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::has\+Same\+Hash (\begin{DoxyParamCaption}\item[{}]{\$first\+File}{, }\item[{}]{\$second\+File}{}\end{DoxyParamCaption})}
+
+Determine if two files are the same by comparing their hashes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$first\+File} & \\
+\hline
+string & {\em \$second\+File} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a40dfb5d3a5588f7f0a0a446fe4847248}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!isDirectory@{isDirectory}}
+\index{isDirectory@{isDirectory}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{isDirectory()}{isDirectory()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a40dfb5d3a5588f7f0a0a446fe4847248} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::is\+Directory (\begin{DoxyParamCaption}\item[{}]{\$directory}{}\end{DoxyParamCaption})}
+
+Determine if the given path is a directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a2f46334f75b0f6bac5a00b2e91c08178}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!isEmptyDirectory@{isEmptyDirectory}}
+\index{isEmptyDirectory@{isEmptyDirectory}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{isEmptyDirectory()}{isEmptyDirectory()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a2f46334f75b0f6bac5a00b2e91c08178} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::is\+Empty\+Directory (\begin{DoxyParamCaption}\item[{}]{\$directory}{, }\item[{}]{\$ignore\+Dot\+Files}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Determine if the given path is a directory that does not contain any other files or directories.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+bool & {\em \$ignore\+Dot\+Files} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_afe3d5b869ffbb3aca8920aa3f76e9063}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!isFile@{isFile}}
+\index{isFile@{isFile}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{isFile()}{isFile()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_afe3d5b869ffbb3aca8920aa3f76e9063} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::is\+File (\begin{DoxyParamCaption}\item[{}]{\$file}{}\end{DoxyParamCaption})}
+
+Determine if the given path is a file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_aa4f164bd7621d0e2a6f22088d6a2f0bb}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!isReadable@{isReadable}}
+\index{isReadable@{isReadable}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{isReadable()}{isReadable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_aa4f164bd7621d0e2a6f22088d6a2f0bb} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::is\+Readable (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Determine if the given path is readable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a5d512c3abc096140dad0a772c5971383}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!isWritable@{isWritable}}
+\index{isWritable@{isWritable}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{isWritable()}{isWritable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a5d512c3abc096140dad0a772c5971383} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::is\+Writable (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Determine if the given path is writable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_ac91514e2c6ea92e678dadff068f439ba}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!json@{json}}
+\index{json@{json}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{json()}{json()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_ac91514e2c6ea92e678dadff068f439ba} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::json (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$flags}{ = {\ttfamily 0}, }\item[{}]{\$lock}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Get the contents of a file as decoded JSON.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+int & {\em \$flags} & \\
+\hline
+bool & {\em \$lock} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Filesystem\textbackslash{}\+File\+Not\+Found\+Exception \Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a29b7b99698e96f3079bbe351876f23d3}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!lastModified@{lastModified}}
+\index{lastModified@{lastModified}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{lastModified()}{lastModified()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a29b7b99698e96f3079bbe351876f23d3} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::last\+Modified (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Get the file\textquotesingle{}s last modification time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a4546f3a33718e60ac3ca18aee0d5db6f}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!lines@{lines}}
+\index{lines@{lines}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{lines()}{lines()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a4546f3a33718e60ac3ca18aee0d5db6f} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::lines (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Get the contents of a file one line at a time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Lazy\+Collection
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Filesystem\textbackslash{}\+File\+Not\+Found\+Exception \Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a85456f8b3927868ca78e4908efafd7e5}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!link@{link}}
+\index{link@{link}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{link()}{link()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a85456f8b3927868ca78e4908efafd7e5} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::link (\begin{DoxyParamCaption}\item[{}]{\$target}{, }\item[{}]{\$link}{}\end{DoxyParamCaption})}
+
+Create a symlink to the target file or directory. On Windows, a hard link is created if the target is a file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target} & \\
+\hline
+string & {\em \$link} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a1ece803ea34f149b26f45ff4f2d4cf3c}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!makeDirectory@{makeDirectory}}
+\index{makeDirectory@{makeDirectory}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{makeDirectory()}{makeDirectory()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a1ece803ea34f149b26f45ff4f2d4cf3c} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::make\+Directory (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$mode}{ = {\ttfamily 0755}, }\item[{}]{\$recursive}{ = {\ttfamily false}, }\item[{}]{\$force}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+int & {\em \$mode} & \\
+\hline
+bool & {\em \$recursive} & \\
+\hline
+bool & {\em \$force} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a363382e96ed0d9f697481e8d3cb336f2}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!mimeType@{mimeType}}
+\index{mimeType@{mimeType}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{mimeType()}{mimeType()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a363382e96ed0d9f697481e8d3cb336f2} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::mime\+Type (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Get the mime-\/type of a given file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a24ed3a8533c08a20d516f3847f8184c3}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!missing@{missing}}
+\index{missing@{missing}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{missing()}{missing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a24ed3a8533c08a20d516f3847f8184c3} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::missing (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Determine if a file or directory is missing.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a1f07a0bf57a457cc9134a018d5f1ca96}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!move@{move}}
+\index{move@{move}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a1f07a0bf57a457cc9134a018d5f1ca96} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::move (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$target}{}\end{DoxyParamCaption})}
+
+Move a file to a new location.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+string & {\em \$target} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a0cf0e5ef67ec488c90d243bd3e1d8487}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!moveDirectory@{moveDirectory}}
+\index{moveDirectory@{moveDirectory}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{moveDirectory()}{moveDirectory()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a0cf0e5ef67ec488c90d243bd3e1d8487} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::move\+Directory (\begin{DoxyParamCaption}\item[{}]{\$from}{, }\item[{}]{\$to}{, }\item[{}]{\$overwrite}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Move a directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$from} & \\
+\hline
+string & {\em \$to} & \\
+\hline
+bool & {\em \$overwrite} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a83d25ea3dfde6485fe976cd0e1eea1d4}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!name@{name}}
+\index{name@{name}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a83d25ea3dfde6485fe976cd0e1eea1d4} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::name (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Extract the file name from a file path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_aedd228033dcf6482dbea9f4bc6048f55}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!prepend@{prepend}}
+\index{prepend@{prepend}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{prepend()}{prepend()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_aedd228033dcf6482dbea9f4bc6048f55} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::prepend (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$data}{}\end{DoxyParamCaption})}
+
+Prepend to a file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a5be3b920b7273e21f85f4e53f7048c5e}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!put@{put}}
+\index{put@{put}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a5be3b920b7273e21f85f4e53f7048c5e} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::put (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$contents}{, }\item[{}]{\$lock}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Write the contents of a file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+string & {\em \$contents} & \\
+\hline
+bool & {\em \$lock} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a66477c76941a2e595248de2024fc4839}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!relativeLink@{relativeLink}}
+\index{relativeLink@{relativeLink}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{relativeLink()}{relativeLink()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a66477c76941a2e595248de2024fc4839} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::relative\+Link (\begin{DoxyParamCaption}\item[{}]{\$target}{, }\item[{}]{\$link}{}\end{DoxyParamCaption})}
+
+Create a relative symlink to the target file or directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target} & \\
+\hline
+string & {\em \$link} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_af2f896bc5e6768d55c5f6822c58c250c}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!replace@{replace}}
+\index{replace@{replace}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_af2f896bc5e6768d55c5f6822c58c250c} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::replace (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$content}{, }\item[{}]{\$mode}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Write the contents of a file, replacing it atomically if it already exists.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+string & {\em \$content} & \\
+\hline
+int | null & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a5cf6dd48dd8285bbe776f83e28249d77}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!replaceInFile@{replaceInFile}}
+\index{replaceInFile@{replaceInFile}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{replaceInFile()}{replaceInFile()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a5cf6dd48dd8285bbe776f83e28249d77} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::replace\+In\+File (\begin{DoxyParamCaption}\item[{}]{\$search}{, }\item[{}]{\$replace}{, }\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Replace a given string within a given file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$search} & \\
+\hline
+array | string & {\em \$replace} & \\
+\hline
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_aca5b9826f5b46b283397949244200ecd}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!requireOnce@{requireOnce}}
+\index{requireOnce@{requireOnce}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{requireOnce()}{requireOnce()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_aca5b9826f5b46b283397949244200ecd} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::require\+Once (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Require the given file once.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Filesystem\textbackslash{}\+File\+Not\+Found\+Exception \Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_acef3aedaa77663e96d3fa2046a5648f2}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!sharedGet@{sharedGet}}
+\index{sharedGet@{sharedGet}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{sharedGet()}{sharedGet()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_acef3aedaa77663e96d3fa2046a5648f2} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::shared\+Get (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Get contents of a file with shared access.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a042543edd545ad2a12884e08459863f4}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!size@{size}}
+\index{size@{size}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a042543edd545ad2a12884e08459863f4} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::size (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Get the file size of a given file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_filesystem_a55df74a58ff57596edbc6668284cdb79}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}!type@{type}}
+\index{type@{type}!Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem@{Illuminate\textbackslash{}Filesystem\textbackslash{}Filesystem}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_filesystem_a55df74a58ff57596edbc6668284cdb79} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem\+::type (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Get the file type of a given file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Filesystem/Filesystem.\+php\end{DoxyCompactItemize}

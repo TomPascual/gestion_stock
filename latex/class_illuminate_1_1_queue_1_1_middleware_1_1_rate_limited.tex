@@ -1,0 +1,173 @@
+\doxysection{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}Rate\+Limited Class Reference}
+\hypertarget{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited}{}\label{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited}\index{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited@{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited}}
+Inheritance diagram for Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}Rate\+Limited\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_acff5405c1ded8faa13167d393c8e5025}{\+\_\+\+\_\+construct}} (\$limiter\+Name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_a3d0b320fb3e6a207133c863ac6ca759b}{handle}} (\$job, \$next)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_a466bbd0af6f2bf2ffd88a64e525dfae4}{dont\+Release}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_a25eb190971ddba9e6bac781c28e9c4aa}{\+\_\+\+\_\+sleep}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_afa7e92411481c7d5d38d2b6783a97b56}{\+\_\+\+\_\+wakeup}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_aa8b45a05cd02e092277f8d5896fe761c}\label{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_aa8b45a05cd02e092277f8d5896fe761c} 
+{\bfseries \$should\+Release} = true
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_a3cc1cfc86d04a769f236079affa6d2f7}{handle\+Job}} (\$job, \$next, array \$limits)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_af3d3627e6a882fd629d4c4d78a450bf0}{get\+Time\+Until\+Next\+Retry}} (\$key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_a4737e445e0723487ff57c298fcc8cdf5}\label{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_a4737e445e0723487ff57c298fcc8cdf5} 
+{\bfseries \$limiter}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_a3218dd023cb7b00d5e1655cc1f31bd3e}\label{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_a3218dd023cb7b00d5e1655cc1f31bd3e} 
+{\bfseries \$limiter\+Name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_acff5405c1ded8faa13167d393c8e5025}\index{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited@{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited@{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_acff5405c1ded8faa13167d393c8e5025} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Middleware\textbackslash{}\+Rate\+Limited\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$limiter\+Name}{}\end{DoxyParamCaption})}
+
+Create a new middleware instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Backed\+Enum | \textbackslash{}\+Unit\+Enum | string & {\em \$limiter\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_with_redis_a5fc108c1a4a6c8e6f0e5aca204e2e6e2}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Middleware\textbackslash{}\+Rate\+Limited\+With\+Redis}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_a25eb190971ddba9e6bac781c28e9c4aa}\index{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited@{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited}!\_\_sleep@{\_\_sleep}}
+\index{\_\_sleep@{\_\_sleep}!Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited@{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited}}
+\doxysubsubsection{\texorpdfstring{\_\_sleep()}{\_\_sleep()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_a25eb190971ddba9e6bac781c28e9c4aa} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Middleware\textbackslash{}\+Rate\+Limited\+::\+\_\+\+\_\+sleep (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Prepare the object for serialization.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_afa7e92411481c7d5d38d2b6783a97b56}\index{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited@{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited}!\_\_wakeup@{\_\_wakeup}}
+\index{\_\_wakeup@{\_\_wakeup}!Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited@{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited}}
+\doxysubsubsection{\texorpdfstring{\_\_wakeup()}{\_\_wakeup()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_afa7e92411481c7d5d38d2b6783a97b56} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Middleware\textbackslash{}\+Rate\+Limited\+::\+\_\+\+\_\+wakeup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Prepare the object after unserialization.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_with_redis_a9d5a8cda4973b348c1e0f39a59b9c762}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Middleware\textbackslash{}\+Rate\+Limited\+With\+Redis}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_a466bbd0af6f2bf2ffd88a64e525dfae4}\index{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited@{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited}!dontRelease@{dontRelease}}
+\index{dontRelease@{dontRelease}!Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited@{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited}}
+\doxysubsubsection{\texorpdfstring{dontRelease()}{dontRelease()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_a466bbd0af6f2bf2ffd88a64e525dfae4} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Middleware\textbackslash{}\+Rate\+Limited\+::dont\+Release (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Do not release the job back to the queue if the limit is exceeded.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_af3d3627e6a882fd629d4c4d78a450bf0}\index{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited@{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited}!getTimeUntilNextRetry@{getTimeUntilNextRetry}}
+\index{getTimeUntilNextRetry@{getTimeUntilNextRetry}!Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited@{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited}}
+\doxysubsubsection{\texorpdfstring{getTimeUntilNextRetry()}{getTimeUntilNextRetry()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_af3d3627e6a882fd629d4c4d78a450bf0} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Middleware\textbackslash{}\+Rate\+Limited\+::get\+Time\+Until\+Next\+Retry (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the number of seconds that should elapse before the job is retried.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_with_redis_ab9ba4c6d8fd4880d34d9eb4fd32bdac4}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Middleware\textbackslash{}\+Rate\+Limited\+With\+Redis}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_a3d0b320fb3e6a207133c863ac6ca759b}\index{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited@{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited}!handle@{handle}}
+\index{handle@{handle}!Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited@{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_a3d0b320fb3e6a207133c863ac6ca759b} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Middleware\textbackslash{}\+Rate\+Limited\+::handle (\begin{DoxyParamCaption}\item[{}]{\$job}{, }\item[{}]{\$next}{}\end{DoxyParamCaption})}
+
+Process the job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$job} & \\
+\hline
+callable & {\em \$next} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_a3cc1cfc86d04a769f236079affa6d2f7}\index{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited@{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited}!handleJob@{handleJob}}
+\index{handleJob@{handleJob}!Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited@{Illuminate\textbackslash{}Queue\textbackslash{}Middleware\textbackslash{}RateLimited}}
+\doxysubsubsection{\texorpdfstring{handleJob()}{handleJob()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_a3cc1cfc86d04a769f236079affa6d2f7} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Middleware\textbackslash{}\+Rate\+Limited\+::handle\+Job (\begin{DoxyParamCaption}\item[{}]{\$job}{, }\item[{}]{\$next}{, }\item[{array}]{\$limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handle a rate limited job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$job} & \\
+\hline
+callable & {\em \$next} & \\
+\hline
+array & {\em \$limits} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_middleware_1_1_rate_limited_with_redis_a197d583b9c24ba1282b9dfff58f78078}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Middleware\textbackslash{}\+Rate\+Limited\+With\+Redis}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Queue/\+Middleware/Rate\+Limited.\+php\end{DoxyCompactItemize}

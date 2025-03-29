@@ -1,0 +1,57 @@
+\doxysection{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring Class Reference}
+\hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_ustring}{}\label{class_psy_1_1_readline_1_1_hoa_1_1_ustring}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_ustring_a5f12c3e2193db37cfef2756d606a245a}{check\+Mb\+String}} ()
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_ustring_ac3c850f9cf3f5ac91016586ad0b9dc43}{get\+Char\+Width}} (string \$char)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_ustring_af37c463c163f0f3838f76f590e105fa1}{is\+Char\+Printable}} (string \$char)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_ustring_ac7e60abd74403ef8fe76632eaa093904}{to\+Code}} (string \$char)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents a UTF-\/8 string. Please, see\+:
+\begin{DoxyItemize}
+\item \href{http://www.ietf.org/rfc/rfc3454.txt}{\texttt{ http\+://www.\+ietf.\+org/rfc/rfc3454.\+txt}},
+\item \href{http://unicode.org/reports/tr9/}{\texttt{ http\+://unicode.\+org/reports/tr9/}},
+\item \href{http://www.unicode.org/Public/6.0.0/ucd/UnicodeData.txt}{\texttt{ http\+://www.\+unicode.\+org/\+Public/6.\+0.\+0/ucd/\+Unicode\+Data.\+txt}}. 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_ustring_a5f12c3e2193db37cfef2756d606a245a}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring}!checkMbString@{checkMbString}}
+\index{checkMbString@{checkMbString}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring}}
+\doxysubsubsection{\texorpdfstring{checkMbString()}{checkMbString()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_ustring_a5f12c3e2193db37cfef2756d606a245a} 
+static Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Ustring\+::check\+Mb\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check if ext/mbstring is available. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_ustring_ac3c850f9cf3f5ac91016586ad0b9dc43}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring}!getCharWidth@{getCharWidth}}
+\index{getCharWidth@{getCharWidth}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring}}
+\doxysubsubsection{\texorpdfstring{getCharWidth()}{getCharWidth()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_ustring_ac3c850f9cf3f5ac91016586ad0b9dc43} 
+static Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Ustring\+::get\+Char\+Width (\begin{DoxyParamCaption}\item[{string}]{\$char}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the number of column positions of a wide-\/character.
+
+This is a PHP implementation of wcwidth() and wcswidth() (defined in IEEE Std 1002.\+1-\/2001) for Unicode, by Markus Kuhn. Please, see \href{http://www.cl.cam.ac.uk/~mgk25/ucs/wcwidth.c}{\texttt{ http\+://www.\+cl.\+cam.\+ac.\+uk/\texorpdfstring{$\sim$}{\string~}mgk25/ucs/wcwidth.\+c}}.
+
+The wcwidth(wc) function shall either return 0 (if wc is a null wide-\/character code), or return the number of column positions to be occupied by the wide-\/character code wc, or return -\/1 (if wc does not correspond to a printable wide-\/character code). \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_ustring_af37c463c163f0f3838f76f590e105fa1}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring}!isCharPrintable@{isCharPrintable}}
+\index{isCharPrintable@{isCharPrintable}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring}}
+\doxysubsubsection{\texorpdfstring{isCharPrintable()}{isCharPrintable()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_ustring_af37c463c163f0f3838f76f590e105fa1} 
+static Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Ustring\+::is\+Char\+Printable (\begin{DoxyParamCaption}\item[{string}]{\$char}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check whether the character is printable or not. \Hypertarget{class_psy_1_1_readline_1_1_hoa_1_1_ustring_ac7e60abd74403ef8fe76632eaa093904}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring}!toCode@{toCode}}
+\index{toCode@{toCode}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Ustring}}
+\doxysubsubsection{\texorpdfstring{toCode()}{toCode()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_hoa_1_1_ustring_ac7e60abd74403ef8fe76632eaa093904} 
+static Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Ustring\+::to\+Code (\begin{DoxyParamCaption}\item[{string}]{\$char}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a decimal code representation of a specific character. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Readline/\+Hoa/Ustring.\+php\end{DoxyCompactItemize}

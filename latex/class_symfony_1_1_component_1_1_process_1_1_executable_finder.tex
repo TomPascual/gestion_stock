@@ -1,0 +1,61 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Executable\+Finder Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_process_1_1_executable_finder}{}\label{class_symfony_1_1_component_1_1_process_1_1_executable_finder}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}ExecutableFinder@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}ExecutableFinder}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_executable_finder_afdae37e3c95c50e70ad982f0f85022fe}{set\+Suffixes}} (array \$suffixes)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_executable_finder_a57b6b68b9e2aebd89970efd0385214ad}{add\+Suffix}} (string \$suffix)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_executable_finder_a19fc9ad852127f8ba30088d426e7f4d1}{find}} (string \$name, ?string \$default=null, array \$extra\+Dirs=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generic executable finder.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+
+Johannes M. Schmitt \href{mailto:schmittjoh@gmail.com}{\texttt{ schmittjoh@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_process_1_1_executable_finder_a57b6b68b9e2aebd89970efd0385214ad}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}ExecutableFinder@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}ExecutableFinder}!addSuffix@{addSuffix}}
+\index{addSuffix@{addSuffix}!Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}ExecutableFinder@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}ExecutableFinder}}
+\doxysubsubsection{\texorpdfstring{addSuffix()}{addSuffix()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_process_1_1_executable_finder_a57b6b68b9e2aebd89970efd0385214ad} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Executable\+Finder\+::add\+Suffix (\begin{DoxyParamCaption}\item[{string}]{\$suffix}{}\end{DoxyParamCaption})}
+
+Adds new possible suffix to check for executable, including the dot (.). \begin{DoxyVerb}$finder = new ExecutableFinder();
+$finder->addSuffix('.foo');
+\end{DoxyVerb}
+ \Hypertarget{class_symfony_1_1_component_1_1_process_1_1_executable_finder_a19fc9ad852127f8ba30088d426e7f4d1}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}ExecutableFinder@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}ExecutableFinder}!find@{find}}
+\index{find@{find}!Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}ExecutableFinder@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}ExecutableFinder}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_process_1_1_executable_finder_a19fc9ad852127f8ba30088d426e7f4d1} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Executable\+Finder\+::find (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{?string}]{\$default}{ = {\ttfamily null}, }\item[{array}]{\$extra\+Dirs}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Finds an executable by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The executable name (without the extension) \\
+\hline
+string | null & {\em \$default} & The default to return if no executable is found \\
+\hline
+array & {\em \$extra\+Dirs} & Additional dirs to check into \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_process_1_1_executable_finder_afdae37e3c95c50e70ad982f0f85022fe}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}ExecutableFinder@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}ExecutableFinder}!setSuffixes@{setSuffixes}}
+\index{setSuffixes@{setSuffixes}!Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}ExecutableFinder@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}ExecutableFinder}}
+\doxysubsubsection{\texorpdfstring{setSuffixes()}{setSuffixes()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_process_1_1_executable_finder_afdae37e3c95c50e70ad982f0f85022fe} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Executable\+Finder\+::set\+Suffixes (\begin{DoxyParamCaption}\item[{array}]{\$suffixes}{}\end{DoxyParamCaption})}
+
+Replaces default suffixes of executable. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/process/Executable\+Finder.\+php\end{DoxyCompactItemize}

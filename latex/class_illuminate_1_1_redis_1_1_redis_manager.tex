@@ -1,0 +1,300 @@
+\doxysection{Illuminate\textbackslash{}Redis\textbackslash{}Redis\+Manager Class Reference}
+\hypertarget{class_illuminate_1_1_redis_1_1_redis_manager}{}\label{class_illuminate_1_1_redis_1_1_redis_manager}\index{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}}
+Inheritance diagram for Illuminate\textbackslash{}Redis\textbackslash{}Redis\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_redis_1_1_redis_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_redis_manager_a8b53ab7c6b5e88da26996df74478ca01}{\+\_\+\+\_\+construct}} (\$app, \$driver, array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_redis_manager_aabd902af56750e5c659436e77076e359}{connection}} (\$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_redis_manager_a0ba5928cdc3421cbe5431cacd94953f1}{resolve}} (\$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_redis_manager_a64a01abd1528fe19207ee8953a0b28b7}{connections}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_redis_manager_a98410ece00d5eb1df2a60bec06ead625}{enable\+Events}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_redis_manager_a533142b5a6f252aac80a1ad996ff6ee8}{disable\+Events}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_redis_manager_afeb5be960ce9fd75ea97a2139f01230f}{set\+Driver}} (\$driver)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_redis_manager_a444f032d3a4a6cbb4daf45723a3633d0}{purge}} (\$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_redis_manager_a52f640595cae33fc3a1ce31309623df6}{extend}} (\$driver, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_redis_manager_a7df06c1555c1e1c06372ba434d2e4248}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_redis_manager_ac233d38fe8de8c304ee44db49a13f42f}{resolve\+Cluster}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_redis_manager_adc5fee66abfa710ebe434fc8cec01746}{configure}} (\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection}{Connection}} \$\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_redis_manager_aabd902af56750e5c659436e77076e359}{connection}}, \$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_redis_manager_ac9d4b2b4ee5a38b6c22a2f637d31a05e}{connector}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_redis_manager_a3066890a43b5d1a06670f3d9c7baa3f8}{parse\+Connection\+Configuration}} (\$config)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_ad96edc18d9f9836c9996c8a778d4526b}\label{class_illuminate_1_1_redis_1_1_redis_manager_ad96edc18d9f9836c9996c8a778d4526b} 
+{\bfseries \$app}
+\item 
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_a53d3996132fe51e1bd9c2df9b2035381}\label{class_illuminate_1_1_redis_1_1_redis_manager_a53d3996132fe51e1bd9c2df9b2035381} 
+{\bfseries \$driver}
+\item 
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_aaaac392b6e88c854348b96253d0471b3}\label{class_illuminate_1_1_redis_1_1_redis_manager_aaaac392b6e88c854348b96253d0471b3} 
+{\bfseries \$custom\+Creators} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_afc9852820ece398031dc4ccb22956720}\label{class_illuminate_1_1_redis_1_1_redis_manager_afc9852820ece398031dc4ccb22956720} 
+{\bfseries \$config}
+\item 
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_a6b9b289c5bf736da429c8596a6820e3c}\label{class_illuminate_1_1_redis_1_1_redis_manager_a6b9b289c5bf736da429c8596a6820e3c} 
+{\bfseries \$connections}
+\item 
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_aafceb4792485ff00d210031d8c29d328}\label{class_illuminate_1_1_redis_1_1_redis_manager_aafceb4792485ff00d210031d8c29d328} 
+{\bfseries \$events} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@mixin \textbackslash{}\+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_a8b53ab7c6b5e88da26996df74478ca01}\index{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_redis_manager_a8b53ab7c6b5e88da26996df74478ca01} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Redis\+Manager\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$app}{, }\item[{}]{\$driver}{, }\item[{array}]{\$config}{}\end{DoxyParamCaption})}
+
+Create a new Redis manager instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Foundation\textbackslash{}\+Application & {\em \$app} & \\
+\hline
+string & {\em \$driver} & \\
+\hline
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_a7df06c1555c1e1c06372ba434d2e4248}\index{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_redis_manager_a7df06c1555c1e1c06372ba434d2e4248} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Redis\+Manager\+::\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Pass methods onto the default Redis connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_adc5fee66abfa710ebe434fc8cec01746}\index{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}!configure@{configure}}
+\index{configure@{configure}!Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}}
+\doxysubsubsection{\texorpdfstring{configure()}{configure()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_redis_manager_adc5fee66abfa710ebe434fc8cec01746} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Redis\+Manager\+::configure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection}{Connection}}}]{\$connection}{, }\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Configure the given connection to prepare it for commands.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection & {\em \$connection} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_aabd902af56750e5c659436e77076e359}\index{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}!connection@{connection}}
+\index{connection@{connection}!Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}}
+\doxysubsubsection{\texorpdfstring{connection()}{connection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_redis_manager_aabd902af56750e5c659436e77076e359} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Redis\+Manager\+::connection (\begin{DoxyParamCaption}\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a Redis connection by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_redis_1_1_factory_a2ccad7e4926f485a361eacde2b9a626a}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Redis\textbackslash{}\+Factory}}.
+
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_a64a01abd1528fe19207ee8953a0b28b7}\index{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}!connections@{connections}}
+\index{connections@{connections}!Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}}
+\doxysubsubsection{\texorpdfstring{connections()}{connections()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_redis_manager_a64a01abd1528fe19207ee8953a0b28b7} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Redis\+Manager\+::connections (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return all of the created connections.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_ac9d4b2b4ee5a38b6c22a2f637d31a05e}\index{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}!connector@{connector}}
+\index{connector@{connector}!Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}}
+\doxysubsubsection{\texorpdfstring{connector()}{connector()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_redis_manager_ac9d4b2b4ee5a38b6c22a2f637d31a05e} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Redis\+Manager\+::connector (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the connector instance for the current driver.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Redis\textbackslash{}\+Connector\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_a533142b5a6f252aac80a1ad996ff6ee8}\index{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}!disableEvents@{disableEvents}}
+\index{disableEvents@{disableEvents}!Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}}
+\doxysubsubsection{\texorpdfstring{disableEvents()}{disableEvents()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_redis_manager_a533142b5a6f252aac80a1ad996ff6ee8} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Redis\+Manager\+::disable\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Disable the firing of Redis command events.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_a98410ece00d5eb1df2a60bec06ead625}\index{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}!enableEvents@{enableEvents}}
+\index{enableEvents@{enableEvents}!Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}}
+\doxysubsubsection{\texorpdfstring{enableEvents()}{enableEvents()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_redis_manager_a98410ece00d5eb1df2a60bec06ead625} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Redis\+Manager\+::enable\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Enable the firing of Redis command events.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_a52f640595cae33fc3a1ce31309623df6}\index{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}!extend@{extend}}
+\index{extend@{extend}!Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}}
+\doxysubsubsection{\texorpdfstring{extend()}{extend()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_redis_manager_a52f640595cae33fc3a1ce31309623df6} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Redis\+Manager\+::extend (\begin{DoxyParamCaption}\item[{}]{\$driver}{, }\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a custom driver creator Closure.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$driver} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_a3066890a43b5d1a06670f3d9c7baa3f8}\index{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}!parseConnectionConfiguration@{parseConnectionConfiguration}}
+\index{parseConnectionConfiguration@{parseConnectionConfiguration}!Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}}
+\doxysubsubsection{\texorpdfstring{parseConnectionConfiguration()}{parseConnectionConfiguration()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_redis_manager_a3066890a43b5d1a06670f3d9c7baa3f8} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Redis\+Manager\+::parse\+Connection\+Configuration (\begin{DoxyParamCaption}\item[{}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse the Redis connection configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_a444f032d3a4a6cbb4daf45723a3633d0}\index{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}!purge@{purge}}
+\index{purge@{purge}!Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}}
+\doxysubsubsection{\texorpdfstring{purge()}{purge()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_redis_manager_a444f032d3a4a6cbb4daf45723a3633d0} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Redis\+Manager\+::purge (\begin{DoxyParamCaption}\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Disconnect the given connection and remove from local cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_a0ba5928cdc3421cbe5431cacd94953f1}\index{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}!resolve@{resolve}}
+\index{resolve@{resolve}!Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_redis_manager_a0ba5928cdc3421cbe5431cacd94953f1} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Redis\+Manager\+::resolve (\begin{DoxyParamCaption}\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Resolve the given connection by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_ac233d38fe8de8c304ee44db49a13f42f}\index{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}!resolveCluster@{resolveCluster}}
+\index{resolveCluster@{resolveCluster}!Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}}
+\doxysubsubsection{\texorpdfstring{resolveCluster()}{resolveCluster()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_redis_manager_ac233d38fe8de8c304ee44db49a13f42f} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Redis\+Manager\+::resolve\+Cluster (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolve the given cluster connection by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_redis_manager_afeb5be960ce9fd75ea97a2139f01230f}\index{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}!setDriver@{setDriver}}
+\index{setDriver@{setDriver}!Illuminate\textbackslash{}Redis\textbackslash{}RedisManager@{Illuminate\textbackslash{}Redis\textbackslash{}RedisManager}}
+\doxysubsubsection{\texorpdfstring{setDriver()}{setDriver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_redis_manager_afeb5be960ce9fd75ea97a2139f01230f} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Redis\+Manager\+::set\+Driver (\begin{DoxyParamCaption}\item[{}]{\$driver}{}\end{DoxyParamCaption})}
+
+Set the default driver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$driver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Redis/Redis\+Manager.\+php\end{DoxyCompactItemize}

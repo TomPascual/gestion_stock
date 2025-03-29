@@ -1,0 +1,4 @@
+var class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_php_bridge_session_storage_factory =
+[
+    [ "createStorage", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_php_bridge_session_storage_factory.html#a6aa417f0f283c5b0a78c0cac89cf09b4", null ]
+];

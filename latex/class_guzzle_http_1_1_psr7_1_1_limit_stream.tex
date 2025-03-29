@@ -1,0 +1,156 @@
+\doxysection{Guzzle\+Http\textbackslash{}Psr7\textbackslash{}Limit\+Stream Class Reference}
+\hypertarget{class_guzzle_http_1_1_psr7_1_1_limit_stream}{}\label{class_guzzle_http_1_1_psr7_1_1_limit_stream}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream}}
+Inheritance diagram for Guzzle\+Http\textbackslash{}Psr7\textbackslash{}Limit\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_guzzle_http_1_1_psr7_1_1_limit_stream}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_limit_stream_a4e59871e3a3eb803ade6c758f53fc788}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$stream, int \$limit=-\/1, int \$offset=0)
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_limit_stream_a88b0131f6bccc09e6dc02800fe558505}{eof}} ()
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_limit_stream_acdd9a4c2b17bfe31bb238fea5240cb5a}{get\+Size}} ()
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_limit_stream_aa1230441e4a3ce17b63330b43f2b038b}{seek}} (\$offset, \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_limit_stream_a7f3f1d99ade05ec436b34d32886defdf}{tell}} ()
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_limit_stream_a358add6db7726abd63f955e88108de80}{set\+Offset}} (int \$offset)
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_limit_stream_a12c93936d05cd151e7f7fd345cec0564}{set\+Limit}} (int \$limit)
+\item 
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_limit_stream_a5c6d3611a68073edd5927d82296d272f}\label{class_guzzle_http_1_1_psr7_1_1_limit_stream_a5c6d3611a68073edd5927d82296d272f} 
+{\bfseries read} (\$length)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Stream\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a72df4e8851ae1a81087f3415fd6d73cd}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a0bbd0c821da0ee0c319f9867ff77c598}{close}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a1670dba880a8c14690746732960d4c9c}{detach}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_ad4a27548fd51bd12390d798981a1622b}{is\+Seekable}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a87cff42eb4e13a5c9fd163488d4982d9}{seek}} (int \$offset, int \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a48721ef4d5097250a3f94515938393c9}{rewind}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a79287940d75d1951b831879fdc493883}{is\+Writable}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_ad1516fb049f8ae1198350006f90ed866}{write}} (string \$string)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_aecf78407aa241622ae200a9faa471d32}{is\+Readable}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_aca95619bcd058ac3d2cbb98ed24f6979}{read}} (int \$length)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a77f73d536f77e4a4e281d548ee905276}{get\+Contents}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a50f840e956d2a19b618a1c819df281c9}{get\+Metadata}} (?string \$key=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Decorator used to return only a subset of a stream. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_limit_stream_a4e59871e3a3eb803ade6c758f53fc788}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_limit_stream_a4e59871e3a3eb803ade6c758f53fc788} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Limit\+Stream\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}}}]{\$stream}{, }\item[{int}]{\$limit}{ = {\ttfamily -\/1}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Stream\+Interface & {\em \$stream} & Stream to wrap \\
+\hline
+int & {\em \$limit} & Total number of bytes to allow to be read from the stream. Pass -\/1 for no limit. \\
+\hline
+int & {\em \$offset} & Position to seek to before reading (only works on seekable streams). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_limit_stream_a88b0131f6bccc09e6dc02800fe558505}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream}!eof@{eof}}
+\index{eof@{eof}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream}}
+\doxysubsubsection{\texorpdfstring{eof()}{eof()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_limit_stream_a88b0131f6bccc09e6dc02800fe558505} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Limit\+Stream\+::eof (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true if the stream is at the end of the stream.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a502cc5ca370c6925b78d95d86d68777c}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Stream\+Interface}}.
+
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_limit_stream_acdd9a4c2b17bfe31bb238fea5240cb5a}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream}!getSize@{getSize}}
+\index{getSize@{getSize}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_limit_stream_acdd9a4c2b17bfe31bb238fea5240cb5a} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Limit\+Stream\+::get\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the size of the limited subset of data 
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a85b9ff28e3ee39d95a47e623d866cf76}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Stream\+Interface}}.
+
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_limit_stream_aa1230441e4a3ce17b63330b43f2b038b}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream}!seek@{seek}}
+\index{seek@{seek}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream}}
+\doxysubsubsection{\texorpdfstring{seek()}{seek()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_limit_stream_aa1230441e4a3ce17b63330b43f2b038b} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Limit\+Stream\+::seek (\begin{DoxyParamCaption}\item[{}]{\$offset}{, }\item[{}]{\$whence}{ = {\ttfamily SEEK\+\_\+SET}}\end{DoxyParamCaption})}
+
+Allow for a bounded seek on the read limited stream \Hypertarget{class_guzzle_http_1_1_psr7_1_1_limit_stream_a12c93936d05cd151e7f7fd345cec0564}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream}!setLimit@{setLimit}}
+\index{setLimit@{setLimit}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream}}
+\doxysubsubsection{\texorpdfstring{setLimit()}{setLimit()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_limit_stream_a12c93936d05cd151e7f7fd345cec0564} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Limit\+Stream\+::set\+Limit (\begin{DoxyParamCaption}\item[{int}]{\$limit}{}\end{DoxyParamCaption})}
+
+Set the limit of bytes that the decorator allows to be read from the stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$limit} & Number of bytes to allow to be read from the stream. Use -\/1 for no limit. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_limit_stream_a358add6db7726abd63f955e88108de80}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream}!setOffset@{setOffset}}
+\index{setOffset@{setOffset}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream}}
+\doxysubsubsection{\texorpdfstring{setOffset()}{setOffset()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_limit_stream_a358add6db7726abd63f955e88108de80} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Limit\+Stream\+::set\+Offset (\begin{DoxyParamCaption}\item[{int}]{\$offset}{}\end{DoxyParamCaption})}
+
+Set the offset to start limiting from
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$offset} & Offset to seek to and begin byte limiting from\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception if the stream cannot be seeked. \Hypertarget{class_guzzle_http_1_1_psr7_1_1_limit_stream_a7f3f1d99ade05ec436b34d32886defdf}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream}!tell@{tell}}
+\index{tell@{tell}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}LimitStream}}
+\doxysubsubsection{\texorpdfstring{tell()}{tell()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_limit_stream_a7f3f1d99ade05ec436b34d32886defdf} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Limit\+Stream\+::tell (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Give a relative tell() 
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a9aa2f88a38f496d74100f42ddf0656ef}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Stream\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/guzzlehttp/psr7/src/Limit\+Stream.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,112 @@
+\doxysection{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer Class Reference}
+\hypertarget{class_ramsey_1_1_uuid_1_1_type_1_1_integer}{}\label{class_ramsey_1_1_uuid_1_1_type_1_1_integer}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer@{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer}}
+Inheritance diagram for Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_ramsey_1_1_uuid_1_1_type_1_1_integer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_ramsey_1_1_uuid_1_1_type_1_1_integer_ae2fdf90b11bdfeaee2356dc469e5121b}\label{class_ramsey_1_1_uuid_1_1_type_1_1_integer_ae2fdf90b11bdfeaee2356dc469e5121b} 
+{\bfseries \+\_\+\+\_\+construct} (float\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}self \$value)
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_type_1_1_integer_aeef840e424210986a1fa627b879257a0}{is\+Negative}} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_type_1_1_integer_a6eb3e3965d6a9c517ce3fa6b47c99226}{to\+String}} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_type_1_1_integer_a5262f2efc953c7aca49c2991c91522be}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\Hypertarget{class_ramsey_1_1_uuid_1_1_type_1_1_integer_ac3f59593f8d161834947ffb6dae3a23a}\label{class_ramsey_1_1_uuid_1_1_type_1_1_integer_ac3f59593f8d161834947ffb6dae3a23a} 
+{\bfseries json\+Serialize} ()
+\item 
+\Hypertarget{class_ramsey_1_1_uuid_1_1_type_1_1_integer_afeedfe3770310426e596bc6c6f1b2747}\label{class_ramsey_1_1_uuid_1_1_type_1_1_integer_afeedfe3770310426e596bc6c6f1b2747} 
+{\bfseries serialize} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_type_1_1_integer_a120a1e39a1eac310f448fd56edd19d2b}{\+\_\+\+\_\+serialize}} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_type_1_1_integer_a7f728e7462c850d3e7a8e77018f6f348}{unserialize}} (string \$data)
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_type_1_1_integer_ab7f76c4229d6e51cb917dd18154a2b30}{\+\_\+\+\_\+unserialize}} (array \$data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A value object representing an integer
+
+This class exists for type-\/safety purposes, to ensure that integers returned from ramsey/uuid methods as strings are truly integers and not some other kind of string.
+
+To support large integers beyond PHP\+\_\+\+INT\+\_\+\+MAX and PHP\+\_\+\+INT\+\_\+\+MIN on both 64-\/bit and 32-\/bit systems, we store the integers as strings.
+
+@psalm-\/immutable 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_type_1_1_integer_a120a1e39a1eac310f448fd56edd19d2b}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer@{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer}!\_\_serialize@{\_\_serialize}}
+\index{\_\_serialize@{\_\_serialize}!Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer@{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer}}
+\doxysubsubsection{\texorpdfstring{\_\_serialize()}{\_\_serialize()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_type_1_1_integer_a120a1e39a1eac310f448fd56edd19d2b} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Type\textbackslash{}\+Integer\+::\+\_\+\+\_\+serialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array\{string\+: string\} 
+\end{DoxyReturn}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_type_1_1_integer_a5262f2efc953c7aca49c2991c91522be}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer@{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer@{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_type_1_1_integer_a5262f2efc953c7aca49c2991c91522be} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Type\textbackslash{}\+Integer\+::\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+@psalm-\/return numeric-\/string 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_type_interface}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Type\textbackslash{}\+Type\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_type_1_1_integer_ab7f76c4229d6e51cb917dd18154a2b30}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer@{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer}!\_\_unserialize@{\_\_unserialize}}
+\index{\_\_unserialize@{\_\_unserialize}!Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer@{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer}}
+\doxysubsubsection{\texorpdfstring{\_\_unserialize()}{\_\_unserialize()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_type_1_1_integer_ab7f76c4229d6e51cb917dd18154a2b30} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Type\textbackslash{}\+Integer\+::\+\_\+\+\_\+unserialize (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array\{string?} & string\} \$data \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_type_1_1_integer_aeef840e424210986a1fa627b879257a0}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer@{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer}!isNegative@{isNegative}}
+\index{isNegative@{isNegative}!Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer@{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer}}
+\doxysubsubsection{\texorpdfstring{isNegative()}{isNegative()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_type_1_1_integer_aeef840e424210986a1fa627b879257a0} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Type\textbackslash{}\+Integer\+::is\+Negative (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true if this number is less than zero 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface_abfaa1658c2c6ca6d69773c152e917384}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Type\textbackslash{}\+Number\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_type_1_1_integer_a6eb3e3965d6a9c517ce3fa6b47c99226}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer@{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer}!toString@{toString}}
+\index{toString@{toString}!Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer@{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_type_1_1_integer_a6eb3e3965d6a9c517ce3fa6b47c99226} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Type\textbackslash{}\+Integer\+::to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+@psalm-\/return numeric-\/string 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_type_interface}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Type\textbackslash{}\+Type\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_type_1_1_integer_a7f728e7462c850d3e7a8e77018f6f348}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer@{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer}!unserialize@{unserialize}}
+\index{unserialize@{unserialize}!Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer@{Ramsey\textbackslash{}Uuid\textbackslash{}Type\textbackslash{}Integer}}
+\doxysubsubsection{\texorpdfstring{unserialize()}{unserialize()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_type_1_1_integer_a7f728e7462c850d3e7a8e77018f6f348} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Type\textbackslash{}\+Integer\+::unserialize (\begin{DoxyParamCaption}\item[{string}]{\$data}{}\end{DoxyParamCaption})}
+
+Constructs the object from a serialized string representation
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & The serialized string representation of the object\\
+\hline
+\end{DoxyParams}
+@psalm-\/suppress Unused\+Method\+Call 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/ramsey/uuid/src/\+Type/Integer.\+php\end{DoxyCompactItemize}

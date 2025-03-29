@@ -1,0 +1,79 @@
+\doxysection{Ramsey\textbackslash{}Uuid\textbackslash{}Generator\textbackslash{}Comb\+Generator Class Reference}
+\hypertarget{class_ramsey_1_1_uuid_1_1_generator_1_1_comb_generator}{}\label{class_ramsey_1_1_uuid_1_1_generator_1_1_comb_generator}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Generator\textbackslash{}CombGenerator@{Ramsey\textbackslash{}Uuid\textbackslash{}Generator\textbackslash{}CombGenerator}}
+Inheritance diagram for Ramsey\textbackslash{}Uuid\textbackslash{}Generator\textbackslash{}Comb\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ramsey_1_1_uuid_1_1_generator_1_1_comb_generator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_ramsey_1_1_uuid_1_1_generator_1_1_comb_generator_a7a0c62aaeb571572e17a352da718088b}\label{class_ramsey_1_1_uuid_1_1_generator_1_1_comb_generator_a7a0c62aaeb571572e17a352da718088b} 
+{\bfseries \+\_\+\+\_\+construct} (private \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_generator_1_1_random_generator_interface}{Random\+Generator\+Interface}} \$generator, private \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_converter_1_1_number_converter_interface}{Number\+Converter\+Interface}} \$number\+Converter)
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_generator_1_1_comb_generator_a0dc93dc3b7406c035397b8e979e1953e}{generate}} (int \$length)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_ramsey_1_1_uuid_1_1_generator_1_1_comb_generator_a9a935589bf797f27882d51b99fd0234c}\label{class_ramsey_1_1_uuid_1_1_generator_1_1_comb_generator_a9a935589bf797f27882d51b99fd0234c} 
+const {\bfseries TIMESTAMP\+\_\+\+BYTES} = 6
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Comb\+Generator generates COMBs (combined UUID/timestamp)
+
+The Comb\+Generator, when used with the String\+Codec (and, by proxy, the Timestamp\+Last\+Comb\+Codec) or the Timestamp\+First\+Comb\+Codec, combines the current timestamp with a UUID (hence the name "{}\+COMB"{}). The timestamp either appears as the first or last 48 bits of the COMB, depending on the codec used.
+
+By default, COMBs will have the timestamp set as the last 48 bits of the identifier.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{php}
+\DoxyCodeLine{\ \ \$factory\ =\ \textcolor{keyword}{new}\ UuidFactory();}
+\DoxyCodeLine{\ }
+\DoxyCodeLine{\ \ \$factory-\/>setRandomGenerator(\textcolor{keyword}{new}\ CombGenerator(}
+\DoxyCodeLine{\ \ \ \ \ \ \$factory-\/>getRandomGenerator(),}
+\DoxyCodeLine{\ \ \ \ \ \ \$factory-\/>getNumberConverter()}
+\DoxyCodeLine{\ \ ));}
+\DoxyCodeLine{\ }
+\DoxyCodeLine{\ \ \$comb\ =\ \$factory-\/>uuid4();}
+
+\end{DoxyCode}
+
+
+To generate a COMB with the timestamp as the first 48 bits, set the Timestamp\+First\+Comb\+Codec as the codec.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{php}
+\DoxyCodeLine{\ \ \$factory-\/>setCodec(\textcolor{keyword}{new}\ TimestampFirstCombCodec(\$factory-\/>getUuidBuilder()));}
+
+\end{DoxyCode}
+
+
+\doxylink{}{The Cost of GUIDs as Primary Keys }
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_generator_1_1_comb_generator_a0dc93dc3b7406c035397b8e979e1953e}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Generator\textbackslash{}CombGenerator@{Ramsey\textbackslash{}Uuid\textbackslash{}Generator\textbackslash{}CombGenerator}!generate@{generate}}
+\index{generate@{generate}!Ramsey\textbackslash{}Uuid\textbackslash{}Generator\textbackslash{}CombGenerator@{Ramsey\textbackslash{}Uuid\textbackslash{}Generator\textbackslash{}CombGenerator}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_generator_1_1_comb_generator_a0dc93dc3b7406c035397b8e979e1953e} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Generator\textbackslash{}\+Comb\+Generator\+::generate (\begin{DoxyParamCaption}\item[{int}]{\$length}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & if \$length is not a positive integer greater than or equal to Comb\+Generator\+::\+TIMESTAMP\+\_\+\+BYTES\\
+\hline
+\end{DoxyExceptions}
+@inherit\+Doc 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_generator_1_1_random_generator_interface_a3d8e3ea47a197cdb22b3df41084d4a93}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Generator\textbackslash{}\+Random\+Generator\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/ramsey/uuid/src/\+Generator/Comb\+Generator.\+php\end{DoxyCompactItemize}

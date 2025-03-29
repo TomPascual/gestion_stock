@@ -1,0 +1,438 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}Lazy\+Command Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command}{}\label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}Lazy\+Command\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a20820ab00901f2ee377a6d6990097c88}\label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a20820ab00901f2ee377a6d6990097c88} 
+{\bfseries \+\_\+\+\_\+construct} (string \$name, array \$aliases, string \$description, bool \$\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_ad668b0af2dbe937546101fc877f2aa4d}{is\+Hidden}}, \textbackslash{}Closure \$command\+Factory, private ?bool \$\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a73628b24001a581f88304ba5dd019087}{is\+Enabled}}=true,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a5f78135ee1ab42581932bc11414a79f7}{ignore\+Validation\+Errors}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a387a6da9e72e3c8effc8cfde9d20c6a1}{set\+Application}} (?\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_application}{Application}} \$application)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ac469bbd8994d485666058dec16d2a728}{set\+Helper\+Set}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_helper_1_1_helper_set}{Helper\+Set}} \$helper\+Set)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a73628b24001a581f88304ba5dd019087}{is\+Enabled}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_abc27cf2f695ba663a85c9b2a64578b09}{run}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a70f3ed81b44665c1d37a08aafbfb2036}{complete}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_completion_1_1_completion_input}{Completion\+Input}} \$input, \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_completion_1_1_completion_suggestions}{Completion\+Suggestions}} \$suggestions)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a3c37992bc529920961fa0a631294a42f}{set\+Code}} (callable \$code)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a6c1682729fd81cfc07e7846a07e0cf4d}{merge\+Application\+Definition}} (bool \$merge\+Args=true)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a8299947b9619dfc73ea4e33a04b2f276}{set\+Definition}} (array\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_definition}{Input\+Definition}} \$definition)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a317c7126338fdaeddb5b690a6bf99bc2}{get\+Definition}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a639572a947bef6c902656118e5fa3486}{get\+Native\+Definition}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_af26f619c77ae66d83437fab8cff76ea8}{add\+Argument}} (string \$name, ?int \$mode=null, string \$description=\textquotesingle{}\textquotesingle{}, mixed \$default=null, array\texorpdfstring{$\vert$}{|}\textbackslash{}Closure \$suggested\+Values=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a838ce176d92c41700c96469949b25846}{add\+Option}} (string \$name, string\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null \$shortcut=null, ?int \$mode=null, string \$description=\textquotesingle{}\textquotesingle{}, mixed \$default=null, array\texorpdfstring{$\vert$}{|}\textbackslash{}Closure \$suggested\+Values=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ad1e87845aea15d8ca24399aefc9e3cc9}{set\+Process\+Title}} (string \$title)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ae532ee1aefe1b78ea0545c09181a435b}{set\+Help}} (string \$help)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a2caaac803be9c6c6a72ce339e178ea25}{get\+Help}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ac40792a0548f6a631ce82eec1284c503}{get\+Processed\+Help}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a9a3b5d7c0a070e3784d6b4c9aa0e07a7}{get\+Synopsis}} (bool \$short=false)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a7103068e51904cc0f36bcf560b576d8b}{add\+Usage}} (string \$usage)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a47da7302d0d9c3a8d4f45ffc66e5aa9c}{get\+Usages}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ad45787843bc52922c240ec1461d69aad}{get\+Helper}} (string \$name)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ad7e8a345cd5c6719dedf7dd072a2081f}\label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ad7e8a345cd5c6719dedf7dd072a2081f} 
+{\bfseries get\+Command} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_ad3305e2671ca0f5cd2d6adaab9fdd56a}{\+\_\+\+\_\+construct}} (?string \$name=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a3bee7421b951ad17f0cd462615c368e6}{get\+Helper\+Set}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a14c43ccdf830ee00aa00d9e30b8b271c}{get\+Application}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a6834724ffae37816c891bde10b54f224}{set\+Name}} (string \$name)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a98c8c0b9842cebde1007b05e70c81c79}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a770ff1eb33ba7d56401351e5bad283b5}{set\+Hidden}} (bool \$hidden=true)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_ad668b0af2dbe937546101fc877f2aa4d}{is\+Hidden}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_ac2dc559895565412d168a257f4c47706}{set\+Description}} (string \$description)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_abc6bcbfc8646196ba23766bb21e18ac8}{get\+Description}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a32d08175408886ff9da0031a1f550dd9}{set\+Aliases}} (iterable \$aliases)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a46460ce62fe4005ec6be16adb79f4b26}{get\+Aliases}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries get\+Default\+Name} ()
+\item 
+static {\bfseries get\+Default\+Description} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries SUCCESS} = 0
+\item 
+const {\bfseries FAILURE} = 1
+\item 
+const {\bfseries INVALID} = 2
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_ae8e1df33aa370a26aab1ebba08cc4683}{configure}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a10ad94171fb6989bc11acd760cef7d5a}{execute}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a849999aa3bdfbd7d70921eabe133fa76}{interact}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a0ce919a2c475dc9d56e4d45dfb706474}{initialize}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Nicolas Grekas \href{mailto:p@tchwork.com}{\texttt{ p@tchwork.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_af26f619c77ae66d83437fab8cff76ea8}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!addArgument@{addArgument}}
+\index{addArgument@{addArgument}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{addArgument()}{addArgument()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_af26f619c77ae66d83437fab8cff76ea8} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::add\+Argument (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{?int}]{\$mode}{ = {\ttfamily null}, }\item[{string}]{\$description}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{mixed}]{\$default}{ = {\ttfamily null}, }\item[{array\texorpdfstring{$\vert$}{|}\textbackslash{}Closure}]{\$suggested\+Values}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array\texorpdfstring{$\vert$}{|}} & \\
+\hline
+\end{DoxyParams}
+Closure(\+Completion\+Input,\+Completion\+Suggestions)\+:list\texorpdfstring{$<$}{<}string\texorpdfstring{$\vert$}{|}\+Suggestion\texorpdfstring{$>$}{>} \$suggested\+Values The values used for input completion 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a8bdd3eaf286eac2cf2c006fcd6cf06a8}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a838ce176d92c41700c96469949b25846}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!addOption@{addOption}}
+\index{addOption@{addOption}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{addOption()}{addOption()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a838ce176d92c41700c96469949b25846} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::add\+Option (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{string\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null}]{\$shortcut}{ = {\ttfamily null}, }\item[{?int}]{\$mode}{ = {\ttfamily null}, }\item[{string}]{\$description}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{mixed}]{\$default}{ = {\ttfamily null}, }\item[{array\texorpdfstring{$\vert$}{|}\textbackslash{}Closure}]{\$suggested\+Values}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array\texorpdfstring{$\vert$}{|}} & \\
+\hline
+\end{DoxyParams}
+Closure(\+Completion\+Input,\+Completion\+Suggestions)\+:list\texorpdfstring{$<$}{<}string\texorpdfstring{$\vert$}{|}\+Suggestion\texorpdfstring{$>$}{>} \$suggested\+Values The values used for input completion 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a025a99784ae616fb60a48a2c3ed9b84e}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a7103068e51904cc0f36bcf560b576d8b}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!addUsage@{addUsage}}
+\index{addUsage@{addUsage}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{addUsage()}{addUsage()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a7103068e51904cc0f36bcf560b576d8b} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::add\+Usage (\begin{DoxyParamCaption}\item[{string}]{\$usage}{}\end{DoxyParamCaption})}
+
+Add a command usage example, it\textquotesingle{}ll be prefixed with the command name.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_af74361162b134a2f958d03c64958d3af}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a70f3ed81b44665c1d37a08aafbfb2036}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!complete@{complete}}
+\index{complete@{complete}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{complete()}{complete()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a70f3ed81b44665c1d37a08aafbfb2036} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::complete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_completion_1_1_completion_input}{Completion\+Input}}}]{\$input}{, }\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_completion_1_1_completion_suggestions}{Completion\+Suggestions}}}]{\$suggestions}{}\end{DoxyParamCaption})}
+
+Supplies suggestions when resolving possible completion options for input (e.\+g. option or argument). 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_ac02d991163b92813ab09e64efa31ae88}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a317c7126338fdaeddb5b690a6bf99bc2}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!getDefinition@{getDefinition}}
+\index{getDefinition@{getDefinition}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{getDefinition()}{getDefinition()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a317c7126338fdaeddb5b690a6bf99bc2} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::get\+Definition (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the Input\+Definition attached to this Command. 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a4e719c80dbae25922a3c454fbfe3a287}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a2caaac803be9c6c6a72ce339e178ea25}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!getHelp@{getHelp}}
+\index{getHelp@{getHelp}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{getHelp()}{getHelp()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a2caaac803be9c6c6a72ce339e178ea25} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::get\+Help (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the help for the command. 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a0c04887da1118328bd69f74f97304213}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ad45787843bc52922c240ec1461d69aad}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!getHelper@{getHelper}}
+\index{getHelper@{getHelper}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{getHelper()}{getHelper()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ad45787843bc52922c240ec1461d69aad} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::get\+Helper (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Gets a helper instance by name.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Logic\+Exception} & if no Helper\+Set is defined \\
+\hline
+{\em Invalid\+Argument\+Exception} & if the helper is not defined \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a6a4d520adb38a4afa7b8f7e55bb04a31}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a639572a947bef6c902656118e5fa3486}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!getNativeDefinition@{getNativeDefinition}}
+\index{getNativeDefinition@{getNativeDefinition}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{getNativeDefinition()}{getNativeDefinition()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a639572a947bef6c902656118e5fa3486} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::get\+Native\+Definition (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the Input\+Definition to be used to create representations of this Command.
+
+Can be overridden to provide the original command representation when it would otherwise be changed by merging with the application Input\+Definition.
+
+This method is not part of public API and should not be used directly. 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a187b98bd8acf6205fc028c0079867a45}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ac40792a0548f6a631ce82eec1284c503}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!getProcessedHelp@{getProcessedHelp}}
+\index{getProcessedHelp@{getProcessedHelp}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{getProcessedHelp()}{getProcessedHelp()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ac40792a0548f6a631ce82eec1284c503} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::get\+Processed\+Help (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the processed help for the command replacing the command.\+name\% and command.\+full\+\_\+name\% patterns with the real values dynamically. 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a6879f26fdb06770b8c27215f09ba2d31}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a9a3b5d7c0a070e3784d6b4c9aa0e07a7}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!getSynopsis@{getSynopsis}}
+\index{getSynopsis@{getSynopsis}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{getSynopsis()}{getSynopsis()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a9a3b5d7c0a070e3784d6b4c9aa0e07a7} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::get\+Synopsis (\begin{DoxyParamCaption}\item[{bool}]{\$short}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Returns the synopsis for the command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$short} & Whether to show the short version of the synopsis (with options folded) or not \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_ad49371e7910f6dceb8eb7f9720897dad}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a47da7302d0d9c3a8d4f45ffc66e5aa9c}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!getUsages@{getUsages}}
+\index{getUsages@{getUsages}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{getUsages()}{getUsages()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a47da7302d0d9c3a8d4f45ffc66e5aa9c} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::get\+Usages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns alternative usages of the command. 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a00c06f3e22ba8f1f568829aa26abcdeb}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a5f78135ee1ab42581932bc11414a79f7}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!ignoreValidationErrors@{ignoreValidationErrors}}
+\index{ignoreValidationErrors@{ignoreValidationErrors}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{ignoreValidationErrors()}{ignoreValidationErrors()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a5f78135ee1ab42581932bc11414a79f7} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::ignore\+Validation\+Errors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Ignores validation errors.
+
+This is mainly useful for the help command. 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a235cfd80ee5a9e7c1eec96aa24c6b8af}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a73628b24001a581f88304ba5dd019087}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!isEnabled@{isEnabled}}
+\index{isEnabled@{isEnabled}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{isEnabled()}{isEnabled()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a73628b24001a581f88304ba5dd019087} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::is\+Enabled (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks whether the command is enabled or not in the current environment.
+
+Override this to check for x or y and return false if the command cannot run properly under the current conditions. 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a427eb5ccec6360c31b2afe473ac5eaad}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a6c1682729fd81cfc07e7846a07e0cf4d}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!mergeApplicationDefinition@{mergeApplicationDefinition}}
+\index{mergeApplicationDefinition@{mergeApplicationDefinition}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{mergeApplicationDefinition()}{mergeApplicationDefinition()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a6c1682729fd81cfc07e7846a07e0cf4d} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::merge\+Application\+Definition (\begin{DoxyParamCaption}\item[{bool}]{\$merge\+Args}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Merges the application definition with the command definition.
+
+This method is not part of public API and should not be used directly.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$merge\+Args} & Whether to merge or not the Application definition arguments to Command definition arguments \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a971e9efd77d80fdaad6278fe02bbd5ad}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_abc27cf2f695ba663a85c9b2a64578b09}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!run@{run}}
+\index{run@{run}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_abc27cf2f695ba663a85c9b2a64578b09} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}}}]{\$input}{, }\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}}}]{\$output}{}\end{DoxyParamCaption})}
+
+Runs the command.
+
+The code to execute is either defined directly with the set\+Code() method or by overriding the execute() method in a sub-\/class.
+
+\begin{DoxyReturn}{Returns}
+int The command exit code
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception\+Interface} & When input binding fails. Bypass this by calling {\ttfamily \doxylink{}{ignore\+Validation\+Errors()}}.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+set\+Code() 
+
+execute() 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_ac1e51eefe0d795d99315d3df1a839dcf}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a387a6da9e72e3c8effc8cfde9d20c6a1}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!setApplication@{setApplication}}
+\index{setApplication@{setApplication}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{setApplication()}{setApplication()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a387a6da9e72e3c8effc8cfde9d20c6a1} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::set\+Application (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_application}{Application}}}]{\$application}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a3c37992bc529920961fa0a631294a42f}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!setCode@{setCode}}
+\index{setCode@{setCode}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{setCode()}{setCode()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a3c37992bc529920961fa0a631294a42f} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::set\+Code (\begin{DoxyParamCaption}\item[{callable}]{\$code}{}\end{DoxyParamCaption})}
+
+Sets the code to execute when running this command.
+
+If this method is used, it overrides the code defined in the execute() method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$code} & A callable(Input\+Interface \$input, Output\+Interface \$output)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+execute() 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_af61dc617174579cc314c265d25582981}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a8299947b9619dfc73ea4e33a04b2f276}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!setDefinition@{setDefinition}}
+\index{setDefinition@{setDefinition}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{setDefinition()}{setDefinition()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_a8299947b9619dfc73ea4e33a04b2f276} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::set\+Definition (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_definition}{Input\+Definition}}}]{\$definition}{}\end{DoxyParamCaption})}
+
+Sets an array of argument and option instances.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a9136c17bc8268758b745c8d882040d07}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ae532ee1aefe1b78ea0545c09181a435b}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!setHelp@{setHelp}}
+\index{setHelp@{setHelp}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{setHelp()}{setHelp()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ae532ee1aefe1b78ea0545c09181a435b} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::set\+Help (\begin{DoxyParamCaption}\item[{string}]{\$help}{}\end{DoxyParamCaption})}
+
+Sets the help for the command.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a4dc8bdb2d7168fd7697d3c7a4c5aecf4}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ac469bbd8994d485666058dec16d2a728}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!setHelperSet@{setHelperSet}}
+\index{setHelperSet@{setHelperSet}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{setHelperSet()}{setHelperSet()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ac469bbd8994d485666058dec16d2a728} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::set\+Helper\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_helper_1_1_helper_set}{Helper\+Set}}}]{\$helper\+Set}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ad1e87845aea15d8ca24399aefc9e3cc9}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}!setProcessTitle@{setProcessTitle}}
+\index{setProcessTitle@{setProcessTitle}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Command\textbackslash{}LazyCommand}}
+\doxysubsubsection{\texorpdfstring{setProcessTitle()}{setProcessTitle()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_command_1_1_lazy_command_ad1e87845aea15d8ca24399aefc9e3cc9} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Lazy\+Command\+::set\+Process\+Title (\begin{DoxyParamCaption}\item[{string}]{\$title}{}\end{DoxyParamCaption})}
+
+Sets the process title of the command.
+
+This feature should be used only when creating a long process command, like a daemon.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command_a8662930651c31360d250391f3999d467}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/console/\+Command/Lazy\+Command.\+php\end{DoxyCompactItemize}

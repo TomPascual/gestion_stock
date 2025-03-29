@@ -1,0 +1,5 @@
+var class_symfony_1_1_component_1_1_event_dispatcher_1_1_dependency_injection_1_1_register_listeners_pass =
+[
+    [ "setHotPathEvents", "class_symfony_1_1_component_1_1_event_dispatcher_1_1_dependency_injection_1_1_register_listeners_pass.html#abf093de26c99a393af92a7414065c6cd", null ],
+    [ "setNoPreloadEvents", "class_symfony_1_1_component_1_1_event_dispatcher_1_1_dependency_injection_1_1_register_listeners_pass.html#a6b5f7b1e7334fdd4a30dedbb5fbbd869", null ]
+];

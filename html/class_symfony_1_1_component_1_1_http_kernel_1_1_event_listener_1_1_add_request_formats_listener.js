@@ -1,0 +1,4 @@
+var class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_add_request_formats_listener =
+[
+    [ "onKernelRequest", "class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_add_request_formats_listener.html#a21d2908763256365053f66a89f0e589a", null ]
+];

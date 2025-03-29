@@ -1,0 +1,116 @@
+\doxysection{Guzzle\+Http\textbackslash{}Psr7\textbackslash{}Message Class Reference}
+\hypertarget{class_guzzle_http_1_1_psr7_1_1_message}{}\label{class_guzzle_http_1_1_psr7_1_1_message}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_message_a8c4eeac1cbf054249bd29bfe3ebf3a38}{to\+String}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface}{Message\+Interface}} \$message)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_message_a8fa8f9b2e551d629f51450446e6b156d}{body\+Summary}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface}{Message\+Interface}} \$message, int \$truncate\+At=120)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_message_a50f82d2a1c2a8684e428baf139706f05}{rewind\+Body}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface}{Message\+Interface}} \$message)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_message_a0c6a40a2aa1330dcc5a44505e2b13c5b}{parse\+Request\+Uri}} (string \$path, array \$headers)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_message_a008927dd97f3fd84baf0f8aa4cd66eae}{parse\+Request}} (string \$message)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_message_ad8b11a344000ed8e70eb2ada69eaf6e1}{parse\+Response}} (string \$message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_message_a8fa8f9b2e551d629f51450446e6b156d}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message}!bodySummary@{bodySummary}}
+\index{bodySummary@{bodySummary}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{bodySummary()}{bodySummary()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_message_a8fa8f9b2e551d629f51450446e6b156d} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Message\+::body\+Summary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface}{Message\+Interface}}}]{\$message}{, }\item[{int}]{\$truncate\+At}{ = {\ttfamily 120}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a short summary of the message body.
+
+Will return {\ttfamily null} if the response is not printable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Message\+Interface & {\em \$message} & The message to get the body summary \\
+\hline
+int & {\em \$truncate\+At} & The maximum allowed size of the summary \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_message_a008927dd97f3fd84baf0f8aa4cd66eae}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message}!parseRequest@{parseRequest}}
+\index{parseRequest@{parseRequest}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{parseRequest()}{parseRequest()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_message_a008927dd97f3fd84baf0f8aa4cd66eae} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Message\+::parse\+Request (\begin{DoxyParamCaption}\item[{string}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses a request message string into a request object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & Request message string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_message_a0c6a40a2aa1330dcc5a44505e2b13c5b}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message}!parseRequestUri@{parseRequestUri}}
+\index{parseRequestUri@{parseRequestUri}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{parseRequestUri()}{parseRequestUri()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_message_a0c6a40a2aa1330dcc5a44505e2b13c5b} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Message\+::parse\+Request\+Uri (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{array}]{\$headers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Constructs a URI for an HTTP request message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & Path from the start-\/line \\
+\hline
+array & {\em \$headers} & Array of headers (each value an array). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_message_ad8b11a344000ed8e70eb2ada69eaf6e1}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message}!parseResponse@{parseResponse}}
+\index{parseResponse@{parseResponse}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{parseResponse()}{parseResponse()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_message_ad8b11a344000ed8e70eb2ada69eaf6e1} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Message\+::parse\+Response (\begin{DoxyParamCaption}\item[{string}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses a response message string into a response object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & Response message string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_message_a50f82d2a1c2a8684e428baf139706f05}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message}!rewindBody@{rewindBody}}
+\index{rewindBody@{rewindBody}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{rewindBody()}{rewindBody()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_message_a50f82d2a1c2a8684e428baf139706f05} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Message\+::rewind\+Body (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface}{Message\+Interface}}}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Attempts to rewind a message body and throws an exception on failure.
+
+The body of the message will only be rewound if a call to {\ttfamily tell()} returns a value other than {\ttfamily 0}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Message\+Interface & {\em \$message} & Message to rewind\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{class_guzzle_http_1_1_psr7_1_1_message_a8c4eeac1cbf054249bd29bfe3ebf3a38}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message}!toString@{toString}}
+\index{toString@{toString}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Message}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_message_a8c4eeac1cbf054249bd29bfe3ebf3a38} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Message\+::to\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface}{Message\+Interface}}}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the string representation of an HTTP message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Message\+Interface & {\em \$message} & Message to convert to a string. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/guzzlehttp/psr7/src/Message.\+php\end{DoxyCompactItemize}

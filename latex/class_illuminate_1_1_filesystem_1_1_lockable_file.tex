@@ -1,0 +1,228 @@
+\doxysection{Illuminate\textbackslash{}Filesystem\textbackslash{}Lockable\+File Class Reference}
+\hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file}{}\label{class_illuminate_1_1_filesystem_1_1_lockable_file}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_a7afc7f84dd96d6979019379e4338595a}{\+\_\+\+\_\+construct}} (\$path, \$mode)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_ae98a9eabd21227ab7b28d7ae3eec8ebd}{read}} (\$length=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_a946f0924c955c9405a5a6f853c6b6373}{size}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_a9e3141a701d6b91a665c1e1f74d2a9fe}{write}} (\$contents)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_abaefe40b7c7c18ca2727cff1bce5ec12}{truncate}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_a7dbd9a2ba211572a45f63a9d0c8cf86b}{get\+Shared\+Lock}} (\$block=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_a85cb66e39e70b6bc14940b2bb1708d0e}{get\+Exclusive\+Lock}} (\$block=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_a59d8075e13ac050f6705bd45b6a6ab95}{release\+Lock}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_a8dcce7dd9021f06ad13900bc323e813c}{close}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_aafda368a29c7df158b7c8d03aa57b669}{ensure\+Directory\+Exists}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_lockable_file_a9d252d5b6524265645956cf2b4365243}{create\+Resource}} (\$path, \$mode)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_a0de6ef8ee915f19a7ddf11688980bd3b}\label{class_illuminate_1_1_filesystem_1_1_lockable_file_a0de6ef8ee915f19a7ddf11688980bd3b} 
+{\bfseries \$handle}
+\item 
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_a137bef06fbc207d1da157c2080a45fbb}\label{class_illuminate_1_1_filesystem_1_1_lockable_file_a137bef06fbc207d1da157c2080a45fbb} 
+{\bfseries \$path}
+\item 
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_a21221e802e9cae20b4acdd44b4c20b19}\label{class_illuminate_1_1_filesystem_1_1_lockable_file_a21221e802e9cae20b4acdd44b4c20b19} 
+{\bfseries \$is\+Locked} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_a7afc7f84dd96d6979019379e4338595a}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_a7afc7f84dd96d6979019379e4338595a} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Lockable\+File\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$mode}{}\end{DoxyParamCaption})}
+
+Create a new File instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+string & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_a8dcce7dd9021f06ad13900bc323e813c}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}!close@{close}}
+\index{close@{close}!Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_a8dcce7dd9021f06ad13900bc323e813c} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Lockable\+File\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Close the file.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_a9d252d5b6524265645956cf2b4365243}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}!createResource@{createResource}}
+\index{createResource@{createResource}!Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}}
+\doxysubsubsection{\texorpdfstring{createResource()}{createResource()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_a9d252d5b6524265645956cf2b4365243} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Lockable\+File\+::create\+Resource (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$mode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the file resource.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+string & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception \Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_aafda368a29c7df158b7c8d03aa57b669}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}!ensureDirectoryExists@{ensureDirectoryExists}}
+\index{ensureDirectoryExists@{ensureDirectoryExists}!Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}}
+\doxysubsubsection{\texorpdfstring{ensureDirectoryExists()}{ensureDirectoryExists()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_aafda368a29c7df158b7c8d03aa57b669} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Lockable\+File\+::ensure\+Directory\+Exists (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the file\textquotesingle{}s directory if necessary.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_a85cb66e39e70b6bc14940b2bb1708d0e}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}!getExclusiveLock@{getExclusiveLock}}
+\index{getExclusiveLock@{getExclusiveLock}!Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}}
+\doxysubsubsection{\texorpdfstring{getExclusiveLock()}{getExclusiveLock()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_a85cb66e39e70b6bc14940b2bb1708d0e} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Lockable\+File\+::get\+Exclusive\+Lock (\begin{DoxyParamCaption}\item[{}]{\$block}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Get an exclusive lock on the file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$block} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Filesystem\textbackslash{}\+Lock\+Timeout\+Exception \Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_a7dbd9a2ba211572a45f63a9d0c8cf86b}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}!getSharedLock@{getSharedLock}}
+\index{getSharedLock@{getSharedLock}!Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}}
+\doxysubsubsection{\texorpdfstring{getSharedLock()}{getSharedLock()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_a7dbd9a2ba211572a45f63a9d0c8cf86b} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Lockable\+File\+::get\+Shared\+Lock (\begin{DoxyParamCaption}\item[{}]{\$block}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Get a shared lock on the file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$block} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Filesystem\textbackslash{}\+Lock\+Timeout\+Exception \Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_ae98a9eabd21227ab7b28d7ae3eec8ebd}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}!read@{read}}
+\index{read@{read}!Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_ae98a9eabd21227ab7b28d7ae3eec8ebd} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Lockable\+File\+::read (\begin{DoxyParamCaption}\item[{}]{\$length}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Read the file contents.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_a59d8075e13ac050f6705bd45b6a6ab95}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}!releaseLock@{releaseLock}}
+\index{releaseLock@{releaseLock}!Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}}
+\doxysubsubsection{\texorpdfstring{releaseLock()}{releaseLock()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_a59d8075e13ac050f6705bd45b6a6ab95} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Lockable\+File\+::release\+Lock (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Release the lock on the file.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_a946f0924c955c9405a5a6f853c6b6373}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}!size@{size}}
+\index{size@{size}!Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_a946f0924c955c9405a5a6f853c6b6373} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Lockable\+File\+::size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the file size.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_abaefe40b7c7c18ca2727cff1bce5ec12}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}!truncate@{truncate}}
+\index{truncate@{truncate}!Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}}
+\doxysubsubsection{\texorpdfstring{truncate()}{truncate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_abaefe40b7c7c18ca2727cff1bce5ec12} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Lockable\+File\+::truncate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Truncate the file.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_filesystem_1_1_lockable_file_a9e3141a701d6b91a665c1e1f74d2a9fe}\index{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}!write@{write}}
+\index{write@{write}!Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile@{Illuminate\textbackslash{}Filesystem\textbackslash{}LockableFile}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_filesystem_1_1_lockable_file_a9e3141a701d6b91a665c1e1f74d2a9fe} 
+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Lockable\+File\+::write (\begin{DoxyParamCaption}\item[{}]{\$contents}{}\end{DoxyParamCaption})}
+
+Write to the file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$contents} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Filesystem/Lockable\+File.\+php\end{DoxyCompactItemize}

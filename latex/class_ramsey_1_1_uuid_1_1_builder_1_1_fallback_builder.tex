@@ -1,0 +1,64 @@
+\doxysection{Ramsey\textbackslash{}Uuid\textbackslash{}Builder\textbackslash{}Fallback\+Builder Class Reference}
+\hypertarget{class_ramsey_1_1_uuid_1_1_builder_1_1_fallback_builder}{}\label{class_ramsey_1_1_uuid_1_1_builder_1_1_fallback_builder}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Builder\textbackslash{}FallbackBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Builder\textbackslash{}FallbackBuilder}}
+Inheritance diagram for Ramsey\textbackslash{}Uuid\textbackslash{}Builder\textbackslash{}Fallback\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ramsey_1_1_uuid_1_1_builder_1_1_fallback_builder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_builder_1_1_fallback_builder_a10d51072cde53a3472d7e001eb539874}{\+\_\+\+\_\+construct}} (private iterable \$builders)
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_builder_1_1_fallback_builder_abef4983832c4344dff14b09680a69ee0}{build}} (\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_codec_1_1_codec_interface}{Codec\+Interface}} \$codec, string \$bytes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fallback\+Builder builds a UUID by stepping through a list of UUID builders until a UUID can be constructed without exceptions
+
+@psalm-\/immutable 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_builder_1_1_fallback_builder_a10d51072cde53a3472d7e001eb539874}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Builder\textbackslash{}FallbackBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Builder\textbackslash{}FallbackBuilder}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Ramsey\textbackslash{}Uuid\textbackslash{}Builder\textbackslash{}FallbackBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Builder\textbackslash{}FallbackBuilder}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_builder_1_1_fallback_builder_a10d51072cde53a3472d7e001eb539874} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Builder\textbackslash{}\+Fallback\+Builder\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private iterable}]{\$builders}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$\+Uuid\+Builder\+Interface$>$} & \$builders An array of UUID builders \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_builder_1_1_fallback_builder_abef4983832c4344dff14b09680a69ee0}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Builder\textbackslash{}FallbackBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Builder\textbackslash{}FallbackBuilder}!build@{build}}
+\index{build@{build}!Ramsey\textbackslash{}Uuid\textbackslash{}Builder\textbackslash{}FallbackBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Builder\textbackslash{}FallbackBuilder}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_builder_1_1_fallback_builder_abef4983832c4344dff14b09680a69ee0} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Builder\textbackslash{}\+Fallback\+Builder\+::build (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_codec_1_1_codec_interface}{Codec\+Interface}}}]{\$codec}{, }\item[{string}]{\$bytes}{}\end{DoxyParamCaption})}
+
+Builds and returns a Uuid\+Interface instance using the first builder that succeeds
+
+
+\begin{DoxyParams}[1]{Parameters}
+Codec\+Interface & {\em \$codec} & The codec to use for building this instance \\
+\hline
+string & {\em \$bytes} & The byte string from which to construct a UUID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uuid\+Interface an instance of a UUID object
+\end{DoxyReturn}
+@psalm-\/pure 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_builder_1_1_uuid_builder_interface_a8d264ac2c37c862758b666746907f8af}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Builder\textbackslash{}\+Uuid\+Builder\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/ramsey/uuid/src/\+Builder/Fallback\+Builder.\+php\end{DoxyCompactItemize}

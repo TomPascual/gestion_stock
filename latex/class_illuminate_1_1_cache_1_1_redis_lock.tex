@@ -1,0 +1,168 @@
+\doxysection{Illuminate\textbackslash{}Cache\textbackslash{}Redis\+Lock Class Reference}
+\hypertarget{class_illuminate_1_1_cache_1_1_redis_lock}{}\label{class_illuminate_1_1_cache_1_1_redis_lock}\index{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock@{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock}}
+Inheritance diagram for Illuminate\textbackslash{}Cache\textbackslash{}Redis\+Lock\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_illuminate_1_1_cache_1_1_redis_lock}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_redis_lock_a27e11407a19fcf97f07a1991c306f617}{\+\_\+\+\_\+construct}} (\$redis, \$name, \$seconds, \$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_redis_lock_a5b4f5d455cdfb1a23485859daec21c43}{acquire}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_redis_lock_af15dea6fb7281a7a983a0d26d0872f11}{release}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_redis_lock_a1d96b008a41537b70e0db082316e61a9}{force\+Release}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_redis_lock_a218f08c036cd8675506fc2c812ce8313}{get\+Connection\+Name}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a5a673e886da30fb119a806d893714e28}{\+\_\+\+\_\+construct}} (\$name, \$seconds, \$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_adbb7043056ffa08ae70ac55a99aee0fc}{get}} (\$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_aed6219de240abd5f817b91e9f9d695ee}{block}} (\$seconds, \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a78af018332d21c9300867728619ee758}{is\+Owned\+By\+Current\+Process}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a5246eab1e8daf252b65fde2a261ba759}{is\+Owned\+By}} (\$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a0e0b2dc71964911fb5e1dc2be72c6980}{between\+Blocked\+Attempts\+Sleep\+For}} (\$milliseconds)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_redis_lock_a7df5523ebd8e6c429963e101adc1abb2}{get\+Current\+Owner}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_redis_lock_ad8e3cc49fdc01990e470aa9222a24e65}\label{class_illuminate_1_1_cache_1_1_redis_lock_ad8e3cc49fdc01990e470aa9222a24e65} 
+{\bfseries \$redis}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$name}
+\item 
+{\bfseries \$seconds}
+\item 
+{\bfseries \$owner}
+\item 
+{\bfseries \$sleep\+Milliseconds} = 250
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_redis_lock_a27e11407a19fcf97f07a1991c306f617}\index{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock@{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Cache\textbackslash{}RedisLock@{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_redis_lock_a27e11407a19fcf97f07a1991c306f617} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Redis\+Lock\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$redis}{, }\item[{}]{\$name}{, }\item[{}]{\$seconds}{, }\item[{}]{\$owner}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new lock instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection & {\em \$redis} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+string | null & {\em \$owner} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_redis_lock_a5b4f5d455cdfb1a23485859daec21c43}\index{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock@{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock}!acquire@{acquire}}
+\index{acquire@{acquire}!Illuminate\textbackslash{}Cache\textbackslash{}RedisLock@{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock}}
+\doxysubsubsection{\texorpdfstring{acquire()}{acquire()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_redis_lock_a5b4f5d455cdfb1a23485859daec21c43} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Redis\+Lock\+::acquire (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Attempt to acquire the lock.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a3e02d90803c0e5e6b7bdf4fc17ea8857}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_redis_lock_a1d96b008a41537b70e0db082316e61a9}\index{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock@{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock}!forceRelease@{forceRelease}}
+\index{forceRelease@{forceRelease}!Illuminate\textbackslash{}Cache\textbackslash{}RedisLock@{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock}}
+\doxysubsubsection{\texorpdfstring{forceRelease()}{forceRelease()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_redis_lock_a1d96b008a41537b70e0db082316e61a9} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Redis\+Lock\+::force\+Release (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Releases this lock in disregard of ownership.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_aebc99079ee6e82c29cc0e35460a95c85}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_redis_lock_a218f08c036cd8675506fc2c812ce8313}\index{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock@{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock}!getConnectionName@{getConnectionName}}
+\index{getConnectionName@{getConnectionName}!Illuminate\textbackslash{}Cache\textbackslash{}RedisLock@{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock}}
+\doxysubsubsection{\texorpdfstring{getConnectionName()}{getConnectionName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_redis_lock_a218f08c036cd8675506fc2c812ce8313} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Redis\+Lock\+::get\+Connection\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of the Redis connection being used to manage the lock.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_redis_lock_a7df5523ebd8e6c429963e101adc1abb2}\index{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock@{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock}!getCurrentOwner@{getCurrentOwner}}
+\index{getCurrentOwner@{getCurrentOwner}!Illuminate\textbackslash{}Cache\textbackslash{}RedisLock@{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock}}
+\doxysubsubsection{\texorpdfstring{getCurrentOwner()}{getCurrentOwner()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_redis_lock_a7df5523ebd8e6c429963e101adc1abb2} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Redis\+Lock\+::get\+Current\+Owner (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the owner value written into the driver for this lock.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a334cff7e658bcc2ede6d9fb0e27d252b}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_redis_lock_af15dea6fb7281a7a983a0d26d0872f11}\index{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock@{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock}!release@{release}}
+\index{release@{release}!Illuminate\textbackslash{}Cache\textbackslash{}RedisLock@{Illuminate\textbackslash{}Cache\textbackslash{}RedisLock}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_redis_lock_af15dea6fb7281a7a983a0d26d0872f11} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Redis\+Lock\+::release (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Release the lock.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a6b0d063e5c735c23e9a56aa18b6b7d88}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_php_redis_lock_a36219610bdeca360778c803751f76bc1}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Php\+Redis\+Lock}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Cache/Redis\+Lock.\+php\end{DoxyCompactItemize}

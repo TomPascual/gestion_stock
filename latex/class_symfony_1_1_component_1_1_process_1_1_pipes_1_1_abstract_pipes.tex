@@ -1,0 +1,118 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}Abstract\+Pipes Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes}{}\label{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}Abstract\+Pipes\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.745098cm]{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_a1eddfec417f996c24665ffcdd5f6e6f2}{\+\_\+\+\_\+construct}} (\$input)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_a81f876e8255040fba2a79a7507e7c7fb}{close}} ()
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_af5cd4b5983b2da63f83ad163d110f6fc}\label{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_af5cd4b5983b2da63f83ad163d110f6fc} 
+{\bfseries handle\+Error} (int \$type, string \$msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface}{Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Pipes\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_a45bae38842252e8036a77cbed37ed422}{get\+Descriptors}} ()
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_a701b6276f86dd49dc80db794e176966a}{get\+Files}} ()
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_a9a3beaf0bca96f219608c17582dcd47d}{read\+And\+Write}} (bool \$blocking, bool \$\mbox{\hyperlink{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_ab1add0cde0842ece3787de44b83f799a}{close}}=false)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_ae3a1d926fdd2dbb85115e80bbdaba30f}{are\+Open}} ()
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_ad021f8ac4c2ae1530cc93e82d9e8727f}{have\+Read\+Support}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_ab5c30cab2897054b3b47c01a5ab436c5}\label{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_ab5c30cab2897054b3b47c01a5ab436c5} 
+array {\bfseries \$pipes} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface}{Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Pipes\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries CHUNK\+\_\+\+SIZE} = 16384
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_acbb9f4e2cb6eb51f3cb767012274210a}{has\+System\+Call\+Been\+Interrupted}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_ada36b8ecd28f6b34b4d7a6afade7d2fd}{unblock}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_a0a8b1ca181e23d06c3d0f48839318437}{write}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Romain Neutron \href{mailto:imprec@gmail.com}{\texttt{ imprec@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_a1eddfec417f996c24665ffcdd5f6e6f2}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_a1eddfec417f996c24665ffcdd5f6e6f2} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Abstract\+Pipes\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$input}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource | string | \textbackslash{}\+Iterator & {\em \$input} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_a81f876e8255040fba2a79a7507e7c7fb}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes}!close@{close}}
+\index{close@{close}!Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_a81f876e8255040fba2a79a7507e7c7fb} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Abstract\+Pipes\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Closes file handles and pipes. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_ab1add0cde0842ece3787de44b83f799a}{Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Pipes\+Interface}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_windows_pipes_acbce71a4ff1a09e673115bede5e43511}{Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Windows\+Pipes}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_acbb9f4e2cb6eb51f3cb767012274210a}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes}!hasSystemCallBeenInterrupted@{hasSystemCallBeenInterrupted}}
+\index{hasSystemCallBeenInterrupted@{hasSystemCallBeenInterrupted}!Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes}}
+\doxysubsubsection{\texorpdfstring{hasSystemCallBeenInterrupted()}{hasSystemCallBeenInterrupted()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_acbb9f4e2cb6eb51f3cb767012274210a} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Abstract\+Pipes\+::has\+System\+Call\+Been\+Interrupted (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns true if a system call has been interrupted. \Hypertarget{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_ada36b8ecd28f6b34b4d7a6afade7d2fd}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes}!unblock@{unblock}}
+\index{unblock@{unblock}!Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes}}
+\doxysubsubsection{\texorpdfstring{unblock()}{unblock()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_ada36b8ecd28f6b34b4d7a6afade7d2fd} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Abstract\+Pipes\+::unblock (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Unblocks streams. \Hypertarget{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_a0a8b1ca181e23d06c3d0f48839318437}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes}!write@{write}}
+\index{write@{write}!Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}AbstractPipes}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_a0a8b1ca181e23d06c3d0f48839318437} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Abstract\+Pipes\+::write (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Writes input to stdin.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & When an input iterator yields a non supported value \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/process/\+Pipes/Abstract\+Pipes.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,112 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Fragment\textbackslash{}Fragment\+Handler Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_handler}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_handler}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Fragment\textbackslash{}Fragment\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_handler_a215ea6d58351fa29cdb0dbed4505ba44}{\+\_\+\+\_\+construct}} (private \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack}{Request\+Stack}} \$request\+Stack, array \$renderers=\mbox{[}$\,$\mbox{]}, private bool \$debug=false,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_handler_a4d6d08444f4bc2d3a3397831b0caaf86}{add\+Renderer}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_renderer_interface}{Fragment\+Renderer\+Interface}} \$renderer)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_handler_a8112a9f1a4af7eb9773372f9b46ae2ff}{render}} (string\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_reference}{Controller\+Reference}} \$uri, string \$renderer=\textquotesingle{}inline\textquotesingle{}, array \$options=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_handler_a49e0422ea9270e8bd273761c343d075a}{deliver}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Renders a URI that represents a resource fragment.
+
+This class handles the rendering of resource fragments that are included into a main resource. The handling of the rendering is managed by specialized renderers.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}}
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See also}
+Fragment\+Renderer\+Interface 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_handler_a215ea6d58351fa29cdb0dbed4505ba44}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_handler_a215ea6d58351fa29cdb0dbed4505ba44} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Fragment\textbackslash{}\+Fragment\+Handler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack}{Request\+Stack}}}]{\$request\+Stack}{, }\item[{array}]{\$renderers}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{private bool}]{\$debug}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Fragment\+Renderer\+Interface\mbox{[}$\,$\mbox{]} & {\em \$renderers} & An array of Fragment\+Renderer\+Interface instances \\
+\hline
+bool & {\em \$debug} & Whether the debug mode is enabled or not \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_handler_a4d6d08444f4bc2d3a3397831b0caaf86}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler}!addRenderer@{addRenderer}}
+\index{addRenderer@{addRenderer}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler}}
+\doxysubsubsection{\texorpdfstring{addRenderer()}{addRenderer()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_handler_a4d6d08444f4bc2d3a3397831b0caaf86} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Fragment\textbackslash{}\+Fragment\+Handler\+::add\+Renderer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_renderer_interface}{Fragment\+Renderer\+Interface}}}]{\$renderer}{}\end{DoxyParamCaption})}
+
+Adds a renderer. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_handler_a49e0422ea9270e8bd273761c343d075a}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler}!deliver@{deliver}}
+\index{deliver@{deliver}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler}}
+\doxysubsubsection{\texorpdfstring{deliver()}{deliver()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_handler_a49e0422ea9270e8bd273761c343d075a} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Fragment\textbackslash{}\+Fragment\+Handler\+::deliver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}}}]{\$response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Delivers the Response as a string.
+
+When the Response is a Streamed\+Response, the content is streamed immediately instead of being returned.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null The Response content or null when the Response is streamed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception when the Response is not successful \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_handler_a8112a9f1a4af7eb9773372f9b46ae2ff}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler}!render@{render}}
+\index{render@{render}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Fragment\textbackslash{}FragmentHandler}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_fragment_1_1_fragment_handler_a8112a9f1a4af7eb9773372f9b46ae2ff} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Fragment\textbackslash{}\+Fragment\+Handler\+::render (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_reference}{Controller\+Reference}}}]{\$uri}{, }\item[{string}]{\$renderer}{ = {\ttfamily \textquotesingle{}inline\textquotesingle{}}, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Renders a URI and returns the Response content.
+
+Available options\+:
+
+
+\begin{DoxyItemize}
+\item ignore\+\_\+errors\+: true to return an empty string in case of an error
+\end{DoxyItemize}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception when the renderer does not exist 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception when no main request is being handled 
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_dependency_injection_1_1_lazy_loading_fragment_handler_a8464dfdf191986e92c09916c391da497}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Dependency\+Injection\textbackslash{}\+Lazy\+Loading\+Fragment\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/kernel/\+Fragment/Fragment\+Handler.\+php\end{DoxyCompactItemize}

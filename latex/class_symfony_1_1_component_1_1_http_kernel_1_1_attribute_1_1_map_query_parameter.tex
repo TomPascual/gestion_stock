@@ -1,0 +1,58 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Attribute\textbackslash{}Map\+Query\+Parameter Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_query_parameter}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_query_parameter}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Attribute\textbackslash{}MapQueryParameter@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Attribute\textbackslash{}MapQueryParameter}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Attribute\textbackslash{}Map\+Query\+Parameter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_query_parameter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_query_parameter_a0f9d6a63cf04e0ad22d1597a3d0a104e}{\+\_\+\+\_\+construct}} (public ?string \$name=null, public ?int \$filter=null, public int \$flags=0, public array \$options=\mbox{[}$\,$\mbox{]}, string \$resolver=Query\+Parameter\+Value\+Resolver\+::class, public int \$validation\+Failed\+Status\+Code=Response\+::\+HTTP\+\_\+\+NOT\+\_\+\+FOUND,)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_value_resolver}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Attribute\textbackslash{}\+Value\+Resolver}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_value_resolver_aafb7a686f0edae86a6bb9cdfaa2d95f8}{\+\_\+\+\_\+construct}} (public string \$resolver, public bool \$disabled=false,)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Can be used to pass a query parameter to a controller argument.
+
+\begin{DoxyAuthor}{Author}
+Ruud Kamphuis \href{mailto:ruud@ticketswap.com}{\texttt{ ruud@ticketswap.\+com}} 
+
+Ionut Enache \href{mailto:i.ovidiuenache@yahoo.com}{\texttt{ i.\+ovidiuenache@yahoo.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_query_parameter_a0f9d6a63cf04e0ad22d1597a3d0a104e}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Attribute\textbackslash{}MapQueryParameter@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Attribute\textbackslash{}MapQueryParameter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Attribute\textbackslash{}MapQueryParameter@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Attribute\textbackslash{}MapQueryParameter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_attribute_1_1_map_query_parameter_a0f9d6a63cf04e0ad22d1597a3d0a104e} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Attribute\textbackslash{}\+Map\+Query\+Parameter\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{public ?string}]{\$name}{ = {\ttfamily null}, }\item[{public ?int}]{\$filter}{ = {\ttfamily null}, }\item[{public int}]{\$flags}{ = {\ttfamily 0}, }\item[{public array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{string}]{\$resolver}{ = {\ttfamily QueryParameterValueResolver\+:\+:class}, }\item[{public int}]{\$validation\+Failed\+Status\+Code}{ = {\ttfamily Response\+:\+:HTTP\+\_\+NOT\+\_\+FOUND}}\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+\href{https://php.net/manual/filter.constants}{\texttt{ https\+://php.\+net/manual/filter.\+constants}} for filter, flags and options
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$name} & The name of the query parameter; if null, the name of the argument in the controller will be used \\
+\hline
+ & {\em (\+FILTER\+\_\+\+VALIDATE\+\_\+\texorpdfstring{$\ast$}{*})\texorpdfstring{$\vert$}{|}(\+FILTER\+\_\+\+SANITIZE\+\_\+\texorpdfstring{$\ast$}{*})\texorpdfstring{$\vert$}{|}null} & \$filter The filter to pass to "{}filter\+\_\+var()"{} \\
+\hline
+ & {\em int-\/mask-\/of$<$(\+FILTER\+\_\+\+FLAG\+\_\+\texorpdfstring{$\ast$}{*})\texorpdfstring{$\vert$}{|}\+FILTER\+\_\+\+NULL\+\_\+\+ON\+\_\+\+FAILURE$>$} & \$flags The flags to pass to "{}filter\+\_\+var()"{} \\
+\hline
+array & {\em \$options} & The options to pass to "{}filter\+\_\+var()"{} \\
+\hline
+ & {\em class-\/string$<$\+Value\+Resolver\+Interface$>$\texorpdfstring{$\vert$}{|}string} & \$resolver The name of the resolver to use \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/kernel/\+Attribute/Map\+Query\+Parameter.\+php\end{DoxyCompactItemize}

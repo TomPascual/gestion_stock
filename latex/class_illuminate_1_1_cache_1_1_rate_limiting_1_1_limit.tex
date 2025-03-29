@@ -1,0 +1,224 @@
+\doxysection{Illuminate\textbackslash{}Cache\textbackslash{}Rate\+Limiting\textbackslash{}Limit Class Reference}
+\hypertarget{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit}{}\label{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit}\index{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}}
+Inheritance diagram for Illuminate\textbackslash{}Cache\textbackslash{}Rate\+Limiting\textbackslash{}Limit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a2bb03ccc48b645ee6ec7613152798229}{\+\_\+\+\_\+construct}} (\$key=\textquotesingle{}\textquotesingle{}, int \$max\+Attempts=60, int \$decay\+Seconds=60)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a9c14a9430688e59a94322e5ba4850a56}{by}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a8eb397cd52c71cb4f65eaaae2f9c183d}{response}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a7c097b1d3334bfe2244493d42c403e7d}{fallback\+Key}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a7810a481961b16084ffe89ce1ff66ad0}{per\+Second}} (\$max\+Attempts, \$decay\+Seconds=1)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_aeb5dc67620d45716937c0abbd20a0ff6}{per\+Minute}} (\$max\+Attempts, \$decay\+Minutes=1)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_af12de794097796eeac6679e2f5e162b8}{per\+Minutes}} (\$decay\+Minutes, \$max\+Attempts)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a2729eb29756ced763f9560309ac3cc13}{per\+Hour}} (\$max\+Attempts, \$decay\+Hours=1)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a4989a2250a3a26fb417cc4ffe73cdebb}{per\+Day}} (\$max\+Attempts, \$decay\+Days=1)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_af2bb81c5c3e651a5636860fd7f7426d3}{none}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a467aace54104840ba74feed683927623}\label{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a467aace54104840ba74feed683927623} 
+{\bfseries \$key}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a35f80ed328265dda2f17cc17bde9b88f}\label{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a35f80ed328265dda2f17cc17bde9b88f} 
+{\bfseries \$max\+Attempts}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_aef50621e0a9fd27698d22a20b91abafe}\label{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_aef50621e0a9fd27698d22a20b91abafe} 
+{\bfseries \$decay\+Seconds}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_abf4d0fd24406b8983008b07a1d69559e}\label{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_abf4d0fd24406b8983008b07a1d69559e} 
+{\bfseries \$response\+Callback}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a2bb03ccc48b645ee6ec7613152798229}\index{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a2bb03ccc48b645ee6ec7613152798229} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Rate\+Limiting\textbackslash{}\+Limit\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$key}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{int}]{\$max\+Attempts}{ = {\ttfamily 60}, }\item[{int}]{\$decay\+Seconds}{ = {\ttfamily 60}}\end{DoxyParamCaption})}
+
+Create a new limit instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$key} & \\
+\hline
+int & {\em \$max\+Attempts} & \\
+\hline
+int & {\em \$decay\+Seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a9c14a9430688e59a94322e5ba4850a56}\index{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}!by@{by}}
+\index{by@{by}!Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}}
+\doxysubsubsection{\texorpdfstring{by()}{by()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a9c14a9430688e59a94322e5ba4850a56} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Rate\+Limiting\textbackslash{}\+Limit\+::by (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Set the key of the rate limit.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a7c097b1d3334bfe2244493d42c403e7d}\index{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}!fallbackKey@{fallbackKey}}
+\index{fallbackKey@{fallbackKey}!Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}}
+\doxysubsubsection{\texorpdfstring{fallbackKey()}{fallbackKey()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a7c097b1d3334bfe2244493d42c403e7d} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Rate\+Limiting\textbackslash{}\+Limit\+::fallback\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get a potential fallback key for the limit.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_af2bb81c5c3e651a5636860fd7f7426d3}\index{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}!none@{none}}
+\index{none@{none}!Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}}
+\doxysubsubsection{\texorpdfstring{none()}{none()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_af2bb81c5c3e651a5636860fd7f7426d3} 
+static Illuminate\textbackslash{}\+Cache\textbackslash{}\+Rate\+Limiting\textbackslash{}\+Limit\+::none (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new unlimited rate limit.
+
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a4989a2250a3a26fb417cc4ffe73cdebb}\index{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}!perDay@{perDay}}
+\index{perDay@{perDay}!Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}}
+\doxysubsubsection{\texorpdfstring{perDay()}{perDay()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a4989a2250a3a26fb417cc4ffe73cdebb} 
+static Illuminate\textbackslash{}\+Cache\textbackslash{}\+Rate\+Limiting\textbackslash{}\+Limit\+::per\+Day (\begin{DoxyParamCaption}\item[{}]{\$max\+Attempts}{, }\item[{}]{\$decay\+Days}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new rate limit using days as decay time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$max\+Attempts} & \\
+\hline
+int & {\em \$decay\+Days} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a2729eb29756ced763f9560309ac3cc13}\index{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}!perHour@{perHour}}
+\index{perHour@{perHour}!Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}}
+\doxysubsubsection{\texorpdfstring{perHour()}{perHour()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a2729eb29756ced763f9560309ac3cc13} 
+static Illuminate\textbackslash{}\+Cache\textbackslash{}\+Rate\+Limiting\textbackslash{}\+Limit\+::per\+Hour (\begin{DoxyParamCaption}\item[{}]{\$max\+Attempts}{, }\item[{}]{\$decay\+Hours}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new rate limit using hours as decay time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$max\+Attempts} & \\
+\hline
+int & {\em \$decay\+Hours} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_aeb5dc67620d45716937c0abbd20a0ff6}\index{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}!perMinute@{perMinute}}
+\index{perMinute@{perMinute}!Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}}
+\doxysubsubsection{\texorpdfstring{perMinute()}{perMinute()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_aeb5dc67620d45716937c0abbd20a0ff6} 
+static Illuminate\textbackslash{}\+Cache\textbackslash{}\+Rate\+Limiting\textbackslash{}\+Limit\+::per\+Minute (\begin{DoxyParamCaption}\item[{}]{\$max\+Attempts}{, }\item[{}]{\$decay\+Minutes}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new rate limit.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$max\+Attempts} & \\
+\hline
+int & {\em \$decay\+Minutes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_af12de794097796eeac6679e2f5e162b8}\index{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}!perMinutes@{perMinutes}}
+\index{perMinutes@{perMinutes}!Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}}
+\doxysubsubsection{\texorpdfstring{perMinutes()}{perMinutes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_af12de794097796eeac6679e2f5e162b8} 
+static Illuminate\textbackslash{}\+Cache\textbackslash{}\+Rate\+Limiting\textbackslash{}\+Limit\+::per\+Minutes (\begin{DoxyParamCaption}\item[{}]{\$decay\+Minutes}{, }\item[{}]{\$max\+Attempts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new rate limit using minutes as decay time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$decay\+Minutes} & \\
+\hline
+int & {\em \$max\+Attempts} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a7810a481961b16084ffe89ce1ff66ad0}\index{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}!perSecond@{perSecond}}
+\index{perSecond@{perSecond}!Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}}
+\doxysubsubsection{\texorpdfstring{perSecond()}{perSecond()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a7810a481961b16084ffe89ce1ff66ad0} 
+static Illuminate\textbackslash{}\+Cache\textbackslash{}\+Rate\+Limiting\textbackslash{}\+Limit\+::per\+Second (\begin{DoxyParamCaption}\item[{}]{\$max\+Attempts}{, }\item[{}]{\$decay\+Seconds}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new rate limit.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$max\+Attempts} & \\
+\hline
+int & {\em \$decay\+Seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a8eb397cd52c71cb4f65eaaae2f9c183d}\index{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}!response@{response}}
+\index{response@{response}!Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit@{Illuminate\textbackslash{}Cache\textbackslash{}RateLimiting\textbackslash{}Limit}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_rate_limiting_1_1_limit_a8eb397cd52c71cb4f65eaaae2f9c183d} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Rate\+Limiting\textbackslash{}\+Limit\+::response (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Set the callback that should generate the response when the limit is exceeded.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Cache/\+Rate\+Limiting/Limit.\+php\end{DoxyCompactItemize}

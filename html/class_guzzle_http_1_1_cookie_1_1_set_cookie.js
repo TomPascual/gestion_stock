@@ -1,0 +1,26 @@
+var class_guzzle_http_1_1_cookie_1_1_set_cookie =
+[
+    [ "__construct", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#a743d69456fd1f19cb52e38d0b8dbfb75", null ],
+    [ "getDiscard", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#ac6b3f111c8b7f606a12466ca0d6e5e6f", null ],
+    [ "getDomain", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#a00d077c7eb6f6c5f62f28b3065250280", null ],
+    [ "getExpires", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#af83a5ce0986c7de8924651d8d1891544", null ],
+    [ "getHttpOnly", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#ab5c33c7ec467dbdbfbfaa439df5f71aa", null ],
+    [ "getMaxAge", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#a89083ab85d1ab58beeb2f25985d8392b", null ],
+    [ "getName", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#a573b2821257add2459ac921f74d05931", null ],
+    [ "getPath", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#abc668af0d59edafcf6e050c225581437", null ],
+    [ "getSecure", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#a969745d97d9bcc4c4667d7d7e87203f5", null ],
+    [ "getValue", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#aabb8fb580eb7bf635830e850986ae47d", null ],
+    [ "isExpired", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#aec8249340e7d893aeb7157e8d443f402", null ],
+    [ "matchesDomain", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#ac20ae18381247d837b6ad47e533e071b", null ],
+    [ "matchesPath", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#aafa0bf4fa3e9304d26a249d9d7658e47", null ],
+    [ "setDiscard", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#af2bc6875f2bcb84e6faa6f21c0d1b176", null ],
+    [ "setDomain", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#aa9edd4846d58d175f62b5f4edf586452", null ],
+    [ "setExpires", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#a501b5a9b3f987136dc86bb54a85924d9", null ],
+    [ "setHttpOnly", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#ade5a595a5e0deeee6bad4897511b1a3d", null ],
+    [ "setMaxAge", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#aeb2f0adfeb501acea1c705b5fb7b9815", null ],
+    [ "setName", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#a8921080d5e7ec99f8a6aaad461543f47", null ],
+    [ "setPath", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#a7a0f5c66d21776b51fbb78276ec99923", null ],
+    [ "setSecure", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#a38e312f1d5db24393399e7463d8918a5", null ],
+    [ "setValue", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#a9ffacb8b0c83065f3f1ecd86ab975b7e", null ],
+    [ "validate", "class_guzzle_http_1_1_cookie_1_1_set_cookie.html#a37795fbc25a1dde09afaded419f8fb18", null ]
+];

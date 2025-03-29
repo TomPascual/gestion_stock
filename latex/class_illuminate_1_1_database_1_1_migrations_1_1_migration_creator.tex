@@ -1,0 +1,260 @@
+\doxysection{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}Migration\+Creator Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator}{}\label{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator}\index{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_ad9e93cc7eef58834900436881127ba94}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem}{Filesystem}} \$files, \$custom\+Stub\+Path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_acf78aa865be9c838fbf9302667cec7d6}{create}} (\$name, \$path, \$table=null, \$create=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a148e182e6da8008ed22f838c15671500}{after\+Create}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_aff80dc3f328507e3f0a06ed90bb0cc76}{stub\+Path}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a1ee892865521eb67ed59e9eb60a55861}{get\+Filesystem}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_abca72ffcdf9947061f271d051b6f309b}{ensure\+Migration\+Doesnt\+Already\+Exist}} (\$name, \$migration\+Path=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a6191ce658c4b62110787f2394d0ddbb1}{get\+Stub}} (\$table, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_acf78aa865be9c838fbf9302667cec7d6}{create}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a11c47d7b4c7ca05454f23a89f45e5836}{populate\+Stub}} (\$stub, \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a9da3683423a7f9a9a76e12dbf709fe5f}{get\+Class\+Name}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a5366d86b1fa700ab06d6e9a522f07fd9}{get\+Path}} (\$name, \$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a214e24e7e33d146600c62653d0e1e10d}{fire\+Post\+Create\+Hooks}} (\$table, \$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a1a815fcb53f52a9c85dded91c962f332}{get\+Date\+Prefix}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a2867ae2df9d18495c6622347a2eea5be}\label{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a2867ae2df9d18495c6622347a2eea5be} 
+{\bfseries \$files}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a738ba54d550a7bc4a80ff290495e3a95}\label{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a738ba54d550a7bc4a80ff290495e3a95} 
+{\bfseries \$custom\+Stub\+Path}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_afad29e59d7e28f3c36d4298d12d141b0}\label{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_afad29e59d7e28f3c36d4298d12d141b0} 
+{\bfseries \$post\+Create} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_ad9e93cc7eef58834900436881127ba94}\index{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_ad9e93cc7eef58834900436881127ba94} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migrations\textbackslash{}\+Migration\+Creator\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem}{Filesystem}}}]{\$files}{, }\item[{}]{\$custom\+Stub\+Path}{}\end{DoxyParamCaption})}
+
+Create a new migration creator instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem & {\em \$files} & \\
+\hline
+string & {\em \$custom\+Stub\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a148e182e6da8008ed22f838c15671500}\index{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}!afterCreate@{afterCreate}}
+\index{afterCreate@{afterCreate}!Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}}
+\doxysubsubsection{\texorpdfstring{afterCreate()}{afterCreate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a148e182e6da8008ed22f838c15671500} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migrations\textbackslash{}\+Migration\+Creator\+::after\+Create (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a post migration create hook.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_acf78aa865be9c838fbf9302667cec7d6}\index{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}!create@{create}}
+\index{create@{create}!Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_acf78aa865be9c838fbf9302667cec7d6} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migrations\textbackslash{}\+Migration\+Creator\+::create (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$path}{, }\item[{}]{\$table}{ = {\ttfamily null}, }\item[{}]{\$create}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a new migration at the given path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$path} & \\
+\hline
+string | null & {\em \$table} & \\
+\hline
+bool & {\em \$create} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception \Hypertarget{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_abca72ffcdf9947061f271d051b6f309b}\index{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}!ensureMigrationDoesntAlreadyExist@{ensureMigrationDoesntAlreadyExist}}
+\index{ensureMigrationDoesntAlreadyExist@{ensureMigrationDoesntAlreadyExist}!Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}}
+\doxysubsubsection{\texorpdfstring{ensureMigrationDoesntAlreadyExist()}{ensureMigrationDoesntAlreadyExist()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_abca72ffcdf9947061f271d051b6f309b} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migrations\textbackslash{}\+Migration\+Creator\+::ensure\+Migration\+Doesnt\+Already\+Exist (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$migration\+Path}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure that a migration with the given name doesn\textquotesingle{}t already exist.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$migration\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a214e24e7e33d146600c62653d0e1e10d}\index{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}!firePostCreateHooks@{firePostCreateHooks}}
+\index{firePostCreateHooks@{firePostCreateHooks}!Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}}
+\doxysubsubsection{\texorpdfstring{firePostCreateHooks()}{firePostCreateHooks()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a214e24e7e33d146600c62653d0e1e10d} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migrations\textbackslash{}\+Migration\+Creator\+::fire\+Post\+Create\+Hooks (\begin{DoxyParamCaption}\item[{}]{\$table}{, }\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Fire the registered post create hooks.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$table} & \\
+\hline
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a9da3683423a7f9a9a76e12dbf709fe5f}\index{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}!getClassName@{getClassName}}
+\index{getClassName@{getClassName}!Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}}
+\doxysubsubsection{\texorpdfstring{getClassName()}{getClassName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a9da3683423a7f9a9a76e12dbf709fe5f} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migrations\textbackslash{}\+Migration\+Creator\+::get\+Class\+Name (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the class name of a migration name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a1a815fcb53f52a9c85dded91c962f332}\index{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}!getDatePrefix@{getDatePrefix}}
+\index{getDatePrefix@{getDatePrefix}!Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}}
+\doxysubsubsection{\texorpdfstring{getDatePrefix()}{getDatePrefix()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a1a815fcb53f52a9c85dded91c962f332} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migrations\textbackslash{}\+Migration\+Creator\+::get\+Date\+Prefix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the date prefix for the migration.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a1ee892865521eb67ed59e9eb60a55861}\index{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}!getFilesystem@{getFilesystem}}
+\index{getFilesystem@{getFilesystem}!Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}}
+\doxysubsubsection{\texorpdfstring{getFilesystem()}{getFilesystem()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a1ee892865521eb67ed59e9eb60a55861} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migrations\textbackslash{}\+Migration\+Creator\+::get\+Filesystem (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the filesystem instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a5366d86b1fa700ab06d6e9a522f07fd9}\index{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}!getPath@{getPath}}
+\index{getPath@{getPath}!Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a5366d86b1fa700ab06d6e9a522f07fd9} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migrations\textbackslash{}\+Migration\+Creator\+::get\+Path (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the full path to the migration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a6191ce658c4b62110787f2394d0ddbb1}\index{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}!getStub@{getStub}}
+\index{getStub@{getStub}!Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}}
+\doxysubsubsection{\texorpdfstring{getStub()}{getStub()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a6191ce658c4b62110787f2394d0ddbb1} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migrations\textbackslash{}\+Migration\+Creator\+::get\+Stub (\begin{DoxyParamCaption}\item[{}]{\$table}{, }\item[{}]{\$create}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the migration stub file.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$table} & \\
+\hline
+bool & {\em \$create} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a11c47d7b4c7ca05454f23a89f45e5836}\index{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}!populateStub@{populateStub}}
+\index{populateStub@{populateStub}!Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}}
+\doxysubsubsection{\texorpdfstring{populateStub()}{populateStub()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_a11c47d7b4c7ca05454f23a89f45e5836} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migrations\textbackslash{}\+Migration\+Creator\+::populate\+Stub (\begin{DoxyParamCaption}\item[{}]{\$stub}{, }\item[{}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Populate the place-\/holders in the migration stub.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$stub} & \\
+\hline
+string | null & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_aff80dc3f328507e3f0a06ed90bb0cc76}\index{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}!stubPath@{stubPath}}
+\index{stubPath@{stubPath}!Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator@{Illuminate\textbackslash{}Database\textbackslash{}Migrations\textbackslash{}MigrationCreator}}
+\doxysubsubsection{\texorpdfstring{stubPath()}{stubPath()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migrations_1_1_migration_creator_aff80dc3f328507e3f0a06ed90bb0cc76} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migrations\textbackslash{}\+Migration\+Creator\+::stub\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the path to the stubs.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Database/\+Migrations/Migration\+Creator.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,194 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Profiler\textbackslash{}Profiler Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Profiler\textbackslash{}Profiler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a5e1f0ac14e36f92747befb0981740143}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a5e1f0ac14e36f92747befb0981740143} 
+{\bfseries \+\_\+\+\_\+construct} (private \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_storage_interface}{Profiler\+Storage\+Interface}} \$storage, private ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null, private bool \$enabled=true,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_ae87d035b6d402c6fff5341841c8cf694}{disable}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_af5ecd84487fcd3ea4d25c97ace27dbf3}{enable}} ()
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_af69ca0d471bba55dc3c02920f1dbc1ba}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_af69ca0d471bba55dc3c02920f1dbc1ba} 
+{\bfseries is\+Enabled} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_af1296d7cb057e71bb9a0a1a7265ed38c}{load\+Profile\+From\+Response}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a8dfc912d0da882fd6e9bdb159a12f21e}{load\+Profile}} (string \$token)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_ae900d82d47048d1cd371b5f72d0a0b21}{save\+Profile}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profile}{Profile}} \$profile)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a6460dbffe795ff524869faa128d2bc15}{purge}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_aefa3a64985ecf0b3e0119c222828b9c3}{find}} (?string \$ip, ?string \$url, ?int \$limit, ?string \$method, ?string \$start, ?string \$end, ?string \$status\+Code=null, ?\textbackslash{}Closure \$filter=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_ae082ee21f5bf3e5059e478c5dbf8fd66}{collect}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response, ?\textbackslash{}Throwable \$exception=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a27db5127f96d56bd540637b0d4997dbf}{reset}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a90e8ab9e20d0cda89594d1de0b45ff15}{all}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a6a44426ae2b1b8d488e1ac72d1d502fb}{set}} (array \$collectors=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a0c6c3bdbc4ade26157169462700133de}{add}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_data_collector_interface}{Data\+Collector\+Interface}} \$collector)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_acb86cb72146ab4b2aebfbbab71bafc47}{has}} (string \$name)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a6b71332ff1fd1a841ce21154fc8dbdfc}{get}} (string \$name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Profiler.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a0c6c3bdbc4ade26157169462700133de}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}!add@{add}}
+\index{add@{add}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a0c6c3bdbc4ade26157169462700133de} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Profiler\textbackslash{}\+Profiler\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_data_collector_interface}{Data\+Collector\+Interface}}}]{\$collector}{}\end{DoxyParamCaption})}
+
+Adds a Collector. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a90e8ab9e20d0cda89594d1de0b45ff15}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}!all@{all}}
+\index{all@{all}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a90e8ab9e20d0cda89594d1de0b45ff15} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Profiler\textbackslash{}\+Profiler\+::all (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the Collectors associated with this profiler. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_ae082ee21f5bf3e5059e478c5dbf8fd66}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}!collect@{collect}}
+\index{collect@{collect}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}}
+\doxysubsubsection{\texorpdfstring{collect()}{collect()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_ae082ee21f5bf3e5059e478c5dbf8fd66} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Profiler\textbackslash{}\+Profiler\+::collect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{, }\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}}}]{\$response}{, }\item[{?\textbackslash{}Throwable}]{\$exception}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Collects data for the given Response. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_ae87d035b6d402c6fff5341841c8cf694}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}!disable@{disable}}
+\index{disable@{disable}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_ae87d035b6d402c6fff5341841c8cf694} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Profiler\textbackslash{}\+Profiler\+::disable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Disables the profiler. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_af5ecd84487fcd3ea4d25c97ace27dbf3}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}!enable@{enable}}
+\index{enable@{enable}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}}
+\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_af5ecd84487fcd3ea4d25c97ace27dbf3} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Profiler\textbackslash{}\+Profiler\+::enable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Enables the profiler. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_aefa3a64985ecf0b3e0119c222828b9c3}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}!find@{find}}
+\index{find@{find}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_aefa3a64985ecf0b3e0119c222828b9c3} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Profiler\textbackslash{}\+Profiler\+::find (\begin{DoxyParamCaption}\item[{?string}]{\$ip}{, }\item[{?string}]{\$url}{, }\item[{?int}]{\$limit}{, }\item[{?string}]{\$method}{, }\item[{?string}]{\$start}{, }\item[{?string}]{\$end}{, }\item[{?string}]{\$status\+Code}{ = {\ttfamily null}, }\item[{?\textbackslash{}Closure}]{\$filter}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Finds profiler tokens for the given criteria.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$limit} & The maximum number of tokens to return \\
+\hline
+string | null & {\em \$start} & The start date to search from \\
+\hline
+string | null & {\em \$end} & The end date to search to \\
+\hline
+\textbackslash{}\+Closure | null & {\em \$filter} & A filter to apply on the list of tokens\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://php.net/datetime.formats}{\texttt{ https\+://php.\+net/datetime.\+formats}} for the supported date/time formats 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a6b71332ff1fd1a841ce21154fc8dbdfc}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}!get@{get}}
+\index{get@{get}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a6b71332ff1fd1a841ce21154fc8dbdfc} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Profiler\textbackslash{}\+Profiler\+::get (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Gets a Collector by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & A collector name\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception if the collector does not exist \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_acb86cb72146ab4b2aebfbbab71bafc47}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}!has@{has}}
+\index{has@{has}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_acb86cb72146ab4b2aebfbbab71bafc47} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Profiler\textbackslash{}\+Profiler\+::has (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Returns true if a Collector for the given name exists.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & A collector name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a8dfc912d0da882fd6e9bdb159a12f21e}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}!loadProfile@{loadProfile}}
+\index{loadProfile@{loadProfile}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}}
+\doxysubsubsection{\texorpdfstring{loadProfile()}{loadProfile()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a8dfc912d0da882fd6e9bdb159a12f21e} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Profiler\textbackslash{}\+Profiler\+::load\+Profile (\begin{DoxyParamCaption}\item[{string}]{\$token}{}\end{DoxyParamCaption})}
+
+Loads the Profile for the given token. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_af1296d7cb057e71bb9a0a1a7265ed38c}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}!loadProfileFromResponse@{loadProfileFromResponse}}
+\index{loadProfileFromResponse@{loadProfileFromResponse}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}}
+\doxysubsubsection{\texorpdfstring{loadProfileFromResponse()}{loadProfileFromResponse()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_af1296d7cb057e71bb9a0a1a7265ed38c} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Profiler\textbackslash{}\+Profiler\+::load\+Profile\+From\+Response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Loads the Profile for the given Response. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a6460dbffe795ff524869faa128d2bc15}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}!purge@{purge}}
+\index{purge@{purge}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}}
+\doxysubsubsection{\texorpdfstring{purge()}{purge()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a6460dbffe795ff524869faa128d2bc15} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Profiler\textbackslash{}\+Profiler\+::purge (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Purges all data from the storage. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a27db5127f96d56bd540637b0d4997dbf}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}!reset@{reset}}
+\index{reset@{reset}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a27db5127f96d56bd540637b0d4997dbf} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Profiler\textbackslash{}\+Profiler\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_service_1_1_reset_interface_a9f973c7897c549bbd6547aa4487e6872}{Symfony\textbackslash{}\+Contracts\textbackslash{}\+Service\textbackslash{}\+Reset\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_ae900d82d47048d1cd371b5f72d0a0b21}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}!saveProfile@{saveProfile}}
+\index{saveProfile@{saveProfile}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}}
+\doxysubsubsection{\texorpdfstring{saveProfile()}{saveProfile()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_ae900d82d47048d1cd371b5f72d0a0b21} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Profiler\textbackslash{}\+Profiler\+::save\+Profile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profile}{Profile}}}]{\$profile}{}\end{DoxyParamCaption})}
+
+Saves a Profile. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a6a44426ae2b1b8d488e1ac72d1d502fb}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}!set@{set}}
+\index{set@{set}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Profiler\textbackslash{}Profiler}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a6a44426ae2b1b8d488e1ac72d1d502fb} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Profiler\textbackslash{}\+Profiler\+::set (\begin{DoxyParamCaption}\item[{array}]{\$collectors}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Sets the Collectors associated with this profiler.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Data\+Collector\+Interface\mbox{[}$\,$\mbox{]} & {\em \$collectors} & An array of collectors \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/kernel/\+Profiler/Profiler.\+php\end{DoxyCompactItemize}

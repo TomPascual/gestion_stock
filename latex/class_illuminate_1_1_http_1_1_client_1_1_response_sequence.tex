@@ -1,0 +1,213 @@
+\doxysection{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Response\+Sequence Class Reference}
+\hypertarget{class_illuminate_1_1_http_1_1_client_1_1_response_sequence}{}\label{class_illuminate_1_1_http_1_1_client_1_1_response_sequence}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_a74f4c15981ac82c926c1efee5ee73299}{\+\_\+\+\_\+construct}} (array \$responses)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_a1cc52855bb8c0e982cf7459e44a16a0e}{push}} (\$body=null, int \$status=200, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_ac767206a09d8d014544016547e033d54}{push\+Status}} (int \$status, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_ade1f301720195293a65722a44bbd3f4f}{push\+File}} (string \$file\+Path, int \$status=200, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_afaf63316f739a4cf24b57897e925de75}{push\+Failed\+Connection}} (\$message=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_a93034cf780c99407e52a361bc5a0048f}{push\+Response}} (\$response)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_a17d5a13b08235bb9495afb7a144332e5}{when\+Empty}} (\$response)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_ae8865eeaff9a08edc06fe3ad65338820}{dont\+Fail\+When\+Empty}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_abc95ee089cc359b5c068d69b468fcc6c}{is\+Empty}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_a6c66283add6c6dd05b053edfc503b5bc}{\+\_\+\+\_\+invoke}} (\$request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_aac0a23fa2810d670558963058bf045bb}\label{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_aac0a23fa2810d670558963058bf045bb} 
+{\bfseries \$responses}
+\item 
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_ac30e9d72e79ccda40268b8ff9dc654ff}\label{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_ac30e9d72e79ccda40268b8ff9dc654ff} 
+{\bfseries \$fail\+When\+Empty} = true
+\item 
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_ac6aeaa343cd1fde725acc6a576e8792c}\label{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_ac6aeaa343cd1fde725acc6a576e8792c} 
+{\bfseries \$empty\+Response}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_a74f4c15981ac82c926c1efee5ee73299}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_a74f4c15981ac82c926c1efee5ee73299} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Response\+Sequence\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$responses}{}\end{DoxyParamCaption})}
+
+Create a new response sequence.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$responses} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_a6c66283add6c6dd05b053edfc503b5bc}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}!\_\_invoke@{\_\_invoke}}
+\index{\_\_invoke@{\_\_invoke}!Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}}
+\doxysubsubsection{\texorpdfstring{\_\_invoke()}{\_\_invoke()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_a6c66283add6c6dd05b053edfc503b5bc} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Response\+Sequence\+::\+\_\+\+\_\+invoke (\begin{DoxyParamCaption}\item[{}]{\$request}{}\end{DoxyParamCaption})}
+
+Get the next response in the sequence.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Out\+Of\+Bounds\+Exception \Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_ae8865eeaff9a08edc06fe3ad65338820}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}!dontFailWhenEmpty@{dontFailWhenEmpty}}
+\index{dontFailWhenEmpty@{dontFailWhenEmpty}!Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}}
+\doxysubsubsection{\texorpdfstring{dontFailWhenEmpty()}{dontFailWhenEmpty()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_ae8865eeaff9a08edc06fe3ad65338820} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Response\+Sequence\+::dont\+Fail\+When\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Make the sequence return a default response when it is empty.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_abc95ee089cc359b5c068d69b468fcc6c}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_abc95ee089cc359b5c068d69b468fcc6c} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Response\+Sequence\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Indicate that this sequence has depleted all of its responses.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_a1cc52855bb8c0e982cf7459e44a16a0e}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}!push@{push}}
+\index{push@{push}!Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_a1cc52855bb8c0e982cf7459e44a16a0e} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Response\+Sequence\+::push (\begin{DoxyParamCaption}\item[{}]{\$body}{ = {\ttfamily null}, }\item[{int}]{\$status}{ = {\ttfamily 200}, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Push a response to the sequence.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array | null & {\em \$body} & \\
+\hline
+int & {\em \$status} & \\
+\hline
+array & {\em \$headers} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_afaf63316f739a4cf24b57897e925de75}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}!pushFailedConnection@{pushFailedConnection}}
+\index{pushFailedConnection@{pushFailedConnection}!Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}}
+\doxysubsubsection{\texorpdfstring{pushFailedConnection()}{pushFailedConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_afaf63316f739a4cf24b57897e925de75} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Response\+Sequence\+::push\+Failed\+Connection (\begin{DoxyParamCaption}\item[{}]{\$message}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Push a connection exception to the sequence.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_ade1f301720195293a65722a44bbd3f4f}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}!pushFile@{pushFile}}
+\index{pushFile@{pushFile}!Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}}
+\doxysubsubsection{\texorpdfstring{pushFile()}{pushFile()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_ade1f301720195293a65722a44bbd3f4f} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Response\+Sequence\+::push\+File (\begin{DoxyParamCaption}\item[{string}]{\$file\+Path}{, }\item[{int}]{\$status}{ = {\ttfamily 200}, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Push a response with the contents of a file as the body to the sequence.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file\+Path} & \\
+\hline
+int & {\em \$status} & \\
+\hline
+array & {\em \$headers} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_a93034cf780c99407e52a361bc5a0048f}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}!pushResponse@{pushResponse}}
+\index{pushResponse@{pushResponse}!Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}}
+\doxysubsubsection{\texorpdfstring{pushResponse()}{pushResponse()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_a93034cf780c99407e52a361bc5a0048f} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Response\+Sequence\+::push\+Response (\begin{DoxyParamCaption}\item[{}]{\$response}{}\end{DoxyParamCaption})}
+
+Push a response to the sequence.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$response} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_ac767206a09d8d014544016547e033d54}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}!pushStatus@{pushStatus}}
+\index{pushStatus@{pushStatus}!Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}}
+\doxysubsubsection{\texorpdfstring{pushStatus()}{pushStatus()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_ac767206a09d8d014544016547e033d54} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Response\+Sequence\+::push\+Status (\begin{DoxyParamCaption}\item[{int}]{\$status}{, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Push a response with the given status code to the sequence.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$status} & \\
+\hline
+array & {\em \$headers} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_a17d5a13b08235bb9495afb7a144332e5}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}!whenEmpty@{whenEmpty}}
+\index{whenEmpty@{whenEmpty}!Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}ResponseSequence}}
+\doxysubsubsection{\texorpdfstring{whenEmpty()}{whenEmpty()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_response_sequence_a17d5a13b08235bb9495afb7a144332e5} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Response\+Sequence\+::when\+Empty (\begin{DoxyParamCaption}\item[{}]{\$response}{}\end{DoxyParamCaption})}
+
+Make the sequence return a default response when it is empty.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Guzzle\+Http\textbackslash{}\+Promise\textbackslash{}\+Promise\+Interface | \textbackslash{}\+Closure & {\em \$response} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Http/\+Client/Response\+Sequence.\+php\end{DoxyCompactItemize}

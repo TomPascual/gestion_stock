@@ -1,0 +1,62 @@
+\doxysection{C\+:/\+Users/tomys/gestion\+\_\+stock/vendor/fakerphp/faker/src/\+Faker/\+Unique\+Generator.\+php}
+\hypertarget{_c_1_2_users_2tomys_2gestion_stock_2vendor_2fakerphp_2faker_2src_2_faker_2_unique_generator_8php-example}{}\label{_c_1_2_users_2tomys_2gestion_stock_2vendor_2fakerphp_2faker_2src_2_faker_2_unique_generator_8php-example}Maps from method names to a map with serialized result keys.
+
+\textquotesingle{}phone\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\textquotesingle{}0123\textquotesingle{} =\texorpdfstring{$>$}{>} null\mbox{]}, \textquotesingle{}city\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\textquotesingle{}London\textquotesingle{} =\texorpdfstring{$>$}{>} null, \textquotesingle{}Tokyo\textquotesingle{} =\texorpdfstring{$>$}{>} null\mbox{]}, \mbox{]}
+
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{namespace\ }Faker;}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ \mbox{\hyperlink{interface_faker_1_1_extension_1_1_extension}{Faker\(\backslash\)Extension\(\backslash\)Extension}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class\ }UniqueGenerator}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \$generator;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \$maxRetries;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \$uniques\ =\ [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \_\_construct(\$generator,\ \$maxRetries\ =\ 10000,\ \&\$uniques\ =\ [])}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>generator\ =\ \$generator;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>maxRetries\ =\ \$maxRetries;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>uniques\ =\ \&\$uniques;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ ext(\textcolor{keywordtype}{string}\ \$id)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \textcolor{keyword}{self}(\$this-\/>generator-\/>ext(\$id),\ \$this-\/>maxRetries,\ \$this-\/>uniques);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \_\_get(\$attribute)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ trigger\_deprecation(\textcolor{stringliteral}{'fakerphp/faker'},\ \textcolor{stringliteral}{'1.14'},\ \textcolor{stringliteral}{'Accessing\ property\ "{}\%s"{}\ is\ deprecated,\ use\ "{}\%s()"{}\ instead.'},\ \$attribute,\ \$attribute);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\_\_call(\$attribute,\ []);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \_\_call(\$name,\ \$arguments)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!isset(\$this-\/>uniques[\$name]))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>uniques[\$name]\ =\ [];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$i\ =\ 0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{do}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$res\ =\ call\_user\_func\_array([\$this-\/>generator,\ \$name],\ \$arguments);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ++\$i;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$i\ >\ \$this-\/>maxRetries)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ new\ \(\backslash\)OverflowException(sprintf(\textcolor{stringliteral}{'Maximum\ retries\ of\ \%d\ reached\ without\ finding\ a\ unique\ value'},\ \$this-\/>maxRetries));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{while}\ (array\_key\_exists(\mbox{\hyperlink{namespace_carbon_1_1_traits_ae974e4b97793f2783171a2926e49cef5}{serialize}}(\$res),\ \$this-\/>uniques[\$name]));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>uniques[\$name][\mbox{\hyperlink{namespace_carbon_1_1_traits_ae974e4b97793f2783171a2926e49cef5}{serialize}}(\$res)]\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$res;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCodeInclude}
+ 

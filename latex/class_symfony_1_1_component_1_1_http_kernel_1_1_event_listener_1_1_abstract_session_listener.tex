@@ -1,0 +1,132 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Event\+Listener\textbackslash{}Abstract\+Session\+Listener Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Event\+Listener\textbackslash{}Abstract\+Session\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a9a69eb025aaaaaa5f0c4a4687899c8cf}{\+\_\+\+\_\+construct}} (private ?\mbox{\hyperlink{interface_psr_1_1_container_1_1_container_interface}{Container\+Interface}} \$container=null, private bool \$debug=false, private array \$session\+Options=\mbox{[}$\,$\mbox{]},)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_ae89d07d9e09ba3780a47d941f634271c}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_ae89d07d9e09ba3780a47d941f634271c} 
+{\bfseries on\+Kernel\+Request} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_request_event}{Request\+Event}} \$event)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a00929bd76aceef3a04b3b699fecd1852}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a00929bd76aceef3a04b3b699fecd1852} 
+{\bfseries on\+Kernel\+Response} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_response_event}{Response\+Event}} \$event)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a15253d206c4abc99f05e0e47794ef7aa}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a15253d206c4abc99f05e0e47794ef7aa} 
+{\bfseries on\+Session\+Usage} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a07a097208cb85a76bcfd55a87420cbad}{reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a70fd538bf3540a2b6ac460f769a463f0}{get\+Subscribed\+Events}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a095d23ef2ed4a102032e8fc3d6eba701}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a095d23ef2ed4a102032e8fc3d6eba701} 
+const {\bfseries NO\+\_\+\+AUTO\+\_\+\+CACHE\+\_\+\+CONTROL\+\_\+\+HEADER} = \textquotesingle{}Symfony-\/\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_session}{Session}}-\/No\+Auto\+Cache\+Control\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_ad60e118543ca5c97415d1aa89f76b898}{get\+Session}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sets the session onto the request on the "{}kernel.\+request"{} event and saves it on the "{}kernel.\+response"{} event.
+
+In addition, if the session has been started it overrides the Cache-\/\+Control header in such a way that all caching is disabled in that case. If you have a scenario where caching responses with session information in them makes sense, you can disable this behaviour by setting the header Abstract\+Session\+Listener\+::\+NO\+\_\+\+AUTO\+\_\+\+CACHE\+\_\+\+CONTROL\+\_\+\+HEADER on the response.
+
+\begin{DoxyAuthor}{Author}
+Johannes M. Schmitt \href{mailto:schmittjoh@gmail.com}{\texttt{ schmittjoh@gmail.\+com}} 
+
+Tobias Schultze \href{http://tobion.de}{\texttt{ http\+://tobion.\+de}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a9a69eb025aaaaaa5f0c4a4687899c8cf}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a9a69eb025aaaaaa5f0c4a4687899c8cf} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Abstract\+Session\+Listener\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private ?\mbox{\hyperlink{interface_psr_1_1_container_1_1_container_interface}{Container\+Interface}}}]{\$container}{ = {\ttfamily null}, }\item[{private bool}]{\$debug}{ = {\ttfamily false}, }\item[{private array}]{\$session\+Options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$session\+Options \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_ad60e118543ca5c97415d1aa89f76b898}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener}!getSession@{getSession}}
+\index{getSession@{getSession}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener}}
+\doxysubsubsection{\texorpdfstring{getSession()}{getSession()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_ad60e118543ca5c97415d1aa89f76b898} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Abstract\+Session\+Listener\+::get\+Session (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Gets the session object. 
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_session_listener_a574562577af4959208c863b2dd686496}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Session\+Listener}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a70fd538bf3540a2b6ac460f769a463f0}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener}!getSubscribedEvents@{getSubscribedEvents}}
+\index{getSubscribedEvents@{getSubscribedEvents}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener}}
+\doxysubsubsection{\texorpdfstring{getSubscribedEvents()}{getSubscribedEvents()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a70fd538bf3540a2b6ac460f769a463f0} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Abstract\+Session\+Listener\+::get\+Subscribed\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an array of event names this subscriber wants to listen to.
+
+The array keys are event names and the value can be\+:
+
+
+\begin{DoxyItemize}
+\item The method name to call (priority defaults to 0)
+\item An array composed of the method name to call and the priority
+\item An array of arrays composed of the method names to call and respective priorities, or 0 if unset
+\end{DoxyItemize}
+
+For instance\+:
+
+
+\begin{DoxyItemize}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}method\+Name\textquotesingle{}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\textquotesingle{}method\+Name\textquotesingle{}, \$priority\mbox{]}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\mbox{[}\textquotesingle{}method\+Name1\textquotesingle{}, \$priority\mbox{]}, \mbox{[}\textquotesingle{}method\+Name2\textquotesingle{}\mbox{]}\mbox{]}\mbox{]}
+\end{DoxyItemize}
+
+The code must not depend on runtime state as it will only be called at compile time. All logic depending on runtime state must be put into the individual methods handling the events.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, string\texorpdfstring{$\vert$}{|}array\{0\+: string, 1\+: int\}\texorpdfstring{$\vert$}{|}list\texorpdfstring{$<$}{<}array\{0\+: string, 1?\+: int\}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface_a1f40b93f2c531f690bb4cd5bc5764c73}{Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event\+Subscriber\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a07a097208cb85a76bcfd55a87420cbad}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener}!reset@{reset}}
+\index{reset@{reset}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}AbstractSessionListener}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a07a097208cb85a76bcfd55a87420cbad} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Abstract\+Session\+Listener\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_service_1_1_reset_interface_a9f973c7897c549bbd6547aa4487e6872}{Symfony\textbackslash{}\+Contracts\textbackslash{}\+Service\textbackslash{}\+Reset\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/kernel/\+Event\+Listener/Abstract\+Session\+Listener.\+php\end{DoxyCompactItemize}

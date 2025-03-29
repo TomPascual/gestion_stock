@@ -1,0 +1,268 @@
+\doxysection{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator Interface Reference}
+\hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator}{}\label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+Inheritance diagram for Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.288344cm]{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a4e645de82e82a12cc99516fe25871a9b}{url}} (\$page)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_ab16cc560ede8a7a0aeac34271cf7d575}{appends}} (\$key, \$value=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a3903d7c66167bc0fd78bc7828a9c1062}{fragment}} (\$fragment=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a51622050e36583221f37655b3cf31c56}{next\+Page\+Url}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_ac6f068d5fe2a5210549f1f870e38036a}{previous\+Page\+Url}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a180687656647520cb33e34913b61e4d9}{items}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a08f0195046ceb165b65bbdec99ff1545}{first\+Item}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_ac9d5ca9b982fd6b6ecc35037cb99c597}{last\+Item}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_abe11e1e5319ce939e999f878208155e9}{per\+Page}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a40d97bd1f5268708ad69c6559f29f47c}{current\+Page}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_acd331b65823fc79ad8183833e6913af1}{has\+Pages}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a223b460acc3cd460853496abbff07c01}{has\+More\+Pages}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a06061a022f1104aed048385d3f972a14}{path}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a4266a6e39952a86783508f4321b6d2a1}{is\+Empty}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a05ac3c2553f425aef04027b2f67e26dd}{is\+Not\+Empty}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a17eebb807959a82e8cc40e0a10de24d4}{render}} (\$view=null, \$data=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@template TKey of array-\/key
+
+@template-\/covariant TValue 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_ab16cc560ede8a7a0aeac34271cf7d575}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}!appends@{appends}}
+\index{appends@{appends}!Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+\doxysubsubsection{\texorpdfstring{appends()}{appends()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_ab16cc560ede8a7a0aeac34271cf7d575} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator\+::appends (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add a set of query string values to the paginator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | null & {\em \$key} & \\
+\hline
+string | null & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a40d97bd1f5268708ad69c6559f29f47c}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}!currentPage@{currentPage}}
+\index{currentPage@{currentPage}!Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+\doxysubsubsection{\texorpdfstring{currentPage()}{currentPage()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a40d97bd1f5268708ad69c6559f29f47c} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator\+::current\+Page (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine the current page being paginated.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a08f0195046ceb165b65bbdec99ff1545}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}!firstItem@{firstItem}}
+\index{firstItem@{firstItem}!Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+\doxysubsubsection{\texorpdfstring{firstItem()}{firstItem()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a08f0195046ceb165b65bbdec99ff1545} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator\+::first\+Item (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the "{}index"{} of the first item being paginated.
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a3903d7c66167bc0fd78bc7828a9c1062}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}!fragment@{fragment}}
+\index{fragment@{fragment}!Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+\doxysubsubsection{\texorpdfstring{fragment()}{fragment()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a3903d7c66167bc0fd78bc7828a9c1062} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator\+::fragment (\begin{DoxyParamCaption}\item[{}]{\$fragment}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get / set the URL fragment to be appended to URLs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$fragment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a223b460acc3cd460853496abbff07c01}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}!hasMorePages@{hasMorePages}}
+\index{hasMorePages@{hasMorePages}!Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+\doxysubsubsection{\texorpdfstring{hasMorePages()}{hasMorePages()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a223b460acc3cd460853496abbff07c01} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator\+::has\+More\+Pages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if there are more items in the data store.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_pagination_1_1_length_aware_paginator_a7fa7565188985bb3d3a40a66bec1eeb2}{Illuminate\textbackslash{}\+Pagination\textbackslash{}\+Length\+Aware\+Paginator}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_acd331b65823fc79ad8183833e6913af1}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}!hasPages@{hasPages}}
+\index{hasPages@{hasPages}!Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+\doxysubsubsection{\texorpdfstring{hasPages()}{hasPages()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_acd331b65823fc79ad8183833e6913af1} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator\+::has\+Pages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if there are enough items to split into multiple pages.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a4266a6e39952a86783508f4321b6d2a1}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a4266a6e39952a86783508f4321b6d2a1} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the list of items is empty or not.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a05ac3c2553f425aef04027b2f67e26dd}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}!isNotEmpty@{isNotEmpty}}
+\index{isNotEmpty@{isNotEmpty}!Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+\doxysubsubsection{\texorpdfstring{isNotEmpty()}{isNotEmpty()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a05ac3c2553f425aef04027b2f67e26dd} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator\+::is\+Not\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the list of items is not empty.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a180687656647520cb33e34913b61e4d9}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}!items@{items}}
+\index{items@{items}!Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+\doxysubsubsection{\texorpdfstring{items()}{items()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a180687656647520cb33e34913b61e4d9} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator\+::items (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all of the items being paginated.
+
+\begin{DoxyReturn}{Returns}
+array$<$\+TKey, TValue$>$ 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_ac9d5ca9b982fd6b6ecc35037cb99c597}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}!lastItem@{lastItem}}
+\index{lastItem@{lastItem}!Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+\doxysubsubsection{\texorpdfstring{lastItem()}{lastItem()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_ac9d5ca9b982fd6b6ecc35037cb99c597} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator\+::last\+Item (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the "{}index"{} of the last item being paginated.
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a51622050e36583221f37655b3cf31c56}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}!nextPageUrl@{nextPageUrl}}
+\index{nextPageUrl@{nextPageUrl}!Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+\doxysubsubsection{\texorpdfstring{nextPageUrl()}{nextPageUrl()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a51622050e36583221f37655b3cf31c56} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator\+::next\+Page\+Url (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+The URL for the next page, or null.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_pagination_1_1_length_aware_paginator_a3808bf344e38c85b5cdbc9d86308a92a}{Illuminate\textbackslash{}\+Pagination\textbackslash{}\+Length\+Aware\+Paginator}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a06061a022f1104aed048385d3f972a14}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}!path@{path}}
+\index{path@{path}!Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a06061a022f1104aed048385d3f972a14} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator\+::path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the base path for paginator generated URLs.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_abe11e1e5319ce939e999f878208155e9}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}!perPage@{perPage}}
+\index{perPage@{perPage}!Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+\doxysubsubsection{\texorpdfstring{perPage()}{perPage()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_abe11e1e5319ce939e999f878208155e9} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator\+::per\+Page (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine how many items are being shown per page.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_ac6f068d5fe2a5210549f1f870e38036a}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}!previousPageUrl@{previousPageUrl}}
+\index{previousPageUrl@{previousPageUrl}!Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+\doxysubsubsection{\texorpdfstring{previousPageUrl()}{previousPageUrl()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_ac6f068d5fe2a5210549f1f870e38036a} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator\+::previous\+Page\+Url (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the URL for the previous page, or null.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a17eebb807959a82e8cc40e0a10de24d4}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}!render@{render}}
+\index{render@{render}!Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a17eebb807959a82e8cc40e0a10de24d4} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator\+::render (\begin{DoxyParamCaption}\item[{}]{\$view}{ = {\ttfamily null}, }\item[{}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Render the paginator using a given view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$view} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_pagination_1_1_length_aware_paginator_a599b15446556892fd0eb88a42e160e4b}{Illuminate\textbackslash{}\+Pagination\textbackslash{}\+Length\+Aware\+Paginator}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a4e645de82e82a12cc99516fe25871a9b}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}!url@{url}}
+\index{url@{url}!Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator@{Illuminate\textbackslash{}Contracts\textbackslash{}Pagination\textbackslash{}Paginator}}
+\doxysubsubsection{\texorpdfstring{url()}{url()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_pagination_1_1_paginator_a4e645de82e82a12cc99516fe25871a9b} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator\+::url (\begin{DoxyParamCaption}\item[{}]{\$page}{}\end{DoxyParamCaption})}
+
+Get the URL for a given page.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$page} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Contracts/\+Pagination/Paginator.\+php\end{DoxyCompactItemize}

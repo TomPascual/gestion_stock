@@ -1,0 +1,870 @@
+\doxysection{Illuminate\textbackslash{}Queue\textbackslash{}Worker Class Reference}
+\hypertarget{class_illuminate_1_1_queue_1_1_worker}{}\label{class_illuminate_1_1_queue_1_1_worker}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a15997c83b2d795357cf4a5d3cd002f9a}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_manager}{Queue\+Manager}} \$manager, \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher}{Dispatcher}} \$events, \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_debug_1_1_exception_handler}{Exception\+Handler}} \$exceptions, callable \$is\+Down\+For\+Maintenance, ?callable \$reset\+Scope=null,)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_afe7bad2c866fb3cabe4524cdac9dbc8c}{daemon}} (\$connection\+Name, \$queue, \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}} \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a2e0dc6a0feb8518583ade04c7eeb26fd}{run\+Next\+Job}} (\$connection\+Name, \$queue, \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}} \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a43ae7f8c94aebd9baf5b3442a872bd1a}{process}} (\$connection\+Name, \$job, \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}} \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a7d78def3352a6258f9e4193540cf3f41}{memory\+Exceeded}} (\$memory\+Limit)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_adcbaff80663af6e7a922470e6b22d89a}{stop}} (\$status=0, \$options=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a360d65cdc953a8a95cadd5eca6edd7f2}{kill}} (\$status=0, \$options=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_ac279c754497c02a0bdec9724c7a333dd}{sleep}} (\$seconds)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a3f820401a7c4f0a5d6073a0db972bfb2}{set\+Cache}} (Cache\+Contract \$cache)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a219f9135e56c38388fd3105ac16a5b9f}{set\+Name}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a5704d53d7a6f9c6aa78f9d2f8ba57cd2}{get\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a932a1c77f80699525edf8bee7cf65d37}{set\+Manager}} (\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_manager}{Queue\+Manager}} \$manager)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a7b288f968fbf608ae4a22be5eb44e22c}{pop\+Using}} (\$worker\+Name, \$callback)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a348c44210b3e494747151f6694013278}\label{class_illuminate_1_1_queue_1_1_worker_a348c44210b3e494747151f6694013278} 
+const {\bfseries EXIT\+\_\+\+SUCCESS} = 0
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a33a773a495405a3c55b742c753d8eb8a}\label{class_illuminate_1_1_queue_1_1_worker_a33a773a495405a3c55b742c753d8eb8a} 
+const {\bfseries EXIT\+\_\+\+ERROR} = 1
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a7c09bb4b01e82563a9a519d751031858}\label{class_illuminate_1_1_queue_1_1_worker_a7c09bb4b01e82563a9a519d751031858} 
+const {\bfseries EXIT\+\_\+\+MEMORY\+\_\+\+LIMIT} = 12
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a60cea2be43a41ec5a03addbaec764048}\label{class_illuminate_1_1_queue_1_1_worker_a60cea2be43a41ec5a03addbaec764048} 
+{\bfseries \$should\+Quit} = false
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a865bf35dd736904361db370176317d0e}\label{class_illuminate_1_1_queue_1_1_worker_a865bf35dd736904361db370176317d0e} 
+{\bfseries \$paused} = false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_ab63df0eef1c89b1130224188e4ab6f38}{register\+Timeout\+Handler}} (\$job, \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}} \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_aeb087d633a0a7c8e1690bf86b599c2ec}{reset\+Timeout\+Handler}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_ad4b4b4fc282e036166373abfc91773e7}{timeout\+For\+Job}} (\$job, \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}} \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a3cff2fca1824d04bbacb0258e362260e}{daemon\+Should\+Run}} (\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}} \$options, \$connection\+Name, \$queue)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a61a897225307fa6c2a139fd5cf5c3406}{pause\+Worker}} (\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}} \$options, \$last\+Restart)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a217aa2ba7c02692e809f4efd3bfd2139}{stop\+If\+Necessary}} (\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}} \$options, \$last\+Restart, \$start\+Time=0, \$jobs\+Processed=0, \$job=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a0aeeaf15f5f3e1f09275287e110b8013}{get\+Next\+Job}} (\$connection, \$queue)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a757904bbdd30ab8cec5a57e39c8d15b3}{run\+Job}} (\$job, \$connection\+Name, \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}} \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_ac94e2db152d9d65413f2e8ff7326e67d}{stop\+Worker\+If\+Lost\+Connection}} (\$e)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_ad119e34d8b0a5b93ce75801a4c41bbf6}{handle\+Job\+Exception}} (\$connection\+Name, \$job, \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}} \$options, Throwable \$e)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_ab259adf2781c095bd7a3be4b1304ba11}{mark\+Job\+As\+Failed\+If\+Already\+Exceeds\+Max\+Attempts}} (\$connection\+Name, \$job, \$max\+Tries)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_abeb2feedc0131e4fb0757f28fd062735}{mark\+Job\+As\+Failed\+If\+Will\+Exceed\+Max\+Attempts}} (\$connection\+Name, \$job, \$max\+Tries, Throwable \$e)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a164a183abc687b39e9c474792f9e02a9}{mark\+Job\+As\+Failed\+If\+Will\+Exceed\+Max\+Exceptions}} (\$connection\+Name, \$job, Throwable \$e)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a74dd0d1b60590ce2e400acfe801e1450}{mark\+Job\+As\+Failed\+If\+It\+Should\+Fail\+On\+Timeout}} (\$connection\+Name, \$job, Throwable \$e)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a8bfc54a54bebfde203f423a5be1b4ee2}{fail\+Job}} (\$job, Throwable \$e)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a8672fd2b5c20296395fe4e5d52d02962}{calculate\+Backoff}} (\$job, \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}} \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_ab71d1cbf513f591ad3bdb7cabb81b5fc}{raise\+Before\+Job\+Pop\+Event}} (\$connection\+Name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_ac31c293bfe704c98526188fd24cbda20}{raise\+After\+Job\+Pop\+Event}} (\$connection\+Name, \$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a02b9ddf6f91fa3d682f06cddd9f54cb1}{raise\+Before\+Job\+Event}} (\$connection\+Name, \$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a5087c8686baae4ad3aa37d3c2c805110}{raise\+After\+Job\+Event}} (\$connection\+Name, \$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a3aec5d70a5015bbef0ab86724f16609d}{raise\+Exception\+Occurred\+Job\+Event}} (\$connection\+Name, \$job, Throwable \$e)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a96b9d7c3285caa7c7f9794b9def1b303}{queue\+Should\+Restart}} (\$last\+Restart)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_ac53e6c05d4298f77aa9ae299f9240d66}{get\+Timestamp\+Of\+Last\+Queue\+Restart}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_af73a18293675328f66ae2cb0e472014a}{listen\+For\+Signals}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a3799d7455399b76755d533dee66e2a31}{supports\+Async\+Signals}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a6ef72da445f38cb87091d145622f9c70}{max\+Attempts\+Exceeded\+Exception}} (\$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_a1c4d4f266949cc36c3336818ee6fdbbc}{timeout\+Exceeded\+Exception}} (\$job)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a48866ae71b672999811e653b13d3e912}\label{class_illuminate_1_1_queue_1_1_worker_a48866ae71b672999811e653b13d3e912} 
+{\bfseries \$name}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_ab9538e73c39ddab40be2cba789f27808}\label{class_illuminate_1_1_queue_1_1_worker_ab9538e73c39ddab40be2cba789f27808} 
+{\bfseries \$manager}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a142d93c03f00e7492e73cd56f532ecb1}\label{class_illuminate_1_1_queue_1_1_worker_a142d93c03f00e7492e73cd56f532ecb1} 
+{\bfseries \$events}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a340f992ae61701a901461c7999a44385}\label{class_illuminate_1_1_queue_1_1_worker_a340f992ae61701a901461c7999a44385} 
+{\bfseries \$cache}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a687af99c2705835b997411989f0ba71b}\label{class_illuminate_1_1_queue_1_1_worker_a687af99c2705835b997411989f0ba71b} 
+{\bfseries \$exceptions}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a01edcca94ea850ebf938c66631be2d0d}\label{class_illuminate_1_1_queue_1_1_worker_a01edcca94ea850ebf938c66631be2d0d} 
+{\bfseries \$is\+Down\+For\+Maintenance}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_aa91242d0f5a7ef933c6b5a2d6c1f94fc}\label{class_illuminate_1_1_queue_1_1_worker_aa91242d0f5a7ef933c6b5a2d6c1f94fc} 
+{\bfseries \$reset\+Scope}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_aceae3467dd95e4b23257a8073da95594}\label{class_illuminate_1_1_queue_1_1_worker_aceae3467dd95e4b23257a8073da95594} 
+static {\bfseries \$pop\+Callbacks} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a15997c83b2d795357cf4a5d3cd002f9a}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a15997c83b2d795357cf4a5d3cd002f9a} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_manager}{Queue\+Manager}}}]{\$manager}{, }\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher}{Dispatcher}}}]{\$events}{, }\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_debug_1_1_exception_handler}{Exception\+Handler}}}]{\$exceptions}{, }\item[{callable}]{\$is\+Down\+For\+Maintenance}{, }\item[{?callable}]{\$reset\+Scope}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new queue worker.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Factory & {\em \$manager} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Events\textbackslash{}\+Dispatcher & {\em \$events} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Debug\textbackslash{}\+Exception\+Handler & {\em \$exceptions} & \\
+\hline
+callable & {\em \$is\+Down\+For\+Maintenance} & \\
+\hline
+callable | null & {\em \$reset\+Scope} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a8672fd2b5c20296395fe4e5d52d02962}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!calculateBackoff@{calculateBackoff}}
+\index{calculateBackoff@{calculateBackoff}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{calculateBackoff()}{calculateBackoff()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a8672fd2b5c20296395fe4e5d52d02962} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::calculate\+Backoff (\begin{DoxyParamCaption}\item[{}]{\$job}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}}}]{\$options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Calculate the backoff for the given job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+Options & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_afe7bad2c866fb3cabe4524cdac9dbc8c}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!daemon@{daemon}}
+\index{daemon@{daemon}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{daemon()}{daemon()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_afe7bad2c866fb3cabe4524cdac9dbc8c} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::daemon (\begin{DoxyParamCaption}\item[{}]{\$connection\+Name}{, }\item[{}]{\$queue}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}}}]{\$options}{}\end{DoxyParamCaption})}
+
+Listen to the given queue in a loop.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+Name} & \\
+\hline
+string & {\em \$queue} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+Options & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a3cff2fca1824d04bbacb0258e362260e}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!daemonShouldRun@{daemonShouldRun}}
+\index{daemonShouldRun@{daemonShouldRun}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{daemonShouldRun()}{daemonShouldRun()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a3cff2fca1824d04bbacb0258e362260e} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::daemon\+Should\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}}}]{\$options}{, }\item[{}]{\$connection\+Name}{, }\item[{}]{\$queue}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the daemon should process on this iteration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+Options & {\em \$options} & \\
+\hline
+string & {\em \$connection\+Name} & \\
+\hline
+string & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a8bfc54a54bebfde203f423a5be1b4ee2}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!failJob@{failJob}}
+\index{failJob@{failJob}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{failJob()}{failJob()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a8bfc54a54bebfde203f423a5be1b4ee2} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::fail\+Job (\begin{DoxyParamCaption}\item[{}]{\$job}{, }\item[{Throwable}]{\$e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Mark the given job as failed and raise the relevant event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+\textbackslash{}\+Throwable & {\em \$e} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a5704d53d7a6f9c6aa78f9d2f8ba57cd2}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!getManager@{getManager}}
+\index{getManager@{getManager}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{getManager()}{getManager()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a5704d53d7a6f9c6aa78f9d2f8ba57cd2} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::get\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the queue manager instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Factory 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a0aeeaf15f5f3e1f09275287e110b8013}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!getNextJob@{getNextJob}}
+\index{getNextJob@{getNextJob}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{getNextJob()}{getNextJob()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a0aeeaf15f5f3e1f09275287e110b8013} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::get\+Next\+Job (\begin{DoxyParamCaption}\item[{}]{\$connection}{, }\item[{}]{\$queue}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the next job from the queue connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Queue & {\em \$connection} & \\
+\hline
+string & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_ac53e6c05d4298f77aa9ae299f9240d66}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!getTimestampOfLastQueueRestart@{getTimestampOfLastQueueRestart}}
+\index{getTimestampOfLastQueueRestart@{getTimestampOfLastQueueRestart}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{getTimestampOfLastQueueRestart()}{getTimestampOfLastQueueRestart()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_ac53e6c05d4298f77aa9ae299f9240d66} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::get\+Timestamp\+Of\+Last\+Queue\+Restart (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the last queue restart timestamp, or null.
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_ad119e34d8b0a5b93ce75801a4c41bbf6}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!handleJobException@{handleJobException}}
+\index{handleJobException@{handleJobException}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{handleJobException()}{handleJobException()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_ad119e34d8b0a5b93ce75801a4c41bbf6} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::handle\+Job\+Exception (\begin{DoxyParamCaption}\item[{}]{\$connection\+Name}{, }\item[{}]{\$job}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}}}]{\$options}{, }\item[{Throwable}]{\$e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handle an exception that occurred while the job was running.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+Name} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+Options & {\em \$options} & \\
+\hline
+\textbackslash{}\+Throwable & {\em \$e} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Throwable \Hypertarget{class_illuminate_1_1_queue_1_1_worker_a360d65cdc953a8a95cadd5eca6edd7f2}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!kill@{kill}}
+\index{kill@{kill}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{kill()}{kill()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a360d65cdc953a8a95cadd5eca6edd7f2} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::kill (\begin{DoxyParamCaption}\item[{}]{\$status}{ = {\ttfamily 0}, }\item[{}]{\$options}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Kill the process.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$status} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+Options | null & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+never 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_af73a18293675328f66ae2cb0e472014a}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!listenForSignals@{listenForSignals}}
+\index{listenForSignals@{listenForSignals}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{listenForSignals()}{listenForSignals()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_af73a18293675328f66ae2cb0e472014a} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::listen\+For\+Signals (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Enable async signals for the process.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_ab259adf2781c095bd7a3be4b1304ba11}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!markJobAsFailedIfAlreadyExceedsMaxAttempts@{markJobAsFailedIfAlreadyExceedsMaxAttempts}}
+\index{markJobAsFailedIfAlreadyExceedsMaxAttempts@{markJobAsFailedIfAlreadyExceedsMaxAttempts}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{markJobAsFailedIfAlreadyExceedsMaxAttempts()}{markJobAsFailedIfAlreadyExceedsMaxAttempts()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_ab259adf2781c095bd7a3be4b1304ba11} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::mark\+Job\+As\+Failed\+If\+Already\+Exceeds\+Max\+Attempts (\begin{DoxyParamCaption}\item[{}]{\$connection\+Name}{, }\item[{}]{\$job}{, }\item[{}]{\$max\+Tries}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Mark the given job as failed if it has exceeded the maximum allowed attempts.
+
+This will likely be because the job previously exceeded a timeout.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+Name} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+int & {\em \$max\+Tries} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Throwable \Hypertarget{class_illuminate_1_1_queue_1_1_worker_a74dd0d1b60590ce2e400acfe801e1450}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!markJobAsFailedIfItShouldFailOnTimeout@{markJobAsFailedIfItShouldFailOnTimeout}}
+\index{markJobAsFailedIfItShouldFailOnTimeout@{markJobAsFailedIfItShouldFailOnTimeout}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{markJobAsFailedIfItShouldFailOnTimeout()}{markJobAsFailedIfItShouldFailOnTimeout()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a74dd0d1b60590ce2e400acfe801e1450} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::mark\+Job\+As\+Failed\+If\+It\+Should\+Fail\+On\+Timeout (\begin{DoxyParamCaption}\item[{}]{\$connection\+Name}{, }\item[{}]{\$job}{, }\item[{Throwable}]{\$e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Mark the given job as failed if it should fail on timeouts.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+Name} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+\textbackslash{}\+Throwable & {\em \$e} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_abeb2feedc0131e4fb0757f28fd062735}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!markJobAsFailedIfWillExceedMaxAttempts@{markJobAsFailedIfWillExceedMaxAttempts}}
+\index{markJobAsFailedIfWillExceedMaxAttempts@{markJobAsFailedIfWillExceedMaxAttempts}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{markJobAsFailedIfWillExceedMaxAttempts()}{markJobAsFailedIfWillExceedMaxAttempts()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_abeb2feedc0131e4fb0757f28fd062735} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::mark\+Job\+As\+Failed\+If\+Will\+Exceed\+Max\+Attempts (\begin{DoxyParamCaption}\item[{}]{\$connection\+Name}{, }\item[{}]{\$job}{, }\item[{}]{\$max\+Tries}{, }\item[{Throwable}]{\$e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Mark the given job as failed if it has exceeded the maximum allowed attempts.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+Name} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+int & {\em \$max\+Tries} & \\
+\hline
+\textbackslash{}\+Throwable & {\em \$e} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a164a183abc687b39e9c474792f9e02a9}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!markJobAsFailedIfWillExceedMaxExceptions@{markJobAsFailedIfWillExceedMaxExceptions}}
+\index{markJobAsFailedIfWillExceedMaxExceptions@{markJobAsFailedIfWillExceedMaxExceptions}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{markJobAsFailedIfWillExceedMaxExceptions()}{markJobAsFailedIfWillExceedMaxExceptions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a164a183abc687b39e9c474792f9e02a9} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::mark\+Job\+As\+Failed\+If\+Will\+Exceed\+Max\+Exceptions (\begin{DoxyParamCaption}\item[{}]{\$connection\+Name}{, }\item[{}]{\$job}{, }\item[{Throwable}]{\$e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Mark the given job as failed if it has exceeded the maximum allowed attempts.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+Name} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+\textbackslash{}\+Throwable & {\em \$e} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a6ef72da445f38cb87091d145622f9c70}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!maxAttemptsExceededException@{maxAttemptsExceededException}}
+\index{maxAttemptsExceededException@{maxAttemptsExceededException}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{maxAttemptsExceededException()}{maxAttemptsExceededException()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a6ef72da445f38cb87091d145622f9c70} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::max\+Attempts\+Exceeded\+Exception (\begin{DoxyParamCaption}\item[{}]{\$job}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create an instance of Max\+Attempts\+Exceeded\+Exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Max\+Attempts\+Exceeded\+Exception 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a7d78def3352a6258f9e4193540cf3f41}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!memoryExceeded@{memoryExceeded}}
+\index{memoryExceeded@{memoryExceeded}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{memoryExceeded()}{memoryExceeded()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a7d78def3352a6258f9e4193540cf3f41} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::memory\+Exceeded (\begin{DoxyParamCaption}\item[{}]{\$memory\+Limit}{}\end{DoxyParamCaption})}
+
+Determine if the memory limit has been exceeded.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$memory\+Limit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a61a897225307fa6c2a139fd5cf5c3406}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!pauseWorker@{pauseWorker}}
+\index{pauseWorker@{pauseWorker}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{pauseWorker()}{pauseWorker()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a61a897225307fa6c2a139fd5cf5c3406} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::pause\+Worker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}}}]{\$options}{, }\item[{}]{\$last\+Restart}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Pause the worker for the current loop.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+Options & {\em \$options} & \\
+\hline
+int & {\em \$last\+Restart} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a7b288f968fbf608ae4a22be5eb44e22c}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!popUsing@{popUsing}}
+\index{popUsing@{popUsing}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{popUsing()}{popUsing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a7b288f968fbf608ae4a22be5eb44e22c} 
+static Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::pop\+Using (\begin{DoxyParamCaption}\item[{}]{\$worker\+Name}{, }\item[{}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Register a callback to be executed to pick jobs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$worker\+Name} & \\
+\hline
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a43ae7f8c94aebd9baf5b3442a872bd1a}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!process@{process}}
+\index{process@{process}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a43ae7f8c94aebd9baf5b3442a872bd1a} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::process (\begin{DoxyParamCaption}\item[{}]{\$connection\+Name}{, }\item[{}]{\$job}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}}}]{\$options}{}\end{DoxyParamCaption})}
+
+Process the given job from the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+Name} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+Options & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Throwable \Hypertarget{class_illuminate_1_1_queue_1_1_worker_a96b9d7c3285caa7c7f9794b9def1b303}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!queueShouldRestart@{queueShouldRestart}}
+\index{queueShouldRestart@{queueShouldRestart}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{queueShouldRestart()}{queueShouldRestart()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a96b9d7c3285caa7c7f9794b9def1b303} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::queue\+Should\+Restart (\begin{DoxyParamCaption}\item[{}]{\$last\+Restart}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the queue worker should restart.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$last\+Restart} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a5087c8686baae4ad3aa37d3c2c805110}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!raiseAfterJobEvent@{raiseAfterJobEvent}}
+\index{raiseAfterJobEvent@{raiseAfterJobEvent}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{raiseAfterJobEvent()}{raiseAfterJobEvent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a5087c8686baae4ad3aa37d3c2c805110} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::raise\+After\+Job\+Event (\begin{DoxyParamCaption}\item[{}]{\$connection\+Name}{, }\item[{}]{\$job}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Raise the after queue job event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+Name} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_ac31c293bfe704c98526188fd24cbda20}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!raiseAfterJobPopEvent@{raiseAfterJobPopEvent}}
+\index{raiseAfterJobPopEvent@{raiseAfterJobPopEvent}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{raiseAfterJobPopEvent()}{raiseAfterJobPopEvent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_ac31c293bfe704c98526188fd24cbda20} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::raise\+After\+Job\+Pop\+Event (\begin{DoxyParamCaption}\item[{}]{\$connection\+Name}{, }\item[{}]{\$job}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Raise the after job has been popped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+Name} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job | null & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a02b9ddf6f91fa3d682f06cddd9f54cb1}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!raiseBeforeJobEvent@{raiseBeforeJobEvent}}
+\index{raiseBeforeJobEvent@{raiseBeforeJobEvent}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{raiseBeforeJobEvent()}{raiseBeforeJobEvent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a02b9ddf6f91fa3d682f06cddd9f54cb1} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::raise\+Before\+Job\+Event (\begin{DoxyParamCaption}\item[{}]{\$connection\+Name}{, }\item[{}]{\$job}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Raise the before queue job event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+Name} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_ab71d1cbf513f591ad3bdb7cabb81b5fc}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!raiseBeforeJobPopEvent@{raiseBeforeJobPopEvent}}
+\index{raiseBeforeJobPopEvent@{raiseBeforeJobPopEvent}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{raiseBeforeJobPopEvent()}{raiseBeforeJobPopEvent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_ab71d1cbf513f591ad3bdb7cabb81b5fc} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::raise\+Before\+Job\+Pop\+Event (\begin{DoxyParamCaption}\item[{}]{\$connection\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Raise the before job has been popped.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a3aec5d70a5015bbef0ab86724f16609d}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!raiseExceptionOccurredJobEvent@{raiseExceptionOccurredJobEvent}}
+\index{raiseExceptionOccurredJobEvent@{raiseExceptionOccurredJobEvent}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{raiseExceptionOccurredJobEvent()}{raiseExceptionOccurredJobEvent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a3aec5d70a5015bbef0ab86724f16609d} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::raise\+Exception\+Occurred\+Job\+Event (\begin{DoxyParamCaption}\item[{}]{\$connection\+Name}{, }\item[{}]{\$job}{, }\item[{Throwable}]{\$e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Raise the exception occurred queue job event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+Name} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+\textbackslash{}\+Throwable & {\em \$e} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_ab63df0eef1c89b1130224188e4ab6f38}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!registerTimeoutHandler@{registerTimeoutHandler}}
+\index{registerTimeoutHandler@{registerTimeoutHandler}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{registerTimeoutHandler()}{registerTimeoutHandler()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_ab63df0eef1c89b1130224188e4ab6f38} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::register\+Timeout\+Handler (\begin{DoxyParamCaption}\item[{}]{\$job}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}}}]{\$options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the worker timeout handler.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job | null & {\em \$job} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+Options & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_aeb087d633a0a7c8e1690bf86b599c2ec}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!resetTimeoutHandler@{resetTimeoutHandler}}
+\index{resetTimeoutHandler@{resetTimeoutHandler}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{resetTimeoutHandler()}{resetTimeoutHandler()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_aeb087d633a0a7c8e1690bf86b599c2ec} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::reset\+Timeout\+Handler (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reset the worker timeout handler.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a757904bbdd30ab8cec5a57e39c8d15b3}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!runJob@{runJob}}
+\index{runJob@{runJob}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{runJob()}{runJob()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a757904bbdd30ab8cec5a57e39c8d15b3} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::run\+Job (\begin{DoxyParamCaption}\item[{}]{\$job}{, }\item[{}]{\$connection\+Name}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}}}]{\$options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Process the given job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+string & {\em \$connection\+Name} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+Options & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a2e0dc6a0feb8518583ade04c7eeb26fd}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!runNextJob@{runNextJob}}
+\index{runNextJob@{runNextJob}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{runNextJob()}{runNextJob()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a2e0dc6a0feb8518583ade04c7eeb26fd} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::run\+Next\+Job (\begin{DoxyParamCaption}\item[{}]{\$connection\+Name}{, }\item[{}]{\$queue}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}}}]{\$options}{}\end{DoxyParamCaption})}
+
+Process the next job on the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection\+Name} & \\
+\hline
+string & {\em \$queue} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+Options & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a3f820401a7c4f0a5d6073a0db972bfb2}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!setCache@{setCache}}
+\index{setCache@{setCache}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{setCache()}{setCache()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a3f820401a7c4f0a5d6073a0db972bfb2} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::set\+Cache (\begin{DoxyParamCaption}\item[{Cache\+Contract}]{\$cache}{}\end{DoxyParamCaption})}
+
+Set the cache repository implementation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Repository & {\em \$cache} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a932a1c77f80699525edf8bee7cf65d37}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!setManager@{setManager}}
+\index{setManager@{setManager}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{setManager()}{setManager()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a932a1c77f80699525edf8bee7cf65d37} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::set\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_manager}{Queue\+Manager}}}]{\$manager}{}\end{DoxyParamCaption})}
+
+Set the queue manager instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Factory & {\em \$manager} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a219f9135e56c38388fd3105ac16a5b9f}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!setName@{setName}}
+\index{setName@{setName}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a219f9135e56c38388fd3105ac16a5b9f} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::set\+Name (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Set the name of the worker.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_ac279c754497c02a0bdec9724c7a333dd}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!sleep@{sleep}}
+\index{sleep@{sleep}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{sleep()}{sleep()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_ac279c754497c02a0bdec9724c7a333dd} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::sleep (\begin{DoxyParamCaption}\item[{}]{\$seconds}{}\end{DoxyParamCaption})}
+
+Sleep the script for a given number of seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | float & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_adcbaff80663af6e7a922470e6b22d89a}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!stop@{stop}}
+\index{stop@{stop}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_adcbaff80663af6e7a922470e6b22d89a} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::stop (\begin{DoxyParamCaption}\item[{}]{\$status}{ = {\ttfamily 0}, }\item[{}]{\$options}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Stop listening and bail out of the script.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$status} & \\
+\hline
+Worker\+Options | null & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a217aa2ba7c02692e809f4efd3bfd2139}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!stopIfNecessary@{stopIfNecessary}}
+\index{stopIfNecessary@{stopIfNecessary}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{stopIfNecessary()}{stopIfNecessary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a217aa2ba7c02692e809f4efd3bfd2139} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::stop\+If\+Necessary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}}}]{\$options}{, }\item[{}]{\$last\+Restart}{, }\item[{}]{\$start\+Time}{ = {\ttfamily 0}, }\item[{}]{\$jobs\+Processed}{ = {\ttfamily 0}, }\item[{}]{\$job}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine the exit code to stop the process if necessary.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+Options & {\em \$options} & \\
+\hline
+int & {\em \$last\+Restart} & \\
+\hline
+int & {\em \$start\+Time} & \\
+\hline
+int & {\em \$jobs\+Processed} & \\
+\hline
+mixed & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_ac94e2db152d9d65413f2e8ff7326e67d}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!stopWorkerIfLostConnection@{stopWorkerIfLostConnection}}
+\index{stopWorkerIfLostConnection@{stopWorkerIfLostConnection}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{stopWorkerIfLostConnection()}{stopWorkerIfLostConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_ac94e2db152d9d65413f2e8ff7326e67d} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::stop\+Worker\+If\+Lost\+Connection (\begin{DoxyParamCaption}\item[{}]{\$e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Stop the worker if we have lost connection to a database.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Throwable & {\em \$e} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a3799d7455399b76755d533dee66e2a31}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!supportsAsyncSignals@{supportsAsyncSignals}}
+\index{supportsAsyncSignals@{supportsAsyncSignals}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{supportsAsyncSignals()}{supportsAsyncSignals()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a3799d7455399b76755d533dee66e2a31} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::supports\+Async\+Signals (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if "{}async"{} signals are supported.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_a1c4d4f266949cc36c3336818ee6fdbbc}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!timeoutExceededException@{timeoutExceededException}}
+\index{timeoutExceededException@{timeoutExceededException}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{timeoutExceededException()}{timeoutExceededException()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_a1c4d4f266949cc36c3336818ee6fdbbc} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::timeout\+Exceeded\+Exception (\begin{DoxyParamCaption}\item[{}]{\$job}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create an instance of Timeout\+Exceeded\+Exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Timeout\+Exceeded\+Exception 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_worker_ad4b4b4fc282e036166373abfc91773e7}\index{Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}!timeoutForJob@{timeoutForJob}}
+\index{timeoutForJob@{timeoutForJob}!Illuminate\textbackslash{}Queue\textbackslash{}Worker@{Illuminate\textbackslash{}Queue\textbackslash{}Worker}}
+\doxysubsubsection{\texorpdfstring{timeoutForJob()}{timeoutForJob()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_worker_ad4b4b4fc282e036166373abfc91773e7} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+::timeout\+For\+Job (\begin{DoxyParamCaption}\item[{}]{\$job}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_worker_options}{Worker\+Options}}}]{\$options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the appropriate timeout for the given job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job | null & {\em \$job} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Worker\+Options & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Queue/Worker.\+php\end{DoxyCompactItemize}

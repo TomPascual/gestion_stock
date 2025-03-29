@@ -1,0 +1,38 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Rebootable\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_rebootable_interface}{}\label{interface_symfony_1_1_component_1_1_http_kernel_1_1_rebootable_interface}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}RebootableInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}RebootableInterface}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_rebootable_interface_a2c7c46faa769978bca73f67a37cb2d7d}{reboot}} (?string \$warmup\+Dir)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Allows the Kernel to be rebooted using a temporary cache directory.
+
+\begin{DoxyAuthor}{Author}
+Nicolas Grekas \href{mailto:p@tchwork.com}{\texttt{ p@tchwork.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_rebootable_interface_a2c7c46faa769978bca73f67a37cb2d7d}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}RebootableInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}RebootableInterface}!reboot@{reboot}}
+\index{reboot@{reboot}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}RebootableInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}RebootableInterface}}
+\doxysubsubsection{\texorpdfstring{reboot()}{reboot()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_rebootable_interface_a2c7c46faa769978bca73f67a37cb2d7d} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Rebootable\+Interface\+::reboot (\begin{DoxyParamCaption}\item[{?string}]{\$warmup\+Dir}{}\end{DoxyParamCaption})}
+
+Reboots a kernel.
+
+The get\+Build\+Dir() method of a rebootable kernel should not be called while building the container. Use the kernel.\+build\+\_\+dir\% parameter instead.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$warmup\+Dir} & pass null to reboot in the regular build directory \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/kernel/Rebootable\+Interface.\+php\end{DoxyCompactItemize}

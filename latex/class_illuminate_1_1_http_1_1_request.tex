@@ -1,0 +1,942 @@
+\doxysection{Illuminate\textbackslash{}Http\textbackslash{}Request Class Reference}
+\hypertarget{class_illuminate_1_1_http_1_1_request}{}\label{class_illuminate_1_1_http_1_1_request}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+Inheritance diagram for Illuminate\textbackslash{}Http\textbackslash{}Request\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.393162cm]{class_illuminate_1_1_http_1_1_request}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a44503210fcf92bb20abecaeeb816184d}{instance}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a7b5039dd5d21cc602157e0a20e65e4b7}{method}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a5645837fbf3589ffff13d96ef43a147d}{uri}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a3d69b6afff7187c4e243f2974b641755}{root}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a7d6c8be4987b42f97ba3e6014219a05e}{url}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a3907931e28ca321e6fcb3e4c0f31c264}{full\+Url}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_af73cb03029769015ca49c5325e87107a}{full\+Url\+With\+Query}} (array \$query)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a62c9eef8db9ea305e4fef8f0aee872c3}{full\+Url\+Without\+Query}} (\$keys)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a30c42c8b3f04e1ab3439c2f10ce4c690}{path}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a53c11f746e53c1573981aa5e030ea4cf}{decoded\+Path}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_ad38fe531902b5c0fb4172811f0831ce4}{segment}} (\$index, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a3be0c3de0b4dd3f0c5aba95798c11a69}{segments}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a01b7e0bd0a1f1624790d6077ffaf3db3}{is}} (... \$patterns)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a0ea0d6c73d0ee6ad3929a07ff19b2ab1}{route\+Is}} (... \$patterns)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_af3e57f1fe2050d551c6c97390201ac40}{full\+Url\+Is}} (... \$patterns)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a560cd6e3f0c9929617d389574780869a}{host}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_ae81d07b20caac24575bf1d0f42851ec6}{http\+Host}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_ae828c68097b36f8fc08c1050116a2013}{scheme\+And\+Http\+Host}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a2fc918e460ed8bf85bf2edb6eaa43966}{ajax}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_af2fd862e129a9d4a09c10f3018f33b81}{pjax}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a6a7c973ee740fd69b1d97c678914b63d}{prefetch}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_aa943d2579dbba44f83a3b50cad39ff04}{secure}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a352b2b2236a28c314d24ab9c89437db5}{ip}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_ae90960fd8f580e1340e1d18c4c37cca5}{ips}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a02118864668e22490025bda79aa1e060}{user\+Agent}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a3183da01fb364a88a44510960d0d0e5c}{merge}} (array \$input)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a206fe07bb30873072495de23485b7efc}{merge\+If\+Missing}} (array \$input)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a8c7a4c5e7eeca17df9eedca2b85e3771}{replace}} (array \$input)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a02fec710bcffcf0eea06cde8300be2aa}{get}} (string \$key, mixed \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a3a5548921f474b53def668f5c1647bad}{json}} (\$key=null, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_ad21bdc7925bc315c68eeabae85ec2648}{duplicate}} (?array \$query=null, ?array \$request=null, ?array \$attributes=null, ?array \$cookies=null, ?array \$files=null, ?array \$server=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_ac844973a718718d8314f2886db90f6fd}{has\+Session}} (bool \$skip\+If\+Uninitialized=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a0693cd105b827addc717f764e0313212}{get\+Session}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a799a6e8f23475c48272c3aa47de62183}{session}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_aa6bffc4832e0b9b5fe780e96f343c4d5}{set\+Laravel\+Session}} (\$\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a799a6e8f23475c48272c3aa47de62183}{session}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a5fd5adc163228de6cac8ce6977ecdb00}{set\+Request\+Locale}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a4144218a1453d459a60e8229cb2acbb4}{set\+Default\+Request\+Locale}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_ac91c6041244d28ec4dca2a183ed456af}{user}} (\$guard=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_af7e50a7b3d114af44f5c56a7fd1e6f89}{route}} (\$param=null, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a4e679e60e9b9f0a9eac4faae5b0bd9e5}{fingerprint}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_afa69ab81ce0f6fbf5a8c214c28dd304a}{set\+Json}} (\$\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a3a5548921f474b53def668f5c1647bad}{json}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a3eb101a02b335b280216ce6c529a4cf8}{get\+User\+Resolver}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a98806a26b1f639cb0b754e818648ccf0}{set\+User\+Resolver}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a40ab8f07f9482f4b381f173bb7a83bd7}{get\+Route\+Resolver}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a6661f752f7cedd35fd5883121a9a824c}{set\+Route\+Resolver}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_ab50b64c598f4c91130e5a5ef33c2955c}{to\+Array}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a41157150fd9602237f5e6d533ae64413}{offset\+Exists}} (\$offset)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_aa042237e141b893005a9b444cf9a0d43}{offset\+Get}} (\$offset)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a99db728096afe17aec2c836d55094a3d}{offset\+Set}} (\$offset, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a90f78b19fc952ffa542bc99b884285b0}{offset\+Unset}} (\$offset)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a65e58c314410d284fc9f4ad372a73f71}{\+\_\+\+\_\+isset}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_abb27c11a2976336da89575c566dd36ef}{\+\_\+\+\_\+get}} (\$key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_aace59f92f4bb45323d07cf9a8a4a3e19}{capture}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_ac3c92d59be843609be2c8374050d5d57}{create\+From}} (self \$from, \$to=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a63f9d5a0967a3c508fb6da728cfe3d46}{create\+From\+Base}} (Symfony\+Request \$request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_ad546042daff0c290121ce6b822b758ec}{get\+Input\+Source}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request_a0930d41011097ce864df1c58e5c1940c}{filter\+Files}} (\$files)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a4c8ef2a5e67e1e44d783f5e609effef6}\label{class_illuminate_1_1_http_1_1_request_a4c8ef2a5e67e1e44d783f5e609effef6} 
+{\bfseries \$json}
+\item 
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a267a7f8f73c45aadc347be3e23ea651a}\label{class_illuminate_1_1_http_1_1_request_a267a7f8f73c45aadc347be3e23ea651a} 
+{\bfseries \$converted\+Files}
+\item 
+\Hypertarget{class_illuminate_1_1_http_1_1_request_af14df138f0e5d8feb6ff2f728378356a}\label{class_illuminate_1_1_http_1_1_request_af14df138f0e5d8feb6ff2f728378356a} 
+{\bfseries \$user\+Resolver}
+\item 
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a13c782a76c1f476ab52134ed72267298}\label{class_illuminate_1_1_http_1_1_request_a13c782a76c1f476ab52134ed72267298} 
+{\bfseries \$route\+Resolver}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@method array validate(array \$rules, ...\$params) @method array validate\+With\+Bag(string \$error\+Bag, array \$rules, ...\$params) @method bool has\+Valid\+Signature(bool \$absolute = true) 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_abb27c11a2976336da89575c566dd36ef}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!\_\_get@{\_\_get}}
+\index{\_\_get@{\_\_get}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{\_\_get()}{\_\_get()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_abb27c11a2976336da89575c566dd36ef} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::\+\_\+\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Get an input element from the request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a65e58c314410d284fc9f4ad372a73f71}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!\_\_isset@{\_\_isset}}
+\index{\_\_isset@{\_\_isset}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{\_\_isset()}{\_\_isset()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a65e58c314410d284fc9f4ad372a73f71} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::\+\_\+\+\_\+isset (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Check if an input element is set on the request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a2fc918e460ed8bf85bf2edb6eaa43966}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!ajax@{ajax}}
+\index{ajax@{ajax}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{ajax()}{ajax()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a2fc918e460ed8bf85bf2edb6eaa43966} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::ajax (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the request is the result of an AJAX call.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_aace59f92f4bb45323d07cf9a8a4a3e19}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!capture@{capture}}
+\index{capture@{capture}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{capture()}{capture()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_aace59f92f4bb45323d07cf9a8a4a3e19} 
+static Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::capture (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new Illuminate HTTP request from server variables.
+
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_ac3c92d59be843609be2c8374050d5d57}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!createFrom@{createFrom}}
+\index{createFrom@{createFrom}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{createFrom()}{createFrom()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_ac3c92d59be843609be2c8374050d5d57} 
+static Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::create\+From (\begin{DoxyParamCaption}\item[{self}]{\$from}{, }\item[{}]{\$to}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new request instance from the given Laravel request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$from} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request | null & {\em \$to} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a63f9d5a0967a3c508fb6da728cfe3d46}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!createFromBase@{createFromBase}}
+\index{createFromBase@{createFromBase}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{createFromBase()}{createFromBase()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a63f9d5a0967a3c508fb6da728cfe3d46} 
+static Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::create\+From\+Base (\begin{DoxyParamCaption}\item[{Symfony\+Request}]{\$request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create an Illuminate request from a Symfony instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a53c11f746e53c1573981aa5e030ea4cf}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!decodedPath@{decodedPath}}
+\index{decodedPath@{decodedPath}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{decodedPath()}{decodedPath()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a53c11f746e53c1573981aa5e030ea4cf} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::decoded\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the current decoded path info for the request.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_ad21bdc7925bc315c68eeabae85ec2648}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!duplicate@{duplicate}}
+\index{duplicate@{duplicate}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{duplicate()}{duplicate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_ad21bdc7925bc315c68eeabae85ec2648} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::duplicate (\begin{DoxyParamCaption}\item[{?array}]{\$query}{ = {\ttfamily null}, }\item[{?array}]{\$request}{ = {\ttfamily null}, }\item[{?array}]{\$attributes}{ = {\ttfamily null}, }\item[{?array}]{\$cookies}{ = {\ttfamily null}, }\item[{?array}]{\$files}{ = {\ttfamily null}, }\item[{?array}]{\$server}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\{\}
+
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a0930d41011097ce864df1c58e5c1940c}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!filterFiles@{filterFiles}}
+\index{filterFiles@{filterFiles}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{filterFiles()}{filterFiles()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a0930d41011097ce864df1c58e5c1940c} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::filter\+Files (\begin{DoxyParamCaption}\item[{}]{\$files}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Filter the given array of files, removing any empty values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$files} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a4e679e60e9b9f0a9eac4faae5b0bd9e5}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!fingerprint@{fingerprint}}
+\index{fingerprint@{fingerprint}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{fingerprint()}{fingerprint()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a4e679e60e9b9f0a9eac4faae5b0bd9e5} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::fingerprint (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get a unique fingerprint for the request / route / IP address.
+
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{class_illuminate_1_1_http_1_1_request_a3907931e28ca321e6fcb3e4c0f31c264}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!fullUrl@{fullUrl}}
+\index{fullUrl@{fullUrl}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{fullUrl()}{fullUrl()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a3907931e28ca321e6fcb3e4c0f31c264} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::full\+Url (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the full URL for the request.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_af3e57f1fe2050d551c6c97390201ac40}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!fullUrlIs@{fullUrlIs}}
+\index{fullUrlIs@{fullUrlIs}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{fullUrlIs()}{fullUrlIs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_af3e57f1fe2050d551c6c97390201ac40} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::full\+Url\+Is (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Determine if the current request URL and query string match a pattern.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & ...\$patterns \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a62c9eef8db9ea305e4fef8f0aee872c3}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!fullUrlWithoutQuery@{fullUrlWithoutQuery}}
+\index{fullUrlWithoutQuery@{fullUrlWithoutQuery}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{fullUrlWithoutQuery()}{fullUrlWithoutQuery()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a62c9eef8db9ea305e4fef8f0aee872c3} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::full\+Url\+Without\+Query (\begin{DoxyParamCaption}\item[{}]{\$keys}{}\end{DoxyParamCaption})}
+
+Get the full URL for the request without the given query string parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$keys} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_af73cb03029769015ca49c5325e87107a}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!fullUrlWithQuery@{fullUrlWithQuery}}
+\index{fullUrlWithQuery@{fullUrlWithQuery}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{fullUrlWithQuery()}{fullUrlWithQuery()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_af73cb03029769015ca49c5325e87107a} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::full\+Url\+With\+Query (\begin{DoxyParamCaption}\item[{array}]{\$query}{}\end{DoxyParamCaption})}
+
+Get the full URL for the request with the added query string parameters.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$query} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a02fec710bcffcf0eea06cde8300be2aa}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!get@{get}}
+\index{get@{get}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a02fec710bcffcf0eea06cde8300be2aa} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::get (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{mixed}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+This method belongs to Symfony Http\+Foundation and is not usually needed when using Laravel.
+
+Instead, you may use the "{}input"{} method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_ad546042daff0c290121ce6b822b758ec}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!getInputSource@{getInputSource}}
+\index{getInputSource@{getInputSource}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{getInputSource()}{getInputSource()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_ad546042daff0c290121ce6b822b758ec} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::get\+Input\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the input source for the request.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Input\+Bag 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a40ab8f07f9482f4b381f173bb7a83bd7}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!getRouteResolver@{getRouteResolver}}
+\index{getRouteResolver@{getRouteResolver}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{getRouteResolver()}{getRouteResolver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a40ab8f07f9482f4b381f173bb7a83bd7} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::get\+Route\+Resolver (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the route resolver callback.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a0693cd105b827addc717f764e0313212}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!getSession@{getSession}}
+\index{getSession@{getSession}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{getSession()}{getSession()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a0693cd105b827addc717f764e0313212} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::get\+Session (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\{\} \Hypertarget{class_illuminate_1_1_http_1_1_request_a3eb101a02b335b280216ce6c529a4cf8}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!getUserResolver@{getUserResolver}}
+\index{getUserResolver@{getUserResolver}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{getUserResolver()}{getUserResolver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a3eb101a02b335b280216ce6c529a4cf8} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::get\+User\+Resolver (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the user resolver callback.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_ac844973a718718d8314f2886db90f6fd}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!hasSession@{hasSession}}
+\index{hasSession@{hasSession}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{hasSession()}{hasSession()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_ac844973a718718d8314f2886db90f6fd} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::has\+Session (\begin{DoxyParamCaption}\item[{bool}]{\$skip\+If\+Uninitialized}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+\{\} \Hypertarget{class_illuminate_1_1_http_1_1_request_a560cd6e3f0c9929617d389574780869a}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!host@{host}}
+\index{host@{host}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{host()}{host()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a560cd6e3f0c9929617d389574780869a} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::host (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the host name.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_ae81d07b20caac24575bf1d0f42851ec6}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!httpHost@{httpHost}}
+\index{httpHost@{httpHost}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{httpHost()}{httpHost()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_ae81d07b20caac24575bf1d0f42851ec6} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::http\+Host (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the HTTP host being requested.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a44503210fcf92bb20abecaeeb816184d}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!instance@{instance}}
+\index{instance@{instance}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a44503210fcf92bb20abecaeeb816184d} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return the Request instance.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a352b2b2236a28c314d24ab9c89437db5}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!ip@{ip}}
+\index{ip@{ip}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{ip()}{ip()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a352b2b2236a28c314d24ab9c89437db5} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::ip (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the client IP address.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_ae90960fd8f580e1340e1d18c4c37cca5}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!ips@{ips}}
+\index{ips@{ips}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{ips()}{ips()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_ae90960fd8f580e1340e1d18c4c37cca5} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::ips (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the client IP addresses.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a01b7e0bd0a1f1624790d6077ffaf3db3}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!is@{is}}
+\index{is@{is}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{is()}{is()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a01b7e0bd0a1f1624790d6077ffaf3db3} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::is (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Determine if the current request URI matches a pattern.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & ...\$patterns \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a3a5548921f474b53def668f5c1647bad}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!json@{json}}
+\index{json@{json}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{json()}{json()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a3a5548921f474b53def668f5c1647bad} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::json (\begin{DoxyParamCaption}\item[{}]{\$key}{ = {\ttfamily null}, }\item[{}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get the JSON payload for the request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$key} & \\
+\hline
+mixed & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Input\+Bag\texorpdfstring{$\vert$}{|}mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a3183da01fb364a88a44510960d0d0e5c}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!merge@{merge}}
+\index{merge@{merge}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a3183da01fb364a88a44510960d0d0e5c} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::merge (\begin{DoxyParamCaption}\item[{array}]{\$input}{}\end{DoxyParamCaption})}
+
+Merge new input into the current request\textquotesingle{}s input array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$input} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a206fe07bb30873072495de23485b7efc}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!mergeIfMissing@{mergeIfMissing}}
+\index{mergeIfMissing@{mergeIfMissing}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{mergeIfMissing()}{mergeIfMissing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a206fe07bb30873072495de23485b7efc} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::merge\+If\+Missing (\begin{DoxyParamCaption}\item[{array}]{\$input}{}\end{DoxyParamCaption})}
+
+Merge new input into the request\textquotesingle{}s input, but only when that key is missing from the request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$input} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a7b5039dd5d21cc602157e0a20e65e4b7}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!method@{method}}
+\index{method@{method}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{method()}{method()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a7b5039dd5d21cc602157e0a20e65e4b7} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::method (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the request method.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a41157150fd9602237f5e6d533ae64413}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!offsetExists@{offsetExists}}
+\index{offsetExists@{offsetExists}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{offsetExists()}{offsetExists()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a41157150fd9602237f5e6d533ae64413} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::offset\+Exists (\begin{DoxyParamCaption}\item[{}]{\$offset}{}\end{DoxyParamCaption})}
+
+Determine if the given offset exists.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$offset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_aa042237e141b893005a9b444cf9a0d43}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!offsetGet@{offsetGet}}
+\index{offsetGet@{offsetGet}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{offsetGet()}{offsetGet()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_aa042237e141b893005a9b444cf9a0d43} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::offset\+Get (\begin{DoxyParamCaption}\item[{}]{\$offset}{}\end{DoxyParamCaption})}
+
+Get the value at the given offset.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$offset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a99db728096afe17aec2c836d55094a3d}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!offsetSet@{offsetSet}}
+\index{offsetSet@{offsetSet}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{offsetSet()}{offsetSet()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a99db728096afe17aec2c836d55094a3d} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::offset\+Set (\begin{DoxyParamCaption}\item[{}]{\$offset}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Set the value at the given offset.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$offset} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a90f78b19fc952ffa542bc99b884285b0}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!offsetUnset@{offsetUnset}}
+\index{offsetUnset@{offsetUnset}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{offsetUnset()}{offsetUnset()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a90f78b19fc952ffa542bc99b884285b0} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::offset\+Unset (\begin{DoxyParamCaption}\item[{}]{\$offset}{}\end{DoxyParamCaption})}
+
+Remove the value at the given offset.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$offset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a30c42c8b3f04e1ab3439c2f10ce4c690}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!path@{path}}
+\index{path@{path}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a30c42c8b3f04e1ab3439c2f10ce4c690} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the current path info for the request.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_af2fd862e129a9d4a09c10f3018f33b81}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!pjax@{pjax}}
+\index{pjax@{pjax}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{pjax()}{pjax()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_af2fd862e129a9d4a09c10f3018f33b81} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::pjax (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the request is the result of a PJAX call.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a6a7c973ee740fd69b1d97c678914b63d}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!prefetch@{prefetch}}
+\index{prefetch@{prefetch}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{prefetch()}{prefetch()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a6a7c973ee740fd69b1d97c678914b63d} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::prefetch (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the request is the result of a prefetch call.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a8c7a4c5e7eeca17df9eedca2b85e3771}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!replace@{replace}}
+\index{replace@{replace}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a8c7a4c5e7eeca17df9eedca2b85e3771} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::replace (\begin{DoxyParamCaption}\item[{array}]{\$input}{}\end{DoxyParamCaption})}
+
+Replace the input values for the current request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$input} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a3d69b6afff7187c4e243f2974b641755}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!root@{root}}
+\index{root@{root}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{root()}{root()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a3d69b6afff7187c4e243f2974b641755} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::root (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the root URL for the application.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_af7e50a7b3d114af44f5c56a7fd1e6f89}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!route@{route}}
+\index{route@{route}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{route()}{route()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_af7e50a7b3d114af44f5c56a7fd1e6f89} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::route (\begin{DoxyParamCaption}\item[{}]{\$param}{ = {\ttfamily null}, }\item[{}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get the route handling the request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$param} & \\
+\hline
+mixed & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a0ea0d6c73d0ee6ad3929a07ff19b2ab1}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!routeIs@{routeIs}}
+\index{routeIs@{routeIs}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{routeIs()}{routeIs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a0ea0d6c73d0ee6ad3929a07ff19b2ab1} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::route\+Is (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Determine if the route name matches a given pattern.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & ...\$patterns \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_ae828c68097b36f8fc08c1050116a2013}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!schemeAndHttpHost@{schemeAndHttpHost}}
+\index{schemeAndHttpHost@{schemeAndHttpHost}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{schemeAndHttpHost()}{schemeAndHttpHost()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_ae828c68097b36f8fc08c1050116a2013} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::scheme\+And\+Http\+Host (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the scheme and HTTP host.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_aa943d2579dbba44f83a3b50cad39ff04}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!secure@{secure}}
+\index{secure@{secure}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{secure()}{secure()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_aa943d2579dbba44f83a3b50cad39ff04} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::secure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the request is over HTTPS.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_ad38fe531902b5c0fb4172811f0831ce4}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!segment@{segment}}
+\index{segment@{segment}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{segment()}{segment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_ad38fe531902b5c0fb4172811f0831ce4} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::segment (\begin{DoxyParamCaption}\item[{}]{\$index}{, }\item[{}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a segment from the URI (1 based index).
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$index} & \\
+\hline
+string | null & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a3be0c3de0b4dd3f0c5aba95798c11a69}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!segments@{segments}}
+\index{segments@{segments}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{segments()}{segments()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a3be0c3de0b4dd3f0c5aba95798c11a69} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::segments (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all of the segments for the request path.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a799a6e8f23475c48272c3aa47de62183}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!session@{session}}
+\index{session@{session}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{session()}{session()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a799a6e8f23475c48272c3aa47de62183} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::session (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the session associated with the request.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Session\textbackslash{}\+Session
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{class_illuminate_1_1_http_1_1_request_a4144218a1453d459a60e8229cb2acbb4}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!setDefaultRequestLocale@{setDefaultRequestLocale}}
+\index{setDefaultRequestLocale@{setDefaultRequestLocale}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{setDefaultRequestLocale()}{setDefaultRequestLocale()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a4144218a1453d459a60e8229cb2acbb4} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::set\+Default\+Request\+Locale (\begin{DoxyParamCaption}\item[{string}]{\$locale}{}\end{DoxyParamCaption})}
+
+Set the default locale for the request instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locale} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_afa69ab81ce0f6fbf5a8c214c28dd304a}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!setJson@{setJson}}
+\index{setJson@{setJson}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{setJson()}{setJson()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_afa69ab81ce0f6fbf5a8c214c28dd304a} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::set\+Json (\begin{DoxyParamCaption}\item[{}]{\$json}{}\end{DoxyParamCaption})}
+
+Set the JSON payload for the request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Input\+Bag & {\em \$json} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_aa6bffc4832e0b9b5fe780e96f343c4d5}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!setLaravelSession@{setLaravelSession}}
+\index{setLaravelSession@{setLaravelSession}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{setLaravelSession()}{setLaravelSession()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_aa6bffc4832e0b9b5fe780e96f343c4d5} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::set\+Laravel\+Session (\begin{DoxyParamCaption}\item[{}]{\$session}{}\end{DoxyParamCaption})}
+
+Set the session instance on the request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Session\textbackslash{}\+Session & {\em \$session} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a5fd5adc163228de6cac8ce6977ecdb00}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!setRequestLocale@{setRequestLocale}}
+\index{setRequestLocale@{setRequestLocale}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{setRequestLocale()}{setRequestLocale()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a5fd5adc163228de6cac8ce6977ecdb00} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::set\+Request\+Locale (\begin{DoxyParamCaption}\item[{string}]{\$locale}{}\end{DoxyParamCaption})}
+
+Set the locale for the request instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locale} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a6661f752f7cedd35fd5883121a9a824c}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!setRouteResolver@{setRouteResolver}}
+\index{setRouteResolver@{setRouteResolver}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{setRouteResolver()}{setRouteResolver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a6661f752f7cedd35fd5883121a9a824c} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::set\+Route\+Resolver (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Set the route resolver callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a98806a26b1f639cb0b754e818648ccf0}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!setUserResolver@{setUserResolver}}
+\index{setUserResolver@{setUserResolver}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{setUserResolver()}{setUserResolver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a98806a26b1f639cb0b754e818648ccf0} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::set\+User\+Resolver (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Set the user resolver callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_ab50b64c598f4c91130e5a5ef33c2955c}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!toArray@{toArray}}
+\index{toArray@{toArray}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{toArray()}{toArray()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_ab50b64c598f4c91130e5a5ef33c2955c} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::to\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all of the input and files for the request.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_support_1_1_arrayable_a1103384459697cdba839c43eacb12e12}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Support\textbackslash{}\+Arrayable}}.
+
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a5645837fbf3589ffff13d96ef43a147d}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!uri@{uri}}
+\index{uri@{uri}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{uri()}{uri()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a5645837fbf3589ffff13d96ef43a147d} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::uri (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get a URI instance for the request.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Uri 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a7d6c8be4987b42f97ba3e6014219a05e}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!url@{url}}
+\index{url@{url}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{url()}{url()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a7d6c8be4987b42f97ba3e6014219a05e} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::url (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the URL (no query string) for the request.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_ac91c6041244d28ec4dca2a183ed456af}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!user@{user}}
+\index{user@{user}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{user()}{user()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_ac91c6041244d28ec4dca2a183ed456af} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::user (\begin{DoxyParamCaption}\item[{}]{\$guard}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get the user making the request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$guard} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_request_a02118864668e22490025bda79aa1e060}\index{Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}!userAgent@{userAgent}}
+\index{userAgent@{userAgent}!Illuminate\textbackslash{}Http\textbackslash{}Request@{Illuminate\textbackslash{}Http\textbackslash{}Request}}
+\doxysubsubsection{\texorpdfstring{userAgent()}{userAgent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_request_a02118864668e22490025bda79aa1e060} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request\+::user\+Agent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the client user agent.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Http/Request.\+php\end{DoxyCompactItemize}

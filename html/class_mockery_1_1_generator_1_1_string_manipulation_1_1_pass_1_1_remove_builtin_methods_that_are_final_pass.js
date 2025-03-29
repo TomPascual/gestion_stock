@@ -1,0 +1,4 @@
+var class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_builtin_methods_that_are_final_pass =
+[
+    [ "apply", "class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_builtin_methods_that_are_final_pass.html#ad446754ef4e060497d7dfe9c3b43b577", null ]
+];

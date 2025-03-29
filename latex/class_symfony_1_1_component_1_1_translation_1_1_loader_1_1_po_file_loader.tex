@@ -1,0 +1,71 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}Po\+File\+Loader Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_po_file_loader}{}\label{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_po_file_loader}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}PoFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}PoFileLoader}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}Po\+File\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_po_file_loader}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_po_file_loader_a4266624a1b63d3e6af1e6a7553f9d93b}{load\+Resource}} (string \$resource)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_file_loader}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Loader\textbackslash{}\+File\+Loader}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_file_loader_a956828bdad258ee1aedd4639d7cea6ae}{load}} (mixed \$resource, string \$locale, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2010, Union of RAD \href{https://github.com/UnionOfRAD/lithium}{\texttt{ https\+://github.\+com/\+Union\+Of\+RAD/lithium}} 
+
+Copyright (c) 2012, Clemens Tolboom 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_po_file_loader_a4266624a1b63d3e6af1e6a7553f9d93b}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}PoFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}PoFileLoader}!loadResource@{loadResource}}
+\index{loadResource@{loadResource}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}PoFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}PoFileLoader}}
+\doxysubsubsection{\texorpdfstring{loadResource()}{loadResource()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_po_file_loader_a4266624a1b63d3e6af1e6a7553f9d93b} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Loader\textbackslash{}\+Po\+File\+Loader\+::load\+Resource (\begin{DoxyParamCaption}\item[{string}]{\$resource}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parses portable object (PO) format.
+
+From \href{https://www.gnu.org/software/gettext/manual/gettext.html\#PO-Files}{\texttt{ https\+://www.\+gnu.\+org/software/gettext/manual/gettext.\+html\#\+PO-\/\+Files}} we should be able to parse files having\+:
+
+white-\/space \hypertarget{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_po_file_loader_autotoc_md2531}{}\doxysubsection{\texorpdfstring{translator-\/comments}{translator-\/comments}}\label{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_po_file_loader_autotoc_md2531}
+\#. extracted-\/comments \#\+: reference... \#, flag... \#\texorpdfstring{$\vert$}{|} msgid previous-\/untranslated-\/string msgid untranslated-\/string msgstr translated-\/string
+
+extra or different lines are\+:
+
+\#\texorpdfstring{$\vert$}{|} msgctxt previous-\/context \#\texorpdfstring{$\vert$}{|} msgid previous-\/untranslated-\/string msgctxt context
+
+\#\texorpdfstring{$\vert$}{|} msgid previous-\/untranslated-\/string-\/singular \#\texorpdfstring{$\vert$}{|} msgid\+\_\+plural previous-\/untranslated-\/string-\/plural msgid untranslated-\/string-\/singular msgid\+\_\+plural untranslated-\/string-\/plural msgstr\mbox{[}0\mbox{]} translated-\/string-\/case-\/0 ... msgstr\mbox{[}N\mbox{]} translated-\/string-\/case-\/n
+
+The definition states\+:
+\begin{DoxyItemize}
+\item white-\/space and comments are optional.
+\item msgid "{}"{} that an empty singleline defines a header.
+\end{DoxyItemize}
+
+This parser sacrifices some features of the reference implementation the differences to that implementation are as follows.
+\begin{DoxyItemize}
+\item No support for comments spanning multiple lines.
+\item Translator and extracted comments are treated as being the same type.
+\item Message IDs are allowed to have other encodings as just US-\/\+ASCII.
+\end{DoxyItemize}
+
+Items with an empty id are ignored. 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_file_loader_a6ce3f5d2d66eb7a6d9ed1a7ec1c58731}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Loader\textbackslash{}\+File\+Loader}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/translation/\+Loader/Po\+File\+Loader.\+php\end{DoxyCompactItemize}

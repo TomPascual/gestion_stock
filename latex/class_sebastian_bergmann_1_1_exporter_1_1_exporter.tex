@@ -1,0 +1,103 @@
+\doxysection{Sebastian\+Bergmann\textbackslash{}Exporter\textbackslash{}Exporter Class Reference}
+\hypertarget{class_sebastian_bergmann_1_1_exporter_1_1_exporter}{}\label{class_sebastian_bergmann_1_1_exporter_1_1_exporter}\index{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter@{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_exporter_1_1_exporter_a33f9c030f0bfb7f423ba1616f525bf4c}{\+\_\+\+\_\+construct}} (int \$shorten\+Arrays\+Longer\+Than=0, int \$max\+Length\+For\+Strings=40)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_exporter_1_1_exporter_a3f5ca3ed721f5424f725109bfa61383d}{export}} (mixed \$value, int \$indentation=0)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_exporter_1_1_exporter_af4c353ab98fa7608c4eb0a273f000a3f}{shortened\+Recursive\+Export}} (array \&\$data, int \$max\+Length\+For\+Strings=40, ?Recursion\+Context \$processed=null)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_exporter_1_1_exporter_a20f5de0a12e74dd17fd4d17aa2af162f}{shortened\+Export}} (mixed \$value, int \$max\+Length\+For\+Strings=40)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_exporter_1_1_exporter_ab061488923151e5766bda14da33b6652}{to\+Array}} (mixed \$value)
+\item 
+\Hypertarget{class_sebastian_bergmann_1_1_exporter_1_1_exporter_a4969d660e620621973ee2c928465aea2}\label{class_sebastian_bergmann_1_1_exporter_1_1_exporter_a4969d660e620621973ee2c928465aea2} 
+{\bfseries count\+Properties} (object \$value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_sebastian_bergmann_1_1_exporter_1_1_exporter_a33f9c030f0bfb7f423ba1616f525bf4c}\index{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter@{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter@{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_exporter_1_1_exporter_a33f9c030f0bfb7f423ba1616f525bf4c} 
+Sebastian\+Bergmann\textbackslash{}\+Exporter\textbackslash{}\+Exporter\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{int}]{\$shorten\+Arrays\+Longer\+Than}{ = {\ttfamily 0}, }\item[{int}]{\$max\+Length\+For\+Strings}{ = {\ttfamily 40}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+non-\/negative-\/int & {\em \$shorten\+Arrays\+Longer\+Than} & \\
+\hline
+positive-\/int & {\em \$max\+Length\+For\+Strings} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sebastian_bergmann_1_1_exporter_1_1_exporter_a3f5ca3ed721f5424f725109bfa61383d}\index{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter@{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter}!export@{export}}
+\index{export@{export}!SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter@{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter}}
+\doxysubsubsection{\texorpdfstring{export()}{export()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_exporter_1_1_exporter_a3f5ca3ed721f5424f725109bfa61383d} 
+Sebastian\+Bergmann\textbackslash{}\+Exporter\textbackslash{}\+Exporter\+::export (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{, }\item[{int}]{\$indentation}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Exports a value as a string.
+
+The output of this method is similar to the output of print\+\_\+r(), but improved in various aspects\+:
+
+
+\begin{DoxyItemize}
+\item NULL is rendered as "{}null"{} (instead of "{}"{})
+\item TRUE is rendered as "{}true"{} (instead of "{}1"{})
+\item FALSE is rendered as "{}false"{} (instead of "{}"{})
+\item Strings are always quoted with single quotes
+\item Carriage returns and newlines are normalized to ~\newline
+
+\item Recursion and repeated rendering is treated properly 
+\end{DoxyItemize}\Hypertarget{class_sebastian_bergmann_1_1_exporter_1_1_exporter_a20f5de0a12e74dd17fd4d17aa2af162f}\index{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter@{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter}!shortenedExport@{shortenedExport}}
+\index{shortenedExport@{shortenedExport}!SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter@{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter}}
+\doxysubsubsection{\texorpdfstring{shortenedExport()}{shortenedExport()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_exporter_1_1_exporter_a20f5de0a12e74dd17fd4d17aa2af162f} 
+Sebastian\+Bergmann\textbackslash{}\+Exporter\textbackslash{}\+Exporter\+::shortened\+Export (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{, }\item[{int}]{\$max\+Length\+For\+Strings}{ = {\ttfamily 40}}\end{DoxyParamCaption})}
+
+Exports a value into a single-\/line string.
+
+The output of this method is similar to the output of Sebastian\+Bergmann\textbackslash{}\+Exporter\textbackslash{}\+Exporter\+::export().
+
+Newlines are replaced by the visible string \textquotesingle{}~\newline
+\textquotesingle{}. Contents of arrays and objects (if any) are replaced by \textquotesingle{}...\textquotesingle{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+positive-\/int & {\em \$max\+Length\+For\+Strings} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sebastian_bergmann_1_1_exporter_1_1_exporter_af4c353ab98fa7608c4eb0a273f000a3f}\index{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter@{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter}!shortenedRecursiveExport@{shortenedRecursiveExport}}
+\index{shortenedRecursiveExport@{shortenedRecursiveExport}!SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter@{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter}}
+\doxysubsubsection{\texorpdfstring{shortenedRecursiveExport()}{shortenedRecursiveExport()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_exporter_1_1_exporter_af4c353ab98fa7608c4eb0a273f000a3f} 
+Sebastian\+Bergmann\textbackslash{}\+Exporter\textbackslash{}\+Exporter\+::shortened\+Recursive\+Export (\begin{DoxyParamCaption}\item[{array \&}]{\$data}{, }\item[{int}]{\$max\+Length\+For\+Strings}{ = {\ttfamily 40}, }\item[{?Recursion\+Context}]{\$processed}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$mixed$>$} & \$data \\
+\hline
+positive-\/int & {\em \$max\+Length\+For\+Strings} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_sebastian_bergmann_1_1_exporter_1_1_exporter_ab061488923151e5766bda14da33b6652}\index{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter@{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter}!toArray@{toArray}}
+\index{toArray@{toArray}!SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter@{SebastianBergmann\textbackslash{}Exporter\textbackslash{}Exporter}}
+\doxysubsubsection{\texorpdfstring{toArray()}{toArray()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_exporter_1_1_exporter_ab061488923151e5766bda14da33b6652} 
+Sebastian\+Bergmann\textbackslash{}\+Exporter\textbackslash{}\+Exporter\+::to\+Array (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})}
+
+Converts an object to an array containing all of its private, protected and public properties.
+
+\begin{DoxyReturn}{Returns}
+array$<$mixed$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/sebastian/exporter/src/Exporter.\+php\end{DoxyCompactItemize}

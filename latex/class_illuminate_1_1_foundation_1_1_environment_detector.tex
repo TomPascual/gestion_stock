@@ -1,0 +1,92 @@
+\doxysection{Illuminate\textbackslash{}Foundation\textbackslash{}Environment\+Detector Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_environment_detector}{}\label{class_illuminate_1_1_foundation_1_1_environment_detector}\index{Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector@{Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_environment_detector_a4a11196b7ee4b4e094d9bb6c96e959e4}{detect}} (Closure \$callback, \$console\+Args=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_environment_detector_a0f67006f4f2a1e0f0a618f6785a409dc}{detect\+Web\+Environment}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_environment_detector_abc36529607ce8421f68cf82bfab9dce8}{detect\+Console\+Environment}} (Closure \$callback, array \$args)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_environment_detector_a05a9eb0b37dccd71ca3c42abbb3809c5}{get\+Environment\+Argument}} (array \$args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_environment_detector_a4a11196b7ee4b4e094d9bb6c96e959e4}\index{Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector@{Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector}!detect@{detect}}
+\index{detect@{detect}!Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector@{Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector}}
+\doxysubsubsection{\texorpdfstring{detect()}{detect()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_environment_detector_a4a11196b7ee4b4e094d9bb6c96e959e4} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Environment\+Detector\+::detect (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{, }\item[{}]{\$console\+Args}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Detect the application\textquotesingle{}s current environment.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+array | null & {\em \$console\+Args} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_environment_detector_abc36529607ce8421f68cf82bfab9dce8}\index{Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector@{Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector}!detectConsoleEnvironment@{detectConsoleEnvironment}}
+\index{detectConsoleEnvironment@{detectConsoleEnvironment}!Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector@{Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector}}
+\doxysubsubsection{\texorpdfstring{detectConsoleEnvironment()}{detectConsoleEnvironment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_environment_detector_abc36529607ce8421f68cf82bfab9dce8} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Environment\+Detector\+::detect\+Console\+Environment (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{, }\item[{array}]{\$args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set the application environment from command-\/line arguments.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+array & {\em \$args} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_environment_detector_a0f67006f4f2a1e0f0a618f6785a409dc}\index{Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector@{Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector}!detectWebEnvironment@{detectWebEnvironment}}
+\index{detectWebEnvironment@{detectWebEnvironment}!Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector@{Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector}}
+\doxysubsubsection{\texorpdfstring{detectWebEnvironment()}{detectWebEnvironment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_environment_detector_a0f67006f4f2a1e0f0a618f6785a409dc} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Environment\+Detector\+::detect\+Web\+Environment (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set the application environment for a web request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_environment_detector_a05a9eb0b37dccd71ca3c42abbb3809c5}\index{Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector@{Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector}!getEnvironmentArgument@{getEnvironmentArgument}}
+\index{getEnvironmentArgument@{getEnvironmentArgument}!Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector@{Illuminate\textbackslash{}Foundation\textbackslash{}EnvironmentDetector}}
+\doxysubsubsection{\texorpdfstring{getEnvironmentArgument()}{getEnvironmentArgument()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_environment_detector_a05a9eb0b37dccd71ca3c42abbb3809c5} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Environment\+Detector\+::get\+Environment\+Argument (\begin{DoxyParamCaption}\item[{array}]{\$args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the environment argument from the console.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$args} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Foundation/Environment\+Detector.\+php\end{DoxyCompactItemize}

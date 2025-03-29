@@ -1,0 +1,525 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ClassName
+%%Creator: Doxygen
+%%CreationDate: Time
+%%For: 
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 0 0 500 1663.066895
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%EndComments
+
+% ----- variables -----
+
+/boxwidth 0 def
+/boxheight 40 def
+/fontheight 24 def
+/marginwidth 10 def
+/distx 20 def
+/disty 40 def
+/boundaspect 0.300649 def  % aspect ratio of the BoundingBox (width/height)
+/boundx 500 def
+/boundy boundx boundaspect div def
+/xspacing 0 def
+/yspacing 0 def
+/rows 77 def
+/cols 2 def
+/scalefactor 0 def
+/boxfont /Times-Roman findfont fontheight scalefont def
+
+% ----- procedures -----
+
+/dotted { [1 4] 0 setdash } def
+/dashed { [5] 0 setdash } def
+/solid  { [] 0 setdash } def
+
+/max % result = MAX(arg1,arg2)
+{
+  /a exch def
+  /b exch def
+  a b gt {a} {b} ifelse
+} def
+
+/xoffset % result = MAX(0,(scalefactor-(boxwidth*cols+distx*(cols-1)))/2)
+{
+  0 scalefactor boxwidth cols mul distx cols 1 sub mul add sub 2 div max
+} def
+
+/cw % boxwidth = MAX(boxwidth, stringwidth(arg1))
+{
+  /str exch def
+  /boxwidth boxwidth str stringwidth pop max def
+} def
+
+/box % draws a box with text 'arg1' at grid pos (arg2,arg3)
+{ gsave
+  2 setlinewidth
+  newpath
+  exch xspacing mul xoffset add
+  exch yspacing mul
+  moveto
+  boxwidth 0 rlineto 
+  0 boxheight rlineto 
+  boxwidth neg 0 rlineto 
+  0 boxheight neg rlineto 
+  closepath
+  dup stringwidth pop neg boxwidth add 2 div
+  boxheight fontheight 2 div sub 2 div
+  rmoveto show stroke
+  grestore
+} def  
+
+/mark
+{ newpath
+  exch xspacing mul xoffset add boxwidth add
+  exch yspacing mul
+  moveto
+  0 boxheight 4 div rlineto
+  boxheight neg 4 div boxheight neg 4 div rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/arrow
+{ newpath
+  moveto
+  3 -8 rlineto
+  -6 0 rlineto
+  3 8 rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/out % draws an output connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight add
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto 
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/in % draws an input connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul disty 2 div sub
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/hedge
+{
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight 2 div sub
+  /y exch def
+  /x exch def
+  newpath
+  x y moveto
+  boxwidth 2 div distx add 0 rlineto
+  stroke
+  1 eq
+  { newpath x boxwidth 2 div distx add add y moveto
+    -8 3 rlineto
+    0 -6 rlineto
+    8 3 rlineto
+    closepath
+    eofill
+    stroke
+  } if
+} def
+
+/vedge
+{
+  /ye exch def
+  /ys exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add dup
+  ys yspacing mul boxheight 2 div sub
+  moveto
+  ye yspacing mul boxheight 2 div sub
+  lineto
+  stroke
+} def
+
+/conn % connections the blocks from col 'arg1' to 'arg2' of row 'arg3'
+{
+  /ys exch def
+  /xe exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add
+  ys yspacing mul disty 2 div sub
+  moveto
+  xspacing xe xs sub mul 0
+  rlineto
+  stroke
+} def
+
+% ----- main ------
+
+boxfont setfont
+1 boundaspect scale
+(PHPUnit\Event\Subscriber) cw
+(PHPUnit\Event\Application\FinishedSubscriber) cw
+(PHPUnit\Event\Application\StartedSubscriber) cw
+(PHPUnit\Event\Test\AfterLastTestMethodCalledSubscriber) cw
+(PHPUnit\Event\Test\AfterLastTestMethodErroredSubscriber) cw
+(PHPUnit\Event\Test\AfterLastTestMethodFinishedSubscriber) cw
+(PHPUnit\Event\Test\AfterTestMethodCalledSubscriber) cw
+(PHPUnit\Event\Test\AfterTestMethodErroredSubscriber) cw
+(PHPUnit\Event\Test\AfterTestMethodFinishedSubscriber) cw
+(PHPUnit\Event\Test\BeforeFirstTestMethodCalledSubscriber) cw
+(PHPUnit\Event\Test\BeforeFirstTestMethodErroredSubscriber) cw
+(PHPUnit\Event\Test\BeforeFirstTestMethodFinishedSubscriber) cw
+(PHPUnit\Event\Test\BeforeTestMethodCalledSubscriber) cw
+(PHPUnit\Event\Test\BeforeTestMethodErroredSubscriber) cw
+(PHPUnit\Event\Test\BeforeTestMethodFinishedSubscriber) cw
+(PHPUnit\Event\Test\ComparatorRegisteredSubscriber) cw
+(PHPUnit\Event\Test\ConsideredRiskySubscriber) cw
+(PHPUnit\Event\Test\DataProviderMethodCalledSubscriber) cw
+(PHPUnit\Event\Test\DataProviderMethodFinishedSubscriber) cw
+(PHPUnit\Event\Test\DeprecationTriggeredSubscriber) cw
+(PHPUnit\Event\Test\ErrorTriggeredSubscriber) cw
+(PHPUnit\Event\Test\ErroredSubscriber) cw
+(PHPUnit\Event\Test\FailedSubscriber) cw
+(PHPUnit\Event\Test\FinishedSubscriber) cw
+(PHPUnit\Event\Test\MarkedIncompleteSubscriber) cw
+(PHPUnit\Event\Test\MockObjectCreatedSubscriber) cw
+(PHPUnit\Event\Test\MockObjectForAbstractClassCreatedSubscriber) cw
+(PHPUnit\Event\Test\MockObjectForIntersectionOfInterfacesCreatedSubscriber) cw
+(PHPUnit\Event\Test\MockObjectForTraitCreatedSubscriber) cw
+(PHPUnit\Event\Test\MockObjectFromWsdlCreatedSubscriber) cw
+(PHPUnit\Event\Test\NoticeTriggeredSubscriber) cw
+(PHPUnit\Event\Test\PartialMockObjectCreatedSubscriber) cw
+(PHPUnit\Event\Test\PassedSubscriber) cw
+(PHPUnit\Event\Test\PhpDeprecationTriggeredSubscriber) cw
+(PHPUnit\Event\Test\PhpNoticeTriggeredSubscriber) cw
+(PHPUnit\Event\Test\PhpWarningTriggeredSubscriber) cw
+(PHPUnit\Event\Test\PhpunitDeprecationTriggeredSubscriber) cw
+(PHPUnit\Event\Test\PhpunitErrorTriggeredSubscriber) cw
+(PHPUnit\Event\Test\PhpunitWarningTriggeredSubscriber) cw
+(PHPUnit\Event\Test\PostConditionCalledSubscriber) cw
+(PHPUnit\Event\Test\PostConditionErroredSubscriber) cw
+(PHPUnit\Event\Test\PostConditionFinishedSubscriber) cw
+(PHPUnit\Event\Test\PreConditionCalledSubscriber) cw
+(PHPUnit\Event\Test\PreConditionErroredSubscriber) cw
+(PHPUnit\Event\Test\PreConditionFinishedSubscriber) cw
+(PHPUnit\Event\Test\PreparationFailedSubscriber) cw
+(PHPUnit\Event\Test\PreparationStartedSubscriber) cw
+(PHPUnit\Event\Test\PreparedSubscriber) cw
+(PHPUnit\Event\Test\PrintedUnexpectedOutputSubscriber) cw
+(PHPUnit\Event\Test\SkippedSubscriber) cw
+(PHPUnit\Event\Test\TestProxyCreatedSubscriber) cw
+(PHPUnit\Event\Test\TestStubCreatedSubscriber) cw
+(PHPUnit\Event\Test\TestStubForIntersectionOfInterfacesCreatedSubscriber) cw
+(PHPUnit\Event\Test\WarningTriggeredSubscriber) cw
+(PHPUnit\Event\TestRunner\BootstrapFinishedSubscriber) cw
+(PHPUnit\Event\TestRunner\ChildProcessFinishedSubscriber) cw
+(PHPUnit\Event\TestRunner\ChildProcessStartedSubscriber) cw
+(PHPUnit\Event\TestRunner\ConfiguredSubscriber) cw
+(PHPUnit\Event\TestRunner\DeprecationTriggeredSubscriber) cw
+(PHPUnit\Event\TestRunner\EventFacadeSealedSubscriber) cw
+(PHPUnit\Event\TestRunner\ExecutionAbortedSubscriber) cw
+(PHPUnit\Event\TestRunner\ExecutionFinishedSubscriber) cw
+(PHPUnit\Event\TestRunner\ExecutionStartedSubscriber) cw
+(PHPUnit\Event\TestRunner\ExtensionBootstrappedSubscriber) cw
+(PHPUnit\Event\TestRunner\ExtensionLoadedFromPharSubscriber) cw
+(PHPUnit\Event\TestRunner\FinishedSubscriber) cw
+(PHPUnit\Event\TestRunner\GarbageCollectionDisabledSubscriber) cw
+(PHPUnit\Event\TestRunner\GarbageCollectionEnabledSubscriber) cw
+(PHPUnit\Event\TestRunner\GarbageCollectionTriggeredSubscriber) cw
+(PHPUnit\Event\TestRunner\StartedSubscriber) cw
+(PHPUnit\Event\TestRunner\WarningTriggeredSubscriber) cw
+(PHPUnit\Event\TestSuite\FilteredSubscriber) cw
+(PHPUnit\Event\TestSuite\FinishedSubscriber) cw
+(PHPUnit\Event\TestSuite\LoadedSubscriber) cw
+(PHPUnit\Event\TestSuite\SkippedSubscriber) cw
+(PHPUnit\Event\TestSuite\SortedSubscriber) cw
+(PHPUnit\Event\TestSuite\StartedSubscriber) cw
+/boxwidth boxwidth marginwidth 2 mul add def
+/xspacing boxwidth distx add def
+/yspacing boxheight disty add def
+/scalefactor 
+  boxwidth cols mul distx cols 1 sub mul add
+  boxheight rows mul disty rows 1 sub mul add boundaspect mul 
+  max def
+boundx scalefactor div boundy scalefactor div scale
+
+% ----- classes -----
+
+ (PHPUnit\Event\Subscriber) 0.000000 76.000000 box
+ (PHPUnit\Event\Application\FinishedSubscriber) 1.000000 75.000000 box
+ (PHPUnit\Event\Application\StartedSubscriber) 1.000000 74.000000 box
+ (PHPUnit\Event\Test\AfterLastTestMethodCalledSubscriber) 1.000000 73.000000 box
+ (PHPUnit\Event\Test\AfterLastTestMethodErroredSubscriber) 1.000000 72.000000 box
+1.000000 72.000000 mark
+ (PHPUnit\Event\Test\AfterLastTestMethodFinishedSubscriber) 1.000000 71.000000 box
+ (PHPUnit\Event\Test\AfterTestMethodCalledSubscriber) 1.000000 70.000000 box
+ (PHPUnit\Event\Test\AfterTestMethodErroredSubscriber) 1.000000 69.000000 box
+ (PHPUnit\Event\Test\AfterTestMethodFinishedSubscriber) 1.000000 68.000000 box
+ (PHPUnit\Event\Test\BeforeFirstTestMethodCalledSubscriber) 1.000000 67.000000 box
+ (PHPUnit\Event\Test\BeforeFirstTestMethodErroredSubscriber) 1.000000 66.000000 box
+1.000000 66.000000 mark
+ (PHPUnit\Event\Test\BeforeFirstTestMethodFinishedSubscriber) 1.000000 65.000000 box
+ (PHPUnit\Event\Test\BeforeTestMethodCalledSubscriber) 1.000000 64.000000 box
+ (PHPUnit\Event\Test\BeforeTestMethodErroredSubscriber) 1.000000 63.000000 box
+ (PHPUnit\Event\Test\BeforeTestMethodFinishedSubscriber) 1.000000 62.000000 box
+ (PHPUnit\Event\Test\ComparatorRegisteredSubscriber) 1.000000 61.000000 box
+ (PHPUnit\Event\Test\ConsideredRiskySubscriber) 1.000000 60.000000 box
+1.000000 60.000000 mark
+ (PHPUnit\Event\Test\DataProviderMethodCalledSubscriber) 1.000000 59.000000 box
+ (PHPUnit\Event\Test\DataProviderMethodFinishedSubscriber) 1.000000 58.000000 box
+ (PHPUnit\Event\Test\DeprecationTriggeredSubscriber) 1.000000 57.000000 box
+1.000000 57.000000 mark
+ (PHPUnit\Event\Test\ErrorTriggeredSubscriber) 1.000000 56.000000 box
+1.000000 56.000000 mark
+ (PHPUnit\Event\Test\ErroredSubscriber) 1.000000 55.000000 box
+1.000000 55.000000 mark
+ (PHPUnit\Event\Test\FailedSubscriber) 1.000000 54.000000 box
+1.000000 54.000000 mark
+ (PHPUnit\Event\Test\FinishedSubscriber) 1.000000 53.000000 box
+1.000000 53.000000 mark
+ (PHPUnit\Event\Test\MarkedIncompleteSubscriber) 1.000000 52.000000 box
+1.000000 52.000000 mark
+ (PHPUnit\Event\Test\MockObjectCreatedSubscriber) 1.000000 51.000000 box
+ (PHPUnit\Event\Test\MockObjectForAbstractClassCreatedSubscriber) 1.000000 50.000000 box
+ (PHPUnit\Event\Test\MockObjectForIntersectionOfInterfacesCreatedSubscriber) 1.000000 49.000000 box
+ (PHPUnit\Event\Test\MockObjectForTraitCreatedSubscriber) 1.000000 48.000000 box
+ (PHPUnit\Event\Test\MockObjectFromWsdlCreatedSubscriber) 1.000000 47.000000 box
+ (PHPUnit\Event\Test\NoticeTriggeredSubscriber) 1.000000 46.000000 box
+1.000000 46.000000 mark
+ (PHPUnit\Event\Test\PartialMockObjectCreatedSubscriber) 1.000000 45.000000 box
+ (PHPUnit\Event\Test\PassedSubscriber) 1.000000 44.000000 box
+1.000000 44.000000 mark
+ (PHPUnit\Event\Test\PhpDeprecationTriggeredSubscriber) 1.000000 43.000000 box
+1.000000 43.000000 mark
+ (PHPUnit\Event\Test\PhpNoticeTriggeredSubscriber) 1.000000 42.000000 box
+1.000000 42.000000 mark
+ (PHPUnit\Event\Test\PhpWarningTriggeredSubscriber) 1.000000 41.000000 box
+1.000000 41.000000 mark
+ (PHPUnit\Event\Test\PhpunitDeprecationTriggeredSubscriber) 1.000000 40.000000 box
+1.000000 40.000000 mark
+ (PHPUnit\Event\Test\PhpunitErrorTriggeredSubscriber) 1.000000 39.000000 box
+1.000000 39.000000 mark
+ (PHPUnit\Event\Test\PhpunitWarningTriggeredSubscriber) 1.000000 38.000000 box
+1.000000 38.000000 mark
+ (PHPUnit\Event\Test\PostConditionCalledSubscriber) 1.000000 37.000000 box
+ (PHPUnit\Event\Test\PostConditionErroredSubscriber) 1.000000 36.000000 box
+ (PHPUnit\Event\Test\PostConditionFinishedSubscriber) 1.000000 35.000000 box
+ (PHPUnit\Event\Test\PreConditionCalledSubscriber) 1.000000 34.000000 box
+ (PHPUnit\Event\Test\PreConditionErroredSubscriber) 1.000000 33.000000 box
+ (PHPUnit\Event\Test\PreConditionFinishedSubscriber) 1.000000 32.000000 box
+ (PHPUnit\Event\Test\PreparationFailedSubscriber) 1.000000 31.000000 box
+1.000000 31.000000 mark
+ (PHPUnit\Event\Test\PreparationStartedSubscriber) 1.000000 30.000000 box
+1.000000 30.000000 mark
+ (PHPUnit\Event\Test\PreparedSubscriber) 1.000000 29.000000 box
+1.000000 29.000000 mark
+ (PHPUnit\Event\Test\PrintedUnexpectedOutputSubscriber) 1.000000 28.000000 box
+1.000000 28.000000 mark
+ (PHPUnit\Event\Test\SkippedSubscriber) 1.000000 27.000000 box
+1.000000 27.000000 mark
+ (PHPUnit\Event\Test\TestProxyCreatedSubscriber) 1.000000 26.000000 box
+ (PHPUnit\Event\Test\TestStubCreatedSubscriber) 1.000000 25.000000 box
+ (PHPUnit\Event\Test\TestStubForIntersectionOfInterfacesCreatedSubscriber) 1.000000 24.000000 box
+ (PHPUnit\Event\Test\WarningTriggeredSubscriber) 1.000000 23.000000 box
+1.000000 23.000000 mark
+ (PHPUnit\Event\TestRunner\BootstrapFinishedSubscriber) 1.000000 22.000000 box
+ (PHPUnit\Event\TestRunner\ChildProcessFinishedSubscriber) 1.000000 21.000000 box
+ (PHPUnit\Event\TestRunner\ChildProcessStartedSubscriber) 1.000000 20.000000 box
+ (PHPUnit\Event\TestRunner\ConfiguredSubscriber) 1.000000 19.000000 box
+ (PHPUnit\Event\TestRunner\DeprecationTriggeredSubscriber) 1.000000 18.000000 box
+ (PHPUnit\Event\TestRunner\EventFacadeSealedSubscriber) 1.000000 17.000000 box
+ (PHPUnit\Event\TestRunner\ExecutionAbortedSubscriber) 1.000000 16.000000 box
+ (PHPUnit\Event\TestRunner\ExecutionFinishedSubscriber) 1.000000 15.000000 box
+1.000000 15.000000 mark
+ (PHPUnit\Event\TestRunner\ExecutionStartedSubscriber) 1.000000 14.000000 box
+1.000000 14.000000 mark
+ (PHPUnit\Event\TestRunner\ExtensionBootstrappedSubscriber) 1.000000 13.000000 box
+ (PHPUnit\Event\TestRunner\ExtensionLoadedFromPharSubscriber) 1.000000 12.000000 box
+ (PHPUnit\Event\TestRunner\FinishedSubscriber) 1.000000 11.000000 box
+ (PHPUnit\Event\TestRunner\GarbageCollectionDisabledSubscriber) 1.000000 10.000000 box
+ (PHPUnit\Event\TestRunner\GarbageCollectionEnabledSubscriber) 1.000000 9.000000 box
+ (PHPUnit\Event\TestRunner\GarbageCollectionTriggeredSubscriber) 1.000000 8.000000 box
+ (PHPUnit\Event\TestRunner\StartedSubscriber) 1.000000 7.000000 box
+ (PHPUnit\Event\TestRunner\WarningTriggeredSubscriber) 1.000000 6.000000 box
+ (PHPUnit\Event\TestSuite\FilteredSubscriber) 1.000000 5.000000 box
+ (PHPUnit\Event\TestSuite\FinishedSubscriber) 1.000000 4.000000 box
+ (PHPUnit\Event\TestSuite\LoadedSubscriber) 1.000000 3.000000 box
+ (PHPUnit\Event\TestSuite\SkippedSubscriber) 1.000000 2.000000 box
+ (PHPUnit\Event\TestSuite\SortedSubscriber) 1.000000 1.000000 box
+ (PHPUnit\Event\TestSuite\StartedSubscriber) 1.000000 0.000000 box
+1.000000 0.000000 mark
+
+% ----- relations -----
+
+solid
+1 0.000000 75.250000 out
+solid
+0 0.000000 75.500000 hedge
+solid
+0 0.000000 74.500000 hedge
+solid
+0 0.000000 73.500000 hedge
+solid
+0 0.000000 72.500000 hedge
+solid
+0 0.000000 71.500000 hedge
+solid
+0 0.000000 70.500000 hedge
+solid
+0 0.000000 69.500000 hedge
+solid
+0 0.000000 68.500000 hedge
+solid
+0 0.000000 67.500000 hedge
+solid
+0 0.000000 66.500000 hedge
+solid
+0 0.000000 65.500000 hedge
+solid
+0 0.000000 64.500000 hedge
+solid
+0 0.000000 63.500000 hedge
+solid
+0 0.000000 62.500000 hedge
+solid
+0 0.000000 61.500000 hedge
+solid
+0 0.000000 60.500000 hedge
+solid
+0 0.000000 59.500000 hedge
+solid
+0 0.000000 58.500000 hedge
+solid
+0 0.000000 57.500000 hedge
+solid
+0 0.000000 56.500000 hedge
+solid
+0 0.000000 55.500000 hedge
+solid
+0 0.000000 54.500000 hedge
+solid
+0 0.000000 53.500000 hedge
+solid
+0 0.000000 52.500000 hedge
+solid
+0 0.000000 51.500000 hedge
+solid
+0 0.000000 50.500000 hedge
+solid
+0 0.000000 49.500000 hedge
+solid
+0 0.000000 48.500000 hedge
+solid
+0 0.000000 47.500000 hedge
+solid
+0 0.000000 46.500000 hedge
+solid
+0 0.000000 45.500000 hedge
+solid
+0 0.000000 44.500000 hedge
+solid
+0 0.000000 43.500000 hedge
+solid
+0 0.000000 42.500000 hedge
+solid
+0 0.000000 41.500000 hedge
+solid
+0 0.000000 40.500000 hedge
+solid
+0 0.000000 39.500000 hedge
+solid
+0 0.000000 38.500000 hedge
+solid
+0 0.000000 37.500000 hedge
+solid
+0 0.000000 36.500000 hedge
+solid
+0 0.000000 35.500000 hedge
+solid
+0 0.000000 34.500000 hedge
+solid
+0 0.000000 33.500000 hedge
+solid
+0 0.000000 32.500000 hedge
+solid
+0 0.000000 31.500000 hedge
+solid
+0 0.000000 30.500000 hedge
+solid
+0 0.000000 29.500000 hedge
+solid
+0 0.000000 28.500000 hedge
+solid
+0 0.000000 27.500000 hedge
+solid
+0 0.000000 26.500000 hedge
+solid
+0 0.000000 25.500000 hedge
+solid
+0 0.000000 24.500000 hedge
+solid
+0 0.000000 23.500000 hedge
+solid
+0 0.000000 22.500000 hedge
+solid
+0 0.000000 21.500000 hedge
+solid
+0 0.000000 20.500000 hedge
+solid
+0 0.000000 19.500000 hedge
+solid
+0 0.000000 18.500000 hedge
+solid
+0 0.000000 17.500000 hedge
+solid
+0 0.000000 16.500000 hedge
+solid
+0 0.000000 15.500000 hedge
+solid
+0 0.000000 14.500000 hedge
+solid
+0 0.000000 13.500000 hedge
+solid
+0 0.000000 12.500000 hedge
+solid
+0 0.000000 11.500000 hedge
+solid
+0 0.000000 10.500000 hedge
+solid
+0 0.000000 9.500000 hedge
+solid
+0 0.000000 8.500000 hedge
+solid
+0 0.000000 7.500000 hedge
+solid
+0 0.000000 6.500000 hedge
+solid
+0 0.000000 5.500000 hedge
+solid
+0 0.000000 4.500000 hedge
+solid
+0 0.000000 3.500000 hedge
+solid
+0 0.000000 2.500000 hedge
+solid
+0 0.000000 1.500000 hedge
+solid
+0 0.000000 0.500000 hedge
+solid
+0.000000 76.000000 0.500000 vedge

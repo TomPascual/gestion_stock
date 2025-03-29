@@ -6,15 +6,32 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 use App\Models\Fournisseur;
 
+/**
+ * Class FournisseurControllerTest
+ *
+ * Teste les fonctionnalités du contrôleur FournisseurController.
+ *
+ * @package Tests\Feature
+ */
 class FournisseurControllerTest extends TestCase
 {
     use RefreshDatabase;
 
+    /**
+     * Crée un fournisseur via la factory pour les tests.
+     *
+     * @return \App\Models\Fournisseur
+     */
     private function createFournisseur()
     {
         return Fournisseur::factory()->create();
     }
 
+    /**
+     * Vérifie que la liste des fournisseurs est bien affichée.
+     *
+     * @return void
+     */
     #[\PHPUnit\Framework\Attributes\Test]
     public function it_displays_the_list_of_fournisseurs()
     {
@@ -27,6 +44,11 @@ class FournisseurControllerTest extends TestCase
         $response->assertViewHas('fournisseurs');
     }
 
+    /**
+     * Vérifie que le formulaire de création est bien accessible.
+     *
+     * @return void
+     */
     #[\PHPUnit\Framework\Attributes\Test]
     public function it_displays_the_fournisseur_creation_form()
     {
@@ -34,6 +56,11 @@ class FournisseurControllerTest extends TestCase
         $response->assertStatus(200);
     }
 
+    /**
+     * Vérifie qu’un nouveau fournisseur peut être enregistré.
+     *
+     * @return void
+     */
     #[\PHPUnit\Framework\Attributes\Test]
     public function it_can_store_a_new_fournisseur()
     {
@@ -45,10 +72,15 @@ class FournisseurControllerTest extends TestCase
         ];
 
         $response = $this->post('/fournisseurs', $data);
-        $response->assertStatus(302);
+        $response->assertStatus(302); // redirection après création
         $this->assertDatabaseHas('fournisseurs', ['nom' => 'Nouveau Fournisseur']);
     }
 
+    /**
+     * Vérifie que la vue d’un fournisseur spécifique s’affiche correctement.
+     *
+     * @return void
+     */
     #[\PHPUnit\Framework\Attributes\Test]
     public function it_displays_a_specific_fournisseur()
     {
@@ -58,6 +90,11 @@ class FournisseurControllerTest extends TestCase
         $response->assertViewHas('fournisseur');
     }
 
+    /**
+     * Vérifie que le formulaire d’édition d’un fournisseur s’affiche.
+     *
+     * @return void
+     */
     #[\PHPUnit\Framework\Attributes\Test]
     public function it_displays_the_fournisseur_edit_form()
     {
@@ -67,13 +104,18 @@ class FournisseurControllerTest extends TestCase
         $response->assertViewHas('fournisseur');
     }
 
+    /**
+     * Vérifie que les données d’un fournisseur peuvent être mises à jour.
+     *
+     * @return void
+     */
     #[\PHPUnit\Framework\Attributes\Test]
     public function it_can_update_a_fournisseur()
     {
         $fournisseur = $this->createFournisseur();
         $updatedData = [
             'nom' => 'Fournisseur Modifié',
-            'email' => $fournisseur->email, // éviter erreur unique
+            'email' => $fournisseur->email, // éviter erreur de contrainte unique
             'telephone' => $fournisseur->telephone,
             'adresse' => $fournisseur->adresse
         ];
@@ -83,6 +125,11 @@ class FournisseurControllerTest extends TestCase
         $this->assertDatabaseHas('fournisseurs', ['nom' => 'Fournisseur Modifié']);
     }
 
+    /**
+     * Vérifie qu’un fournisseur peut être supprimé.
+     *
+     * @return void
+     */
     #[\PHPUnit\Framework\Attributes\Test]
     public function it_can_delete_a_fournisseur()
     {

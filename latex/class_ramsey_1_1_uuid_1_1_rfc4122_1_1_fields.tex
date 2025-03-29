@@ -1,0 +1,164 @@
+\doxysection{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields Class Reference}
+\hypertarget{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields}{}\label{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}}
+Inheritance diagram for Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a016b8e013c8596fcb6731f48894e4522}{\+\_\+\+\_\+construct}} (private string \$bytes)
+\item 
+\Hypertarget{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a9df2a87a3895f5c82d600239201b135e}\label{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a9df2a87a3895f5c82d600239201b135e} 
+{\bfseries get\+Bytes} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a5923361ebdf01fdd78d3a87400b284fd}{get\+Clock\+Seq}} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a3f2cdcbc2616dc4c66368aa2ba6f407e}{get\+Clock\+Seq\+Hi\+And\+Reserved}} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a296d6fdead7d551cec8be88e49935bcd}{get\+Clock\+Seq\+Low}} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a744805a786e5fac33604804208411561}{get\+Node}} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_aed63db2199e496b806045ae691e6b670}{get\+Time\+Hi\+And\+Version}} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_ae290fe992e211f871f2e3c44e54efe4d}{get\+Time\+Low}} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_ae36041af48a3de06e067a022c326ca0b}{get\+Time\+Mid}} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_aab123e9317e495fbe5166bf141a50b95}{get\+Timestamp}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_a048690b61621a2451edb00adaec36902}{get\+Variant}} ()
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_a3045455ff3afb2b68abd6b8061eff9c0}{get\+Version}} ()
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_a3cbb39510ba79b75a459b0f749ff94fe}{is\+Nil}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+RFC 4122 variant UUIDs are comprised of a set of named fields
+
+Internally, this class represents the fields together as a 16-\/byte binary string.
+
+@psalm-\/immutable 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a016b8e013c8596fcb6731f48894e4522}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a016b8e013c8596fcb6731f48894e4522} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private string}]{\$bytes}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$bytes} & A 16-\/byte binary string representation of a UUID\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & if the byte string is not exactly 16 bytes \\
+\hline
+{\em Invalid\+Argument\+Exception} & if the byte string does not represent an RFC 4122 UUID \\
+\hline
+{\em Invalid\+Argument\+Exception} & if the byte string does not contain a valid version \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a5923361ebdf01fdd78d3a87400b284fd}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}!getClockSeq@{getClockSeq}}
+\index{getClockSeq@{getClockSeq}!Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}}
+\doxysubsubsection{\texorpdfstring{getClockSeq()}{getClockSeq()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a5923361ebdf01fdd78d3a87400b284fd} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+::get\+Clock\+Seq (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the full 16-\/bit clock sequence, with the variant bits (two most significant bits) masked out 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_a7b6cc53a38c1e3406b957589c76f8657}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a3f2cdcbc2616dc4c66368aa2ba6f407e}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}!getClockSeqHiAndReserved@{getClockSeqHiAndReserved}}
+\index{getClockSeqHiAndReserved@{getClockSeqHiAndReserved}!Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}}
+\doxysubsubsection{\texorpdfstring{getClockSeqHiAndReserved()}{getClockSeqHiAndReserved()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a3f2cdcbc2616dc4c66368aa2ba6f407e} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+::get\+Clock\+Seq\+Hi\+And\+Reserved (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the high field of the clock sequence multiplexed with the variant 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_a0b792b102a0b6c2b631453f5f7996d57}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a296d6fdead7d551cec8be88e49935bcd}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}!getClockSeqLow@{getClockSeqLow}}
+\index{getClockSeqLow@{getClockSeqLow}!Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}}
+\doxysubsubsection{\texorpdfstring{getClockSeqLow()}{getClockSeqLow()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a296d6fdead7d551cec8be88e49935bcd} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+::get\+Clock\+Seq\+Low (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the low field of the clock sequence 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_a0439b024eba54779e4ea64aabab20336}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a744805a786e5fac33604804208411561}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}!getNode@{getNode}}
+\index{getNode@{getNode}!Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}}
+\doxysubsubsection{\texorpdfstring{getNode()}{getNode()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_a744805a786e5fac33604804208411561} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+::get\+Node (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the node field 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_acedcac3f492d582fe8d3c7b473e2737c}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_aed63db2199e496b806045ae691e6b670}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}!getTimeHiAndVersion@{getTimeHiAndVersion}}
+\index{getTimeHiAndVersion@{getTimeHiAndVersion}!Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}}
+\doxysubsubsection{\texorpdfstring{getTimeHiAndVersion()}{getTimeHiAndVersion()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_aed63db2199e496b806045ae691e6b670} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+::get\+Time\+Hi\+And\+Version (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the high field of the timestamp multiplexed with the version 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_aea2189ce66470814be959b7b1e34b38b}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_ae290fe992e211f871f2e3c44e54efe4d}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}!getTimeLow@{getTimeLow}}
+\index{getTimeLow@{getTimeLow}!Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}}
+\doxysubsubsection{\texorpdfstring{getTimeLow()}{getTimeLow()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_ae290fe992e211f871f2e3c44e54efe4d} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+::get\+Time\+Low (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the low field of the timestamp 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_afa07457ce30bb1dbd0ff439da61d4d9b}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_ae36041af48a3de06e067a022c326ca0b}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}!getTimeMid@{getTimeMid}}
+\index{getTimeMid@{getTimeMid}!Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}}
+\doxysubsubsection{\texorpdfstring{getTimeMid()}{getTimeMid()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_ae36041af48a3de06e067a022c326ca0b} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+::get\+Time\+Mid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the middle field of the timestamp 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_aab0d2914d1de3ede83b1a07b66dce580}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_aab123e9317e495fbe5166bf141a50b95}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}!getTimestamp@{getTimestamp}}
+\index{getTimestamp@{getTimestamp}!Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Fields}}
+\doxysubsubsection{\texorpdfstring{getTimestamp()}{getTimestamp()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_aab123e9317e495fbe5166bf141a50b95} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+::get\+Timestamp (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the full 60-\/bit timestamp, without the version
+
+For version 2 UUIDs, the time\+\_\+low field is the local identifier and should not be returned as part of the time. For this reason, we set the bottom 32 bits of the timestamp to 0\textquotesingle{}s. As a result, there is some loss of fidelity of the timestamp, for version 2 UUIDs. The timestamp can be off by a range of 0 to 429.\+4967295 seconds (or 7 minutes, 9 seconds, and 496730 microseconds).
+
+For version 6 UUIDs, the timestamp order is reversed from the typical RFC 4122 order (the time bits are in the correct bit order, so that it is monotonically increasing). In returning the timestamp value, we put the bits in the order\+: time\+\_\+low + time\+\_\+mid + time\+\_\+hi. 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_a506ce24dee2c39a0104c34cf6d2aa4ac}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+Interface}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+vendor/ramsey/uuid/src/\+Rfc4122/Fields.\+php\item 
+vendor/ramsey/uuid/src/\+Guid/Fields.\+php\end{DoxyCompactItemize}

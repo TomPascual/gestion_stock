@@ -1,0 +1,82 @@
+\doxysection{Nette\textbackslash{}Utils\textbackslash{}Callback Class Reference}
+\hypertarget{class_nette_1_1_utils_1_1_callback}{}\label{class_nette_1_1_utils_1_1_callback}\index{Nette\textbackslash{}Utils\textbackslash{}Callback@{Nette\textbackslash{}Utils\textbackslash{}Callback}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_callback_aaced3a09b0d6bde6081902c59b450ca4}{invoke\+Safe}} (string \$function, array \$args, callable \$on\+Error)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_callback_a5254bc9e70217077ef569fc4f95bd0db}{check}} (mixed \$callable, bool \$syntax=false)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_callback_a5cdeabfb8d713ceb1c369c7a650f4c24}{to\+String}} (mixed \$callable)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_callback_aa8ba4b6517ec939ff7e0d3ad110ff58e}{to\+Reflection}} (\$callable)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_callback_affa3b2f3cf1bfd7679f4d31dc9580967}{is\+Static}} (callable \$callable)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_callback_a25f426eebf4e8d28277deae51776f92c}{unwrap}} (\textbackslash{}Closure \$closure)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+PHP callable tools. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_nette_1_1_utils_1_1_callback_a5254bc9e70217077ef569fc4f95bd0db}\index{Nette\textbackslash{}Utils\textbackslash{}Callback@{Nette\textbackslash{}Utils\textbackslash{}Callback}!check@{check}}
+\index{check@{check}!Nette\textbackslash{}Utils\textbackslash{}Callback@{Nette\textbackslash{}Utils\textbackslash{}Callback}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_callback_a5254bc9e70217077ef569fc4f95bd0db} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Callback\+::check (\begin{DoxyParamCaption}\item[{mixed}]{\$callable}{, }\item[{bool}]{\$syntax}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks that \$callable is valid PHP callback. Otherwise throws exception. If the \$syntax is set to true, only verifies that \$callable has a valid structure to be used as a callback, but does not verify if the class or method actually exists. \begin{DoxyReturn}{Returns}
+callable 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nette} & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_nette_1_1_utils_1_1_callback_aaced3a09b0d6bde6081902c59b450ca4}\index{Nette\textbackslash{}Utils\textbackslash{}Callback@{Nette\textbackslash{}Utils\textbackslash{}Callback}!invokeSafe@{invokeSafe}}
+\index{invokeSafe@{invokeSafe}!Nette\textbackslash{}Utils\textbackslash{}Callback@{Nette\textbackslash{}Utils\textbackslash{}Callback}}
+\doxysubsubsection{\texorpdfstring{invokeSafe()}{invokeSafe()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_callback_aaced3a09b0d6bde6081902c59b450ca4} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Callback\+::invoke\+Safe (\begin{DoxyParamCaption}\item[{string}]{\$function}{, }\item[{array}]{\$args}{, }\item[{callable}]{\$on\+Error}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Invokes internal PHP function with own error handler. \Hypertarget{class_nette_1_1_utils_1_1_callback_affa3b2f3cf1bfd7679f4d31dc9580967}\index{Nette\textbackslash{}Utils\textbackslash{}Callback@{Nette\textbackslash{}Utils\textbackslash{}Callback}!isStatic@{isStatic}}
+\index{isStatic@{isStatic}!Nette\textbackslash{}Utils\textbackslash{}Callback@{Nette\textbackslash{}Utils\textbackslash{}Callback}}
+\doxysubsubsection{\texorpdfstring{isStatic()}{isStatic()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_callback_affa3b2f3cf1bfd7679f4d31dc9580967} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Callback\+::is\+Static (\begin{DoxyParamCaption}\item[{callable}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks whether PHP callback is function or static method. \Hypertarget{class_nette_1_1_utils_1_1_callback_aa8ba4b6517ec939ff7e0d3ad110ff58e}\index{Nette\textbackslash{}Utils\textbackslash{}Callback@{Nette\textbackslash{}Utils\textbackslash{}Callback}!toReflection@{toReflection}}
+\index{toReflection@{toReflection}!Nette\textbackslash{}Utils\textbackslash{}Callback@{Nette\textbackslash{}Utils\textbackslash{}Callback}}
+\doxysubsubsection{\texorpdfstring{toReflection()}{toReflection()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_callback_aa8ba4b6517ec939ff7e0d3ad110ff58e} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Callback\+::to\+Reflection (\begin{DoxyParamCaption}\item[{}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns reflection for method or function used in PHP callback. 
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callable} & type check is escalated to Reflection\+Exception \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Reflection\+Exception if callback is not valid \Hypertarget{class_nette_1_1_utils_1_1_callback_a5cdeabfb8d713ceb1c369c7a650f4c24}\index{Nette\textbackslash{}Utils\textbackslash{}Callback@{Nette\textbackslash{}Utils\textbackslash{}Callback}!toString@{toString}}
+\index{toString@{toString}!Nette\textbackslash{}Utils\textbackslash{}Callback@{Nette\textbackslash{}Utils\textbackslash{}Callback}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_callback_a5cdeabfb8d713ceb1c369c7a650f4c24} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Callback\+::to\+String (\begin{DoxyParamCaption}\item[{mixed}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts PHP callback to textual form. Class or method may not exists. \Hypertarget{class_nette_1_1_utils_1_1_callback_a25f426eebf4e8d28277deae51776f92c}\index{Nette\textbackslash{}Utils\textbackslash{}Callback@{Nette\textbackslash{}Utils\textbackslash{}Callback}!unwrap@{unwrap}}
+\index{unwrap@{unwrap}!Nette\textbackslash{}Utils\textbackslash{}Callback@{Nette\textbackslash{}Utils\textbackslash{}Callback}}
+\doxysubsubsection{\texorpdfstring{unwrap()}{unwrap()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_callback_a25f426eebf4e8d28277deae51776f92c} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Callback\+::unwrap (\begin{DoxyParamCaption}\item[{\textbackslash{}Closure}]{\$closure}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Unwraps closure created by Closure\+::from\+Callable(). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/nette/utils/src/\+Utils/Callback.\+php\end{DoxyCompactItemize}

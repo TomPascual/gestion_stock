@@ -1,0 +1,72 @@
+\doxysection{Faker\textbackslash{}ORM\textbackslash{}Propel2\textbackslash{}Populator Class Reference}
+\hypertarget{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator}{}\label{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator}\index{Faker\textbackslash{}ORM\textbackslash{}Propel2\textbackslash{}Populator@{Faker\textbackslash{}ORM\textbackslash{}Propel2\textbackslash{}Populator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator_acba1df4a48e90d10af3eae092bf571d7}\label{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator_acba1df4a48e90d10af3eae092bf571d7} 
+{\bfseries \+\_\+\+\_\+construct} (\textbackslash{}\mbox{\hyperlink{class_faker_1_1_generator}{Faker\textbackslash{}\+Generator}} \$generator)
+\item 
+\mbox{\hyperlink{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator_a31ecc9b493b80f3c17965e1ef83c7f4b}{add\+Entity}} (\$entity, \$number, \$custom\+Column\+Formatters=\mbox{[}$\,$\mbox{]}, \$custom\+Modifiers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator_adf39661128466de9dc725cb47b208e8e}{execute}} (\$con=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator_a370b41248048978d02d68c236f5dc29a}\label{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator_a370b41248048978d02d68c236f5dc29a} 
+{\bfseries get\+Connection} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator_a196f458cb50fe47a3950d951ed41e038}\label{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator_a196f458cb50fe47a3950d951ed41e038} 
+{\bfseries \$generator}
+\item 
+\Hypertarget{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator_a277ac7da9441dd9d37b549f87120da36}\label{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator_a277ac7da9441dd9d37b549f87120da36} 
+{\bfseries \$entities} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator_a7b79d87f6e296bfba318cfc574a9b859}\label{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator_a7b79d87f6e296bfba318cfc574a9b859} 
+{\bfseries \$quantities} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Service class for populating a database using the Propel ORM. A Populator can populate several tables using Active\+Record classes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator_a31ecc9b493b80f3c17965e1ef83c7f4b}\index{Faker\textbackslash{}ORM\textbackslash{}Propel2\textbackslash{}Populator@{Faker\textbackslash{}ORM\textbackslash{}Propel2\textbackslash{}Populator}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!Faker\textbackslash{}ORM\textbackslash{}Propel2\textbackslash{}Populator@{Faker\textbackslash{}ORM\textbackslash{}Propel2\textbackslash{}Populator}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily \label{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator_a31ecc9b493b80f3c17965e1ef83c7f4b} 
+Faker\textbackslash{}\+ORM\textbackslash{}\+Propel2\textbackslash{}\+Populator\+::add\+Entity (\begin{DoxyParamCaption}\item[{}]{\$entity}{, }\item[{}]{\$number}{, }\item[{}]{\$custom\+Column\+Formatters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$custom\+Modifiers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Add an order for the generation of \$number records for \$entity.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$entity} & A Propel Active\+Record classname, or a \textbackslash{}\+Faker\textbackslash{}\+ORM\textbackslash{}\+Propel2\textbackslash{}\+Entity\+Populator instance \\
+\hline
+int & {\em \$number} & The number of entities to populate \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator_adf39661128466de9dc725cb47b208e8e}\index{Faker\textbackslash{}ORM\textbackslash{}Propel2\textbackslash{}Populator@{Faker\textbackslash{}ORM\textbackslash{}Propel2\textbackslash{}Populator}!execute@{execute}}
+\index{execute@{execute}!Faker\textbackslash{}ORM\textbackslash{}Propel2\textbackslash{}Populator@{Faker\textbackslash{}ORM\textbackslash{}Propel2\textbackslash{}Populator}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_faker_1_1_o_r_m_1_1_propel2_1_1_populator_adf39661128466de9dc725cb47b208e8e} 
+Faker\textbackslash{}\+ORM\textbackslash{}\+Propel2\textbackslash{}\+Populator\+::execute (\begin{DoxyParamCaption}\item[{}]{\$con}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Populate the database using all the Entity classes previously added.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Propel\+PDO & {\em \$con} & A Propel connection object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array A list of the inserted PKs 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/fakerphp/faker/src/\+Faker/\+ORM/\+Propel2/Populator.\+php\end{DoxyCompactItemize}

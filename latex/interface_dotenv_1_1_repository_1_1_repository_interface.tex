@@ -1,0 +1,130 @@
+\doxysection{Dotenv\textbackslash{}Repository\textbackslash{}Repository\+Interface Interface Reference}
+\hypertarget{interface_dotenv_1_1_repository_1_1_repository_interface}{}\label{interface_dotenv_1_1_repository_1_1_repository_interface}\index{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface}}
+Inheritance diagram for Dotenv\textbackslash{}Repository\textbackslash{}Repository\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_dotenv_1_1_repository_1_1_repository_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_dotenv_1_1_repository_1_1_repository_interface_a8e42c9ff5849311cdbaa866ad5b77502}{has}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_dotenv_1_1_repository_1_1_repository_interface_a5fc412ea5df081d85cb7ee0b59e407ab}{get}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_dotenv_1_1_repository_1_1_repository_interface_a30b5d5dbfd2832fbf590df3af771436e}{set}} (string \$name, string \$value)
+\item 
+\mbox{\hyperlink{interface_dotenv_1_1_repository_1_1_repository_interface_a82ff0b4afb0c09e132b4f7ad5524d4f2}{clear}} (string \$name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_dotenv_1_1_repository_1_1_repository_interface_a82ff0b4afb0c09e132b4f7ad5524d4f2}\index{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface}!clear@{clear}}
+\index{clear@{clear}!Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{interface_dotenv_1_1_repository_1_1_repository_interface_a82ff0b4afb0c09e132b4f7ad5524d4f2} 
+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Interface\+::clear (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Clear an environment variable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_dotenv_1_1_repository_1_1_adapter_repository_ac9144a41ddc065512dd830bee6c51b74}{Dotenv\textbackslash{}\+Repository\textbackslash{}\+Adapter\+Repository}}.
+
+\Hypertarget{interface_dotenv_1_1_repository_1_1_repository_interface_a5fc412ea5df081d85cb7ee0b59e407ab}\index{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface}!get@{get}}
+\index{get@{get}!Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{interface_dotenv_1_1_repository_1_1_repository_interface_a5fc412ea5df081d85cb7ee0b59e407ab} 
+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Interface\+::get (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Get an environment variable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_dotenv_1_1_repository_1_1_adapter_repository_ab59e4b484c9ab760c2966451edc081a1}{Dotenv\textbackslash{}\+Repository\textbackslash{}\+Adapter\+Repository}}.
+
+\Hypertarget{interface_dotenv_1_1_repository_1_1_repository_interface_a8e42c9ff5849311cdbaa866ad5b77502}\index{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface}!has@{has}}
+\index{has@{has}!Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{interface_dotenv_1_1_repository_1_1_repository_interface_a8e42c9ff5849311cdbaa866ad5b77502} 
+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Interface\+::has (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Determine if the given environment variable is defined.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_dotenv_1_1_repository_1_1_adapter_repository_a4fc5e0fa28ab12cffd10debc2b27daef}{Dotenv\textbackslash{}\+Repository\textbackslash{}\+Adapter\+Repository}}.
+
+\Hypertarget{interface_dotenv_1_1_repository_1_1_repository_interface_a30b5d5dbfd2832fbf590df3af771436e}\index{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface}!set@{set}}
+\index{set@{set}!Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryInterface}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{interface_dotenv_1_1_repository_1_1_repository_interface_a30b5d5dbfd2832fbf590df3af771436e} 
+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Interface\+::set (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Set an environment variable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_dotenv_1_1_repository_1_1_adapter_repository_adcd54f06b38b1ab22cd13ce7210b809e}{Dotenv\textbackslash{}\+Repository\textbackslash{}\+Adapter\+Repository}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/vlucas/phpdotenv/src/\+Repository/Repository\+Interface.\+php\end{DoxyCompactItemize}

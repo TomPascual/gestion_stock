@@ -1,0 +1,146 @@
+\doxysection{Illuminate\textbackslash{}Auth\textbackslash{}Token\+Guard Class Reference}
+\hypertarget{class_illuminate_1_1_auth_1_1_token_guard}{}\label{class_illuminate_1_1_auth_1_1_token_guard}\index{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard@{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard}}
+Inheritance diagram for Illuminate\textbackslash{}Auth\textbackslash{}Token\+Guard\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_auth_1_1_token_guard}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_token_guard_aa5bf5ae01aa09c9058dea0cea8220770}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_user_provider}{User\+Provider}} \$provider, \mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request, \$input\+Key=\textquotesingle{}api\+\_\+token\textquotesingle{}, \$storage\+Key=\textquotesingle{}api\+\_\+token\textquotesingle{}, \$hash=false,)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_token_guard_aa4bd666eac32b566f93087245bd60965}{user}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_token_guard_a1342145eaa29ea5d336358a455793f32}{get\+Token\+For\+Request}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_token_guard_aab3a023a6bff38a0d9315b363864459b}{validate}} (array \$credentials=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_token_guard_ad25fc4e2b42ed233c3f6b1eca330a20a}{set\+Request}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_guard}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Guard}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_guard_a6b54790ecbd1a6ad67a2c39f067341fb}{check}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_guard_a0a707fb71ff2cbef339859113524d416}{guest}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_guard_ab54f7401ef9b40403fea2dca053aa5fb}{id}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_guard_afff938b0c0a1a2388da5fadcc9051e68}{has\+User}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_guard_a67bda181ea98611a9a623b57e51e3873}{set\+User}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_authenticatable}{Authenticatable}} \$\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_guard_aec37689626fff125f7f9034e563e7c3b}{user}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_auth_1_1_token_guard_a9efe410f661f8eb2838937159050c7a4}\label{class_illuminate_1_1_auth_1_1_token_guard_a9efe410f661f8eb2838937159050c7a4} 
+{\bfseries \$request}
+\item 
+\Hypertarget{class_illuminate_1_1_auth_1_1_token_guard_a92e54be964242777cdb9ce7fa6e73a45}\label{class_illuminate_1_1_auth_1_1_token_guard_a92e54be964242777cdb9ce7fa6e73a45} 
+{\bfseries \$input\+Key}
+\item 
+\Hypertarget{class_illuminate_1_1_auth_1_1_token_guard_a9f20815db90e21cc2c17b4a468db9d09}\label{class_illuminate_1_1_auth_1_1_token_guard_a9f20815db90e21cc2c17b4a468db9d09} 
+{\bfseries \$storage\+Key}
+\item 
+\Hypertarget{class_illuminate_1_1_auth_1_1_token_guard_a49a68d3cc826ad4b97f605c3600394d1}\label{class_illuminate_1_1_auth_1_1_token_guard_a49a68d3cc826ad4b97f605c3600394d1} 
+{\bfseries \$hash} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_token_guard_aa5bf5ae01aa09c9058dea0cea8220770}\index{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard@{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard@{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_token_guard_aa5bf5ae01aa09c9058dea0cea8220770} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Token\+Guard\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_user_provider}{User\+Provider}}}]{\$provider}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{, }\item[{}]{\$input\+Key}{ = {\ttfamily \textquotesingle{}api\+\_\+token\textquotesingle{}}, }\item[{}]{\$storage\+Key}{ = {\ttfamily \textquotesingle{}api\+\_\+token\textquotesingle{}}, }\item[{}]{\$hash}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a new authentication guard.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+User\+Provider & {\em \$provider} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+string & {\em \$input\+Key} & \\
+\hline
+string & {\em \$storage\+Key} & \\
+\hline
+bool & {\em \$hash} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_token_guard_a1342145eaa29ea5d336358a455793f32}\index{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard@{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard}!getTokenForRequest@{getTokenForRequest}}
+\index{getTokenForRequest@{getTokenForRequest}!Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard@{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard}}
+\doxysubsubsection{\texorpdfstring{getTokenForRequest()}{getTokenForRequest()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_token_guard_a1342145eaa29ea5d336358a455793f32} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Token\+Guard\+::get\+Token\+For\+Request (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the token for the current request.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_token_guard_ad25fc4e2b42ed233c3f6b1eca330a20a}\index{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard@{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard}!setRequest@{setRequest}}
+\index{setRequest@{setRequest}!Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard@{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard}}
+\doxysubsubsection{\texorpdfstring{setRequest()}{setRequest()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_token_guard_ad25fc4e2b42ed233c3f6b1eca330a20a} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Token\+Guard\+::set\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Set the current request instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_token_guard_aa4bd666eac32b566f93087245bd60965}\index{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard@{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard}!user@{user}}
+\index{user@{user}!Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard@{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard}}
+\doxysubsubsection{\texorpdfstring{user()}{user()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_token_guard_aa4bd666eac32b566f93087245bd60965} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Token\+Guard\+::user (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the currently authenticated user.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_guard_aec37689626fff125f7f9034e563e7c3b}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Guard}}.
+
+\Hypertarget{class_illuminate_1_1_auth_1_1_token_guard_aab3a023a6bff38a0d9315b363864459b}\index{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard@{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard}!validate@{validate}}
+\index{validate@{validate}!Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard@{Illuminate\textbackslash{}Auth\textbackslash{}TokenGuard}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_token_guard_aab3a023a6bff38a0d9315b363864459b} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Token\+Guard\+::validate (\begin{DoxyParamCaption}\item[{array}]{\$credentials}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Validate a user\textquotesingle{}s credentials.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$credentials} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_guard_a068859b19bb100155731988305119e37}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Guard}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Auth/Token\+Guard.\+php\end{DoxyCompactItemize}

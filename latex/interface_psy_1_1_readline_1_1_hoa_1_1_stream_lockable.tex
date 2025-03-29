@@ -1,0 +1,99 @@
+\doxysection{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Stream\+Lockable Interface Reference}
+\hypertarget{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable}{}\label{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable}}
+Inheritance diagram for Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}Stream\+Lockable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.083700cm]{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable_a450654fe4f8e3287ff89f8ccb4a012dd}{lock}} (int \$operation)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_psy_1_1_readline_1_1_hoa_1_1_i_stream}{Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+IStream}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psy_1_1_readline_1_1_hoa_1_1_i_stream_a5a83cee39353b27cf7ab6c0dffa37deb}{get\+Stream}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable_a2d736a0dbdf2ab0c7adc7e1ddff6a577}{LOCK\+\_\+\+SHARED}} = \textbackslash{}LOCK\+\_\+\+SH
+\item 
+const \mbox{\hyperlink{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable_a12f3124ce6addcc017003f9b31ed3a86}{LOCK\+\_\+\+EXCLUSIVE}} = \textbackslash{}LOCK\+\_\+\+EX
+\item 
+const \mbox{\hyperlink{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable_a56d911fdc3d2ea1c03bd1959ead1915f}{LOCK\+\_\+\+RELEASE}} = \textbackslash{}LOCK\+\_\+\+UN
+\item 
+const \mbox{\hyperlink{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable_aa1fc17d6f280f0b0b220a028aa853c9b}{LOCK\+\_\+\+NO\+\_\+\+BLOCK}} = \textbackslash{}LOCK\+\_\+\+NB
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface \textbackslash{}\+Hoa\textbackslash{}\+Stream\textbackslash{}\+IStream\textbackslash{}\+Lockable.
+
+Interface for lockable input/output.
+
+@license New BSD License 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable_a450654fe4f8e3287ff89f8ccb4a012dd}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable}!lock@{lock}}
+\index{lock@{lock}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable}}
+\doxysubsubsection{\texorpdfstring{lock()}{lock()}}
+{\footnotesize\ttfamily \label{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable_a450654fe4f8e3287ff89f8ccb4a012dd} 
+Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Stream\+Lockable\+::lock (\begin{DoxyParamCaption}\item[{int}]{\$operation}{}\end{DoxyParamCaption})}
+
+Portable advisory locking. Should take a look at stream\+\_\+supports\+\_\+lock().
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$operation} & operation, use the self\+::\+LOCK\+\_\+\texorpdfstring{$\ast$}{*} constants\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_psy_1_1_readline_1_1_hoa_1_1_file_ada0f700f2ced418547f77af9a8b124b6}{Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+File}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable_a12f3124ce6addcc017003f9b31ed3a86}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable}!LOCK\_EXCLUSIVE@{LOCK\_EXCLUSIVE}}
+\index{LOCK\_EXCLUSIVE@{LOCK\_EXCLUSIVE}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable}}
+\doxysubsubsection{\texorpdfstring{LOCK\_EXCLUSIVE}{LOCK\_EXCLUSIVE}}
+{\footnotesize\ttfamily \label{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable_a12f3124ce6addcc017003f9b31ed3a86} 
+const Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Stream\+Lockable\+::\+LOCK\+\_\+\+EXCLUSIVE = \textbackslash{}LOCK\+\_\+\+EX}
+
+Acquire an exclusive lock (writer).
+
+@const int \Hypertarget{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable_aa1fc17d6f280f0b0b220a028aa853c9b}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable}!LOCK\_NO\_BLOCK@{LOCK\_NO\_BLOCK}}
+\index{LOCK\_NO\_BLOCK@{LOCK\_NO\_BLOCK}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable}}
+\doxysubsubsection{\texorpdfstring{LOCK\_NO\_BLOCK}{LOCK\_NO\_BLOCK}}
+{\footnotesize\ttfamily \label{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable_aa1fc17d6f280f0b0b220a028aa853c9b} 
+const Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Stream\+Lockable\+::\+LOCK\+\_\+\+NO\+\_\+\+BLOCK = \textbackslash{}LOCK\+\_\+\+NB}
+
+If we do not want \$this-\/\texorpdfstring{$>$}{>}lock() to block while locking.
+
+@const int \Hypertarget{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable_a56d911fdc3d2ea1c03bd1959ead1915f}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable}!LOCK\_RELEASE@{LOCK\_RELEASE}}
+\index{LOCK\_RELEASE@{LOCK\_RELEASE}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable}}
+\doxysubsubsection{\texorpdfstring{LOCK\_RELEASE}{LOCK\_RELEASE}}
+{\footnotesize\ttfamily \label{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable_a56d911fdc3d2ea1c03bd1959ead1915f} 
+const Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Stream\+Lockable\+::\+LOCK\+\_\+\+RELEASE = \textbackslash{}LOCK\+\_\+\+UN}
+
+Release a lock (shared or exclusive).
+
+@const int \Hypertarget{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable_a2d736a0dbdf2ab0c7adc7e1ddff6a577}\index{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable}!LOCK\_SHARED@{LOCK\_SHARED}}
+\index{LOCK\_SHARED@{LOCK\_SHARED}!Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable@{Psy\textbackslash{}Readline\textbackslash{}Hoa\textbackslash{}StreamLockable}}
+\doxysubsubsection{\texorpdfstring{LOCK\_SHARED}{LOCK\_SHARED}}
+{\footnotesize\ttfamily \label{interface_psy_1_1_readline_1_1_hoa_1_1_stream_lockable_a2d736a0dbdf2ab0c7adc7e1ddff6a577} 
+const Psy\textbackslash{}\+Readline\textbackslash{}\+Hoa\textbackslash{}\+Stream\+Lockable\+::\+LOCK\+\_\+\+SHARED = \textbackslash{}LOCK\+\_\+\+SH}
+
+Acquire a shared lock (reader).
+
+@const int 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Readline/\+Hoa/Stream\+Lockable.\+php\end{DoxyCompactItemize}

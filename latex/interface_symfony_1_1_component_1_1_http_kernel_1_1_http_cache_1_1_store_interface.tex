@@ -1,0 +1,150 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Http\+Cache\textbackslash{}Store\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface}{}\label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Http\+Cache\textbackslash{}Store\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_a52764f118f089b9c4f89d3b04cfbfb42}{lookup}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_ae154f05904f31ba1b6ecaa4b9856b866}{write}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_aa69a7388c351e3aeda57a40474456966}{invalidate}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_a3d0d35c1f648c1afb0b34d87e8351bb4}{lock}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_ae0adce4fd47ad9c8471ec0352fabd10f}{unlock}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_a1b1080ffb0de52beb0453841c6fcee1c}{is\+Locked}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_a832461a7fe214097c7ad1ae2ac1ab439}{purge}} (string \$url)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_a4779dc4fd54588117b71b91a030f2022}{cleanup}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface implemented by HTTP cache stores.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_a4779dc4fd54588117b71b91a030f2022}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}}
+\doxysubsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_a4779dc4fd54588117b71b91a030f2022} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Store\+Interface\+::cleanup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Cleanups storage. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_a6b99484220e7a618426f10ab27d226a6}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_aa69a7388c351e3aeda57a40474456966}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}!invalidate@{invalidate}}
+\index{invalidate@{invalidate}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}}
+\doxysubsubsection{\texorpdfstring{invalidate()}{invalidate()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_aa69a7388c351e3aeda57a40474456966} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Store\+Interface\+::invalidate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Invalidates all cache entries that match the request. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_aa4d130c500b8d525bca3a09813646580}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_a1b1080ffb0de52beb0453841c6fcee1c}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}!isLocked@{isLocked}}
+\index{isLocked@{isLocked}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}}
+\doxysubsubsection{\texorpdfstring{isLocked()}{isLocked()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_a1b1080ffb0de52beb0453841c6fcee1c} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Store\+Interface\+::is\+Locked (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Returns whether or not a lock exists.
+
+\begin{DoxyReturn}{Returns}
+bool true if lock exists, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_ab558978f4bb25502e363b0dc9e492d07}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_a3d0d35c1f648c1afb0b34d87e8351bb4}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}!lock@{lock}}
+\index{lock@{lock}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}}
+\doxysubsubsection{\texorpdfstring{lock()}{lock()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_a3d0d35c1f648c1afb0b34d87e8351bb4} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Store\+Interface\+::lock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Locks the cache for a given Request.
+
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}string true if the lock is acquired, the path to the current lock otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_a1a00e1b6bb2a599b4e5e972b2327e107}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_a52764f118f089b9c4f89d3b04cfbfb42}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}!lookup@{lookup}}
+\index{lookup@{lookup}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}}
+\doxysubsubsection{\texorpdfstring{lookup()}{lookup()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_a52764f118f089b9c4f89d3b04cfbfb42} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Store\+Interface\+::lookup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Locates a cached Response for the Request provided. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_a3d65f1e173fddafe2db5b6596e56b468}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_a832461a7fe214097c7ad1ae2ac1ab439}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}!purge@{purge}}
+\index{purge@{purge}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}}
+\doxysubsubsection{\texorpdfstring{purge()}{purge()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_a832461a7fe214097c7ad1ae2ac1ab439} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Store\+Interface\+::purge (\begin{DoxyParamCaption}\item[{string}]{\$url}{}\end{DoxyParamCaption})}
+
+Purges data for the given URL.
+
+\begin{DoxyReturn}{Returns}
+bool true if the URL exists and has been purged, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_a69a37c8a90f3c689879323ea00b68ebe}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_ae0adce4fd47ad9c8471ec0352fabd10f}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}!unlock@{unlock}}
+\index{unlock@{unlock}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}}
+\doxysubsubsection{\texorpdfstring{unlock()}{unlock()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_ae0adce4fd47ad9c8471ec0352fabd10f} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Store\+Interface\+::unlock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Releases the lock for the given Request.
+
+\begin{DoxyReturn}{Returns}
+bool False if the lock file does not exist or cannot be unlocked, true otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_a803085ed3c104a65bc27795d6a69e7fc}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_ae154f05904f31ba1b6ecaa4b9856b866}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}!write@{write}}
+\index{write@{write}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}StoreInterface}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_interface_ae154f05904f31ba1b6ecaa4b9856b866} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Store\+Interface\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{, }\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Writes a cache entry to the store for the given Request and Response.
+
+Existing entries are read and any that match the response are removed. This method calls write with the new list of cache entries.
+
+\begin{DoxyReturn}{Returns}
+string The key under which the response is stored 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_store_a94c422fbf710ba00b2bbf1e890d347b1}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Store}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/kernel/\+Http\+Cache/Store\+Interface.\+php\end{DoxyCompactItemize}

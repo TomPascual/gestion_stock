@@ -1,0 +1,705 @@
+\doxysection{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}Join\+Clause Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_query_1_1_join_clause}{}\label{class_illuminate_1_1_database_1_1_query_1_1_join_clause}\index{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause@{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause}}
+Inheritance diagram for Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}Join\+Clause\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_illuminate_1_1_database_1_1_query_1_1_join_clause}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a97b2de49fd270588ee702712dae78b55}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Builder}} \$parent\+Query, \$type, \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_join_clause_aa5d12ef41dab1e54e40dbbef03cfe85f}{on}} (\$first, \$operator=null, \$second=null, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a795d3878fb5dc69cb06493bf416864b7}{or\+On}} (\$first, \$operator=null, \$second=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a12e7babc8ca979fd29e925452afe8485}{new\+Query}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a251b052bc4da130babaca505c5f9f1ad}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connection_interface}{Connection\+Interface}} \$connection, ?\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar}{Grammar}} \$grammar=null, ?\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor}{Processor}} \$processor=null,)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a5679bdec23383b250444e81d9cd2ed06}{select}} (\$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a4d80150c87451de1e2e6477a7670e363}{select\+Sub}} (\$query, \$as)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a7ed05f3b9448fb99b004f8fa86c023be}{select\+Raw}} (\$expression, array \$bindings=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_af4d2dd4b37ab82006ce21b6369eb256e}{from\+Sub}} (\$query, \$as)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae05dbf53af8ecb94af83fbd77757e544}{from\+Raw}} (\$expression, \$bindings=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a05bd2e7fdeb9e62411ef2c90f7c65507}{add\+Select}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a87d52340ceb915f780e0bcf0a123ea64}{distinct}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_add27683d39c1e1d8ef88fefeb0cb5804}{from}} (\$table, \$as=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a11057ac431c3a4509ae7b5b264ca5365}{use\+Index}} (\$index)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a5b6a1193080e5d1e714fa38b510ac920}{force\+Index}} (\$index)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ab35c3d7f241f2e5bc92229c3bf8da7e4}{ignore\+Index}} (\$index)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a6b5b7a60b80dfd383b71f2d5debeaa14}{join}} (\$table, \$first, \$operator=null, \$second=null, \$type=\textquotesingle{}inner\textquotesingle{}, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae1ffc97c764ef282c79b81668d11ccca}{where}}=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a56d968138f2838d2d1b18c029d49a672}{join\+Where}} (\$table, \$first, \$operator, \$second, \$type=\textquotesingle{}inner\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_aa7bdc3b4bd1e69d10706d46413a10666}{join\+Sub}} (\$query, \$as, \$first, \$operator=null, \$second=null, \$type=\textquotesingle{}inner\textquotesingle{}, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae1ffc97c764ef282c79b81668d11ccca}{where}}=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad327d7f40d98ed13ae9ab3a370d59d2d}{join\+Lateral}} (\$query, string \$as, string \$type=\textquotesingle{}inner\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ac623ca28d8efca8923a48b9ec103ad38}{left\+Join\+Lateral}} (\$query, string \$as)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a82e7986b174299d0e7776a09f3e23296}{left\+Join}} (\$table, \$first, \$operator=null, \$second=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_abcbe9558d15723723de60dbd609f743e}{left\+Join\+Where}} (\$table, \$first, \$operator, \$second)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_afef648c1ac6eaed6316ee58b5463de22}{left\+Join\+Sub}} (\$query, \$as, \$first, \$operator=null, \$second=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ada2b02850d070f033d3fae454f2faa02}{right\+Join}} (\$table, \$first, \$operator=null, \$second=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ace9389ca5f6d2a84e9ebcd74c1ffe61f}{right\+Join\+Where}} (\$table, \$first, \$operator, \$second)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a5eeb06c040172ca5facbe3d11f7a42fe}{right\+Join\+Sub}} (\$query, \$as, \$first, \$operator=null, \$second=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a7661b10b88a4e3196cbc758a1ba4f952}{cross\+Join}} (\$table, \$first=null, \$operator=null, \$second=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a395aa961c76ac8981700afaddce66791}{cross\+Join\+Sub}} (\$query, \$as)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a1c897fb85ad20bcd5dc7666927c20fda}{merge\+Wheres}} (\$wheres, \$bindings)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae1ffc97c764ef282c79b81668d11ccca}{where}} (\$column, \$operator=null, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a700fb3d2754ee5ec5b01334f1fecb518}{prepare\+Value\+And\+Operator}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}, \$operator, \$use\+Default=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a71dc015c69382ab81683dbded43af520}{or\+Where}} (\$column, \$operator=null, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a5b9c356a3fd7a9a06cca4aee58c49093}{where\+Not}} (\$column, \$operator=null, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ab719d90dd8d477d2700fdb7da50b6ef0}{or\+Where\+Not}} (\$column, \$operator=null, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_aa937c88ec4a6538f8435e26cafca8e2e}{where\+Column}} (\$first, \$operator=null, \$second=null, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_aed14b11d824fd0d71e3167018dcb1ead}{or\+Where\+Column}} (\$first, \$operator=null, \$second=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a1d6fb0c85cc588a2e8875a5c7c231363}{where\+Raw}} (\$sql, \$bindings=\mbox{[}$\,$\mbox{]}, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_afe4c2906223b8130d5acd6d2d67c3711}{or\+Where\+Raw}} (\$sql, \$bindings=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_aa89ff96d8308fb5f878642a38fe2a71d}{where\+Like}} (\$column, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}, \$case\+Sensitive=false, \$boolean=\textquotesingle{}and\textquotesingle{}, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad82ce07e75fda50ac50bbcf9a32e56b0}{or\+Where\+Like}} (\$column, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}, \$case\+Sensitive=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ab157ec14f744ef19d41a8df56ef418ff}{where\+Not\+Like}} (\$column, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}, \$case\+Sensitive=false, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_aa6227e414fd42cb62d95c915d51d62f2}{or\+Where\+Not\+Like}} (\$column, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}, \$case\+Sensitive=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a5069ee73bd61097fb57e1135cf398eb5}{where\+In}} (\$column, \$values, \$boolean=\textquotesingle{}and\textquotesingle{}, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a23361b4514a853c743256b34e4e30f5d}{or\+Where\+In}} (\$column, \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a6d1b66b4b032833cfeb50eb4171abaa0}{where\+Not\+In}} (\$column, \$values, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae26b354a464083585133d7534ba8ad6e}{or\+Where\+Not\+In}} (\$column, \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a2d8e00e0cd465a7445442fba3dc5c668}{where\+Integer\+In\+Raw}} (\$column, \$values, \$boolean=\textquotesingle{}and\textquotesingle{}, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a6e771ac70222c83f29b4e06f8da28f0f}{or\+Where\+Integer\+In\+Raw}} (\$column, \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a663c689dc03a689c22162aaa549aa471}{where\+Integer\+Not\+In\+Raw}} (\$column, \$values, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a1b610a949b188c492e44e7e6b462976e}{or\+Where\+Integer\+Not\+In\+Raw}} (\$column, \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a21b28633ee3021a1a0605307c2d3041f}{where\+Null}} (\$columns, \$boolean=\textquotesingle{}and\textquotesingle{}, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a93f4841312e9ad627d776e37b1021c65}{or\+Where\+Null}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a64fcfdcc7d2762faa9f8cf8ed0eda6e6}{where\+Not\+Null}} (\$columns, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a18a20ba90ef3facdeac630db629867bc}{where\+Between}} (\$column, iterable \$values, \$boolean=\textquotesingle{}and\textquotesingle{}, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae5c55ca522c893afb89a610679487bd8}{where\+Between\+Columns}} (\$column, array \$values, \$boolean=\textquotesingle{}and\textquotesingle{}, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a9f7e96bcae540b68bfccc7483387038b}{or\+Where\+Between}} (\$column, iterable \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a7981be2a07266939987a2ee67a052f08}{or\+Where\+Between\+Columns}} (\$column, array \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a5d6c0ca8b033b6113d6e1f8d99853fb2}{where\+Not\+Between}} (\$column, iterable \$values, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad00e63a94b371c9a92c160b808917f99}{where\+Not\+Between\+Columns}} (\$column, array \$values, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_afe8ae8bb6783fd925951fb7d0b322ea8}{or\+Where\+Not\+Between}} (\$column, iterable \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_aa9ba2f2bb129d39acd8a085c0c426525}{or\+Where\+Not\+Between\+Columns}} (\$column, array \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_abf653d8c3525c246b0940f6d6988f41c}{or\+Where\+Not\+Null}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a3e08f22cf5b29526ea719d55fd9f8ef0}{where\+Date}} (\$column, \$operator, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_aa7d56cd8ea0e7f8ea6f347b8c9d7abf7}{or\+Where\+Date}} (\$column, \$operator, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a2ca7287e332c49169c8e48d52c8bb665}{where\+Time}} (\$column, \$operator, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_aab2bc376830734832f9a68390fa3a7c3}{or\+Where\+Time}} (\$column, \$operator, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a07eccbd7348dd2207ce9f915cb798cf9}{where\+Day}} (\$column, \$operator, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_aef0b462970e106ae2a47d679710512dd}{or\+Where\+Day}} (\$column, \$operator, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ace71d517535c1459de7b9ae7e42bae19}{where\+Month}} (\$column, \$operator, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a4882cfd48036fb65088d0e6132cfa011}{or\+Where\+Month}} (\$column, \$operator, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a269cd4682dee27fb96250049b6a4fb80}{where\+Year}} (\$column, \$operator, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a0f7f0b8c9ccf387a6ee809f689ba23dc}{or\+Where\+Year}} (\$column, \$operator, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a7d9a6110860bc0ca10fc3909af46cdea}{where\+Nested}} (Closure \$callback, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_abdd1f136d29ef6d476691b7ad12512e1}{for\+Nested\+Where}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a34444253d47a3ec5543e1d416b0c92bd}{add\+Nested\+Where\+Query}} (\$query, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ac437b3b7367550e0ade92ad357868071}{where\+Exists}} (\$callback, \$boolean=\textquotesingle{}and\textquotesingle{}, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a0616c3297f610c8c892e6702ebcf1281}{or\+Where\+Exists}} (\$callback, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a15ead20c7925643b35a2b48b6390eabd}{where\+Not\+Exists}} (\$callback, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_acb4702985f0c9cf5ee56004d6d162c0f}{or\+Where\+Not\+Exists}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a5cf02d05aaf758b46a5e4b63510cfd15}{add\+Where\+Exists\+Query}} (self \$query, \$boolean=\textquotesingle{}and\textquotesingle{}, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a64a8daa86bf3d65d4b46ef2635428a57}{where\+Row\+Values}} (\$columns, \$operator, \$values, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_abdb2e8c5ba23922f427dc8ef50979d7e}{or\+Where\+Row\+Values}} (\$columns, \$operator, \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ac1b9aa519bf31f5431ace5a8bc584a8e}{where\+Json\+Contains}} (\$column, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}, \$boolean=\textquotesingle{}and\textquotesingle{}, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a40768d1fd533f5d5666f57d28a70a30a}{or\+Where\+Json\+Contains}} (\$column, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_acf21e046c670f211c0e80ecfa2af1fd8}{where\+Json\+Doesnt\+Contain}} (\$column, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a3f34152e7f30aa2470061830bb569ab5}{or\+Where\+Json\+Doesnt\+Contain}} (\$column, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a724fe388bec83648c5318556161be95b}{where\+Json\+Overlaps}} (\$column, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}, \$boolean=\textquotesingle{}and\textquotesingle{}, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a5d11236dcfec91834a9b6261acb53428}{or\+Where\+Json\+Overlaps}} (\$column, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae2348d6bf4e73979a1a115641563474d}{where\+Json\+Doesnt\+Overlap}} (\$column, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_adb5e4d812a93c8c61a441d19aeb48b7f}{or\+Where\+Json\+Doesnt\+Overlap}} (\$column, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a9768e77e3f8f37ebfbf9ca286e0c1897}{where\+Json\+Contains\+Key}} (\$column, \$boolean=\textquotesingle{}and\textquotesingle{}, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ace0ef7a838fd5c82c00bece678de0efe}{or\+Where\+Json\+Contains\+Key}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_aba08eb2cbe6edc64d9a644672586808c}{where\+Json\+Doesnt\+Contain\+Key}} (\$column, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a13e1ddc76c23173f072a016bb79a0b11}{or\+Where\+Json\+Doesnt\+Contain\+Key}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a182d79ee6ed31784b48d53d43b84ff01}{where\+Json\+Length}} (\$column, \$operator, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a9f3349506db7e497dba5f186ab3eba35}{or\+Where\+Json\+Length}} (\$column, \$operator, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_aef245ae9a52a42285208006a61905b51}{dynamic\+Where}} (\$method, \$parameters)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_af6909e5ef4a7303a93faf615d4922b89}{where\+Full\+Text}} (\$columns, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}, array \$options=\mbox{[}$\,$\mbox{]}, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_af9bf62e212ae167bf440b681797b9068}{or\+Where\+Full\+Text}} (\$columns, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a557886fd476c802685f0295481cec04a}{where\+All}} (\$columns, \$operator=null, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_aabbe7023304cb30ad8db90412121519d}{or\+Where\+All}} (\$columns, \$operator=null, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a2777cdc77881eff0f1da0431cd7076fa}{where\+Any}} (\$columns, \$operator=null, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a2fe545196032f281388ad0b30d882ae4}{or\+Where\+Any}} (\$columns, \$operator=null, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a8fb18d21414b19ed70ce6a25e86a041d}{where\+None}} (\$columns, \$operator=null, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a3a19284c131ce6cc574e96959513cfe6}{or\+Where\+None}} (\$columns, \$operator=null, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad447622ba222c08cae858b351106d0e4}{group\+By}} (... \$groups)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a930a79767402dffbcf1a6d6c2ce10e49}{group\+By\+Raw}} (\$sql, array \$bindings=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a8e42eec36ccf11ad4a372f39190bcdfa}{having}} (\$column, \$operator=null, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a39cca80b484f0d1b49bc43fef930af12}{or\+Having}} (\$column, \$operator=null, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a54f8c59accb560f485cc7090ea39408e}{having\+Nested}} (Closure \$callback, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a0d7fb719b0c6048c5940294d4d71bbe4}{add\+Nested\+Having\+Query}} (\$query, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad0c3c60e88f966f764feb07a6277f2ce}{having\+Null}} (\$columns, \$boolean=\textquotesingle{}and\textquotesingle{}, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a78e8da682df1c0f4a36550a4e2c6659d}{or\+Having\+Null}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_af63fd1d17a0d9e43c306c8fddf60f45b}{having\+Not\+Null}} (\$columns, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a1f59377d2599b14e4b29b087453f71fc}{or\+Having\+Not\+Null}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a8806dce840c5767cf583ab7f474bcd5c}{having\+Between}} (\$column, iterable \$values, \$boolean=\textquotesingle{}and\textquotesingle{}, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a5d5f43be3fa72daadd77fdf76fa23a09}{having\+Raw}} (\$sql, array \$bindings=\mbox{[}$\,$\mbox{]}, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a78cf657002b6940da291753aad47f97b}{or\+Having\+Raw}} (\$sql, array \$bindings=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a7f4fe95860a9cd0745f930c81a0afa36}{order\+By}} (\$column, \$direction=\textquotesingle{}asc\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a40f007142c51cae57aa9099b94daf2e8}{order\+By\+Desc}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a640cd851aa1c02abdfb40d00d3c9af27}{latest}} (\$column=\textquotesingle{}created\+\_\+at\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad0379d6353e98e83907c7d54d3c6ebe0}{oldest}} (\$column=\textquotesingle{}created\+\_\+at\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a8dc9c20681e9a18c92c799255f863107}{in\+Random\+Order}} (\$seed=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a29a88110a770deafcc40820c2c1acde2}{order\+By\+Raw}} (\$sql, \$bindings=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a3b09a0d91f953c462cc879b9d5aee272}{skip}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a68928625dd68ed6851fc7a390f1044fc}{offset}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a9bf7824632781892960568a348e721fd}{take}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a5c2eb257461bc6b40a9aed5aa2ee0365}{limit}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ab1969559537dd41f1e429010937d916e}{group\+Limit}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_aaeb6014e7e3c6d4a3d12eff7af353506}{for\+Page}} (\$page, \$per\+Page=15)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae7e06d3a7fc32c6312542f7743d39363}{for\+Page\+Before\+Id}} (\$per\+Page=15, \$last\+Id=0, \$column=\textquotesingle{}id\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae93023f2cf1cbe7cd9fe6fe035fbfc80}{for\+Page\+After\+Id}} (\$per\+Page=15, \$last\+Id=0, \$column=\textquotesingle{}id\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad06f5de3c63467a0d5cd62e1e758cbd1}{reorder}} (\$column=null, \$direction=\textquotesingle{}asc\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a914987311dd2add2b608ece6d2d27d40}{union}} (\$query, \$all=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a6ff9877cc505322349a04f361baa8b8d}{union\+All}} (\$query)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a00278611c488ac04ab9cd8793ac2684e}{lock}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_acbaa4b5ff590f12de8f7a4432071ec3b}{lock\+For\+Update}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a4bb896928fa61b9182668bd72b48a1a5}{shared\+Lock}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a948513d9d331cbee144d0dcf0cc0efb3}{before\+Query}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_abd165d786ccea3969c50ae5381b44b50}{apply\+Before\+Query\+Callbacks}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_adb7fc22d7a193bf19b2545bc262097de}{after\+Query}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a921b94392235dc0deb40967d41b23459}{apply\+After\+Query\+Callbacks}} (\$result)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a821b20bfd831180f19e09adfe479dfa1}{to\+Sql}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a5326b29d211889fd1e883822638a5240}{to\+Raw\+Sql}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a3a8c15fc1284f1bc3a62df1e941369f8}{find}} (\$id, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a1ab989bfde0a6d79eb8c654f2019d424}{find\+Or}} (\$id, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}, ?Closure \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae43017f885920ffc862c2fd2e5447e15}{raw\+Value}} (string \$expression, array \$bindings=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a6aba42c401aa55f76b9ddc8dfe1d26d2}{sole\+Value}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ab9a0e674589ff84c71aea72864444835}{get}} (\$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a9e904a56e480b5ca5caef962679cd033}{paginate}} (\$per\+Page=15, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}, \$page\+Name=\textquotesingle{}page\textquotesingle{}, \$page=null, \$total=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a4521fa9e1508b4c2614189c32249878a}{simple\+Paginate}} (\$per\+Page=15, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}, \$page\+Name=\textquotesingle{}page\textquotesingle{}, \$page=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a515672ea7bb01d0c0b90dd644122ab4a}{cursor\+Paginate}} (\$per\+Page=15, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}, \$cursor\+Name=\textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae46b86c41aa49ec1fab45f861a28bef6}{cursor}}\textquotesingle{}, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae46b86c41aa49ec1fab45f861a28bef6}{cursor}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a3021262594b593bafdb731ea3af02e40}{get\+Count\+For\+Pagination}} (\$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae46b86c41aa49ec1fab45f861a28bef6}{cursor}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a89f7409e0df78845b68e0e7d5094e922}{pluck}} (\$column, \$key=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_af00b707122752f972614335f97a188d3}{implode}} (\$column, \$glue=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae989f03671bc65697b424e51a43626cc}{exists}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a88bdce24ad31db11b487d97c02f40e3b}{doesnt\+Exist}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a60543a1479a4c80bde255111727f22a8}{exists\+Or}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a26915409f99af9bc53df72264f534b66}{doesnt\+Exist\+Or}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a844b4ecb7c9868b7c0f37e0276786473}{count}} (\$columns=\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a4249c2a5a3d537071a6347f819723b74}{min}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a857cb1995ef8997eef7c7015a9824f19}{max}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a6e2990b3bd3e24f4ae74999646bbf7c0}{sum}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_afeb3fb4aa48efd71ff4017dcd468889d}{avg}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a44d945b01f206576b3f45aa79e0194a2}{average}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a327ff08b572160040eb3f57a8d5608f6}{aggregate}} (\$function, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a7c413c9a2d52b8415d239028a19e9170}{numeric\+Aggregate}} (\$function, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_adc27d769c6d695b3cbd75e261a2607d3}{insert}} (array \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae3e3af4c459731e4a7d15fa4b5be3ddd}{insert\+Or\+Ignore}} (array \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a56d63628af9bd756ee743ce6a2cf2836}{insert\+Get\+Id}} (array \$values, \$sequence=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ab725549ec68e5cfaf1b570d92c148415}{insert\+Using}} (array \$columns, \$query)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a035a78900ac25c33c75edacc49909bce}{insert\+Or\+Ignore\+Using}} (array \$columns, \$query)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_acd3448ba214d84c1e592be55336ac4aa}{update}} (array \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a0dc2d45c090bae1c12c1dae1086c1408}{update\+From}} (array \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a6bc4e18b0760b86cac98ce46a34d4a81}{update\+Or\+Insert}} (array \$attributes, array\texorpdfstring{$\vert$}{|}callable \$values=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a485f03989572ce1fe590a16f72f4592b}{upsert}} (array \$values, \$unique\+By, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_acd3448ba214d84c1e592be55336ac4aa}{update}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ab8ec8d974e9cd48cd54843b7615381a6}{increment}} (\$column, \$amount=1, array \$extra=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a1c5f0b3efbf5c6fd42c5392e251e9568}{increment\+Each}} (array \$columns, array \$extra=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a6060f471a8a8c5a08980913b04713248}{decrement}} (\$column, \$amount=1, array \$extra=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a8fc823f8700176b88e0eb33f12a04753}{decrement\+Each}} (array \$columns, array \$extra=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a87f0232b7e4bca0ec0aac6e8ddaa1e5a}{delete}} (\$id=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a94f3d660bf954629a4e16f92e8e626cf}{truncate}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a818f8ef664e39baeb9e391f086fcf625}{get\+Columns}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a3de13a13e2c199517fde20c5369ebb27}{raw}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a5427b43a1f6a02ecbaf323fffa85357e}{get\+Bindings}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a9354730a7183b10cdcfbb2be43893426}{get\+Raw\+Bindings}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a1e4bf4e996f55c4de8d317279614ae27}{set\+Bindings}} (array \$bindings, \$type=\textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae1ffc97c764ef282c79b81668d11ccca}{where}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae6a34c2461d92227e68d45b6fb49281c}{add\+Binding}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}, \$type=\textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae1ffc97c764ef282c79b81668d11ccca}{where}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a06568cd133c58b1356a3ca83f636ef6a}{cast\+Binding}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a72475885870424370be2455459034eaa}{merge\+Bindings}} (self \$query)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_af77445c1945032a981ed45f758805825}{clean\+Bindings}} (array \$bindings)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ac130aa8fc0f3657594ac9a5e4eea4339}{get\+Connection}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a02414584483ea3f61c992c4e2e6ae9fd}{get\+Processor}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a473ac373d7124a42863bdb866b43f5c8}{get\+Grammar}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a3cc5eda5a93d95a0ddd3a7e3eef95b17}{use\+Write\+Pdo}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a115655c711d0710d00dc509ef2cc1c48}{clone}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_abc4a8d288909017498b70a3024a98386}{clone\+Without}} (array \$properties)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a89b0a29161ea154229ff8ebdfd18f32b}{clone\+Without\+Bindings}} (array \$except)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a85a7038fd70221087a3a54a237a2b90e}{dump}} (... \$args)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a0efe126e34d425baa498958a49be82ee}{dump\+Raw\+Sql}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a9e4a4e662684991f5074615375e35da3}{dd}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a4338e75b784f5717adb7562aa6a0dd9a}{dd\+Raw\+Sql}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a179c6289d74e391453891c59e72e6a7c}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a2f3d9c717d11da44138b9a7de3ce4c67}\label{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a2f3d9c717d11da44138b9a7de3ce4c67} 
+{\bfseries \$type}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a2c150074dc73692b942235b5795b0c76}\label{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a2c150074dc73692b942235b5795b0c76} 
+{\bfseries \$table}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$connection}
+\item 
+{\bfseries \$grammar}
+\item 
+{\bfseries \$processor}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a596f3ce35267b8287d9e83edb6ff6063}{\$bindings}}
+\item 
+{\bfseries \$aggregate}
+\item 
+{\bfseries \$columns}
+\item 
+{\bfseries \$distinct} = false
+\item 
+{\bfseries \$from}
+\item 
+{\bfseries \$index\+Hint}
+\item 
+{\bfseries \$joins}
+\item 
+{\bfseries \$wheres} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$groups}
+\item 
+{\bfseries \$havings}
+\item 
+{\bfseries \$orders}
+\item 
+{\bfseries \$limit}
+\item 
+{\bfseries \$group\+Limit}
+\item 
+{\bfseries \$offset}
+\item 
+{\bfseries \$unions}
+\item 
+{\bfseries \$union\+Limit}
+\item 
+{\bfseries \$union\+Offset}
+\item 
+{\bfseries \$union\+Orders}
+\item 
+{\bfseries \$lock}
+\item 
+{\bfseries \$before\+Query\+Callbacks} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a4c6c553cefeddc6452f21ca67726c05a}{\$operators}}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a05195542d9afd4f5403c27226d030fb9}{\$bitwise\+Operators}}
+\item 
+{\bfseries \$use\+Write\+Pdo} = false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a74436db5243d41a5d164ba1f06acd8d6}{for\+Sub\+Query}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_join_clause_ad6b7d48799d782db8265b6da997b0df4}{new\+Parent\+Query}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a81b30b51a7cca30fbd9d7f883a925494}{create\+Sub}} (\$query)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a34c28cfd85a8578c51b2c77056be6584}{parse\+Sub}} (\$query)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_acd8571a7d0b1433b9cad55ae4c897094}{prepend\+Database\+Name\+If\+Cross\+Database\+Query}} (\$query)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a2926b4f4f48ce2f517237608ec0e0531}{new\+Join\+Clause}} (self \$parent\+Query, \$type, \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_acb320ee8daa1c3bf607ef11f54b50462}{new\+Join\+Lateral\+Clause}} (self \$parent\+Query, \$type, \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae757a35585abe595a8dc54f153c2312f}{add\+Array\+Of\+Wheres}} (\$column, \$boolean, \$method=\textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ae1ffc97c764ef282c79b81668d11ccca}{where}}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a244cebc8154627e4e33c2415483eaced}{invalid\+Operator\+And\+Value}} (\$operator, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a2c52eb2bf09baa1567715aea58371114}{invalid\+Operator}} (\$operator)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a70a4576ce3451587750c3fe828c8a04c}{is\+Bitwise\+Operator}} (\$operator)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ac2b1f4d0dc03943b4d60d099a27e6281}{add\+Date\+Based\+Where}} (\$type, \$column, \$operator, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}}, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad9af1d1a1a4fca59c654726f33d9ae32}{where\+Sub}} (\$column, \$operator, \$callback, \$boolean)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_af6ec6b1ab843ff04def9d1c00248306e}{add\+Dynamic}} (\$segment, \$connector, \$parameters, \$index)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_af80b5a962fc6d81662673b5e091bfb55}{remove\+Existing\+Orders\+For}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_aedbb0dd2b2c37e61d75179d92824f99a}{run\+Select}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a9684b1042ab7e4162e34bd30ffc1b6b8}{without\+Group\+Limit\+Keys}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a0b9507855ace6a77777f3a10c3e60f01}{ensure\+Order\+For\+Cursor\+Pagination}} (\$should\+Reverse=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a00c696ed7493131ba2ec73fb0bab53b0}{run\+Pagination\+Count\+Query}} (\$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a2da5d7e80c23012e21cb196e4626f778}{clone\+For\+Pagination\+Count}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad7ca2465f611fae2a1ca870eb6b237f5}{without\+Select\+Aliases}} (array \$columns)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad1dd17d89d502eae329a0253613eaf78}{enforce\+Order\+By}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a1448a992534adc8d001a3b4a34728cb3}{strip\+Table\+For\+Pluck}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a01bd51b48c7b8f23235b596608bf9b37}{pluck\+From\+Object\+Column}} (\$query\+Result, \$column, \$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a02ff5bd320520f7341b876b939461569}{pluck\+From\+Array\+Column}} (\$query\+Result, \$column, \$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a4bf4a8aa6989df48de39206255373338}{set\+Aggregate}} (\$function, \$columns)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a90d1234ad3716a6e8305fd365c0badc7}{once\+With\+Columns}} (\$columns, \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a9565108ff52da39f2153fe98537c8f17}{get\+Union\+Builders}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a52497c95d80aaa3553a1c5a3cc740283}{flatten\+Value}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a879df9a876ba03a8b5b27fc014abe36b}{default\+Key\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_a209a858a386c035c3060759d4dee5280}{is\+Queryable}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ad5d1f4ae5a9dccf33c7b03aff2080258}{value}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a1bc31eb4dc1b0f0d5ec5d2dcb379c3b8}\label{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a1bc31eb4dc1b0f0d5ec5d2dcb379c3b8} 
+{\bfseries \$parent\+Connection}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a18cae3ce29bb80b32fbed27210f72d00}\label{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a18cae3ce29bb80b32fbed27210f72d00} 
+{\bfseries \$parent\+Grammar}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_join_clause_ad1179a6071d5d50aad53d0c599bc2dff}\label{class_illuminate_1_1_database_1_1_query_1_1_join_clause_ad1179a6071d5d50aad53d0c599bc2dff} 
+{\bfseries \$parent\+Processor}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a29faaf18e70a61d698e0aa152bef4a3a}\label{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a29faaf18e70a61d698e0aa152bef4a3a} 
+{\bfseries \$parent\+Class}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$after\+Query\+Callbacks} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a97b2de49fd270588ee702712dae78b55}\index{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause@{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause@{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a97b2de49fd270588ee702712dae78b55} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Join\+Clause\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder}{Builder}}}]{\$parent\+Query}{, }\item[{}]{\$type}{, }\item[{}]{\$table}{}\end{DoxyParamCaption})}
+
+Create a new join clause instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder & {\em \$parent\+Query} & \\
+\hline
+string & {\em \$type} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a74436db5243d41a5d164ba1f06acd8d6}\index{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause@{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause}!forSubQuery@{forSubQuery}}
+\index{forSubQuery@{forSubQuery}!Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause@{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause}}
+\doxysubsubsection{\texorpdfstring{forSubQuery()}{forSubQuery()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a74436db5243d41a5d164ba1f06acd8d6} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Join\+Clause\+::for\+Sub\+Query (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new query instance for sub-\/query.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ada47516d2f666f741d4b273599bdce13}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_join_clause_ad6b7d48799d782db8265b6da997b0df4}\index{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause@{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause}!newParentQuery@{newParentQuery}}
+\index{newParentQuery@{newParentQuery}!Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause@{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause}}
+\doxysubsubsection{\texorpdfstring{newParentQuery()}{newParentQuery()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_join_clause_ad6b7d48799d782db8265b6da997b0df4} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Join\+Clause\+::new\+Parent\+Query (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new parent query instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a12e7babc8ca979fd29e925452afe8485}\index{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause@{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause}!newQuery@{newQuery}}
+\index{newQuery@{newQuery}!Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause@{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause}}
+\doxysubsubsection{\texorpdfstring{newQuery()}{newQuery()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a12e7babc8ca979fd29e925452afe8485} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Join\+Clause\+::new\+Query (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get a new instance of the join clause builder.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Join\+Clause 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_builder_ab206d65f56edf2d69566cdfb05759416}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_join_clause_aa5d12ef41dab1e54e40dbbef03cfe85f}\index{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause@{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause}!on@{on}}
+\index{on@{on}!Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause@{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause}}
+\doxysubsubsection{\texorpdfstring{on()}{on()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_join_clause_aa5d12ef41dab1e54e40dbbef03cfe85f} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Join\+Clause\+::on (\begin{DoxyParamCaption}\item[{}]{\$first}{, }\item[{}]{\$operator}{ = {\ttfamily null}, }\item[{}]{\$second}{ = {\ttfamily null}, }\item[{}]{\$boolean}{ = {\ttfamily \textquotesingle{}and\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Add an "{}on"{} clause to the join.
+
+On clauses can be chained, e.\+g.
+
+\$join-\/\texorpdfstring{$>$}{>}on(\textquotesingle{}contacts.\+user\+\_\+id\textquotesingle{}, \textquotesingle{}=\textquotesingle{}, \textquotesingle{}users.\+id\textquotesingle{}) -\/\texorpdfstring{$>$}{>}on(\textquotesingle{}contacts.\+info\+\_\+id\textquotesingle{}, \textquotesingle{}=\textquotesingle{}, \textquotesingle{}info.\+id\textquotesingle{})
+
+will produce the following SQL\+:
+
+on {\ttfamily contacts}.{\ttfamily user\+\_\+id} = {\ttfamily users}.{\ttfamily id} and {\ttfamily contacts}.{\ttfamily info\+\_\+id} = {\ttfamily info}.{\ttfamily id}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression | string & {\em \$first} & \\
+\hline
+string | null & {\em \$operator} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression | string | null & {\em \$second} & \\
+\hline
+string & {\em \$boolean} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a795d3878fb5dc69cb06493bf416864b7}\index{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause@{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause}!orOn@{orOn}}
+\index{orOn@{orOn}!Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause@{Illuminate\textbackslash{}Database\textbackslash{}Query\textbackslash{}JoinClause}}
+\doxysubsubsection{\texorpdfstring{orOn()}{orOn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_query_1_1_join_clause_a795d3878fb5dc69cb06493bf416864b7} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Join\+Clause\+::or\+On (\begin{DoxyParamCaption}\item[{}]{\$first}{, }\item[{}]{\$operator}{ = {\ttfamily null}, }\item[{}]{\$second}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add an "{}or on"{} clause to the join.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression | string & {\em \$first} & \\
+\hline
+string | null & {\em \$operator} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression | string | null & {\em \$second} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Join\+Clause 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Database/\+Query/Join\+Clause.\+php\end{DoxyCompactItemize}

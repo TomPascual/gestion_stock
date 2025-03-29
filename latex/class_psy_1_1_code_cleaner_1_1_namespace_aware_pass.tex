@@ -1,0 +1,127 @@
+\doxysection{Psy\textbackslash{}Code\+Cleaner\textbackslash{}Namespace\+Aware\+Pass Class Reference}
+\hypertarget{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass}{}\label{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass}\index{Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass@{Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass}}
+Inheritance diagram for Psy\textbackslash{}Code\+Cleaner\textbackslash{}Namespace\+Aware\+Pass\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a120c726916a39ddc89cd8dfea9bf20a1}{before\+Traverse}} (array \$nodes)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a4da460d1b79c613caef52f6e9d44f974}{enter\+Node}} (Node \$node)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract}{Php\+Parser\textbackslash{}\+Node\+Visitor\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a6c1080f13e6d76c6fce2efb215f01ca4}{enter\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a6e35e5184f39630acbbd8d56199ff7b1}{leave\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_ae48a95d82fe66c1e9bf4b580ab63dc6e}{after\+Traverse}} (array \$nodes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a9f318904ffc3dc873807c017b8686d14}{get\+Fully\+Qualified\+Name}} (\$name)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a952d6cf887cd418152a76835dab3a95c}{get\+Parts}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_name}{Name}} \$name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a3a848c3bbe150ebaf4bb0804fae4e2ad}\label{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a3a848c3bbe150ebaf4bb0804fae4e2ad} 
+array {\bfseries \$namespace} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a1bfd2184e3d747768c16add2d811f857}\label{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a1bfd2184e3d747768c16add2d811f857} 
+array {\bfseries \$current\+Scope} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Php\+Parser\textbackslash{}\+Node\+Visitor}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a887575c3e31ed3393701f45525ee3403}{DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN}} = 1
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_abdf2a418a92016759f92f437e8524bb5}{STOP\+\_\+\+TRAVERSAL}} = 2
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a85715cad6ab20ff6dc425402594ebc11}{REMOVE\+\_\+\+NODE}} = 3
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a81c5b825c6250cbf0955f42596aa29ad}{DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN}} = 4
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a05e5a1e3853d3ac056f09eb77b844498}{REPLACE\+\_\+\+WITH\+\_\+\+NULL}} = 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract namespace-\/aware code cleaner pass. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a120c726916a39ddc89cd8dfea9bf20a1}\index{Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass@{Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass}!beforeTraverse@{beforeTraverse}}
+\index{beforeTraverse@{beforeTraverse}!Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass@{Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass}}
+\doxysubsubsection{\texorpdfstring{beforeTraverse()}{beforeTraverse()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a120c726916a39ddc89cd8dfea9bf20a1} 
+Psy\textbackslash{}\+Code\+Cleaner\textbackslash{}\+Namespace\+Aware\+Pass\+::before\+Traverse (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000013}{Todo}}]should this be final? Extending classes should be sure to either use after\+Traverse or call parent\+::before\+Traverse() when overloading.\end{DoxyRefDesc}
+
+
+Reset the namespace and the current scope before beginning analysis
+
+\begin{DoxyReturn}{Returns}
+Node\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null Array of nodes 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a985911777b785443a39d03e6337fa297}{Php\+Parser\textbackslash{}\+Node\+Visitor\+Abstract}}.
+
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a4da460d1b79c613caef52f6e9d44f974}\index{Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass@{Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass}!enterNode@{enterNode}}
+\index{enterNode@{enterNode}!Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass@{Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass}}
+\doxysubsubsection{\texorpdfstring{enterNode()}{enterNode()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a4da460d1b79c613caef52f6e9d44f974} 
+Psy\textbackslash{}\+Code\+Cleaner\textbackslash{}\+Namespace\+Aware\+Pass\+::enter\+Node (\begin{DoxyParamCaption}\item[{Node}]{\$node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000014}{Todo}}]should this be final? Extending classes should be sure to either use leave\+Node or call parent\+::enter\+Node() when overloading\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node & {\em \$node} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}\+Node\texorpdfstring{$\vert$}{|}null Replacement node (or special return value) 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_class_name_pass_afc435d485e93fa190246940c52f69b5e}{Psy\textbackslash{}\+Code\+Cleaner\textbackslash{}\+Valid\+Class\+Name\+Pass}}, and \mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_valid_function_name_pass_a6a50ee4d2b5bc0ff9b975683baef837b}{Psy\textbackslash{}\+Code\+Cleaner\textbackslash{}\+Valid\+Function\+Name\+Pass}}.
+
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a9f318904ffc3dc873807c017b8686d14}\index{Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass@{Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass}!getFullyQualifiedName@{getFullyQualifiedName}}
+\index{getFullyQualifiedName@{getFullyQualifiedName}!Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass@{Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass}}
+\doxysubsubsection{\texorpdfstring{getFullyQualifiedName()}{getFullyQualifiedName()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a9f318904ffc3dc873807c017b8686d14} 
+Psy\textbackslash{}\+Code\+Cleaner\textbackslash{}\+Namespace\+Aware\+Pass\+::get\+Fully\+Qualified\+Name (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get a fully-\/qualified name (class, function, interface, etc).
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a952d6cf887cd418152a76835dab3a95c}\index{Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass@{Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass}!getParts@{getParts}}
+\index{getParts@{getParts}!Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass@{Psy\textbackslash{}CodeCleaner\textbackslash{}NamespaceAwarePass}}
+\doxysubsubsection{\texorpdfstring{getParts()}{getParts()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_namespace_aware_pass_a952d6cf887cd418152a76835dab3a95c} 
+Psy\textbackslash{}\+Code\+Cleaner\textbackslash{}\+Namespace\+Aware\+Pass\+::get\+Parts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_name}{Name}}}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Backwards compatibility shim for PHP-\/\+Parser 4.\+x.
+
+At some point we might want to make \$namespace a plain string, to match how Name works? 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Code\+Cleaner/Namespace\+Aware\+Pass.\+php\end{DoxyCompactItemize}

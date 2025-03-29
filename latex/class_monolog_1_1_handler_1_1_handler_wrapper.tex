@@ -1,0 +1,150 @@
+\doxysection{Monolog\textbackslash{}Handler\textbackslash{}Handler\+Wrapper Class Reference}
+\hypertarget{class_monolog_1_1_handler_1_1_handler_wrapper}{}\label{class_monolog_1_1_handler_1_1_handler_wrapper}\index{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}}
+Inheritance diagram for Monolog\textbackslash{}Handler\textbackslash{}Handler\+Wrapper\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.975610cm]{class_monolog_1_1_handler_1_1_handler_wrapper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_monolog_1_1_handler_1_1_handler_wrapper_a7a759327aad1ba783e9ac7c37395aff6}\label{class_monolog_1_1_handler_1_1_handler_wrapper_a7a759327aad1ba783e9ac7c37395aff6} 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{interface_monolog_1_1_handler_1_1_handler_interface}{Handler\+Interface}} \$handler)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler_wrapper_a2bdef305e4a1c7850b271179cbac274e}{is\+Handling}} (\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}} \$record)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler_wrapper_a07edf87d1dea0fe7a87ff545737f08eb}{handle}} (\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}} \$record)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler_wrapper_aac223b3702a985ce0972843f77f569bf}{handle\+Batch}} (array \$records)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler_wrapper_a8450415875d031cdca594ea53ae5b3d6}{close}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler_wrapper_a8013dc13da954a5159f84cd57c12d51d}{push\+Processor}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler_wrapper_a7e20a333d96868ad73b70dc6c4371a3f}{pop\+Processor}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler_wrapper_a3b42e3b4be36909d29fc9228d0f93f06}{set\+Formatter}} (\mbox{\hyperlink{interface_monolog_1_1_formatter_1_1_formatter_interface}{Formatter\+Interface}} \$formatter)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler_wrapper_a92bf7c9d4551780f00d896d60ac987ed}{get\+Formatter}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler_wrapper_a0f6de6f00e650e8277d045152b102fe4}{reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_monolog_1_1_handler_1_1_handler_wrapper_a9c054181945421b912ca7768d109bfdb}\label{class_monolog_1_1_handler_1_1_handler_wrapper_a9c054181945421b912ca7768d109bfdb} 
+\mbox{\hyperlink{interface_monolog_1_1_handler_1_1_handler_interface}{Handler\+Interface}} {\bfseries \$handler}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This simple wrapper class can be used to extend handlers functionality.
+
+Example\+: A custom filtering that can be applied to any handler.
+
+Inherit from this class and override handle() like this\+:
+
+public function handle(Log\+Record \$record) \{ if (\$record meets certain conditions) \{ return false; \} return \$this-\/\texorpdfstring{$>$}{>}handler-\/\texorpdfstring{$>$}{>}handle(\$record); \}
+
+\begin{DoxyAuthor}{Author}
+Alexey Karapetov \href{mailto:alexey@karapetov.com}{\texttt{ alexey@karapetov.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_monolog_1_1_handler_1_1_handler_wrapper_a8450415875d031cdca594ea53ae5b3d6}\index{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}!close@{close}}
+\index{close@{close}!Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_handler_wrapper_a8450415875d031cdca594ea53ae5b3d6} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Wrapper\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_handler_1_1_handler_interface_a712a5ea6befb41a919809ceae249b3cf}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_handler_1_1_handler_wrapper_a92bf7c9d4551780f00d896d60ac987ed}\index{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}!getFormatter@{getFormatter}}
+\index{getFormatter@{getFormatter}!Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}}
+\doxysubsubsection{\texorpdfstring{getFormatter()}{getFormatter()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_handler_wrapper_a92bf7c9d4551780f00d896d60ac987ed} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Wrapper\+::get\+Formatter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_handler_1_1_formattable_handler_interface_ab71f8d90a1f328410e53f0258e2b6c7c}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Formattable\+Handler\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_handler_1_1_handler_wrapper_a07edf87d1dea0fe7a87ff545737f08eb}\index{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}!handle@{handle}}
+\index{handle@{handle}!Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_handler_wrapper_a07edf87d1dea0fe7a87ff545737f08eb} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Wrapper\+::handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}}}]{\$record}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_handler_1_1_handler_interface_a67e67137c72fdb29860ef42e9d01f3c9}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_handler_1_1_handler_wrapper_aac223b3702a985ce0972843f77f569bf}\index{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}!handleBatch@{handleBatch}}
+\index{handleBatch@{handleBatch}!Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}}
+\doxysubsubsection{\texorpdfstring{handleBatch()}{handleBatch()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_handler_wrapper_aac223b3702a985ce0972843f77f569bf} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Wrapper\+::handle\+Batch (\begin{DoxyParamCaption}\item[{array}]{\$records}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_handler_1_1_handler_interface_aac00fe1e1e4a38aa1f0e6851976331f6}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_handler_1_1_handler_wrapper_a2bdef305e4a1c7850b271179cbac274e}\index{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}!isHandling@{isHandling}}
+\index{isHandling@{isHandling}!Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}}
+\doxysubsubsection{\texorpdfstring{isHandling()}{isHandling()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_handler_wrapper_a2bdef305e4a1c7850b271179cbac274e} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Wrapper\+::is\+Handling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}}}]{\$record}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_handler_1_1_handler_interface_a62b78f4d0c923d1fff41393a9474d22d}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_handler_1_1_handler_wrapper_a7e20a333d96868ad73b70dc6c4371a3f}\index{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}!popProcessor@{popProcessor}}
+\index{popProcessor@{popProcessor}!Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}}
+\doxysubsubsection{\texorpdfstring{popProcessor()}{popProcessor()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_handler_wrapper_a7e20a333d96868ad73b70dc6c4371a3f} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Wrapper\+::pop\+Processor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_handler_1_1_processable_handler_interface_a42e02d07c11a9a32101e1c626e48b80b}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Processable\+Handler\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_handler_1_1_handler_wrapper_a8013dc13da954a5159f84cd57c12d51d}\index{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}!pushProcessor@{pushProcessor}}
+\index{pushProcessor@{pushProcessor}!Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}}
+\doxysubsubsection{\texorpdfstring{pushProcessor()}{pushProcessor()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_handler_wrapper_a8013dc13da954a5159f84cd57c12d51d} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Wrapper\+::push\+Processor (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_handler_1_1_processable_handler_interface_a53a4d8869fec50c20d98ffc48b3c7965}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Processable\+Handler\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_handler_1_1_handler_wrapper_a0f6de6f00e650e8277d045152b102fe4}\index{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}!reset@{reset}}
+\index{reset@{reset}!Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_handler_wrapper_a0f6de6f00e650e8277d045152b102fe4} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Wrapper\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_resettable_interface}{Monolog\textbackslash{}\+Resettable\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_handler_1_1_handler_wrapper_a3b42e3b4be36909d29fc9228d0f93f06}\index{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}!setFormatter@{setFormatter}}
+\index{setFormatter@{setFormatter}!Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper@{Monolog\textbackslash{}Handler\textbackslash{}HandlerWrapper}}
+\doxysubsubsection{\texorpdfstring{setFormatter()}{setFormatter()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_handler_wrapper_a3b42e3b4be36909d29fc9228d0f93f06} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Wrapper\+::set\+Formatter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_monolog_1_1_formatter_1_1_formatter_interface}{Formatter\+Interface}}}]{\$formatter}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_handler_1_1_formattable_handler_interface_adf7eb01d482b254b9cfdb7f58639f362}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Formattable\+Handler\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/monolog/monolog/src/\+Monolog/\+Handler/Handler\+Wrapper.\+php\end{DoxyCompactItemize}

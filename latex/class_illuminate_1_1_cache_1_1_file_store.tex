@@ -1,0 +1,482 @@
+\doxysection{Illuminate\textbackslash{}Cache\textbackslash{}File\+Store Class Reference}
+\hypertarget{class_illuminate_1_1_cache_1_1_file_store}{}\label{class_illuminate_1_1_cache_1_1_file_store}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+Inheritance diagram for Illuminate\textbackslash{}Cache\textbackslash{}File\+Store\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_cache_1_1_file_store}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_a44f83dec98dbe95485efdfaacf8b7aae}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem}{Filesystem}} \$files, \$directory, \$file\+Permission=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_a1bc10e38581269694b306f3d51708bb8}{get}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_a9c112898f57d945bf46181b09efeea97}{put}} (\$key, \$value, \$seconds)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_af83363cd6e7be60e5cacf223404d51a4}{add}} (\$key, \$value, \$seconds)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_a73bacadf3ec2f515535da4318270119f}{increment}} (\$key, \$value=1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_abd5abda5208c28bf2f4caad23ca24e3a}{decrement}} (\$key, \$value=1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_a827872dc3acecf095dd66da6abad060c}{forever}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_a4e4c041d740287e2f92a4423ebe3ea54}{lock}} (\$name, \$seconds=0, \$owner=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_adca182bb359b678b71d38ae9165b6ced}{restore\+Lock}} (\$name, \$owner)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_a13ddb15066e583cdd906641847153b5f}{forget}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_a6b12c011bb8db82adad7e299bf846984}{flush}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_aae89c4c75e2c9736e614ae9b317f430e}{path}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_ae0cd894bd225a02dbcd4b7cb016de96f}{get\+Filesystem}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_a77353622d08dae2925389fd00d868a86}{get\+Directory}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_ae839b906043c5825a63116bc8252adcc}{set\+Directory}} (\$directory)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_abb8753aecee20324ce52113bd1f0257f}{set\+Lock\+Directory}} (\$lock\+Directory)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_a5945d43da9899b7bc880ad181df4aeca}{get\+Prefix}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_acd26c0fb0e85829dca6cf34497caa605}{many}} (array \$keys)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_af1c13c5ce3d6ae7cdb92954316da33ac}{put\+Many}} (array \$values, \$seconds)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_ac1555221df8fe8e71c0086a694c0c467}{ensure\+Cache\+Directory\+Exists}} (\$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_aae89c4c75e2c9736e614ae9b317f430e}{path}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_a8f80bd47ffc35a9407093923d2299ff8}{ensure\+Permissions\+Are\+Correct}} (\$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_aae89c4c75e2c9736e614ae9b317f430e}{path}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_ae635c5f9f56a2e0d4dac83b364a253de}{get\+Payload}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_ad2fb992a93f7ac73429918e820c35bfa}{empty\+Payload}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_a35695d9094e918df9163a7318ca9bb73}{expiration}} (\$seconds)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_a0d9a9cfa2bb7a64503e55f9e0e7a6a02}\label{class_illuminate_1_1_cache_1_1_file_store_a0d9a9cfa2bb7a64503e55f9e0e7a6a02} 
+{\bfseries \$files}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_a2f1f776b420ec167c4644028518d21fa}\label{class_illuminate_1_1_cache_1_1_file_store_a2f1f776b420ec167c4644028518d21fa} 
+{\bfseries \$directory}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_ab071b97f684a0ae73a0b3327432e1e59}\label{class_illuminate_1_1_cache_1_1_file_store_ab071b97f684a0ae73a0b3327432e1e59} 
+{\bfseries \$lock\+Directory}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_a8f681582f7427d05b4f24f466ce43665}\label{class_illuminate_1_1_cache_1_1_file_store_a8f681582f7427d05b4f24f466ce43665} 
+{\bfseries \$file\+Permission}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_a44f83dec98dbe95485efdfaacf8b7aae}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_a44f83dec98dbe95485efdfaacf8b7aae} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem}{Filesystem}}}]{\$files}{, }\item[{}]{\$directory}{, }\item[{}]{\$file\+Permission}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new file cache store instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem & {\em \$files} & \\
+\hline
+string & {\em \$directory} & \\
+\hline
+int | null & {\em \$file\+Permission} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_af83363cd6e7be60e5cacf223404d51a4}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!add@{add}}
+\index{add@{add}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_af83363cd6e7be60e5cacf223404d51a4} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::add (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{, }\item[{}]{\$seconds}{}\end{DoxyParamCaption})}
+
+Store an item in the cache if the key doesn\textquotesingle{}t exist.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_abd5abda5208c28bf2f4caad23ca24e3a}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!decrement@{decrement}}
+\index{decrement@{decrement}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{decrement()}{decrement()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_abd5abda5208c28bf2f4caad23ca24e3a} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::decrement (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Decrement the value of an item in the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a5535f41edfe28cf81a37b164283cbeae}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_ad2fb992a93f7ac73429918e820c35bfa}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!emptyPayload@{emptyPayload}}
+\index{emptyPayload@{emptyPayload}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{emptyPayload()}{emptyPayload()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_ad2fb992a93f7ac73429918e820c35bfa} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::empty\+Payload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get a default empty payload for the cache.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_ac1555221df8fe8e71c0086a694c0c467}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!ensureCacheDirectoryExists@{ensureCacheDirectoryExists}}
+\index{ensureCacheDirectoryExists@{ensureCacheDirectoryExists}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{ensureCacheDirectoryExists()}{ensureCacheDirectoryExists()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_ac1555221df8fe8e71c0086a694c0c467} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::ensure\+Cache\+Directory\+Exists (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the file cache directory if necessary.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_a8f80bd47ffc35a9407093923d2299ff8}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!ensurePermissionsAreCorrect@{ensurePermissionsAreCorrect}}
+\index{ensurePermissionsAreCorrect@{ensurePermissionsAreCorrect}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{ensurePermissionsAreCorrect()}{ensurePermissionsAreCorrect()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_a8f80bd47ffc35a9407093923d2299ff8} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::ensure\+Permissions\+Are\+Correct (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Ensure the created node has the correct permissions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_a35695d9094e918df9163a7318ca9bb73}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!expiration@{expiration}}
+\index{expiration@{expiration}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{expiration()}{expiration()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_a35695d9094e918df9163a7318ca9bb73} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::expiration (\begin{DoxyParamCaption}\item[{}]{\$seconds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the expiration time based on the given seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_a6b12c011bb8db82adad7e299bf846984}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!flush@{flush}}
+\index{flush@{flush}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_a6b12c011bb8db82adad7e299bf846984} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::flush (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Remove all items from the cache.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_ac0f8554721326578beed63e536cacb4c}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_a827872dc3acecf095dd66da6abad060c}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!forever@{forever}}
+\index{forever@{forever}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{forever()}{forever()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_a827872dc3acecf095dd66da6abad060c} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::forever (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Store an item in the cache indefinitely.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_acc81ba5be408507d39f43560c8c3b097}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_a13ddb15066e583cdd906641847153b5f}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!forget@{forget}}
+\index{forget@{forget}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{forget()}{forget()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_a13ddb15066e583cdd906641847153b5f} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::forget (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Remove an item from the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_ac735132a55c57063607508d3ddf1bbcc}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_a1bc10e38581269694b306f3d51708bb8}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!get@{get}}
+\index{get@{get}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_a1bc10e38581269694b306f3d51708bb8} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::get (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Retrieve an item from the cache by key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a76a1f3cd25865c30893e5498b7f9f22f}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_a77353622d08dae2925389fd00d868a86}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!getDirectory@{getDirectory}}
+\index{getDirectory@{getDirectory}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{getDirectory()}{getDirectory()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_a77353622d08dae2925389fd00d868a86} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::get\+Directory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the working directory of the cache.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_ae0cd894bd225a02dbcd4b7cb016de96f}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!getFilesystem@{getFilesystem}}
+\index{getFilesystem@{getFilesystem}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{getFilesystem()}{getFilesystem()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_ae0cd894bd225a02dbcd4b7cb016de96f} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::get\+Filesystem (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the Filesystem instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_ae635c5f9f56a2e0d4dac83b364a253de}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!getPayload@{getPayload}}
+\index{getPayload@{getPayload}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{getPayload()}{getPayload()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_ae635c5f9f56a2e0d4dac83b364a253de} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::get\+Payload (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Retrieve an item and expiry time from the cache by key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_a5945d43da9899b7bc880ad181df4aeca}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!getPrefix@{getPrefix}}
+\index{getPrefix@{getPrefix}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{getPrefix()}{getPrefix()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_a5945d43da9899b7bc880ad181df4aeca} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::get\+Prefix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the cache key prefix.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a7052d7e499811475bfab1cda35aaa24a}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_a73bacadf3ec2f515535da4318270119f}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!increment@{increment}}
+\index{increment@{increment}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_a73bacadf3ec2f515535da4318270119f} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::increment (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Increment the value of an item in the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a6c0f3189449cee80c854f9f2b9a84aa8}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_a4e4c041d740287e2f92a4423ebe3ea54}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!lock@{lock}}
+\index{lock@{lock}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{lock()}{lock()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_a4e4c041d740287e2f92a4423ebe3ea54} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::lock (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$seconds}{ = {\ttfamily 0}, }\item[{}]{\$owner}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a lock instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+string | null & {\em \$owner} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_provider_a401c9363d4bed96466eae103e293f442}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock\+Provider}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_aae89c4c75e2c9736e614ae9b317f430e}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!path@{path}}
+\index{path@{path}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_aae89c4c75e2c9736e614ae9b317f430e} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::path (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Get the full path for the given cache key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_a9c112898f57d945bf46181b09efeea97}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!put@{put}}
+\index{put@{put}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_a9c112898f57d945bf46181b09efeea97} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::put (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{, }\item[{}]{\$seconds}{}\end{DoxyParamCaption})}
+
+Store an item in the cache for a given number of seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a1b289bda788cce15cbbb698d8c48b745}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_adca182bb359b678b71d38ae9165b6ced}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!restoreLock@{restoreLock}}
+\index{restoreLock@{restoreLock}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{restoreLock()}{restoreLock()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_adca182bb359b678b71d38ae9165b6ced} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::restore\+Lock (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$owner}{}\end{DoxyParamCaption})}
+
+Restore a lock instance using the owner identifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$owner} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_provider_af4d5f5cf5f39cf69a9aaa1096686cbbf}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock\+Provider}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_ae839b906043c5825a63116bc8252adcc}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!setDirectory@{setDirectory}}
+\index{setDirectory@{setDirectory}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{setDirectory()}{setDirectory()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_ae839b906043c5825a63116bc8252adcc} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::set\+Directory (\begin{DoxyParamCaption}\item[{}]{\$directory}{}\end{DoxyParamCaption})}
+
+Set the working directory of the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$directory} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_file_store_abb8753aecee20324ce52113bd1f0257f}\index{Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}!setLockDirectory@{setLockDirectory}}
+\index{setLockDirectory@{setLockDirectory}!Illuminate\textbackslash{}Cache\textbackslash{}FileStore@{Illuminate\textbackslash{}Cache\textbackslash{}FileStore}}
+\doxysubsubsection{\texorpdfstring{setLockDirectory()}{setLockDirectory()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_file_store_abb8753aecee20324ce52113bd1f0257f} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store\+::set\+Lock\+Directory (\begin{DoxyParamCaption}\item[{}]{\$lock\+Directory}{}\end{DoxyParamCaption})}
+
+Set the cache directory where locks should be stored.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$lock\+Directory} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Cache/File\+Store.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var interface_illuminate_1_1_contracts_1_1_database_1_1_eloquent_1_1_serializes_castable_attributes =
+[
+    [ "serialize", "interface_illuminate_1_1_contracts_1_1_database_1_1_eloquent_1_1_serializes_castable_attributes.html#a021f17b2a9356b7ded2adba5797c74ff", null ]
+];

@@ -1,0 +1,41 @@
+\doxysection{Symfony\textbackslash{}Contracts\textbackslash{}Service\textbackslash{}Reset\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_contracts_1_1_service_1_1_reset_interface}{}\label{interface_symfony_1_1_contracts_1_1_service_1_1_reset_interface}\index{Symfony\textbackslash{}Contracts\textbackslash{}Service\textbackslash{}ResetInterface@{Symfony\textbackslash{}Contracts\textbackslash{}Service\textbackslash{}ResetInterface}}
+Inheritance diagram for Symfony\textbackslash{}Contracts\textbackslash{}Service\textbackslash{}Reset\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.887851cm]{interface_symfony_1_1_contracts_1_1_service_1_1_reset_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_service_1_1_reset_interface_a9f973c7897c549bbd6547aa4487e6872}{reset}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides a way to reset an object to its initial state.
+
+When calling the "{}reset()"{} method on an object, it should be put back to its initial state. This usually means clearing any internal buffers and forwarding the call to internal dependencies. All properties of the object should be put back to the same state it had when it was first ready to use.
+
+This method could be called, for example, to recycle objects that are used as services, so that they can be used to handle several requests in the same process loop (note that we advise making your services stateless instead of implementing this interface when possible.) 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_contracts_1_1_service_1_1_reset_interface_a9f973c7897c549bbd6547aa4487e6872}\index{Symfony\textbackslash{}Contracts\textbackslash{}Service\textbackslash{}ResetInterface@{Symfony\textbackslash{}Contracts\textbackslash{}Service\textbackslash{}ResetInterface}!reset@{reset}}
+\index{reset@{reset}!Symfony\textbackslash{}Contracts\textbackslash{}Service\textbackslash{}ResetInterface@{Symfony\textbackslash{}Contracts\textbackslash{}Service\textbackslash{}ResetInterface}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_contracts_1_1_service_1_1_reset_interface_a9f973c7897c549bbd6547aa4487e6872} 
+Symfony\textbackslash{}\+Contracts\textbackslash{}\+Service\textbackslash{}\+Reset\+Interface\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_application_a52634a76cb0ef90ca4a4b0b6f2e2a66f}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Application}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_data_collector_1_1_command_data_collector_a15b19db005f04ac4f1c60498aa55a8c4}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Data\+Collector\textbackslash{}\+Command\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_style_stack_abc48b379c01b7e0373942fa088d5a054}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Output\+Formatter\+Style\+Stack}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_debug_1_1_traceable_event_dispatcher_abe92b8abdd9fb173b7b9022119e32fa7}{Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Debug\textbackslash{}\+Traceable\+Event\+Dispatcher}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_ajax_data_collector_a362de7b76cb1e2bba0592d6316e8104d}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Ajax\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_data_collector_a41d7c1044b1796288e497f484389b7d5}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_dump_data_collector_a286d57d7e1c0c3d0f76c199ce8e382f9}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Dump\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_event_data_collector_a12b190c1f400f6a07b6a17778c09518d}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Event\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_memory_data_collector_a035ed36dbeed913274038869e03e57a3}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Memory\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_request_data_collector_a5d8c587db42dab395efd494153268504}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Request\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_router_data_collector_a66c71e96b37c9cde4201bf41486c4bf2}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Router\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_time_data_collector_a92f1518bca7e4373fb93bb687170bad3}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Time\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_dependency_injection_1_1_services_resetter_adedec264870161e5426dea9615e04a1a}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Dependency\+Injection\textbackslash{}\+Services\+Resetter}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a07a097208cb85a76bcfd55a87420cbad}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Abstract\+Session\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler_a27db5127f96d56bd540637b0d4997dbf}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Profiler\textbackslash{}\+Profiler}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_data_collector_1_1_message_data_collector_a783544b70dfea3c73d9d773667db88f8}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Data\+Collector\textbackslash{}\+Message\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_logger_listener_a90857694fdee091c0cd843680c749317}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Event\+Listener\textbackslash{}\+Message\+Logger\+Listener}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_1_1_translation_data_collector_aa9bbc035696901b706452e69c9aeba1d}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Data\+Collector\textbackslash{}\+Translation\+Data\+Collector}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/service-\/contracts/Reset\+Interface.\+php\end{DoxyCompactItemize}

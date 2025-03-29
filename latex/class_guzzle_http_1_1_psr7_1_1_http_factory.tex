@@ -1,0 +1,255 @@
+\doxysection{Guzzle\+Http\textbackslash{}Psr7\textbackslash{}Http\+Factory Class Reference}
+\hypertarget{class_guzzle_http_1_1_psr7_1_1_http_factory}{}\label{class_guzzle_http_1_1_psr7_1_1_http_factory}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}}
+Inheritance diagram for Guzzle\+Http\textbackslash{}Psr7\textbackslash{}Http\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.620155cm]{class_guzzle_http_1_1_psr7_1_1_http_factory}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_http_factory_a6b823bae6171421a48f38be7f9a68037}{create\+Uploaded\+File}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$stream, ?int \$size=null, int \$error=\textbackslash{}UPLOAD\+\_\+\+ERR\+\_\+\+OK, ?string \$client\+Filename=null, ?string \$client\+Media\+Type=null)
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_http_factory_a0c0263fe69d53252ad316ea5699d2642}{create\+Stream}} (string \$content=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_http_factory_a0c0072bfddab4999ef37a9124638f296}{create\+Stream\+From\+File}} (string \$file, string \$mode=\textquotesingle{}r\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_http_factory_afe3a983ffa10a61928919df82bbce5ec}{create\+Stream\+From\+Resource}} (\$resource)
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_http_factory_ad9a24006ea87d6d83302011c9869ccad}{create\+Server\+Request}} (string \$method, \$uri, array \$server\+Params=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_http_factory_a05f67cf1ab220d44b404a789a2470ee3}{create\+Response}} (int \$code=200, string \$reason\+Phrase=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_http_factory_a3f72ef81a418252844a57e275af89d8e}{create\+Request}} (string \$method, \$uri)
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_http_factory_a9f621c0e06bf20c41a0b6164632a12db}{create\+Uri}} (string \$uri=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements all of the PSR-\/17 interfaces.
+
+Note\+: in consuming code it is recommended to require the implemented interfaces and inject the instance of this class multiple times. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_http_factory_a3f72ef81a418252844a57e275af89d8e}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}!createRequest@{createRequest}}
+\index{createRequest@{createRequest}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}}
+\doxysubsubsection{\texorpdfstring{createRequest()}{createRequest()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_http_factory_a3f72ef81a418252844a57e275af89d8e} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Http\+Factory\+::create\+Request (\begin{DoxyParamCaption}\item[{string}]{\$method}{, }\item[{}]{\$uri}{}\end{DoxyParamCaption})}
+
+Create a new request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & The HTTP method associated with the request. \\
+\hline
+Uri\+Interface | string & {\em \$uri} & The URI associated with the request. If the value is a string, the factory MUST create a Uri\+Interface instance based on it.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Request\+Interface 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_factory_interface_a15cd27012d66fc134b576e4957c47c82}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Request\+Factory\+Interface}}.
+
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_http_factory_a05f67cf1ab220d44b404a789a2470ee3}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}!createResponse@{createResponse}}
+\index{createResponse@{createResponse}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}}
+\doxysubsubsection{\texorpdfstring{createResponse()}{createResponse()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_http_factory_a05f67cf1ab220d44b404a789a2470ee3} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Http\+Factory\+::create\+Response (\begin{DoxyParamCaption}\item[{int}]{\$code}{ = {\ttfamily 200}, }\item[{string}]{\$reason\+Phrase}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a new response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$code} & HTTP status code; defaults to 200 \\
+\hline
+string & {\em \$reason\+Phrase} & Reason phrase to associate with status code in generated response; if none is provided implementations MAY use the defaults as suggested in the HTTP specification.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Response\+Interface 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_response_factory_interface_af686c14c43063e182600cf2ac73e2a11}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Response\+Factory\+Interface}}.
+
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_http_factory_ad9a24006ea87d6d83302011c9869ccad}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}!createServerRequest@{createServerRequest}}
+\index{createServerRequest@{createServerRequest}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}}
+\doxysubsubsection{\texorpdfstring{createServerRequest()}{createServerRequest()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_http_factory_ad9a24006ea87d6d83302011c9869ccad} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Http\+Factory\+::create\+Server\+Request (\begin{DoxyParamCaption}\item[{string}]{\$method}{, }\item[{}]{\$uri}{, }\item[{array}]{\$server\+Params}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Create a new server request.
+
+Note that server-\/params are taken precisely as given -\/ no parsing/processing of the given values is performed, and, in particular, no attempt is made to determine the HTTP method or URI, which must be provided explicitly.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & The HTTP method associated with the request. \\
+\hline
+Uri\+Interface | string & {\em \$uri} & The URI associated with the request. If the value is a string, the factory MUST create a Uri\+Interface instance based on it. \\
+\hline
+array & {\em \$server\+Params} & Array of SAPI parameters with which to seed the generated request instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Server\+Request\+Interface 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_server_request_factory_interface_a26484cad5bd2d750ba8d7c47163067b4}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Server\+Request\+Factory\+Interface}}.
+
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_http_factory_a0c0263fe69d53252ad316ea5699d2642}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}!createStream@{createStream}}
+\index{createStream@{createStream}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}}
+\doxysubsubsection{\texorpdfstring{createStream()}{createStream()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_http_factory_a0c0263fe69d53252ad316ea5699d2642} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Http\+Factory\+::create\+Stream (\begin{DoxyParamCaption}\item[{string}]{\$content}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a new stream from a string.
+
+The stream SHOULD be created with a temporary resource.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & String content with which to populate the stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Stream\+Interface 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface_a6e627dc094de04fa275d543c8e14094d}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Stream\+Factory\+Interface}}.
+
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_http_factory_a0c0072bfddab4999ef37a9124638f296}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}!createStreamFromFile@{createStreamFromFile}}
+\index{createStreamFromFile@{createStreamFromFile}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}}
+\doxysubsubsection{\texorpdfstring{createStreamFromFile()}{createStreamFromFile()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_http_factory_a0c0072bfddab4999ef37a9124638f296} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Http\+Factory\+::create\+Stream\+From\+File (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{string}]{\$mode}{ = {\ttfamily \textquotesingle{}r\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a stream from an existing file.
+
+The file MUST be opened using the given mode, which may be any mode supported by the {\ttfamily fopen} function.
+
+The {\ttfamily \$filename} MAY be any string supported by {\ttfamily fopen()}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & Filename or stream URI to use as basis of stream. \\
+\hline
+string & {\em \$mode} & Mode with which to open the underlying filename/stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Stream\+Interface 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception If the file cannot be opened. 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception If the mode is invalid. 
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface_ab818d12fa04b09cb4ffd430a1c0e6aef}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Stream\+Factory\+Interface}}.
+
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_http_factory_afe3a983ffa10a61928919df82bbce5ec}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}!createStreamFromResource@{createStreamFromResource}}
+\index{createStreamFromResource@{createStreamFromResource}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}}
+\doxysubsubsection{\texorpdfstring{createStreamFromResource()}{createStreamFromResource()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_http_factory_afe3a983ffa10a61928919df82bbce5ec} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Http\+Factory\+::create\+Stream\+From\+Resource (\begin{DoxyParamCaption}\item[{}]{\$resource}{}\end{DoxyParamCaption})}
+
+Create a new stream from an existing resource.
+
+The stream MUST be readable and may be writable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$resource} & PHP resource to use as basis of stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Stream\+Interface 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface_a44f013bf7b4635b6fac77791da305bb2}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Stream\+Factory\+Interface}}.
+
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_http_factory_a6b823bae6171421a48f38be7f9a68037}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}!createUploadedFile@{createUploadedFile}}
+\index{createUploadedFile@{createUploadedFile}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}}
+\doxysubsubsection{\texorpdfstring{createUploadedFile()}{createUploadedFile()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_http_factory_a6b823bae6171421a48f38be7f9a68037} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Http\+Factory\+::create\+Uploaded\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}}}]{\$stream}{, }\item[{?int}]{\$size}{ = {\ttfamily null}, }\item[{int}]{\$error}{ = {\ttfamily \textbackslash{}UPLOAD\+\_\+ERR\+\_\+OK}, }\item[{?string}]{\$client\+Filename}{ = {\ttfamily null}, }\item[{?string}]{\$client\+Media\+Type}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new uploaded file.
+
+If a size is not provided it will be determined by checking the size of the file.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://php.net/manual/features.file-upload.post-method.php}{\texttt{ http\+://php.\+net/manual/features.\+file-\/upload.\+post-\/method.\+php}} 
+
+\href{http://php.net/manual/features.file-upload.errors.php}{\texttt{ http\+://php.\+net/manual/features.\+file-\/upload.\+errors.\+php}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+Stream\+Interface & {\em \$stream} & Underlying stream representing the uploaded file content. \\
+\hline
+int | null & {\em \$size} & in bytes \\
+\hline
+int & {\em \$error} & PHP file upload error \\
+\hline
+string | null & {\em \$client\+Filename} & Filename as provided by the client, if any. \\
+\hline
+string | null & {\em \$client\+Media\+Type} & Media type as provided by the client, if any.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uploaded\+File\+Interface
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception If the file resource is not readable. 
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uploaded_file_factory_interface_a86231df5f146e94239cd6080743bc928}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Uploaded\+File\+Factory\+Interface}}.
+
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_http_factory_a9f621c0e06bf20c41a0b6164632a12db}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}!createUri@{createUri}}
+\index{createUri@{createUri}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}HttpFactory}}
+\doxysubsubsection{\texorpdfstring{createUri()}{createUri()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_http_factory_a9f621c0e06bf20c41a0b6164632a12db} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Http\+Factory\+::create\+Uri (\begin{DoxyParamCaption}\item[{string}]{\$uri}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a new URI.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uri\+Interface
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception If the given URI cannot be parsed. 
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_factory_interface_a2406bce6b7402c59ffdbd8294a61c582}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Uri\+Factory\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/guzzlehttp/psr7/src/Http\+Factory.\+php\end{DoxyCompactItemize}

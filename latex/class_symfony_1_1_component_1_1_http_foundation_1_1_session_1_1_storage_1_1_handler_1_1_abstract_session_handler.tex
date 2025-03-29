@@ -1,0 +1,63 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Foundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}Abstract\+Session\+Handler Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}{}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}AbstractSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}AbstractSessionHandler}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Foundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}Abstract\+Session\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.526316cm]{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_aaf960ddc8493629726f7fa0ae0a49a4f}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_aaf960ddc8493629726f7fa0ae0a49a4f} 
+{\bfseries open} (string \$save\+Path, string \$session\+Name)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_aaeac1690999688d7fb7fe8878c55f7fb}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_aaeac1690999688d7fb7fe8878c55f7fb} 
+{\bfseries validate\+Id} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_af9a7b73a1d2d51a01518f745378091e3}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_af9a7b73a1d2d51a01518f745378091e3} 
+{\bfseries read} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_a7b14caae40bbb0fd951c4361182df684}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_a7b14caae40bbb0fd951c4361182df684} 
+{\bfseries write} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id, string \$data)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_ac1e4813cfa7a0073c7a667b7ed12fdd9}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_ac1e4813cfa7a0073c7a667b7ed12fdd9} 
+{\bfseries destroy} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_af0eb602197c52d46c6313ebea61ccb77}{do\+Read}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_a09daaa9d8a637fc60828eb67811c3574}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_a09daaa9d8a637fc60828eb67811c3574} 
+{\bfseries do\+Write} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id, string \$data)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_a7771f15762ed03b51c4db71924b819ef}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_a7771f15762ed03b51c4db71924b819ef} 
+{\bfseries do\+Destroy} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This abstract session handler provides a generic implementation of the PHP 7.\+0 Session\+Update\+Timestamp\+Handler\+Interface, enabling strict and lazy session handling.
+
+\begin{DoxyAuthor}{Author}
+Nicolas Grekas \href{mailto:p@tchwork.com}{\texttt{ p@tchwork.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_af0eb602197c52d46c6313ebea61ccb77}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}AbstractSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}AbstractSessionHandler}!doRead@{doRead}}
+\index{doRead@{doRead}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}AbstractSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}AbstractSessionHandler}}
+\doxysubsubsection{\texorpdfstring{doRead()}{doRead()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler_af0eb602197c52d46c6313ebea61ccb77} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Session\+Handler\+::do\+Read (\begin{DoxyParamCaption}\item[{\# string}]{\$session\+Id}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a4b9654bdd54ab21e33cf8ee71a180ef0}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Pdo\+Session\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/foundation/\+Session/\+Storage/\+Handler/Abstract\+Session\+Handler.\+php\end{DoxyCompactItemize}

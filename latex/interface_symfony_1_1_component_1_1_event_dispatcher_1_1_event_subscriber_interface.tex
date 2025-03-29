@@ -1,0 +1,70 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Event\+Dispatcher\textbackslash{}Event\+Subscriber\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface}{}\label{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface}\index{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}EventSubscriberInterface@{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}EventSubscriberInterface}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Event\+Dispatcher\textbackslash{}Event\+Subscriber\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface_a1f40b93f2c531f690bb4cd5bc5764c73}{get\+Subscribed\+Events}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An Event\+Subscriber knows itself what events it is interested in. If an Event\+Subscriber is added to an Event\+Dispatcher\+Interface, the manager invokes {\ttfamily \doxylink{}{get\+Subscribed\+Events}} and registers the subscriber as a listener for all returned events.
+
+\begin{DoxyAuthor}{Author}
+Guilherme Blanco \href{mailto:guilhermeblanco@hotmail.com}{\texttt{ guilhermeblanco@hotmail.\+com}} 
+
+Jonathan Wage \href{mailto:jonwage@gmail.com}{\texttt{ jonwage@gmail.\+com}} 
+
+Roman Borschel \href{mailto:roman@code-factory.org}{\texttt{ roman@code-\/factory.\+org}} 
+
+Bernhard Schussek \href{mailto:bschussek@gmail.com}{\texttt{ bschussek@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface_a1f40b93f2c531f690bb4cd5bc5764c73}\index{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}EventSubscriberInterface@{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}EventSubscriberInterface}!getSubscribedEvents@{getSubscribedEvents}}
+\index{getSubscribedEvents@{getSubscribedEvents}!Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}EventSubscriberInterface@{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}EventSubscriberInterface}}
+\doxysubsubsection{\texorpdfstring{getSubscribedEvents()}{getSubscribedEvents()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface_a1f40b93f2c531f690bb4cd5bc5764c73} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event\+Subscriber\+Interface\+::get\+Subscribed\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an array of event names this subscriber wants to listen to.
+
+The array keys are event names and the value can be\+:
+
+
+\begin{DoxyItemize}
+\item The method name to call (priority defaults to 0)
+\item An array composed of the method name to call and the priority
+\item An array of arrays composed of the method names to call and respective priorities, or 0 if unset
+\end{DoxyItemize}
+
+For instance\+:
+
+
+\begin{DoxyItemize}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}method\+Name\textquotesingle{}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\textquotesingle{}method\+Name\textquotesingle{}, \$priority\mbox{]}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\mbox{[}\textquotesingle{}method\+Name1\textquotesingle{}, \$priority\mbox{]}, \mbox{[}\textquotesingle{}method\+Name2\textquotesingle{}\mbox{]}\mbox{]}\mbox{]}
+\end{DoxyItemize}
+
+The code must not depend on runtime state as it will only be called at compile time. All logic depending on runtime state must be put into the individual methods handling the events.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, string\texorpdfstring{$\vert$}{|}array\{0\+: string, 1\+: int\}\texorpdfstring{$\vert$}{|}list\texorpdfstring{$<$}{<}array\{0\+: string, 1?\+: int\}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_listener_1_1_error_listener_abce807bdd22f62fd3a1a886b01b5c764}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Event\+Listener\textbackslash{}\+Error\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_dependency_injection_1_1_extracting_event_dispatcher_a9490e098073f164096105d830fd65874}{Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Dependency\+Injection\textbackslash{}\+Extracting\+Event\+Dispatcher}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_argument_resolver_1_1_request_payload_value_resolver_a842ddcc5d61b14ed3a9b0765f3f4b6c0}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Controller\textbackslash{}\+Argument\+Resolver\textbackslash{}\+Request\+Payload\+Value\+Resolver}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_request_data_collector_ae574cce913d3cb4b3568e40c7bbedce8}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Request\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_abstract_session_listener_a70fd538bf3540a2b6ac460f769a463f0}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Abstract\+Session\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_add_request_formats_listener_ae38d208f90144b778018b010cccf7560}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Add\+Request\+Formats\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_cache_attribute_listener_a23e697fbfda86ab32201568887e7a15e}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Cache\+Attribute\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_debug_handlers_listener_aa42a61ba26160791c39979da6a4bea7c}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Debug\+Handlers\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_disallow_robots_indexing_listener_a14bb0eb2719b4fc9ebd8eb1a4d18fbb3}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Disallow\+Robots\+Indexing\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_dump_listener_a6af5e2a5090bf14a13bcf7f8c784e33c}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Dump\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_error_listener_acdbc6b559e07afdaaae7b49c831f3803}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Error\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_fragment_listener_a543b730505bf108cc4dc4ad9dc5941c3}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Fragment\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_locale_aware_listener_a4360301ad3e97339c75085df16809fe4}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Locale\+Aware\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_locale_listener_a430465fd882db0cf59b47617ff4587c9}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Locale\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener_a26e80bf7f1adb2e6aa48a7db19c4d3fd}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Profiler\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_response_listener_ade83dfa4943f5e7a4ec2cdbe41ab9762}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Response\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_router_listener_aba29f943c42877189a57737d609a4297}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Router\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_surrogate_listener_a6c2daddf7690e34dc1bfa2cb12daf326}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Surrogate\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_validate_request_listener_a66d5e42c0a79cce00900bc89b6a78f5f}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Validate\+Request\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_envelope_listener_a2e5d88b9fb772195fe7150d7a596038c}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Event\+Listener\textbackslash{}\+Envelope\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_adca5d019c4f38c783e2a2b68085b4fbd}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Event\+Listener\textbackslash{}\+Message\+Listener}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_logger_listener_a7289d667ef17c470cde023d20366fe58}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Event\+Listener\textbackslash{}\+Message\+Logger\+Listener}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_messenger_transport_listener_a333789fc74609e23586e95cccb0565d4}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Event\+Listener\textbackslash{}\+Messenger\+Transport\+Listener}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/event-\/dispatcher/Event\+Subscriber\+Interface.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,274 @@
+\doxysection{Psy\textbackslash{}Tab\+Completion\textbackslash{}Matcher\textbackslash{}Abstract\+Matcher Class Reference}
+\hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher}{}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}}
+Inheritance diagram for Psy\textbackslash{}Tab\+Completion\textbackslash{}Matcher\textbackslash{}Abstract\+Matcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.078652cm]{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a50ee14d731ccbd03288948f3cd005e5a}{has\+Matched}} (array \$tokens)
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a654b67904d664c879ace8f2efe669ca4}{get\+Matches}} (array \$tokens, array \$info=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a2f14333da3bbc9518e5cf6a5b7f10e7e}{starts\+With}} (string \$prefix, string \$word)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ad9b27ec2182b641752c46771961b1ac8}{has\+Syntax}} (\$token, string \$syntax=self\+::\+VAR\+\_\+\+SYNTAX)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ae6fd6865e01fcdd21cfccd600a4ccf43}{token\+Is}} (\$token, string \$which)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a0ac518819dbff1fbf0fff986aeb95f7c}{is\+Operator}} (\$token)
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ada1154862a3dc66f1b5f930572beee87}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ada1154862a3dc66f1b5f930572beee87} 
+static {\bfseries need\+Complete\+Class} (\$token)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a0b2c2bc757b0ce7498ba728a89796a4d}{has\+Token}} (array \$coll, \$token)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ac95f9ab563f880b1370073b93b55ab31}{CONSTANT\+\_\+\+SYNTAX}} = \textquotesingle{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[}a-\/zA-\/Z\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\mbox{[}a-\/zA-\/Z0-\/9\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\texorpdfstring{$\ast$}{*}\$\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a6a82545060614bb6d38729be91f4efea}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a6a82545060614bb6d38729be91f4efea} 
+const {\bfseries VAR\+\_\+\+SYNTAX} = \textquotesingle{}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\$\mbox{[}a-\/zA-\/Z\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\mbox{[}a-\/zA-\/Z0-\/9\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\texorpdfstring{$\ast$}{*}\$\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a8b2dbc7232d763833d1f8b6a38dd6559}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a8b2dbc7232d763833d1f8b6a38dd6559} 
+const {\bfseries MISC\+\_\+\+OPERATORS} = \textquotesingle{}+-\/\texorpdfstring{$\ast$}{*}/\texorpdfstring{$^\wedge$}{\string^}\texorpdfstring{$\vert$}{|}\&\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a1d02f86dda52eea4c99ff7105592121d}{T\+\_\+\+OPEN\+\_\+\+TAG}} = \textquotesingle{}T\+\_\+\+OPEN\+\_\+\+TAG\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ab4dac68bbd8dc65f429361310b331bbb}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ab4dac68bbd8dc65f429361310b331bbb} 
+const {\bfseries T\+\_\+\+VARIABLE} = \textquotesingle{}T\+\_\+\+VARIABLE\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a2738104126b47631eb01596c3dfcc511}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a2738104126b47631eb01596c3dfcc511} 
+const {\bfseries T\+\_\+\+OBJECT\+\_\+\+OPERATOR} = \textquotesingle{}T\+\_\+\+OBJECT\+\_\+\+OPERATOR\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a7b80dd5520e88e4dfbcbb8c4d9959ac3}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a7b80dd5520e88e4dfbcbb8c4d9959ac3} 
+const {\bfseries T\+\_\+\+DOUBLE\+\_\+\+COLON} = \textquotesingle{}T\+\_\+\+DOUBLE\+\_\+\+COLON\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a679a6a1a742c4f2c7951ba7ce87ce118}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a679a6a1a742c4f2c7951ba7ce87ce118} 
+const {\bfseries T\+\_\+\+NEW} = \textquotesingle{}T\+\_\+\+NEW\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a80ac9f71b42f83cffbf8033951a18093}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a80ac9f71b42f83cffbf8033951a18093} 
+const {\bfseries T\+\_\+\+CLONE} = \textquotesingle{}T\+\_\+\+CLONE\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a29ba0236cbc627222f214c9a435b6908}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a29ba0236cbc627222f214c9a435b6908} 
+const {\bfseries T\+\_\+\+NS\+\_\+\+SEPARATOR} = \textquotesingle{}T\+\_\+\+NS\+\_\+\+SEPARATOR\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a8a3f9acb4cb47fd8d8da33436884510a}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a8a3f9acb4cb47fd8d8da33436884510a} 
+const {\bfseries T\+\_\+\+STRING} = \textquotesingle{}T\+\_\+\+STRING\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_af009241616467c58dd6de0125acd5969}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_af009241616467c58dd6de0125acd5969} 
+const {\bfseries T\+\_\+\+NAME\+\_\+\+QUALIFIED} = \textquotesingle{}T\+\_\+\+NAME\+\_\+\+QUALIFIED\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_aeea1163dbee5eaa77572f0692efd2499}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_aeea1163dbee5eaa77572f0692efd2499} 
+const {\bfseries T\+\_\+\+WHITESPACE} = \textquotesingle{}T\+\_\+\+WHITESPACE\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a90c2a28e94379979521f6efde71cfa00}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a90c2a28e94379979521f6efde71cfa00} 
+const {\bfseries T\+\_\+\+AND\+\_\+\+EQUAL} = \textquotesingle{}T\+\_\+\+AND\+\_\+\+EQUAL\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_afbca9ef606190256cc0494f2a700332b}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_afbca9ef606190256cc0494f2a700332b} 
+const {\bfseries T\+\_\+\+BOOLEAN\+\_\+\+AND} = \textquotesingle{}T\+\_\+\+BOOLEAN\+\_\+\+AND\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a5b5025e115e99642897e5ad28d62e071}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a5b5025e115e99642897e5ad28d62e071} 
+const {\bfseries T\+\_\+\+BOOLEAN\+\_\+\+OR} = \textquotesingle{}T\+\_\+\+BOOLEAN\+\_\+\+OR\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_af853a637fd2175a696d55ef5fa74469f}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_af853a637fd2175a696d55ef5fa74469f} 
+const {\bfseries T\+\_\+\+ENCAPSED\+\_\+\+AND\+\_\+\+WHITESPACE} = \textquotesingle{}T\+\_\+\+ENCAPSED\+\_\+\+AND\+\_\+\+WHITESPACE\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a580c19b8c0b9d40e401e1b54ea5ceb9b}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a580c19b8c0b9d40e401e1b54ea5ceb9b} 
+const {\bfseries T\+\_\+\+REQUIRE} = \textquotesingle{}T\+\_\+\+REQUIRE\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a1780fa1560054485fe1f1852cb260a5e}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a1780fa1560054485fe1f1852cb260a5e} 
+const {\bfseries T\+\_\+\+REQUIRE\+\_\+\+ONCE} = \textquotesingle{}T\+\_\+\+REQUIRE\+\_\+\+ONCE\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_afc53425ebe8b19305c12369a945a0358}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_afc53425ebe8b19305c12369a945a0358} 
+const {\bfseries T\+\_\+\+INCLUDE} = \textquotesingle{}T\+\_\+\+INCLUDE\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a7010c04c2e6f9a93d7f9ae7b294bf0f9}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a7010c04c2e6f9a93d7f9ae7b294bf0f9} 
+const {\bfseries T\+\_\+\+INCLUDE\+\_\+\+ONCE} = \textquotesingle{}T\+\_\+\+INCLUDE\+\_\+\+ONCE\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a67510cbf91a59519d4c689d6db97942b}{get\+Input}} (array \$tokens)
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a33af8313690303c97cfea60506bb8b76}{get\+Namespace\+And\+Class}} (array \$tokens)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract tab completion Matcher.
+
+\begin{DoxyAuthor}{Author}
+Marc Garcia \href{mailto:markcial@gmail.com}{\texttt{ markcial@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a67510cbf91a59519d4c689d6db97942b}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}!getInput@{getInput}}
+\index{getInput@{getInput}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}}
+\doxysubsubsection{\texorpdfstring{getInput()}{getInput()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a67510cbf91a59519d4c689d6db97942b} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher\+::get\+Input (\begin{DoxyParamCaption}\item[{array}]{\$tokens}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get current readline input word.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$tokens} & Tokenized readline input (see token\+\_\+get\+\_\+all) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a654b67904d664c879ace8f2efe669ca4}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}!getMatches@{getMatches}}
+\index{getMatches@{getMatches}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}}
+\doxysubsubsection{\texorpdfstring{getMatches()}{getMatches()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a654b67904d664c879ace8f2efe669ca4} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher\+::get\+Matches (\begin{DoxyParamCaption}\item[{array}]{\$tokens}{, }\item[{array}]{\$info}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Provide tab completion matches for readline input.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$tokens} & information substracted with get\+\_\+token\+\_\+all \\
+\hline
+array & {\em \$info} & readline\+\_\+info object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The matches resulting from the query 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_attributes_matcher_a8ce0c283818dc4958fccd5523bdd1d4c}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Class\+Attributes\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_method_default_parameters_matcher_ab56683e803b95d04482495f8e1580052}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Class\+Method\+Default\+Parameters\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_methods_matcher_a572337d1e6236b77e8e542b30b2a1e1f}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Class\+Methods\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_names_matcher_a48c7b95001e3e58b88c6dafce5953597}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Class\+Names\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_commands_matcher_aebd9b7d052d3dde1a3b0389084a01966}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Commands\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_constants_matcher_a5ae1eb6138c21b1b16820793b7de5caf}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Constants\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_function_default_parameters_matcher_aac7233f75585b7e9a5c88e6f366d2d7a}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Function\+Default\+Parameters\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_functions_matcher_a8a495eeb8046720f1cc25bcd3ed23b55}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Functions\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_a8dbfcf36925320b43efa906f36e007c1}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Keywords\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_mongo_client_matcher_acd21ab8f17020316cf49565cde09b4af}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Mongo\+Client\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_mongo_database_matcher_ac5ff8bdfc0d29f05275c6c45fea165e7}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Mongo\+Database\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_object_attributes_matcher_ab63f3468ffc3e24970d108d20e912980}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Object\+Attributes\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_object_method_default_parameters_matcher_ac06d5156931a667ff9f6674f0a2c4dd7}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Object\+Method\+Default\+Parameters\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_object_methods_matcher_ab92818dae1bb93d08a2cbadc6c3d2ea8}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Object\+Methods\+Matcher}}, and \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_variables_matcher_adc9662d58a368eb9f0d703c9c3bb2c61}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Variables\+Matcher}}.
+
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a33af8313690303c97cfea60506bb8b76}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}!getNamespaceAndClass@{getNamespaceAndClass}}
+\index{getNamespaceAndClass@{getNamespaceAndClass}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}}
+\doxysubsubsection{\texorpdfstring{getNamespaceAndClass()}{getNamespaceAndClass()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a33af8313690303c97cfea60506bb8b76} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher\+::get\+Namespace\+And\+Class (\begin{DoxyParamCaption}\item[{array}]{\$tokens}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get current namespace and class (if any) from readline input.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$tokens} & Tokenized readline input (see token\+\_\+get\+\_\+all) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a50ee14d731ccbd03288948f3cd005e5a}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}!hasMatched@{hasMatched}}
+\index{hasMatched@{hasMatched}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}}
+\doxysubsubsection{\texorpdfstring{hasMatched()}{hasMatched()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a50ee14d731ccbd03288948f3cd005e5a} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher\+::has\+Matched (\begin{DoxyParamCaption}\item[{array}]{\$tokens}{}\end{DoxyParamCaption})}
+
+Check whether this matcher can provide completions for \$tokens.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$tokens} & Tokenized readline input\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_attributes_matcher_af60d1193b237313184ce1fbece848cc5}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Class\+Attributes\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_method_default_parameters_matcher_afec21bccb83f2a9535a5fa50acb9ef44}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Class\+Method\+Default\+Parameters\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_methods_matcher_aa8b1fe36811533c72c2f872f38682306}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Class\+Methods\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_class_names_matcher_a17b176d26d9974b74b3ffd5c35525641}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Class\+Names\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_commands_matcher_a16be2364e5d439f911fd9117bfc095f8}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Commands\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_constants_matcher_a687dcf0f04e08c2f64c1b7febc6f2d9b}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Constants\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_function_default_parameters_matcher_a363d621dd5f14dc89ab670501048d842}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Function\+Default\+Parameters\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_functions_matcher_ac2463eecf0516005609fcb041cea387e}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Functions\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_ab3dd13057ee6fe583f805679ae3d5af8}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Keywords\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_mongo_client_matcher_ae59656d649677d21dcd22be0d3768936}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Mongo\+Client\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_mongo_database_matcher_af98c54a28855bea8d00a2a9cd9e09e83}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Mongo\+Database\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_object_attributes_matcher_a0d1d98a0f5156ede071e6773f1edbebe}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Object\+Attributes\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_object_method_default_parameters_matcher_a7926fc5d412c6941de7e7a38a81841f4}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Object\+Method\+Default\+Parameters\+Matcher}}, \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_object_methods_matcher_acf83838f16cf55e92e16501a5a2e38cd}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Object\+Methods\+Matcher}}, and \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_variables_matcher_ad5de2f203004c88227d5299ce7803f9e}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Variables\+Matcher}}.
+
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ad9b27ec2182b641752c46771961b1ac8}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}!hasSyntax@{hasSyntax}}
+\index{hasSyntax@{hasSyntax}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}}
+\doxysubsubsection{\texorpdfstring{hasSyntax()}{hasSyntax()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ad9b27ec2182b641752c46771961b1ac8} 
+static Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher\+::has\+Syntax (\begin{DoxyParamCaption}\item[{}]{\$token}{, }\item[{string}]{\$syntax}{ = {\ttfamily self\+:\+:VAR\+\_\+SYNTAX}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check whether \$token matches a given syntax pattern.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$token} & A PHP token (see token\+\_\+get\+\_\+all) \\
+\hline
+string & {\em \$syntax} & A syntax pattern (default\+: variable pattern) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a0b2c2bc757b0ce7498ba728a89796a4d}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}!hasToken@{hasToken}}
+\index{hasToken@{hasToken}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}}
+\doxysubsubsection{\texorpdfstring{hasToken()}{hasToken()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a0b2c2bc757b0ce7498ba728a89796a4d} 
+static Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher\+::has\+Token (\begin{DoxyParamCaption}\item[{array}]{\$coll}{, }\item[{}]{\$token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check whether \$token type is present in \$coll.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$coll} & A list of token types \\
+\hline
+mixed & {\em \$token} & A PHP token (see token\+\_\+get\+\_\+all) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a0ac518819dbff1fbf0fff986aeb95f7c}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}!isOperator@{isOperator}}
+\index{isOperator@{isOperator}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}}
+\doxysubsubsection{\texorpdfstring{isOperator()}{isOperator()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a0ac518819dbff1fbf0fff986aeb95f7c} 
+static Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher\+::is\+Operator (\begin{DoxyParamCaption}\item[{}]{\$token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check whether \$token is an operator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$token} & A PHP token (see token\+\_\+get\+\_\+all) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a2f14333da3bbc9518e5cf6a5b7f10e7e}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}!startsWith@{startsWith}}
+\index{startsWith@{startsWith}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}}
+\doxysubsubsection{\texorpdfstring{startsWith()}{startsWith()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a2f14333da3bbc9518e5cf6a5b7f10e7e} 
+static Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher\+::starts\+With (\begin{DoxyParamCaption}\item[{string}]{\$prefix}{, }\item[{string}]{\$word}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check whether \$word starts with \$prefix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$prefix} & \\
+\hline
+string & {\em \$word} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ae6fd6865e01fcdd21cfccd600a4ccf43}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}!tokenIs@{tokenIs}}
+\index{tokenIs@{tokenIs}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}}
+\doxysubsubsection{\texorpdfstring{tokenIs()}{tokenIs()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ae6fd6865e01fcdd21cfccd600a4ccf43} 
+static Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher\+::token\+Is (\begin{DoxyParamCaption}\item[{}]{\$token}{, }\item[{string}]{\$which}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check whether \$token type is \$which.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$token} & A PHP token (see token\+\_\+get\+\_\+all) \\
+\hline
+string & {\em \$which} & A PHP token type \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ac95f9ab563f880b1370073b93b55ab31}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}!CONSTANT\_SYNTAX@{CONSTANT\_SYNTAX}}
+\index{CONSTANT\_SYNTAX@{CONSTANT\_SYNTAX}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}}
+\doxysubsubsection{\texorpdfstring{CONSTANT\_SYNTAX}{CONSTANT\_SYNTAX}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ac95f9ab563f880b1370073b93b55ab31} 
+const Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher\+::\+CONSTANT\+\_\+\+SYNTAX = \textquotesingle{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[}a-\/zA-\/Z\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\mbox{[}a-\/zA-\/Z0-\/9\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\texorpdfstring{$\ast$}{*}\$\textquotesingle{}}
+
+Syntax types \Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a1d02f86dda52eea4c99ff7105592121d}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}!T\_OPEN\_TAG@{T\_OPEN\_TAG}}
+\index{T\_OPEN\_TAG@{T\_OPEN\_TAG}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}AbstractMatcher}}
+\doxysubsubsection{\texorpdfstring{T\_OPEN\_TAG}{T\_OPEN\_TAG}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a1d02f86dda52eea4c99ff7105592121d} 
+const Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher\+::\+T\+\_\+\+OPEN\+\_\+\+TAG = \textquotesingle{}T\+\_\+\+OPEN\+\_\+\+TAG\textquotesingle{}}
+
+Token values 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Tab\+Completion/\+Matcher/Abstract\+Matcher.\+php\end{DoxyCompactItemize}

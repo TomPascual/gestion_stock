@@ -1,0 +1,181 @@
+\doxysection{Php\+Parser\textbackslash{}Node\+Traverser Class Reference}
+\hypertarget{class_php_parser_1_1_node_traverser}{}\label{class_php_parser_1_1_node_traverser}\index{PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}}
+Inheritance diagram for Php\+Parser\textbackslash{}Node\+Traverser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_php_parser_1_1_node_traverser}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_traverser_abae70c25081ee4a3654e6f0c61267f81}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Node\+Visitor}} ... \$visitors)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_traverser_a1d8469c81c6bbd5977d30759267b0815}{add\+Visitor}} (\mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Node\+Visitor}} \$visitor)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_traverser_afdf0f5b59cf7fb4eeb645c809feb3e1b}{remove\+Visitor}} (\mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Node\+Visitor}} \$visitor)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_traverser_af56484d1b7d43086314d8afbcce62e9d}{traverse}} (array \$nodes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_node_traverser_a5f370346a3be1cfa042a5d230ea0d557}{DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN}} = Node\+Visitor\+::\+DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_node_traverser_aaf2a1609ad2296e3d53fa379f12b52f6}{STOP\+\_\+\+TRAVERSAL}} = Node\+Visitor\+::\+STOP\+\_\+\+TRAVERSAL
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_node_traverser_a37c76ded9bdb7b9d3c8309509d43d42a}{REMOVE\+\_\+\+NODE}} = Node\+Visitor\+::\+REMOVE\+\_\+\+NODE
+\item 
+const \mbox{\hyperlink{class_php_parser_1_1_node_traverser_a024a07b79c693d6f7daf31501b34468a}{DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN}} = Node\+Visitor\+::\+DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_traverser_ae47f2514a84566e05cb581a7f2563eac}{traverse\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_traverser_a824e22bfd670ef19ca77afe26c620fc1}{traverse\+Array}} (array \$nodes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_php_parser_1_1_node_traverser_aef7eac354fef913039c099d17e022010}\label{class_php_parser_1_1_node_traverser_aef7eac354fef913039c099d17e022010} 
+array {\bfseries \$visitors} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_php_parser_1_1_node_traverser_ad3ee2a3da2875b8a3b51baff2fa8134e}\label{class_php_parser_1_1_node_traverser_ad3ee2a3da2875b8a3b51baff2fa8134e} 
+bool {\bfseries \$stop\+Traversal}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_node_traverser_abae70c25081ee4a3654e6f0c61267f81}\index{PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_traverser_abae70c25081ee4a3654e6f0c61267f81} 
+Php\+Parser\textbackslash{}\+Node\+Traverser\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Node\+Visitor}} ...}]{\$visitors}{}\end{DoxyParamCaption})}
+
+Create a traverser with the given visitors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Node\+Visitor} & ...\$visitors Node visitors \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_node_traverser_a1d8469c81c6bbd5977d30759267b0815}\index{PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}!addVisitor@{addVisitor}}
+\index{addVisitor@{addVisitor}!PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}}
+\doxysubsubsection{\texorpdfstring{addVisitor()}{addVisitor()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_traverser_a1d8469c81c6bbd5977d30759267b0815} 
+Php\+Parser\textbackslash{}\+Node\+Traverser\+::add\+Visitor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Node\+Visitor}}}]{\$visitor}{}\end{DoxyParamCaption})}
+
+Adds a visitor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\+Visitor & {\em \$visitor} & Visitor to add \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_traverser_interface_a37bc2dff2721ca92fa83e2217f1ab104}{Php\+Parser\textbackslash{}\+Node\+Traverser\+Interface}}.
+
+\Hypertarget{class_php_parser_1_1_node_traverser_afdf0f5b59cf7fb4eeb645c809feb3e1b}\index{PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}!removeVisitor@{removeVisitor}}
+\index{removeVisitor@{removeVisitor}!PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}}
+\doxysubsubsection{\texorpdfstring{removeVisitor()}{removeVisitor()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_traverser_afdf0f5b59cf7fb4eeb645c809feb3e1b} 
+Php\+Parser\textbackslash{}\+Node\+Traverser\+::remove\+Visitor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Node\+Visitor}}}]{\$visitor}{}\end{DoxyParamCaption})}
+
+Removes an added visitor. 
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_traverser_interface_a6e872076ad8b0cb1cdb7f401520252dc}{Php\+Parser\textbackslash{}\+Node\+Traverser\+Interface}}.
+
+\Hypertarget{class_php_parser_1_1_node_traverser_af56484d1b7d43086314d8afbcce62e9d}\index{PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}!traverse@{traverse}}
+\index{traverse@{traverse}!PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}}
+\doxysubsubsection{\texorpdfstring{traverse()}{traverse()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_traverser_af56484d1b7d43086314d8afbcce62e9d} 
+Php\+Parser\textbackslash{}\+Node\+Traverser\+::traverse (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})}
+
+Traverses an array of nodes using the registered visitors.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Array of nodes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node\mbox{[}\mbox{]} Traversed array of nodes 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_traverser_interface_ac0de649f7213789a18f23e3aee44bccb}{Php\+Parser\textbackslash{}\+Node\+Traverser\+Interface}}.
+
+\Hypertarget{class_php_parser_1_1_node_traverser_a824e22bfd670ef19ca77afe26c620fc1}\index{PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}!traverseArray@{traverseArray}}
+\index{traverseArray@{traverseArray}!PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}}
+\doxysubsubsection{\texorpdfstring{traverseArray()}{traverseArray()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_traverser_a824e22bfd670ef19ca77afe26c620fc1} 
+Php\+Parser\textbackslash{}\+Node\+Traverser\+::traverse\+Array (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Recursively traverse array (usually of nodes).
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$nodes} & Array to traverse\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Result of traversal (may be original array or changed one) 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_node_traverser_ae47f2514a84566e05cb581a7f2563eac}\index{PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}!traverseNode@{traverseNode}}
+\index{traverseNode@{traverseNode}!PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}}
+\doxysubsubsection{\texorpdfstring{traverseNode()}{traverseNode()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_traverser_ae47f2514a84566e05cb581a7f2563eac} 
+Php\+Parser\textbackslash{}\+Node\+Traverser\+::traverse\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}}}]{\$node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Recursively traverse a node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node & {\em \$node} & Node to traverse. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_php_parser_1_1_node_traverser_a5f370346a3be1cfa042a5d230ea0d557}\index{PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}!DONT\_TRAVERSE\_CHILDREN@{DONT\_TRAVERSE\_CHILDREN}}
+\index{DONT\_TRAVERSE\_CHILDREN@{DONT\_TRAVERSE\_CHILDREN}!PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}}
+\doxysubsubsection{\texorpdfstring{DONT\_TRAVERSE\_CHILDREN}{DONT\_TRAVERSE\_CHILDREN}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_traverser_a5f370346a3be1cfa042a5d230ea0d557} 
+const Php\+Parser\textbackslash{}\+Node\+Traverser\+::\+DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN = Node\+Visitor\+::\+DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000205}{Deprecated}}]Use Node\+Visitor\+::\+DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN instead. \end{DoxyRefDesc}
+\Hypertarget{class_php_parser_1_1_node_traverser_a024a07b79c693d6f7daf31501b34468a}\index{PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}!DONT\_TRAVERSE\_CURRENT\_AND\_CHILDREN@{DONT\_TRAVERSE\_CURRENT\_AND\_CHILDREN}}
+\index{DONT\_TRAVERSE\_CURRENT\_AND\_CHILDREN@{DONT\_TRAVERSE\_CURRENT\_AND\_CHILDREN}!PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}}
+\doxysubsubsection{\texorpdfstring{DONT\_TRAVERSE\_CURRENT\_AND\_CHILDREN}{DONT\_TRAVERSE\_CURRENT\_AND\_CHILDREN}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_traverser_a024a07b79c693d6f7daf31501b34468a} 
+const Php\+Parser\textbackslash{}\+Node\+Traverser\+::\+DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN = Node\+Visitor\+::\+DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000208}{Deprecated}}]Use Node\+Visitor\+::\+DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN instead. \end{DoxyRefDesc}
+\Hypertarget{class_php_parser_1_1_node_traverser_a37c76ded9bdb7b9d3c8309509d43d42a}\index{PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}!REMOVE\_NODE@{REMOVE\_NODE}}
+\index{REMOVE\_NODE@{REMOVE\_NODE}!PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}}
+\doxysubsubsection{\texorpdfstring{REMOVE\_NODE}{REMOVE\_NODE}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_traverser_a37c76ded9bdb7b9d3c8309509d43d42a} 
+const Php\+Parser\textbackslash{}\+Node\+Traverser\+::\+REMOVE\+\_\+\+NODE = Node\+Visitor\+::\+REMOVE\+\_\+\+NODE}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000207}{Deprecated}}]Use Node\+Visitor\+::\+REMOVE\+\_\+\+NODE instead. \end{DoxyRefDesc}
+\Hypertarget{class_php_parser_1_1_node_traverser_aaf2a1609ad2296e3d53fa379f12b52f6}\index{PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}!STOP\_TRAVERSAL@{STOP\_TRAVERSAL}}
+\index{STOP\_TRAVERSAL@{STOP\_TRAVERSAL}!PhpParser\textbackslash{}NodeTraverser@{PhpParser\textbackslash{}NodeTraverser}}
+\doxysubsubsection{\texorpdfstring{STOP\_TRAVERSAL}{STOP\_TRAVERSAL}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_traverser_aaf2a1609ad2296e3d53fa379f12b52f6} 
+const Php\+Parser\textbackslash{}\+Node\+Traverser\+::\+STOP\+\_\+\+TRAVERSAL = Node\+Visitor\+::\+STOP\+\_\+\+TRAVERSAL}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000206}{Deprecated}}]Use Node\+Visitor\+::\+STOP\+\_\+\+TRAVERSAL instead. \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/nikic/php-\/parser/lib/\+Php\+Parser/Node\+Traverser.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,78 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Route\+Compiler Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_routing_1_1_route_compiler}{}\label{class_symfony_1_1_component_1_1_routing_1_1_route_compiler}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouteCompiler@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouteCompiler}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Route\+Compiler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_routing_1_1_route_compiler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_route_compiler_a0e9fb1d119c9fa4ed1e08d9088e51a2e}{compile}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_route}{Route}} \$route)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_route_compiler_aa12fb3641c2af5e8df73df1744728426}{SEPARATORS}} = \textquotesingle{}/,;.\+:-\/\+\_\+\texorpdfstring{$\sim$}{\string~}+\texorpdfstring{$\ast$}{*}=@\texorpdfstring{$\vert$}{|}\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_route_compiler_ae108d05135610954568f04f9b0e07e64}{VARIABLE\+\_\+\+MAXIMUM\+\_\+\+LENGTH}} = 32
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Route\+Compiler compiles Route instances to Compiled\+Route instances.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+
+Tobias Schultze \href{http://tobion.de}{\texttt{ http\+://tobion.\+de}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_route_compiler_a0e9fb1d119c9fa4ed1e08d9088e51a2e}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouteCompiler@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouteCompiler}!compile@{compile}}
+\index{compile@{compile}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouteCompiler@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouteCompiler}}
+\doxysubsubsection{\texorpdfstring{compile()}{compile()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_route_compiler_a0e9fb1d119c9fa4ed1e08d9088e51a2e} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Route\+Compiler\+::compile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_route}{Route}}}]{\$route}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception if a path variable is named \+\_\+fragment 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception if a variable is referenced more than once 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Domain\+Exception if a variable name starts with a digit or if it is too long to be successfully used as a PCRE subpattern 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_route_compiler_interface_a0ea4035f6082999fa5d80cb743e916e0}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Route\+Compiler\+Interface}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_route_compiler_aa12fb3641c2af5e8df73df1744728426}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouteCompiler@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouteCompiler}!SEPARATORS@{SEPARATORS}}
+\index{SEPARATORS@{SEPARATORS}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouteCompiler@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouteCompiler}}
+\doxysubsubsection{\texorpdfstring{SEPARATORS}{SEPARATORS}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_route_compiler_aa12fb3641c2af5e8df73df1744728426} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Route\+Compiler\+::\+SEPARATORS = \textquotesingle{}/,;.\+:-\/\+\_\+\texorpdfstring{$\sim$}{\string~}+\texorpdfstring{$\ast$}{*}=@\texorpdfstring{$\vert$}{|}\textquotesingle{}}
+
+This string defines the characters that are automatically considered separators in front of optional placeholders (with default and no static text following). Such a single separator can be left out together with the optional placeholder from matching and generating URLs. \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_route_compiler_ae108d05135610954568f04f9b0e07e64}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouteCompiler@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouteCompiler}!VARIABLE\_MAXIMUM\_LENGTH@{VARIABLE\_MAXIMUM\_LENGTH}}
+\index{VARIABLE\_MAXIMUM\_LENGTH@{VARIABLE\_MAXIMUM\_LENGTH}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouteCompiler@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouteCompiler}}
+\doxysubsubsection{\texorpdfstring{VARIABLE\_MAXIMUM\_LENGTH}{VARIABLE\_MAXIMUM\_LENGTH}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_route_compiler_ae108d05135610954568f04f9b0e07e64} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Route\+Compiler\+::\+VARIABLE\+\_\+\+MAXIMUM\+\_\+\+LENGTH = 32}
+
+The maximum supported length of a PCRE subpattern name \href{http://pcre.org/current/doc/html/pcre2pattern.html\#SEC16}{\texttt{ http\+://pcre.\+org/current/doc/html/pcre2pattern.\+html\#\+SEC16}}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/routing/Route\+Compiler.\+php\end{DoxyCompactItemize}

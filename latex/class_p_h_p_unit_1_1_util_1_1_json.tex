@@ -1,0 +1,46 @@
+\doxysection{PHPUnit\textbackslash{}Util\textbackslash{}Json Class Reference}
+\hypertarget{class_p_h_p_unit_1_1_util_1_1_json}{}\label{class_p_h_p_unit_1_1_util_1_1_json}\index{PHPUnit\textbackslash{}Util\textbackslash{}Json@{PHPUnit\textbackslash{}Util\textbackslash{}Json}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_json_a008a4ed702514f12225f8cc701302903}{prettify}} (string \$json)
+\item 
+static \mbox{\hyperlink{class_p_h_p_unit_1_1_util_1_1_json_a9101a8e61e4d3228c9610e2fef5edefe}{canonicalize}} (string \$json)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@no-\/named-\/arguments Parameter names are not covered by the backward compatibility promise for PHPUnit 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_h_p_unit_1_1_util_1_1_json_a9101a8e61e4d3228c9610e2fef5edefe}\index{PHPUnit\textbackslash{}Util\textbackslash{}Json@{PHPUnit\textbackslash{}Util\textbackslash{}Json}!canonicalize@{canonicalize}}
+\index{canonicalize@{canonicalize}!PHPUnit\textbackslash{}Util\textbackslash{}Json@{PHPUnit\textbackslash{}Util\textbackslash{}Json}}
+\doxysubsubsection{\texorpdfstring{canonicalize()}{canonicalize()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_util_1_1_json_a9101a8e61e4d3228c9610e2fef5edefe} 
+static PHPUnit\textbackslash{}\+Util\textbackslash{}\+Json\+::canonicalize (\begin{DoxyParamCaption}\item[{string}]{\$json}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Element 0 is true and element 1 is null when JSON decoding did not work.
+\begin{DoxyItemize}
+\item Element 0 is false and element 1 has the decoded value when JSON decoding did work.
+\item This is used to avoid ambiguity with JSON strings consisting entirely of \textquotesingle{}null\textquotesingle{} or \textquotesingle{}false\textquotesingle{}.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+array\{0\+: false, 1\+: mixed\}\texorpdfstring{$\vert$}{|}array\{0\+: true, 1\+: null\} 
+\end{DoxyReturn}
+\Hypertarget{class_p_h_p_unit_1_1_util_1_1_json_a008a4ed702514f12225f8cc701302903}\index{PHPUnit\textbackslash{}Util\textbackslash{}Json@{PHPUnit\textbackslash{}Util\textbackslash{}Json}!prettify@{prettify}}
+\index{prettify@{prettify}!PHPUnit\textbackslash{}Util\textbackslash{}Json@{PHPUnit\textbackslash{}Util\textbackslash{}Json}}
+\doxysubsubsection{\texorpdfstring{prettify()}{prettify()}}
+{\footnotesize\ttfamily \label{class_p_h_p_unit_1_1_util_1_1_json_a008a4ed702514f12225f8cc701302903} 
+static PHPUnit\textbackslash{}\+Util\textbackslash{}\+Json\+::prettify (\begin{DoxyParamCaption}\item[{string}]{\$json}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Json\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/phpunit/phpunit/src/\+Util/Json.\+php\end{DoxyCompactItemize}

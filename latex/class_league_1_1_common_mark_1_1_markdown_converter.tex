@@ -1,0 +1,131 @@
+\doxysection{League\textbackslash{}Common\+Mark\textbackslash{}Markdown\+Converter Class Reference}
+\hypertarget{class_league_1_1_common_mark_1_1_markdown_converter}{}\label{class_league_1_1_common_mark_1_1_markdown_converter}\index{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter@{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter}}
+Inheritance diagram for League\textbackslash{}Common\+Mark\textbackslash{}Markdown\+Converter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.400000cm]{class_league_1_1_common_mark_1_1_markdown_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_markdown_converter_a7380a9a39287fa65c77bede249a11907}\label{class_league_1_1_common_mark_1_1_markdown_converter_a7380a9a39287fa65c77bede249a11907} 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface}{Environment\+Interface}} \$environment)
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_markdown_converter_a2caefa5aa5a0164e5c10d25d7532cad0}\label{class_league_1_1_common_mark_1_1_markdown_converter_a2caefa5aa5a0164e5c10d25d7532cad0} 
+{\bfseries get\+Environment} ()
+\item 
+\mbox{\hyperlink{class_league_1_1_common_mark_1_1_markdown_converter_ad1d91ab5cc5a80835c143c158a4dd575}{convert}} (string \$input)
+\item 
+\mbox{\hyperlink{class_league_1_1_common_mark_1_1_markdown_converter_a778c74f4546dc9763e21a676403af8ff}{convert\+To\+Html}} (string \$markdown)
+\item 
+\mbox{\hyperlink{class_league_1_1_common_mark_1_1_markdown_converter_a1dec0979ce398f0737c70132c334f52f}{\+\_\+\+\_\+invoke}} (string \$markdown)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface}{Environment\+Interface}} \mbox{\hyperlink{class_league_1_1_common_mark_1_1_markdown_converter_a803ef6cd3b41655be2774dc261eb8e00}{\$environment}}
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_interface}{Markdown\+Parser\+Interface}} \mbox{\hyperlink{class_league_1_1_common_mark_1_1_markdown_converter_a6f8a25eafc10f3baa2ef465609ccb2ff}{\$markdown\+Parser}}
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_renderer_1_1_markdown_renderer_interface}{Markdown\+Renderer\+Interface}} \mbox{\hyperlink{class_league_1_1_common_mark_1_1_markdown_converter_ac385c1a6c4ac2b0ba53d0330f1b0fddd}{\$html\+Renderer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_league_1_1_common_mark_1_1_markdown_converter_a1dec0979ce398f0737c70132c334f52f}\index{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter@{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter}!\_\_invoke@{\_\_invoke}}
+\index{\_\_invoke@{\_\_invoke}!League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter@{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter}}
+\doxysubsubsection{\texorpdfstring{\_\_invoke()}{\_\_invoke()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_markdown_converter_a1dec0979ce398f0737c70132c334f52f} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Markdown\+Converter\+::\+\_\+\+\_\+invoke (\begin{DoxyParamCaption}\item[{string}]{\$markdown}{}\end{DoxyParamCaption})}
+
+Converts Common\+Mark to HTML.
+
+\begin{DoxySeeAlso}{See also}
+Markdown\+Converter\+::convert()
+\end{DoxySeeAlso}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Common\+Mark\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_league_1_1_common_mark_1_1_markdown_converter_ad1d91ab5cc5a80835c143c158a4dd575}\index{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter@{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter}!convert@{convert}}
+\index{convert@{convert}!League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter@{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_markdown_converter_ad1d91ab5cc5a80835c143c158a4dd575} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Markdown\+Converter\+::convert (\begin{DoxyParamCaption}\item[{string}]{\$input}{}\end{DoxyParamCaption})}
+
+Converts Markdown to HTML.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$input} & The Markdown to convert\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Rendered\+Content\+Interface Rendered HTML
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Common\+Mark\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_league_1_1_common_mark_1_1_converter_interface_acd5a30b3db4c6fa2e00a1f2a88868b21}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Converter\+Interface}}.
+
+\Hypertarget{class_league_1_1_common_mark_1_1_markdown_converter_a778c74f4546dc9763e21a676403af8ff}\index{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter@{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter}!convertToHtml@{convertToHtml}}
+\index{convertToHtml@{convertToHtml}!League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter@{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter}}
+\doxysubsubsection{\texorpdfstring{convertToHtml()}{convertToHtml()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_markdown_converter_a778c74f4546dc9763e21a676403af8ff} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Markdown\+Converter\+::convert\+To\+Html (\begin{DoxyParamCaption}\item[{string}]{\$markdown}{}\end{DoxyParamCaption})}
+
+Converts Markdown to HTML.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000079}{Deprecated}}]since 2.\+2; use {\ttfamily \doxylink{}{convert()}} instead\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$markdown} & The Markdown to convert\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Rendered\+Content\+Interface Rendered HTML
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Common\+Mark\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_league_1_1_common_mark_1_1_markdown_converter_interface_a9a80ea5232884b88f7d99f08a56865f6}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Markdown\+Converter\+Interface}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_league_1_1_common_mark_1_1_markdown_converter_a803ef6cd3b41655be2774dc261eb8e00}\index{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter@{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter}!\$environment@{\$environment}}
+\index{\$environment@{\$environment}!League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter@{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter}}
+\doxysubsubsection{\texorpdfstring{\$environment}{\$environment}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_markdown_converter_a803ef6cd3b41655be2774dc261eb8e00} 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface}{Environment\+Interface}} League\textbackslash{}\+Common\+Mark\textbackslash{}\+Markdown\+Converter\+::\$environment\hspace{0.3cm}{\ttfamily [protected]}}
+
+@psalm-\/readonly \Hypertarget{class_league_1_1_common_mark_1_1_markdown_converter_ac385c1a6c4ac2b0ba53d0330f1b0fddd}\index{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter@{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter}!\$htmlRenderer@{\$htmlRenderer}}
+\index{\$htmlRenderer@{\$htmlRenderer}!League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter@{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter}}
+\doxysubsubsection{\texorpdfstring{\$htmlRenderer}{\$htmlRenderer}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_markdown_converter_ac385c1a6c4ac2b0ba53d0330f1b0fddd} 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_renderer_1_1_markdown_renderer_interface}{Markdown\+Renderer\+Interface}} League\textbackslash{}\+Common\+Mark\textbackslash{}\+Markdown\+Converter\+::\$html\+Renderer\hspace{0.3cm}{\ttfamily [protected]}}
+
+@psalm-\/readonly \Hypertarget{class_league_1_1_common_mark_1_1_markdown_converter_a6f8a25eafc10f3baa2ef465609ccb2ff}\index{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter@{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter}!\$markdownParser@{\$markdownParser}}
+\index{\$markdownParser@{\$markdownParser}!League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter@{League\textbackslash{}CommonMark\textbackslash{}MarkdownConverter}}
+\doxysubsubsection{\texorpdfstring{\$markdownParser}{\$markdownParser}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_markdown_converter_a6f8a25eafc10f3baa2ef465609ccb2ff} 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_interface}{Markdown\+Parser\+Interface}} League\textbackslash{}\+Common\+Mark\textbackslash{}\+Markdown\+Converter\+::\$markdown\+Parser\hspace{0.3cm}{\ttfamily [protected]}}
+
+@psalm-\/readonly 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/league/commonmark/src/Markdown\+Converter.\+php\end{DoxyCompactItemize}

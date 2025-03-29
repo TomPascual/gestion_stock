@@ -1,0 +1,310 @@
+\doxysection{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}Mail\+Channel Class Reference}
+\hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel}{}\label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel}\index{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a0a16ae7e338e148dfed31b0e7f2ddaec}{\+\_\+\+\_\+construct}} (Mail\+Factory \$mailer, \mbox{\hyperlink{class_illuminate_1_1_mail_1_1_markdown}{Markdown}} \$markdown)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a2dee5d59ca24530fd8c2e5f45c3ebacb}{send}} (\$notifiable, \mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_notification}{Notification}} \$notification)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a79e734492a31543adc008ba13e4b0312}{message\+Builder}} (\$notifiable, \$notification, \$message)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_aee3a387b3aa892c1a809a8d8eaab67d8}{build\+View}} (\$message)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a040df6e399b99e02576bef85ddb18b8a}{build\+Markdown\+Html}} (\$message)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_aeb9eeed9d65a3f54c33d09f926cb20c7}{build\+Markdown\+Text}} (\$message)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a12653cc1b544b6f4c7b9c251c2aa25de}{markdown\+Renderer}} (\$message)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a889311f3dbf4ba196fd79efa6a2ec901}{additional\+Message\+Data}} (\$notification)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a282e35d7e3ebbdea0a649b2c65eae430}{build\+Message}} (\$mail\+Message, \$notifiable, \$notification, \$message)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_ae81267264b0600df24df4fff3f9de443}{address\+Message}} (\$mail\+Message, \$notifiable, \$notification, \$message)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a42db0d3abaea343d14c7550c5b17f394}{add\+Sender}} (\$mail\+Message, \$message)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_ac11e4c4c3de928ce707fcfbe8aff1062}{get\+Recipients}} (\$notifiable, \$notification, \$message)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a88fbbae8a21311499712f6cfa2ebe294}{add\+Attachments}} (\$mail\+Message, \$message)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_ae3306ca340c6912ce5ef7420f4de6eaa}{run\+Callbacks}} (\$mail\+Message, \$message)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_afe46ec564188f2ca38fd07752bfa14ec}\label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_afe46ec564188f2ca38fd07752bfa14ec} 
+{\bfseries \$mailer}
+\item 
+\Hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a04ea27f897966ea54596692d0517f0c8}\label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a04ea27f897966ea54596692d0517f0c8} 
+{\bfseries \$markdown}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a0a16ae7e338e148dfed31b0e7f2ddaec}\index{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a0a16ae7e338e148dfed31b0e7f2ddaec} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channels\textbackslash{}\+Mail\+Channel\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Mail\+Factory}]{\$mailer}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_markdown}{Markdown}}}]{\$markdown}{}\end{DoxyParamCaption})}
+
+Create a new mail channel instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Mail\textbackslash{}\+Factory & {\em \$mailer} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Markdown & {\em \$markdown} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a88fbbae8a21311499712f6cfa2ebe294}\index{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}!addAttachments@{addAttachments}}
+\index{addAttachments@{addAttachments}!Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}}
+\doxysubsubsection{\texorpdfstring{addAttachments()}{addAttachments()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a88fbbae8a21311499712f6cfa2ebe294} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channels\textbackslash{}\+Mail\+Channel\+::add\+Attachments (\begin{DoxyParamCaption}\item[{}]{\$mail\+Message}{, }\item[{}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add the attachments to the message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Message & {\em \$mail\+Message} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Messages\textbackslash{}\+Mail\+Message & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a889311f3dbf4ba196fd79efa6a2ec901}\index{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}!additionalMessageData@{additionalMessageData}}
+\index{additionalMessageData@{additionalMessageData}!Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}}
+\doxysubsubsection{\texorpdfstring{additionalMessageData()}{additionalMessageData()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a889311f3dbf4ba196fd79efa6a2ec901} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channels\textbackslash{}\+Mail\+Channel\+::additional\+Message\+Data (\begin{DoxyParamCaption}\item[{}]{\$notification}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get additional meta-\/data to pass along with the view data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notification & {\em \$notification} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_ae81267264b0600df24df4fff3f9de443}\index{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}!addressMessage@{addressMessage}}
+\index{addressMessage@{addressMessage}!Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}}
+\doxysubsubsection{\texorpdfstring{addressMessage()}{addressMessage()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_ae81267264b0600df24df4fff3f9de443} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channels\textbackslash{}\+Mail\+Channel\+::address\+Message (\begin{DoxyParamCaption}\item[{}]{\$mail\+Message}{, }\item[{}]{\$notifiable}{, }\item[{}]{\$notification}{, }\item[{}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Address the mail message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Message & {\em \$mail\+Message} & \\
+\hline
+mixed & {\em \$notifiable} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notification & {\em \$notification} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Messages\textbackslash{}\+Mail\+Message & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a42db0d3abaea343d14c7550c5b17f394}\index{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}!addSender@{addSender}}
+\index{addSender@{addSender}!Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}}
+\doxysubsubsection{\texorpdfstring{addSender()}{addSender()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a42db0d3abaea343d14c7550c5b17f394} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channels\textbackslash{}\+Mail\+Channel\+::add\+Sender (\begin{DoxyParamCaption}\item[{}]{\$mail\+Message}{, }\item[{}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add the "{}from"{} and "{}reply to"{} addresses to the message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Message & {\em \$mail\+Message} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Messages\textbackslash{}\+Mail\+Message & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a040df6e399b99e02576bef85ddb18b8a}\index{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}!buildMarkdownHtml@{buildMarkdownHtml}}
+\index{buildMarkdownHtml@{buildMarkdownHtml}!Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}}
+\doxysubsubsection{\texorpdfstring{buildMarkdownHtml()}{buildMarkdownHtml()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a040df6e399b99e02576bef85ddb18b8a} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channels\textbackslash{}\+Mail\+Channel\+::build\+Markdown\+Html (\begin{DoxyParamCaption}\item[{}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Build the HTML view for a Markdown message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Messages\textbackslash{}\+Mail\+Message & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_aeb9eeed9d65a3f54c33d09f926cb20c7}\index{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}!buildMarkdownText@{buildMarkdownText}}
+\index{buildMarkdownText@{buildMarkdownText}!Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}}
+\doxysubsubsection{\texorpdfstring{buildMarkdownText()}{buildMarkdownText()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_aeb9eeed9d65a3f54c33d09f926cb20c7} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channels\textbackslash{}\+Mail\+Channel\+::build\+Markdown\+Text (\begin{DoxyParamCaption}\item[{}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Build the text view for a Markdown message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Messages\textbackslash{}\+Mail\+Message & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a282e35d7e3ebbdea0a649b2c65eae430}\index{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}!buildMessage@{buildMessage}}
+\index{buildMessage@{buildMessage}!Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}}
+\doxysubsubsection{\texorpdfstring{buildMessage()}{buildMessage()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a282e35d7e3ebbdea0a649b2c65eae430} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channels\textbackslash{}\+Mail\+Channel\+::build\+Message (\begin{DoxyParamCaption}\item[{}]{\$mail\+Message}{, }\item[{}]{\$notifiable}{, }\item[{}]{\$notification}{, }\item[{}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Build the mail message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Message & {\em \$mail\+Message} & \\
+\hline
+mixed & {\em \$notifiable} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notification & {\em \$notification} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Messages\textbackslash{}\+Mail\+Message & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_aee3a387b3aa892c1a809a8d8eaab67d8}\index{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}!buildView@{buildView}}
+\index{buildView@{buildView}!Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}}
+\doxysubsubsection{\texorpdfstring{buildView()}{buildView()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_aee3a387b3aa892c1a809a8d8eaab67d8} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channels\textbackslash{}\+Mail\+Channel\+::build\+View (\begin{DoxyParamCaption}\item[{}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Build the notification\textquotesingle{}s view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Messages\textbackslash{}\+Mail\+Message & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_ac11e4c4c3de928ce707fcfbe8aff1062}\index{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}!getRecipients@{getRecipients}}
+\index{getRecipients@{getRecipients}!Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}}
+\doxysubsubsection{\texorpdfstring{getRecipients()}{getRecipients()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_ac11e4c4c3de928ce707fcfbe8aff1062} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channels\textbackslash{}\+Mail\+Channel\+::get\+Recipients (\begin{DoxyParamCaption}\item[{}]{\$notifiable}{, }\item[{}]{\$notification}{, }\item[{}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the recipients of the given message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$notifiable} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notification & {\em \$notification} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Messages\textbackslash{}\+Mail\+Message & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a12653cc1b544b6f4c7b9c251c2aa25de}\index{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}!markdownRenderer@{markdownRenderer}}
+\index{markdownRenderer@{markdownRenderer}!Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}}
+\doxysubsubsection{\texorpdfstring{markdownRenderer()}{markdownRenderer()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a12653cc1b544b6f4c7b9c251c2aa25de} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channels\textbackslash{}\+Mail\+Channel\+::markdown\+Renderer (\begin{DoxyParamCaption}\item[{}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the Markdown implementation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Messages\textbackslash{}\+Mail\+Message & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Markdown 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a79e734492a31543adc008ba13e4b0312}\index{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}!messageBuilder@{messageBuilder}}
+\index{messageBuilder@{messageBuilder}!Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}}
+\doxysubsubsection{\texorpdfstring{messageBuilder()}{messageBuilder()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a79e734492a31543adc008ba13e4b0312} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channels\textbackslash{}\+Mail\+Channel\+::message\+Builder (\begin{DoxyParamCaption}\item[{}]{\$notifiable}{, }\item[{}]{\$notification}{, }\item[{}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the mailer Closure for the message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$notifiable} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notification & {\em \$notification} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Messages\textbackslash{}\+Mail\+Message & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_ae3306ca340c6912ce5ef7420f4de6eaa}\index{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}!runCallbacks@{runCallbacks}}
+\index{runCallbacks@{runCallbacks}!Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}}
+\doxysubsubsection{\texorpdfstring{runCallbacks()}{runCallbacks()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_ae3306ca340c6912ce5ef7420f4de6eaa} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channels\textbackslash{}\+Mail\+Channel\+::run\+Callbacks (\begin{DoxyParamCaption}\item[{}]{\$mail\+Message}{, }\item[{}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Run the callbacks for the message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Message & {\em \$mail\+Message} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Messages\textbackslash{}\+Mail\+Message & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a2dee5d59ca24530fd8c2e5f45c3ebacb}\index{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}!send@{send}}
+\index{send@{send}!Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel@{Illuminate\textbackslash{}Notifications\textbackslash{}Channels\textbackslash{}MailChannel}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_channels_1_1_mail_channel_a2dee5d59ca24530fd8c2e5f45c3ebacb} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channels\textbackslash{}\+Mail\+Channel\+::send (\begin{DoxyParamCaption}\item[{}]{\$notifiable}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_notification}{Notification}}}]{\$notification}{}\end{DoxyParamCaption})}
+
+Send the given notification.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$notifiable} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notification & {\em \$notification} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Sent\+Message\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Notifications/\+Channels/Mail\+Channel.\+php\end{DoxyCompactItemize}

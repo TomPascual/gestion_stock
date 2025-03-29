@@ -1,0 +1,28 @@
+var class_illuminate_1_1_bus_1_1_batch =
+[
+    [ "__construct", "class_illuminate_1_1_bus_1_1_batch.html#a3aeec8e283fed017344b400ccf32d76c", null ],
+    [ "__get", "class_illuminate_1_1_bus_1_1_batch.html#ad64f061b9757be33fc72213f286ea476", null ],
+    [ "add", "class_illuminate_1_1_bus_1_1_batch.html#a045a1c9da6192c5fff15adede33a302c", null ],
+    [ "allowsFailures", "class_illuminate_1_1_bus_1_1_batch.html#ae3bb9501dc4d80d41295257925d2e629", null ],
+    [ "cancel", "class_illuminate_1_1_bus_1_1_batch.html#a61006dc3c4e2b29955b65483df850717", null ],
+    [ "canceled", "class_illuminate_1_1_bus_1_1_batch.html#a926d57680945c920a03d297407e6b420", null ],
+    [ "cancelled", "class_illuminate_1_1_bus_1_1_batch.html#a9480f6b9b440c19c879e65dac6bcf6ea", null ],
+    [ "decrementPendingJobs", "class_illuminate_1_1_bus_1_1_batch.html#af60a327238553adbe56e793ff7f893c8", null ],
+    [ "delete", "class_illuminate_1_1_bus_1_1_batch.html#aa0acbf55442016317e76fa24ceadafa6", null ],
+    [ "finished", "class_illuminate_1_1_bus_1_1_batch.html#a4b2eb76c8f5524a6493729c5d5cf0137", null ],
+    [ "fresh", "class_illuminate_1_1_bus_1_1_batch.html#aa146fea26a3ab81e8fea6b63b616ff4a", null ],
+    [ "hasCatchCallbacks", "class_illuminate_1_1_bus_1_1_batch.html#a412e0e665e52b7ec4dcfdc3f32a4d394", null ],
+    [ "hasFailures", "class_illuminate_1_1_bus_1_1_batch.html#ab791c9a52c00f5e6cc92976e6b9622ae", null ],
+    [ "hasFinallyCallbacks", "class_illuminate_1_1_bus_1_1_batch.html#a638e452a176afb80c7ff50f07b263ff8", null ],
+    [ "hasProgressCallbacks", "class_illuminate_1_1_bus_1_1_batch.html#af3d8752b21cc8499d2707883d7a35ab4", null ],
+    [ "hasThenCallbacks", "class_illuminate_1_1_bus_1_1_batch.html#a55543c9cd5536254ae6f2106a10ac0dd", null ],
+    [ "incrementFailedJobs", "class_illuminate_1_1_bus_1_1_batch.html#ad011f99ca67ee917df633c2c949b3160", null ],
+    [ "invokeHandlerCallback", "class_illuminate_1_1_bus_1_1_batch.html#a17203cff2a4159067b5f14f17c7239b5", null ],
+    [ "jsonSerialize", "class_illuminate_1_1_bus_1_1_batch.html#a28b0592ec3fc793ae93b4e74f6dae90b", null ],
+    [ "prepareBatchedChain", "class_illuminate_1_1_bus_1_1_batch.html#ae49512dbb65614d973d2c5c1657986d8", null ],
+    [ "processedJobs", "class_illuminate_1_1_bus_1_1_batch.html#a87a55e657c5e093286ba372adbb24609", null ],
+    [ "progress", "class_illuminate_1_1_bus_1_1_batch.html#a28bce509951b00ecc9485aba888cd0e0", null ],
+    [ "recordFailedJob", "class_illuminate_1_1_bus_1_1_batch.html#a09c5508345058af1cdc40dda4d73d696", null ],
+    [ "recordSuccessfulJob", "class_illuminate_1_1_bus_1_1_batch.html#a1e977cb002fb565d782594abcaca2bea", null ],
+    [ "toArray", "class_illuminate_1_1_bus_1_1_batch.html#aaa55f6315aeacb0875c291a3885106b0", null ]
+];

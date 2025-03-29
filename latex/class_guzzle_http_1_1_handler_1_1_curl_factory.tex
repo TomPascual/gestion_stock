@@ -1,0 +1,119 @@
+\doxysection{Guzzle\+Http\textbackslash{}Handler\textbackslash{}Curl\+Factory Class Reference}
+\hypertarget{class_guzzle_http_1_1_handler_1_1_curl_factory}{}\label{class_guzzle_http_1_1_handler_1_1_curl_factory}\index{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory}}
+Inheritance diagram for Guzzle\+Http\textbackslash{}Handler\textbackslash{}Curl\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_guzzle_http_1_1_handler_1_1_curl_factory}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_handler_1_1_curl_factory_a48d197cb8cff91ca216da837866af7b0}{\+\_\+\+\_\+construct}} (int \$max\+Handles)
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_handler_1_1_curl_factory_af3ad5606ce3270d876bcc99bebbf0723}{create}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface}{Request\+Interface}} \$request, array \$options)
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_handler_1_1_curl_factory_a6a02be02e448028d8af9a3ee7190f857}{release}} (\mbox{\hyperlink{class_guzzle_http_1_1_handler_1_1_easy_handle}{Easy\+Handle}} \$easy)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_handler_1_1_curl_factory_ad0e3533088e99efd1f0dc6175492e92f}{finish}} (callable \$handler, \mbox{\hyperlink{class_guzzle_http_1_1_handler_1_1_easy_handle}{Easy\+Handle}} \$easy, \mbox{\hyperlink{interface_guzzle_http_1_1_handler_1_1_curl_factory_interface}{Curl\+Factory\+Interface}} \$factory)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_guzzle_http_1_1_handler_1_1_curl_factory_a98a8e59ee7545d5cac8659704ced9577}\label{class_guzzle_http_1_1_handler_1_1_curl_factory_a98a8e59ee7545d5cac8659704ced9577} 
+const {\bfseries CURL\+\_\+\+VERSION\+\_\+\+STR} = \textquotesingle{}curl\+\_\+version\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_guzzle_http_1_1_handler_1_1_curl_factory_a1aac31a161d8ed1080fee9be1670cb46}{LOW\+\_\+\+CURL\+\_\+\+VERSION\+\_\+\+NUMBER}} = \textquotesingle{}7.\+21.\+2\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates curl resources from a request
+
+@final 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_guzzle_http_1_1_handler_1_1_curl_factory_a48d197cb8cff91ca216da837866af7b0}\index{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_handler_1_1_curl_factory_a48d197cb8cff91ca216da837866af7b0} 
+Guzzle\+Http\textbackslash{}\+Handler\textbackslash{}\+Curl\+Factory\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{int}]{\$max\+Handles}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$max\+Handles} & Maximum number of idle handles. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_guzzle_http_1_1_handler_1_1_curl_factory_af3ad5606ce3270d876bcc99bebbf0723}\index{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory}!create@{create}}
+\index{create@{create}!GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_handler_1_1_curl_factory_af3ad5606ce3270d876bcc99bebbf0723} 
+Guzzle\+Http\textbackslash{}\+Handler\textbackslash{}\+Curl\+Factory\+::create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{array}]{\$options}{}\end{DoxyParamCaption})}
+
+Creates a c\+URL handle resource.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Request\+Interface & {\em \$request} & Request \\
+\hline
+array & {\em \$options} & Transfer options\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception when an option cannot be applied 
+
+Implements \mbox{\hyperlink{interface_guzzle_http_1_1_handler_1_1_curl_factory_interface_a217c1fafd2be00752ce7fe36917dfac4}{Guzzle\+Http\textbackslash{}\+Handler\textbackslash{}\+Curl\+Factory\+Interface}}.
+
+\Hypertarget{class_guzzle_http_1_1_handler_1_1_curl_factory_ad0e3533088e99efd1f0dc6175492e92f}\index{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory}!finish@{finish}}
+\index{finish@{finish}!GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory}}
+\doxysubsubsection{\texorpdfstring{finish()}{finish()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_handler_1_1_curl_factory_ad0e3533088e99efd1f0dc6175492e92f} 
+static Guzzle\+Http\textbackslash{}\+Handler\textbackslash{}\+Curl\+Factory\+::finish (\begin{DoxyParamCaption}\item[{callable}]{\$handler}{, }\item[{\mbox{\hyperlink{class_guzzle_http_1_1_handler_1_1_easy_handle}{Easy\+Handle}}}]{\$easy}{, }\item[{\mbox{\hyperlink{interface_guzzle_http_1_1_handler_1_1_curl_factory_interface}{Curl\+Factory\+Interface}}}]{\$factory}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Completes a c\+URL transaction, either returning a response promise or a rejected promise.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em callable(\+Request\+Interface,array)} & Promise\+Interface \$handler \\
+\hline
+Curl\+Factory\+Interface & {\em \$factory} & Dictates how the handle is released \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_guzzle_http_1_1_handler_1_1_curl_factory_a6a02be02e448028d8af9a3ee7190f857}\index{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory}!release@{release}}
+\index{release@{release}!GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_handler_1_1_curl_factory_a6a02be02e448028d8af9a3ee7190f857} 
+Guzzle\+Http\textbackslash{}\+Handler\textbackslash{}\+Curl\+Factory\+::release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_guzzle_http_1_1_handler_1_1_easy_handle}{Easy\+Handle}}}]{\$easy}{}\end{DoxyParamCaption})}
+
+Release an easy handle, allowing it to be reused or closed.
+
+This function must call unset on the easy handle\textquotesingle{}s "{}handle"{} property. 
+
+Implements \mbox{\hyperlink{interface_guzzle_http_1_1_handler_1_1_curl_factory_interface_a06148710fa2805f414b2246c2e3ce2c2}{Guzzle\+Http\textbackslash{}\+Handler\textbackslash{}\+Curl\+Factory\+Interface}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_guzzle_http_1_1_handler_1_1_curl_factory_a1aac31a161d8ed1080fee9be1670cb46}\index{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory}!LOW\_CURL\_VERSION\_NUMBER@{LOW\_CURL\_VERSION\_NUMBER}}
+\index{LOW\_CURL\_VERSION\_NUMBER@{LOW\_CURL\_VERSION\_NUMBER}!GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlFactory}}
+\doxysubsubsection{\texorpdfstring{LOW\_CURL\_VERSION\_NUMBER}{LOW\_CURL\_VERSION\_NUMBER}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_handler_1_1_curl_factory_a1aac31a161d8ed1080fee9be1670cb46} 
+const Guzzle\+Http\textbackslash{}\+Handler\textbackslash{}\+Curl\+Factory\+::\+LOW\+\_\+\+CURL\+\_\+\+VERSION\+\_\+\+NUMBER = \textquotesingle{}7.\+21.\+2\textquotesingle{}}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000044}{Deprecated}}]\end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/guzzlehttp/guzzle/src/\+Handler/Curl\+Factory.\+php\end{DoxyCompactItemize}

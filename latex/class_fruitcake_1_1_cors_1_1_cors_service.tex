@@ -1,0 +1,66 @@
+\doxysection{Fruitcake\textbackslash{}Cors\textbackslash{}Cors\+Service Class Reference}
+\hypertarget{class_fruitcake_1_1_cors_1_1_cors_service}{}\label{class_fruitcake_1_1_cors_1_1_cors_service}\index{Fruitcake\textbackslash{}Cors\textbackslash{}CorsService@{Fruitcake\textbackslash{}Cors\textbackslash{}CorsService}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fruitcake_1_1_cors_1_1_cors_service_a541f768ea2b64885673545644c2ef308}{\+\_\+\+\_\+construct}} (array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_fruitcake_1_1_cors_1_1_cors_service_adfc8fab3d49ac73daf8517c645b4ec4a}{set\+Options}} (array \$options)
+\item 
+\Hypertarget{class_fruitcake_1_1_cors_1_1_cors_service_abedaa1635d055daad17f44ab4ee8ec5a}\label{class_fruitcake_1_1_cors_1_1_cors_service_abedaa1635d055daad17f44ab4ee8ec5a} 
+{\bfseries is\+Cors\+Request} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\Hypertarget{class_fruitcake_1_1_cors_1_1_cors_service_ac6d8cde91aaa63c199c31e2e6f5100f0}\label{class_fruitcake_1_1_cors_1_1_cors_service_ac6d8cde91aaa63c199c31e2e6f5100f0} 
+{\bfseries is\+Preflight\+Request} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\Hypertarget{class_fruitcake_1_1_cors_1_1_cors_service_a8d46c7b1cd7336a0f3614c474c22338a}\label{class_fruitcake_1_1_cors_1_1_cors_service_a8d46c7b1cd7336a0f3614c474c22338a} 
+{\bfseries handle\+Preflight\+Request} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\Hypertarget{class_fruitcake_1_1_cors_1_1_cors_service_a0e869cae83c51c12c3a45051a9ff6c0e}\label{class_fruitcake_1_1_cors_1_1_cors_service_a0e869cae83c51c12c3a45051a9ff6c0e} 
+{\bfseries add\+Preflight\+Request\+Headers} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\Hypertarget{class_fruitcake_1_1_cors_1_1_cors_service_a56448130a85969647fb0b95396155b11}\label{class_fruitcake_1_1_cors_1_1_cors_service_a56448130a85969647fb0b95396155b11} 
+{\bfseries is\+Origin\+Allowed} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\Hypertarget{class_fruitcake_1_1_cors_1_1_cors_service_a5e4b292a72890d42fa3e118261891c83}\label{class_fruitcake_1_1_cors_1_1_cors_service_a5e4b292a72890d42fa3e118261891c83} 
+{\bfseries add\+Actual\+Request\+Headers} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\Hypertarget{class_fruitcake_1_1_cors_1_1_cors_service_ae24b6ea658fe81cdf3179cd3e699bbe3}\label{class_fruitcake_1_1_cors_1_1_cors_service_ae24b6ea658fe81cdf3179cd3e699bbe3} 
+{\bfseries vary\+Header} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response, string \$header)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@phpstan-\/type Cors\+Input\+Options array\{ \textquotesingle{}allowed\+Origins\textquotesingle{}?\+: string\mbox{[}\mbox{]}, \textquotesingle{}allowed\+Origins\+Patterns\textquotesingle{}?\+: string\mbox{[}\mbox{]}, \textquotesingle{}supports\+Credentials\textquotesingle{}?\+: bool, \textquotesingle{}allowed\+Headers\textquotesingle{}?\+: string\mbox{[}\mbox{]}, \textquotesingle{}allowed\+Methods\textquotesingle{}?\+: string\mbox{[}\mbox{]}, \textquotesingle{}exposed\+Headers\textquotesingle{}?\+: string\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}false, \textquotesingle{}max\+Age\textquotesingle{}?\+: int\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}null, \textquotesingle{}allowed\+\_\+origins\textquotesingle{}?\+: string\mbox{[}\mbox{]}, \textquotesingle{}allowed\+\_\+origins\+\_\+patterns\textquotesingle{}?\+: string\mbox{[}\mbox{]}, \textquotesingle{}supports\+\_\+credentials\textquotesingle{}?\+: bool, \textquotesingle{}allowed\+\_\+headers\textquotesingle{}?\+: string\mbox{[}\mbox{]}, \textquotesingle{}allowed\+\_\+methods\textquotesingle{}?\+: string\mbox{[}\mbox{]}, \textquotesingle{}exposed\+\_\+headers\textquotesingle{}?\+: string\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}false, \textquotesingle{}max\+\_\+age\textquotesingle{}?\+: int\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}null \} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_fruitcake_1_1_cors_1_1_cors_service_a541f768ea2b64885673545644c2ef308}\index{Fruitcake\textbackslash{}Cors\textbackslash{}CorsService@{Fruitcake\textbackslash{}Cors\textbackslash{}CorsService}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Fruitcake\textbackslash{}Cors\textbackslash{}CorsService@{Fruitcake\textbackslash{}Cors\textbackslash{}CorsService}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_fruitcake_1_1_cors_1_1_cors_service_a541f768ea2b64885673545644c2ef308} 
+Fruitcake\textbackslash{}\+Cors\textbackslash{}\+Cors\+Service\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Cors\+Input\+Options & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fruitcake_1_1_cors_1_1_cors_service_adfc8fab3d49ac73daf8517c645b4ec4a}\index{Fruitcake\textbackslash{}Cors\textbackslash{}CorsService@{Fruitcake\textbackslash{}Cors\textbackslash{}CorsService}!setOptions@{setOptions}}
+\index{setOptions@{setOptions}!Fruitcake\textbackslash{}Cors\textbackslash{}CorsService@{Fruitcake\textbackslash{}Cors\textbackslash{}CorsService}}
+\doxysubsubsection{\texorpdfstring{setOptions()}{setOptions()}}
+{\footnotesize\ttfamily \label{class_fruitcake_1_1_cors_1_1_cors_service_adfc8fab3d49ac73daf8517c645b4ec4a} 
+Fruitcake\textbackslash{}\+Cors\textbackslash{}\+Cors\+Service\+::set\+Options (\begin{DoxyParamCaption}\item[{array}]{\$options}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Cors\+Input\+Options & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/fruitcake/php-\/cors/src/Cors\+Service.\+php\end{DoxyCompactItemize}

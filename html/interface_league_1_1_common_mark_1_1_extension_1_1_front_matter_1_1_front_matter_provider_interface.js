@@ -1,0 +1,4 @@
+var interface_league_1_1_common_mark_1_1_extension_1_1_front_matter_1_1_front_matter_provider_interface =
+[
+    [ "getFrontMatter", "interface_league_1_1_common_mark_1_1_extension_1_1_front_matter_1_1_front_matter_provider_interface.html#a90d12ccabbaa38d292d928ee2dd7daaf", null ]
+];

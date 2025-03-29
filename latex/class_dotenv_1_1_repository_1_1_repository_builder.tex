@@ -1,0 +1,167 @@
+\doxysection{Dotenv\textbackslash{}Repository\textbackslash{}Repository\+Builder Class Reference}
+\hypertarget{class_dotenv_1_1_repository_1_1_repository_builder}{}\label{class_dotenv_1_1_repository_1_1_repository_builder}\index{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dotenv_1_1_repository_1_1_repository_builder_a5ad3469dc4d576a22f8a2af1a2545a67}{add\+Reader}} (\$reader)
+\item 
+\mbox{\hyperlink{class_dotenv_1_1_repository_1_1_repository_builder_ac4a9c8c87654803b30086f5a812a66f9}{add\+Writer}} (\$writer)
+\item 
+\mbox{\hyperlink{class_dotenv_1_1_repository_1_1_repository_builder_ac1d2bcbaecfb3bd2307c040953ac173b}{add\+Adapter}} (\$adapter)
+\item 
+\mbox{\hyperlink{class_dotenv_1_1_repository_1_1_repository_builder_a4436531fa44b5557cfc4aae26648a308}{immutable}} ()
+\item 
+\mbox{\hyperlink{class_dotenv_1_1_repository_1_1_repository_builder_a86999c74a71d0df310fc1f318aec81ad}{allow\+List}} (?array \$allow\+List=null)
+\item 
+\mbox{\hyperlink{class_dotenv_1_1_repository_1_1_repository_builder_ad49e4471d9b6b5d644b928510720bdf6}{make}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_dotenv_1_1_repository_1_1_repository_builder_a90dcf79b17d799ba706fd88a54d07068}{create\+With\+No\+Adapters}} ()
+\item 
+static \mbox{\hyperlink{class_dotenv_1_1_repository_1_1_repository_builder_a8711197446658858eb99bb9f6125f641}{create\+With\+Default\+Adapters}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dotenv_1_1_repository_1_1_repository_builder_ac1d2bcbaecfb3bd2307c040953ac173b}\index{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}!addAdapter@{addAdapter}}
+\index{addAdapter@{addAdapter}!Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}}
+\doxysubsubsection{\texorpdfstring{addAdapter()}{addAdapter()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_repository_1_1_repository_builder_ac1d2bcbaecfb3bd2307c040953ac173b} 
+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Builder\+::add\+Adapter (\begin{DoxyParamCaption}\item[{}]{\$adapter}{}\end{DoxyParamCaption})}
+
+Creates a repository builder with the given adapter added.
+
+Accepts either an adapter instance, or a class-\/string for an adapter. If the adapter is not supported, then we silently skip adding it. We will add the adapter as both a reader and a writer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Adapter\textbackslash{}\+Writer\+Interface | string & {\em \$adapter} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Builder 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_repository_1_1_repository_builder_a5ad3469dc4d576a22f8a2af1a2545a67}\index{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}!addReader@{addReader}}
+\index{addReader@{addReader}!Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}}
+\doxysubsubsection{\texorpdfstring{addReader()}{addReader()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_repository_1_1_repository_builder_a5ad3469dc4d576a22f8a2af1a2545a67} 
+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Builder\+::add\+Reader (\begin{DoxyParamCaption}\item[{}]{\$reader}{}\end{DoxyParamCaption})}
+
+Creates a repository builder with the given reader added.
+
+Accepts either a reader instance, or a class-\/string for an adapter. If the adapter is not supported, then we silently skip adding it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Adapter\textbackslash{}\+Reader\+Interface | string & {\em \$reader} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Builder 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_repository_1_1_repository_builder_ac4a9c8c87654803b30086f5a812a66f9}\index{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}!addWriter@{addWriter}}
+\index{addWriter@{addWriter}!Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}}
+\doxysubsubsection{\texorpdfstring{addWriter()}{addWriter()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_repository_1_1_repository_builder_ac4a9c8c87654803b30086f5a812a66f9} 
+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Builder\+::add\+Writer (\begin{DoxyParamCaption}\item[{}]{\$writer}{}\end{DoxyParamCaption})}
+
+Creates a repository builder with the given writer added.
+
+Accepts either a writer instance, or a class-\/string for an adapter. If the adapter is not supported, then we silently skip adding it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Adapter\textbackslash{}\+Writer\+Interface | string & {\em \$writer} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Builder 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_repository_1_1_repository_builder_a86999c74a71d0df310fc1f318aec81ad}\index{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}!allowList@{allowList}}
+\index{allowList@{allowList}!Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}}
+\doxysubsubsection{\texorpdfstring{allowList()}{allowList()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_repository_1_1_repository_builder_a86999c74a71d0df310fc1f318aec81ad} 
+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Builder\+::allow\+List (\begin{DoxyParamCaption}\item[{?array}]{\$allow\+List}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Creates a repository builder with the given allow list.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} | null & {\em \$allow\+List} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Builder 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_repository_1_1_repository_builder_a8711197446658858eb99bb9f6125f641}\index{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}!createWithDefaultAdapters@{createWithDefaultAdapters}}
+\index{createWithDefaultAdapters@{createWithDefaultAdapters}!Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}}
+\doxysubsubsection{\texorpdfstring{createWithDefaultAdapters()}{createWithDefaultAdapters()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_repository_1_1_repository_builder_a8711197446658858eb99bb9f6125f641} 
+static Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Builder\+::create\+With\+Default\+Adapters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new repository builder instance with the default adapters added.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Builder 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_repository_1_1_repository_builder_a90dcf79b17d799ba706fd88a54d07068}\index{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}!createWithNoAdapters@{createWithNoAdapters}}
+\index{createWithNoAdapters@{createWithNoAdapters}!Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}}
+\doxysubsubsection{\texorpdfstring{createWithNoAdapters()}{createWithNoAdapters()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_repository_1_1_repository_builder_a90dcf79b17d799ba706fd88a54d07068} 
+static Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Builder\+::create\+With\+No\+Adapters (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new repository builder instance with no adapters added.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Builder 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_repository_1_1_repository_builder_a4436531fa44b5557cfc4aae26648a308}\index{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}!immutable@{immutable}}
+\index{immutable@{immutable}!Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}}
+\doxysubsubsection{\texorpdfstring{immutable()}{immutable()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_repository_1_1_repository_builder_a4436531fa44b5557cfc4aae26648a308} 
+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Builder\+::immutable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Creates a repository builder with mutability enabled.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Builder 
+\end{DoxyReturn}
+\Hypertarget{class_dotenv_1_1_repository_1_1_repository_builder_ad49e4471d9b6b5d644b928510720bdf6}\index{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}!make@{make}}
+\index{make@{make}!Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder@{Dotenv\textbackslash{}Repository\textbackslash{}RepositoryBuilder}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_repository_1_1_repository_builder_ad49e4471d9b6b5d644b928510720bdf6} 
+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Builder\+::make (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Creates a new repository instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Dotenv\textbackslash{}\+Repository\textbackslash{}\+Repository\+Interface 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/vlucas/phpdotenv/src/\+Repository/Repository\+Builder.\+php\end{DoxyCompactItemize}

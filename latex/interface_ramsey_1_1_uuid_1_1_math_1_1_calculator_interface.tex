@@ -1,0 +1,196 @@
+\doxysection{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}Calculator\+Interface Interface Reference}
+\hypertarget{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface}{}\label{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}}
+Inheritance diagram for Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}Calculator\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_ace165747b4806e430b70608a672a5f5d}{add}} (\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface}{Number\+Interface}} \$augend, \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface}{Number\+Interface}} ... \$addends)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_a9450827fe7abdbdca0f95bb5aed89d34}{subtract}} (\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface}{Number\+Interface}} \$minuend, \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface}{Number\+Interface}} ... \$subtrahends)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_aa10019495efa3e07d9dd9782f7a13209}{multiply}} (\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface}{Number\+Interface}} \$multiplicand, \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface}{Number\+Interface}} ... \$multipliers)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_ae7f0611ca171773e2b92053aa3f0ace0}{divide}} (int \$rounding\+Mode, int \$scale, \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface}{Number\+Interface}} \$dividend, \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface}{Number\+Interface}} ... \$divisors)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_ab00a70be883f8c782a8b03785fc74396}{from\+Base}} (string \$value, int \$base)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_ae6e41a9a029e0cba955ad95011bd85c9}{to\+Base}} (Integer\+Object \$value, int \$base)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_a7885ec97e711de899771bef3ce51d317}{to\+Hexadecimal}} (Integer\+Object \$value)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_aa980e2b70429c6367c5aead03212326f}{to\+Integer}} (\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_type_1_1_hexadecimal}{Hexadecimal}} \$value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A calculator performs arithmetic operations on numbers
+
+@psalm-\/immutable 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_ace165747b4806e430b70608a672a5f5d}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}!add@{add}}
+\index{add@{add}!Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_ace165747b4806e430b70608a672a5f5d} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Math\textbackslash{}\+Calculator\+Interface\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface}{Number\+Interface}}}]{\$augend}{, }\item[{\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface}{Number\+Interface}} ...}]{\$addends}{}\end{DoxyParamCaption})}
+
+Returns the sum of all the provided parameters
+
+
+\begin{DoxyParams}[1]{Parameters}
+Number\+Interface & {\em \$augend} & The first addend (the integer being added to) \\
+\hline
+ & {\em Number\+Interface} & ...\$addends The additional integers to a add to the augend\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number\+Interface The sum of all the parameters 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_math_1_1_brick_math_calculator_a09fc0ca30dd9fddac21052aaab8ce97e}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Math\textbackslash{}\+Brick\+Math\+Calculator}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_ae7f0611ca171773e2b92053aa3f0ace0}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}!divide@{divide}}
+\index{divide@{divide}!Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}}
+\doxysubsubsection{\texorpdfstring{divide()}{divide()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_ae7f0611ca171773e2b92053aa3f0ace0} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Math\textbackslash{}\+Calculator\+Interface\+::divide (\begin{DoxyParamCaption}\item[{int}]{\$rounding\+Mode}{, }\item[{int}]{\$scale}{, }\item[{\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface}{Number\+Interface}}}]{\$dividend}{, }\item[{\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface}{Number\+Interface}} ...}]{\$divisors}{}\end{DoxyParamCaption})}
+
+Returns the quotient of the provided parameters divided left-\/to-\/right
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$rounding\+Mode} & The Rounding\+Mode constant to use for this operation \\
+\hline
+int & {\em \$scale} & The scale to use for this operation \\
+\hline
+Number\+Interface & {\em \$dividend} & The integer to be divided \\
+\hline
+ & {\em Number\+Interface} & ...\$divisors The integers to divide \$dividend by, in the order in which the division operations should take place (left-\/to-\/right)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number\+Interface The quotient of dividing the provided parameters left-\/to-\/right 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_math_1_1_brick_math_calculator_a01d5a65faea2f227b529e132537c14aa}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Math\textbackslash{}\+Brick\+Math\+Calculator}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_ab00a70be883f8c782a8b03785fc74396}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}!fromBase@{fromBase}}
+\index{fromBase@{fromBase}!Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}}
+\doxysubsubsection{\texorpdfstring{fromBase()}{fromBase()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_ab00a70be883f8c782a8b03785fc74396} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Math\textbackslash{}\+Calculator\+Interface\+::from\+Base (\begin{DoxyParamCaption}\item[{string}]{\$value}{, }\item[{int}]{\$base}{}\end{DoxyParamCaption})}
+
+Converts a value from an arbitrary base to a base-\/10 integer value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & The value to convert \\
+\hline
+int & {\em \$base} & The base to convert from (i.\+e., 2, 16, 32, etc.)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Integer\+Object The base-\/10 integer value of the converted value 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_math_1_1_brick_math_calculator_a8f934ac94e4c80f59e10f1304f250921}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Math\textbackslash{}\+Brick\+Math\+Calculator}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_aa10019495efa3e07d9dd9782f7a13209}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}!multiply@{multiply}}
+\index{multiply@{multiply}!Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}}
+\doxysubsubsection{\texorpdfstring{multiply()}{multiply()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_aa10019495efa3e07d9dd9782f7a13209} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Math\textbackslash{}\+Calculator\+Interface\+::multiply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface}{Number\+Interface}}}]{\$multiplicand}{, }\item[{\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface}{Number\+Interface}} ...}]{\$multipliers}{}\end{DoxyParamCaption})}
+
+Returns the product of all the provided parameters
+
+
+\begin{DoxyParams}[1]{Parameters}
+Number\+Interface & {\em \$multiplicand} & The integer to be multiplied \\
+\hline
+ & {\em Number\+Interface} & ...\$multipliers The factors by which to multiply the multiplicand\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number\+Interface The product of multiplying all the provided parameters 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_math_1_1_brick_math_calculator_aecb1d138e5b2efa9b8f19401505b49ea}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Math\textbackslash{}\+Brick\+Math\+Calculator}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_a9450827fe7abdbdca0f95bb5aed89d34}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}!subtract@{subtract}}
+\index{subtract@{subtract}!Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}}
+\doxysubsubsection{\texorpdfstring{subtract()}{subtract()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_a9450827fe7abdbdca0f95bb5aed89d34} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Math\textbackslash{}\+Calculator\+Interface\+::subtract (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface}{Number\+Interface}}}]{\$minuend}{, }\item[{\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_type_1_1_number_interface}{Number\+Interface}} ...}]{\$subtrahends}{}\end{DoxyParamCaption})}
+
+Returns the difference of all the provided parameters
+
+
+\begin{DoxyParams}[1]{Parameters}
+Number\+Interface & {\em \$minuend} & The integer being subtracted from \\
+\hline
+ & {\em Number\+Interface} & ...\$subtrahends The integers to subtract from the minuend\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number\+Interface The difference after subtracting all parameters 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_math_1_1_brick_math_calculator_a8d6426e0e9a21fc5e4b3ac6a54e75579}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Math\textbackslash{}\+Brick\+Math\+Calculator}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_ae6e41a9a029e0cba955ad95011bd85c9}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}!toBase@{toBase}}
+\index{toBase@{toBase}!Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}}
+\doxysubsubsection{\texorpdfstring{toBase()}{toBase()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_ae6e41a9a029e0cba955ad95011bd85c9} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Math\textbackslash{}\+Calculator\+Interface\+::to\+Base (\begin{DoxyParamCaption}\item[{Integer\+Object}]{\$value}{, }\item[{int}]{\$base}{}\end{DoxyParamCaption})}
+
+Converts a base-\/10 integer value to an arbitrary base
+
+
+\begin{DoxyParams}[1]{Parameters}
+Integer\+Object & {\em \$value} & The integer value to convert \\
+\hline
+int & {\em \$base} & The base to convert to (i.\+e., 2, 16, 32, etc.)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The value represented in the specified base 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_math_1_1_brick_math_calculator_a54429e2399a86141d237f9b6c1397635}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Math\textbackslash{}\+Brick\+Math\+Calculator}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_a7885ec97e711de899771bef3ce51d317}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}!toHexadecimal@{toHexadecimal}}
+\index{toHexadecimal@{toHexadecimal}!Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}}
+\doxysubsubsection{\texorpdfstring{toHexadecimal()}{toHexadecimal()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_a7885ec97e711de899771bef3ce51d317} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Math\textbackslash{}\+Calculator\+Interface\+::to\+Hexadecimal (\begin{DoxyParamCaption}\item[{Integer\+Object}]{\$value}{}\end{DoxyParamCaption})}
+
+Converts an Integer instance to a Hexadecimal instance 
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_math_1_1_brick_math_calculator_aa1cf8d99cd8ca5d8ce113c3b9c3fad56}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Math\textbackslash{}\+Brick\+Math\+Calculator}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_aa980e2b70429c6367c5aead03212326f}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}!toInteger@{toInteger}}
+\index{toInteger@{toInteger}!Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Math\textbackslash{}CalculatorInterface}}
+\doxysubsubsection{\texorpdfstring{toInteger()}{toInteger()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface_aa980e2b70429c6367c5aead03212326f} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Math\textbackslash{}\+Calculator\+Interface\+::to\+Integer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_type_1_1_hexadecimal}{Hexadecimal}}}]{\$value}{}\end{DoxyParamCaption})}
+
+Converts a Hexadecimal instance to an Integer instance 
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_math_1_1_brick_math_calculator_aef961689f57e723d5cd69ab30527f940}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Math\textbackslash{}\+Brick\+Math\+Calculator}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/ramsey/uuid/src/\+Math/Calculator\+Interface.\+php\end{DoxyCompactItemize}

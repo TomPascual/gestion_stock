@@ -1,0 +1,279 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router}{}\label{class_symfony_1_1_component_1_1_routing_1_1_router}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.975309cm]{class_symfony_1_1_component_1_1_routing_1_1_router}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_a187917272b65aac5c276a05e601399ad}\label{class_symfony_1_1_component_1_1_routing_1_1_router_a187917272b65aac5c276a05e601399ad} 
+{\bfseries \+\_\+\+\_\+construct} (protected Loader\+Interface \$loader, protected mixed \$resource, array \$options=\mbox{[}$\,$\mbox{]}, ?\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_request_context}{Request\+Context}} \$context=null, protected ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null, protected ?string \$default\+Locale=null,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_router_acaf2ecdd174bb1dd4d28d1223dcb0bda}{set\+Options}} (array \$options)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_router_a3226af45e0790c3867386703e35d8593}{set\+Option}} (string \$key, mixed \$value)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_router_ae843d0a5c9b058f84183e7d9b7df0442}{get\+Option}} (string \$key)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_router_a48b52339e72162b9b584ae5d1c008f8f}{get\+Route\+Collection}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_router_a04adb716bfa024c3811c886d13694696}{set\+Context}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_request_context}{Request\+Context}} \$context)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_router_acf298d8f21afb6360284891f33350ab8}{get\+Context}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_router_a2695234ae871495692371b489aa581ea}{set\+Config\+Cache\+Factory}} (Config\+Cache\+Factory\+Interface \$config\+Cache\+Factory)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_router_a75bee07c2c6e39801124476f7bd2cb2a}{generate}} (string \$name, array \$parameters=\mbox{[}$\,$\mbox{]}, int \$reference\+Type=self\+::\+ABSOLUTE\+\_\+\+PATH)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_router_a93216f0ab83e3fd03fa352fb10a38a6a}{match}} (string \$pathinfo)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_router_a4f3771542b740d357ccc463be202494a}{match\+Request}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_router_aea01fc64bc67342a28ca1deeb9782f7d}{get\+Matcher}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_router_a5285760bc2c4b1fbb7298a852f80f40d}{get\+Generator}} ()
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_a294923643104e1c73954248084c75861}\label{class_symfony_1_1_component_1_1_routing_1_1_router_a294923643104e1c73954248084c75861} 
+{\bfseries add\+Expression\+Language\+Provider} (Expression\+Function\+Provider\+Interface \$provider)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_a1b48e60dcb56ae50d2e86d6bec907320}\label{class_symfony_1_1_component_1_1_routing_1_1_router_a1b48e60dcb56ae50d2e86d6bec907320} 
+{\bfseries get\+Generator\+Dumper\+Instance} ()
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_aea62ae04a648483bb6fb8a281381a671}\label{class_symfony_1_1_component_1_1_routing_1_1_router_aea62ae04a648483bb6fb8a281381a671} 
+{\bfseries get\+Matcher\+Dumper\+Instance} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_a4c1e678bd46529a67dde120dd73cc1f1}\label{class_symfony_1_1_component_1_1_routing_1_1_router_a4c1e678bd46529a67dde120dd73cc1f1} 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_matcher_1_1_url_matcher_interface}{Url\+Matcher\+Interface}} \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_matcher_1_1_request_matcher_interface}{Request\+Matcher\+Interface}} {\bfseries \$matcher}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_ac9ad9bafbd16c9f2d8b2fb776b741df8}\label{class_symfony_1_1_component_1_1_routing_1_1_router_ac9ad9bafbd16c9f2d8b2fb776b741df8} 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface}{Url\+Generator\+Interface}} {\bfseries \$generator}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_a47fa96fe4da9e19bc548052eb210cf71}\label{class_symfony_1_1_component_1_1_routing_1_1_router_a47fa96fe4da9e19bc548052eb210cf71} 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_request_context}{Request\+Context}} {\bfseries \$context}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_a312cd82230a4c7e3ae786cd50ef04d77}\label{class_symfony_1_1_component_1_1_routing_1_1_router_a312cd82230a4c7e3ae786cd50ef04d77} 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_route_collection}{Route\+Collection}} {\bfseries \$collection}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_a0a2130c31b8e9a47c8efae4cfddc0fe4}\label{class_symfony_1_1_component_1_1_routing_1_1_router_a0a2130c31b8e9a47c8efae4cfddc0fe4} 
+array {\bfseries \$options} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Url\+Generator\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface_ab63738022a126499c9a408ea2d94ac82}{ABSOLUTE\+\_\+\+URL}} = 0
+\item 
+const \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface_a8be266fca6d8c5e74c23674935efba50}{ABSOLUTE\+\_\+\+PATH}} = 1
+\item 
+const \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface_ad9f0f70794b29744229890dca6b49876}{RELATIVE\+\_\+\+PATH}} = 2
+\item 
+const \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface_a5a3d861947183074b954968bd2cdab1d}{NETWORK\+\_\+\+PATH}} = 3
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Router class is an example of the integration of all pieces of the routing system for easier use.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_a75bee07c2c6e39801124476f7bd2cb2a}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}!generate@{generate}}
+\index{generate@{generate}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_router_a75bee07c2c6e39801124476f7bd2cb2a} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Router\+::generate (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{int}]{\$reference\+Type}{ = {\ttfamily self\+:\+:ABSOLUTE\+\_\+PATH}}\end{DoxyParamCaption})}
+
+Generates a URL or path for a specific route based on the given parameters.
+
+Parameters that reference placeholders in the route pattern will substitute them in the path or host. Extra params are added as query string to the URL.
+
+When the passed reference type cannot be generated for the route because it requires a different host or scheme than the current one, the method will return a more comprehensive reference that includes the required params. For example, when you call this method with \$reference\+Type = ABSOLUTE\+\_\+\+PATH but the route requires the https scheme whereas the current scheme is http, it will instead return an ABSOLUTE\+\_\+\+URL with the https scheme and the current host. This makes sure the generated URL matches the route in any case.
+
+If there is no route with the given name, the generator must throw the Route\+Not\+Found\+Exception.
+
+The special parameter \+\_\+fragment will be used as the document fragment suffixed to the final URL.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Route\+Not\+Found\+Exception} & If the named route doesn\textquotesingle{}t exist \\
+\hline
+{\em Missing\+Mandatory\+Parameters\+Exception} & When some parameters are missing that are mandatory for the route \\
+\hline
+{\em Invalid\+Parameter\+Exception} & When a parameter value for a placeholder is not correct because it does not match the requirement \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface_a5866e4cf5e898c0915f01c52e68911d6}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Url\+Generator\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_acf298d8f21afb6360284891f33350ab8}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}!getContext@{getContext}}
+\index{getContext@{getContext}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{getContext()}{getContext()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_router_acf298d8f21afb6360284891f33350ab8} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Router\+::get\+Context (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the request context. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_request_context_aware_interface_a2bac55ce4790b56572e3f11c4bbae028}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Request\+Context\+Aware\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_a5285760bc2c4b1fbb7298a852f80f40d}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}!getGenerator@{getGenerator}}
+\index{getGenerator@{getGenerator}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{getGenerator()}{getGenerator()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_router_a5285760bc2c4b1fbb7298a852f80f40d} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Router\+::get\+Generator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the Url\+Generator instance associated with this Router. \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_aea01fc64bc67342a28ca1deeb9782f7d}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}!getMatcher@{getMatcher}}
+\index{getMatcher@{getMatcher}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{getMatcher()}{getMatcher()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_router_aea01fc64bc67342a28ca1deeb9782f7d} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Router\+::get\+Matcher (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the Url\+Matcher or Request\+Matcher instance associated with this Router. \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_ae843d0a5c9b058f84183e7d9b7df0442}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}!getOption@{getOption}}
+\index{getOption@{getOption}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{getOption()}{getOption()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_router_ae843d0a5c9b058f84183e7d9b7df0442} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Router\+::get\+Option (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Gets an option value.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_a48b52339e72162b9b584ae5d1c008f8f}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}!getRouteCollection@{getRouteCollection}}
+\index{getRouteCollection@{getRouteCollection}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{getRouteCollection()}{getRouteCollection()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_router_a48b52339e72162b9b584ae5d1c008f8f} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Router\+::get\+Route\+Collection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the Route\+Collection instance associated with this Router.
+
+WARNING\+: This method should never be used at runtime as it is SLOW. You might use it in a cache warmer though. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_router_interface_ad9cc67a8e3d248b54035e8f399a4c694}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Router\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_a93216f0ab83e3fd03fa352fb10a38a6a}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}!match@{match}}
+\index{match@{match}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_router_a93216f0ab83e3fd03fa352fb10a38a6a} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Router\+::match (\begin{DoxyParamCaption}\item[{string}]{\$pathinfo}{}\end{DoxyParamCaption})}
+
+Tries to match a URL path with a set of routes.
+
+If the matcher cannot find information, it must throw one of the exceptions documented below.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pathinfo} & The path info to be parsed (raw format, i.\+e. not urldecoded)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em No\+Configuration\+Exception} & If no routing configuration could be found \\
+\hline
+{\em Resource\+Not\+Found\+Exception} & If the resource could not be found \\
+\hline
+{\em Method\+Not\+Allowed\+Exception} & If the resource was found but the request method is not allowed \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_matcher_1_1_url_matcher_interface_a8dfc5147c204c0c5a8d1869007cb13d3}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Matcher\textbackslash{}\+Url\+Matcher\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_a4f3771542b740d357ccc463be202494a}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}!matchRequest@{matchRequest}}
+\index{matchRequest@{matchRequest}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{matchRequest()}{matchRequest()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_router_a4f3771542b740d357ccc463be202494a} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Router\+::match\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Tries to match a request with a set of routes.
+
+If the matcher cannot find information, it must throw one of the exceptions documented below.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em No\+Configuration\+Exception} & If no routing configuration could be found \\
+\hline
+{\em Resource\+Not\+Found\+Exception} & If no matching resource could be found \\
+\hline
+{\em Method\+Not\+Allowed\+Exception} & If a matching resource was found but the request method is not allowed \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_matcher_1_1_request_matcher_interface_a0a2289ad679fc6c05b41097ea8b5036b}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Matcher\textbackslash{}\+Request\+Matcher\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_a2695234ae871495692371b489aa581ea}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}!setConfigCacheFactory@{setConfigCacheFactory}}
+\index{setConfigCacheFactory@{setConfigCacheFactory}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{setConfigCacheFactory()}{setConfigCacheFactory()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_router_a2695234ae871495692371b489aa581ea} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Router\+::set\+Config\+Cache\+Factory (\begin{DoxyParamCaption}\item[{Config\+Cache\+Factory\+Interface}]{\$config\+Cache\+Factory}{}\end{DoxyParamCaption})}
+
+Sets the Config\+Cache factory to use. \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_a04adb716bfa024c3811c886d13694696}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}!setContext@{setContext}}
+\index{setContext@{setContext}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{setContext()}{setContext()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_router_a04adb716bfa024c3811c886d13694696} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Router\+::set\+Context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_request_context}{Request\+Context}}}]{\$context}{}\end{DoxyParamCaption})}
+
+Sets the request context. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_request_context_aware_interface_a6dfa45b8d2ac2292c28dd816ccf2dae1}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Request\+Context\+Aware\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_a3226af45e0790c3867386703e35d8593}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}!setOption@{setOption}}
+\index{setOption@{setOption}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{setOption()}{setOption()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_router_a3226af45e0790c3867386703e35d8593} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Router\+::set\+Option (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{mixed}]{\$value}{}\end{DoxyParamCaption})}
+
+Sets an option.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_router_acaf2ecdd174bb1dd4d28d1223dcb0bda}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}!setOptions@{setOptions}}
+\index{setOptions@{setOptions}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router}}
+\doxysubsubsection{\texorpdfstring{setOptions()}{setOptions()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_router_acaf2ecdd174bb1dd4d28d1223dcb0bda} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Router\+::set\+Options (\begin{DoxyParamCaption}\item[{array}]{\$options}{}\end{DoxyParamCaption})}
+
+Sets options.
+
+Available options\+:
+
+
+\begin{DoxyItemize}
+\item cache\+\_\+dir\+: The cache directory (or null to disable caching)
+\item debug\+: Whether to enable debugging or not (false by default)
+\item generator\+\_\+class\+: The name of a Url\+Generator\+Interface implementation
+\item generator\+\_\+dumper\+\_\+class\+: The name of a Generator\+Dumper\+Interface implementation
+\item matcher\+\_\+class\+: The name of a Url\+Matcher\+Interface implementation
+\item matcher\+\_\+dumper\+\_\+class\+: The name of a Matcher\+Dumper\+Interface implementation
+\item resource\+\_\+type\+: Type hint for the main resource (optional)
+\item strict\+\_\+requirements\+: Configure strict requirement checking for generators implementing Configurable\+Requirements\+Interface (default is true)
+\end{DoxyItemize}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception When unsupported option is provided 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/routing/Router.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,208 @@
+\doxysection{Psy\textbackslash{}Tab\+Completion\textbackslash{}Matcher\textbackslash{}Keywords\+Matcher Class Reference}
+\hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher}{}\label{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher}}
+Inheritance diagram for Psy\textbackslash{}Tab\+Completion\textbackslash{}Matcher\textbackslash{}Keywords\+Matcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_a7e6958f0234a706a8b07ed63349e29ef}{get\+Keywords}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_a4bb63d63cedef617474c2f811558a0f1}{is\+Keyword}} (string \$keyword)
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_a8dbfcf36925320b43efa906f36e007c1}{get\+Matches}} (array \$tokens, array \$info=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_ab3dd13057ee6fe583f805679ae3d5af8}{has\+Matched}} (array \$tokens)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_acb43ff26ee2fe88888d1c06cfb1e5508}{\$keywords}}
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_a62ca624bd70ef70bae73e225c563f7f1}{\$mandatory\+Start\+Keywords}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a2f14333da3bbc9518e5cf6a5b7f10e7e}{starts\+With}} (string \$prefix, string \$word)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ad9b27ec2182b641752c46771961b1ac8}{has\+Syntax}} (\$token, string \$syntax=self\+::\+VAR\+\_\+\+SYNTAX)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ae6fd6865e01fcdd21cfccd600a4ccf43}{token\+Is}} (\$token, string \$which)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a0ac518819dbff1fbf0fff986aeb95f7c}{is\+Operator}} (\$token)
+\item 
+static {\bfseries need\+Complete\+Class} (\$token)
+\item 
+static \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a0b2c2bc757b0ce7498ba728a89796a4d}{has\+Token}} (array \$coll, \$token)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_ac95f9ab563f880b1370073b93b55ab31}{CONSTANT\+\_\+\+SYNTAX}} = \textquotesingle{}\texorpdfstring{$^\wedge$}{\string^}\mbox{[}a-\/zA-\/Z\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\mbox{[}a-\/zA-\/Z0-\/9\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\texorpdfstring{$\ast$}{*}\$\textquotesingle{}
+\item 
+const {\bfseries VAR\+\_\+\+SYNTAX} = \textquotesingle{}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\$\mbox{[}a-\/zA-\/Z\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\mbox{[}a-\/zA-\/Z0-\/9\+\_\+\textbackslash{}x7f-\/\textbackslash{}xff\mbox{]}\texorpdfstring{$\ast$}{*}\$\textquotesingle{}
+\item 
+const {\bfseries MISC\+\_\+\+OPERATORS} = \textquotesingle{}+-\/\texorpdfstring{$\ast$}{*}/\texorpdfstring{$^\wedge$}{\string^}\texorpdfstring{$\vert$}{|}\&\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a1d02f86dda52eea4c99ff7105592121d}{T\+\_\+\+OPEN\+\_\+\+TAG}} = \textquotesingle{}T\+\_\+\+OPEN\+\_\+\+TAG\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+VARIABLE} = \textquotesingle{}T\+\_\+\+VARIABLE\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+OBJECT\+\_\+\+OPERATOR} = \textquotesingle{}T\+\_\+\+OBJECT\+\_\+\+OPERATOR\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+DOUBLE\+\_\+\+COLON} = \textquotesingle{}T\+\_\+\+DOUBLE\+\_\+\+COLON\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+NEW} = \textquotesingle{}T\+\_\+\+NEW\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+CLONE} = \textquotesingle{}T\+\_\+\+CLONE\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+NS\+\_\+\+SEPARATOR} = \textquotesingle{}T\+\_\+\+NS\+\_\+\+SEPARATOR\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+STRING} = \textquotesingle{}T\+\_\+\+STRING\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+NAME\+\_\+\+QUALIFIED} = \textquotesingle{}T\+\_\+\+NAME\+\_\+\+QUALIFIED\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+WHITESPACE} = \textquotesingle{}T\+\_\+\+WHITESPACE\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+AND\+\_\+\+EQUAL} = \textquotesingle{}T\+\_\+\+AND\+\_\+\+EQUAL\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+BOOLEAN\+\_\+\+AND} = \textquotesingle{}T\+\_\+\+BOOLEAN\+\_\+\+AND\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+BOOLEAN\+\_\+\+OR} = \textquotesingle{}T\+\_\+\+BOOLEAN\+\_\+\+OR\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+ENCAPSED\+\_\+\+AND\+\_\+\+WHITESPACE} = \textquotesingle{}T\+\_\+\+ENCAPSED\+\_\+\+AND\+\_\+\+WHITESPACE\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+REQUIRE} = \textquotesingle{}T\+\_\+\+REQUIRE\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+REQUIRE\+\_\+\+ONCE} = \textquotesingle{}T\+\_\+\+REQUIRE\+\_\+\+ONCE\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+INCLUDE} = \textquotesingle{}T\+\_\+\+INCLUDE\textquotesingle{}
+\item 
+const {\bfseries T\+\_\+\+INCLUDE\+\_\+\+ONCE} = \textquotesingle{}T\+\_\+\+INCLUDE\+\_\+\+ONCE\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a67510cbf91a59519d4c689d6db97942b}{get\+Input}} (array \$tokens)
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a33af8313690303c97cfea60506bb8b76}{get\+Namespace\+And\+Class}} (array \$tokens)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A PHP keyword tab completion Matcher.
+
+This matcher provides completion for all function-\/like PHP keywords.
+
+\begin{DoxyAuthor}{Author}
+Marc Garcia \href{mailto:markcial@gmail.com}{\texttt{ markcial@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_a7e6958f0234a706a8b07ed63349e29ef}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher}!getKeywords@{getKeywords}}
+\index{getKeywords@{getKeywords}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher}}
+\doxysubsubsection{\texorpdfstring{getKeywords()}{getKeywords()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_a7e6958f0234a706a8b07ed63349e29ef} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Keywords\+Matcher\+::get\+Keywords (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all (completable) PHP keywords.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_a8dbfcf36925320b43efa906f36e007c1}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher}!getMatches@{getMatches}}
+\index{getMatches@{getMatches}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher}}
+\doxysubsubsection{\texorpdfstring{getMatches()}{getMatches()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_a8dbfcf36925320b43efa906f36e007c1} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Keywords\+Matcher\+::get\+Matches (\begin{DoxyParamCaption}\item[{array}]{\$tokens}{, }\item[{array}]{\$info}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+\{Provide tab completion matches for readline input.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$tokens} & information substracted with get\+\_\+token\+\_\+all \\
+\hline
+array & {\em \$info} & readline\+\_\+info object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The matches resulting from the query
+\end{DoxyReturn}
+\} 
+
+Reimplemented from \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a654b67904d664c879ace8f2efe669ca4}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher}}.
+
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_ab3dd13057ee6fe583f805679ae3d5af8}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher}!hasMatched@{hasMatched}}
+\index{hasMatched@{hasMatched}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher}}
+\doxysubsubsection{\texorpdfstring{hasMatched()}{hasMatched()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_ab3dd13057ee6fe583f805679ae3d5af8} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Keywords\+Matcher\+::has\+Matched (\begin{DoxyParamCaption}\item[{array}]{\$tokens}{}\end{DoxyParamCaption})}
+
+\{Check whether this matcher can provide completions for \$tokens.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$tokens} & Tokenized readline input\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false
+\end{DoxyReturn}
+\} 
+
+Reimplemented from \mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher_a50ee14d731ccbd03288948f3cd005e5a}{Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Abstract\+Matcher}}.
+
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_a4bb63d63cedef617474c2f811558a0f1}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher}!isKeyword@{isKeyword}}
+\index{isKeyword@{isKeyword}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher}}
+\doxysubsubsection{\texorpdfstring{isKeyword()}{isKeyword()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_a4bb63d63cedef617474c2f811558a0f1} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Keywords\+Matcher\+::is\+Keyword (\begin{DoxyParamCaption}\item[{string}]{\$keyword}{}\end{DoxyParamCaption})}
+
+Check whether \$keyword is a (completable) PHP keyword.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$keyword} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_acb43ff26ee2fe88888d1c06cfb1e5508}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher}!\$keywords@{\$keywords}}
+\index{\$keywords@{\$keywords}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher}}
+\doxysubsubsection{\texorpdfstring{\$keywords}{\$keywords}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_acb43ff26ee2fe88888d1c06cfb1e5508} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Keywords\+Matcher\+::\$keywords\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'array'},\ \textcolor{stringliteral}{'clone'},\ \textcolor{stringliteral}{'declare'},\ \textcolor{stringliteral}{'die'},\ \textcolor{stringliteral}{'echo'},\ \textcolor{stringliteral}{'empty'},\ \textcolor{stringliteral}{'eval'},\ \textcolor{stringliteral}{'exit'},\ \textcolor{stringliteral}{'include'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'include\_once'},\ \textcolor{stringliteral}{'isset'},\ \textcolor{stringliteral}{'list'},\ \textcolor{stringliteral}{'print'},\ \ \textcolor{stringliteral}{'require'},\ \textcolor{stringliteral}{'require\_once'},\ \textcolor{stringliteral}{'unset'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_a62ca624bd70ef70bae73e225c563f7f1}\index{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher}!\$mandatoryStartKeywords@{\$mandatoryStartKeywords}}
+\index{\$mandatoryStartKeywords@{\$mandatoryStartKeywords}!Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher@{Psy\textbackslash{}TabCompletion\textbackslash{}Matcher\textbackslash{}KeywordsMatcher}}
+\doxysubsubsection{\texorpdfstring{\$mandatoryStartKeywords}{\$mandatoryStartKeywords}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_matcher_1_1_keywords_matcher_a62ca624bd70ef70bae73e225c563f7f1} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Matcher\textbackslash{}\+Keywords\+Matcher\+::\$mandatory\+Start\+Keywords\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'die'},\ \textcolor{stringliteral}{'echo'},\ \textcolor{stringliteral}{'print'},\ \textcolor{stringliteral}{'unset'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Tab\+Completion/\+Matcher/Keywords\+Matcher.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+var class_symfony_1_1_component_1_1_translation_1_1_provider_1_1_translation_provider_collection_factory =
+[
+    [ "__construct", "class_symfony_1_1_component_1_1_translation_1_1_provider_1_1_translation_provider_collection_factory.html#aced52c62a20cdef4995134f80a745d25", null ]
+];

@@ -1,0 +1,83 @@
+\doxysection{Illuminate\textbackslash{}Routing\textbackslash{}Route\+Binding Class Reference}
+\hypertarget{class_illuminate_1_1_routing_1_1_route_binding}{}\label{class_illuminate_1_1_routing_1_1_route_binding}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteBinding@{Illuminate\textbackslash{}Routing\textbackslash{}RouteBinding}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_binding_a36a93d592ff7abf4f7bd7c3945054ee3}{for\+Callback}} (\$container, \$binder)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_binding_a5c2b92321d826ce3acae1333561a425c}{for\+Model}} (\$container, \$class, \$callback=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_route_binding_acc2b5cd857a7ed3837b93b079edd7f7a}{create\+Class\+Binding}} (\$container, \$binding)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_binding_acc2b5cd857a7ed3837b93b079edd7f7a}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteBinding@{Illuminate\textbackslash{}Routing\textbackslash{}RouteBinding}!createClassBinding@{createClassBinding}}
+\index{createClassBinding@{createClassBinding}!Illuminate\textbackslash{}Routing\textbackslash{}RouteBinding@{Illuminate\textbackslash{}Routing\textbackslash{}RouteBinding}}
+\doxysubsubsection{\texorpdfstring{createClassBinding()}{createClassBinding()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_binding_acc2b5cd857a7ed3837b93b079edd7f7a} 
+static Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Binding\+::create\+Class\+Binding (\begin{DoxyParamCaption}\item[{}]{\$container}{, }\item[{}]{\$binding}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Create a class based binding using the IoC container.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+string & {\em \$binding} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_binding_a36a93d592ff7abf4f7bd7c3945054ee3}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteBinding@{Illuminate\textbackslash{}Routing\textbackslash{}RouteBinding}!forCallback@{forCallback}}
+\index{forCallback@{forCallback}!Illuminate\textbackslash{}Routing\textbackslash{}RouteBinding@{Illuminate\textbackslash{}Routing\textbackslash{}RouteBinding}}
+\doxysubsubsection{\texorpdfstring{forCallback()}{forCallback()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_binding_a36a93d592ff7abf4f7bd7c3945054ee3} 
+static Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Binding\+::for\+Callback (\begin{DoxyParamCaption}\item[{}]{\$container}{, }\item[{}]{\$binder}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a Route model binding for a given callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\textbackslash{}\+Closure | string & {\em \$binder} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_route_binding_a5c2b92321d826ce3acae1333561a425c}\index{Illuminate\textbackslash{}Routing\textbackslash{}RouteBinding@{Illuminate\textbackslash{}Routing\textbackslash{}RouteBinding}!forModel@{forModel}}
+\index{forModel@{forModel}!Illuminate\textbackslash{}Routing\textbackslash{}RouteBinding@{Illuminate\textbackslash{}Routing\textbackslash{}RouteBinding}}
+\doxysubsubsection{\texorpdfstring{forModel()}{forModel()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_route_binding_a5c2b92321d826ce3acae1333561a425c} 
+static Illuminate\textbackslash{}\+Routing\textbackslash{}\+Route\+Binding\+::for\+Model (\begin{DoxyParamCaption}\item[{}]{\$container}{, }\item[{}]{\$class}{, }\item[{}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a Route model binding for a model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+string & {\em \$class} & \\
+\hline
+\textbackslash{}\+Closure | null & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model\+Not\+Found\+Exception\texorpdfstring{$<$}{<}\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model\texorpdfstring{$>$}{>} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Routing/Route\+Binding.\+php\end{DoxyCompactItemize}

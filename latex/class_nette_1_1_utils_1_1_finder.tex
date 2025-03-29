@@ -1,0 +1,210 @@
+\doxysection{Nette\textbackslash{}Utils\textbackslash{}Finder Class Reference}
+\hypertarget{class_nette_1_1_utils_1_1_finder}{}\label{class_nette_1_1_utils_1_1_finder}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+Inheritance diagram for Nette\textbackslash{}Utils\textbackslash{}Finder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_nette_1_1_utils_1_1_finder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_a9e582502c3efaa3c1f7eff7eff1007ed}{files}} (string\texorpdfstring{$\vert$}{|}array \$masks=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_a8e511c48c74adce8eddfc55744beecc1}{directories}} (string\texorpdfstring{$\vert$}{|}array \$masks=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_ade62bdd43a798aee7fa651e4588b0c65}{in}} (string\texorpdfstring{$\vert$}{|}array \$paths)
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_a9fe4bdde27dbeed3c10c6ca8a7740076}{from}} (string\texorpdfstring{$\vert$}{|}array \$paths)
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_a12f725591c40d02528975e981ad17a6d}{child\+First}} (bool \$state=true)
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_af1969c1966a2698be7045b377d1f95e7}{ignore\+Unreadable\+Dirs}} (bool \$state=true)
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_a984fe6912e5bca76950ec2bfc4111b5b}{sort\+By}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_a94cb1e175a9395d2a612a9f07e3cc3e1}{sort\+By\+Name}} ()
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_a88d4022c615755582184b98b9b095769}{append}} (string\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null \$paths=null)
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_a6586765cf48234efec7fe46159c29872}{exclude}} (string\texorpdfstring{$\vert$}{|}array \$masks)
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_a8644953ce0c654826fe2c97866f2e82c}{filter}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_afdb238a7fe8e735dce1b79fabceca5c2}{descent\+Filter}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_a867f51d5036a6d9eb28dd79cd51e2736}{limit\+Depth}} (?int \$depth)
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_a7aad88caab8401a336187b5acd343b65}{size}} (string \$operator, ?int \$size=null)
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_aa2b25c6bd20a663ffafdb93d6cab4841}{date}} (string \$operator, string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}\textbackslash{}Date\+Time\+Interface\texorpdfstring{$\vert$}{|}null \$date=null)
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_a940a56b600ae601d23e72761fa39dc26}{collect}} ()
+\item 
+\mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_a04ae3d071a198089997d84d1c41991c7}{get\+Iterator}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_a613f246b88e63834245a7b852ca7a4ca}{find}} (string\texorpdfstring{$\vert$}{|}array \$masks=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_a1b7f030adf99e39cdb9a359b9168ca77}{find\+Files}} (string\texorpdfstring{$\vert$}{|}array \$masks=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_finder_aaa35bf7fd37fecc42a79f573661cb474}{find\+Directories}} (string\texorpdfstring{$\vert$}{|}array \$masks=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Finder allows searching through directory trees using iterator.
+
+Finder\+::find\+Files(\textquotesingle{}\texorpdfstring{$\ast$}{*}.php\textquotesingle{}) -\/\texorpdfstring{$>$}{>}size(\textquotesingle{}\texorpdfstring{$>$}{>} 10kB\textquotesingle{}) -\/\texorpdfstring{$>$}{>}from(\textquotesingle{}.\textquotesingle{}) -\/\texorpdfstring{$>$}{>}exclude(\textquotesingle{}temp\textquotesingle{});
+
+\texorpdfstring{$<$}{<}string, File\+Info\texorpdfstring{$>$}{>} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_nette_1_1_utils_1_1_finder_a88d4022c615755582184b98b9b095769}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!append@{append}}
+\index{append@{append}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_a88d4022c615755582184b98b9b095769} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::append (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null}]{\$paths}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Adds the specified paths or appends a new finder that returns. \Hypertarget{class_nette_1_1_utils_1_1_finder_a12f725591c40d02528975e981ad17a6d}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!childFirst@{childFirst}}
+\index{childFirst@{childFirst}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{childFirst()}{childFirst()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_a12f725591c40d02528975e981ad17a6d} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::child\+First (\begin{DoxyParamCaption}\item[{bool}]{\$state}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Lists directory\textquotesingle{}s contents before the directory itself. By default, this is disabled. \Hypertarget{class_nette_1_1_utils_1_1_finder_a940a56b600ae601d23e72761fa39dc26}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!collect@{collect}}
+\index{collect@{collect}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{collect()}{collect()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_a940a56b600ae601d23e72761fa39dc26} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::collect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns an array with all found files and directories. \begin{DoxyReturn}{Returns}
+list$<$\+File\+Info$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_finder_aa2b25c6bd20a663ffafdb93d6cab4841}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!date@{date}}
+\index{date@{date}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{date()}{date()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_aa2b25c6bd20a663ffafdb93d6cab4841} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::date (\begin{DoxyParamCaption}\item[{string}]{\$operator}{, }\item[{string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}\textbackslash{}Date\+Time\+Interface\texorpdfstring{$\vert$}{|}null}]{\$date}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Restricts the search by modified time. \$operator accepts "{}\mbox{[}operator\mbox{]} \mbox{[}date\mbox{]}"{} example\+: \texorpdfstring{$>$}{>}1978-\/01-\/23 \Hypertarget{class_nette_1_1_utils_1_1_finder_afdb238a7fe8e735dce1b79fabceca5c2}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!descentFilter@{descentFilter}}
+\index{descentFilter@{descentFilter}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{descentFilter()}{descentFilter()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_afdb238a7fe8e735dce1b79fabceca5c2} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::descent\+Filter (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+It descends only to directories that match the specified filter. 
+\begin{DoxyParams}{Parameters}
+{\em callable(\+File\+Info)} & bool \$callback \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_nette_1_1_utils_1_1_finder_a8e511c48c74adce8eddfc55744beecc1}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!directories@{directories}}
+\index{directories@{directories}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{directories()}{directories()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_a8e511c48c74adce8eddfc55744beecc1} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::directories (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}array}]{\$masks}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+Finds directories matching the specified masks. \Hypertarget{class_nette_1_1_utils_1_1_finder_a6586765cf48234efec7fe46159c29872}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!exclude@{exclude}}
+\index{exclude@{exclude}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{exclude()}{exclude()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_a6586765cf48234efec7fe46159c29872} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::exclude (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}array}]{\$masks}{}\end{DoxyParamCaption})}
+
+Skips entries that matches the given masks relative to the ones defined with the in() or from() methods. \Hypertarget{class_nette_1_1_utils_1_1_finder_a9e582502c3efaa3c1f7eff7eff1007ed}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!files@{files}}
+\index{files@{files}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{files()}{files()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_a9e582502c3efaa3c1f7eff7eff1007ed} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::files (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}array}]{\$masks}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+Finds files matching the specified masks. \Hypertarget{class_nette_1_1_utils_1_1_finder_a8644953ce0c654826fe2c97866f2e82c}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!filter@{filter}}
+\index{filter@{filter}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_a8644953ce0c654826fe2c97866f2e82c} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::filter (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Yields only entries which satisfy the given filter. 
+\begin{DoxyParams}{Parameters}
+{\em callable(\+File\+Info)} & bool \$callback \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_nette_1_1_utils_1_1_finder_a613f246b88e63834245a7b852ca7a4ca}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!find@{find}}
+\index{find@{find}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_a613f246b88e63834245a7b852ca7a4ca} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::find (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}array}]{\$masks}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Begins search for files and directories matching mask. \Hypertarget{class_nette_1_1_utils_1_1_finder_aaa35bf7fd37fecc42a79f573661cb474}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!findDirectories@{findDirectories}}
+\index{findDirectories@{findDirectories}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{findDirectories()}{findDirectories()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_aaa35bf7fd37fecc42a79f573661cb474} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::find\+Directories (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}array}]{\$masks}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Begins search for directories matching mask. \Hypertarget{class_nette_1_1_utils_1_1_finder_a1b7f030adf99e39cdb9a359b9168ca77}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!findFiles@{findFiles}}
+\index{findFiles@{findFiles}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{findFiles()}{findFiles()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_a1b7f030adf99e39cdb9a359b9168ca77} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::find\+Files (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}array}]{\$masks}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Begins search for files matching mask. \Hypertarget{class_nette_1_1_utils_1_1_finder_a9fe4bdde27dbeed3c10c6ca8a7740076}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!from@{from}}
+\index{from@{from}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{from()}{from()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_a9fe4bdde27dbeed3c10c6ca8a7740076} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::from (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}array}]{\$paths}{}\end{DoxyParamCaption})}
+
+Searches recursively from the given directories. Wildcards are allowed. \Hypertarget{class_nette_1_1_utils_1_1_finder_a04ae3d071a198089997d84d1c41991c7}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!getIterator@{getIterator}}
+\index{getIterator@{getIterator}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{getIterator()}{getIterator()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_a04ae3d071a198089997d84d1c41991c7} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::get\+Iterator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Generator\texorpdfstring{$<$}{<}string, File\+Info\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_finder_af1969c1966a2698be7045b377d1f95e7}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!ignoreUnreadableDirs@{ignoreUnreadableDirs}}
+\index{ignoreUnreadableDirs@{ignoreUnreadableDirs}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{ignoreUnreadableDirs()}{ignoreUnreadableDirs()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_af1969c1966a2698be7045b377d1f95e7} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::ignore\+Unreadable\+Dirs (\begin{DoxyParamCaption}\item[{bool}]{\$state}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Ignores unreadable directories. By default, this is enabled. \Hypertarget{class_nette_1_1_utils_1_1_finder_ade62bdd43a798aee7fa651e4588b0c65}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!in@{in}}
+\index{in@{in}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{in()}{in()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_ade62bdd43a798aee7fa651e4588b0c65} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::in (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}array}]{\$paths}{}\end{DoxyParamCaption})}
+
+Searches in the given directories. Wildcards are allowed. \Hypertarget{class_nette_1_1_utils_1_1_finder_a867f51d5036a6d9eb28dd79cd51e2736}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!limitDepth@{limitDepth}}
+\index{limitDepth@{limitDepth}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{limitDepth()}{limitDepth()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_a867f51d5036a6d9eb28dd79cd51e2736} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::limit\+Depth (\begin{DoxyParamCaption}\item[{?int}]{\$depth}{}\end{DoxyParamCaption})}
+
+Sets the maximum depth of entries. \Hypertarget{class_nette_1_1_utils_1_1_finder_a7aad88caab8401a336187b5acd343b65}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!size@{size}}
+\index{size@{size}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_a7aad88caab8401a336187b5acd343b65} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::size (\begin{DoxyParamCaption}\item[{string}]{\$operator}{, }\item[{?int}]{\$size}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Restricts the search by size. \$operator accepts "{}\mbox{[}operator\mbox{]} \mbox{[}size\mbox{]} \mbox{[}unit\mbox{]}"{} example\+: \texorpdfstring{$>$}{>}=10kB \Hypertarget{class_nette_1_1_utils_1_1_finder_a984fe6912e5bca76950ec2bfc4111b5b}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!sortBy@{sortBy}}
+\index{sortBy@{sortBy}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{sortBy()}{sortBy()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_a984fe6912e5bca76950ec2bfc4111b5b} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::sort\+By (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Set a compare function for sorting directory entries. The function will be called to sort entries from the same directory. 
+\begin{DoxyParams}{Parameters}
+{\em callable(\+File\+Info,File\+Info)} & int \$callback \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_nette_1_1_utils_1_1_finder_a94cb1e175a9395d2a612a9f07e3cc3e1}\index{Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}!sortByName@{sortByName}}
+\index{sortByName@{sortByName}!Nette\textbackslash{}Utils\textbackslash{}Finder@{Nette\textbackslash{}Utils\textbackslash{}Finder}}
+\doxysubsubsection{\texorpdfstring{sortByName()}{sortByName()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_finder_a94cb1e175a9395d2a612a9f07e3cc3e1} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Finder\+::sort\+By\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Sorts files in each directory naturally by name. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/nette/utils/src/\+Utils/Finder.\+php\end{DoxyCompactItemize}

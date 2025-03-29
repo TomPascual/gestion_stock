@@ -1,0 +1,359 @@
+\doxysection{Illuminate\textbackslash{}Process\textbackslash{}Factory Class Reference}
+\hypertarget{class_illuminate_1_1_process_1_1_factory}{}\label{class_illuminate_1_1_process_1_1_factory}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_a92a17b56246731ffc8c1d5eb01666e60}{result}} (array\texorpdfstring{$\vert$}{|}string \$output=\textquotesingle{}\textquotesingle{}, array\texorpdfstring{$\vert$}{|}string \$error\+Output=\textquotesingle{}\textquotesingle{}, int \$exit\+Code=0)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_a290d62ddfb2905f0252a4797ed789836}{describe}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_af3a1746708b5191edc161c9f2898c4f5}{sequence}} (array \$processes=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_a48d1d60791a0e08464ee526b3d0887db}{fake}} (Closure\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_a96af288e808c8fa5cc3a1d30dd17ff9d}{is\+Recording}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_a852414aaf7c882c89563436b6e730c41}{record\+If\+Recording}} (\mbox{\hyperlink{class_illuminate_1_1_process_1_1_pending_process}{Pending\+Process}} \$process, Process\+Result\+Contract \$\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_a92a17b56246731ffc8c1d5eb01666e60}{result}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_ae8959e5eeeb202a50802d894f949f243}{record}} (\mbox{\hyperlink{class_illuminate_1_1_process_1_1_pending_process}{Pending\+Process}} \$process, Process\+Result\+Contract \$\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_a92a17b56246731ffc8c1d5eb01666e60}{result}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_ac4227ef45b69b037eed515f26aff3beb}{prevent\+Stray\+Processes}} (bool \$prevent=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_a195af040457a51b217b0b5d1a213fe65}{preventing\+Stray\+Processes}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_a42649c576a6efae5e66e6434e6cbdc83}{assert\+Ran}} (Closure\texorpdfstring{$\vert$}{|}string \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_a9e1f55d440f0b9b5727f32d8da171e63}{assert\+Ran\+Times}} (Closure\texorpdfstring{$\vert$}{|}string \$callback, int \$times=1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_a88b1d16a395d20c9f2f466a2bb274a29}{assert\+Not\+Ran}} (Closure\texorpdfstring{$\vert$}{|}string \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_a10c3e40bbd635da41cd8ce59dbc201cb}{assert\+Didnt\+Run}} (Closure\texorpdfstring{$\vert$}{|}string \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_a2324477cbafc7e02b249e97f60728c54}{assert\+Nothing\+Ran}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_a3012605f8421d4ca232e5935f0c77683}{pool}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_ae4cff76a73ffac20546223dbda127339}{pipe}} (callable\texorpdfstring{$\vert$}{|}array \$callback, ?callable \$output=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_a051e057efeb6eea0057b89986cfd7b99}{concurrently}} (callable \$callback, ?callable \$output=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_aa01648e8f629221f934dc0e5e97bffa1}{new\+Pending\+Process}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory_a1168d9fba9b56450b3080b3952644384}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_aea8b592a8ec741013a54c7ae9aa22992}\label{class_illuminate_1_1_process_1_1_factory_aea8b592a8ec741013a54c7ae9aa22992} 
+{\bfseries \$recording} = false
+\item 
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_a22ebd103b0dd6ecf229e8fbe917da0eb}\label{class_illuminate_1_1_process_1_1_factory_a22ebd103b0dd6ecf229e8fbe917da0eb} 
+{\bfseries \$recorded} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_aa25515db409b0452b441b89696bb5e02}\label{class_illuminate_1_1_process_1_1_factory_aa25515db409b0452b441b89696bb5e02} 
+{\bfseries \$fake\+Handlers} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_ad0a8e19df704f45b6d4599189477bf2a}\label{class_illuminate_1_1_process_1_1_factory_ad0a8e19df704f45b6d4599189477bf2a} 
+{\bfseries \$prevent\+Stray\+Processes} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_a1168d9fba9b56450b3080b3952644384}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_a1168d9fba9b56450b3080b3952644384} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Dynamically proxy methods to a new pending process instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_a10c3e40bbd635da41cd8ce59dbc201cb}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!assertDidntRun@{assertDidntRun}}
+\index{assertDidntRun@{assertDidntRun}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{assertDidntRun()}{assertDidntRun()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_a10c3e40bbd635da41cd8ce59dbc201cb} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::assert\+Didnt\+Run (\begin{DoxyParamCaption}\item[{Closure\texorpdfstring{$\vert$}{|}string}]{\$callback}{}\end{DoxyParamCaption})}
+
+Assert that a process was not recorded matching a given truth test.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | string & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_a2324477cbafc7e02b249e97f60728c54}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!assertNothingRan@{assertNothingRan}}
+\index{assertNothingRan@{assertNothingRan}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{assertNothingRan()}{assertNothingRan()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_a2324477cbafc7e02b249e97f60728c54} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::assert\+Nothing\+Ran (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Assert that no processes were recorded.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_a88b1d16a395d20c9f2f466a2bb274a29}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!assertNotRan@{assertNotRan}}
+\index{assertNotRan@{assertNotRan}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{assertNotRan()}{assertNotRan()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_a88b1d16a395d20c9f2f466a2bb274a29} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::assert\+Not\+Ran (\begin{DoxyParamCaption}\item[{Closure\texorpdfstring{$\vert$}{|}string}]{\$callback}{}\end{DoxyParamCaption})}
+
+Assert that a process was not recorded matching a given truth test.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | string & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_a42649c576a6efae5e66e6434e6cbdc83}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!assertRan@{assertRan}}
+\index{assertRan@{assertRan}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{assertRan()}{assertRan()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_a42649c576a6efae5e66e6434e6cbdc83} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::assert\+Ran (\begin{DoxyParamCaption}\item[{Closure\texorpdfstring{$\vert$}{|}string}]{\$callback}{}\end{DoxyParamCaption})}
+
+Assert that a process was recorded matching a given truth test.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | string & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_a9e1f55d440f0b9b5727f32d8da171e63}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!assertRanTimes@{assertRanTimes}}
+\index{assertRanTimes@{assertRanTimes}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{assertRanTimes()}{assertRanTimes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_a9e1f55d440f0b9b5727f32d8da171e63} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::assert\+Ran\+Times (\begin{DoxyParamCaption}\item[{Closure\texorpdfstring{$\vert$}{|}string}]{\$callback}{, }\item[{int}]{\$times}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Assert that a process was recorded a given number of times matching a given truth test.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | string & {\em \$callback} & \\
+\hline
+int & {\em \$times} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_a051e057efeb6eea0057b89986cfd7b99}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!concurrently@{concurrently}}
+\index{concurrently@{concurrently}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{concurrently()}{concurrently()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_a051e057efeb6eea0057b89986cfd7b99} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::concurrently (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{, }\item[{?callable}]{\$output}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Run a pool of processes and wait for them to finish executing.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+callable | null & {\em \$output} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Process\+Pool\+Results 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_a290d62ddfb2905f0252a4797ed789836}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!describe@{describe}}
+\index{describe@{describe}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{describe()}{describe()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_a290d62ddfb2905f0252a4797ed789836} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::describe (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Begin describing a fake process lifecycle.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Fake\+Process\+Description 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_a48d1d60791a0e08464ee526b3d0887db}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!fake@{fake}}
+\index{fake@{fake}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{fake()}{fake()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_a48d1d60791a0e08464ee526b3d0887db} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::fake (\begin{DoxyParamCaption}\item[{Closure\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Indicate that the process factory should fake processes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | array | null & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_a96af288e808c8fa5cc3a1d30dd17ff9d}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!isRecording@{isRecording}}
+\index{isRecording@{isRecording}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{isRecording()}{isRecording()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_a96af288e808c8fa5cc3a1d30dd17ff9d} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::is\+Recording (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the process factory has fake process handlers and is recording processes.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_aa01648e8f629221f934dc0e5e97bffa1}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!newPendingProcess@{newPendingProcess}}
+\index{newPendingProcess@{newPendingProcess}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{newPendingProcess()}{newPendingProcess()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_aa01648e8f629221f934dc0e5e97bffa1} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::new\+Pending\+Process (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Create a new pending process associated with this factory.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pending\+Process 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_ae4cff76a73ffac20546223dbda127339}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!pipe@{pipe}}
+\index{pipe@{pipe}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{pipe()}{pipe()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_ae4cff76a73ffac20546223dbda127339} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::pipe (\begin{DoxyParamCaption}\item[{callable\texorpdfstring{$\vert$}{|}array}]{\$callback}{, }\item[{?callable}]{\$output}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Start defining a series of piped processes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | array & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Process\textbackslash{}\+Process\+Result 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_a3012605f8421d4ca232e5935f0c77683}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!pool@{pool}}
+\index{pool@{pool}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{pool()}{pool()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_a3012605f8421d4ca232e5935f0c77683} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::pool (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Start defining a pool of processes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_a195af040457a51b217b0b5d1a213fe65}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!preventingStrayProcesses@{preventingStrayProcesses}}
+\index{preventingStrayProcesses@{preventingStrayProcesses}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{preventingStrayProcesses()}{preventingStrayProcesses()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_a195af040457a51b217b0b5d1a213fe65} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::preventing\+Stray\+Processes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if stray processes are being prevented.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_ac4227ef45b69b037eed515f26aff3beb}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!preventStrayProcesses@{preventStrayProcesses}}
+\index{preventStrayProcesses@{preventStrayProcesses}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{preventStrayProcesses()}{preventStrayProcesses()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_ac4227ef45b69b037eed515f26aff3beb} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::prevent\+Stray\+Processes (\begin{DoxyParamCaption}\item[{bool}]{\$prevent}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Indicate that an exception should be thrown if any process is not faked.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$prevent} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_ae8959e5eeeb202a50802d894f949f243}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!record@{record}}
+\index{record@{record}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{record()}{record()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_ae8959e5eeeb202a50802d894f949f243} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::record (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_process_1_1_pending_process}{Pending\+Process}}}]{\$process}{, }\item[{Process\+Result\+Contract}]{\$result}{}\end{DoxyParamCaption})}
+
+Record the given process.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pending\+Process & {\em \$process} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Process\textbackslash{}\+Process\+Result & {\em \$result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_a852414aaf7c882c89563436b6e730c41}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!recordIfRecording@{recordIfRecording}}
+\index{recordIfRecording@{recordIfRecording}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{recordIfRecording()}{recordIfRecording()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_a852414aaf7c882c89563436b6e730c41} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::record\+If\+Recording (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_process_1_1_pending_process}{Pending\+Process}}}]{\$process}{, }\item[{Process\+Result\+Contract}]{\$result}{}\end{DoxyParamCaption})}
+
+Record the given process if processes should be recorded.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pending\+Process & {\em \$process} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Process\textbackslash{}\+Process\+Result & {\em \$result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_a92a17b56246731ffc8c1d5eb01666e60}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!result@{result}}
+\index{result@{result}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{result()}{result()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_a92a17b56246731ffc8c1d5eb01666e60} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::result (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string}]{\$output}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{array\texorpdfstring{$\vert$}{|}string}]{\$error\+Output}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{int}]{\$exit\+Code}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Create a new fake process response for testing purposes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$output} & \\
+\hline
+array | string & {\em \$error\+Output} & \\
+\hline
+int & {\em \$exit\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Fake\+Process\+Result 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_factory_af3a1746708b5191edc161c9f2898c4f5}\index{Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}!sequence@{sequence}}
+\index{sequence@{sequence}!Illuminate\textbackslash{}Process\textbackslash{}Factory@{Illuminate\textbackslash{}Process\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{sequence()}{sequence()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_factory_af3a1746708b5191edc161c9f2898c4f5} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory\+::sequence (\begin{DoxyParamCaption}\item[{array}]{\$processes}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Begin describing a fake process sequence.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$processes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Fake\+Process\+Sequence 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Process/Factory.\+php\end{DoxyCompactItemize}

@@ -1,3 +1,9 @@
+{{-- 
+    Vue : home.blade.php
+    Description : Page d’accueil principale de l’application.
+    Propose des liens directs vers les sections clés : produits, mouvements de stock et fournisseurs.
+--}}
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -19,19 +25,19 @@
         <h1 class="text-4xl font-bold my-6 text-gray-800">Gestionnaire de Stock</h1>
 
         <div class="d-flex justify-content-center gap-4">
-                    <a href="{{ route('produits.index') }}" class="btn btn-primary btn-lg shadow">
+            <a href="{{ route('produits.index') }}" class="btn btn-primary btn-lg shadow">
                 📦 Liste des Produits
             </a>
 
             <a href="{{ route('mouvements.index') }}" class="btn btn-secondary btn-lg shadow">
                 📜 Historique des Mouvements
             </a>
+
             <a href="{{ route('fournisseurs.index') }}" class="btn btn-info btn-lg shadow">
                 🚚 Liste des Fournisseurs
             </a>
         </div>
     </div>
-
 
 </body>
 </html>

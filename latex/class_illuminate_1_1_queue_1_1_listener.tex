@@ -1,0 +1,256 @@
+\doxysection{Illuminate\textbackslash{}Queue\textbackslash{}Listener Class Reference}
+\hypertarget{class_illuminate_1_1_queue_1_1_listener}{}\label{class_illuminate_1_1_queue_1_1_listener}\index{Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_aa38a41780cdf9dcee4d2bcbc3e44e673}{\+\_\+\+\_\+construct}} (\$command\+Path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_ace6ca3ab2ec46b28e3acf3883018a717}{listen}} (\$connection, \$queue, \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_options}{Listener\+Options}} \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_adc171d1705e8a858ec7db9fc59d7e637}{make\+Process}} (\$connection, \$queue, \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_options}{Listener\+Options}} \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_a0fb41cafa667a52cad4b00c730dc86e3}{run\+Process}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_process}{Process}} \$process, \$memory)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_adc6a9ec5393930bc189a61c973eda986}{memory\+Exceeded}} (\$memory\+Limit)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_a0ac2fed0f6ce01399cdad214358e311b}{stop}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_a4a014afc5c68b18500e37ecfe9b3b5a3}{set\+Output\+Handler}} (Closure \$output\+Handler)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_a79097679dd665d77820bace4a19d85d5}{php\+Binary}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_aa394a0fc31b025194571acf03d29feda}{artisan\+Binary}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_aff3d6950afa1bed6a348ab8e6e21f0d0}{add\+Environment}} (\$command, \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_options}{Listener\+Options}} \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_a74054940ffc5ab80b6948d742f18da56}{create\+Command}} (\$connection, \$queue, \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_options}{Listener\+Options}} \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_ad0eb879b433bc1ad2554a6f7a403aec4}{handle\+Worker\+Output}} (\$type, \$line)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_ad9e8b5c5de3c885c2c902ef2f03b6170}\label{class_illuminate_1_1_queue_1_1_listener_ad9e8b5c5de3c885c2c902ef2f03b6170} 
+{\bfseries \$command\+Path}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_a5219ab0a0ac78bf89c4e2cc294628b80}\label{class_illuminate_1_1_queue_1_1_listener_a5219ab0a0ac78bf89c4e2cc294628b80} 
+{\bfseries \$environment}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_ae1d064e48c227e38f9c2794c19e0bda5}\label{class_illuminate_1_1_queue_1_1_listener_ae1d064e48c227e38f9c2794c19e0bda5} 
+{\bfseries \$sleep} = 3
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_af5898fa3c8bcb84625174f5fe77b8e2a}\label{class_illuminate_1_1_queue_1_1_listener_af5898fa3c8bcb84625174f5fe77b8e2a} 
+{\bfseries \$max\+Tries} = 0
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_ab621f22b6d341e59770544426a54973c}\label{class_illuminate_1_1_queue_1_1_listener_ab621f22b6d341e59770544426a54973c} 
+{\bfseries \$output\+Handler}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_aa38a41780cdf9dcee4d2bcbc3e44e673}\index{Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_listener_aa38a41780cdf9dcee4d2bcbc3e44e673} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Listener\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$command\+Path}{}\end{DoxyParamCaption})}
+
+Create a new queue listener.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command\+Path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_aff3d6950afa1bed6a348ab8e6e21f0d0}\index{Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}!addEnvironment@{addEnvironment}}
+\index{addEnvironment@{addEnvironment}!Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{addEnvironment()}{addEnvironment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_listener_aff3d6950afa1bed6a348ab8e6e21f0d0} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Listener\+::add\+Environment (\begin{DoxyParamCaption}\item[{}]{\$command}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_options}{Listener\+Options}}}]{\$options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add the environment option to the given command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$command} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Listener\+Options & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_aa394a0fc31b025194571acf03d29feda}\index{Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}!artisanBinary@{artisanBinary}}
+\index{artisanBinary@{artisanBinary}!Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{artisanBinary()}{artisanBinary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_listener_aa394a0fc31b025194571acf03d29feda} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Listener\+::artisan\+Binary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the Artisan binary.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_a74054940ffc5ab80b6948d742f18da56}\index{Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}!createCommand@{createCommand}}
+\index{createCommand@{createCommand}!Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{createCommand()}{createCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_listener_a74054940ffc5ab80b6948d742f18da56} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Listener\+::create\+Command (\begin{DoxyParamCaption}\item[{}]{\$connection}{, }\item[{}]{\$queue}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_options}{Listener\+Options}}}]{\$options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the command with the listener options.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection} & \\
+\hline
+string & {\em \$queue} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Listener\+Options & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_ad0eb879b433bc1ad2554a6f7a403aec4}\index{Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}!handleWorkerOutput@{handleWorkerOutput}}
+\index{handleWorkerOutput@{handleWorkerOutput}!Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{handleWorkerOutput()}{handleWorkerOutput()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_listener_ad0eb879b433bc1ad2554a6f7a403aec4} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Listener\+::handle\+Worker\+Output (\begin{DoxyParamCaption}\item[{}]{\$type}{, }\item[{}]{\$line}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handle output from the worker process.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$type} & \\
+\hline
+string & {\em \$line} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_ace6ca3ab2ec46b28e3acf3883018a717}\index{Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}!listen@{listen}}
+\index{listen@{listen}!Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{listen()}{listen()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_listener_ace6ca3ab2ec46b28e3acf3883018a717} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Listener\+::listen (\begin{DoxyParamCaption}\item[{}]{\$connection}{, }\item[{}]{\$queue}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_options}{Listener\+Options}}}]{\$options}{}\end{DoxyParamCaption})}
+
+Listen to the given queue connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection} & \\
+\hline
+string & {\em \$queue} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Listener\+Options & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_adc171d1705e8a858ec7db9fc59d7e637}\index{Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}!makeProcess@{makeProcess}}
+\index{makeProcess@{makeProcess}!Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{makeProcess()}{makeProcess()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_listener_adc171d1705e8a858ec7db9fc59d7e637} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Listener\+::make\+Process (\begin{DoxyParamCaption}\item[{}]{\$connection}{, }\item[{}]{\$queue}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_listener_options}{Listener\+Options}}}]{\$options}{}\end{DoxyParamCaption})}
+
+Create a new Symfony process for the worker.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection} & \\
+\hline
+string & {\em \$queue} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Listener\+Options & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Process 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_adc6a9ec5393930bc189a61c973eda986}\index{Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}!memoryExceeded@{memoryExceeded}}
+\index{memoryExceeded@{memoryExceeded}!Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{memoryExceeded()}{memoryExceeded()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_listener_adc6a9ec5393930bc189a61c973eda986} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Listener\+::memory\+Exceeded (\begin{DoxyParamCaption}\item[{}]{\$memory\+Limit}{}\end{DoxyParamCaption})}
+
+Determine if the memory limit has been exceeded.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$memory\+Limit} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_a79097679dd665d77820bace4a19d85d5}\index{Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}!phpBinary@{phpBinary}}
+\index{phpBinary@{phpBinary}!Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{phpBinary()}{phpBinary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_listener_a79097679dd665d77820bace4a19d85d5} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Listener\+::php\+Binary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the PHP binary.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_a0fb41cafa667a52cad4b00c730dc86e3}\index{Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}!runProcess@{runProcess}}
+\index{runProcess@{runProcess}!Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{runProcess()}{runProcess()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_listener_a0fb41cafa667a52cad4b00c730dc86e3} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Listener\+::run\+Process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_process}{Process}}}]{\$process}{, }\item[{}]{\$memory}{}\end{DoxyParamCaption})}
+
+Run the given process.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Process & {\em \$process} & \\
+\hline
+int & {\em \$memory} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_a4a014afc5c68b18500e37ecfe9b3b5a3}\index{Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}!setOutputHandler@{setOutputHandler}}
+\index{setOutputHandler@{setOutputHandler}!Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{setOutputHandler()}{setOutputHandler()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_listener_a4a014afc5c68b18500e37ecfe9b3b5a3} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Listener\+::set\+Output\+Handler (\begin{DoxyParamCaption}\item[{Closure}]{\$output\+Handler}{}\end{DoxyParamCaption})}
+
+Set the output handler callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$output\+Handler} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_listener_a0ac2fed0f6ce01399cdad214358e311b}\index{Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}!stop@{stop}}
+\index{stop@{stop}!Illuminate\textbackslash{}Queue\textbackslash{}Listener@{Illuminate\textbackslash{}Queue\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_listener_a0ac2fed0f6ce01399cdad214358e311b} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Listener\+::stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Stop listening and bail out of the script.
+
+\begin{DoxyReturn}{Returns}
+never 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Queue/Listener.\+php\end{DoxyCompactItemize}

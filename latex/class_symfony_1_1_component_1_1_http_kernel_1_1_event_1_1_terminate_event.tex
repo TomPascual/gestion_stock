@@ -1,0 +1,52 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Event\textbackslash{}Terminate\+Event Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_terminate_event}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_terminate_event}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}TerminateEvent@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}TerminateEvent}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Event\textbackslash{}Terminate\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_terminate_event}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_terminate_event_a696f18cd16386f9b092e947b5a01c0e8}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_terminate_event_a696f18cd16386f9b092e947b5a01c0e8} 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_kernel_interface}{Http\+Kernel\+Interface}} \$kernel, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request, private \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response,)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_terminate_event_a13923ab3e180e82a1c1e3d27fa8490b3}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_terminate_event_a13923ab3e180e82a1c1e3d27fa8490b3} 
+{\bfseries get\+Response} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\textbackslash{}\+Kernel\+Event}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_a5ca5210ffb63df8d8bc535c457a60d6b}{\+\_\+\+\_\+construct}} (private \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_kernel_interface}{Http\+Kernel\+Interface}} \$kernel, private \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request, private ?int \$request\+Type,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_a00b7d7dd4d074d7ec15966e5407f39ed}{get\+Kernel}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_a5b793b5457542b2ad3ec56381913ce14}{get\+Request}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_a5919358527397c9e1638b1fb15378b92}{get\+Request\+Type}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_adc8dad9c7ffea5b76d2cfbe1f8f7b005}{is\+Main\+Request}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event}{Symfony\textbackslash{}\+Contracts\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_a3d0f60a43ef2306a752386b611e888ca}{is\+Propagation\+Stopped}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_aad4bd7c819fe35b138fa2f9518d91a6a}{stop\+Propagation}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Allows to execute logic after a response was sent.
+
+Since it\textquotesingle{}s only triggered on main requests, the {\ttfamily get\+Request\+Type()} method will always return the value of {\ttfamily Http\+Kernel\+Interface\+::\+MAIN\+\_\+\+REQUEST}.
+
+\begin{DoxyAuthor}{Author}
+Jordi Boggiano \href{mailto:j.boggiano@seld.be}{\texttt{ j.\+boggiano@seld.\+be}} 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/kernel/\+Event/Terminate\+Event.\+php\end{DoxyCompactItemize}

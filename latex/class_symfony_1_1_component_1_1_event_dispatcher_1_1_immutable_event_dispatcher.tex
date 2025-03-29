@@ -1,0 +1,106 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Event\+Dispatcher\textbackslash{}Immutable\+Event\+Dispatcher Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher}{}\label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher}\index{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher@{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Event\+Dispatcher\textbackslash{}Immutable\+Event\+Dispatcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_a075c9d7af7d8e32db79f41dc8800f6d3}\label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_a075c9d7af7d8e32db79f41dc8800f6d3} 
+{\bfseries \+\_\+\+\_\+construct} (private \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}} \$dispatcher,)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_a435b7a4f7d65460ea46596a33d31b346}\label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_a435b7a4f7d65460ea46596a33d31b346} 
+{\bfseries dispatch} (object \$event, ?string \$event\+Name=null)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_aa46bb85e75088c064e69fed594863629}\label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_aa46bb85e75088c064e69fed594863629} 
+{\bfseries add\+Listener} (string \$event\+Name, callable\texorpdfstring{$\vert$}{|}array \$listener, int \$priority=0)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_aeeb3536b164ab1e3f1ea26cead24052a}{add\+Subscriber}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface}{Event\+Subscriber\+Interface}} \$subscriber)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_ada7b512d5b17ebfd6de8fcb3dd47dd6e}\label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_ada7b512d5b17ebfd6de8fcb3dd47dd6e} 
+{\bfseries remove\+Listener} (string \$event\+Name, callable\texorpdfstring{$\vert$}{|}array \$listener)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_af74222d5d9e20b9fc450f32831138c09}{remove\+Subscriber}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface}{Event\+Subscriber\+Interface}} \$subscriber)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_a7af79326bad816870176b6c2edd9a4d5}{get\+Listeners}} (?string \$event\+Name=null)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_a15f469d1f1d1850452dfe2ee559350ce}\label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_a15f469d1f1d1850452dfe2ee559350ce} 
+{\bfseries get\+Listener\+Priority} (string \$event\+Name, callable\texorpdfstring{$\vert$}{|}array \$listener)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_a19343a68af609946ca32c823574c2e06}{has\+Listeners}} (?string \$event\+Name=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event\+Dispatcher\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface_ace3090a40f94de0148452d24d1c0c508}{add\+Listener}} (string \$event\+Name, callable \$listener, int \$priority=0)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface_abf08d5ccf76ab2877caffd02c2c257b9}{remove\+Listener}} (string \$event\+Name, callable \$listener)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface_ac8efdd70baee8b0d48b54e88ed940936}{get\+Listener\+Priority}} (string \$event\+Name, callable \$listener)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A read-\/only proxy for an event dispatcher.
+
+\begin{DoxyAuthor}{Author}
+Bernhard Schussek \href{mailto:bschussek@gmail.com}{\texttt{ bschussek@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_aeeb3536b164ab1e3f1ea26cead24052a}\index{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher@{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher}!addSubscriber@{addSubscriber}}
+\index{addSubscriber@{addSubscriber}!Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher@{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{addSubscriber()}{addSubscriber()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_aeeb3536b164ab1e3f1ea26cead24052a} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Immutable\+Event\+Dispatcher\+::add\+Subscriber (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface}{Event\+Subscriber\+Interface}}}]{\$subscriber}{}\end{DoxyParamCaption})}
+
+Adds an event subscriber.
+
+The subscriber is asked for all the events it is interested in and added as a listener for these events. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface_a8945e960bdaf853334e70cd2508be372}{Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event\+Dispatcher\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_a7af79326bad816870176b6c2edd9a4d5}\index{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher@{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher}!getListeners@{getListeners}}
+\index{getListeners@{getListeners}!Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher@{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{getListeners()}{getListeners()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_a7af79326bad816870176b6c2edd9a4d5} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Immutable\+Event\+Dispatcher\+::get\+Listeners (\begin{DoxyParamCaption}\item[{?string}]{\$event\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Gets the listeners of a specific event or all listeners sorted by descending priority.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}callable\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}callable\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface_acfdab303537c74df033f653fc4a7eb7e}{Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event\+Dispatcher\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_a19343a68af609946ca32c823574c2e06}\index{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher@{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher}!hasListeners@{hasListeners}}
+\index{hasListeners@{hasListeners}!Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher@{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{hasListeners()}{hasListeners()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_a19343a68af609946ca32c823574c2e06} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Immutable\+Event\+Dispatcher\+::has\+Listeners (\begin{DoxyParamCaption}\item[{?string}]{\$event\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Checks whether an event has any registered listeners. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface_a5abe64cf6b28d0d7053e989de896e074}{Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event\+Dispatcher\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_af74222d5d9e20b9fc450f32831138c09}\index{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher@{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher}!removeSubscriber@{removeSubscriber}}
+\index{removeSubscriber@{removeSubscriber}!Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher@{Symfony\textbackslash{}Component\textbackslash{}EventDispatcher\textbackslash{}ImmutableEventDispatcher}}
+\doxysubsubsection{\texorpdfstring{removeSubscriber()}{removeSubscriber()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_event_dispatcher_1_1_immutable_event_dispatcher_af74222d5d9e20b9fc450f32831138c09} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Immutable\+Event\+Dispatcher\+::remove\+Subscriber (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface}{Event\+Subscriber\+Interface}}}]{\$subscriber}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event\+Dispatcher\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/event-\/dispatcher/Immutable\+Event\+Dispatcher.\+php\end{DoxyCompactItemize}

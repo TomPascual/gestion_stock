@@ -1,0 +1,4 @@
+var class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_too_many_requests_http_exception =
+[
+    [ "__construct", "class_symfony_1_1_component_1_1_http_kernel_1_1_exception_1_1_too_many_requests_http_exception.html#a7108cba9f194016f21817b67173fc604", null ]
+];

@@ -1,0 +1,94 @@
+\doxysection{Monolog\textbackslash{}Handler\textbackslash{}What\+Failure\+Group\+Handler Class Reference}
+\hypertarget{class_monolog_1_1_handler_1_1_what_failure_group_handler}{}\label{class_monolog_1_1_handler_1_1_what_failure_group_handler}\index{Monolog\textbackslash{}Handler\textbackslash{}WhatFailureGroupHandler@{Monolog\textbackslash{}Handler\textbackslash{}WhatFailureGroupHandler}}
+Inheritance diagram for Monolog\textbackslash{}Handler\textbackslash{}What\+Failure\+Group\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.601626cm]{class_monolog_1_1_handler_1_1_what_failure_group_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_what_failure_group_handler_a5fbcfc898904c1147c777111890fd231}{handle}} (\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}} \$record)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_what_failure_group_handler_a94386d1ad1c4180f7ba5248e15e1f1e9}{handle\+Batch}} (array \$records)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_what_failure_group_handler_a021984ccfacc5ed12a1d0fa6b9bfbfe9}{close}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_monolog_1_1_handler_1_1_group_handler}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Group\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_group_handler_a45cad734a52d4c4d3e60fd9dc81197b0}{\+\_\+\+\_\+construct}} (array \$handlers, bool \$bubble=true)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_group_handler_a8cb092b2f7fde4e37de8b5c732b575d7}{is\+Handling}} (\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}} \$record)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_group_handler_a4ef36ec19a3f22924814d19cd582a361}{reset}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_group_handler_a9e4a39b938d3a7b19932815c8e984bf2}{set\+Formatter}} (\mbox{\hyperlink{interface_monolog_1_1_formatter_1_1_formatter_interface}{Formatter\+Interface}} \$formatter)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+sleep} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_monolog_1_1_handler_1_1_processable_handler_interface}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Processable\+Handler\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_monolog_1_1_handler_1_1_processable_handler_interface_a53a4d8869fec50c20d98ffc48b3c7965}{push\+Processor}} (callable \$callback)
+\item 
+\mbox{\hyperlink{interface_monolog_1_1_handler_1_1_processable_handler_interface_a42e02d07c11a9a32101e1c626e48b80b}{pop\+Processor}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_monolog_1_1_handler_1_1_group_handler}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Group\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+array {\bfseries \$handlers}
+\item 
+bool {\bfseries \$bubble}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Forwards records to multiple handlers suppressing failures of each handler and continuing through to give every handler a chance to succeed.
+
+\begin{DoxyAuthor}{Author}
+Craig D\textquotesingle{}Amelio \href{mailto:craig@damelio.ca}{\texttt{ craig@damelio.\+ca}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_monolog_1_1_handler_1_1_what_failure_group_handler_a021984ccfacc5ed12a1d0fa6b9bfbfe9}\index{Monolog\textbackslash{}Handler\textbackslash{}WhatFailureGroupHandler@{Monolog\textbackslash{}Handler\textbackslash{}WhatFailureGroupHandler}!close@{close}}
+\index{close@{close}!Monolog\textbackslash{}Handler\textbackslash{}WhatFailureGroupHandler@{Monolog\textbackslash{}Handler\textbackslash{}WhatFailureGroupHandler}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_what_failure_group_handler_a021984ccfacc5ed12a1d0fa6b9bfbfe9} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+What\+Failure\+Group\+Handler\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Reimplemented from \mbox{\hyperlink{class_monolog_1_1_handler_1_1_group_handler_a1bc0ba094a64fe77170b791dab9296a0}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Group\+Handler}}.
+
+\Hypertarget{class_monolog_1_1_handler_1_1_what_failure_group_handler_a5fbcfc898904c1147c777111890fd231}\index{Monolog\textbackslash{}Handler\textbackslash{}WhatFailureGroupHandler@{Monolog\textbackslash{}Handler\textbackslash{}WhatFailureGroupHandler}!handle@{handle}}
+\index{handle@{handle}!Monolog\textbackslash{}Handler\textbackslash{}WhatFailureGroupHandler@{Monolog\textbackslash{}Handler\textbackslash{}WhatFailureGroupHandler}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_what_failure_group_handler_a5fbcfc898904c1147c777111890fd231} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+What\+Failure\+Group\+Handler\+::handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}}}]{\$record}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Reimplemented from \mbox{\hyperlink{class_monolog_1_1_handler_1_1_group_handler_acde505e086869c92fd7300b64e8b3964}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Group\+Handler}}.
+
+\Hypertarget{class_monolog_1_1_handler_1_1_what_failure_group_handler_a94386d1ad1c4180f7ba5248e15e1f1e9}\index{Monolog\textbackslash{}Handler\textbackslash{}WhatFailureGroupHandler@{Monolog\textbackslash{}Handler\textbackslash{}WhatFailureGroupHandler}!handleBatch@{handleBatch}}
+\index{handleBatch@{handleBatch}!Monolog\textbackslash{}Handler\textbackslash{}WhatFailureGroupHandler@{Monolog\textbackslash{}Handler\textbackslash{}WhatFailureGroupHandler}}
+\doxysubsubsection{\texorpdfstring{handleBatch()}{handleBatch()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_what_failure_group_handler_a94386d1ad1c4180f7ba5248e15e1f1e9} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+What\+Failure\+Group\+Handler\+::handle\+Batch (\begin{DoxyParamCaption}\item[{array}]{\$records}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Reimplemented from \mbox{\hyperlink{class_monolog_1_1_handler_1_1_group_handler_ae718ea75fee8ef12a45d36551e310d16}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Group\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/monolog/monolog/src/\+Monolog/\+Handler/What\+Failure\+Group\+Handler.\+php\end{DoxyCompactItemize}

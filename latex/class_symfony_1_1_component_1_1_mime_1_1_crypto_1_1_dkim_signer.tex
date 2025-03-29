@@ -1,0 +1,52 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Crypto\textbackslash{}Dkim\+Signer Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_dkim_signer}{}\label{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_dkim_signer}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Crypto\textbackslash{}DkimSigner@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Crypto\textbackslash{}DkimSigner}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_dkim_signer_a80dacf35a6c7364f69ad8f2a494f5e7d}{\+\_\+\+\_\+construct}} (string \$pk, private string \$domain\+Name, private string \$selector, private array \$default\+Options=\mbox{[}$\,$\mbox{]}, string \$passphrase=\textquotesingle{}\textquotesingle{},)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_dkim_signer_a6fa163aaa799d0fc881c8171bf0780dd}\label{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_dkim_signer_a6fa163aaa799d0fc881c8171bf0780dd} 
+{\bfseries sign} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_message}{Message}} \$message, array \$options=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_dkim_signer_aa604963b6849366cdeb95205e0116cb8}\label{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_dkim_signer_aa604963b6849366cdeb95205e0116cb8} 
+const {\bfseries CANON\+\_\+\+SIMPLE} = \textquotesingle{}simple\textquotesingle{}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_dkim_signer_af3e303edd99fa68c06433369fc063f2a}\label{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_dkim_signer_af3e303edd99fa68c06433369fc063f2a} 
+const {\bfseries CANON\+\_\+\+RELAXED} = \textquotesingle{}relaxed\textquotesingle{}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_dkim_signer_ab770b080f5c97a5d9b93512fcc0cba01}\label{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_dkim_signer_ab770b080f5c97a5d9b93512fcc0cba01} 
+const {\bfseries ALGO\+\_\+\+SHA256} = \textquotesingle{}rsa-\/sha256\textquotesingle{}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_dkim_signer_a9bb2a3729ef06f797c3cab02445f98bb}\label{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_dkim_signer_a9bb2a3729ef06f797c3cab02445f98bb} 
+const {\bfseries ALGO\+\_\+\+ED25519} = \textquotesingle{}ed25519-\/sha256\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}}
+\end{DoxyAuthor}
+RFC 6376 and 8301 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_dkim_signer_a80dacf35a6c7364f69ad8f2a494f5e7d}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Crypto\textbackslash{}DkimSigner@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Crypto\textbackslash{}DkimSigner}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Crypto\textbackslash{}DkimSigner@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Crypto\textbackslash{}DkimSigner}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_dkim_signer_a80dacf35a6c7364f69ad8f2a494f5e7d} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Crypto\textbackslash{}\+Dkim\+Signer\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$pk}{, }\item[{private string}]{\$domain\+Name}{, }\item[{private string}]{\$selector}{, }\item[{private array}]{\$default\+Options}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{string}]{\$passphrase}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pk} & The private key as a string or the path to the file containing the private key, should be prefixed with \href{file://}{\texttt{ file\+://}} (in PEM format) \\
+\hline
+string & {\em \$passphrase} & A passphrase of the private key (if any) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/mime/\+Crypto/Dkim\+Signer.\+php\end{DoxyCompactItemize}

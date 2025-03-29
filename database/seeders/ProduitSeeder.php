@@ -7,8 +7,24 @@ use App\Models\Produit;
 use App\Models\Categorie;
 use App\Models\Fournisseur;
 
+/**
+ * Class ProduitSeeder
+ *
+ * Seeder pour générer des produits avec une association aléatoire
+ * à des catégories et des fournisseurs existants.
+ *
+ * @package Database\Seeders
+ */
 class ProduitSeeder extends Seeder
 {
+    /**
+     * Exécute le seeder.
+     *
+     * Vérifie qu'il existe au moins une catégorie et un fournisseur,
+     * puis génère 20 produits aléatoires, chacun lié à une catégorie et un fournisseur.
+     *
+     * @return void
+     */
     public function run(): void
     {
         $categories = Categorie::all();

@@ -1,0 +1,241 @@
+\doxysection{Illuminate\textbackslash{}Database\textbackslash{}Migration\+Service\+Provider Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_migration_service_provider}{}\label{class_illuminate_1_1_database_1_1_migration_service_provider}\index{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}}
+Inheritance diagram for Illuminate\textbackslash{}Database\textbackslash{}Migration\+Service\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.917808cm]{class_illuminate_1_1_database_1_1_migration_service_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migration_service_provider_a75df4e3218f5fa8c492a036f85d4db50}{register}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migration_service_provider_a3dfeae0e2e10de163fa8a346f3b49399}{provides}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migration_service_provider_a68f885e72a3eb9ddf232ae1c410b8768}{register\+Repository}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migration_service_provider_a795863f15153263114a20126362c6126}{register\+Migrator}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migration_service_provider_ae262142f56ce06b8d0c2d3cf07d02d9e}{register\+Creator}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migration_service_provider_a2ae90c5c7bf13543e032612364403d8a}{register\+Commands}} (array \$commands)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migration_service_provider_aa2cc125312cfff80ad922b62d5bef8bc}{register\+Migrate\+Command}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migration_service_provider_a5d8a1258dd00f36affcd3dbaef60f686}{register\+Migrate\+Fresh\+Command}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migration_service_provider_a6fb960f4308504122ed706d3d62078c1}{register\+Migrate\+Install\+Command}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migration_service_provider_a7ed2f4bae61e1823728175280efc9709}{register\+Migrate\+Make\+Command}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migration_service_provider_a4e61294a18e168a4f223b0dd26f3527a}{register\+Migrate\+Refresh\+Command}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migration_service_provider_a323eecefa3d630818b607a35d0f2a659}{register\+Migrate\+Reset\+Command}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migration_service_provider_a0d7290839513219f43ab69b46ad4e43b}{register\+Migrate\+Rollback\+Command}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migration_service_provider_a24621854cea4127d82202615c7194b46}{register\+Migrate\+Status\+Command}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_migration_service_provider_aa059cbd16258a6f317d86b794ef96702}{\$commands}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_migration_service_provider_a3dfeae0e2e10de163fa8a346f3b49399}\index{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}!provides@{provides}}
+\index{provides@{provides}!Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}}
+\doxysubsubsection{\texorpdfstring{provides()}{provides()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migration_service_provider_a3dfeae0e2e10de163fa8a346f3b49399} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migration\+Service\+Provider\+::provides (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the services provided by the provider.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_support_1_1_deferrable_provider_adb53aa86394f8986449fdc85471bec4e}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Support\textbackslash{}\+Deferrable\+Provider}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_migration_service_provider_a75df4e3218f5fa8c492a036f85d4db50}\index{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}!register@{register}}
+\index{register@{register}!Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migration_service_provider_a75df4e3218f5fa8c492a036f85d4db50} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migration\+Service\+Provider\+::register (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Register the service provider.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migration_service_provider_a2ae90c5c7bf13543e032612364403d8a}\index{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}!registerCommands@{registerCommands}}
+\index{registerCommands@{registerCommands}!Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerCommands()}{registerCommands()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migration_service_provider_a2ae90c5c7bf13543e032612364403d8a} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migration\+Service\+Provider\+::register\+Commands (\begin{DoxyParamCaption}\item[{array}]{\$commands}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the given commands.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$commands} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migration_service_provider_ae262142f56ce06b8d0c2d3cf07d02d9e}\index{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}!registerCreator@{registerCreator}}
+\index{registerCreator@{registerCreator}!Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerCreator()}{registerCreator()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migration_service_provider_ae262142f56ce06b8d0c2d3cf07d02d9e} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migration\+Service\+Provider\+::register\+Creator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the migration creator.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migration_service_provider_aa2cc125312cfff80ad922b62d5bef8bc}\index{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}!registerMigrateCommand@{registerMigrateCommand}}
+\index{registerMigrateCommand@{registerMigrateCommand}!Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerMigrateCommand()}{registerMigrateCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migration_service_provider_aa2cc125312cfff80ad922b62d5bef8bc} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migration\+Service\+Provider\+::register\+Migrate\+Command (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the command.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migration_service_provider_a5d8a1258dd00f36affcd3dbaef60f686}\index{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}!registerMigrateFreshCommand@{registerMigrateFreshCommand}}
+\index{registerMigrateFreshCommand@{registerMigrateFreshCommand}!Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerMigrateFreshCommand()}{registerMigrateFreshCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migration_service_provider_a5d8a1258dd00f36affcd3dbaef60f686} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migration\+Service\+Provider\+::register\+Migrate\+Fresh\+Command (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the command.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migration_service_provider_a6fb960f4308504122ed706d3d62078c1}\index{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}!registerMigrateInstallCommand@{registerMigrateInstallCommand}}
+\index{registerMigrateInstallCommand@{registerMigrateInstallCommand}!Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerMigrateInstallCommand()}{registerMigrateInstallCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migration_service_provider_a6fb960f4308504122ed706d3d62078c1} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migration\+Service\+Provider\+::register\+Migrate\+Install\+Command (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the command.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migration_service_provider_a7ed2f4bae61e1823728175280efc9709}\index{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}!registerMigrateMakeCommand@{registerMigrateMakeCommand}}
+\index{registerMigrateMakeCommand@{registerMigrateMakeCommand}!Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerMigrateMakeCommand()}{registerMigrateMakeCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migration_service_provider_a7ed2f4bae61e1823728175280efc9709} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migration\+Service\+Provider\+::register\+Migrate\+Make\+Command (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the command.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migration_service_provider_a4e61294a18e168a4f223b0dd26f3527a}\index{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}!registerMigrateRefreshCommand@{registerMigrateRefreshCommand}}
+\index{registerMigrateRefreshCommand@{registerMigrateRefreshCommand}!Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerMigrateRefreshCommand()}{registerMigrateRefreshCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migration_service_provider_a4e61294a18e168a4f223b0dd26f3527a} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migration\+Service\+Provider\+::register\+Migrate\+Refresh\+Command (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the command.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migration_service_provider_a323eecefa3d630818b607a35d0f2a659}\index{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}!registerMigrateResetCommand@{registerMigrateResetCommand}}
+\index{registerMigrateResetCommand@{registerMigrateResetCommand}!Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerMigrateResetCommand()}{registerMigrateResetCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migration_service_provider_a323eecefa3d630818b607a35d0f2a659} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migration\+Service\+Provider\+::register\+Migrate\+Reset\+Command (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the command.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migration_service_provider_a0d7290839513219f43ab69b46ad4e43b}\index{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}!registerMigrateRollbackCommand@{registerMigrateRollbackCommand}}
+\index{registerMigrateRollbackCommand@{registerMigrateRollbackCommand}!Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerMigrateRollbackCommand()}{registerMigrateRollbackCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migration_service_provider_a0d7290839513219f43ab69b46ad4e43b} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migration\+Service\+Provider\+::register\+Migrate\+Rollback\+Command (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the command.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migration_service_provider_a24621854cea4127d82202615c7194b46}\index{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}!registerMigrateStatusCommand@{registerMigrateStatusCommand}}
+\index{registerMigrateStatusCommand@{registerMigrateStatusCommand}!Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerMigrateStatusCommand()}{registerMigrateStatusCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migration_service_provider_a24621854cea4127d82202615c7194b46} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migration\+Service\+Provider\+::register\+Migrate\+Status\+Command (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the command.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migration_service_provider_a795863f15153263114a20126362c6126}\index{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}!registerMigrator@{registerMigrator}}
+\index{registerMigrator@{registerMigrator}!Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerMigrator()}{registerMigrator()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migration_service_provider_a795863f15153263114a20126362c6126} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migration\+Service\+Provider\+::register\+Migrator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the migrator service.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_migration_service_provider_a68f885e72a3eb9ddf232ae1c410b8768}\index{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}!registerRepository@{registerRepository}}
+\index{registerRepository@{registerRepository}!Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}}
+\doxysubsubsection{\texorpdfstring{registerRepository()}{registerRepository()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migration_service_provider_a68f885e72a3eb9ddf232ae1c410b8768} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migration\+Service\+Provider\+::register\+Repository (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the migration repository service.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_migration_service_provider_aa059cbd16258a6f317d86b794ef96702}\index{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}!\$commands@{\$commands}}
+\index{\$commands@{\$commands}!Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider@{Illuminate\textbackslash{}Database\textbackslash{}MigrationServiceProvider}}
+\doxysubsubsection{\texorpdfstring{\$commands}{\$commands}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_migration_service_provider_aa059cbd16258a6f317d86b794ef96702} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Migration\+Service\+Provider\+::\$commands\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Migrate'}\ =>\ MigrateCommand::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'MigrateFresh'}\ =>\ FreshCommand::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'MigrateInstall'}\ =>\ InstallCommand::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'MigrateRefresh'}\ =>\ RefreshCommand::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'MigrateReset'}\ =>\ ResetCommand::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'MigrateRollback'}\ =>\ RollbackCommand::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'MigrateStatus'}\ =>\ StatusCommand::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'MigrateMake'}\ =>\ MigrateMakeCommand::class,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Database/Migration\+Service\+Provider.\+php\end{DoxyCompactItemize}

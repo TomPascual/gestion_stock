@@ -1,0 +1,122 @@
+\doxysection{Illuminate\textbackslash{}Validation\textbackslash{}Validation\+Data Class Reference}
+\hypertarget{class_illuminate_1_1_validation_1_1_validation_data}{}\label{class_illuminate_1_1_validation_1_1_validation_data}\index{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData@{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validation_data_aade813c914eb20b5f2b2436f26cc33e8}{initialize\+And\+Gather\+Data}} (\$attribute, \$master\+Data)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validation_data_a4f3058b31ad96f41183413da02944a24}{extract\+Data\+From\+Path}} (\$attribute, \$master\+Data)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validation_data_aac0dd9e0bfd77ea6a6b0c3be32cdd29b}{get\+Leading\+Explicit\+Attribute\+Path}} (\$attribute)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validation_data_a593e8e3f9f0d807d81ee3af9708cc7b0}{initialize\+Attribute\+On\+Data}} (\$attribute, \$master\+Data)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_validation_1_1_validation_data_a6495be592ffdd50db2f4f46273e8443a}{extract\+Values\+For\+Wildcards}} (\$master\+Data, \$data, \$attribute)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validation_data_a4f3058b31ad96f41183413da02944a24}\index{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData@{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData}!extractDataFromPath@{extractDataFromPath}}
+\index{extractDataFromPath@{extractDataFromPath}!Illuminate\textbackslash{}Validation\textbackslash{}ValidationData@{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData}}
+\doxysubsubsection{\texorpdfstring{extractDataFromPath()}{extractDataFromPath()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validation_data_a4f3058b31ad96f41183413da02944a24} 
+static Illuminate\textbackslash{}\+Validation\textbackslash{}\+Validation\+Data\+::extract\+Data\+From\+Path (\begin{DoxyParamCaption}\item[{}]{\$attribute}{, }\item[{}]{\$master\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Extract data based on the given dot-\/notated path.
+
+Used to extract a sub-\/section of the data for faster iteration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+array & {\em \$master\+Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validation_data_a6495be592ffdd50db2f4f46273e8443a}\index{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData@{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData}!extractValuesForWildcards@{extractValuesForWildcards}}
+\index{extractValuesForWildcards@{extractValuesForWildcards}!Illuminate\textbackslash{}Validation\textbackslash{}ValidationData@{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData}}
+\doxysubsubsection{\texorpdfstring{extractValuesForWildcards()}{extractValuesForWildcards()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validation_data_a6495be592ffdd50db2f4f46273e8443a} 
+static Illuminate\textbackslash{}\+Validation\textbackslash{}\+Validation\+Data\+::extract\+Values\+For\+Wildcards (\begin{DoxyParamCaption}\item[{}]{\$master\+Data}{, }\item[{}]{\$data}{, }\item[{}]{\$attribute}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Get all of the exact attribute values for a given wildcard attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$master\+Data} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+string & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validation_data_aac0dd9e0bfd77ea6a6b0c3be32cdd29b}\index{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData@{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData}!getLeadingExplicitAttributePath@{getLeadingExplicitAttributePath}}
+\index{getLeadingExplicitAttributePath@{getLeadingExplicitAttributePath}!Illuminate\textbackslash{}Validation\textbackslash{}ValidationData@{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData}}
+\doxysubsubsection{\texorpdfstring{getLeadingExplicitAttributePath()}{getLeadingExplicitAttributePath()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validation_data_aac0dd9e0bfd77ea6a6b0c3be32cdd29b} 
+static Illuminate\textbackslash{}\+Validation\textbackslash{}\+Validation\+Data\+::get\+Leading\+Explicit\+Attribute\+Path (\begin{DoxyParamCaption}\item[{}]{\$attribute}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the explicit part of the attribute name.
+
+E.\+g. \textquotesingle{}foo.\+bar.\texorpdfstring{$\ast$}{*}.baz\textquotesingle{} -\/\texorpdfstring{$>$}{>} \textquotesingle{}foo.\+bar\textquotesingle{}
+
+Allows us to not spin through all of the flattened data for some operations.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validation_data_aade813c914eb20b5f2b2436f26cc33e8}\index{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData@{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData}!initializeAndGatherData@{initializeAndGatherData}}
+\index{initializeAndGatherData@{initializeAndGatherData}!Illuminate\textbackslash{}Validation\textbackslash{}ValidationData@{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData}}
+\doxysubsubsection{\texorpdfstring{initializeAndGatherData()}{initializeAndGatherData()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validation_data_aade813c914eb20b5f2b2436f26cc33e8} 
+static Illuminate\textbackslash{}\+Validation\textbackslash{}\+Validation\+Data\+::initialize\+And\+Gather\+Data (\begin{DoxyParamCaption}\item[{}]{\$attribute}{, }\item[{}]{\$master\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialize and gather data for the given attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+array & {\em \$master\+Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_validation_1_1_validation_data_a593e8e3f9f0d807d81ee3af9708cc7b0}\index{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData@{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData}!initializeAttributeOnData@{initializeAttributeOnData}}
+\index{initializeAttributeOnData@{initializeAttributeOnData}!Illuminate\textbackslash{}Validation\textbackslash{}ValidationData@{Illuminate\textbackslash{}Validation\textbackslash{}ValidationData}}
+\doxysubsubsection{\texorpdfstring{initializeAttributeOnData()}{initializeAttributeOnData()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_validation_1_1_validation_data_a593e8e3f9f0d807d81ee3af9708cc7b0} 
+static Illuminate\textbackslash{}\+Validation\textbackslash{}\+Validation\+Data\+::initialize\+Attribute\+On\+Data (\begin{DoxyParamCaption}\item[{}]{\$attribute}{, }\item[{}]{\$master\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Gather a copy of the attribute data filled with any missing attributes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+array & {\em \$master\+Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Validation/Validation\+Data.\+php\end{DoxyCompactItemize}

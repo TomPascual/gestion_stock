@@ -1,0 +1,112 @@
+\doxysection{Psy\textbackslash{}Code\+Cleaner\textbackslash{}Label\+Context\+Pass Class Reference}
+\hypertarget{class_psy_1_1_code_cleaner_1_1_label_context_pass}{}\label{class_psy_1_1_code_cleaner_1_1_label_context_pass}\index{Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass@{Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass}}
+Inheritance diagram for Psy\textbackslash{}Code\+Cleaner\textbackslash{}Label\+Context\+Pass\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_psy_1_1_code_cleaner_1_1_label_context_pass}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_label_context_pass_afc156d2ce84955932c774a7dae864174}{before\+Traverse}} (array \$nodes)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_label_context_pass_a78432f7d3f51a47f69846a91e87dcfae}{enter\+Node}} (Node \$node)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_label_context_pass_a750761c9a86ac0d0f40d3065d9af06be}{leave\+Node}} (Node \$node)
+\item 
+\mbox{\hyperlink{class_psy_1_1_code_cleaner_1_1_label_context_pass_a9a47e3cf7c3043e0a4762715a1d4bed9}{after\+Traverse}} (array \$nodes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract}{Php\+Parser\textbackslash{}\+Node\+Visitor\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a6c1080f13e6d76c6fce2efb215f01ca4}{enter\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a6e35e5184f39630acbbd8d56199ff7b1}{leave\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Php\+Parser\textbackslash{}\+Node\+Visitor}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a887575c3e31ed3393701f45525ee3403}{DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN}} = 1
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_abdf2a418a92016759f92f437e8524bb5}{STOP\+\_\+\+TRAVERSAL}} = 2
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a85715cad6ab20ff6dc425402594ebc11}{REMOVE\+\_\+\+NODE}} = 3
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a81c5b825c6250cbf0955f42596aa29ad}{DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN}} = 4
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a05e5a1e3853d3ac056f09eb77b844498}{REPLACE\+\_\+\+WITH\+\_\+\+NULL}} = 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Code\+Cleaner\+Pass for label context.
+
+This class partially emulates the PHP label specification. Psy\+SH can not declare labels by sequentially executing lines with eval, but since it is not a syntax error, no error is raised. This class warns before invalid goto causes a fatal error. Since this is a simple checker, it does not block real fatal error with complex syntax. (ex. it does not parse inside function.)
+
+\begin{DoxySeeAlso}{See also}
+\href{http://php.net/goto}{\texttt{ http\+://php.\+net/goto}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_label_context_pass_a9a47e3cf7c3043e0a4762715a1d4bed9}\index{Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass@{Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass}!afterTraverse@{afterTraverse}}
+\index{afterTraverse@{afterTraverse}!Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass@{Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass}}
+\doxysubsubsection{\texorpdfstring{afterTraverse()}{afterTraverse()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_label_context_pass_a9a47e3cf7c3043e0a4762715a1d4bed9} 
+Psy\textbackslash{}\+Code\+Cleaner\textbackslash{}\+Label\+Context\+Pass\+::after\+Traverse (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Node\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null Array of nodes 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_ae48a95d82fe66c1e9bf4b580ab63dc6e}{Php\+Parser\textbackslash{}\+Node\+Visitor\+Abstract}}.
+
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_label_context_pass_afc156d2ce84955932c774a7dae864174}\index{Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass@{Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass}!beforeTraverse@{beforeTraverse}}
+\index{beforeTraverse@{beforeTraverse}!Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass@{Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass}}
+\doxysubsubsection{\texorpdfstring{beforeTraverse()}{beforeTraverse()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_label_context_pass_afc156d2ce84955932c774a7dae864174} 
+Psy\textbackslash{}\+Code\+Cleaner\textbackslash{}\+Label\+Context\+Pass\+::before\+Traverse (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$nodes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null Array of nodes 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a985911777b785443a39d03e6337fa297}{Php\+Parser\textbackslash{}\+Node\+Visitor\+Abstract}}.
+
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_label_context_pass_a78432f7d3f51a47f69846a91e87dcfae}\index{Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass@{Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass}!enterNode@{enterNode}}
+\index{enterNode@{enterNode}!Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass@{Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass}}
+\doxysubsubsection{\texorpdfstring{enterNode()}{enterNode()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_label_context_pass_a78432f7d3f51a47f69846a91e87dcfae} 
+Psy\textbackslash{}\+Code\+Cleaner\textbackslash{}\+Label\+Context\+Pass\+::enter\+Node (\begin{DoxyParamCaption}\item[{Node}]{\$node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}\+Node\texorpdfstring{$\vert$}{|}null Replacement node (or special return value) 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_code_cleaner_1_1_label_context_pass_a750761c9a86ac0d0f40d3065d9af06be}\index{Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass@{Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass}!leaveNode@{leaveNode}}
+\index{leaveNode@{leaveNode}!Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass@{Psy\textbackslash{}CodeCleaner\textbackslash{}LabelContextPass}}
+\doxysubsubsection{\texorpdfstring{leaveNode()}{leaveNode()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_code_cleaner_1_1_label_context_pass_a750761c9a86ac0d0f40d3065d9af06be} 
+Psy\textbackslash{}\+Code\+Cleaner\textbackslash{}\+Label\+Context\+Pass\+::leave\+Node (\begin{DoxyParamCaption}\item[{Node}]{\$node}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Php\+Parser\textbackslash{}\+Node & {\em \$node} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}\+Node\texorpdfstring{$\vert$}{|}\+Node\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null Replacement node (or special return value) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Code\+Cleaner/Label\+Context\+Pass.\+php\end{DoxyCompactItemize}

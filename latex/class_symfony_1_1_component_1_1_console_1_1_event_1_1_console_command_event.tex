@@ -1,0 +1,80 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Event\textbackslash{}Console\+Command\+Event Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_command_event}{}\label{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_command_event}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Event\textbackslash{}ConsoleCommandEvent@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Event\textbackslash{}ConsoleCommandEvent}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Event\textbackslash{}Console\+Command\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_command_event}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_command_event_a18d4ec413dac1dfcdeb1046c04ac051c}{disable\+Command}} ()
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_command_event_a33afb3eb7343aaf0240491659f89a8f9}\label{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_command_event_a33afb3eb7343aaf0240491659f89a8f9} 
+{\bfseries enable\+Command} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_command_event_a384015cc23f60876554742af5e5f801f}{command\+Should\+Run}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_event}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Event\textbackslash{}\+Console\+Event}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+construct} (protected ?\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_command_1_1_command}{Command}} \$command, private \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, private \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_event_aa6182ef548a01034074378336f99a30c}{get\+Command}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_event_a9fbe13d2923c3c0607d8712d61e9d0ee}{get\+Input}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_event_aceb223574a60e51470d870f9bf341020}{get\+Output}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event}{Symfony\textbackslash{}\+Contracts\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_a3d0f60a43ef2306a752386b611e888ca}{is\+Propagation\+Stopped}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_aad4bd7c819fe35b138fa2f9518d91a6a}{stop\+Propagation}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_command_event_a867939b9a210d0a9bd036c682c68c93f}{RETURN\+\_\+\+CODE\+\_\+\+DISABLED}} = 113
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Allows to do things before the command is executed, like skipping the command or executing code before the command is going to be executed.
+
+Changing the input arguments will have no effect.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_command_event_a384015cc23f60876554742af5e5f801f}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Event\textbackslash{}ConsoleCommandEvent@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Event\textbackslash{}ConsoleCommandEvent}!commandShouldRun@{commandShouldRun}}
+\index{commandShouldRun@{commandShouldRun}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Event\textbackslash{}ConsoleCommandEvent@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Event\textbackslash{}ConsoleCommandEvent}}
+\doxysubsubsection{\texorpdfstring{commandShouldRun()}{commandShouldRun()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_command_event_a384015cc23f60876554742af5e5f801f} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Event\textbackslash{}\+Console\+Command\+Event\+::command\+Should\+Run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true if the command is runnable, false otherwise. \Hypertarget{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_command_event_a18d4ec413dac1dfcdeb1046c04ac051c}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Event\textbackslash{}ConsoleCommandEvent@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Event\textbackslash{}ConsoleCommandEvent}!disableCommand@{disableCommand}}
+\index{disableCommand@{disableCommand}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Event\textbackslash{}ConsoleCommandEvent@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Event\textbackslash{}ConsoleCommandEvent}}
+\doxysubsubsection{\texorpdfstring{disableCommand()}{disableCommand()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_command_event_a18d4ec413dac1dfcdeb1046c04ac051c} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Event\textbackslash{}\+Console\+Command\+Event\+::disable\+Command (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Disables the command, so it won\textquotesingle{}t be run. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_command_event_a867939b9a210d0a9bd036c682c68c93f}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Event\textbackslash{}ConsoleCommandEvent@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Event\textbackslash{}ConsoleCommandEvent}!RETURN\_CODE\_DISABLED@{RETURN\_CODE\_DISABLED}}
+\index{RETURN\_CODE\_DISABLED@{RETURN\_CODE\_DISABLED}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Event\textbackslash{}ConsoleCommandEvent@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Event\textbackslash{}ConsoleCommandEvent}}
+\doxysubsubsection{\texorpdfstring{RETURN\_CODE\_DISABLED}{RETURN\_CODE\_DISABLED}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_event_1_1_console_command_event_a867939b9a210d0a9bd036c682c68c93f} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Event\textbackslash{}\+Console\+Command\+Event\+::\+RETURN\+\_\+\+CODE\+\_\+\+DISABLED = 113}
+
+The return code for skipped commands, this will also be passed into the terminate event. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/console/\+Event/Console\+Command\+Event.\+php\end{DoxyCompactItemize}

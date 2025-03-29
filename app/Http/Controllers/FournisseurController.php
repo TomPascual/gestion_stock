@@ -6,20 +6,30 @@ use App\Models\Fournisseur;
 use App\Models\Produit;
 use Illuminate\Http\Request;
 
+/**
+ * Class FournisseurController
+ *
+ * Gère les opérations CRUD pour les fournisseurs.
+ *
+ * @package App\Http\Controllers
+ */
 class FournisseurController extends Controller
 {
     /**
-     * Afficher la liste des fournisseurs.
+     * Affiche la liste de tous les fournisseurs.
+     *
+     * @return \Illuminate\View\View
      */
     public function index()
     {
         $fournisseurs = Fournisseur::all();
         return view('fournisseurs.index', compact('fournisseurs'));
     }
-    
 
     /**
-     * Afficher le formulaire de création d'un fournisseur.
+     * Affiche le formulaire de création d'un nouveau fournisseur.
+     *
+     * @return \Illuminate\View\View
      */
     public function create()
     {
@@ -27,7 +37,10 @@ class FournisseurController extends Controller
     }
 
     /**
-     * Enregistrer un nouveau fournisseur en base.
+     * Enregistre un nouveau fournisseur dans la base de données.
+     *
+     * @param \Illuminate\Http\Request $request Données du formulaire
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
@@ -44,7 +57,10 @@ class FournisseurController extends Controller
     }
 
     /**
-     * Afficher les détails d'un fournisseur et ses produits.
+     * Affiche les détails d'un fournisseur ainsi que les produits associés.
+     *
+     * @param \App\Models\Fournisseur $fournisseur Le fournisseur à afficher
+     * @return \Illuminate\View\View
      */
     public function show(Fournisseur $fournisseur)
     {
@@ -53,7 +69,10 @@ class FournisseurController extends Controller
     }
 
     /**
-     * Afficher le formulaire de modification d'un fournisseur.
+     * Affiche le formulaire de modification d'un fournisseur existant.
+     *
+     * @param \App\Models\Fournisseur $fournisseur Le fournisseur à modifier
+     * @return \Illuminate\View\View
      */
     public function edit(Fournisseur $fournisseur)
     {
@@ -61,7 +80,11 @@ class FournisseurController extends Controller
     }
 
     /**
-     * Mettre à jour un fournisseur en base.
+     * Met à jour les informations d'un fournisseur existant.
+     *
+     * @param \Illuminate\Http\Request $request Données du formulaire
+     * @param \App\Models\Fournisseur $fournisseur Le fournisseur à mettre à jour
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function update(Request $request, Fournisseur $fournisseur)
     {
@@ -78,7 +101,10 @@ class FournisseurController extends Controller
     }
 
     /**
-     * Supprimer un fournisseur.
+     * Supprime un fournisseur de la base de données.
+     *
+     * @param \App\Models\Fournisseur $fournisseur Le fournisseur à supprimer
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(Fournisseur $fournisseur)
     {

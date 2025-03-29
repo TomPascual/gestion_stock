@@ -1,0 +1,43 @@
+\doxysection{Illuminate\textbackslash{}Cache\textbackslash{}Lua\+Scripts Class Reference}
+\hypertarget{class_illuminate_1_1_cache_1_1_lua_scripts}{}\label{class_illuminate_1_1_cache_1_1_lua_scripts}\index{Illuminate\textbackslash{}Cache\textbackslash{}LuaScripts@{Illuminate\textbackslash{}Cache\textbackslash{}LuaScripts}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lua_scripts_a820af842ee2d7911d6c90dc9e86f9648}{add}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lua_scripts_a579dac1f6b8e6779a61613a1b9ddbb31}{release\+Lock}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_lua_scripts_a820af842ee2d7911d6c90dc9e86f9648}\index{Illuminate\textbackslash{}Cache\textbackslash{}LuaScripts@{Illuminate\textbackslash{}Cache\textbackslash{}LuaScripts}!add@{add}}
+\index{add@{add}!Illuminate\textbackslash{}Cache\textbackslash{}LuaScripts@{Illuminate\textbackslash{}Cache\textbackslash{}LuaScripts}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_lua_scripts_a820af842ee2d7911d6c90dc9e86f9648} 
+static Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lua\+Scripts\+::add (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the Lua script that sets a key only when it does not yet exist.
+
+KEYS\mbox{[}1\mbox{]} -\/ The name of the key ARGV\mbox{[}1\mbox{]} -\/ The value of the key ARGV\mbox{[}2\mbox{]} -\/ The number of seconds the key should be valid
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_lua_scripts_a579dac1f6b8e6779a61613a1b9ddbb31}\index{Illuminate\textbackslash{}Cache\textbackslash{}LuaScripts@{Illuminate\textbackslash{}Cache\textbackslash{}LuaScripts}!releaseLock@{releaseLock}}
+\index{releaseLock@{releaseLock}!Illuminate\textbackslash{}Cache\textbackslash{}LuaScripts@{Illuminate\textbackslash{}Cache\textbackslash{}LuaScripts}}
+\doxysubsubsection{\texorpdfstring{releaseLock()}{releaseLock()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_lua_scripts_a579dac1f6b8e6779a61613a1b9ddbb31} 
+static Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lua\+Scripts\+::release\+Lock (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the Lua script to atomically release a lock.
+
+KEYS\mbox{[}1\mbox{]} -\/ The name of the lock ARGV\mbox{[}1\mbox{]} -\/ The owner key of the lock instance trying to release it
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Cache/Lua\+Scripts.\+php\end{DoxyCompactItemize}

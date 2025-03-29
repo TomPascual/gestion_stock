@@ -1,0 +1,68 @@
+\doxysection{Guzzle\+Http\textbackslash{}Promise\textbackslash{}Each Class Reference}
+\hypertarget{class_guzzle_http_1_1_promise_1_1_each}{}\label{class_guzzle_http_1_1_promise_1_1_each}\index{GuzzleHttp\textbackslash{}Promise\textbackslash{}Each@{GuzzleHttp\textbackslash{}Promise\textbackslash{}Each}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_promise_1_1_each_a5a9a275a3f6ff5dcafab85bf0d47fc33}{of}} ( \$iterable, ?callable \$on\+Fulfilled=null, ?callable \$on\+Rejected=null)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_promise_1_1_each_a4bceb19533a21eeec665b82862be5536}{of\+Limit}} ( \$iterable, \$concurrency, ?callable \$on\+Fulfilled=null, ?callable \$on\+Rejected=null)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_promise_1_1_each_afbd6db234afd12b86f384d64bf267e1e}{of\+Limit\+All}} ( \$iterable, \$concurrency, ?callable \$on\+Fulfilled=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_guzzle_http_1_1_promise_1_1_each_a5a9a275a3f6ff5dcafab85bf0d47fc33}\index{GuzzleHttp\textbackslash{}Promise\textbackslash{}Each@{GuzzleHttp\textbackslash{}Promise\textbackslash{}Each}!of@{of}}
+\index{of@{of}!GuzzleHttp\textbackslash{}Promise\textbackslash{}Each@{GuzzleHttp\textbackslash{}Promise\textbackslash{}Each}}
+\doxysubsubsection{\texorpdfstring{of()}{of()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_promise_1_1_each_a5a9a275a3f6ff5dcafab85bf0d47fc33} 
+static Guzzle\+Http\textbackslash{}\+Promise\textbackslash{}\+Each\+::of (\begin{DoxyParamCaption}\item[{}]{\$iterable}{, }\item[{?callable}]{\$on\+Fulfilled}{ = {\ttfamily null}, }\item[{?callable}]{\$on\+Rejected}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Given an iterator that yields promises or values, returns a promise that is fulfilled with a null value when the iterator has been consumed or the aggregate promise has been fulfilled or rejected.
+
+\$on\+Fulfilled is a function that accepts the fulfilled value, iterator index, and the aggregate promise. The callback can invoke any necessary side effects and choose to resolve or reject the aggregate if needed.
+
+\$on\+Rejected is a function that accepts the rejection reason, iterator index, and the aggregate promise. The callback can invoke any necessary side effects and choose to resolve or reject the aggregate if needed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$iterable} & Iterator or array to iterate over. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_guzzle_http_1_1_promise_1_1_each_a4bceb19533a21eeec665b82862be5536}\index{GuzzleHttp\textbackslash{}Promise\textbackslash{}Each@{GuzzleHttp\textbackslash{}Promise\textbackslash{}Each}!ofLimit@{ofLimit}}
+\index{ofLimit@{ofLimit}!GuzzleHttp\textbackslash{}Promise\textbackslash{}Each@{GuzzleHttp\textbackslash{}Promise\textbackslash{}Each}}
+\doxysubsubsection{\texorpdfstring{ofLimit()}{ofLimit()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_promise_1_1_each_a4bceb19533a21eeec665b82862be5536} 
+static Guzzle\+Http\textbackslash{}\+Promise\textbackslash{}\+Each\+::of\+Limit (\begin{DoxyParamCaption}\item[{}]{\$iterable}{, }\item[{}]{\$concurrency}{, }\item[{?callable}]{\$on\+Fulfilled}{ = {\ttfamily null}, }\item[{?callable}]{\$on\+Rejected}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Like of, but only allows a certain number of outstanding promises at any given time.
+
+\$concurrency may be an integer or a function that accepts the number of pending promises and returns a numeric concurrency limit value to allow for dynamic a concurrency size.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$iterable} & \\
+\hline
+int | callable & {\em \$concurrency} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_guzzle_http_1_1_promise_1_1_each_afbd6db234afd12b86f384d64bf267e1e}\index{GuzzleHttp\textbackslash{}Promise\textbackslash{}Each@{GuzzleHttp\textbackslash{}Promise\textbackslash{}Each}!ofLimitAll@{ofLimitAll}}
+\index{ofLimitAll@{ofLimitAll}!GuzzleHttp\textbackslash{}Promise\textbackslash{}Each@{GuzzleHttp\textbackslash{}Promise\textbackslash{}Each}}
+\doxysubsubsection{\texorpdfstring{ofLimitAll()}{ofLimitAll()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_promise_1_1_each_afbd6db234afd12b86f384d64bf267e1e} 
+static Guzzle\+Http\textbackslash{}\+Promise\textbackslash{}\+Each\+::of\+Limit\+All (\begin{DoxyParamCaption}\item[{}]{\$iterable}{, }\item[{}]{\$concurrency}{, }\item[{?callable}]{\$on\+Fulfilled}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Like limit, but ensures that no promise in the given \$iterable argument is rejected. If any promise is rejected, then the aggregate promise is rejected with the encountered rejection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$iterable} & \\
+\hline
+int | callable & {\em \$concurrency} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/guzzlehttp/promises/src/Each.\+php\end{DoxyCompactItemize}

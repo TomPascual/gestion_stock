@@ -1,0 +1,177 @@
+\doxysection{Guzzle\+Http\textbackslash{}Psr7\textbackslash{}Utils Class Reference}
+\hypertarget{class_guzzle_http_1_1_psr7_1_1_utils}{}\label{class_guzzle_http_1_1_psr7_1_1_utils}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_utils_a53f6a3eeb19e00d5f5ac059a45b3afa9}{caseless\+Remove}} (array \$keys, array \$data)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_utils_a9b07d5b3ff38889c4adb41a729a43d4a}{copy\+To\+Stream}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$source, \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$dest, int \$max\+Len=-\/1)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_utils_a6d2eba7dfc27a450a73e444a2adc9aae}{copy\+To\+String}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$stream, int \$max\+Len=-\/1)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_utils_af5750c77405e91c639bfed2c73a710ce}{hash}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$stream, string \$algo, bool \$raw\+Output=false)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_utils_a9b7e95b691745984c5b0d21cd09fef1c}{modify\+Request}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface}{Request\+Interface}} \$request, array \$changes)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_utils_ac149a34ccf6db946241ffa371ad69cc5}{read\+Line}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$stream, ?int \$max\+Length=null)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_utils_a05ef274d56490ebd1e60b06b68e69160}{redact\+User\+Info}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}} \$uri)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_utils_aa3dcc523e92e814ee121b436bc9ba93b}{uri\+For}} (\$uri)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_utils_a53f6a3eeb19e00d5f5ac059a45b3afa9}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}!caselessRemove@{caselessRemove}}
+\index{caselessRemove@{caselessRemove}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{caselessRemove()}{caselessRemove()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_utils_a53f6a3eeb19e00d5f5ac059a45b3afa9} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Utils\+::caseless\+Remove (\begin{DoxyParamCaption}\item[{array}]{\$keys}{, }\item[{array}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Remove the items given by the keys, case insensitively from the data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em (string\texorpdfstring{$\vert$}{|}int)\mbox{[}$\,$\mbox{]}} & \$keys \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_utils_a9b07d5b3ff38889c4adb41a729a43d4a}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}!copyToStream@{copyToStream}}
+\index{copyToStream@{copyToStream}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{copyToStream()}{copyToStream()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_utils_a9b07d5b3ff38889c4adb41a729a43d4a} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Utils\+::copy\+To\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}}}]{\$source}{, }\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}}}]{\$dest}{, }\item[{int}]{\$max\+Len}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Copy the contents of a stream into another stream until the given number of bytes have been read.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Stream\+Interface & {\em \$source} & Stream to read from \\
+\hline
+Stream\+Interface & {\em \$dest} & Stream to write to \\
+\hline
+int & {\em \$max\+Len} & Maximum number of bytes to read. Pass -\/1 to read the entire stream.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception on error. \Hypertarget{class_guzzle_http_1_1_psr7_1_1_utils_a6d2eba7dfc27a450a73e444a2adc9aae}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}!copyToString@{copyToString}}
+\index{copyToString@{copyToString}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{copyToString()}{copyToString()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_utils_a6d2eba7dfc27a450a73e444a2adc9aae} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Utils\+::copy\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}}}]{\$stream}{, }\item[{int}]{\$max\+Len}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Copy the contents of a stream into a string until the given number of bytes have been read.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Stream\+Interface & {\em \$stream} & Stream to read \\
+\hline
+int & {\em \$max\+Len} & Maximum number of bytes to read. Pass -\/1 to read the entire stream.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception on error. \Hypertarget{class_guzzle_http_1_1_psr7_1_1_utils_af5750c77405e91c639bfed2c73a710ce}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}!hash@{hash}}
+\index{hash@{hash}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{hash()}{hash()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_utils_af5750c77405e91c639bfed2c73a710ce} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Utils\+::hash (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}}}]{\$stream}{, }\item[{string}]{\$algo}{, }\item[{bool}]{\$raw\+Output}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculate a hash of a stream.
+
+This method reads the entire stream to calculate a rolling hash, based on PHP\textquotesingle{}s {\ttfamily hash\+\_\+init} functions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Stream\+Interface & {\em \$stream} & Stream to calculate the hash for \\
+\hline
+string & {\em \$algo} & Hash algorithm (e.\+g. md5, crc32, etc) \\
+\hline
+bool & {\em \$raw\+Output} & Whether or not to use raw output\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception on error. \Hypertarget{class_guzzle_http_1_1_psr7_1_1_utils_a9b7e95b691745984c5b0d21cd09fef1c}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}!modifyRequest@{modifyRequest}}
+\index{modifyRequest@{modifyRequest}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{modifyRequest()}{modifyRequest()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_utils_a9b7e95b691745984c5b0d21cd09fef1c} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Utils\+::modify\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{array}]{\$changes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Clone and modify a request with the given changes.
+
+This method is useful for reducing the number of clones needed to mutate a message.
+
+The changes can be one of\+:
+\begin{DoxyItemize}
+\item method\+: (string) Changes the HTTP method.
+\item set\+\_\+headers\+: (array) Sets the given headers.
+\item remove\+\_\+headers\+: (array) Remove the given headers.
+\item body\+: (mixed) Sets the given body.
+\item uri\+: (Uri\+Interface) Set the URI.
+\item query\+: (string) Set the query string value of the URI.
+\item version\+: (string) Set the protocol version.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Request\+Interface & {\em \$request} & Request to clone and modify. \\
+\hline
+array & {\em \$changes} & Changes to apply. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_utils_ac149a34ccf6db946241ffa371ad69cc5}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}!readLine@{readLine}}
+\index{readLine@{readLine}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{readLine()}{readLine()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_utils_ac149a34ccf6db946241ffa371ad69cc5} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Utils\+::read\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}}}]{\$stream}{, }\item[{?int}]{\$max\+Length}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Read a line from the stream up to the maximum allowed buffer length.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Stream\+Interface & {\em \$stream} & Stream to read from \\
+\hline
+int | null & {\em \$max\+Length} & Maximum buffer length \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_utils_a05ef274d56490ebd1e60b06b68e69160}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}!redactUserInfo@{redactUserInfo}}
+\index{redactUserInfo@{redactUserInfo}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{redactUserInfo()}{redactUserInfo()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_utils_a05ef274d56490ebd1e60b06b68e69160} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Utils\+::redact\+User\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}}}]{\$uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Redact the password in the user info part of a URI. \Hypertarget{class_guzzle_http_1_1_psr7_1_1_utils_aa3dcc523e92e814ee121b436bc9ba93b}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}!uriFor@{uriFor}}
+\index{uriFor@{uriFor}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{uriFor()}{uriFor()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_utils_aa3dcc523e92e814ee121b436bc9ba93b} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Utils\+::uri\+For (\begin{DoxyParamCaption}\item[{}]{\$uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a Uri\+Interface for the given value.
+
+This function accepts a string or Uri\+Interface and returns a Uri\+Interface for the given value. If the value is already a Uri\+Interface, it is returned as-\/is.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Uri\+Interface & {\em \$uri} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/guzzlehttp/psr7/src/Utils.\+php\end{DoxyCompactItemize}

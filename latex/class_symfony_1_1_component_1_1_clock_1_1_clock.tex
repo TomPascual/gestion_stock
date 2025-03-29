@@ -1,0 +1,74 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Clock Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_clock_1_1_clock}{}\label{class_symfony_1_1_component_1_1_clock_1_1_clock}\index{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Clock@{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Clock}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Clock\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_clock_1_1_clock}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_clock_ae62bc893f420b7ed937b3883b69ff199}\label{class_symfony_1_1_component_1_1_clock_1_1_clock_ae62bc893f420b7ed937b3883b69ff199} 
+{\bfseries \+\_\+\+\_\+construct} (private readonly ?Psr\+Clock\+Interface \$clock=null, private ?\textbackslash{}Date\+Time\+Zone \$timezone=null,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_clock_af5e62689c688353f6cac75197a32af4f}{now}} ()
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_clock_a4506509ba416f86ad99ea101a9c7a619}\label{class_symfony_1_1_component_1_1_clock_1_1_clock_a4506509ba416f86ad99ea101a9c7a619} 
+{\bfseries sleep} (float\texorpdfstring{$\vert$}{|}int \$seconds)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_clock_adb30d43bda55a913dee47d64907556d4}{with\+Time\+Zone}} (\textbackslash{}Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string \$timezone)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_clock_a3252f09cf777d50d06d528ed1f251e89}{get}} ()
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_clock_a8ea481ded269f6383fc9f7895c198264}\label{class_symfony_1_1_component_1_1_clock_1_1_clock_a8ea481ded269f6383fc9f7895c198264} 
+static {\bfseries set} (Psr\+Clock\+Interface \$clock)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A global clock.
+
+\begin{DoxyAuthor}{Author}
+Nicolas Grekas \href{mailto:p@tchwork.com}{\texttt{ p@tchwork.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_clock_a3252f09cf777d50d06d528ed1f251e89}\index{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Clock@{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Clock}!get@{get}}
+\index{get@{get}!Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Clock@{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Clock}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_clock_a3252f09cf777d50d06d528ed1f251e89} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Clock\textbackslash{}\+Clock\+::get (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the current global clock.
+
+Note that you should prefer injecting a Clock\+Interface or using Clock\+Aware\+Trait when possible instead of using this method. \Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_clock_af5e62689c688353f6cac75197a32af4f}\index{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Clock@{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Clock}!now@{now}}
+\index{now@{now}!Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Clock@{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Clock}}
+\doxysubsubsection{\texorpdfstring{now()}{now()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_clock_af5e62689c688353f6cac75197a32af4f} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Clock\textbackslash{}\+Clock\+::now (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current time as a Date\+Time\+Immutable Object 
+
+Implements \mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a9ec1aeae2b196df5cd267723b862b3a7}{Psr\textbackslash{}\+Clock\textbackslash{}\+Clock\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_clock_adb30d43bda55a913dee47d64907556d4}\index{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Clock@{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Clock}!withTimeZone@{withTimeZone}}
+\index{withTimeZone@{withTimeZone}!Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Clock@{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Clock}}
+\doxysubsubsection{\texorpdfstring{withTimeZone()}{withTimeZone()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_clock_adb30d43bda55a913dee47d64907556d4} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Clock\textbackslash{}\+Clock\+::with\+Time\+Zone (\begin{DoxyParamCaption}\item[{\textbackslash{}Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string}]{\$timezone}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Date\+Invalid\+Time\+Zone\+Exception When \$timezone is invalid 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/clock/Clock.\+php\end{DoxyCompactItemize}

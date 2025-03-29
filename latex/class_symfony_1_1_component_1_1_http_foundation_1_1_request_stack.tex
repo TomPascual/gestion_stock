@@ -1,0 +1,124 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Foundation\textbackslash{}Request\+Stack Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack}{}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Foundation\textbackslash{}Request\+Stack\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_a06f0d7b7e84e59e62424e5b1748b95c8}{\+\_\+\+\_\+construct}} (array \$requests=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_ae89507aed4a711628ea6dad0a57a7cb5}{push}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_ade61554405eddce3fcedbc8ae31c20a0}{pop}} ()
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_a7584aa91f38674ede4e426b72e8c0243}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_a7584aa91f38674ede4e426b72e8c0243} 
+{\bfseries get\+Current\+Request} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_ad4ea5c514a8eae3f72705776966cd4b3}{get\+Main\+Request}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_ac302f55ff6dff3f1b1b3ece8ceee9b44}{get\+Parent\+Request}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_aad5d30256bb5af906fe5f0c62759e82f}{get\+Session}} ()
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_a99fe82fb7f21f8d87de2349bbc1c775a}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_a99fe82fb7f21f8d87de2349bbc1c775a} 
+{\bfseries reset\+Request\+Formats} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Request stack that controls the lifecycle of requests.
+
+\begin{DoxyAuthor}{Author}
+Benjamin Eberlei \href{mailto:kontakt@beberlei.de}{\texttt{ kontakt@beberlei.\+de}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_a06f0d7b7e84e59e62424e5b1748b95c8}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_a06f0d7b7e84e59e62424e5b1748b95c8} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Request\+Stack\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$requests}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Request\mbox{[}$\,$\mbox{]} & {\em \$requests} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_ad4ea5c514a8eae3f72705776966cd4b3}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack}!getMainRequest@{getMainRequest}}
+\index{getMainRequest@{getMainRequest}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack}}
+\doxysubsubsection{\texorpdfstring{getMainRequest()}{getMainRequest()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_ad4ea5c514a8eae3f72705776966cd4b3} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Request\+Stack\+::get\+Main\+Request (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the main request.
+
+Be warned that making your code aware of the main request might make it un-\/compatible with other features of your framework like ESI support. 
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_debug_1_1_virtual_request_stack_a1471694629b1417cf2ede596d18c1ed5}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Debug\textbackslash{}\+Virtual\+Request\+Stack}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_ac302f55ff6dff3f1b1b3ece8ceee9b44}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack}!getParentRequest@{getParentRequest}}
+\index{getParentRequest@{getParentRequest}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack}}
+\doxysubsubsection{\texorpdfstring{getParentRequest()}{getParentRequest()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_ac302f55ff6dff3f1b1b3ece8ceee9b44} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Request\+Stack\+::get\+Parent\+Request (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the parent request of the current.
+
+Be warned that making your code aware of the parent request might make it un-\/compatible with other features of your framework like ESI support.
+
+If current Request is the main request, it returns null. 
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_debug_1_1_virtual_request_stack_a89443a035b813639d695ee0cfc4b2121}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Debug\textbackslash{}\+Virtual\+Request\+Stack}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_aad5d30256bb5af906fe5f0c62759e82f}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack}!getSession@{getSession}}
+\index{getSession@{getSession}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack}}
+\doxysubsubsection{\texorpdfstring{getSession()}{getSession()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_aad5d30256bb5af906fe5f0c62759e82f} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Request\+Stack\+::get\+Session (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the current session.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Session\+Not\+Found\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_ade61554405eddce3fcedbc8ae31c20a0}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack}!pop@{pop}}
+\index{pop@{pop}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_ade61554405eddce3fcedbc8ae31c20a0} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Request\+Stack\+::pop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Pops the current request from the stack.
+
+This operation lets the current request go out of scope.
+
+This method should generally not be called directly as the stack management should be taken care of by the application itself. 
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_debug_1_1_virtual_request_stack_a1ffb613453c3079ffdda21da32ee6bea}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Debug\textbackslash{}\+Virtual\+Request\+Stack}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_ae89507aed4a711628ea6dad0a57a7cb5}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack}!push@{push}}
+\index{push@{push}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}RequestStack}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack_ae89507aed4a711628ea6dad0a57a7cb5} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Request\+Stack\+::push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Pushes a Request on the stack.
+
+This method should generally not be called directly as the stack management should be taken care of by the application itself. 
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_debug_1_1_virtual_request_stack_ae6ff07fed4c76440a4890cc88ab5f720}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Debug\textbackslash{}\+Virtual\+Request\+Stack}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/foundation/Request\+Stack.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+var class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_mock_file_session_storage_factory =
+[
+    [ "__construct", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_mock_file_session_storage_factory.html#ad2e93ca07152e8026078fc12060a6195", null ],
+    [ "createStorage", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_mock_file_session_storage_factory.html#ad30fdcee1dc7895406d6545c7e9fe754", null ]
+];

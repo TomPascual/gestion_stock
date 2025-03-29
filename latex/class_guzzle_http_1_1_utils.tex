@@ -1,0 +1,197 @@
+\doxysection{Guzzle\+Http\textbackslash{}Utils Class Reference}
+\hypertarget{class_guzzle_http_1_1_utils}{}\label{class_guzzle_http_1_1_utils}\index{GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_utils_a0beaa6207482c9fa82b7f8d63a40530e}{headers\+From\+Lines}} (iterable \$lines)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_utils_a9d1204f090e5da08b3d5a9e25e3c3f46}{debug\+Resource}} (\$value=null)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_utils_adbc33e154444b3531476db3bdd114df9}{choose\+Handler}} ()
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_utils_af9a1eaa3e5e9436853abf67eb5fd4085}{default\+User\+Agent}} ()
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_utils_ab819a0e5ef529aba56e939e376d20cc9}{default\+Ca\+Bundle}} ()
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_utils_a1e098e1a76c0153ff686ad8f1f9c7ec2}{normalize\+Header\+Keys}} (array \$headers)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_utils_a96401d102babc586e2418acda2e9f9ec}{is\+Host\+In\+No\+Proxy}} (string \$host, array \$no\+Proxy\+Array)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_utils_a620c16411effd8a2dba3f23696f0b844}{json\+Decode}} (string \$json, bool \$assoc=false, int \$depth=512, int \$options=0)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_utils_ad5951d328ae4b541c3fdcfda2cca15f9}{current\+Time}} ()
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_utils_ad393b0289af794b38dd478c08897c8cc}{idn\+Uri\+Convert}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}} \$uri, int \$options=0)
+\item 
+\Hypertarget{class_guzzle_http_1_1_utils_a5928e8e7d34eff26158cc3532838cab1}\label{class_guzzle_http_1_1_utils_a5928e8e7d34eff26158cc3532838cab1} 
+static {\bfseries getenv} (string \$name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_guzzle_http_1_1_utils_adbc33e154444b3531476db3bdd114df9}\index{GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}!chooseHandler@{chooseHandler}}
+\index{chooseHandler@{chooseHandler}!GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{chooseHandler()}{chooseHandler()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_utils_adbc33e154444b3531476db3bdd114df9} 
+static Guzzle\+Http\textbackslash{}\+Utils\+::choose\+Handler (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Chooses and creates a default handler to use based on the environment.
+
+The returned handler is not wrapped by any default middlewares.
+
+\begin{DoxyReturn}{Returns}
+callable(\textbackslash{}\+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Request\+Interface, array)\+: \textbackslash{}\+Guzzle\+Http\textbackslash{}\+Promise\textbackslash{}\+Promise\+Interface Returns the best handler for the given system.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception if no viable Handler is available. \Hypertarget{class_guzzle_http_1_1_utils_ad5951d328ae4b541c3fdcfda2cca15f9}\index{GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}!currentTime@{currentTime}}
+\index{currentTime@{currentTime}!GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{currentTime()}{currentTime()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_utils_ad5951d328ae4b541c3fdcfda2cca15f9} 
+static Guzzle\+Http\textbackslash{}\+Utils\+::current\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Wrapper for the hrtime() or microtime() functions (depending on the PHP version, one of the two is used)
+
+\begin{DoxyReturn}{Returns}
+float UNIX timestamp 
+\end{DoxyReturn}
+\Hypertarget{class_guzzle_http_1_1_utils_a9d1204f090e5da08b3d5a9e25e3c3f46}\index{GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}!debugResource@{debugResource}}
+\index{debugResource@{debugResource}!GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{debugResource()}{debugResource()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_utils_a9d1204f090e5da08b3d5a9e25e3c3f46} 
+static Guzzle\+Http\textbackslash{}\+Utils\+::debug\+Resource (\begin{DoxyParamCaption}\item[{}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a debug stream based on the provided variable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & Optional value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+\Hypertarget{class_guzzle_http_1_1_utils_ab819a0e5ef529aba56e939e376d20cc9}\index{GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}!defaultCaBundle@{defaultCaBundle}}
+\index{defaultCaBundle@{defaultCaBundle}!GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{defaultCaBundle()}{defaultCaBundle()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_utils_ab819a0e5ef529aba56e939e376d20cc9} 
+static Guzzle\+Http\textbackslash{}\+Utils\+::default\+Ca\+Bundle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the default cacert bundle for the current system.
+
+First, the openssl.\+cafile and curl.\+cainfo php.\+ini settings are checked. If those settings are not configured, then the common locations for bundles found on Red Hat, Cent\+OS, Fedora, Ubuntu, Debian, Free\+BSD, OS X and Windows are checked. If any of these file locations are found on disk, they will be utilized.
+
+Note\+: the result of this function is cached for subsequent calls.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception if no bundle can be found.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000045}{Deprecated}}]Utils\+::default\+Ca\+Bundle will be removed in guzzlehttp/guzzle\+:8.\+0. This method is not needed in PHP 5.\+6+. \end{DoxyRefDesc}
+\Hypertarget{class_guzzle_http_1_1_utils_af9a1eaa3e5e9436853abf67eb5fd4085}\index{GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}!defaultUserAgent@{defaultUserAgent}}
+\index{defaultUserAgent@{defaultUserAgent}!GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{defaultUserAgent()}{defaultUserAgent()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_utils_af9a1eaa3e5e9436853abf67eb5fd4085} 
+static Guzzle\+Http\textbackslash{}\+Utils\+::default\+User\+Agent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the default User-\/\+Agent string to use with Guzzle. \Hypertarget{class_guzzle_http_1_1_utils_a0beaa6207482c9fa82b7f8d63a40530e}\index{GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}!headersFromLines@{headersFromLines}}
+\index{headersFromLines@{headersFromLines}!GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{headersFromLines()}{headersFromLines()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_utils_a0beaa6207482c9fa82b7f8d63a40530e} 
+static Guzzle\+Http\textbackslash{}\+Utils\+::headers\+From\+Lines (\begin{DoxyParamCaption}\item[{iterable}]{\$lines}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses an array of header lines into an associative array of headers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+iterable & {\em \$lines} & Header lines array of strings in the following format\+: "{}\+Name\+: Value"{} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_guzzle_http_1_1_utils_ad393b0289af794b38dd478c08897c8cc}\index{GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}!idnUriConvert@{idnUriConvert}}
+\index{idnUriConvert@{idnUriConvert}!GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{idnUriConvert()}{idnUriConvert()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_utils_ad393b0289af794b38dd478c08897c8cc} 
+static Guzzle\+Http\textbackslash{}\+Utils\+::idn\+Uri\+Convert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}}}]{\$uri}{, }\item[{int}]{\$options}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_guzzle_http_1_1_utils_a96401d102babc586e2418acda2e9f9ec}\index{GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}!isHostInNoProxy@{isHostInNoProxy}}
+\index{isHostInNoProxy@{isHostInNoProxy}!GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{isHostInNoProxy()}{isHostInNoProxy()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_utils_a96401d102babc586e2418acda2e9f9ec} 
+static Guzzle\+Http\textbackslash{}\+Utils\+::is\+Host\+In\+No\+Proxy (\begin{DoxyParamCaption}\item[{string}]{\$host}{, }\item[{array}]{\$no\+Proxy\+Array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns true if the provided host matches any of the no proxy areas.
+
+This method will strip a port from the host if it is present. Each pattern can be matched with an exact match (e.\+g., "{}foo.\+com"{} == "{}foo.\+com"{}) or a partial match\+: (e.\+g., "{}foo.\+com"{} == "{}baz.\+foo.\+com"{} and "{}.\+foo.\+com"{} == "{}baz.\+foo.\+com"{}, but "{}.\+foo.\+com"{} != "{}foo.\+com"{}).
+
+Areas are matched in the following cases\+:
+\begin{DoxyEnumerate}
+\item "{}\texorpdfstring{$\ast$}{*}"{} (without quotes) always matches any hosts.
+\item An exact match.
+\item The area starts with "{}."{} and the area is the last part of the host. e.\+g. \textquotesingle{}.mit.\+edu\textquotesingle{} will match any host that ends with \textquotesingle{}.mit.\+edu\textquotesingle{}.
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$host} & Host to check against the patterns. \\
+\hline
+string\mbox{[}$\,$\mbox{]} & {\em \$no\+Proxy\+Array} & An array of host patterns.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_guzzle_http_1_1_utils_a620c16411effd8a2dba3f23696f0b844}\index{GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}!jsonDecode@{jsonDecode}}
+\index{jsonDecode@{jsonDecode}!GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{jsonDecode()}{jsonDecode()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_utils_a620c16411effd8a2dba3f23696f0b844} 
+static Guzzle\+Http\textbackslash{}\+Utils\+::json\+Decode (\begin{DoxyParamCaption}\item[{string}]{\$json}{, }\item[{bool}]{\$assoc}{ = {\ttfamily false}, }\item[{int}]{\$depth}{ = {\ttfamily 512}, }\item[{int}]{\$options}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Wrapper for json\+\_\+decode that throws when an error occurs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$json} & JSON data to parse \\
+\hline
+bool & {\em \$assoc} & When true, returned objects will be converted into associative arrays. \\
+\hline
+int & {\em \$depth} & User specified recursion depth. \\
+\hline
+int & {\em \$options} & Bitmask of JSON decode options.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}null
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & if the JSON cannot be decoded.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.php.net/manual/en/function.json-decode.php}{\texttt{ https\+://www.\+php.\+net/manual/en/function.\+json-\/decode.\+php}} 
+\end{DoxySeeAlso}
+\Hypertarget{class_guzzle_http_1_1_utils_a1e098e1a76c0153ff686ad8f1f9c7ec2}\index{GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}!normalizeHeaderKeys@{normalizeHeaderKeys}}
+\index{normalizeHeaderKeys@{normalizeHeaderKeys}!GuzzleHttp\textbackslash{}Utils@{GuzzleHttp\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{normalizeHeaderKeys()}{normalizeHeaderKeys()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_utils_a1e098e1a76c0153ff686ad8f1f9c7ec2} 
+static Guzzle\+Http\textbackslash{}\+Utils\+::normalize\+Header\+Keys (\begin{DoxyParamCaption}\item[{array}]{\$headers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates an associative array of lowercase header names to the actual header casing. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/guzzlehttp/guzzle/src/Utils.\+php\end{DoxyCompactItemize}

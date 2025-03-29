@@ -1,0 +1,264 @@
+\doxysection{Illuminate\textbackslash{}Bus\textbackslash{}Batch\+Repository Interface Reference}
+\hypertarget{interface_illuminate_1_1_bus_1_1_batch_repository}{}\label{interface_illuminate_1_1_bus_1_1_batch_repository}\index{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}}
+Inheritance diagram for Illuminate\textbackslash{}Bus\textbackslash{}Batch\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.717791cm]{interface_illuminate_1_1_bus_1_1_batch_repository}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_af332f4dbbee8d4e3315e7d0d012e272b}{get}} (\$limit, \$before)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_ab3af3ca47fd334b3d0992134cfa960c3}{find}} (string \$batch\+Id)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_a7af626ff162d7c1e1891daf9c97b1d5b}{store}} (\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch}{Pending\+Batch}} \$batch)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_a710f921f330193240c5172e4fb35ee76}{increment\+Total\+Jobs}} (string \$batch\+Id, int \$amount)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_a6df50e4b6e9d96a18fef806d6060570c}{decrement\+Pending\+Jobs}} (string \$batch\+Id, string \$job\+Id)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_aa0d049ea05a9a932f2b5bf8f49ff0669}{increment\+Failed\+Jobs}} (string \$batch\+Id, string \$job\+Id)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_aa2ae68ac2ad472797ddf1463eeea123a}{mark\+As\+Finished}} (string \$batch\+Id)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_ae08ff86fd17fae9fba338cd60fd0756e}{cancel}} (string \$batch\+Id)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_a7485b91ab7c309d1f0f1f429f0382db8}{delete}} (string \$batch\+Id)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_ab90c0e2b4cd2b2b72d021c439f979036}{transaction}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_ab1fcf88e9854c82512ef1f855a5629c3}{roll\+Back}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_illuminate_1_1_bus_1_1_batch_repository_ae08ff86fd17fae9fba338cd60fd0756e}\index{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}!cancel@{cancel}}
+\index{cancel@{cancel}!Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}}
+\doxysubsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_bus_1_1_batch_repository_ae08ff86fd17fae9fba338cd60fd0756e} 
+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\+Repository\+::cancel (\begin{DoxyParamCaption}\item[{string}]{\$batch\+Id}{}\end{DoxyParamCaption})}
+
+Cancel the batch that has the given ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$batch\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_database_batch_repository_a870c0b70712d17ed9162448c7ed8054b}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Database\+Batch\+Repository}}, \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dynamo_batch_repository_a11db41c736bce81299d85d4ac364add6}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dynamo\+Batch\+Repository}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_repository_fake_a6e7320f9f1e9d684db2bb5a9398f93cf}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Repository\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_bus_1_1_batch_repository_a6df50e4b6e9d96a18fef806d6060570c}\index{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}!decrementPendingJobs@{decrementPendingJobs}}
+\index{decrementPendingJobs@{decrementPendingJobs}!Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}}
+\doxysubsubsection{\texorpdfstring{decrementPendingJobs()}{decrementPendingJobs()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_bus_1_1_batch_repository_a6df50e4b6e9d96a18fef806d6060570c} 
+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\+Repository\+::decrement\+Pending\+Jobs (\begin{DoxyParamCaption}\item[{string}]{\$batch\+Id}{, }\item[{string}]{\$job\+Id}{}\end{DoxyParamCaption})}
+
+Decrement the total number of pending jobs for the batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$batch\+Id} & \\
+\hline
+string & {\em \$job\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Updated\+Batch\+Job\+Counts 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_database_batch_repository_a5dd3bed916ff6e3b6650da0703d3f4a1}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Database\+Batch\+Repository}}, \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dynamo_batch_repository_a1f23265e32e0eb003192307a1d6b1904}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dynamo\+Batch\+Repository}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_repository_fake_a383ee76e39d1ddbc07ed1606225d2b12}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Repository\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_bus_1_1_batch_repository_a7485b91ab7c309d1f0f1f429f0382db8}\index{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}!delete@{delete}}
+\index{delete@{delete}!Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_bus_1_1_batch_repository_a7485b91ab7c309d1f0f1f429f0382db8} 
+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\+Repository\+::delete (\begin{DoxyParamCaption}\item[{string}]{\$batch\+Id}{}\end{DoxyParamCaption})}
+
+Delete the batch that has the given ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$batch\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_database_batch_repository_aeb1459a901d11beca4aadbd32a1e928c}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Database\+Batch\+Repository}}, \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dynamo_batch_repository_a8c6ba8e5806d689f1d6954d8120a61db}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dynamo\+Batch\+Repository}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_repository_fake_a3bce7f13076548ba342e82467e37c5bb}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Repository\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_bus_1_1_batch_repository_ab3af3ca47fd334b3d0992134cfa960c3}\index{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}!find@{find}}
+\index{find@{find}!Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_bus_1_1_batch_repository_ab3af3ca47fd334b3d0992134cfa960c3} 
+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\+Repository\+::find (\begin{DoxyParamCaption}\item[{string}]{\$batch\+Id}{}\end{DoxyParamCaption})}
+
+Retrieve information about an existing batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$batch\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_database_batch_repository_aaf59659c2c042d0350076b6f4585397e}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Database\+Batch\+Repository}}, \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dynamo_batch_repository_a8a88b1db6b3e0a5aa128c9b024e0ef15}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dynamo\+Batch\+Repository}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_repository_fake_a30c32c10ed30a4933fafd442acfca496}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Repository\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_bus_1_1_batch_repository_af332f4dbbee8d4e3315e7d0d012e272b}\index{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}!get@{get}}
+\index{get@{get}!Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_bus_1_1_batch_repository_af332f4dbbee8d4e3315e7d0d012e272b} 
+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\+Repository\+::get (\begin{DoxyParamCaption}\item[{}]{\$limit}{, }\item[{}]{\$before}{}\end{DoxyParamCaption})}
+
+Retrieve a list of batches.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$limit} & \\
+\hline
+mixed & {\em \$before} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_database_batch_repository_af79e7750f28a6cca72d94fa8481aeba6}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Database\+Batch\+Repository}}, \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dynamo_batch_repository_af6ac46367c148de29aad6d49bcc3dc01}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dynamo\+Batch\+Repository}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_repository_fake_a868a88458671fb485eab335983e6c2d1}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Repository\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_bus_1_1_batch_repository_aa0d049ea05a9a932f2b5bf8f49ff0669}\index{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}!incrementFailedJobs@{incrementFailedJobs}}
+\index{incrementFailedJobs@{incrementFailedJobs}!Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}}
+\doxysubsubsection{\texorpdfstring{incrementFailedJobs()}{incrementFailedJobs()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_bus_1_1_batch_repository_aa0d049ea05a9a932f2b5bf8f49ff0669} 
+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\+Repository\+::increment\+Failed\+Jobs (\begin{DoxyParamCaption}\item[{string}]{\$batch\+Id}{, }\item[{string}]{\$job\+Id}{}\end{DoxyParamCaption})}
+
+Increment the total number of failed jobs for the batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$batch\+Id} & \\
+\hline
+string & {\em \$job\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Updated\+Batch\+Job\+Counts 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_database_batch_repository_ab503ad44fe03fc889084ec7e89b5347f}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Database\+Batch\+Repository}}, \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dynamo_batch_repository_ac95e6959e2870ebc4a5cc0de9a4dc390}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dynamo\+Batch\+Repository}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_repository_fake_af5080d1fe8e857563e196cd69c30882e}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Repository\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_bus_1_1_batch_repository_a710f921f330193240c5172e4fb35ee76}\index{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}!incrementTotalJobs@{incrementTotalJobs}}
+\index{incrementTotalJobs@{incrementTotalJobs}!Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}}
+\doxysubsubsection{\texorpdfstring{incrementTotalJobs()}{incrementTotalJobs()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_bus_1_1_batch_repository_a710f921f330193240c5172e4fb35ee76} 
+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\+Repository\+::increment\+Total\+Jobs (\begin{DoxyParamCaption}\item[{string}]{\$batch\+Id}{, }\item[{int}]{\$amount}{}\end{DoxyParamCaption})}
+
+Increment the total number of jobs within the batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$batch\+Id} & \\
+\hline
+int & {\em \$amount} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_database_batch_repository_a06346118827965f379a2bfd21f964246}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Database\+Batch\+Repository}}, \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dynamo_batch_repository_a5fab02e771778462755a85f4428e0bc9}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dynamo\+Batch\+Repository}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_repository_fake_a385c09bbf0e369d806f3d8e8063ffbba}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Repository\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_bus_1_1_batch_repository_aa2ae68ac2ad472797ddf1463eeea123a}\index{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}!markAsFinished@{markAsFinished}}
+\index{markAsFinished@{markAsFinished}!Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}}
+\doxysubsubsection{\texorpdfstring{markAsFinished()}{markAsFinished()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_bus_1_1_batch_repository_aa2ae68ac2ad472797ddf1463eeea123a} 
+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\+Repository\+::mark\+As\+Finished (\begin{DoxyParamCaption}\item[{string}]{\$batch\+Id}{}\end{DoxyParamCaption})}
+
+Mark the batch that has the given ID as finished.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$batch\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_database_batch_repository_a5987855f9b78f5e483e2cc083ffb31a0}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Database\+Batch\+Repository}}, \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dynamo_batch_repository_aa6a30ea7a88e263b245fa3f1fefb3a53}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dynamo\+Batch\+Repository}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_repository_fake_a4aadbc9c9d8caf6b036751f609f118d8}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Repository\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_bus_1_1_batch_repository_ab1fcf88e9854c82512ef1f855a5629c3}\index{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}!rollBack@{rollBack}}
+\index{rollBack@{rollBack}!Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}}
+\doxysubsubsection{\texorpdfstring{rollBack()}{rollBack()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_bus_1_1_batch_repository_ab1fcf88e9854c82512ef1f855a5629c3} 
+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\+Repository\+::roll\+Back (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Rollback the last database transaction for the connection.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_database_batch_repository_a1cd23ff3e8e9b7787f82bd24a8e56617}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Database\+Batch\+Repository}}, \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dynamo_batch_repository_ad46984790fe0ee5df12c8a2743ba032d}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dynamo\+Batch\+Repository}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_repository_fake_a38eb8e0e11b225a2f2c5ba5bfd03832d}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Repository\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_bus_1_1_batch_repository_a7af626ff162d7c1e1891daf9c97b1d5b}\index{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}!store@{store}}
+\index{store@{store}!Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}}
+\doxysubsubsection{\texorpdfstring{store()}{store()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_bus_1_1_batch_repository_a7af626ff162d7c1e1891daf9c97b1d5b} 
+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\+Repository\+::store (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch}{Pending\+Batch}}}]{\$batch}{}\end{DoxyParamCaption})}
+
+Store a new pending batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Pending\+Batch & {\em \$batch} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_database_batch_repository_a271f345214e40dffdae6cb4b584649b7}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Database\+Batch\+Repository}}, \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dynamo_batch_repository_a4a814c888110badf26db639342cc6828}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dynamo\+Batch\+Repository}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_repository_fake_abc2778695bc25c4f39ab240ad6de7714}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Repository\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_bus_1_1_batch_repository_ab90c0e2b4cd2b2b72d021c439f979036}\index{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}!transaction@{transaction}}
+\index{transaction@{transaction}!Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}BatchRepository}}
+\doxysubsubsection{\texorpdfstring{transaction()}{transaction()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_bus_1_1_batch_repository_ab90c0e2b4cd2b2b72d021c439f979036} 
+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\+Repository\+::transaction (\begin{DoxyParamCaption}\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Execute the given Closure within a storage specific transaction.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_database_batch_repository_a85ce3dda9d76adef272b89213eeafbd7}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Database\+Batch\+Repository}}, \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dynamo_batch_repository_a4ddb7c6c134ad4447105c85cce31aa1b}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dynamo\+Batch\+Repository}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_repository_fake_a3df439e91671e17594c057717e83ffa1}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Repository\+Fake}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Bus/Batch\+Repository.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,613 @@
+\doxysection{Illuminate\textbackslash{}Mail\textbackslash{}Mail\+Manager Class Reference}
+\hypertarget{class_illuminate_1_1_mail_1_1_mail_manager}{}\label{class_illuminate_1_1_mail_1_1_mail_manager}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+Inheritance diagram for Illuminate\textbackslash{}Mail\textbackslash{}Mail\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_mail_1_1_mail_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_ab6fe5c8225c60ead2aec79e61cbb2e66}{\+\_\+\+\_\+construct}} (\$app)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_abaf2e1ea4af118a4db1489e3000f9cbf}{mailer}} (\$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a57cd86f8f82f129d3f92e69e87803ac9}{driver}} (\$driver=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a0bd4859629056b45e3edde0e09d0ade7}{build}} (\$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a7081487e7be2dfe99f516d34ef979628}{create\+Symfony\+Transport}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_ac863169c5e645a4a7eaeb19b48c7a07e}{get\+Default\+Driver}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a3692248bf5861e40c50818bb4ec26a92}{set\+Default\+Driver}} (string \$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_aed2232c8820fc10d1e4d891545180d6c}{purge}} (\$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a6af78442651998b9297896f913217efa}{extend}} (\$\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a57cd86f8f82f129d3f92e69e87803ac9}{driver}}, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a889aecb3e8e93f572be706d31cdbcb00}{get\+Application}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a2bac49d456738240478edd03653fecbe}{set\+Application}} (\$app)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a0a3a9140dc2baf0379de3c5473274aa9}{forget\+Mailers}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a60755e33f29b85feb4b7187163db8315}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_factory}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Factory}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_factory_ae6c3c1a3608806bcbf98bdebb04f2d23}{guard}} (\$name=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_auth_1_1_factory_a90319e75c7fa2e2800a4705e2788357b}{should\+Use}} (\$name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a9fbafa90d27dc5a5550d3c71abfe514b}{get}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_ad7d42f5395c48c3ee09bbc48fa28d285}{resolve}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_ab00702b873ba6fda15c102e943f1769e}{create\+Smtp\+Transport}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a6fc5046a1184d674dcca3f592fec7352}{configure\+Smtp\+Transport}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport}{Esmtp\+Transport}} \$transport, array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a340c4d9079ab74a58493f781bbed5d18}{create\+Sendmail\+Transport}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_aba77e7a3368c6f025c134dc8af4c496b}{create\+Ses\+Transport}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a90fa5b4158ac80dd03e0bd30921ca780}{create\+Ses\+V2\+Transport}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a7a7442dbee251adeeed95fbeb4fb60e3}{add\+Ses\+Credentials}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_ad9f46311ad796ec79baf5e195d218a10}{create\+Resend\+Transport}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a66871d52ceb8be59ab32651036c9a226}{create\+Mail\+Transport}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_ac3edcfc5589a559a7ce70e48082cb8f8}{create\+Mailgun\+Transport}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_aee9aec72b0a611cce571067576f51367}{create\+Postmark\+Transport}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a3fe6f0750bd0e3ce8c98cfbd2209c57b}{create\+Failover\+Transport}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a7e0ee0c48b48f16c485d60f7169ea399}{create\+Roundrobin\+Transport}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a89b86b74b969a1badb181cda4b3a9ad2}{create\+Log\+Transport}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a824268559f4a0a6b9e01b7d15bbfb0f1}{create\+Array\+Transport}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_aa96b81ed5d586dd6ec568f907e4e62ba}{get\+Http\+Client}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a018f7d2e5962375ac0b161b882503016}{set\+Global\+Address}} (\$\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_abaf2e1ea4af118a4db1489e3000f9cbf}{mailer}}, array \$config, string \$type)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mail_manager_a450f851ad80b083d6bf81b1da95647db}{get\+Config}} (string \$name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a1e0c0e8a26fb59b04afc042175a8440b}\label{class_illuminate_1_1_mail_1_1_mail_manager_a1e0c0e8a26fb59b04afc042175a8440b} 
+{\bfseries \$app}
+\item 
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a0957b7e243c3067328278e1e0d0cacdc}\label{class_illuminate_1_1_mail_1_1_mail_manager_a0957b7e243c3067328278e1e0d0cacdc} 
+{\bfseries \$mailers} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a22c25e30e67f8b5904fe7755458a9d67}\label{class_illuminate_1_1_mail_1_1_mail_manager_a22c25e30e67f8b5904fe7755458a9d67} 
+{\bfseries \$custom\+Creators} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@mixin \textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_ab6fe5c8225c60ead2aec79e61cbb2e66}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_ab6fe5c8225c60ead2aec79e61cbb2e66} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$app}{}\end{DoxyParamCaption})}
+
+Create a new Mail manager instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Foundation\textbackslash{}\+Application & {\em \$app} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a60755e33f29b85feb4b7187163db8315}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a60755e33f29b85feb4b7187163db8315} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Dynamically call the default driver instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a7a7442dbee251adeeed95fbeb4fb60e3}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!addSesCredentials@{addSesCredentials}}
+\index{addSesCredentials@{addSesCredentials}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{addSesCredentials()}{addSesCredentials()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a7a7442dbee251adeeed95fbeb4fb60e3} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::add\+Ses\+Credentials (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add the SES credentials to the configuration array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a0bd4859629056b45e3edde0e09d0ade7}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!build@{build}}
+\index{build@{build}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a0bd4859629056b45e3edde0e09d0ade7} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::build (\begin{DoxyParamCaption}\item[{}]{\$config}{}\end{DoxyParamCaption})}
+
+Build a new mailer instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a6fc5046a1184d674dcca3f592fec7352}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!configureSmtpTransport@{configureSmtpTransport}}
+\index{configureSmtpTransport@{configureSmtpTransport}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{configureSmtpTransport()}{configureSmtpTransport()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a6fc5046a1184d674dcca3f592fec7352} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::configure\+Smtp\+Transport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_esmtp_transport}{Esmtp\+Transport}}}]{\$transport}{, }\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Configure the additional SMTP driver options.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Smtp\textbackslash{}\+Esmtp\+Transport & {\em \$transport} & \\
+\hline
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Smtp\textbackslash{}\+Esmtp\+Transport 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a824268559f4a0a6b9e01b7d15bbfb0f1}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!createArrayTransport@{createArrayTransport}}
+\index{createArrayTransport@{createArrayTransport}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{createArrayTransport()}{createArrayTransport()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a824268559f4a0a6b9e01b7d15bbfb0f1} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::create\+Array\+Transport (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create an instance of the Array Transport Driver.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Transport\textbackslash{}\+Array\+Transport 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a3fe6f0750bd0e3ce8c98cfbd2209c57b}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!createFailoverTransport@{createFailoverTransport}}
+\index{createFailoverTransport@{createFailoverTransport}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{createFailoverTransport()}{createFailoverTransport()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a3fe6f0750bd0e3ce8c98cfbd2209c57b} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::create\+Failover\+Transport (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create an instance of the Symfony Failover Transport driver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Failover\+Transport 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a89b86b74b969a1badb181cda4b3a9ad2}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!createLogTransport@{createLogTransport}}
+\index{createLogTransport@{createLogTransport}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{createLogTransport()}{createLogTransport()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a89b86b74b969a1badb181cda4b3a9ad2} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::create\+Log\+Transport (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create an instance of the Log Transport driver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Transport\textbackslash{}\+Log\+Transport 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_ac3edcfc5589a559a7ce70e48082cb8f8}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!createMailgunTransport@{createMailgunTransport}}
+\index{createMailgunTransport@{createMailgunTransport}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{createMailgunTransport()}{createMailgunTransport()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_ac3edcfc5589a559a7ce70e48082cb8f8} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::create\+Mailgun\+Transport (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create an instance of the Symfony Mailgun Transport driver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Transport\+Interface 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a66871d52ceb8be59ab32651036c9a226}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!createMailTransport@{createMailTransport}}
+\index{createMailTransport@{createMailTransport}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{createMailTransport()}{createMailTransport()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a66871d52ceb8be59ab32651036c9a226} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::create\+Mail\+Transport (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create an instance of the Symfony Mail Transport driver.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Sendmail\+Transport 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_aee9aec72b0a611cce571067576f51367}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!createPostmarkTransport@{createPostmarkTransport}}
+\index{createPostmarkTransport@{createPostmarkTransport}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{createPostmarkTransport()}{createPostmarkTransport()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_aee9aec72b0a611cce571067576f51367} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::create\+Postmark\+Transport (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create an instance of the Symfony Postmark Transport driver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Bridge\textbackslash{}\+Postmark\textbackslash{}\+Transport\textbackslash{}\+Postmark\+Api\+Transport 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_ad9f46311ad796ec79baf5e195d218a10}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!createResendTransport@{createResendTransport}}
+\index{createResendTransport@{createResendTransport}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{createResendTransport()}{createResendTransport()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_ad9f46311ad796ec79baf5e195d218a10} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::create\+Resend\+Transport (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create an instance of the Resend Transport driver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Transport\textbackslash{}\+Resend\+Transprot 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a7e0ee0c48b48f16c485d60f7169ea399}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!createRoundrobinTransport@{createRoundrobinTransport}}
+\index{createRoundrobinTransport@{createRoundrobinTransport}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{createRoundrobinTransport()}{createRoundrobinTransport()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a7e0ee0c48b48f16c485d60f7169ea399} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::create\+Roundrobin\+Transport (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create an instance of the Symfony Roundrobin Transport driver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Round\+Robin\+Transport 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a340c4d9079ab74a58493f781bbed5d18}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!createSendmailTransport@{createSendmailTransport}}
+\index{createSendmailTransport@{createSendmailTransport}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{createSendmailTransport()}{createSendmailTransport()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a340c4d9079ab74a58493f781bbed5d18} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::create\+Sendmail\+Transport (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create an instance of the Symfony Sendmail Transport driver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Sendmail\+Transport 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_aba77e7a3368c6f025c134dc8af4c496b}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!createSesTransport@{createSesTransport}}
+\index{createSesTransport@{createSesTransport}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{createSesTransport()}{createSesTransport()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_aba77e7a3368c6f025c134dc8af4c496b} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::create\+Ses\+Transport (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create an instance of the Symfony Amazon SES Transport driver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Transport\textbackslash{}\+Ses\+Transport 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a90fa5b4158ac80dd03e0bd30921ca780}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!createSesV2Transport@{createSesV2Transport}}
+\index{createSesV2Transport@{createSesV2Transport}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{createSesV2Transport()}{createSesV2Transport()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a90fa5b4158ac80dd03e0bd30921ca780} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::create\+Ses\+V2\+Transport (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create an instance of the Symfony Amazon SES V2 Transport driver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Transport\textbackslash{}\+Ses\+V2\+Transport 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_ab00702b873ba6fda15c102e943f1769e}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!createSmtpTransport@{createSmtpTransport}}
+\index{createSmtpTransport@{createSmtpTransport}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{createSmtpTransport()}{createSmtpTransport()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_ab00702b873ba6fda15c102e943f1769e} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::create\+Smtp\+Transport (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create an instance of the Symfony SMTP Transport driver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Smtp\textbackslash{}\+Esmtp\+Transport 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a7081487e7be2dfe99f516d34ef979628}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!createSymfonyTransport@{createSymfonyTransport}}
+\index{createSymfonyTransport@{createSymfonyTransport}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{createSymfonyTransport()}{createSymfonyTransport()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a7081487e7be2dfe99f516d34ef979628} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::create\+Symfony\+Transport (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})}
+
+Create a new transport instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Transport\+Interface
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a57cd86f8f82f129d3f92e69e87803ac9}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!driver@{driver}}
+\index{driver@{driver}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{driver()}{driver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a57cd86f8f82f129d3f92e69e87803ac9} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::driver (\begin{DoxyParamCaption}\item[{}]{\$driver}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a mailer driver instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$driver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a6af78442651998b9297896f913217efa}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!extend@{extend}}
+\index{extend@{extend}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{extend()}{extend()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a6af78442651998b9297896f913217efa} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::extend (\begin{DoxyParamCaption}\item[{}]{\$driver}{, }\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a custom transport creator Closure.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$driver} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a0a3a9140dc2baf0379de3c5473274aa9}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!forgetMailers@{forgetMailers}}
+\index{forgetMailers@{forgetMailers}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{forgetMailers()}{forgetMailers()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a0a3a9140dc2baf0379de3c5473274aa9} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::forget\+Mailers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Forget all of the resolved mailer instances.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a9fbafa90d27dc5a5550d3c71abfe514b}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!get@{get}}
+\index{get@{get}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a9fbafa90d27dc5a5550d3c71abfe514b} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::get (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Attempt to get the mailer from the local cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a889aecb3e8e93f572be706d31cdbcb00}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!getApplication@{getApplication}}
+\index{getApplication@{getApplication}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{getApplication()}{getApplication()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a889aecb3e8e93f572be706d31cdbcb00} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::get\+Application (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the application instance used by the manager.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Foundation\textbackslash{}\+Application 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a450f851ad80b083d6bf81b1da95647db}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!getConfig@{getConfig}}
+\index{getConfig@{getConfig}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{getConfig()}{getConfig()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a450f851ad80b083d6bf81b1da95647db} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::get\+Config (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the mail connection configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_ac863169c5e645a4a7eaeb19b48c7a07e}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!getDefaultDriver@{getDefaultDriver}}
+\index{getDefaultDriver@{getDefaultDriver}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{getDefaultDriver()}{getDefaultDriver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_ac863169c5e645a4a7eaeb19b48c7a07e} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::get\+Default\+Driver (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the default mail driver name.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_aa96b81ed5d586dd6ec568f907e4e62ba}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!getHttpClient@{getHttpClient}}
+\index{getHttpClient@{getHttpClient}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{getHttpClient()}{getHttpClient()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_aa96b81ed5d586dd6ec568f907e4e62ba} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::get\+Http\+Client (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get a configured Symfony HTTP client instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Contracts\textbackslash{}\+Http\+Client\textbackslash{}\+Http\+Client\+Interface\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_abaf2e1ea4af118a4db1489e3000f9cbf}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!mailer@{mailer}}
+\index{mailer@{mailer}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{mailer()}{mailer()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_abaf2e1ea4af118a4db1489e3000f9cbf} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::mailer (\begin{DoxyParamCaption}\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a mailer instance by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Mail\textbackslash{}\+Mailer 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_aed2232c8820fc10d1e4d891545180d6c}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!purge@{purge}}
+\index{purge@{purge}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{purge()}{purge()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_aed2232c8820fc10d1e4d891545180d6c} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::purge (\begin{DoxyParamCaption}\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Disconnect the given mailer and remove from local cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_ad7d42f5395c48c3ee09bbc48fa28d285}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!resolve@{resolve}}
+\index{resolve@{resolve}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_ad7d42f5395c48c3ee09bbc48fa28d285} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::resolve (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolve the given mailer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a2bac49d456738240478edd03653fecbe}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!setApplication@{setApplication}}
+\index{setApplication@{setApplication}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{setApplication()}{setApplication()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a2bac49d456738240478edd03653fecbe} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::set\+Application (\begin{DoxyParamCaption}\item[{}]{\$app}{}\end{DoxyParamCaption})}
+
+Set the application instance used by the manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Foundation\textbackslash{}\+Application & {\em \$app} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a3692248bf5861e40c50818bb4ec26a92}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!setDefaultDriver@{setDefaultDriver}}
+\index{setDefaultDriver@{setDefaultDriver}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{setDefaultDriver()}{setDefaultDriver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a3692248bf5861e40c50818bb4ec26a92} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::set\+Default\+Driver (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Set the default mail driver name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mail_manager_a018f7d2e5962375ac0b161b882503016}\index{Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}!setGlobalAddress@{setGlobalAddress}}
+\index{setGlobalAddress@{setGlobalAddress}!Illuminate\textbackslash{}Mail\textbackslash{}MailManager@{Illuminate\textbackslash{}Mail\textbackslash{}MailManager}}
+\doxysubsubsection{\texorpdfstring{setGlobalAddress()}{setGlobalAddress()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mail_manager_a018f7d2e5962375ac0b161b882503016} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mail\+Manager\+::set\+Global\+Address (\begin{DoxyParamCaption}\item[{}]{\$mailer}{, }\item[{array}]{\$config}{, }\item[{string}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set a global address on the mailer by type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer & {\em \$mailer} & \\
+\hline
+array & {\em \$config} & \\
+\hline
+string & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Mail/Mail\+Manager.\+php\end{DoxyCompactItemize}

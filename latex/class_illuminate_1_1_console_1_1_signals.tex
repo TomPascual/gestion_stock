@@ -1,0 +1,168 @@
+\doxysection{Illuminate\textbackslash{}Console\textbackslash{}Signals Class Reference}
+\hypertarget{class_illuminate_1_1_console_1_1_signals}{}\label{class_illuminate_1_1_console_1_1_signals}\index{Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_signals_a6fa45a17377ec9f22234187b19c559ad}{\+\_\+\+\_\+construct}} (\$registry)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_signals_a79df547f19df6974c77d8d9c973c5fa1}{register}} (\$signal, \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_signals_abbfda8bfb810ded2f9b0cb17d82a544b}{unregister}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_console_1_1_signals_a36ba4135d3a35efc3da44356b35f8510}{when\+Available}} (\$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_console_1_1_signals_a55e34c59de3a58c2cca5e7a2c92899bc}{resolve\+Availability\+Using}} (\$resolver)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_signals_af5890bbb6000ffd13d41abb912453525}{initialize\+Signal}} (\$signal)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_signals_a2f6b58f677f4ce6d974ba8598ea8e824}{get\+Handlers}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_signals_a752d2cdffd60c14bd7c4dca64c3ea52d}{set\+Handlers}} (\$handlers)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_console_1_1_signals_a7b7a3041276378683702e1545cbd7a35}\label{class_illuminate_1_1_console_1_1_signals_a7b7a3041276378683702e1545cbd7a35} 
+{\bfseries \$registry}
+\item 
+\Hypertarget{class_illuminate_1_1_console_1_1_signals_ae87c5cd9e606f851a80204e16973ed7c}\label{class_illuminate_1_1_console_1_1_signals_ae87c5cd9e606f851a80204e16973ed7c} 
+{\bfseries \$previous\+Handlers}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_console_1_1_signals_a5a9b73c24c08de37c19e3890450c9bd0}\label{class_illuminate_1_1_console_1_1_signals_a5a9b73c24c08de37c19e3890450c9bd0} 
+static {\bfseries \$availability\+Resolver}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_console_1_1_signals_a6fa45a17377ec9f22234187b19c559ad}\index{Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_signals_a6fa45a17377ec9f22234187b19c559ad} 
+Illuminate\textbackslash{}\+Console\textbackslash{}\+Signals\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$registry}{}\end{DoxyParamCaption})}
+
+Create a new signal registrar instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Signal\+Registry\textbackslash{}\+Signal\+Registry & {\em \$registry} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_console_1_1_signals_a2f6b58f677f4ce6d974ba8598ea8e824}\index{Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}!getHandlers@{getHandlers}}
+\index{getHandlers@{getHandlers}!Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}}
+\doxysubsubsection{\texorpdfstring{getHandlers()}{getHandlers()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_signals_a2f6b58f677f4ce6d974ba8598ea8e824} 
+Illuminate\textbackslash{}\+Console\textbackslash{}\+Signals\+::get\+Handlers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the registry\textquotesingle{}s handlers.
+
+\begin{DoxyReturn}{Returns}
+array$<$int, array$<$int, callable$>$$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_signals_af5890bbb6000ffd13d41abb912453525}\index{Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}!initializeSignal@{initializeSignal}}
+\index{initializeSignal@{initializeSignal}!Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}}
+\doxysubsubsection{\texorpdfstring{initializeSignal()}{initializeSignal()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_signals_af5890bbb6000ffd13d41abb912453525} 
+Illuminate\textbackslash{}\+Console\textbackslash{}\+Signals\+::initialize\+Signal (\begin{DoxyParamCaption}\item[{}]{\$signal}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gets the signal\textquotesingle{}s existing handler in array format.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}int, callable(int \$signal)\+: void\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_signals_a79df547f19df6974c77d8d9c973c5fa1}\index{Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}!register@{register}}
+\index{register@{register}!Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_signals_a79df547f19df6974c77d8d9c973c5fa1} 
+Illuminate\textbackslash{}\+Console\textbackslash{}\+Signals\+::register (\begin{DoxyParamCaption}\item[{}]{\$signal}{, }\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a new signal handler.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$signal} & \\
+\hline
+ & {\em callable(int} & \$signal)\+: void \$callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_signals_a55e34c59de3a58c2cca5e7a2c92899bc}\index{Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}!resolveAvailabilityUsing@{resolveAvailabilityUsing}}
+\index{resolveAvailabilityUsing@{resolveAvailabilityUsing}!Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}}
+\doxysubsubsection{\texorpdfstring{resolveAvailabilityUsing()}{resolveAvailabilityUsing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_signals_a55e34c59de3a58c2cca5e7a2c92899bc} 
+static Illuminate\textbackslash{}\+Console\textbackslash{}\+Signals\+::resolve\+Availability\+Using (\begin{DoxyParamCaption}\item[{}]{\$resolver}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Set the availability resolver.
+
+
+\begin{DoxyParams}{Parameters}
+{\em (callable()} & bool) \$resolver \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_signals_a752d2cdffd60c14bd7c4dca64c3ea52d}\index{Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}!setHandlers@{setHandlers}}
+\index{setHandlers@{setHandlers}!Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}}
+\doxysubsubsection{\texorpdfstring{setHandlers()}{setHandlers()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_signals_a752d2cdffd60c14bd7c4dca64c3ea52d} 
+Illuminate\textbackslash{}\+Console\textbackslash{}\+Signals\+::set\+Handlers (\begin{DoxyParamCaption}\item[{}]{\$handlers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set the registry\textquotesingle{}s handlers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,array$<$int,callable(int} & \$signal)\+:void\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} \$handlers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_signals_abbfda8bfb810ded2f9b0cb17d82a544b}\index{Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}!unregister@{unregister}}
+\index{unregister@{unregister}!Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}}
+\doxysubsubsection{\texorpdfstring{unregister()}{unregister()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_signals_abbfda8bfb810ded2f9b0cb17d82a544b} 
+Illuminate\textbackslash{}\+Console\textbackslash{}\+Signals\+::unregister (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Unregister the current signal handlers.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_signals_a36ba4135d3a35efc3da44356b35f8510}\index{Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}!whenAvailable@{whenAvailable}}
+\index{whenAvailable@{whenAvailable}!Illuminate\textbackslash{}Console\textbackslash{}Signals@{Illuminate\textbackslash{}Console\textbackslash{}Signals}}
+\doxysubsubsection{\texorpdfstring{whenAvailable()}{whenAvailable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_signals_a36ba4135d3a35efc3da44356b35f8510} 
+static Illuminate\textbackslash{}\+Console\textbackslash{}\+Signals\+::when\+Available (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Execute the given callback if "{}signals"{} should be used and are available.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Console/Signals.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,151 @@
+\doxysection{Illuminate\textbackslash{}Cache\textbackslash{}Dynamo\+Db\+Lock Class Reference}
+\hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_lock}{}\label{class_illuminate_1_1_cache_1_1_dynamo_db_lock}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock}}
+Inheritance diagram for Illuminate\textbackslash{}Cache\textbackslash{}Dynamo\+Db\+Lock\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_cache_1_1_dynamo_db_lock}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_lock_a81a4938b46416d645b9942e03f8c3410}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store}{Dynamo\+Db\+Store}} \$dynamo, \$name, \$seconds, \$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_lock_acd8b5918ac61a4935848eae03b22f47d}{acquire}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_lock_acf16ec502985cda14e83d2f5ea283afb}{release}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_lock_a53311ae8ddfd33fa260da5dd01b3fc05}{force\+Release}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a5a673e886da30fb119a806d893714e28}{\+\_\+\+\_\+construct}} (\$name, \$seconds, \$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_adbb7043056ffa08ae70ac55a99aee0fc}{get}} (\$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_aed6219de240abd5f817b91e9f9d695ee}{block}} (\$seconds, \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a78af018332d21c9300867728619ee758}{is\+Owned\+By\+Current\+Process}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a5246eab1e8daf252b65fde2a261ba759}{is\+Owned\+By}} (\$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a0e0b2dc71964911fb5e1dc2be72c6980}{between\+Blocked\+Attempts\+Sleep\+For}} (\$milliseconds)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_lock_a809442c4a939ef03716b5a4b18f2fcb9}{get\+Current\+Owner}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_lock_aca08e6e354a0c6e13029b1438f6070ae}\label{class_illuminate_1_1_cache_1_1_dynamo_db_lock_aca08e6e354a0c6e13029b1438f6070ae} 
+{\bfseries \$dynamo}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$name}
+\item 
+{\bfseries \$seconds}
+\item 
+{\bfseries \$owner}
+\item 
+{\bfseries \$sleep\+Milliseconds} = 250
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_lock_a81a4938b46416d645b9942e03f8c3410}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_lock_a81a4938b46416d645b9942e03f8c3410} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Lock\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store}{Dynamo\+Db\+Store}}}]{\$dynamo}{, }\item[{}]{\$name}{, }\item[{}]{\$seconds}{, }\item[{}]{\$owner}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new lock instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store & {\em \$dynamo} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+string | null & {\em \$owner} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_lock_acd8b5918ac61a4935848eae03b22f47d}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock}!acquire@{acquire}}
+\index{acquire@{acquire}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock}}
+\doxysubsubsection{\texorpdfstring{acquire()}{acquire()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_lock_acd8b5918ac61a4935848eae03b22f47d} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Lock\+::acquire (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Attempt to acquire the lock.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a3e02d90803c0e5e6b7bdf4fc17ea8857}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_lock_a53311ae8ddfd33fa260da5dd01b3fc05}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock}!forceRelease@{forceRelease}}
+\index{forceRelease@{forceRelease}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock}}
+\doxysubsubsection{\texorpdfstring{forceRelease()}{forceRelease()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_lock_a53311ae8ddfd33fa260da5dd01b3fc05} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Lock\+::force\+Release (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Release this lock in disregard of ownership.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_aebc99079ee6e82c29cc0e35460a95c85}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_lock_a809442c4a939ef03716b5a4b18f2fcb9}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock}!getCurrentOwner@{getCurrentOwner}}
+\index{getCurrentOwner@{getCurrentOwner}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock}}
+\doxysubsubsection{\texorpdfstring{getCurrentOwner()}{getCurrentOwner()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_lock_a809442c4a939ef03716b5a4b18f2fcb9} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Lock\+::get\+Current\+Owner (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the owner value written into the driver for this lock.
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a334cff7e658bcc2ede6d9fb0e27d252b}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_dynamo_db_lock_acf16ec502985cda14e83d2f5ea283afb}\index{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock}!release@{release}}
+\index{release@{release}!Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock@{Illuminate\textbackslash{}Cache\textbackslash{}DynamoDbLock}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_dynamo_db_lock_acf16ec502985cda14e83d2f5ea283afb} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Lock\+::release (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Release the lock.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a6b0d063e5c735c23e9a56aa18b6b7d88}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Cache/Dynamo\+Db\+Lock.\+php\end{DoxyCompactItemize}

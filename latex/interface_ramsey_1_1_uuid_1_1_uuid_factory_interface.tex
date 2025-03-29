@@ -1,0 +1,269 @@
+\doxysection{Ramsey\textbackslash{}Uuid\textbackslash{}Uuid\+Factory\+Interface Interface Reference}
+\hypertarget{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface}{}\label{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface}\index{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}}
+Inheritance diagram for Ramsey\textbackslash{}Uuid\textbackslash{}Uuid\+Factory\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a56c88f3b8795c7a12461d60d31fe37a9}{from\+Bytes}} (string \$bytes)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a4f02a348a7f98c7817f4ef55485af87c}{from\+Date\+Time}} (Date\+Time\+Interface \$date\+Time, ?\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_type_1_1_hexadecimal}{Hexadecimal}} \$node=null, ?int \$clock\+Seq=null)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a8a31da1d2a5aa3fb130951b01b471805}{from\+Integer}} (string \$integer)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a3f81af63eddc10f53d80cc637b906378}{from\+String}} (string \$uuid)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_ac957fe6e20f4074de0be461e74e4f082}{get\+Validator}} ()
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a4f5808e3f551e5c6deabe84a9e279d16}{uuid1}} (\$node=null, ?int \$clock\+Seq=null)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a5e1f1e456e3c847a9c3cb0e55163fc3d}{uuid2}} (int \$local\+Domain, ?Integer\+Object \$local\+Identifier=null, ?\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_type_1_1_hexadecimal}{Hexadecimal}} \$node=null, ?int \$clock\+Seq=null)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_ab2adff3941f5ec9076e52412ab09fa51}{uuid3}} (\$ns, string \$name)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a5ae1b6ed462384b8d9413d1e39c10c12}{uuid4}} ()
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a571b8d09a6cbb836900b84fcf5da4db8}{uuid5}} (\$ns, string \$name)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a85841c400443aaaa5324ba26504e24e1}{uuid6}} (?\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_type_1_1_hexadecimal}{Hexadecimal}} \$node=null, ?int \$clock\+Seq=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Uuid\+Factory\+Interface defines common functionality all {\ttfamily Uuid\+Factory} instances must implement 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a56c88f3b8795c7a12461d60d31fe37a9}\index{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}!fromBytes@{fromBytes}}
+\index{fromBytes@{fromBytes}!Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{fromBytes()}{fromBytes()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a56c88f3b8795c7a12461d60d31fe37a9} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory\+Interface\+::from\+Bytes (\begin{DoxyParamCaption}\item[{string}]{\$bytes}{}\end{DoxyParamCaption})}
+
+Creates a UUID from a byte string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$bytes} & A binary string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uuid\+Interface A Uuid\+Interface instance created from a binary string representation
+\end{DoxyReturn}
+@psalm-\/pure 
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_uuid_factory_ae9c5e7507fb9b864f047347218168c30}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a4f02a348a7f98c7817f4ef55485af87c}\index{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}!fromDateTime@{fromDateTime}}
+\index{fromDateTime@{fromDateTime}!Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{fromDateTime()}{fromDateTime()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a4f02a348a7f98c7817f4ef55485af87c} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory\+Interface\+::from\+Date\+Time (\begin{DoxyParamCaption}\item[{Date\+Time\+Interface}]{\$date\+Time}{, }\item[{?\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_type_1_1_hexadecimal}{Hexadecimal}}}]{\$node}{ = {\ttfamily null}, }\item[{?int}]{\$clock\+Seq}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Creates a UUID from a Date\+Time\+Interface instance
+
+
+\begin{DoxyParams}[1]{Parameters}
+Date\+Time\+Interface & {\em \$date\+Time} & The date and time \\
+\hline
+Hexadecimal | null & {\em \$node} & A 48-\/bit number representing the hardware address \\
+\hline
+int | null & {\em \$clock\+Seq} & A 14-\/bit number used to help avoid duplicates that could arise when the clock is set backwards in time or if the node ID changes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uuid\+Interface A Uuid\+Interface instance that represents a version 1 UUID created from a Date\+Time\+Interface instance 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_uuid_factory_ab09cd3754bb0dddaa98ae0f297e84d5f}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a8a31da1d2a5aa3fb130951b01b471805}\index{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}!fromInteger@{fromInteger}}
+\index{fromInteger@{fromInteger}!Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{fromInteger()}{fromInteger()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a8a31da1d2a5aa3fb130951b01b471805} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory\+Interface\+::from\+Integer (\begin{DoxyParamCaption}\item[{string}]{\$integer}{}\end{DoxyParamCaption})}
+
+Creates a UUID from a 128-\/bit integer string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$integer} & String representation of 128-\/bit integer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uuid\+Interface A Uuid\+Interface instance created from the string representation of a 128-\/bit integer
+\end{DoxyReturn}
+@psalm-\/pure 
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_uuid_factory_abc7547a4c4c6f349592bfda1592153f0}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a3f81af63eddc10f53d80cc637b906378}\index{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}!fromString@{fromString}}
+\index{fromString@{fromString}!Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{fromString()}{fromString()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a3f81af63eddc10f53d80cc637b906378} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory\+Interface\+::from\+String (\begin{DoxyParamCaption}\item[{string}]{\$uuid}{}\end{DoxyParamCaption})}
+
+Creates a UUID from the string standard representation
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uuid} & A hexadecimal string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uuid\+Interface A Uuid\+Interface instance created from a hexadecimal string representation
+\end{DoxyReturn}
+@psalm-\/pure 
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_uuid_factory_aaae9a43701b43c31d110453d0bfc4c72}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_ac957fe6e20f4074de0be461e74e4f082}\index{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}!getValidator@{getValidator}}
+\index{getValidator@{getValidator}!Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{getValidator()}{getValidator()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_ac957fe6e20f4074de0be461e74e4f082} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory\+Interface\+::get\+Validator (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the validator to use for the factory
+
+@psalm-\/mutation-\/free 
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_uuid_factory_ad448df1a60cb07c024ac28657b29a018}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a4f5808e3f551e5c6deabe84a9e279d16}\index{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}!uuid1@{uuid1}}
+\index{uuid1@{uuid1}!Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{uuid1()}{uuid1()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a4f5808e3f551e5c6deabe84a9e279d16} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory\+Interface\+::uuid1 (\begin{DoxyParamCaption}\item[{}]{\$node}{ = {\ttfamily null}, }\item[{?int}]{\$clock\+Seq}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns a version 1 (Gregorian time) UUID from a host ID, sequence number, and the current time
+
+
+\begin{DoxyParams}[1]{Parameters}
+Hexadecimal | int | string | null & {\em \$node} & A 48-\/bit number representing the hardware address; this number may be represented as an integer or a hexadecimal string \\
+\hline
+int | null & {\em \$clock\+Seq} & A 14-\/bit number used to help avoid duplicates that could arise when the clock is set backwards in time or if the node ID changes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uuid\+Interface A Uuid\+Interface instance that represents a version 1 UUID 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_uuid_factory_adf6fdee512491638ac7428e53af42f5d}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a5e1f1e456e3c847a9c3cb0e55163fc3d}\index{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}!uuid2@{uuid2}}
+\index{uuid2@{uuid2}!Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{uuid2()}{uuid2()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a5e1f1e456e3c847a9c3cb0e55163fc3d} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory\+Interface\+::uuid2 (\begin{DoxyParamCaption}\item[{int}]{\$local\+Domain}{, }\item[{?Integer\+Object}]{\$local\+Identifier}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_type_1_1_hexadecimal}{Hexadecimal}}}]{\$node}{ = {\ttfamily null}, }\item[{?int}]{\$clock\+Seq}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns a version 2 (DCE Security) UUID from a local domain, local identifier, host ID, clock sequence, and the current time
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$local\+Domain} & The local domain to use when generating bytes, according to DCE Security \\
+\hline
+Integer\+Object | null & {\em \$local\+Identifier} & The local identifier for the given domain; this may be a UID or GID on POSIX systems, if the local domain is person or group, or it may be a site-\/defined identifier if the local domain is org \\
+\hline
+Hexadecimal | null & {\em \$node} & A 48-\/bit number representing the hardware address \\
+\hline
+int | null & {\em \$clock\+Seq} & A 14-\/bit number used to help avoid duplicates that could arise when the clock is set backwards in time or if the node ID changes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uuid\+Interface A Uuid\+Interface instance that represents a version 2 UUID 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_uuid_factory_a31a89f0b9dc146b34cc207d61602619e}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_ab2adff3941f5ec9076e52412ab09fa51}\index{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}!uuid3@{uuid3}}
+\index{uuid3@{uuid3}!Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{uuid3()}{uuid3()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_ab2adff3941f5ec9076e52412ab09fa51} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory\+Interface\+::uuid3 (\begin{DoxyParamCaption}\item[{}]{\$ns}{, }\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Returns a version 3 (name-\/based) UUID based on the MD5 hash of a namespace ID and a name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Uuid\+Interface & {\em \$ns} & The namespace (must be a valid UUID) \\
+\hline
+string & {\em \$name} & The name to use for creating a UUID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uuid\+Interface A Uuid\+Interface instance that represents a version 3 UUID
+\end{DoxyReturn}
+@psalm-\/pure 
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_uuid_factory_a4df75c6b4b6415a8b2f4ac6594156e4a}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a5ae1b6ed462384b8d9413d1e39c10c12}\index{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}!uuid4@{uuid4}}
+\index{uuid4@{uuid4}!Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{uuid4()}{uuid4()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a5ae1b6ed462384b8d9413d1e39c10c12} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory\+Interface\+::uuid4 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a version 4 (random) UUID
+
+\begin{DoxyReturn}{Returns}
+Uuid\+Interface A Uuid\+Interface instance that represents a version 4 UUID 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_uuid_factory_a626ec3d78f14f2a9467cf1f5b3618129}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a571b8d09a6cbb836900b84fcf5da4db8}\index{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}!uuid5@{uuid5}}
+\index{uuid5@{uuid5}!Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{uuid5()}{uuid5()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a571b8d09a6cbb836900b84fcf5da4db8} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory\+Interface\+::uuid5 (\begin{DoxyParamCaption}\item[{}]{\$ns}{, }\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Returns a version 5 (name-\/based) UUID based on the SHA-\/1 hash of a namespace ID and a name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Uuid\+Interface & {\em \$ns} & The namespace (must be a valid UUID) \\
+\hline
+string & {\em \$name} & The name to use for creating a UUID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uuid\+Interface A Uuid\+Interface instance that represents a version 5 UUID
+\end{DoxyReturn}
+@psalm-\/pure 
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_uuid_factory_ab78d6c6d630f0849e83c878fb815919e}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a85841c400443aaaa5324ba26504e24e1}\index{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}!uuid6@{uuid6}}
+\index{uuid6@{uuid6}!Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}UuidFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{uuid6()}{uuid6()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_uuid_factory_interface_a85841c400443aaaa5324ba26504e24e1} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory\+Interface\+::uuid6 (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_type_1_1_hexadecimal}{Hexadecimal}}}]{\$node}{ = {\ttfamily null}, }\item[{?int}]{\$clock\+Seq}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns a version 6 (reordered time) UUID from a host ID, sequence number, and the current time
+
+
+\begin{DoxyParams}[1]{Parameters}
+Hexadecimal | null & {\em \$node} & A 48-\/bit number representing the hardware address \\
+\hline
+int | null & {\em \$clock\+Seq} & A 14-\/bit number used to help avoid duplicates that could arise when the clock is set backwards in time or if the node ID changes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uuid\+Interface A Uuid\+Interface instance that represents a version 6 UUID 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_uuid_factory_a6f0ba3de66dfbf97ade1c05b1988dd9a}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Uuid\+Factory}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/ramsey/uuid/src/Uuid\+Factory\+Interface.\+php\end{DoxyCompactItemize}

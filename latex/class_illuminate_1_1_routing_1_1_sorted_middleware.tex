@@ -1,0 +1,493 @@
+\doxysection{Illuminate\textbackslash{}Routing\textbackslash{}Sorted\+Middleware Class Reference}
+\hypertarget{class_illuminate_1_1_routing_1_1_sorted_middleware}{}\label{class_illuminate_1_1_routing_1_1_sorted_middleware}\index{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware@{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware}}
+Inheritance diagram for Illuminate\textbackslash{}Routing\textbackslash{}Sorted\+Middleware\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.750670cm]{class_illuminate_1_1_routing_1_1_sorted_middleware}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_sorted_middleware_a5980735cc3b33e87dda0c8f8f57a2b1a}{\+\_\+\+\_\+construct}} (array \$priority\+Map, \$middlewares)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aa0804c9136d1a58225e18e5dd910c22b}{\+\_\+\+\_\+construct}} (\$items=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a3fcded86dff36a1f870e89e0b317a4b6}{all}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a39ebed7defc5d5fcde05223e30db921e}{lazy}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_ada1f192b316d73c87f06661efb870e61}{median}} (\$key=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_ac2bafedac537fa7c7ff0d73416eb111f}{mode}} (\$key=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a0f253f04e76201fd8c4e6c9173fc10ea}{collapse}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_af4171bafaf76489e21469abd1269fd2f}{collapse\+With\+Keys}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aa25e60d8d269997979d63f65543810bf}{contains}} (\$key, \$operator=null, \$value=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a8f3335ec35fca4116b8bebba6893c2d1}{contains\+Strict}} (\$key, \$value=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a1cc468e29d3a808b9ca244c0748cd63b}{doesnt\+Contain}} (\$key, \$operator=null, \$value=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a60b865026fc58cd547ec5fd489698f2e}{cross\+Join}} (... \$lists)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a5fac2dc6c038337046ae32ada66f5e9c}{diff}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_ac363694a502ef583ac2ac4d6a1f3f07e}{diff\+Using}} (\$items, callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_ad65a9dc100c70b3734c3add3c54f1011}{diff\+Assoc}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_ab32b515a7f8e901f0a172376d82491ba}{diff\+Assoc\+Using}} (\$items, callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aa8b69ca1219733f317ce839cdaeba578}{diff\+Keys}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a2e452f328b9e29b8cea4109eb8ae894a}{diff\+Keys\+Using}} (\$items, callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aabacd3d988c150662b4bb61cdf7e6f5b}{duplicates}} (\$callback=null, \$strict=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a565fce2f78e71b52a46894fc91688dc0}{duplicates\+Strict}} (\$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a9013434f02b42e2844b7ddb78bcbacc4}{except}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a47dd52c601a98e70965c7b680801c4d2}{keys}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a7d7b3098d03db950b3a496b962d5a419}{filter}} (?callable \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a460686322cccecfe0b4284e1d57c6859}{first}} (?callable \$callback=null, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a13fe8994328f42a15f84f43da930ffb8}{flatten}} (\$depth=INF)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_ac35cfabf32aa8b9edfb45e048360bd6f}{flip}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a3167cb2fd3b4a3bf752934e9b8f8894a}{forget}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a47dd52c601a98e70965c7b680801c4d2}{keys}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_af4fea8a855a8ccc9e41e86716ee79c54}{get}} (\$key, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a8ac59f34863b00ed9d64e36c0d42bf96}{get\+Or\+Put}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_ae3721528fcb8ad2cac7194bdefffddac}{group\+By}} (\$group\+By, \$preserve\+Keys=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_af5b3e7406eecc4e492c30849aa077ac2}{key\+By}} (\$key\+By)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a15e239a51f1060b7a9f5a9b435a7c64f}{has}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_af598120000ab6d0107a8ad463a4cde16}{has\+Any}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_af0148897ab6096e0b44a08d3792dea86}{implode}} (\$value, \$glue=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_ae457b36bfffccf8843e5ffeadec04392}{intersect}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a0ead58e07be7bbf194ddae2a4fe46ca9}{intersect\+Using}} (\$items, callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aeffb1282fcabf82ba6159ac9a010b79a}{intersect\+Assoc}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a8accd77a1e41c643e686cb537dd55416}{intersect\+Assoc\+Using}} (\$items, callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aaf25eb2541d72d2dcce9859562cb20a0}{intersect\+By\+Keys}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_ae7a9e75c9cd250adbad97a6b77326e25}{is\+Empty}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_ad8874e81ecaefc5d7dd7155dbeca37f8}{contains\+One\+Item}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aeb6ecc5649eb82e0ebf6022486685950}{join}} (\$glue, \$final\+Glue=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a47dd52c601a98e70965c7b680801c4d2}{keys}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a1d026e9d81a497a3fe3df4d7fca17a4a}{last}} (?callable \$callback=null, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aafc3bd623f8d3ee44d536ab88899658b}{pluck}} (\$value, \$key=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a5aca7772e89108cd71f898617a7eeca0}{map}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a5dcea7b9d57b527fdb79b065526be5fe}{map\+To\+Dictionary}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_af17bd74f8e3595d34a9be008c5f6e2a2}{map\+With\+Keys}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_adaebe1da77f4de901f5e4e5991e8d09c}{merge}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a6077b21cbec1cf657056f535f4230617}{merge\+Recursive}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a817e6b64f6ce7abfbbff2343e1054770}{multiply}} (int \$multiplier)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_ad0f8cd6e533367ca540cc85e657c9bc6}{combine}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a68a320af471ee47b423b779e94900b27}{values}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_acaad35ba0da70d020829a50cea1886ce}{union}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a495333eba77b8c6a16606f1baa7ce285}{nth}} (\$step, \$offset=0)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a30e6522a53cd8afd965a4a4c103b00c0}{only}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a47dd52c601a98e70965c7b680801c4d2}{keys}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aebe916d33536cc4071788628222ad0b5}{select}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a47dd52c601a98e70965c7b680801c4d2}{keys}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a4d360c2de68ff30dc92e887d5fdb52b1}{pop}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aef9945549d7cb6ee9fcbb1fb1d666bea}{count}}=1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_adef1dedb60a65bb8a03252020c4fc8d0}{prepend}} (\$value, \$key=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a6c33d85ad7ffda651d22d825fe1a786b}{push}} (... \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a68a320af471ee47b423b779e94900b27}{values}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a386beccea899d784535f9d71eacfae7d}{unshift}} (... \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a68a320af471ee47b423b779e94900b27}{values}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a05afc26a7e08de77f3f172a968fe2f61}{concat}} (\$source)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a99b08c40c5bb240fbef7ebd594b5cffc}{pull}} (\$key, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a7e8057e680e61845e1fa4cb0b0cc0981}{put}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a862978ee93086b25f56088923a106157}{random}} (\$number=null, \$preserve\+Keys=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a377bdf553b5a795211fdbbbb2e8e5c81}{replace}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aa36afd70047d0dd4c16e107293c32561}{replace\+Recursive}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_afc4c7d147fc332d199a2133c14c37d54}{reverse}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a838937c6ba73bfeb3e0a5243da1e6907}{search}} (\$value, \$strict=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a3b0256a0c01736dfd0a9f12b150f0a11}{before}} (\$value, \$strict=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a47fed3d184e645d3982ba5cd0d091d35}{after}} (\$value, \$strict=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a09bbfc8282a63a4f68eb3879292457b5}{shift}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aef9945549d7cb6ee9fcbb1fb1d666bea}{count}}=1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a5ef3e3dac6f21608c3d024d5c853f56d}{shuffle}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_ae8c4a2254b121a9f47fc4d9c4451316b}{sliding}} (\$size=2, \$step=1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a19cb5c7c79fb9065e347f94c43a3f844}{skip}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aef9945549d7cb6ee9fcbb1fb1d666bea}{count}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aa39188501c886bcc8b5a922fd4dcda18}{skip\+Until}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a0b5e35fb0de102015eb47796cce33bd7}{skip\+While}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aa0c9bc51c89fd70d14a69e446edef4b6}{slice}} (\$offset, \$length=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_acfd8fd4440d65ad9411bb20fcd2c16e1}{split}} (\$number\+Of\+Groups)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aa631df769e1bb19fdbc0c0ae4f52ef89}{split\+In}} (\$number\+Of\+Groups)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_ac5ed8bd08087ab654806bc1e21851c1a}{sole}} (\$key=null, \$operator=null, \$value=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a53161cfe5e9c7c3d3ffa8c37d8b97107}{first\+Or\+Fail}} (\$key=null, \$operator=null, \$value=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_afc6e284c61af3218dc693fbb4f8d3c95}{chunk}} (\$size)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a0ac8e0b40b0ff43549dc886f948d87e8}{chunk\+While}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_ad036417ff033033f4d0c9799fe1d6024}{sort}} (\$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a320bfe24073dc1bbf3384a0d39412181}{sort\+Desc}} (\$options=SORT\+\_\+\+REGULAR)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aa7f61e0eb89abf975b4f7094479e7b4c}{sort\+By}} (\$callback, \$options=SORT\+\_\+\+REGULAR, \$descending=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a32f42042954a3edd2745b967d01a4533}{sort\+By\+Desc}} (\$callback, \$options=SORT\+\_\+\+REGULAR)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_acd300ca0aefa0b37026096e73ba61271}{sort\+Keys}} (\$options=SORT\+\_\+\+REGULAR, \$descending=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a6041220802f0c3e40468134ef7571f7d}{sort\+Keys\+Desc}} (\$options=SORT\+\_\+\+REGULAR)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_ad85d0cbc2d0a1d5ed531bbfe275903e2}{sort\+Keys\+Using}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aa478803f2c42b2db9ca31807c18d1227}{splice}} (\$offset, \$length=null, \$replacement=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a76e4af5ee59a1903f55a2b1c54a6009b}{take}} (\$limit)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aebf086d7e0c92e2cef1ce65fcb88cdd6}{take\+Until}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a211a0a6525c9010540f0aa847716f43f}{take\+While}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a45f432693c33e7c83accef17061c7b52}{transform}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a907e307a98b0506a22c5433082696267}{dot}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a6f42ce8a3a63aba881fe13e6eb6c4fff}{undot}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a22bc6ee066bb7b9bdf3d9b13715b8e2b}{unique}} (\$key=null, \$strict=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a68a320af471ee47b423b779e94900b27}{values}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a30ca68a4b3f1574e0dc5477b9957b1f6}{zip}} (\$items)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aa0db5303cc26f83f3200db38ea9099ed}{pad}} (\$size, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a9172e37c67a9a8abbe5d3c7016e32231}{get\+Iterator}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_aef9945549d7cb6ee9fcbb1fb1d666bea}{count}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a1a868e36c5b6efc3b9857dd6f2a995d5}{count\+By}} (\$count\+By=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_af4509d0a89cd66083e652cb0f2c5c9c1}{add}} (\$item)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_abada36158ee2fdafa88db650e0b23f56}{to\+Base}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a1c9b3f520c91f4d26f281c2539c306eb}{offset\+Exists}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a3090b09d0c72fe7a118f10248ce67083}{offset\+Get}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_af12c08ecbb06be74d05603b2e802bb8e}{offset\+Set}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a1ad145e771c808f6b9acd18e4d2c332d}{offset\+Unset}} (\$key)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_support_1_1_can_be_escaped_when_cast_to_string}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Support\textbackslash{}\+Can\+Be\+Escaped\+When\+Cast\+To\+String}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_support_1_1_can_be_escaped_when_cast_to_string_a864f86fe6ce59dec249be058f32cd3fc}{escape\+When\+Casting\+To\+String}} (\$escape=true)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Enumerable}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a9ebb3dbdb167516b106fcf508467303f}{average}} (\$callback=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a247f524ad8ffaf247cb66768ed512017}{some}} (\$key, \$operator=null, \$value=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_ae6bd4a4abba3c20b44b6200ac37f0f2d}{avg}} (\$callback=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a6e8bca8d9f932655ad1e6dd0ad7d3848}{dd}} (... \$args)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a332dcc51f647899d0734872014311e75}{dump}} (... \$args)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a487b7d3435de6d7e15370ff8aab09286}{each}} (callable \$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_af98bbaa75815398a8cfe6c2954c63b62}{each\+Spread}} (callable \$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a678a69d772d44c59164b15332343f6ea}{every}} (\$key, \$operator=null, \$value=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a3a99a03ebbd48009450b7a9fee4f4366}{when}} (\$value, ?callable \$callback=null, ?callable \$default=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_aa80b03986466e591a185536651e8f9aa}{when\+Empty}} (callable \$callback, ?callable \$default=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a6c94eb33bd8d283db1855aaae5a09507}{when\+Not\+Empty}} (callable \$callback, ?callable \$default=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_aed4f9b278ba7dcfd4bbb0a9926e7e14a}{unless}} (\$value, callable \$callback, ?callable \$default=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_ad03eeb5d964d9c85e366a7e854f42722}{unless\+Empty}} (callable \$callback, ?callable \$default=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a3f304362f7b1ebeeccf46e480d41733b}{unless\+Not\+Empty}} (callable \$callback, ?callable \$default=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a62362989a3d13fb8d3f233d22493ec7e}{where}} (\$key, \$operator=null, \$value=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_ac01a9a1576777ea5710b92a80ae37bd4}{where\+Null}} (\$key=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_aee6a345cbc74fe7db467344cce43d131}{where\+Not\+Null}} (\$key=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a4114a7ff2c62994c110f35fe56d98336}{where\+Strict}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_ad27cb2c71c6a22ec62fbff19de59bdea}{where\+In}} (\$key, \$\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a560db1b3a7cbc00e98e1ffc647671cdf}{values}}, \$strict=false)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a191552b1ef83c7146a60302240742826}{where\+In\+Strict}} (\$key, \$\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a560db1b3a7cbc00e98e1ffc647671cdf}{values}})
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_ac48d872135fbf7ef3838801655a9727f}{where\+Between}} (\$key, \$\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a560db1b3a7cbc00e98e1ffc647671cdf}{values}})
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a41930e9b3c4842c517421b62a1b187e8}{where\+Not\+Between}} (\$key, \$\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a560db1b3a7cbc00e98e1ffc647671cdf}{values}})
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a7e4ac664e841681b7ee76a333e558baf}{where\+Not\+In}} (\$key, \$\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a560db1b3a7cbc00e98e1ffc647671cdf}{values}}, \$strict=false)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_ac412eccd12fcae8d03dbd0fcaf234c29}{where\+Not\+In\+Strict}} (\$key, \$\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a560db1b3a7cbc00e98e1ffc647671cdf}{values}})
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a91587c9773c29eb6a7010f5e0cdeaaeb}{where\+Instance\+Of}} (\$type)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a64ae99ca5f3c32163c9f897b5d9917d5}{first\+Where}} (\$key, \$operator=null, \$value=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_ac1136a4a5bfd761cf236e91fb2bd2777}{is\+Not\+Empty}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a28a77dec2436b100b6048c4fd15e7062}{map\+Spread}} (callable \$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a12620fefae96355b2827e20f62d4feee}{map\+To\+Groups}} (callable \$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a9069c0676707fd84ddfae5dbf66a7228}{flat\+Map}} (callable \$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_aa7290abf3006bd40d4fe21136592ed99}{map\+Into}} (\$class)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a316b9d7f3451e9ffc8870d24d2c37047}{min}} (\$callback=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_aa0e5f353a4b38be79bf28a9404a0d24f}{max}} (\$callback=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_ac97d9439d31d147592978821d6589254}{for\+Page}} (\$page, \$per\+Page)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a8f348b8c2f976cf0259fa921617436ac}{partition}} (\$key, \$operator=null, \$value=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a107bb2f3c7adad80bfb925143078a8d1}{random}} (\$number=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_af1f7ffd1b7204382cef6d856164442e3}{reduce}} (callable \$callback, \$initial=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a72f2393f9efd346dd6e1a815faea21a9}{reduce\+Spread}} (callable \$callback,... \$initial)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a4f53f5fb48230c15fd0fefc2c9151af7}{sum}} (\$callback=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_ab0f5c0c37233eea3b39231f57a50b6af}{tap}} (callable \$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_ab031328cc39dd761152ed8ba935036b2}{pipe}} (callable \$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a5ca308128716833a591392c902f332f0}{pipe\+Into}} (\$class)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_aaeaa884c797b83ebdc32749beae738c6}{pipe\+Through}} (\$pipes)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a4efb50993d57cdb97f1a0f2576808d4b}{reject}} (\$callback=true)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_ab1a51ea00beb07186286ea2fbc8b0fd1}{unique\+Strict}} (\$key=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_ab99438cbe97870bdfb0820bdf2de7963}{collect}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a66378c4af1666e540b822d4e754fdd30}{to\+Array}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a8a29c4c81b0c21992c253bb337ef9444}{json\+Serialize}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a6209fb5a2c867d6d1b732234506f65d1}{to\+Json}} (\$options=0)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a1bb5c2c2ceb49c79f0bcb4389034d45e}{get\+Caching\+Iterator}} (\$flags=Caching\+Iterator\+::\+CALL\+\_\+\+TOSTRING)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_ac343ffbc19b561a34e88645fa10e41f8}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a94114518e12d6e636e0bf42cd8d13dcf}{escape\+When\+Casting\+To\+String}} (\$escape=true)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_ae852f720dcdce94f85bb3345f225a66f}{\+\_\+\+\_\+get}} (\$key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_sorted_middleware_af348016f3c51e17071870d6e122a2f51}{sort\+Middleware}} (\$priority\+Map, \$middlewares)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_sorted_middleware_aa5e5cc1059050bdfb0e6bd020c50fbe5}{priority\+Map\+Index}} (\$priority\+Map, \$middleware)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_sorted_middleware_a8ac304ae068319fb8dceb8f8866b9f3d}{middleware\+Names}} (\$middleware)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_sorted_middleware_af40c1d4628f361032b919f5c7e525013}{move\+Middleware}} (\$middlewares, \$from, \$to)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a03f30bfdb9fa520eca0e4327ead27037}{duplicate\+Comparator}} (\$strict)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a5ed4f6dca364e4e595438b38cfaf4040}{sort\+By\+Many}} (array \$comparisons=\mbox{[}$\,$\mbox{]}, int \$options=SORT\+\_\+\+REGULAR)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection_a7ec744e1e9b446db5e07c36a5c2fac73}{range}} (\$from, \$to)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Enumerable}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a452b2e28fc295b33e629fb34d25fdb20}{make}} (\$items=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a8e84c6386f2d484f94044eff4d3bf2bb}{times}} (\$number, ?callable \$callback=null)
+\item 
+static \mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_abecfe8829eedaa9cd42370af04716e2c}{wrap}} (\$value)
+\item 
+static \mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_abe756a4d5f23391de421da583a734302}{unwrap}} (\$value)
+\item 
+static \mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_aa32fe684988ebffe0f698e4f44afe314}{empty}} ()
+\item 
+static \mbox{\hyperlink{interface_illuminate_1_1_support_1_1_enumerable_a163facd8e5e152db29cd1920760118a8}{proxy}} (\$method)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_collection}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$items} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_routing_1_1_sorted_middleware_a5980735cc3b33e87dda0c8f8f57a2b1a}\index{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware@{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware@{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_sorted_middleware_a5980735cc3b33e87dda0c8f8f57a2b1a} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Sorted\+Middleware\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$priority\+Map}{, }\item[{}]{\$middlewares}{}\end{DoxyParamCaption})}
+
+Create a new Sorted Middleware container.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$priority\+Map} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection | array & {\em \$middlewares} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_routing_1_1_sorted_middleware_a8ac304ae068319fb8dceb8f8866b9f3d}\index{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware@{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware}!middlewareNames@{middlewareNames}}
+\index{middlewareNames@{middlewareNames}!Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware@{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware}}
+\doxysubsubsection{\texorpdfstring{middlewareNames()}{middlewareNames()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_sorted_middleware_a8ac304ae068319fb8dceb8f8866b9f3d} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Sorted\+Middleware\+::middleware\+Names (\begin{DoxyParamCaption}\item[{}]{\$middleware}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolve the middleware names to look for in the priority array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Generator 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_sorted_middleware_af40c1d4628f361032b919f5c7e525013}\index{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware@{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware}!moveMiddleware@{moveMiddleware}}
+\index{moveMiddleware@{moveMiddleware}!Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware@{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware}}
+\doxysubsubsection{\texorpdfstring{moveMiddleware()}{moveMiddleware()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_sorted_middleware_af40c1d4628f361032b919f5c7e525013} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Sorted\+Middleware\+::move\+Middleware (\begin{DoxyParamCaption}\item[{}]{\$middlewares}{, }\item[{}]{\$from}{, }\item[{}]{\$to}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Splice a middleware into a new position and remove the old entry.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$middlewares} & \\
+\hline
+int & {\em \$from} & \\
+\hline
+int & {\em \$to} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_sorted_middleware_aa5e5cc1059050bdfb0e6bd020c50fbe5}\index{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware@{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware}!priorityMapIndex@{priorityMapIndex}}
+\index{priorityMapIndex@{priorityMapIndex}!Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware@{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware}}
+\doxysubsubsection{\texorpdfstring{priorityMapIndex()}{priorityMapIndex()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_sorted_middleware_aa5e5cc1059050bdfb0e6bd020c50fbe5} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Sorted\+Middleware\+::priority\+Map\+Index (\begin{DoxyParamCaption}\item[{}]{\$priority\+Map}{, }\item[{}]{\$middleware}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Calculate the priority map index of the middleware.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$priority\+Map} & \\
+\hline
+string & {\em \$middleware} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_sorted_middleware_af348016f3c51e17071870d6e122a2f51}\index{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware@{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware}!sortMiddleware@{sortMiddleware}}
+\index{sortMiddleware@{sortMiddleware}!Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware@{Illuminate\textbackslash{}Routing\textbackslash{}SortedMiddleware}}
+\doxysubsubsection{\texorpdfstring{sortMiddleware()}{sortMiddleware()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_sorted_middleware_af348016f3c51e17071870d6e122a2f51} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Sorted\+Middleware\+::sort\+Middleware (\begin{DoxyParamCaption}\item[{}]{\$priority\+Map}{, }\item[{}]{\$middlewares}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sort the middlewares by the given priority map.
+
+Each call to this method makes one discrete middleware movement if necessary.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$priority\+Map} & \\
+\hline
+array & {\em \$middlewares} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Routing/Sorted\+Middleware.\+php\end{DoxyCompactItemize}

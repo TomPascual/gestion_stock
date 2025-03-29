@@ -1,0 +1,192 @@
+\doxysection{League\textbackslash{}Common\+Mark\textbackslash{}Environment\textbackslash{}Environment\+Builder\+Interface Interface Reference}
+\hypertarget{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface}{}\label{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface}\index{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface}}
+Inheritance diagram for League\textbackslash{}Common\+Mark\textbackslash{}Environment\textbackslash{}Environment\+Builder\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_a122e3f7352ed332602aade8b66cc4a16}{add\+Extension}} (\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_extension_1_1_extension_interface}{Extension\+Interface}} \$extension)
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_a22d27b5788d16f11bde167ddfd0aaa56}{add\+Block\+Start\+Parser}} (\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_parser_1_1_block_1_1_block_start_parser_interface}{Block\+Start\+Parser\+Interface}} \$parser, int \$priority=0)
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_add2de6030478c4c4df25541d2f3ce215}{add\+Inline\+Parser}} (\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_parser_1_1_inline_1_1_inline_parser_interface}{Inline\+Parser\+Interface}} \$parser, int \$priority=0)
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_afa7bc6940e555941565398c074782a99}{add\+Delimiter\+Processor}} (\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_delimiter_processor_interface}{Delimiter\+Processor\+Interface}} \$processor)
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_a46dfd12ed692a946b6d32d1e1d192d5e}{add\+Renderer}} (string \$node\+Class, \mbox{\hyperlink{interface_league_1_1_common_mark_1_1_renderer_1_1_node_renderer_interface}{Node\+Renderer\+Interface}} \$renderer, int \$priority=0)
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_a8c7f5e3c4c5ea606513c8b5a7251a4c5}{add\+Event\+Listener}} (string \$event\+Class, callable \$listener, int \$priority=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_league_1_1_config_1_1_configuration_provider_interface}{League\textbackslash{}\+Config\textbackslash{}\+Configuration\+Provider\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries get\+Configuration} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for building the Environment with any extensions, parsers, listeners, etc. that it may need 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_a22d27b5788d16f11bde167ddfd0aaa56}\index{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface}!addBlockStartParser@{addBlockStartParser}}
+\index{addBlockStartParser@{addBlockStartParser}!League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface}}
+\doxysubsubsection{\texorpdfstring{addBlockStartParser()}{addBlockStartParser()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_a22d27b5788d16f11bde167ddfd0aaa56} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment\+Builder\+Interface\+::add\+Block\+Start\+Parser (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_parser_1_1_block_1_1_block_start_parser_interface}{Block\+Start\+Parser\+Interface}}}]{\$parser}{, }\item[{int}]{\$priority}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Registers the given block start parser with the Environment
+
+
+\begin{DoxyParams}[1]{Parameters}
+Block\+Start\+Parser\+Interface & {\em \$parser} & Block parser instance \\
+\hline
+int & {\em \$priority} & Priority (a higher number will be executed earlier)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Already\+Initialized\+Exception} & if the Environment has already been initialized \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_common_mark_1_1_environment_1_1_environment_a93f5dd21776ef56c29ce3da8f711f645}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment}}.
+
+\Hypertarget{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_afa7bc6940e555941565398c074782a99}\index{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface}!addDelimiterProcessor@{addDelimiterProcessor}}
+\index{addDelimiterProcessor@{addDelimiterProcessor}!League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface}}
+\doxysubsubsection{\texorpdfstring{addDelimiterProcessor()}{addDelimiterProcessor()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_afa7bc6940e555941565398c074782a99} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment\+Builder\+Interface\+::add\+Delimiter\+Processor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_delimiter_1_1_processor_1_1_delimiter_processor_interface}{Delimiter\+Processor\+Interface}}}]{\$processor}{}\end{DoxyParamCaption})}
+
+Registers the given delimiter processor with the Environment
+
+
+\begin{DoxyParams}[1]{Parameters}
+Delimiter\+Processor\+Interface & {\em \$processor} & Delimiter processors instance\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Already\+Initialized\+Exception} & if the Environment has already been initialized \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_common_mark_1_1_environment_1_1_environment_a52507f3db53d82c26bd56f3f5ae605e1}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment}}.
+
+\Hypertarget{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_a8c7f5e3c4c5ea606513c8b5a7251a4c5}\index{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface}!addEventListener@{addEventListener}}
+\index{addEventListener@{addEventListener}!League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface}}
+\doxysubsubsection{\texorpdfstring{addEventListener()}{addEventListener()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_a8c7f5e3c4c5ea606513c8b5a7251a4c5} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment\+Builder\+Interface\+::add\+Event\+Listener (\begin{DoxyParamCaption}\item[{string}]{\$event\+Class}{, }\item[{callable}]{\$listener}{, }\item[{int}]{\$priority}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Registers the given event listener
+
+
+\begin{DoxyParams}[1]{Parameters}
+class-\/string & {\em \$event\+Class} & Fully-\/qualified class name of the event this listener should respond to \\
+\hline
+callable & {\em \$listener} & Listener to be executed \\
+\hline
+int & {\em \$priority} & Priority (a higher number will be executed earlier)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Already\+Initialized\+Exception} & if the Environment has already been initialized \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_common_mark_1_1_environment_1_1_environment_aae80cf7e04fd074f22803bdd73925c97}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment}}.
+
+\Hypertarget{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_a122e3f7352ed332602aade8b66cc4a16}\index{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface}!addExtension@{addExtension}}
+\index{addExtension@{addExtension}!League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface}}
+\doxysubsubsection{\texorpdfstring{addExtension()}{addExtension()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_a122e3f7352ed332602aade8b66cc4a16} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment\+Builder\+Interface\+::add\+Extension (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_extension_1_1_extension_interface}{Extension\+Interface}}}]{\$extension}{}\end{DoxyParamCaption})}
+
+Registers the given extension with the Environment
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Already\+Initialized\+Exception} & if the Environment has already been initialized \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_common_mark_1_1_environment_1_1_environment_ab2f3485184c07ae7793a1cc4254c8cec}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment}}.
+
+\Hypertarget{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_add2de6030478c4c4df25541d2f3ce215}\index{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface}!addInlineParser@{addInlineParser}}
+\index{addInlineParser@{addInlineParser}!League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface}}
+\doxysubsubsection{\texorpdfstring{addInlineParser()}{addInlineParser()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_add2de6030478c4c4df25541d2f3ce215} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment\+Builder\+Interface\+::add\+Inline\+Parser (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_parser_1_1_inline_1_1_inline_parser_interface}{Inline\+Parser\+Interface}}}]{\$parser}{, }\item[{int}]{\$priority}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Registers the given inline parser with the Environment
+
+
+\begin{DoxyParams}[1]{Parameters}
+Inline\+Parser\+Interface & {\em \$parser} & Inline parser instance \\
+\hline
+int & {\em \$priority} & Priority (a higher number will be executed earlier)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Already\+Initialized\+Exception} & if the Environment has already been initialized \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_common_mark_1_1_environment_1_1_environment_a758a7ac7956e0a36f074a098104a14fc}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment}}.
+
+\Hypertarget{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_a46dfd12ed692a946b6d32d1e1d192d5e}\index{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface}!addRenderer@{addRenderer}}
+\index{addRenderer@{addRenderer}!League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentBuilderInterface}}
+\doxysubsubsection{\texorpdfstring{addRenderer()}{addRenderer()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_common_mark_1_1_environment_1_1_environment_builder_interface_a46dfd12ed692a946b6d32d1e1d192d5e} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment\+Builder\+Interface\+::add\+Renderer (\begin{DoxyParamCaption}\item[{string}]{\$node\+Class}{, }\item[{\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_renderer_1_1_node_renderer_interface}{Node\+Renderer\+Interface}}}]{\$renderer}{, }\item[{int}]{\$priority}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Registers the given node renderer with the Environment
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$node\+Class} & The fully-\/qualified node element class name the renderer below should handle \\
+\hline
+Node\+Renderer\+Interface & {\em \$renderer} & The renderer responsible for rendering the type of element given above \\
+\hline
+int & {\em \$priority} & Priority (a higher number will be executed earlier)\\
+\hline
+\end{DoxyParams}
+@psalm-\/param class-\/string$<$\+Node$>$ \$node\+Class
+
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Already\+Initialized\+Exception} & if the Environment has already been initialized \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_common_mark_1_1_environment_1_1_environment_ad89b551ccef401dde3455ae6dee07783}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/league/commonmark/src/\+Environment/Environment\+Builder\+Interface.\+php\end{DoxyCompactItemize}

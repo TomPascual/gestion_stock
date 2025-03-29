@@ -1,0 +1,61 @@
+\doxysection{Psy\textbackslash{}Version\+Updater\textbackslash{}Self\+Update Class Reference}
+\hypertarget{class_psy_1_1_version_updater_1_1_self_update}{}\label{class_psy_1_1_version_updater_1_1_self_update}\index{Psy\textbackslash{}VersionUpdater\textbackslash{}SelfUpdate@{Psy\textbackslash{}VersionUpdater\textbackslash{}SelfUpdate}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_psy_1_1_version_updater_1_1_self_update_ab28c0f3ddf5d137d0260307dc34a4a96}\label{class_psy_1_1_version_updater_1_1_self_update_ab28c0f3ddf5d137d0260307dc34a4a96} 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{interface_psy_1_1_version_updater_1_1_checker}{Checker}} \$checker, \mbox{\hyperlink{class_psy_1_1_version_updater_1_1_installer}{Installer}} \$installer)
+\item 
+\mbox{\hyperlink{class_psy_1_1_version_updater_1_1_self_update_ab4dbf2bce1885d31577996fe4b2ff17b}{set\+Downloader}} (\mbox{\hyperlink{interface_psy_1_1_version_updater_1_1_downloader}{Downloader}} \$downloader)
+\item 
+\mbox{\hyperlink{class_psy_1_1_version_updater_1_1_self_update_aec04b34fab3e072dd92b3317b09d57ac}{run}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}} \$input, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}} \$output)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_psy_1_1_version_updater_1_1_self_update_aa85f8e20ec855e0af6f82183cb294845}\label{class_psy_1_1_version_updater_1_1_self_update_aa85f8e20ec855e0af6f82183cb294845} 
+const {\bfseries URL\+\_\+\+PREFIX} = \textquotesingle{}https\+://github.\+com/bobthecow/psysh/releases/download\textquotesingle{}
+\item 
+\Hypertarget{class_psy_1_1_version_updater_1_1_self_update_a467134c80c844b78a99e4cb281de918e}\label{class_psy_1_1_version_updater_1_1_self_update_a467134c80c844b78a99e4cb281de918e} 
+const {\bfseries SUCCESS} = 0
+\item 
+\Hypertarget{class_psy_1_1_version_updater_1_1_self_update_a227bd9aad472a3375b73b7e89418b6c4}\label{class_psy_1_1_version_updater_1_1_self_update_a227bd9aad472a3375b73b7e89418b6c4} 
+const {\bfseries FAILURE} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Self update command.
+
+If a new version is available, this command will download it and replace the currently installed version 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_version_updater_1_1_self_update_aec04b34fab3e072dd92b3317b09d57ac}\index{Psy\textbackslash{}VersionUpdater\textbackslash{}SelfUpdate@{Psy\textbackslash{}VersionUpdater\textbackslash{}SelfUpdate}!run@{run}}
+\index{run@{run}!Psy\textbackslash{}VersionUpdater\textbackslash{}SelfUpdate@{Psy\textbackslash{}VersionUpdater\textbackslash{}SelfUpdate}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_version_updater_1_1_self_update_aec04b34fab3e072dd92b3317b09d57ac} 
+Psy\textbackslash{}\+Version\+Updater\textbackslash{}\+Self\+Update\+::run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_input_1_1_input_interface}{Input\+Interface}}}]{\$input}{, }\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_output_1_1_output_interface}{Output\+Interface}}}]{\$output}{}\end{DoxyParamCaption})}
+
+Execute the self-\/update process.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Error\+Exception} & if the current version is not restored when installation fails \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_psy_1_1_version_updater_1_1_self_update_ab4dbf2bce1885d31577996fe4b2ff17b}\index{Psy\textbackslash{}VersionUpdater\textbackslash{}SelfUpdate@{Psy\textbackslash{}VersionUpdater\textbackslash{}SelfUpdate}!setDownloader@{setDownloader}}
+\index{setDownloader@{setDownloader}!Psy\textbackslash{}VersionUpdater\textbackslash{}SelfUpdate@{Psy\textbackslash{}VersionUpdater\textbackslash{}SelfUpdate}}
+\doxysubsubsection{\texorpdfstring{setDownloader()}{setDownloader()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_version_updater_1_1_self_update_ab4dbf2bce1885d31577996fe4b2ff17b} 
+Psy\textbackslash{}\+Version\+Updater\textbackslash{}\+Self\+Update\+::set\+Downloader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psy_1_1_version_updater_1_1_downloader}{Downloader}}}]{\$downloader}{}\end{DoxyParamCaption})}
+
+Allow the downloader to be injected for testing.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Version\+Updater/Self\+Update.\+php\end{DoxyCompactItemize}

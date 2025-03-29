@@ -1,0 +1,141 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Kernel\+Events Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_a83432f36d96a76aacf38b64c883875fb}{REQUEST}} = \textquotesingle{}kernel.\+request\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_a3420635df335004bf4262be2478cc8a8}{EXCEPTION}} = \textquotesingle{}kernel.\+exception\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_a2ccb31302f82aa728c3d728499f1029b}{CONTROLLER}} = \textquotesingle{}kernel.\+controller\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_abde2e537c774c9ccf85191be71aacb93}{CONTROLLER\+\_\+\+ARGUMENTS}} = \textquotesingle{}kernel.\+controller\+\_\+arguments\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_a1a43cf72b75934a802a1f3ceb34c2cf6}{VIEW}} = \textquotesingle{}kernel.\+view\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_ae6a939ba1aee7fca22410c104260ea23}{RESPONSE}} = \textquotesingle{}kernel.\+response\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_ab9935feaccbc09b44c1de2e310ee1dde}{FINISH\+\_\+\+REQUEST}} = \textquotesingle{}kernel.\+finish\+\_\+request\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_aa61ed6a82d61184cff4ec868b5fce600}{TERMINATE}} = \textquotesingle{}kernel.\+terminate\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_a8f660efa463a0aa97d6df2cc0c049250}{ALIASES}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains all events thrown in the Http\+Kernel component.
+
+\begin{DoxyAuthor}{Author}
+Bernhard Schussek \href{mailto:bschussek@gmail.com}{\texttt{ bschussek@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_a8f660efa463a0aa97d6df2cc0c049250}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}!ALIASES@{ALIASES}}
+\index{ALIASES@{ALIASES}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}}
+\doxysubsubsection{\texorpdfstring{ALIASES}{ALIASES}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_a8f660efa463a0aa97d6df2cc0c049250} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Kernel\+Events\+::\+ALIASES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ControllerArgumentsEvent::class\ =>\ self::CONTROLLER\_ARGUMENTS,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ControllerEvent::class\ =>\ self::CONTROLLER,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ResponseEvent::class\ =>\ self::RESPONSE,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ FinishRequestEvent::class\ =>\ self::FINISH\_REQUEST,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ RequestEvent::class\ =>\ self::REQUEST,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ViewEvent::class\ =>\ self::VIEW,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ExceptionEvent::class\ =>\ self::EXCEPTION,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ TerminateEvent::class\ =>\ self::TERMINATE,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+Event aliases.
+
+These aliases can be consumed by Register\+Listeners\+Pass. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_a2ccb31302f82aa728c3d728499f1029b}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}!CONTROLLER@{CONTROLLER}}
+\index{CONTROLLER@{CONTROLLER}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}}
+\doxysubsubsection{\texorpdfstring{CONTROLLER}{CONTROLLER}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_a2ccb31302f82aa728c3d728499f1029b} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Kernel\+Events\+::\+CONTROLLER = \textquotesingle{}kernel.\+controller\textquotesingle{}}
+
+The CONTROLLER event occurs once a controller was found for handling a request.
+
+This event allows you to change the controller that will handle the request.
+
+@\+Event("{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\textbackslash{}\+Controller\+Event"{}) \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_abde2e537c774c9ccf85191be71aacb93}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}!CONTROLLER\_ARGUMENTS@{CONTROLLER\_ARGUMENTS}}
+\index{CONTROLLER\_ARGUMENTS@{CONTROLLER\_ARGUMENTS}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}}
+\doxysubsubsection{\texorpdfstring{CONTROLLER\_ARGUMENTS}{CONTROLLER\_ARGUMENTS}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_abde2e537c774c9ccf85191be71aacb93} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Kernel\+Events\+::\+CONTROLLER\+\_\+\+ARGUMENTS = \textquotesingle{}kernel.\+controller\+\_\+arguments\textquotesingle{}}
+
+The CONTROLLER\+\_\+\+ARGUMENTS event occurs once controller arguments have been resolved.
+
+This event allows you to change the arguments that will be passed to the controller.
+
+@\+Event("{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\textbackslash{}\+Controller\+Arguments\+Event"{}) \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_a3420635df335004bf4262be2478cc8a8}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}!EXCEPTION@{EXCEPTION}}
+\index{EXCEPTION@{EXCEPTION}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}}
+\doxysubsubsection{\texorpdfstring{EXCEPTION}{EXCEPTION}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_a3420635df335004bf4262be2478cc8a8} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Kernel\+Events\+::\+EXCEPTION = \textquotesingle{}kernel.\+exception\textquotesingle{}}
+
+The EXCEPTION event occurs when an uncaught exception appears.
+
+This event allows you to create a response for a thrown exception or to modify the thrown exception.
+
+@\+Event("{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\textbackslash{}\+Exception\+Event"{}) \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_ab9935feaccbc09b44c1de2e310ee1dde}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}!FINISH\_REQUEST@{FINISH\_REQUEST}}
+\index{FINISH\_REQUEST@{FINISH\_REQUEST}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}}
+\doxysubsubsection{\texorpdfstring{FINISH\_REQUEST}{FINISH\_REQUEST}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_ab9935feaccbc09b44c1de2e310ee1dde} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Kernel\+Events\+::\+FINISH\+\_\+\+REQUEST = \textquotesingle{}kernel.\+finish\+\_\+request\textquotesingle{}}
+
+The FINISH\+\_\+\+REQUEST event occurs when a response was generated for a request.
+
+This event allows you to reset the global and environmental state of the application, when it was changed during the request.
+
+@\+Event("{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\textbackslash{}\+Finish\+Request\+Event"{}) \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_a83432f36d96a76aacf38b64c883875fb}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}!REQUEST@{REQUEST}}
+\index{REQUEST@{REQUEST}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}}
+\doxysubsubsection{\texorpdfstring{REQUEST}{REQUEST}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_a83432f36d96a76aacf38b64c883875fb} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Kernel\+Events\+::\+REQUEST = \textquotesingle{}kernel.\+request\textquotesingle{}}
+
+The REQUEST event occurs at the very beginning of request dispatching.
+
+This event allows you to create a response for a request before any other code in the framework is executed.
+
+@\+Event("{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\textbackslash{}\+Request\+Event"{}) \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_ae6a939ba1aee7fca22410c104260ea23}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}!RESPONSE@{RESPONSE}}
+\index{RESPONSE@{RESPONSE}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}}
+\doxysubsubsection{\texorpdfstring{RESPONSE}{RESPONSE}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_ae6a939ba1aee7fca22410c104260ea23} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Kernel\+Events\+::\+RESPONSE = \textquotesingle{}kernel.\+response\textquotesingle{}}
+
+The RESPONSE event occurs once a response was created for replying to a request.
+
+This event allows you to modify or replace the response that will be replied.
+
+@\+Event("{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\textbackslash{}\+Response\+Event"{}) \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_aa61ed6a82d61184cff4ec868b5fce600}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}!TERMINATE@{TERMINATE}}
+\index{TERMINATE@{TERMINATE}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}}
+\doxysubsubsection{\texorpdfstring{TERMINATE}{TERMINATE}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_aa61ed6a82d61184cff4ec868b5fce600} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Kernel\+Events\+::\+TERMINATE = \textquotesingle{}kernel.\+terminate\textquotesingle{}}
+
+The TERMINATE event occurs once a response was sent.
+
+This event allows you to run expensive post-\/response jobs.
+
+@\+Event("{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\textbackslash{}\+Terminate\+Event"{}) \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_a1a43cf72b75934a802a1f3ceb34c2cf6}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}!VIEW@{VIEW}}
+\index{VIEW@{VIEW}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}KernelEvents}}
+\doxysubsubsection{\texorpdfstring{VIEW}{VIEW}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_kernel_events_a1a43cf72b75934a802a1f3ceb34c2cf6} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Kernel\+Events\+::\+VIEW = \textquotesingle{}kernel.\+view\textquotesingle{}}
+
+The VIEW event occurs when the return value of a controller is not a Response instance.
+
+This event allows you to create a response for the return value of the controller.
+
+@\+Event("{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\textbackslash{}\+View\+Event"{}) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/kernel/Kernel\+Events.\+php\end{DoxyCompactItemize}

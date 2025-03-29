@@ -1,0 +1,804 @@
+\doxysection{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher Class Reference}
+\hypertarget{class_illuminate_1_1_events_1_1_dispatcher}{}\label{class_illuminate_1_1_events_1_1_dispatcher}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+Inheritance diagram for Illuminate\textbackslash{}Events\textbackslash{}Dispatcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_events_1_1_dispatcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_ab155986d8236cff2c45d41564c202481}{\+\_\+\+\_\+construct}} (?Container\+Contract \$container=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a41588c808c854be988193c5809605cea}{listen}} (\$events, \$listener=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a50f5697b97ed2c6a9c4cae67608e55ac}{has\+Listeners}} (\$event\+Name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a3fda41e704b6abd4cecb9d04675c943a}{has\+Wildcard\+Listeners}} (\$event\+Name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a42ffccd0a5d71b96e10336cc9481d017}{push}} (\$event, \$payload=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a1bc9207109378e52c0fb201c847c01e9}{flush}} (\$event)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_af8c982564a79a4507043782ee2ed353e}{subscribe}} (\$subscriber)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a38630396d91822e590f1e103e0862f7a}{until}} (\$event, \$payload=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a8941baa83e273f2488551cb687b0ea29}{dispatch}} (\$event, \$payload=\mbox{[}$\,$\mbox{]}, \$halt=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a8bdcd86183b6c6000a5383f52be9deef}{get\+Listeners}} (\$event\+Name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a18aaf4719079ea2833e8dc8c84ed0fac}{make\+Listener}} (\$listener, \$wildcard=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a079b615014bc1d30d7da5eaffe82fd9a}{create\+Class\+Listener}} (\$listener, \$wildcard=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_ae793f0a78569c8e0d5c6cfd8fac8588d}{forget}} (\$event)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_ab095bb3a240a2f7bdc2992269faca790}{forget\+Pushed}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a72a36d3d23838b4a5101d8337d692557}{set\+Queue\+Resolver}} (callable \$resolver)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a53752f404bac9d789c6f92eb694a078b}{set\+Transaction\+Manager\+Resolver}} (callable \$resolver)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a5e6fc2ab02f7f31f9ba89462e88cedb6}{get\+Raw\+Listeners}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a961c4cd8d11d935d22bd519571143362}{setup\+Wildcard\+Listen}} (\$event, \$listener)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_af99a01ea61f7ba75dc909038f8aef5c5}{resolve\+Subscriber}} (\$subscriber)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_aed392e34860727ff9ad6763c2f9c9c95}{invoke\+Listeners}} (\$event, \$payload, \$halt=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a7dea46fc68dfdbffda9874b056054a22}{parse\+Event\+And\+Payload}} (\$event, \$payload)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_ae52587a663bb5e086752e4629707534f}{should\+Broadcast}} (array \$payload)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a385ae694746b421e6124004e642473ab}{broadcast\+When}} (\$event)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a8606efa942b0bbdb23500c0d08a4daa6}{broadcast\+Event}} (\$event)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a0625f1a7b9140a99049ad0ec632bbc0f}{get\+Wildcard\+Listeners}} (\$event\+Name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a38c289266f8e8803e229e3cacd5f1ba2}{add\+Interface\+Listeners}} (\$event\+Name, array \$listeners=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_add6b9c57c13013e0730b3c102e19873f}{prepare\+Listeners}} (string \$event\+Name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a2ae64f9212db12723ae8c72911f2425f}{create\+Class\+Callable}} (\$listener)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a30eb8ded59ba4bfc1b9987b8704b877b}{parse\+Class\+Callable}} (\$listener)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_aec8dc7a6ee70476fb1f75047b284c31d}{handler\+Should\+Be\+Queued}} (\$class)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a7c09b6246d60257f2115b83b663eb5e0}{create\+Queued\+Handler\+Callable}} (\$class, \$method)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a8bf0be51dc8bd906ff5ff516e809316a}{handler\+Should\+Be\+Dispatched\+After\+Database\+Transactions}} (\$listener)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_af9c888a79fdb9a4b2a8f92805500765a}{create\+Callback\+For\+Listener\+Running\+After\+Commits}} (\$listener, \$method)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_a77e5fb409ea04067aeed1cec45175122}{handler\+Wants\+To\+Be\+Queued}} (\$class, \$arguments)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_afc5241795bcfad0f950c2c0a316d8e60}{queue\+Handler}} (\$class, \$method, \$arguments)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_ad23274fb353092cbf1db7e7503355a97}{create\+Listener\+And\+Job}} (\$class, \$method, \$arguments)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_ae995c8e7ee9e5646d411119077a070ab}{propagate\+Listener\+Options}} (\$listener, \$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_ae498ae7a959d3c9e137386b1033a2a28}{resolve\+Queue}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_events_1_1_dispatcher_af7de26d4b63a693d7a61a3eb48b94820}{resolve\+Transaction\+Manager}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_afab4a1a0ff6497beb86e254a7644d090}\label{class_illuminate_1_1_events_1_1_dispatcher_afab4a1a0ff6497beb86e254a7644d090} 
+{\bfseries \$container}
+\item 
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a194804f46ea2c130d1294c5f786d7843}\label{class_illuminate_1_1_events_1_1_dispatcher_a194804f46ea2c130d1294c5f786d7843} 
+{\bfseries \$listeners} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a8c5ea53b1ab5020f0f7736e0b0445fa0}\label{class_illuminate_1_1_events_1_1_dispatcher_a8c5ea53b1ab5020f0f7736e0b0445fa0} 
+{\bfseries \$wildcards} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_acb82885476766f117bd729e324b25954}\label{class_illuminate_1_1_events_1_1_dispatcher_acb82885476766f117bd729e324b25954} 
+{\bfseries \$wildcards\+Cache} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_aed7d8c288748a0e868b5d0091d6d616c}\label{class_illuminate_1_1_events_1_1_dispatcher_aed7d8c288748a0e868b5d0091d6d616c} 
+{\bfseries \$queue\+Resolver}
+\item 
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a3cb6c449bfa548ce440681c65dbb37b5}\label{class_illuminate_1_1_events_1_1_dispatcher_a3cb6c449bfa548ce440681c65dbb37b5} 
+{\bfseries \$transaction\+Manager\+Resolver}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_ab155986d8236cff2c45d41564c202481}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_ab155986d8236cff2c45d41564c202481} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?Container\+Contract}]{\$container}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new event dispatcher instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container | null & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a38c289266f8e8803e229e3cacd5f1ba2}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!addInterfaceListeners@{addInterfaceListeners}}
+\index{addInterfaceListeners@{addInterfaceListeners}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{addInterfaceListeners()}{addInterfaceListeners()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a38c289266f8e8803e229e3cacd5f1ba2} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::add\+Interface\+Listeners (\begin{DoxyParamCaption}\item[{}]{\$event\+Name}{, }\item[{array}]{\$listeners}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add the listeners for the event\textquotesingle{}s interfaces to the given array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event\+Name} & \\
+\hline
+array & {\em \$listeners} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a8606efa942b0bbdb23500c0d08a4daa6}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!broadcastEvent@{broadcastEvent}}
+\index{broadcastEvent@{broadcastEvent}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{broadcastEvent()}{broadcastEvent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a8606efa942b0bbdb23500c0d08a4daa6} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::broadcast\+Event (\begin{DoxyParamCaption}\item[{}]{\$event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Broadcast the given event class.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Broadcasting\textbackslash{}\+Should\+Broadcast & {\em \$event} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a385ae694746b421e6124004e642473ab}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!broadcastWhen@{broadcastWhen}}
+\index{broadcastWhen@{broadcastWhen}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{broadcastWhen()}{broadcastWhen()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a385ae694746b421e6124004e642473ab} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::broadcast\+When (\begin{DoxyParamCaption}\item[{}]{\$event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check if the event should be broadcasted by the condition.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$event} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_af9c888a79fdb9a4b2a8f92805500765a}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!createCallbackForListenerRunningAfterCommits@{createCallbackForListenerRunningAfterCommits}}
+\index{createCallbackForListenerRunningAfterCommits@{createCallbackForListenerRunningAfterCommits}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{createCallbackForListenerRunningAfterCommits()}{createCallbackForListenerRunningAfterCommits()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_af9c888a79fdb9a4b2a8f92805500765a} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::create\+Callback\+For\+Listener\+Running\+After\+Commits (\begin{DoxyParamCaption}\item[{}]{\$listener}{, }\item[{}]{\$method}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a callable for dispatching a listener after database transactions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$listener} & \\
+\hline
+string & {\em \$method} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a2ae64f9212db12723ae8c72911f2425f}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!createClassCallable@{createClassCallable}}
+\index{createClassCallable@{createClassCallable}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{createClassCallable()}{createClassCallable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a2ae64f9212db12723ae8c72911f2425f} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::create\+Class\+Callable (\begin{DoxyParamCaption}\item[{}]{\$listener}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the class based event callable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$listener} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+callable 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a079b615014bc1d30d7da5eaffe82fd9a}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!createClassListener@{createClassListener}}
+\index{createClassListener@{createClassListener}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{createClassListener()}{createClassListener()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a079b615014bc1d30d7da5eaffe82fd9a} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::create\+Class\+Listener (\begin{DoxyParamCaption}\item[{}]{\$listener}{, }\item[{}]{\$wildcard}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a class based listener using the IoC container.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$listener} & \\
+\hline
+bool & {\em \$wildcard} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_ad23274fb353092cbf1db7e7503355a97}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!createListenerAndJob@{createListenerAndJob}}
+\index{createListenerAndJob@{createListenerAndJob}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{createListenerAndJob()}{createListenerAndJob()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_ad23274fb353092cbf1db7e7503355a97} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::create\+Listener\+And\+Job (\begin{DoxyParamCaption}\item[{}]{\$class}{, }\item[{}]{\$method}{, }\item[{}]{\$arguments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the listener and job for a queued listener.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & \\
+\hline
+string & {\em \$method} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a7c09b6246d60257f2115b83b663eb5e0}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!createQueuedHandlerCallable@{createQueuedHandlerCallable}}
+\index{createQueuedHandlerCallable@{createQueuedHandlerCallable}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{createQueuedHandlerCallable()}{createQueuedHandlerCallable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a7c09b6246d60257f2115b83b663eb5e0} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::create\+Queued\+Handler\+Callable (\begin{DoxyParamCaption}\item[{}]{\$class}{, }\item[{}]{\$method}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a callable for putting an event handler on the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & \\
+\hline
+string & {\em \$method} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a8941baa83e273f2488551cb687b0ea29}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a8941baa83e273f2488551cb687b0ea29} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::dispatch (\begin{DoxyParamCaption}\item[{}]{\$event}{, }\item[{}]{\$payload}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$halt}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Fire an event and call the listeners.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | object & {\em \$event} & \\
+\hline
+mixed & {\em \$payload} & \\
+\hline
+bool & {\em \$halt} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_aa9dd0562a91177eea13282e747dbd7f2}{Illuminate\textbackslash{}\+Events\textbackslash{}\+Null\+Dispatcher}}.
+
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a1bc9207109378e52c0fb201c847c01e9}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!flush@{flush}}
+\index{flush@{flush}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a1bc9207109378e52c0fb201c847c01e9} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::flush (\begin{DoxyParamCaption}\item[{}]{\$event}{}\end{DoxyParamCaption})}
+
+Flush a set of pushed events.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_ae7363bf87ebf1b19b49441fb34ed3bbe}{Illuminate\textbackslash{}\+Events\textbackslash{}\+Null\+Dispatcher}}.
+
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_ae793f0a78569c8e0d5c6cfd8fac8588d}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!forget@{forget}}
+\index{forget@{forget}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{forget()}{forget()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_ae793f0a78569c8e0d5c6cfd8fac8588d} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::forget (\begin{DoxyParamCaption}\item[{}]{\$event}{}\end{DoxyParamCaption})}
+
+Remove a set of listeners from the dispatcher.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_adad51fe715c865b4fda66db316991d76}{Illuminate\textbackslash{}\+Events\textbackslash{}\+Null\+Dispatcher}}.
+
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_ab095bb3a240a2f7bdc2992269faca790}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!forgetPushed@{forgetPushed}}
+\index{forgetPushed@{forgetPushed}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{forgetPushed()}{forgetPushed()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_ab095bb3a240a2f7bdc2992269faca790} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::forget\+Pushed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Forget all of the pushed listeners.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_a4c7ef01649c349d35d6ed2e252c3a390}{Illuminate\textbackslash{}\+Events\textbackslash{}\+Null\+Dispatcher}}.
+
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a8bdcd86183b6c6000a5383f52be9deef}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!getListeners@{getListeners}}
+\index{getListeners@{getListeners}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{getListeners()}{getListeners()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a8bdcd86183b6c6000a5383f52be9deef} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::get\+Listeners (\begin{DoxyParamCaption}\item[{}]{\$event\+Name}{}\end{DoxyParamCaption})}
+
+Get all of the listeners for a given event name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a5e6fc2ab02f7f31f9ba89462e88cedb6}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!getRawListeners@{getRawListeners}}
+\index{getRawListeners@{getRawListeners}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{getRawListeners()}{getRawListeners()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a5e6fc2ab02f7f31f9ba89462e88cedb6} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::get\+Raw\+Listeners (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the raw, unprepared listeners.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a0625f1a7b9140a99049ad0ec632bbc0f}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!getWildcardListeners@{getWildcardListeners}}
+\index{getWildcardListeners@{getWildcardListeners}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{getWildcardListeners()}{getWildcardListeners()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a0625f1a7b9140a99049ad0ec632bbc0f} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::get\+Wildcard\+Listeners (\begin{DoxyParamCaption}\item[{}]{\$event\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the wildcard listeners for the event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a8bf0be51dc8bd906ff5ff516e809316a}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!handlerShouldBeDispatchedAfterDatabaseTransactions@{handlerShouldBeDispatchedAfterDatabaseTransactions}}
+\index{handlerShouldBeDispatchedAfterDatabaseTransactions@{handlerShouldBeDispatchedAfterDatabaseTransactions}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{handlerShouldBeDispatchedAfterDatabaseTransactions()}{handlerShouldBeDispatchedAfterDatabaseTransactions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a8bf0be51dc8bd906ff5ff516e809316a} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::handler\+Should\+Be\+Dispatched\+After\+Database\+Transactions (\begin{DoxyParamCaption}\item[{}]{\$listener}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the given event handler should be dispatched after all database transactions have committed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object | mixed & {\em \$listener} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_aec8dc7a6ee70476fb1f75047b284c31d}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!handlerShouldBeQueued@{handlerShouldBeQueued}}
+\index{handlerShouldBeQueued@{handlerShouldBeQueued}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{handlerShouldBeQueued()}{handlerShouldBeQueued()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_aec8dc7a6ee70476fb1f75047b284c31d} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::handler\+Should\+Be\+Queued (\begin{DoxyParamCaption}\item[{}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the event handler class should be queued.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a77e5fb409ea04067aeed1cec45175122}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!handlerWantsToBeQueued@{handlerWantsToBeQueued}}
+\index{handlerWantsToBeQueued@{handlerWantsToBeQueued}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{handlerWantsToBeQueued()}{handlerWantsToBeQueued()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a77e5fb409ea04067aeed1cec45175122} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::handler\+Wants\+To\+Be\+Queued (\begin{DoxyParamCaption}\item[{}]{\$class}{, }\item[{}]{\$arguments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the event handler wants to be queued.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a50f5697b97ed2c6a9c4cae67608e55ac}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!hasListeners@{hasListeners}}
+\index{hasListeners@{hasListeners}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{hasListeners()}{hasListeners()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a50f5697b97ed2c6a9c4cae67608e55ac} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::has\+Listeners (\begin{DoxyParamCaption}\item[{}]{\$event\+Name}{}\end{DoxyParamCaption})}
+
+Determine if a given event has listeners.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_a2a6984d7057a27ca2e1aad0654368b6b}{Illuminate\textbackslash{}\+Events\textbackslash{}\+Null\+Dispatcher}}.
+
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a3fda41e704b6abd4cecb9d04675c943a}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!hasWildcardListeners@{hasWildcardListeners}}
+\index{hasWildcardListeners@{hasWildcardListeners}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{hasWildcardListeners()}{hasWildcardListeners()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a3fda41e704b6abd4cecb9d04675c943a} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::has\+Wildcard\+Listeners (\begin{DoxyParamCaption}\item[{}]{\$event\+Name}{}\end{DoxyParamCaption})}
+
+Determine if the given event has any wildcard listeners.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_aed392e34860727ff9ad6763c2f9c9c95}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!invokeListeners@{invokeListeners}}
+\index{invokeListeners@{invokeListeners}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{invokeListeners()}{invokeListeners()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_aed392e34860727ff9ad6763c2f9c9c95} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::invoke\+Listeners (\begin{DoxyParamCaption}\item[{}]{\$event}{, }\item[{}]{\$payload}{, }\item[{}]{\$halt}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Broadcast an event and call its listeners.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | object & {\em \$event} & \\
+\hline
+mixed & {\em \$payload} & \\
+\hline
+bool & {\em \$halt} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a41588c808c854be988193c5809605cea}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!listen@{listen}}
+\index{listen@{listen}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{listen()}{listen()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a41588c808c854be988193c5809605cea} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::listen (\begin{DoxyParamCaption}\item[{}]{\$events}{, }\item[{}]{\$listener}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Register an event listener with the dispatcher.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Events\textbackslash{}\+Queued\+Closure | callable | array | class-\/string | string & {\em \$events} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Events\textbackslash{}\+Queued\+Closure | callable | array | class-\/string | null & {\em \$listener} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_af3c6892fc2a381e6fa09062b7cc257a4}{Illuminate\textbackslash{}\+Events\textbackslash{}\+Null\+Dispatcher}}.
+
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a18aaf4719079ea2833e8dc8c84ed0fac}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!makeListener@{makeListener}}
+\index{makeListener@{makeListener}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{makeListener()}{makeListener()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a18aaf4719079ea2833e8dc8c84ed0fac} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::make\+Listener (\begin{DoxyParamCaption}\item[{}]{\$listener}{, }\item[{}]{\$wildcard}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Register an event listener with the dispatcher.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | string | array & {\em \$listener} & \\
+\hline
+bool & {\em \$wildcard} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a30eb8ded59ba4bfc1b9987b8704b877b}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!parseClassCallable@{parseClassCallable}}
+\index{parseClassCallable@{parseClassCallable}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{parseClassCallable()}{parseClassCallable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a30eb8ded59ba4bfc1b9987b8704b877b} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::parse\+Class\+Callable (\begin{DoxyParamCaption}\item[{}]{\$listener}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse the class listener into class and method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$listener} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a7dea46fc68dfdbffda9874b056054a22}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!parseEventAndPayload@{parseEventAndPayload}}
+\index{parseEventAndPayload@{parseEventAndPayload}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{parseEventAndPayload()}{parseEventAndPayload()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a7dea46fc68dfdbffda9874b056054a22} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::parse\+Event\+And\+Payload (\begin{DoxyParamCaption}\item[{}]{\$event}{, }\item[{}]{\$payload}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse the given event and payload and prepare them for dispatching.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$event} & \\
+\hline
+mixed & {\em \$payload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_add6b9c57c13013e0730b3c102e19873f}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!prepareListeners@{prepareListeners}}
+\index{prepareListeners@{prepareListeners}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{prepareListeners()}{prepareListeners()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_add6b9c57c13013e0730b3c102e19873f} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::prepare\+Listeners (\begin{DoxyParamCaption}\item[{string}]{\$event\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prepare the listeners for a given event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_ae995c8e7ee9e5646d411119077a070ab}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!propagateListenerOptions@{propagateListenerOptions}}
+\index{propagateListenerOptions@{propagateListenerOptions}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{propagateListenerOptions()}{propagateListenerOptions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_ae995c8e7ee9e5646d411119077a070ab} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::propagate\+Listener\+Options (\begin{DoxyParamCaption}\item[{}]{\$listener}{, }\item[{}]{\$job}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Propagate listener options to the job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$listener} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Events\textbackslash{}\+Call\+Queued\+Listener & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a42ffccd0a5d71b96e10336cc9481d017}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!push@{push}}
+\index{push@{push}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a42ffccd0a5d71b96e10336cc9481d017} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::push (\begin{DoxyParamCaption}\item[{}]{\$event}{, }\item[{}]{\$payload}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Register an event and payload to be fired later.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event} & \\
+\hline
+object | array & {\em \$payload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_ae3e9c67f459fe7dc2f9f23686c037f54}{Illuminate\textbackslash{}\+Events\textbackslash{}\+Null\+Dispatcher}}.
+
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_afc5241795bcfad0f950c2c0a316d8e60}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!queueHandler@{queueHandler}}
+\index{queueHandler@{queueHandler}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{queueHandler()}{queueHandler()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_afc5241795bcfad0f950c2c0a316d8e60} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::queue\+Handler (\begin{DoxyParamCaption}\item[{}]{\$class}{, }\item[{}]{\$method}{, }\item[{}]{\$arguments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Queue the handler class.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & \\
+\hline
+string & {\em \$method} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_ae498ae7a959d3c9e137386b1033a2a28}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!resolveQueue@{resolveQueue}}
+\index{resolveQueue@{resolveQueue}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{resolveQueue()}{resolveQueue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_ae498ae7a959d3c9e137386b1033a2a28} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::resolve\+Queue (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the queue implementation from the resolver.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Queue 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_af99a01ea61f7ba75dc909038f8aef5c5}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!resolveSubscriber@{resolveSubscriber}}
+\index{resolveSubscriber@{resolveSubscriber}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{resolveSubscriber()}{resolveSubscriber()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_af99a01ea61f7ba75dc909038f8aef5c5} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::resolve\+Subscriber (\begin{DoxyParamCaption}\item[{}]{\$subscriber}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolve the subscriber instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object | string & {\em \$subscriber} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_af7de26d4b63a693d7a61a3eb48b94820}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!resolveTransactionManager@{resolveTransactionManager}}
+\index{resolveTransactionManager@{resolveTransactionManager}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{resolveTransactionManager()}{resolveTransactionManager()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_af7de26d4b63a693d7a61a3eb48b94820} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::resolve\+Transaction\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the database transaction manager implementation from the resolver.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Database\+Transactions\+Manager\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a72a36d3d23838b4a5101d8337d692557}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!setQueueResolver@{setQueueResolver}}
+\index{setQueueResolver@{setQueueResolver}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{setQueueResolver()}{setQueueResolver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a72a36d3d23838b4a5101d8337d692557} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::set\+Queue\+Resolver (\begin{DoxyParamCaption}\item[{callable}]{\$resolver}{}\end{DoxyParamCaption})}
+
+Set the queue resolver implementation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$resolver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a53752f404bac9d789c6f92eb694a078b}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!setTransactionManagerResolver@{setTransactionManagerResolver}}
+\index{setTransactionManagerResolver@{setTransactionManagerResolver}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{setTransactionManagerResolver()}{setTransactionManagerResolver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a53752f404bac9d789c6f92eb694a078b} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::set\+Transaction\+Manager\+Resolver (\begin{DoxyParamCaption}\item[{callable}]{\$resolver}{}\end{DoxyParamCaption})}
+
+Set the database transaction manager resolver implementation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$resolver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a961c4cd8d11d935d22bd519571143362}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!setupWildcardListen@{setupWildcardListen}}
+\index{setupWildcardListen@{setupWildcardListen}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{setupWildcardListen()}{setupWildcardListen()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a961c4cd8d11d935d22bd519571143362} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::setup\+Wildcard\+Listen (\begin{DoxyParamCaption}\item[{}]{\$event}{, }\item[{}]{\$listener}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Setup a wildcard listener callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event} & \\
+\hline
+\textbackslash{}\+Closure | string & {\em \$listener} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_ae52587a663bb5e086752e4629707534f}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!shouldBroadcast@{shouldBroadcast}}
+\index{shouldBroadcast@{shouldBroadcast}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{shouldBroadcast()}{shouldBroadcast()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_ae52587a663bb5e086752e4629707534f} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::should\+Broadcast (\begin{DoxyParamCaption}\item[{array}]{\$payload}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the payload has a broadcastable event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$payload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_af8c982564a79a4507043782ee2ed353e}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!subscribe@{subscribe}}
+\index{subscribe@{subscribe}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{subscribe()}{subscribe()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_af8c982564a79a4507043782ee2ed353e} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::subscribe (\begin{DoxyParamCaption}\item[{}]{\$subscriber}{}\end{DoxyParamCaption})}
+
+Register an event subscriber with the dispatcher.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object | string & {\em \$subscriber} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_a2f868dbf5c2b60263db4dbea86ec14d3}{Illuminate\textbackslash{}\+Events\textbackslash{}\+Null\+Dispatcher}}.
+
+\Hypertarget{class_illuminate_1_1_events_1_1_dispatcher_a38630396d91822e590f1e103e0862f7a}\index{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}!until@{until}}
+\index{until@{until}!Illuminate\textbackslash{}Events\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Events\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{until()}{until()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_events_1_1_dispatcher_a38630396d91822e590f1e103e0862f7a} 
+Illuminate\textbackslash{}\+Events\textbackslash{}\+Dispatcher\+::until (\begin{DoxyParamCaption}\item[{}]{\$event}{, }\item[{}]{\$payload}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Fire an event until the first non-\/null response is returned.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | object & {\em \$event} & \\
+\hline
+mixed & {\em \$payload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_events_1_1_null_dispatcher_a89b5e26f7a5a929fd72eed617a25d825}{Illuminate\textbackslash{}\+Events\textbackslash{}\+Null\+Dispatcher}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Events/Dispatcher.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\doxysection{Mockery\textbackslash{}Reflector Class Reference}
+\hypertarget{class_mockery_1_1_reflector}{}\label{class_mockery_1_1_reflector}\index{Mockery\textbackslash{}Reflector@{Mockery\textbackslash{}Reflector}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_mockery_1_1_reflector_af74aa5846d40096630d68a211191e600}{get\+Return\+Type}} (Reflection\+Method \$method, \$without\+Nullable=false)
+\item 
+static \mbox{\hyperlink{class_mockery_1_1_reflector_aa3f30bba1b86175d47cdb4b2674aa160}{get\+Simplest\+Return\+Type}} (Reflection\+Method \$method)
+\item 
+static \mbox{\hyperlink{class_mockery_1_1_reflector_ad6cfded63a33e9bcb5cd1bd0482f986c}{get\+Type\+Hint}} (Reflection\+Parameter \$param, \$without\+Nullable=false)
+\item 
+static \mbox{\hyperlink{class_mockery_1_1_reflector_a289d9734be5821550d23ad5d59c9c6fb}{is\+Array}} (Reflection\+Parameter \$param)
+\item 
+static \mbox{\hyperlink{class_mockery_1_1_reflector_a97322c5d4965b9f02f8ac7c7c3034270}{is\+Reserved\+Word}} (string \$type)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_mockery_1_1_reflector_a8169fce0305b902ba3ccaef0c8b2bb05}\label{class_mockery_1_1_reflector_a8169fce0305b902ba3ccaef0c8b2bb05} 
+const {\bfseries BUILTIN\+\_\+\+TYPES} = \mbox{[}\textquotesingle{}array\textquotesingle{}, \textquotesingle{}bool\textquotesingle{}, \textquotesingle{}int\textquotesingle{}, \textquotesingle{}float\textquotesingle{}, \textquotesingle{}null\textquotesingle{}, \textquotesingle{}object\textquotesingle{}, \textquotesingle{}string\textquotesingle{}\mbox{]}
+\item 
+\Hypertarget{class_mockery_1_1_reflector_a6e5d2c5d7a818c035fc7ae406026dc65}\label{class_mockery_1_1_reflector_a6e5d2c5d7a818c035fc7ae406026dc65} 
+const {\bfseries RESERVED\+\_\+\+WORDS} = \mbox{[}\textquotesingle{}bool\textquotesingle{}, \textquotesingle{}true\textquotesingle{}, \textquotesingle{}false\textquotesingle{}, \textquotesingle{}float\textquotesingle{}, \textquotesingle{}int\textquotesingle{}, \textquotesingle{}iterable\textquotesingle{}, \textquotesingle{}mixed\textquotesingle{}, \textquotesingle{}never\textquotesingle{}, \textquotesingle{}null\textquotesingle{}, \textquotesingle{}object\textquotesingle{}, \textquotesingle{}string\textquotesingle{}, \textquotesingle{}void\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mockery_1_1_reflector_af74aa5846d40096630d68a211191e600}\index{Mockery\textbackslash{}Reflector@{Mockery\textbackslash{}Reflector}!getReturnType@{getReturnType}}
+\index{getReturnType@{getReturnType}!Mockery\textbackslash{}Reflector@{Mockery\textbackslash{}Reflector}}
+\doxysubsubsection{\texorpdfstring{getReturnType()}{getReturnType()}}
+{\footnotesize\ttfamily \label{class_mockery_1_1_reflector_af74aa5846d40096630d68a211191e600} 
+static Mockery\textbackslash{}\+Reflector\+::get\+Return\+Type (\begin{DoxyParamCaption}\item[{Reflection\+Method}]{\$method}{, }\item[{}]{\$without\+Nullable}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Compute the string representation for the return type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$without\+Nullable} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_mockery_1_1_reflector_aa3f30bba1b86175d47cdb4b2674aa160}\index{Mockery\textbackslash{}Reflector@{Mockery\textbackslash{}Reflector}!getSimplestReturnType@{getSimplestReturnType}}
+\index{getSimplestReturnType@{getSimplestReturnType}!Mockery\textbackslash{}Reflector@{Mockery\textbackslash{}Reflector}}
+\doxysubsubsection{\texorpdfstring{getSimplestReturnType()}{getSimplestReturnType()}}
+{\footnotesize\ttfamily \label{class_mockery_1_1_reflector_aa3f30bba1b86175d47cdb4b2674aa160} 
+static Mockery\textbackslash{}\+Reflector\+::get\+Simplest\+Return\+Type (\begin{DoxyParamCaption}\item[{Reflection\+Method}]{\$method}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Compute the string representation for the simplest return type.
+
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_mockery_1_1_reflector_ad6cfded63a33e9bcb5cd1bd0482f986c}\index{Mockery\textbackslash{}Reflector@{Mockery\textbackslash{}Reflector}!getTypeHint@{getTypeHint}}
+\index{getTypeHint@{getTypeHint}!Mockery\textbackslash{}Reflector@{Mockery\textbackslash{}Reflector}}
+\doxysubsubsection{\texorpdfstring{getTypeHint()}{getTypeHint()}}
+{\footnotesize\ttfamily \label{class_mockery_1_1_reflector_ad6cfded63a33e9bcb5cd1bd0482f986c} 
+static Mockery\textbackslash{}\+Reflector\+::get\+Type\+Hint (\begin{DoxyParamCaption}\item[{Reflection\+Parameter}]{\$param}{, }\item[{}]{\$without\+Nullable}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Compute the string representation for the paramater type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$without\+Nullable} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_mockery_1_1_reflector_a289d9734be5821550d23ad5d59c9c6fb}\index{Mockery\textbackslash{}Reflector@{Mockery\textbackslash{}Reflector}!isArray@{isArray}}
+\index{isArray@{isArray}!Mockery\textbackslash{}Reflector@{Mockery\textbackslash{}Reflector}}
+\doxysubsubsection{\texorpdfstring{isArray()}{isArray()}}
+{\footnotesize\ttfamily \label{class_mockery_1_1_reflector_a289d9734be5821550d23ad5d59c9c6fb} 
+static Mockery\textbackslash{}\+Reflector\+::is\+Array (\begin{DoxyParamCaption}\item[{Reflection\+Parameter}]{\$param}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determine if the parameter is typed as an array.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_mockery_1_1_reflector_a97322c5d4965b9f02f8ac7c7c3034270}\index{Mockery\textbackslash{}Reflector@{Mockery\textbackslash{}Reflector}!isReservedWord@{isReservedWord}}
+\index{isReservedWord@{isReservedWord}!Mockery\textbackslash{}Reflector@{Mockery\textbackslash{}Reflector}}
+\doxysubsubsection{\texorpdfstring{isReservedWord()}{isReservedWord()}}
+{\footnotesize\ttfamily \label{class_mockery_1_1_reflector_a97322c5d4965b9f02f8ac7c7c3034270} 
+static Mockery\textbackslash{}\+Reflector\+::is\+Reserved\+Word (\begin{DoxyParamCaption}\item[{string}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determine if the given type is a reserved word. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/mockery/mockery/library/\+Mockery/Reflector.\+php\end{DoxyCompactItemize}

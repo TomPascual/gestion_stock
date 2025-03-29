@@ -1,0 +1,425 @@
+\doxysection{Illuminate\textbackslash{}Cache\textbackslash{}Memcached\+Store Class Reference}
+\hypertarget{class_illuminate_1_1_cache_1_1_memcached_store}{}\label{class_illuminate_1_1_cache_1_1_memcached_store}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+Inheritance diagram for Illuminate\textbackslash{}Cache\textbackslash{}Memcached\+Store\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_cache_1_1_memcached_store}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_a31658fff1f2aa083b3fb7ff286121f6f}{\+\_\+\+\_\+construct}} (\$memcached, \$prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_a02eef411a72eec033fec1adb7fa8ba87}{get}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_a3ae0234b7d65ef320a71ee22145b7666}{many}} (array \$keys)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_aad2bc865f93757e259660fa6485776b3}{put}} (\$key, \$value, \$seconds)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_af5c521054aab3c92f8fb8458e7f3d563}{put\+Many}} (array \$values, \$seconds)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_a90cdc1ec94e5ede8975d35963d4375f9}{add}} (\$key, \$value, \$seconds)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_af928a65122946a39ea0653558c6df9eb}{increment}} (\$key, \$value=1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_a7b09687df2408c08f8178ee8687b4f5a}{decrement}} (\$key, \$value=1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_a7299abb6e52f75b223e9ee3fb59afed6}{forever}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_a43dcccd0b1c8e644243fcb107b1746c7}{lock}} (\$name, \$seconds=0, \$owner=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_ac5b64c02b0aa80ee022b969073bec676}{restore\+Lock}} (\$name, \$owner)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_ac46021255381e4f789a222869e81cdd7}{forget}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_abd77b95c5800c347dcc8f7917f2997f0}{flush}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_a8004e5161380f40ba77b586f993f4dd7}{get\+Memcached}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_a732012b233502d7c3933b7160f4bbad5}{get\+Prefix}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_a7c8e575f99f6a4f4ac443242e1f8870e}{set\+Prefix}} (\$prefix)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_taggable_store}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Taggable\+Store}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_taggable_store_ad9e7a5ae0a4c8b94ae9e655433361c66}{tags}} (\$names)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_ac4da8cd6377dec364cba4279ea16feca}{calculate\+Expiration}} (\$seconds)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_afba898b784c01ad2e8abd58be115296e}{to\+Timestamp}} (\$seconds)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_ab8be5684d8b294d80be94e32ce0f85fd}\label{class_illuminate_1_1_cache_1_1_memcached_store_ab8be5684d8b294d80be94e32ce0f85fd} 
+{\bfseries \$memcached}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_acce7bdcb5ef19c3b1e5587738b8d59ce}\label{class_illuminate_1_1_cache_1_1_memcached_store_acce7bdcb5ef19c3b1e5587738b8d59ce} 
+{\bfseries \$prefix}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_a477a40d2e835563ea098b109802c0a83}\label{class_illuminate_1_1_cache_1_1_memcached_store_a477a40d2e835563ea098b109802c0a83} 
+{\bfseries \$on\+Version\+Three}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_a31658fff1f2aa083b3fb7ff286121f6f}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_a31658fff1f2aa083b3fb7ff286121f6f} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$memcached}{, }\item[{}]{\$prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a new Memcached store.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Memcached & {\em \$memcached} & \\
+\hline
+string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_a90cdc1ec94e5ede8975d35963d4375f9}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!add@{add}}
+\index{add@{add}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_a90cdc1ec94e5ede8975d35963d4375f9} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::add (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{, }\item[{}]{\$seconds}{}\end{DoxyParamCaption})}
+
+Store an item in the cache if the key doesn\textquotesingle{}t exist.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_ac4da8cd6377dec364cba4279ea16feca}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!calculateExpiration@{calculateExpiration}}
+\index{calculateExpiration@{calculateExpiration}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{calculateExpiration()}{calculateExpiration()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_ac4da8cd6377dec364cba4279ea16feca} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::calculate\+Expiration (\begin{DoxyParamCaption}\item[{}]{\$seconds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the expiration time of the key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_a7b09687df2408c08f8178ee8687b4f5a}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!decrement@{decrement}}
+\index{decrement@{decrement}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{decrement()}{decrement()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_a7b09687df2408c08f8178ee8687b4f5a} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::decrement (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Decrement the value of an item in the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a5535f41edfe28cf81a37b164283cbeae}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_abd77b95c5800c347dcc8f7917f2997f0}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!flush@{flush}}
+\index{flush@{flush}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_abd77b95c5800c347dcc8f7917f2997f0} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::flush (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Remove all items from the cache.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_ac0f8554721326578beed63e536cacb4c}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_a7299abb6e52f75b223e9ee3fb59afed6}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!forever@{forever}}
+\index{forever@{forever}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{forever()}{forever()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_a7299abb6e52f75b223e9ee3fb59afed6} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::forever (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Store an item in the cache indefinitely.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_acc81ba5be408507d39f43560c8c3b097}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_ac46021255381e4f789a222869e81cdd7}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!forget@{forget}}
+\index{forget@{forget}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{forget()}{forget()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_ac46021255381e4f789a222869e81cdd7} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::forget (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Remove an item from the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_ac735132a55c57063607508d3ddf1bbcc}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_a02eef411a72eec033fec1adb7fa8ba87}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!get@{get}}
+\index{get@{get}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_a02eef411a72eec033fec1adb7fa8ba87} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::get (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Retrieve an item from the cache by key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a76a1f3cd25865c30893e5498b7f9f22f}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_a8004e5161380f40ba77b586f993f4dd7}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!getMemcached@{getMemcached}}
+\index{getMemcached@{getMemcached}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{getMemcached()}{getMemcached()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_a8004e5161380f40ba77b586f993f4dd7} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::get\+Memcached (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the underlying Memcached connection.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Memcached 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_a732012b233502d7c3933b7160f4bbad5}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!getPrefix@{getPrefix}}
+\index{getPrefix@{getPrefix}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{getPrefix()}{getPrefix()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_a732012b233502d7c3933b7160f4bbad5} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::get\+Prefix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the cache key prefix.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a7052d7e499811475bfab1cda35aaa24a}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_af928a65122946a39ea0653558c6df9eb}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!increment@{increment}}
+\index{increment@{increment}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_af928a65122946a39ea0653558c6df9eb} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::increment (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Increment the value of an item in the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a6c0f3189449cee80c854f9f2b9a84aa8}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_a43dcccd0b1c8e644243fcb107b1746c7}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!lock@{lock}}
+\index{lock@{lock}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{lock()}{lock()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_a43dcccd0b1c8e644243fcb107b1746c7} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::lock (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$seconds}{ = {\ttfamily 0}, }\item[{}]{\$owner}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a lock instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+string | null & {\em \$owner} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_provider_a401c9363d4bed96466eae103e293f442}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock\+Provider}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_a3ae0234b7d65ef320a71ee22145b7666}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!many@{many}}
+\index{many@{many}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{many()}{many()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_a3ae0234b7d65ef320a71ee22145b7666} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::many (\begin{DoxyParamCaption}\item[{array}]{\$keys}{}\end{DoxyParamCaption})}
+
+Retrieve multiple items from the cache by key.
+
+Items not found in the cache will have a null value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$keys} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_acd26c0fb0e85829dca6cf34497caa605}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_aad2bc865f93757e259660fa6485776b3}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!put@{put}}
+\index{put@{put}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_aad2bc865f93757e259660fa6485776b3} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::put (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{, }\item[{}]{\$seconds}{}\end{DoxyParamCaption})}
+
+Store an item in the cache for a given number of seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a1b289bda788cce15cbbb698d8c48b745}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_af5c521054aab3c92f8fb8458e7f3d563}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!putMany@{putMany}}
+\index{putMany@{putMany}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{putMany()}{putMany()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_af5c521054aab3c92f8fb8458e7f3d563} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::put\+Many (\begin{DoxyParamCaption}\item[{array}]{\$values}{, }\item[{}]{\$seconds}{}\end{DoxyParamCaption})}
+
+Store multiple items in the cache for a given number of seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$values} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_af1c13c5ce3d6ae7cdb92954316da33ac}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_ac5b64c02b0aa80ee022b969073bec676}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!restoreLock@{restoreLock}}
+\index{restoreLock@{restoreLock}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{restoreLock()}{restoreLock()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_ac5b64c02b0aa80ee022b969073bec676} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::restore\+Lock (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$owner}{}\end{DoxyParamCaption})}
+
+Restore a lock instance using the owner identifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$owner} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_provider_af4d5f5cf5f39cf69a9aaa1096686cbbf}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock\+Provider}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_a7c8e575f99f6a4f4ac443242e1f8870e}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!setPrefix@{setPrefix}}
+\index{setPrefix@{setPrefix}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{setPrefix()}{setPrefix()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_a7c8e575f99f6a4f4ac443242e1f8870e} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::set\+Prefix (\begin{DoxyParamCaption}\item[{}]{\$prefix}{}\end{DoxyParamCaption})}
+
+Set the cache key prefix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_memcached_store_afba898b784c01ad2e8abd58be115296e}\index{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}!toTimestamp@{toTimestamp}}
+\index{toTimestamp@{toTimestamp}!Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore@{Illuminate\textbackslash{}Cache\textbackslash{}MemcachedStore}}
+\doxysubsubsection{\texorpdfstring{toTimestamp()}{toTimestamp()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_memcached_store_afba898b784c01ad2e8abd58be115296e} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store\+::to\+Timestamp (\begin{DoxyParamCaption}\item[{}]{\$seconds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the UNIX timestamp for the given number of seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Cache/Memcached\+Store.\+php\end{DoxyCompactItemize}

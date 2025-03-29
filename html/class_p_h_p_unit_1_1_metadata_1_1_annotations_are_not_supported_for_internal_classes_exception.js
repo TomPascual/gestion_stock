@@ -1,0 +1,4 @@
+var class_p_h_p_unit_1_1_metadata_1_1_annotations_are_not_supported_for_internal_classes_exception =
+[
+    [ "__construct", "class_p_h_p_unit_1_1_metadata_1_1_annotations_are_not_supported_for_internal_classes_exception.html#a9a739b4c3586f697f84839c45d0de78e", null ]
+];

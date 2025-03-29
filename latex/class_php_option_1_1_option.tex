@@ -1,0 +1,527 @@
+\doxysection{Php\+Option\textbackslash{}Option Class Reference}
+\hypertarget{class_php_option_1_1_option}{}\label{class_php_option_1_1_option}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+Inheritance diagram for Php\+Option\textbackslash{}Option\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.904762cm]{class_php_option_1_1_option}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_a94f62c8aa2740c9bf22b7512a2b290f3}{get}} ()
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_a903dc387eb6a5afdace4086c4d410e7e}{get\+Or\+Else}} (\$default)
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_a5fe5bc59394c05d860bcfb73a870e0e6}{get\+Or\+Call}} (\$callable)
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_a37c73f43e15eb326970894ea2ea830c4}{get\+Or\+Throw}} (\textbackslash{}Exception \$ex)
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_a214a8de9c686bdedf2979bad27d618a8}{is\+Empty}} ()
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_a1d95a32025e69de9316dcf7a8ce7db05}{is\+Defined}} ()
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_a99b5b38bebb3b33a2bc33854250649ec}{or\+Else}} (self \$else)
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_a80414cfcfa187902092a3d2111b9c210}{if\+Defined}} (\$callable)
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_a72e23c6c6e24f770b2ddd7af21e3aedf}{for\+All}} (\$callable)
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_a6d96edf9ae675a67348687f62171ed28}{map}} (\$callable)
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_a8305c2583aaa67b9f32805bd5dec9dc3}{flat\+Map}} (\$callable)
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_a38257789ed20c011ed5e86ad1ad05461}{filter}} (\$callable)
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_ad2f5a33c65b6cc263471eabe4bf6a9de}{filter\+Not}} (\$callable)
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_afde2291dffc1a1efcd9ec2412eab6b4c}{select}} (\$value)
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_acdab19a63df37b5b0fccd408bb3da30e}{reject}} (\$value)
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_a752a5db888c170d5f00776551ee902ab}{fold\+Left}} (\$initial\+Value, \$callable)
+\item 
+\mbox{\hyperlink{class_php_option_1_1_option_aa6cbc3192789b2648388c4123df1c3d3}{fold\+Right}} (\$initial\+Value, \$callable)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_php_option_1_1_option_aa413c56c09c5c7a5ee624129c6eee44a}{from\+Value}} (\$value, \$none\+Value=null)
+\item 
+static \mbox{\hyperlink{class_php_option_1_1_option_a89c38bf7f6122a1d309b6f78b4d4978a}{from\+Arrays\+Value}} (\$array, \$key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@template T
+
+$<$\+T$>$ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_option_1_1_option_a38257789ed20c011ed5e86ad1ad05461}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!filter@{filter}}
+\index{filter@{filter}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_a38257789ed20c011ed5e86ad1ad05461} 
+Php\+Option\textbackslash{}\+Option\+::filter (\begin{DoxyParamCaption}\item[{}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+If the option is empty, it is returned immediately without applying the callable.
+
+If the option is non-\/empty, the callable is applied, and if it returns true, the option itself is returned; otherwise, None is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+T)\+:bool} & \$callable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Option$<$\+T$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_option_1_1_lazy_option_ac13738165cc33e96cf249588cb06dfa6}{Php\+Option\textbackslash{}\+Lazy\+Option}}, \mbox{\hyperlink{class_php_option_1_1_none_a0f91989ea7ae5ee3acc9fb1a87c51f19}{Php\+Option\textbackslash{}\+None}}, and \mbox{\hyperlink{class_php_option_1_1_some_ae22558d1cb5d17404697061b38ae01e9}{Php\+Option\textbackslash{}\+Some}}.
+
+\Hypertarget{class_php_option_1_1_option_ad2f5a33c65b6cc263471eabe4bf6a9de}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!filterNot@{filterNot}}
+\index{filterNot@{filterNot}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{filterNot()}{filterNot()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_ad2f5a33c65b6cc263471eabe4bf6a9de} 
+Php\+Option\textbackslash{}\+Option\+::filter\+Not (\begin{DoxyParamCaption}\item[{}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+If the option is empty, it is returned immediately without applying the callable.
+
+If the option is non-\/empty, the callable is applied, and if it returns false, the option itself is returned; otherwise, None is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+T)\+:bool} & \$callable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Option$<$\+T$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_option_1_1_lazy_option_aa3b042905120bbab1d72cab3ae344fd1}{Php\+Option\textbackslash{}\+Lazy\+Option}}, \mbox{\hyperlink{class_php_option_1_1_none_afbd6cad173bf199e0a09310492dfc561}{Php\+Option\textbackslash{}\+None}}, and \mbox{\hyperlink{class_php_option_1_1_some_ad40defbf42722f4159d868ea43dc9a51}{Php\+Option\textbackslash{}\+Some}}.
+
+\Hypertarget{class_php_option_1_1_option_a8305c2583aaa67b9f32805bd5dec9dc3}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!flatMap@{flatMap}}
+\index{flatMap@{flatMap}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{flatMap()}{flatMap()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_a8305c2583aaa67b9f32805bd5dec9dc3} 
+Php\+Option\textbackslash{}\+Option\+::flat\+Map (\begin{DoxyParamCaption}\item[{}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Applies the callable to the value of the option if it is non-\/empty, and returns the return value of the callable directly.
+
+In contrast to {\ttfamily map}, the return value of the callable is expected to be an Option itself; it is not automatically wrapped in Some().
+
+@template S
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+T)\+:\+Option$<$\+S$>$} & \$callable must return an Option\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Option\sout{ }
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_option_1_1_lazy_option_a6f29fe355db31134f3c2e7fcecb913b0}{Php\+Option\textbackslash{}\+Lazy\+Option}}, and \mbox{\hyperlink{class_php_option_1_1_none_a08a9d25be6bb40c1e225dbaf1b77c262}{Php\+Option\textbackslash{}\+None}}.
+
+\Hypertarget{class_php_option_1_1_option_a752a5db888c170d5f00776551ee902ab}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!foldLeft@{foldLeft}}
+\index{foldLeft@{foldLeft}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{foldLeft()}{foldLeft()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_a752a5db888c170d5f00776551ee902ab} 
+Php\+Option\textbackslash{}\+Option\+::fold\+Left (\begin{DoxyParamCaption}\item[{}]{\$initial\+Value}{, }\item[{}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Binary operator for the initial value and the option\textquotesingle{}s value.
+
+If empty, the initial value is returned. If non-\/empty, the callable receives the initial value and the option\textquotesingle{}s value as arguments.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$some\ =\ \textcolor{keyword}{new}\ Some(5);}
+\DoxyCodeLine{\$none\ =\ None::create();}
+\DoxyCodeLine{\$result\ =\ \$some-\/>foldLeft(1,\ \textcolor{keyword}{function}(\$a,\ \$b)\ \{\ \textcolor{keywordflow}{return}\ \$a\ +\ \$b;\ \});\ \textcolor{comment}{//\ int(6)}}
+\DoxyCodeLine{\$result\ =\ \$none-\/>foldLeft(1,\ \textcolor{keyword}{function}(\$a,\ \$b)\ \{\ \textcolor{keywordflow}{return}\ \$a\ +\ \$b;\ \});\ \textcolor{comment}{//\ int(1)}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ This\ can\ be\ used\ instead\ of\ something\ like\ the\ following:}}
+\DoxyCodeLine{\$option\ =\ Option::fromValue(\$integerOrNull);}
+\DoxyCodeLine{\$result\ =\ 1;}
+\DoxyCodeLine{\textcolor{keywordflow}{if}\ (\ !\ \$option-\/>isEmpty())\ \{}
+\DoxyCodeLine{\ \ \ \ \$result\ +=\ \$option-\/>get();}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+@template S
+
+
+\begin{DoxyParams}[1]{Parameters}
+S & {\em \$initial\+Value} & \\
+\hline
+ & {\em callable(S,T)\+:S} & \$callable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_option_1_1_lazy_option_aa4a67d866d5834d9890485bcfb32a42b}{Php\+Option\textbackslash{}\+Lazy\+Option}}, \mbox{\hyperlink{class_php_option_1_1_none_a3cc72806b99e32f1cade1123a5d14aa7}{Php\+Option\textbackslash{}\+None}}, and \mbox{\hyperlink{class_php_option_1_1_some_a4dcfb64000abf932223725703700e703}{Php\+Option\textbackslash{}\+Some}}.
+
+\Hypertarget{class_php_option_1_1_option_aa6cbc3192789b2648388c4123df1c3d3}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!foldRight@{foldRight}}
+\index{foldRight@{foldRight}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{foldRight()}{foldRight()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_aa6cbc3192789b2648388c4123df1c3d3} 
+Php\+Option\textbackslash{}\+Option\+::fold\+Right (\begin{DoxyParamCaption}\item[{}]{\$initial\+Value}{, }\item[{}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+fold\+Left() but with reversed arguments for the callable.
+
+@template S
+
+
+\begin{DoxyParams}[1]{Parameters}
+S & {\em \$initial\+Value} & \\
+\hline
+ & {\em callable(T,S)\+:S} & \$callable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+S 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_option_1_1_lazy_option_a0d833e9729ba28ab93ec497299ff2abe}{Php\+Option\textbackslash{}\+Lazy\+Option}}, \mbox{\hyperlink{class_php_option_1_1_none_a0980a7869b451a378bce5994b115b8ea}{Php\+Option\textbackslash{}\+None}}, and \mbox{\hyperlink{class_php_option_1_1_some_aae4f80477b997a82bafa9cdb9f8886b8}{Php\+Option\textbackslash{}\+Some}}.
+
+\Hypertarget{class_php_option_1_1_option_a72e23c6c6e24f770b2ddd7af21e3aedf}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!forAll@{forAll}}
+\index{forAll@{forAll}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{forAll()}{forAll()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_a72e23c6c6e24f770b2ddd7af21e3aedf} 
+Php\+Option\textbackslash{}\+Option\+::for\+All (\begin{DoxyParamCaption}\item[{}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+This is similar to map() except that the return value of the callable has no meaning.
+
+The passed callable is simply executed if the option is non-\/empty, and ignored if the option is empty. This method is preferred for callables with side-\/effects, while map() is intended for callables without side-\/effects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+T)\+:mixed} & \$callable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Option$<$\+T$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_option_1_1_lazy_option_a647783c6067427cb56ac9d29cadace63}{Php\+Option\textbackslash{}\+Lazy\+Option}}, \mbox{\hyperlink{class_php_option_1_1_none_ad275ed6f5df5ccee80b319bd6d8831ff}{Php\+Option\textbackslash{}\+None}}, and \mbox{\hyperlink{class_php_option_1_1_some_a86eace5b0bd6e4288e56d25493ad3a6a}{Php\+Option\textbackslash{}\+Some}}.
+
+\Hypertarget{class_php_option_1_1_option_a89c38bf7f6122a1d309b6f78b4d4978a}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!fromArraysValue@{fromArraysValue}}
+\index{fromArraysValue@{fromArraysValue}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{fromArraysValue()}{fromArraysValue()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_a89c38bf7f6122a1d309b6f78b4d4978a} 
+static Php\+Option\textbackslash{}\+Option\+::from\+Arrays\+Value (\begin{DoxyParamCaption}\item[{}]{\$array}{, }\item[{}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates an option from an array\textquotesingle{}s value.
+
+If the key does not exist in the array, the array is not actually an array, or the array\textquotesingle{}s value at the given key is null, None is returned. Otherwise, Some is returned wrapping the value at the given key.
+
+@template S
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$string\texorpdfstring{$\vert$}{|}int,S$>$\texorpdfstring{$\vert$}{|}\+Array\+Access$<$string\texorpdfstring{$\vert$}{|}int,S$>$\texorpdfstring{$\vert$}{|}null} & \$array A potential array or \textbackslash{}\+Array\+Access value. \\
+\hline
+string | int | null & {\em \$key} & The key to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Option\sout{ }
+\end{DoxyReturn}
+\Hypertarget{class_php_option_1_1_option_aa413c56c09c5c7a5ee624129c6eee44a}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!fromValue@{fromValue}}
+\index{fromValue@{fromValue}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{fromValue()}{fromValue()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_aa413c56c09c5c7a5ee624129c6eee44a} 
+static Php\+Option\textbackslash{}\+Option\+::from\+Value (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{}]{\$none\+Value}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates an option given a return value.
+
+This is intended for consuming existing APIs and allows you to easily convert them to an option. By default, we treat {\ttfamily null} as the None case, and everything else as Some.
+
+@template S
+
+
+\begin{DoxyParams}[1]{Parameters}
+S & {\em \$value} & The actual return value. \\
+\hline
+S & {\em \$none\+Value} & The value which should be considered "{}\+None"{}; null by default.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Option\sout{ }
+\end{DoxyReturn}
+\Hypertarget{class_php_option_1_1_option_a94f62c8aa2740c9bf22b7512a2b290f3}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!get@{get}}
+\index{get@{get}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_a94f62c8aa2740c9bf22b7512a2b290f3} 
+Php\+Option\textbackslash{}\+Option\+::get (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns the value if available, or throws an exception otherwise.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception If value is not available.
+
+\begin{DoxyReturn}{Returns}
+T 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_option_1_1_lazy_option_a4c9b234ac6fec6372d8993de4453a5f2}{Php\+Option\textbackslash{}\+Lazy\+Option}}, \mbox{\hyperlink{class_php_option_1_1_none_a3a37a07b0597cf652fa17f55ee382ade}{Php\+Option\textbackslash{}\+None}}, and \mbox{\hyperlink{class_php_option_1_1_some_a225394a3216f517ad0630b977b232db7}{Php\+Option\textbackslash{}\+Some}}.
+
+\Hypertarget{class_php_option_1_1_option_a5fe5bc59394c05d860bcfb73a870e0e6}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!getOrCall@{getOrCall}}
+\index{getOrCall@{getOrCall}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{getOrCall()}{getOrCall()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_a5fe5bc59394c05d860bcfb73a870e0e6} 
+Php\+Option\textbackslash{}\+Option\+::get\+Or\+Call (\begin{DoxyParamCaption}\item[{}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns the value if available, or the results of the callable.
+
+This is preferable over {\ttfamily get\+Or\+Else} if the computation of the default value is expensive.
+
+@template S
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable()\+:S} & \$callable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\texorpdfstring{$\vert$}{|}S 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_option_1_1_lazy_option_aca9d4c8bca88a0fb40d33fe8c42324b7}{Php\+Option\textbackslash{}\+Lazy\+Option}}, \mbox{\hyperlink{class_php_option_1_1_none_a349879ffac6889718d4efc4aab4dc1cc}{Php\+Option\textbackslash{}\+None}}, and \mbox{\hyperlink{class_php_option_1_1_some_a154977b4f60b7b1ff5f750445ba7e861}{Php\+Option\textbackslash{}\+Some}}.
+
+\Hypertarget{class_php_option_1_1_option_a903dc387eb6a5afdace4086c4d410e7e}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!getOrElse@{getOrElse}}
+\index{getOrElse@{getOrElse}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{getOrElse()}{getOrElse()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_a903dc387eb6a5afdace4086c4d410e7e} 
+Php\+Option\textbackslash{}\+Option\+::get\+Or\+Else (\begin{DoxyParamCaption}\item[{}]{\$default}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns the value if available, or the default value if not.
+
+@template S
+
+
+\begin{DoxyParams}[1]{Parameters}
+S & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\texorpdfstring{$\vert$}{|}S 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_option_1_1_lazy_option_a95ab4bed23b075ca3b53d140157cd50a}{Php\+Option\textbackslash{}\+Lazy\+Option}}, \mbox{\hyperlink{class_php_option_1_1_none_ae30d888af368414a0db0d20f3fc69078}{Php\+Option\textbackslash{}\+None}}, and \mbox{\hyperlink{class_php_option_1_1_some_aa556b7e284d29dbf82ce08fbd6b19c01}{Php\+Option\textbackslash{}\+Some}}.
+
+\Hypertarget{class_php_option_1_1_option_a37c73f43e15eb326970894ea2ea830c4}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!getOrThrow@{getOrThrow}}
+\index{getOrThrow@{getOrThrow}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{getOrThrow()}{getOrThrow()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_a37c73f43e15eb326970894ea2ea830c4} 
+Php\+Option\textbackslash{}\+Option\+::get\+Or\+Throw (\begin{DoxyParamCaption}\item[{\textbackslash{}Exception}]{\$ex}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns the value if available, or throws the passed exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Exception & {\em \$ex} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_option_1_1_lazy_option_a7d8cdd88ef7f0ff7b1648c55c2e86eb5}{Php\+Option\textbackslash{}\+Lazy\+Option}}, \mbox{\hyperlink{class_php_option_1_1_none_a822f579e025861d23db045cdc3aef304}{Php\+Option\textbackslash{}\+None}}, and \mbox{\hyperlink{class_php_option_1_1_some_a095dd0b897532989841d374a33b77adb}{Php\+Option\textbackslash{}\+Some}}.
+
+\Hypertarget{class_php_option_1_1_option_a80414cfcfa187902092a3d2111b9c210}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!ifDefined@{ifDefined}}
+\index{ifDefined@{ifDefined}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{ifDefined()}{ifDefined()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_a80414cfcfa187902092a3d2111b9c210} 
+Php\+Option\textbackslash{}\+Option\+::if\+Defined (\begin{DoxyParamCaption}\item[{}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+This is similar to map() below except that the return value has no meaning; the passed callable is simply executed if the option is non-\/empty, and ignored if the option is empty.
+
+In all cases, the return value of the callable is discarded.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$comment-\/>getMaybeFile()-\/>ifDefined(\textcolor{keyword}{function}(\$file)\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{//\ Do\ something\ with\ \$file\ here.}}
+\DoxyCodeLine{\});}
+
+\end{DoxyCode}
+
+
+If you\textquotesingle{}re looking for something like {\ttfamily if\+Empty}, you can use {\ttfamily get\+Or\+Call} and {\ttfamily get\+Or\+Else} in these cases.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000209}{Deprecated}}]Use for\+All() instead.\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+T)\+:mixed} & \$callable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_option_1_1_lazy_option_a761f4c099920a8dcff975b92ac916b3c}{Php\+Option\textbackslash{}\+Lazy\+Option}}, \mbox{\hyperlink{class_php_option_1_1_none_a14a2099dc73a40cfa2b7f045a79b1e0c}{Php\+Option\textbackslash{}\+None}}, and \mbox{\hyperlink{class_php_option_1_1_some_a29c0018dd827984fa67ebc4a21e05ec3}{Php\+Option\textbackslash{}\+Some}}.
+
+\Hypertarget{class_php_option_1_1_option_a1d95a32025e69de9316dcf7a8ce7db05}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!isDefined@{isDefined}}
+\index{isDefined@{isDefined}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{isDefined()}{isDefined()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_a1d95a32025e69de9316dcf7a8ce7db05} 
+Php\+Option\textbackslash{}\+Option\+::is\+Defined (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns true if a value is available, false otherwise.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_option_1_1_lazy_option_add26eae694da646a2b87a06e5b51aeeb}{Php\+Option\textbackslash{}\+Lazy\+Option}}, \mbox{\hyperlink{class_php_option_1_1_none_a8ffcbbff4751ab3237dbf9c25811b9b3}{Php\+Option\textbackslash{}\+None}}, and \mbox{\hyperlink{class_php_option_1_1_some_ac1e5641ad2a42f2dbffb174515fba2f6}{Php\+Option\textbackslash{}\+Some}}.
+
+\Hypertarget{class_php_option_1_1_option_a214a8de9c686bdedf2979bad27d618a8}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_a214a8de9c686bdedf2979bad27d618a8} 
+Php\+Option\textbackslash{}\+Option\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns true if no value is available, false otherwise.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_option_1_1_lazy_option_a3c285665c8f69d4d1019e5a96de6e755}{Php\+Option\textbackslash{}\+Lazy\+Option}}, \mbox{\hyperlink{class_php_option_1_1_none_a310c7094a2ba78d9de27d42a0cb4ce52}{Php\+Option\textbackslash{}\+None}}, and \mbox{\hyperlink{class_php_option_1_1_some_a5eaa11ec641d207fe18c42b861888f63}{Php\+Option\textbackslash{}\+Some}}.
+
+\Hypertarget{class_php_option_1_1_option_a6d96edf9ae675a67348687f62171ed28}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!map@{map}}
+\index{map@{map}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_a6d96edf9ae675a67348687f62171ed28} 
+Php\+Option\textbackslash{}\+Option\+::map (\begin{DoxyParamCaption}\item[{}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Applies the callable to the value of the option if it is non-\/empty, and returns the return value of the callable wrapped in Some().
+
+If the option is empty, then the callable is not applied.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(\textcolor{keyword}{new}\ Some(\textcolor{stringliteral}{"{}foo"{}}))-\/>map(\textcolor{stringliteral}{'strtoupper'})-\/>get();\ \textcolor{comment}{//\ "{}FOO"{}}}
+
+\end{DoxyCode}
+
+
+@template S
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+T)\+:S} & \$callable\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Option\sout{ }
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_option_1_1_lazy_option_a14c45166e218bf5eab0c5cbc146d5555}{Php\+Option\textbackslash{}\+Lazy\+Option}}, \mbox{\hyperlink{class_php_option_1_1_none_a9101eed1e32f55d95e59732e359948f5}{Php\+Option\textbackslash{}\+None}}, and \mbox{\hyperlink{class_php_option_1_1_some_ac9efcf1256b3e1dc9e734c81279e9cdb}{Php\+Option\textbackslash{}\+Some}}.
+
+\Hypertarget{class_php_option_1_1_option_a99b5b38bebb3b33a2bc33854250649ec}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!orElse@{orElse}}
+\index{orElse@{orElse}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{orElse()}{orElse()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_a99b5b38bebb3b33a2bc33854250649ec} 
+Php\+Option\textbackslash{}\+Option\+::or\+Else (\begin{DoxyParamCaption}\item[{self}]{\$else}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Returns this option if non-\/empty, or the passed option otherwise.
+
+This can be used to try multiple alternatives, and is especially useful with lazy evaluating options\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$repo-\/>findSomething()}
+\DoxyCodeLine{\ \ \ \ -\/>orElse(\textcolor{keyword}{new}\ LazyOption(array(\$repo,\ \textcolor{stringliteral}{'findSomethingElse'})))}
+\DoxyCodeLine{\ \ \ \ -\/>orElse(\textcolor{keyword}{new}\ LazyOption(array(\$repo,\ \textcolor{stringliteral}{'createSomething'})));}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em Option$<$\+T$>$} & \$else\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Option$<$\+T$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_php_option_1_1_option_acdab19a63df37b5b0fccd408bb3da30e}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!reject@{reject}}
+\index{reject@{reject}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{reject()}{reject()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_acdab19a63df37b5b0fccd408bb3da30e} 
+Php\+Option\textbackslash{}\+Option\+::reject (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+If the option is empty, it is returned immediately.
+
+If the option is non-\/empty, and its value does equal the passed value (via a shallow comparison ===), then None is returned; otherwise, the Option is returned.
+
+In other words, this will let all values through except the passed value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+T & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Option$<$\+T$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_option_1_1_lazy_option_acee7e9559aae4a6e161f06cf303ab981}{Php\+Option\textbackslash{}\+Lazy\+Option}}, \mbox{\hyperlink{class_php_option_1_1_none_a0cfe69588a5e12876566142205a010ee}{Php\+Option\textbackslash{}\+None}}, and \mbox{\hyperlink{class_php_option_1_1_some_a416469aab8ec38e6a2b212475b78e6bc}{Php\+Option\textbackslash{}\+Some}}.
+
+\Hypertarget{class_php_option_1_1_option_afde2291dffc1a1efcd9ec2412eab6b4c}\index{PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}!select@{select}}
+\index{select@{select}!PhpOption\textbackslash{}Option@{PhpOption\textbackslash{}Option}}
+\doxysubsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily \label{class_php_option_1_1_option_afde2291dffc1a1efcd9ec2412eab6b4c} 
+Php\+Option\textbackslash{}\+Option\+::select (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+If the option is empty, it is returned immediately.
+
+If the option is non-\/empty, and its value does not equal the passed value (via a shallow comparison ===), then None is returned. Otherwise, the Option is returned.
+
+In other words, this will filter all but the passed value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+T & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Option$<$\+T$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_option_1_1_lazy_option_a636b0309721da93b03af122ef2bcb5e2}{Php\+Option\textbackslash{}\+Lazy\+Option}}, \mbox{\hyperlink{class_php_option_1_1_none_a2bb34837804d025417c8dd806c1c4009}{Php\+Option\textbackslash{}\+None}}, and \mbox{\hyperlink{class_php_option_1_1_some_a91aab6a5a774520518996a6b97ce7a67}{Php\+Option\textbackslash{}\+Some}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/phpoption/phpoption/src/\+Php\+Option/Option.\+php\end{DoxyCompactItemize}

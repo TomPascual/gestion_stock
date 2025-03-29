@@ -1,0 +1,66 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Data\+Collector\textbackslash{}Data\+Collector\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_data_collector_interface}{}\label{interface_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_data_collector_interface}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}DataCollector\textbackslash{}DataCollectorInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}DataCollector\textbackslash{}DataCollectorInterface}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Data\+Collector\textbackslash{}Data\+Collector\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.516432cm]{interface_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_data_collector_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_data_collector_interface_af1799d474e68afdd3b28bf4ed756f1f2}{collect}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response, ?\textbackslash{}Throwable \$exception=null)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_data_collector_interface_a1cb2746f7d7bd4ed9d6608f656ccd1ba}{get\+Name}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_service_1_1_reset_interface}{Symfony\textbackslash{}\+Contracts\textbackslash{}\+Service\textbackslash{}\+Reset\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_service_1_1_reset_interface_a9f973c7897c549bbd6547aa4487e6872}{reset}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Data\+Collector\+Interface.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_data_collector_interface_af1799d474e68afdd3b28bf4ed756f1f2}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}DataCollector\textbackslash{}DataCollectorInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}DataCollector\textbackslash{}DataCollectorInterface}!collect@{collect}}
+\index{collect@{collect}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}DataCollector\textbackslash{}DataCollectorInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}DataCollector\textbackslash{}DataCollectorInterface}}
+\doxysubsubsection{\texorpdfstring{collect()}{collect()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_data_collector_interface_af1799d474e68afdd3b28bf4ed756f1f2} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Data\+Collector\+Interface\+::collect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{, }\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}}}]{\$response}{, }\item[{?\textbackslash{}Throwable}]{\$exception}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Collects data for the given Request and Response.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_data_collector_1_1_command_data_collector_a2acb1578bb2051480fba5e627b5bcbae}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Data\+Collector\textbackslash{}\+Command\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_ajax_data_collector_a9f364507244770dbf4d1c2bd76ec3674}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Ajax\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_config_data_collector_a0a136540eb6fa99192f65ea93248fa2c}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Config\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_dump_data_collector_a760a52913937f37096eb0c421ddb0cd3}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Dump\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_event_data_collector_ac6e37f564a7e7b6a146a406801b8fb39}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Event\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_exception_data_collector_a7d943fc55287017d3b857348dac26d87}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Exception\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_logger_data_collector_aa477b2f5c5aaa6e95ee0f28fda9feba6}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Logger\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_memory_data_collector_a63d480ae6bc7c178f9cf751f1763f37b}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Memory\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_request_data_collector_a4d8a97faf53d3372879adace6c3f7661}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Request\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_router_data_collector_a7b44b36be6961891aef86c4df752f225}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Router\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_time_data_collector_ace70803c4a926e9be33159f7f1e2064b}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Time\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_data_collector_1_1_message_data_collector_adfe8f551b797f89664f7dbd04b4afd87}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Data\+Collector\textbackslash{}\+Message\+Data\+Collector}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_1_1_translation_data_collector_a8d56cae7814a6d0d1d157b7f3ff99e4b}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Data\+Collector\textbackslash{}\+Translation\+Data\+Collector}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_data_collector_interface_a1cb2746f7d7bd4ed9d6608f656ccd1ba}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}DataCollector\textbackslash{}DataCollectorInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}DataCollector\textbackslash{}DataCollectorInterface}!getName@{getName}}
+\index{getName@{getName}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}DataCollector\textbackslash{}DataCollectorInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}DataCollector\textbackslash{}DataCollectorInterface}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_data_collector_interface_a1cb2746f7d7bd4ed9d6608f656ccd1ba} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Data\+Collector\+Interface\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the name of the collector.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_data_collector_1_1_command_data_collector_a25a5e7581b08356164fae0eabf3ffc30}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Data\+Collector\textbackslash{}\+Command\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_ajax_data_collector_a55e52290a61fd2dc71013a28005fcc26}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Ajax\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_config_data_collector_ac1fe56330a5316a86f6cdd17ca401e2e}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Config\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_dump_data_collector_a515860bb066aba1e4533d2994bf7b8de}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Dump\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_event_data_collector_ad4e3887d481017d705873fe2e4cf656e}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Event\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_exception_data_collector_adc8621f58381b53b18bafa72221e7e59}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Exception\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_logger_data_collector_a6a0dce03cbbeaf7869557bdaacc5ed7e}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Logger\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_memory_data_collector_a5b439ab38cea104118d1f081b4fe7612}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Memory\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_request_data_collector_ae1c885cdb201cbca13fafdde8c32ec2f}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Request\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_router_data_collector_a0b5b8f0c67cf183f51d21333514f8b90}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Router\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_data_collector_1_1_time_data_collector_a5bf01196e1089e2dd807ce46ca6e8ece}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Data\+Collector\textbackslash{}\+Time\+Data\+Collector}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_data_collector_1_1_message_data_collector_a69cd804be413f6444bce6e73602644aa}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Data\+Collector\textbackslash{}\+Message\+Data\+Collector}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_data_collector_1_1_translation_data_collector_a4227d4259f322690c0a883a48577565e}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Data\+Collector\textbackslash{}\+Translation\+Data\+Collector}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/kernel/\+Data\+Collector/Data\+Collector\+Interface.\+php\end{DoxyCompactItemize}

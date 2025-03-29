@@ -1,0 +1,346 @@
+\doxysection{Php\+Parser\textbackslash{}Node\+Abstract Class Reference}
+\hypertarget{class_php_parser_1_1_node_abstract}{}\label{class_php_parser_1_1_node_abstract}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+Inheritance diagram for Php\+Parser\textbackslash{}Node\+Abstract\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_php_parser_1_1_node_abstract}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_a43dab61c39002f7ce8256019aedec917}{\+\_\+\+\_\+construct}} (array \$attributes=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_ab359dbde246b2ee89550b12e3d000df9}{get\+Line}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_a555c7d43c9703464b65110ed9c67f3a8}{get\+Start\+Line}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_a546f07ce3814eed3f81303fc0442614f}{get\+End\+Line}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_aa73728ead23ae7f828d6f0e4c0726d06}{get\+Start\+Token\+Pos}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_a9812eaf664ada865db57526c7a8e8e23}{get\+End\+Token\+Pos}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_a40154f59b68afd2a56e58d5a8d7fd58f}{get\+Start\+File\+Pos}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_a2d8ab17afe1be4441b0e2e2054e27ff5}{get\+End\+File\+Pos}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_ae124fac32f30b3d9c6b6e21bd84aa693}{get\+Comments}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_a8e3440b0c8e24015bf51bbba38d2fe34}{get\+Doc\+Comment}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_a7f797339969e9f5b9c67a39ece15173e}{set\+Doc\+Comment}} (\mbox{\hyperlink{class_php_parser_1_1_comment_1_1_doc}{Comment\textbackslash{}\+Doc}} \$doc\+Comment)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_ac8c01b36e669e482ce78b9546f492105}{set\+Attribute}} (string \$key, \$value)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_aa25bcb15385162e8f07c4b1ee26d8c3c}{has\+Attribute}} (string \$key)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_a40047b286cf317a6a3890f28e4bc6328}{get\+Attribute}} (string \$key, \$default=null)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_a656d48be529612c3c272ddeb06ed103a}{get\+Attributes}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_a1faa48ef0ec52e6387d57234b5c160a4}{set\+Attributes}} (array \$attributes)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_abstract_a3231a326c5e6c8e79c7308587fa91bd1}{json\+Serialize}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_php_parser_1_1_node}{Php\+Parser\textbackslash{}\+Node}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_a58a990fb23e1aa2b0f0ca12e2a4480a0}{get\+Type}} ()
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_node_a3409b9dbd545a6fe968cbf2339029d5f}{get\+Sub\+Node\+Names}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_php_parser_1_1_node_abstract_af9e0d62283e1cd5393095336ba89c6be}\label{class_php_parser_1_1_node_abstract_af9e0d62283e1cd5393095336ba89c6be} 
+array {\bfseries \$attributes}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_node_abstract_a43dab61c39002f7ce8256019aedec917}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_a43dab61c39002f7ce8256019aedec917} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Creates a Node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$attributes Array of attributes \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_error_ace8e057dd8ad485c6042c3b573ce642b}{Php\+Parser\textbackslash{}\+Node\textbackslash{}\+Expr\textbackslash{}\+Error}}, \mbox{\hyperlink{class_php_parser_1_1_node_1_1_scalar_1_1_magic_const_a804a5786c3caa6dcf9fb6e6c65ed9204}{Php\+Parser\textbackslash{}\+Node\textbackslash{}\+Scalar\textbackslash{}\+Magic\+Const}}, and \mbox{\hyperlink{class_php_parser_1_1_node_1_1_variadic_placeholder_a930e6344075ec21e5ab92e1575331d8d}{Php\+Parser\textbackslash{}\+Node\textbackslash{}\+Variadic\+Placeholder}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_node_abstract_a40047b286cf317a6a3890f28e4bc6328}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!getAttribute@{getAttribute}}
+\index{getAttribute@{getAttribute}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{getAttribute()}{getAttribute()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_a40047b286cf317a6a3890f28e4bc6328} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::get\+Attribute (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns the value of an attribute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_ab821c1f32af908c5cc001a2badb003ce}{Php\+Parser\textbackslash{}\+Node}}.
+
+\Hypertarget{class_php_parser_1_1_node_abstract_a656d48be529612c3c272ddeb06ed103a}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!getAttributes@{getAttributes}}
+\index{getAttributes@{getAttributes}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{getAttributes()}{getAttributes()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_a656d48be529612c3c272ddeb06ed103a} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::get\+Attributes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns all the attributes of this node.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_aaea7b5ce0424c1d7e9e71a3a9a448500}{Php\+Parser\textbackslash{}\+Node}}.
+
+\Hypertarget{class_php_parser_1_1_node_abstract_ae124fac32f30b3d9c6b6e21bd84aa693}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!getComments@{getComments}}
+\index{getComments@{getComments}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{getComments()}{getComments()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_ae124fac32f30b3d9c6b6e21bd84aa693} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::get\+Comments (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets all comments directly preceding this node.
+
+The comments are also available through the "{}comments"{} attribute.
+
+\begin{DoxyReturn}{Returns}
+Comment\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_a483a481ad10012e67ffb5ed95edc42b0}{Php\+Parser\textbackslash{}\+Node}}.
+
+\Hypertarget{class_php_parser_1_1_node_abstract_a8e3440b0c8e24015bf51bbba38d2fe34}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!getDocComment@{getDocComment}}
+\index{getDocComment@{getDocComment}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{getDocComment()}{getDocComment()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_a8e3440b0c8e24015bf51bbba38d2fe34} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::get\+Doc\+Comment (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the doc comment of the node.
+
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}\+Comment\textbackslash{}\+Doc Doc comment object or null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_a08b1c01e5512b543d973d5d2f75b9c82}{Php\+Parser\textbackslash{}\+Node}}.
+
+\Hypertarget{class_php_parser_1_1_node_abstract_a2d8ab17afe1be4441b0e2e2054e27ff5}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!getEndFilePos@{getEndFilePos}}
+\index{getEndFilePos@{getEndFilePos}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{getEndFilePos()}{getEndFilePos()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_a2d8ab17afe1be4441b0e2e2054e27ff5} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::get\+End\+File\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the file offset of the last character that is part of this node.
+
+Requires the \textquotesingle{}end\+File\+Pos\textquotesingle{} attribute to be enabled in the lexer (DISABLED by default).
+
+\begin{DoxyReturn}{Returns}
+int File end position (or -\/1 if not available) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_ad333bdd66e34e3463ea1c0216e4c3d3c}{Php\+Parser\textbackslash{}\+Node}}.
+
+\Hypertarget{class_php_parser_1_1_node_abstract_a546f07ce3814eed3f81303fc0442614f}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!getEndLine@{getEndLine}}
+\index{getEndLine@{getEndLine}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{getEndLine()}{getEndLine()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_a546f07ce3814eed3f81303fc0442614f} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::get\+End\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the line the node ended in.
+
+Requires the \textquotesingle{}end\+Line\textquotesingle{} attribute to be enabled in the lexer (enabled by default).
+
+\begin{DoxyReturn}{Returns}
+int End line (or -\/1 if not available) @phpstan-\/return -\/1\texorpdfstring{$\vert$}{|}positive-\/int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_a2f278c3cdd9db0c1520261d180d8ef9d}{Php\+Parser\textbackslash{}\+Node}}.
+
+\Hypertarget{class_php_parser_1_1_node_abstract_a9812eaf664ada865db57526c7a8e8e23}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!getEndTokenPos@{getEndTokenPos}}
+\index{getEndTokenPos@{getEndTokenPos}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{getEndTokenPos()}{getEndTokenPos()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_a9812eaf664ada865db57526c7a8e8e23} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::get\+End\+Token\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the token offset of the last token that is part of this node.
+
+The offset is an index into the array returned by Lexer\+::get\+Tokens().
+
+Requires the \textquotesingle{}end\+Token\+Pos\textquotesingle{} attribute to be enabled in the lexer (DISABLED by default).
+
+\begin{DoxyReturn}{Returns}
+int Token end position (or -\/1 if not available) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_aa08e18f6d41cce4ce77f96c778ecbd64}{Php\+Parser\textbackslash{}\+Node}}.
+
+\Hypertarget{class_php_parser_1_1_node_abstract_ab359dbde246b2ee89550b12e3d000df9}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!getLine@{getLine}}
+\index{getLine@{getLine}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{getLine()}{getLine()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_ab359dbde246b2ee89550b12e3d000df9} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::get\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets line the node started in (alias of get\+Start\+Line).
+
+\begin{DoxyReturn}{Returns}
+int Start line (or -\/1 if not available) @phpstan-\/return -\/1\texorpdfstring{$\vert$}{|}positive-\/int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_aa7ac3445b59fd863ae84caf43ab8fa6b}{Php\+Parser\textbackslash{}\+Node}}.
+
+\Hypertarget{class_php_parser_1_1_node_abstract_a40154f59b68afd2a56e58d5a8d7fd58f}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!getStartFilePos@{getStartFilePos}}
+\index{getStartFilePos@{getStartFilePos}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{getStartFilePos()}{getStartFilePos()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_a40154f59b68afd2a56e58d5a8d7fd58f} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::get\+Start\+File\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the file offset of the first character that is part of this node.
+
+Requires the \textquotesingle{}start\+File\+Pos\textquotesingle{} attribute to be enabled in the lexer (DISABLED by default).
+
+\begin{DoxyReturn}{Returns}
+int File start position (or -\/1 if not available) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_a7bfa73a45586a8e3664624f15fc6b8ba}{Php\+Parser\textbackslash{}\+Node}}.
+
+\Hypertarget{class_php_parser_1_1_node_abstract_a555c7d43c9703464b65110ed9c67f3a8}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!getStartLine@{getStartLine}}
+\index{getStartLine@{getStartLine}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{getStartLine()}{getStartLine()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_a555c7d43c9703464b65110ed9c67f3a8} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::get\+Start\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets line the node started in.
+
+Requires the \textquotesingle{}start\+Line\textquotesingle{} attribute to be enabled in the lexer (enabled by default).
+
+\begin{DoxyReturn}{Returns}
+int Start line (or -\/1 if not available) @phpstan-\/return -\/1\texorpdfstring{$\vert$}{|}positive-\/int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_ae7bc475d1a377df893e6df8f9c5b23ca}{Php\+Parser\textbackslash{}\+Node}}.
+
+\Hypertarget{class_php_parser_1_1_node_abstract_aa73728ead23ae7f828d6f0e4c0726d06}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!getStartTokenPos@{getStartTokenPos}}
+\index{getStartTokenPos@{getStartTokenPos}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{getStartTokenPos()}{getStartTokenPos()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_aa73728ead23ae7f828d6f0e4c0726d06} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::get\+Start\+Token\+Pos (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the token offset of the first token that is part of this node.
+
+The offset is an index into the array returned by Lexer\+::get\+Tokens().
+
+Requires the \textquotesingle{}start\+Token\+Pos\textquotesingle{} attribute to be enabled in the lexer (DISABLED by default).
+
+\begin{DoxyReturn}{Returns}
+int Token start position (or -\/1 if not available) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_aa914c0fdfdc69a12f68d662f2c778956}{Php\+Parser\textbackslash{}\+Node}}.
+
+\Hypertarget{class_php_parser_1_1_node_abstract_aa25bcb15385162e8f07c4b1ee26d8c3c}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!hasAttribute@{hasAttribute}}
+\index{hasAttribute@{hasAttribute}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{hasAttribute()}{hasAttribute()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_aa25bcb15385162e8f07c4b1ee26d8c3c} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::has\+Attribute (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Returns whether an attribute exists. 
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_a6d8cf74255d57758c85af7fac8efbbce}{Php\+Parser\textbackslash{}\+Node}}.
+
+\Hypertarget{class_php_parser_1_1_node_abstract_a3231a326c5e6c8e79c7308587fa91bd1}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!jsonSerialize@{jsonSerialize}}
+\index{jsonSerialize@{jsonSerialize}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{jsonSerialize()}{jsonSerialize()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_a3231a326c5e6c8e79c7308587fa91bd1} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::json\+Serialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_node_abstract_ac8c01b36e669e482ce78b9546f492105}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!setAttribute@{setAttribute}}
+\index{setAttribute@{setAttribute}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{setAttribute()}{setAttribute()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_ac8c01b36e669e482ce78b9546f492105} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::set\+Attribute (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Sets an attribute on a node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_ae2cc250feb4d0372b10a9da649741ee5}{Php\+Parser\textbackslash{}\+Node}}.
+
+\Hypertarget{class_php_parser_1_1_node_abstract_a1faa48ef0ec52e6387d57234b5c160a4}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!setAttributes@{setAttributes}}
+\index{setAttributes@{setAttributes}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{setAttributes()}{setAttributes()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_a1faa48ef0ec52e6387d57234b5c160a4} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::set\+Attributes (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{}\end{DoxyParamCaption})}
+
+Replaces all the attributes of this node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$attributes \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_a6b3f9924cf63d780759189b53b4bf694}{Php\+Parser\textbackslash{}\+Node}}.
+
+\Hypertarget{class_php_parser_1_1_node_abstract_a7f797339969e9f5b9c67a39ece15173e}\index{PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}!setDocComment@{setDocComment}}
+\index{setDocComment@{setDocComment}!PhpParser\textbackslash{}NodeAbstract@{PhpParser\textbackslash{}NodeAbstract}}
+\doxysubsubsection{\texorpdfstring{setDocComment()}{setDocComment()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_node_abstract_a7f797339969e9f5b9c67a39ece15173e} 
+Php\+Parser\textbackslash{}\+Node\+Abstract\+::set\+Doc\+Comment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_comment_1_1_doc}{Comment\textbackslash{}\+Doc}}}]{\$doc\+Comment}{}\end{DoxyParamCaption})}
+
+Sets the doc comment of the node.
+
+This will either replace an existing doc comment or add it to the comments array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Comment\textbackslash{}\+Doc & {\em \$doc\+Comment} & Doc comment to set \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_node_acdc068a52ccf2882935b35c6b9a549fd}{Php\+Parser\textbackslash{}\+Node}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/nikic/php-\/parser/lib/\+Php\+Parser/Node\+Abstract.\+php\end{DoxyCompactItemize}

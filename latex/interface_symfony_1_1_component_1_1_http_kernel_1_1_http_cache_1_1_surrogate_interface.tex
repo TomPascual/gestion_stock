@@ -1,0 +1,155 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Http\+Cache\textbackslash{}Surrogate\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface}{}\label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Http\+Cache\textbackslash{}Surrogate\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.258065cm]{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a3f5bebb8299735eb9bbfd0e35dd8e58d}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a1de1dce53d4cbe7671833828241fbcdf}{create\+Cache\+Strategy}} ()
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a8513efc1695f060c9eceb04d7e20a8e7}{has\+Surrogate\+Capability}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a091a18ddfbcff54b6a4bd944ac916977}{add\+Surrogate\+Capability}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a34763e28c5544233269a12d7add99b37}{add\+Surrogate\+Control}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a36e439d386d0def2aa9fd1a6dc1fdee4}{needs\+Parsing}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a2335ab54bb3527c4e9c6d09149ac6993}{render\+Include\+Tag}} (string \$uri, ?string \$alt=null, bool \$ignore\+Errors=true, string \$comment=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a4c1992fb9cc53922a3db895d28df93c6}{process}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request, \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_aa2193e1755c617c6c059a5785c31dfea}{handle}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_http_cache}{Http\+Cache}} \$cache, string \$uri, string \$alt, bool \$ignore\+Errors)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a091a18ddfbcff54b6a4bd944ac916977}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}!addSurrogateCapability@{addSurrogateCapability}}
+\index{addSurrogateCapability@{addSurrogateCapability}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}}
+\doxysubsubsection{\texorpdfstring{addSurrogateCapability()}{addSurrogateCapability()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a091a18ddfbcff54b6a4bd944ac916977} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Surrogate\+Interface\+::add\+Surrogate\+Capability (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Adds Surrogate-\/capability to the given Request. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a468bdcf200772d7470fca55ef5b135bb}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Abstract\+Surrogate}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a34763e28c5544233269a12d7add99b37}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}!addSurrogateControl@{addSurrogateControl}}
+\index{addSurrogateControl@{addSurrogateControl}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}}
+\doxysubsubsection{\texorpdfstring{addSurrogateControl()}{addSurrogateControl()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a34763e28c5544233269a12d7add99b37} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Surrogate\+Interface\+::add\+Surrogate\+Control (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Adds HTTP headers to specify that the Response needs to be parsed for Surrogate.
+
+This method only adds an Surrogate HTTP header if the Response has some Surrogate tags. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_esi_aa37de5e86a6ed146318d570489e85b97}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Esi}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_ssi_a34e7c7211d98813c4c5ee654b9c1f3a0}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Ssi}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a1de1dce53d4cbe7671833828241fbcdf}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}!createCacheStrategy@{createCacheStrategy}}
+\index{createCacheStrategy@{createCacheStrategy}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}}
+\doxysubsubsection{\texorpdfstring{createCacheStrategy()}{createCacheStrategy()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a1de1dce53d4cbe7671833828241fbcdf} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Surrogate\+Interface\+::create\+Cache\+Strategy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a new cache strategy instance. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a6f5e6912e1fa4bcf4f7809dcee8ea5de}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Abstract\+Surrogate}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a3f5bebb8299735eb9bbfd0e35dd8e58d}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}!getName@{getName}}
+\index{getName@{getName}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a3f5bebb8299735eb9bbfd0e35dd8e58d} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Surrogate\+Interface\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns surrogate name. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_esi_a553e8873ca0130def9b328aada3d4a40}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Esi}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_ssi_a1490a501ad05c2398cecb40f4f7c78a9}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Ssi}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_aa2193e1755c617c6c059a5785c31dfea}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}!handle@{handle}}
+\index{handle@{handle}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_aa2193e1755c617c6c059a5785c31dfea} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Surrogate\+Interface\+::handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_http_cache}{Http\+Cache}}}]{\$cache}{, }\item[{string}]{\$uri}{, }\item[{string}]{\$alt}{, }\item[{bool}]{\$ignore\+Errors}{}\end{DoxyParamCaption})}
+
+Handles a Surrogate from the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$alt} & An alternative URI\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a2e8f108afe891395d4cd2bedf3c0d4ff}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Abstract\+Surrogate}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a8513efc1695f060c9eceb04d7e20a8e7}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}!hasSurrogateCapability@{hasSurrogateCapability}}
+\index{hasSurrogateCapability@{hasSurrogateCapability}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}}
+\doxysubsubsection{\texorpdfstring{hasSurrogateCapability()}{hasSurrogateCapability()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a8513efc1695f060c9eceb04d7e20a8e7} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Surrogate\+Interface\+::has\+Surrogate\+Capability (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+Checks that at least one surrogate has Surrogate capability. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a7e9f40a697f53e6f689dd49047cf8b41}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Abstract\+Surrogate}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a36e439d386d0def2aa9fd1a6dc1fdee4}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}!needsParsing@{needsParsing}}
+\index{needsParsing@{needsParsing}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}}
+\doxysubsubsection{\texorpdfstring{needsParsing()}{needsParsing()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a36e439d386d0def2aa9fd1a6dc1fdee4} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Surrogate\+Interface\+::needs\+Parsing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Checks that the Response needs to be parsed for Surrogate tags. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_abstract_surrogate_a3e96baf70ac7f154f64808fd2e7204b8}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Abstract\+Surrogate}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a4c1992fb9cc53922a3db895d28df93c6}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}!process@{process}}
+\index{process@{process}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a4c1992fb9cc53922a3db895d28df93c6} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Surrogate\+Interface\+::process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{, }\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Replaces a Response Surrogate tags with the included resource content. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_esi_a63b24d1cec49afdfc35831533f20c0e0}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Esi}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_ssi_a027bda49d82ffd29ef34639c3d5a1aaa}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Ssi}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a2335ab54bb3527c4e9c6d09149ac6993}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}!renderIncludeTag@{renderIncludeTag}}
+\index{renderIncludeTag@{renderIncludeTag}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}HttpCache\textbackslash{}SurrogateInterface}}
+\doxysubsubsection{\texorpdfstring{renderIncludeTag()}{renderIncludeTag()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_surrogate_interface_a2335ab54bb3527c4e9c6d09149ac6993} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Surrogate\+Interface\+::render\+Include\+Tag (\begin{DoxyParamCaption}\item[{string}]{\$uri}{, }\item[{?string}]{\$alt}{ = {\ttfamily null}, }\item[{bool}]{\$ignore\+Errors}{ = {\ttfamily true}, }\item[{string}]{\$comment}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Renders a Surrogate tag.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$alt} & An alternate URI \\
+\hline
+string & {\em \$comment} & A comment to add as an esi\+:include tag \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_esi_a33dfb1173eace9fde4511f34c8b1f42a}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Esi}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_http_cache_1_1_ssi_af85a1450a9ca023976805634c6d3dcdb}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Http\+Cache\textbackslash{}\+Ssi}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/kernel/\+Http\+Cache/Surrogate\+Interface.\+php\end{DoxyCompactItemize}

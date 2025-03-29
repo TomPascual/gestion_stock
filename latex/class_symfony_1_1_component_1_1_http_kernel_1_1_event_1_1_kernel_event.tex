@@ -1,0 +1,87 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Event\textbackslash{}Kernel\+Event Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Event\textbackslash{}Kernel\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.205857cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_a5ca5210ffb63df8d8bc535c457a60d6b}{\+\_\+\+\_\+construct}} (private \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_kernel_interface}{Http\+Kernel\+Interface}} \$kernel, private \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request, private ?int \$request\+Type,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_a00b7d7dd4d074d7ec15966e5407f39ed}{get\+Kernel}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_a5b793b5457542b2ad3ec56381913ce14}{get\+Request}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_a5919358527397c9e1638b1fb15378b92}{get\+Request\+Type}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_adc8dad9c7ffea5b76d2cfbe1f8f7b005}{is\+Main\+Request}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event}{Symfony\textbackslash{}\+Contracts\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_a3d0f60a43ef2306a752386b611e888ca}{is\+Propagation\+Stopped}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_aad4bd7c819fe35b138fa2f9518d91a6a}{stop\+Propagation}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for events dispatched in the Http\+Kernel component.
+
+\begin{DoxyAuthor}{Author}
+Bernhard Schussek \href{mailto:bschussek@gmail.com}{\texttt{ bschussek@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_a5ca5210ffb63df8d8bc535c457a60d6b}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_a5ca5210ffb63df8d8bc535c457a60d6b} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\textbackslash{}\+Kernel\+Event\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_http_kernel_interface}{Http\+Kernel\+Interface}}}]{\$kernel}{, }\item[{private \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{, }\item[{private ?int}]{\$request\+Type}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$request\+Type} & The request type the kernel is currently processing; one of Http\+Kernel\+Interface\+::\+MAIN\+\_\+\+REQUEST or Http\+Kernel\+Interface\+::\+SUB\+\_\+\+REQUEST \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_a00b7d7dd4d074d7ec15966e5407f39ed}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent}!getKernel@{getKernel}}
+\index{getKernel@{getKernel}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent}}
+\doxysubsubsection{\texorpdfstring{getKernel()}{getKernel()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_a00b7d7dd4d074d7ec15966e5407f39ed} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\textbackslash{}\+Kernel\+Event\+::get\+Kernel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the kernel in which this event was thrown. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_a5b793b5457542b2ad3ec56381913ce14}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent}!getRequest@{getRequest}}
+\index{getRequest@{getRequest}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent}}
+\doxysubsubsection{\texorpdfstring{getRequest()}{getRequest()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_a5b793b5457542b2ad3ec56381913ce14} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\textbackslash{}\+Kernel\+Event\+::get\+Request (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the request the kernel is currently processing. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_a5919358527397c9e1638b1fb15378b92}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent}!getRequestType@{getRequestType}}
+\index{getRequestType@{getRequestType}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent}}
+\doxysubsubsection{\texorpdfstring{getRequestType()}{getRequestType()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_a5919358527397c9e1638b1fb15378b92} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\textbackslash{}\+Kernel\+Event\+::get\+Request\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the request type the kernel is currently processing.
+
+\begin{DoxyReturn}{Returns}
+int One of Http\+Kernel\+Interface\+::\+MAIN\+\_\+\+REQUEST and Http\+Kernel\+Interface\+::\+SUB\+\_\+\+REQUEST 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_adc8dad9c7ffea5b76d2cfbe1f8f7b005}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent}!isMainRequest@{isMainRequest}}
+\index{isMainRequest@{isMainRequest}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Event\textbackslash{}KernelEvent}}
+\doxysubsubsection{\texorpdfstring{isMainRequest()}{isMainRequest()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_kernel_event_adc8dad9c7ffea5b76d2cfbe1f8f7b005} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\textbackslash{}\+Kernel\+Event\+::is\+Main\+Request (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks if this is the main request. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/kernel/\+Event/Kernel\+Event.\+php\end{DoxyCompactItemize}

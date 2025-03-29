@@ -1,0 +1,135 @@
+\doxysection{Psy\textbackslash{}Readline\textbackslash{}Libedit Class Reference}
+\hypertarget{class_psy_1_1_readline_1_1_libedit}{}\label{class_psy_1_1_readline_1_1_libedit}\index{Psy\textbackslash{}Readline\textbackslash{}Libedit@{Psy\textbackslash{}Readline\textbackslash{}Libedit}}
+Inheritance diagram for Psy\textbackslash{}Readline\textbackslash{}Libedit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_psy_1_1_readline_1_1_libedit}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_libedit_a2baf67f94d665fc180297dd5048dcf84}{list\+History}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_libedit_adfa9ada04ca79983b0fb9e568880923b}{write\+History}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_psy_1_1_readline_1_1_g_n_u_readline}{Psy\textbackslash{}\+Readline\textbackslash{}\+GNUReadline}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_g_n_u_readline_a0ebfa2643bd2da7e1e9d6c85888d4b77}{\+\_\+\+\_\+construct}} (\$history\+File=null, \$history\+Size=0, \$erase\+Dups=false)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_g_n_u_readline_add470fa4c56ffbf7e06e882a6ef27bfd}{add\+History}} (string \$line)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_g_n_u_readline_ad4355c56f7f679bfee5a321e1a07c304}{clear\+History}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_g_n_u_readline_a2f2a30eb67a18508f669a699e4f85c03}{read\+History}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_g_n_u_readline_a0f3cf1dcf8700ce5c86925b977f5b3a1}{readline}} (?string \$prompt=null)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_g_n_u_readline_af0a83123be21d4258fe733103a379d42}{redisplay}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_libedit_a5be81024791f452a4b75907fbaad3506}{is\+Supported}} ()
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_libedit_a52142001f8f224d7ffe21f1c0530ffa1}{supports\+Bracketed\+Paste}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_libedit_a590bccde44a7a6d022893a93763ab59a}{parse\+History\+Line}} (string \$line)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_psy_1_1_readline_1_1_g_n_u_readline}{Psy\textbackslash{}\+Readline\textbackslash{}\+GNUReadline}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$history\+File}
+\item 
+int {\bfseries \$history\+Size}
+\item 
+bool {\bfseries \$erase\+Dups}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A Libedit-\/based Readline implementation.
+
+This is largely the same as the Readline implementation, but it emulates support for {\ttfamily readline\+\_\+list\+\_\+history} since PHP decided it was a good idea to ship a fake Readline implementation that is missing history support.
+
+NOTE\+: As of PHP 7.\+4, PHP sometimes has history support in the Libedit wrapper, so it will use the GNUReadline implementation rather than this one. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_readline_1_1_libedit_a5be81024791f452a4b75907fbaad3506}\index{Psy\textbackslash{}Readline\textbackslash{}Libedit@{Psy\textbackslash{}Readline\textbackslash{}Libedit}!isSupported@{isSupported}}
+\index{isSupported@{isSupported}!Psy\textbackslash{}Readline\textbackslash{}Libedit@{Psy\textbackslash{}Readline\textbackslash{}Libedit}}
+\doxysubsubsection{\texorpdfstring{isSupported()}{isSupported()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_libedit_a5be81024791f452a4b75907fbaad3506} 
+static Psy\textbackslash{}\+Readline\textbackslash{}\+Libedit\+::is\+Supported (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Let\textquotesingle{}s emulate GNU Readline by manually reading and parsing the history file! 
+
+Reimplemented from \mbox{\hyperlink{class_psy_1_1_readline_1_1_g_n_u_readline_a39ba669c2dfe76610aa754996f56a525}{Psy\textbackslash{}\+Readline\textbackslash{}\+GNUReadline}}.
+
+\Hypertarget{class_psy_1_1_readline_1_1_libedit_a2baf67f94d665fc180297dd5048dcf84}\index{Psy\textbackslash{}Readline\textbackslash{}Libedit@{Psy\textbackslash{}Readline\textbackslash{}Libedit}!listHistory@{listHistory}}
+\index{listHistory@{listHistory}!Psy\textbackslash{}Readline\textbackslash{}Libedit@{Psy\textbackslash{}Readline\textbackslash{}Libedit}}
+\doxysubsubsection{\texorpdfstring{listHistory()}{listHistory()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_libedit_a2baf67f94d665fc180297dd5048dcf84} 
+Psy\textbackslash{}\+Readline\textbackslash{}\+Libedit\+::list\+History (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\{\{List the command history.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]}
+\end{DoxyReturn}
+\}\} 
+
+Reimplemented from \mbox{\hyperlink{class_psy_1_1_readline_1_1_g_n_u_readline_a7e5fc978ac5cc097b48b753b9476d5cb}{Psy\textbackslash{}\+Readline\textbackslash{}\+GNUReadline}}.
+
+\Hypertarget{class_psy_1_1_readline_1_1_libedit_a590bccde44a7a6d022893a93763ab59a}\index{Psy\textbackslash{}Readline\textbackslash{}Libedit@{Psy\textbackslash{}Readline\textbackslash{}Libedit}!parseHistoryLine@{parseHistoryLine}}
+\index{parseHistoryLine@{parseHistoryLine}!Psy\textbackslash{}Readline\textbackslash{}Libedit@{Psy\textbackslash{}Readline\textbackslash{}Libedit}}
+\doxysubsubsection{\texorpdfstring{parseHistoryLine()}{parseHistoryLine()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_libedit_a590bccde44a7a6d022893a93763ab59a} 
+Psy\textbackslash{}\+Readline\textbackslash{}\+Libedit\+::parse\+History\+Line (\begin{DoxyParamCaption}\item[{string}]{\$line}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+From GNUReadline (readline/histfile.\+c \& readline/histexpand.\+c)\+: lines starting with "{}\textbackslash{}0"{} are comments or timestamps; if "{}\textbackslash{}0"{} is found in an entry, everything from it until the next line is a comment.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$line} & The history line to parse\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_readline_1_1_libedit_a52142001f8f224d7ffe21f1c0530ffa1}\index{Psy\textbackslash{}Readline\textbackslash{}Libedit@{Psy\textbackslash{}Readline\textbackslash{}Libedit}!supportsBracketedPaste@{supportsBracketedPaste}}
+\index{supportsBracketedPaste@{supportsBracketedPaste}!Psy\textbackslash{}Readline\textbackslash{}Libedit@{Psy\textbackslash{}Readline\textbackslash{}Libedit}}
+\doxysubsubsection{\texorpdfstring{supportsBracketedPaste()}{supportsBracketedPaste()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_libedit_a52142001f8f224d7ffe21f1c0530ffa1} 
+static Psy\textbackslash{}\+Readline\textbackslash{}\+Libedit\+::supports\+Bracketed\+Paste (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\{Check whether this readline implementation supports bracketed paste.
+
+Currently, the GNU readline implementation does, but the libedit wrapper does not.\} 
+
+Reimplemented from \mbox{\hyperlink{class_psy_1_1_readline_1_1_g_n_u_readline_a28fc329b186498af51a4fb68a18f1a59}{Psy\textbackslash{}\+Readline\textbackslash{}\+GNUReadline}}.
+
+\Hypertarget{class_psy_1_1_readline_1_1_libedit_adfa9ada04ca79983b0fb9e568880923b}\index{Psy\textbackslash{}Readline\textbackslash{}Libedit@{Psy\textbackslash{}Readline\textbackslash{}Libedit}!writeHistory@{writeHistory}}
+\index{writeHistory@{writeHistory}!Psy\textbackslash{}Readline\textbackslash{}Libedit@{Psy\textbackslash{}Readline\textbackslash{}Libedit}}
+\doxysubsubsection{\texorpdfstring{writeHistory()}{writeHistory()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_libedit_adfa9ada04ca79983b0fb9e568880923b} 
+Psy\textbackslash{}\+Readline\textbackslash{}\+Libedit\+::write\+History (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\{\{Write the command history to a file.
+
+\begin{DoxyReturn}{Returns}
+bool Success
+\end{DoxyReturn}
+\}\} 
+
+Reimplemented from \mbox{\hyperlink{class_psy_1_1_readline_1_1_g_n_u_readline_a213e19326c580dc2172bec67dd3bed01}{Psy\textbackslash{}\+Readline\textbackslash{}\+GNUReadline}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Readline/Libedit.\+php\end{DoxyCompactItemize}

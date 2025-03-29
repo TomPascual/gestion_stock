@@ -1,0 +1,124 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Css\+Selector\textbackslash{}Parser\textbackslash{}Token\+Stream Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream}{}\label{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream}\index{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_ae9f788b247c93c1c5d3773792c003b71}{push}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token}{Token}} \$token)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_aeeee38ac69d850648c5bc1ef78d6708d}{freeze}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_a74b9231ca24fe2c976168ae7cac373c4}{get\+Next}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_a5f132fd5200ed8b355cf1d54cc748302}{get\+Peek}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_a7fa3d02eaac9c3bbafb188e51e8dfc4f}{get\+Used}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_a44e889830fdb5e76bc9fb5d9cbc2d3ef}{get\+Next\+Identifier}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_a77b6b8bc0a402b0d329cf13040d57c82}{get\+Next\+Identifier\+Or\+Star}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_aed4275180e128b18c8adba4dd1d677dd}{skip\+Whitespace}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+CSS selector token stream.
+
+This component is a port of the Python cssselect library, which is copyright Ian Bicking, \begin{DoxySeeAlso}{See also}
+\href{https://github.com/SimonSapin/cssselect}{\texttt{ https\+://github.\+com/\+Simon\+Sapin/cssselect}}.
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Jean-\/\+François Simon \href{mailto:jeanfrancois.simon@sensiolabs.com}{\texttt{ jeanfrancois.\+simon@sensiolabs.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_aeeee38ac69d850648c5bc1ef78d6708d}\index{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}!freeze@{freeze}}
+\index{freeze@{freeze}!Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}}
+\doxysubsubsection{\texorpdfstring{freeze()}{freeze()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_aeeee38ac69d850648c5bc1ef78d6708d} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Css\+Selector\textbackslash{}\+Parser\textbackslash{}\+Token\+Stream\+::freeze (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Freezes stream.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_a74b9231ca24fe2c976168ae7cac373c4}\index{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}!getNext@{getNext}}
+\index{getNext@{getNext}!Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}}
+\doxysubsubsection{\texorpdfstring{getNext()}{getNext()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_a74b9231ca24fe2c976168ae7cac373c4} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Css\+Selector\textbackslash{}\+Parser\textbackslash{}\+Token\+Stream\+::get\+Next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns next token.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Internal\+Error\+Exception} & If there is no more token \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_a44e889830fdb5e76bc9fb5d9cbc2d3ef}\index{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}!getNextIdentifier@{getNextIdentifier}}
+\index{getNextIdentifier@{getNextIdentifier}!Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}}
+\doxysubsubsection{\texorpdfstring{getNextIdentifier()}{getNextIdentifier()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_a44e889830fdb5e76bc9fb5d9cbc2d3ef} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Css\+Selector\textbackslash{}\+Parser\textbackslash{}\+Token\+Stream\+::get\+Next\+Identifier (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns next identifier token.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error\+Exception} & If next token is not an identifier \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_a77b6b8bc0a402b0d329cf13040d57c82}\index{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}!getNextIdentifierOrStar@{getNextIdentifierOrStar}}
+\index{getNextIdentifierOrStar@{getNextIdentifierOrStar}!Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}}
+\doxysubsubsection{\texorpdfstring{getNextIdentifierOrStar()}{getNextIdentifierOrStar()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_a77b6b8bc0a402b0d329cf13040d57c82} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Css\+Selector\textbackslash{}\+Parser\textbackslash{}\+Token\+Stream\+::get\+Next\+Identifier\+Or\+Star (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns next identifier or null if star delimiter token is found.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Error\+Exception} & If next token is not an identifier or a star delimiter \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_a5f132fd5200ed8b355cf1d54cc748302}\index{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}!getPeek@{getPeek}}
+\index{getPeek@{getPeek}!Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}}
+\doxysubsubsection{\texorpdfstring{getPeek()}{getPeek()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_a5f132fd5200ed8b355cf1d54cc748302} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Css\+Selector\textbackslash{}\+Parser\textbackslash{}\+Token\+Stream\+::get\+Peek (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns peeked token. \Hypertarget{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_a7fa3d02eaac9c3bbafb188e51e8dfc4f}\index{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}!getUsed@{getUsed}}
+\index{getUsed@{getUsed}!Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}}
+\doxysubsubsection{\texorpdfstring{getUsed()}{getUsed()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_a7fa3d02eaac9c3bbafb188e51e8dfc4f} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Css\+Selector\textbackslash{}\+Parser\textbackslash{}\+Token\+Stream\+::get\+Used (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns used tokens.
+
+\begin{DoxyReturn}{Returns}
+Token\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_ae9f788b247c93c1c5d3773792c003b71}\index{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}!push@{push}}
+\index{push@{push}!Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_ae9f788b247c93c1c5d3773792c003b71} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Css\+Selector\textbackslash{}\+Parser\textbackslash{}\+Token\+Stream\+::push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token}{Token}}}]{\$token}{}\end{DoxyParamCaption})}
+
+Pushes a token.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_aed4275180e128b18c8adba4dd1d677dd}\index{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}!skipWhitespace@{skipWhitespace}}
+\index{skipWhitespace@{skipWhitespace}!Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream@{Symfony\textbackslash{}Component\textbackslash{}CssSelector\textbackslash{}Parser\textbackslash{}TokenStream}}
+\doxysubsubsection{\texorpdfstring{skipWhitespace()}{skipWhitespace()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_css_selector_1_1_parser_1_1_token_stream_aed4275180e128b18c8adba4dd1d677dd} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Css\+Selector\textbackslash{}\+Parser\textbackslash{}\+Token\+Stream\+::skip\+Whitespace (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Skips next whitespace if any. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/css-\/selector/\+Parser/Token\+Stream.\+php\end{DoxyCompactItemize}

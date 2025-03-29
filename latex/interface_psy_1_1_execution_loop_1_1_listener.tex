@@ -1,0 +1,167 @@
+\doxysection{Psy\textbackslash{}Execution\+Loop\textbackslash{}Listener Interface Reference}
+\hypertarget{interface_psy_1_1_execution_loop_1_1_listener}{}\label{interface_psy_1_1_execution_loop_1_1_listener}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener@{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener}}
+Inheritance diagram for Psy\textbackslash{}Execution\+Loop\textbackslash{}Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_psy_1_1_execution_loop_1_1_listener}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psy_1_1_execution_loop_1_1_listener_a24fb946fa2bd3d7c5f6ce15afb754ebc}{before\+Run}} (\mbox{\hyperlink{class_psy_1_1_shell}{Shell}} \$shell)
+\item 
+\mbox{\hyperlink{interface_psy_1_1_execution_loop_1_1_listener_a224dd6d891ae98a632131729e3dc38a4}{before\+Loop}} (\mbox{\hyperlink{class_psy_1_1_shell}{Shell}} \$shell)
+\item 
+\mbox{\hyperlink{interface_psy_1_1_execution_loop_1_1_listener_a989c7103ff43512f04f91dcbb776715a}{on\+Input}} (\mbox{\hyperlink{class_psy_1_1_shell}{Shell}} \$shell, string \$input)
+\item 
+\mbox{\hyperlink{interface_psy_1_1_execution_loop_1_1_listener_a8eb3d1ff2a0df5f94905e98bdcec9f8e}{on\+Execute}} (\mbox{\hyperlink{class_psy_1_1_shell}{Shell}} \$shell, string \$code)
+\item 
+\mbox{\hyperlink{interface_psy_1_1_execution_loop_1_1_listener_a974df34841361931e1a94fb4a15be7fe}{after\+Loop}} (\mbox{\hyperlink{class_psy_1_1_shell}{Shell}} \$shell)
+\item 
+\mbox{\hyperlink{interface_psy_1_1_execution_loop_1_1_listener_ae4a1becab5991de89c357428b1d131b3}{after\+Run}} (\mbox{\hyperlink{class_psy_1_1_shell}{Shell}} \$shell)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{interface_psy_1_1_execution_loop_1_1_listener_ae4c2515f4bd211a5ad899939875701b0}{is\+Supported}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Execution Loop Listener interface. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_psy_1_1_execution_loop_1_1_listener_a974df34841361931e1a94fb4a15be7fe}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener@{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener}!afterLoop@{afterLoop}}
+\index{afterLoop@{afterLoop}!Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener@{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{afterLoop()}{afterLoop()}}
+{\footnotesize\ttfamily \label{interface_psy_1_1_execution_loop_1_1_listener_a974df34841361931e1a94fb4a15be7fe} 
+Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Listener\+::after\+Loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_psy_1_1_shell}{Shell}}}]{\$shell}{}\end{DoxyParamCaption})}
+
+Called at the end of each loop.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Shell & {\em \$shell} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_abstract_listener_ab4b6227cf9b917bb3570f98dd69990e7}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Abstract\+Listener}}, and \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_process_forker_abba9dfd1e5ce25cd774f8b0b2ff53497}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Process\+Forker}}.
+
+\Hypertarget{interface_psy_1_1_execution_loop_1_1_listener_ae4a1becab5991de89c357428b1d131b3}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener@{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener}!afterRun@{afterRun}}
+\index{afterRun@{afterRun}!Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener@{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{afterRun()}{afterRun()}}
+{\footnotesize\ttfamily \label{interface_psy_1_1_execution_loop_1_1_listener_ae4a1becab5991de89c357428b1d131b3} 
+Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Listener\+::after\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_psy_1_1_shell}{Shell}}}]{\$shell}{}\end{DoxyParamCaption})}
+
+Called once after the REPL session ends.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Shell & {\em \$shell} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_abstract_listener_a1ee610956570925eae026e9f9da7c2cc}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Abstract\+Listener}}, and \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_process_forker_a4f614ae7683a987dc19d78af25e1a7ac}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Process\+Forker}}.
+
+\Hypertarget{interface_psy_1_1_execution_loop_1_1_listener_a224dd6d891ae98a632131729e3dc38a4}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener@{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener}!beforeLoop@{beforeLoop}}
+\index{beforeLoop@{beforeLoop}!Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener@{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{beforeLoop()}{beforeLoop()}}
+{\footnotesize\ttfamily \label{interface_psy_1_1_execution_loop_1_1_listener_a224dd6d891ae98a632131729e3dc38a4} 
+Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Listener\+::before\+Loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_psy_1_1_shell}{Shell}}}]{\$shell}{}\end{DoxyParamCaption})}
+
+Called at the start of each loop.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Shell & {\em \$shell} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_abstract_listener_a06de4112df52297ddcbc940207cabc74}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Abstract\+Listener}}, and \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_process_forker_a5efe3b7569dc09c6aee53147433b9b99}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Process\+Forker}}.
+
+\Hypertarget{interface_psy_1_1_execution_loop_1_1_listener_a24fb946fa2bd3d7c5f6ce15afb754ebc}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener@{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener}!beforeRun@{beforeRun}}
+\index{beforeRun@{beforeRun}!Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener@{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{beforeRun()}{beforeRun()}}
+{\footnotesize\ttfamily \label{interface_psy_1_1_execution_loop_1_1_listener_a24fb946fa2bd3d7c5f6ce15afb754ebc} 
+Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Listener\+::before\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_psy_1_1_shell}{Shell}}}]{\$shell}{}\end{DoxyParamCaption})}
+
+Called once before the REPL session starts.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Shell & {\em \$shell} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_abstract_listener_afc1f6067328ec2358f2ed10064a0954b}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Abstract\+Listener}}, and \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_process_forker_a06e821c30906e68f04d03f00ccf29eee}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Process\+Forker}}.
+
+\Hypertarget{interface_psy_1_1_execution_loop_1_1_listener_ae4c2515f4bd211a5ad899939875701b0}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener@{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener}!isSupported@{isSupported}}
+\index{isSupported@{isSupported}!Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener@{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{isSupported()}{isSupported()}}
+{\footnotesize\ttfamily \label{interface_psy_1_1_execution_loop_1_1_listener_ae4c2515f4bd211a5ad899939875701b0} 
+static Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Listener\+::is\+Supported (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determines whether this listener should be active. 
+
+Implemented in \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_process_forker_a52d547972e2f73cee8d732c7a5d3f180}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Process\+Forker}}, and \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_runkit_reloader_a6b018826e1192a5403f1cd33d5e8bae6}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Runkit\+Reloader}}.
+
+\Hypertarget{interface_psy_1_1_execution_loop_1_1_listener_a8eb3d1ff2a0df5f94905e98bdcec9f8e}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener@{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener}!onExecute@{onExecute}}
+\index{onExecute@{onExecute}!Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener@{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{onExecute()}{onExecute()}}
+{\footnotesize\ttfamily \label{interface_psy_1_1_execution_loop_1_1_listener_a8eb3d1ff2a0df5f94905e98bdcec9f8e} 
+Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Listener\+::on\+Execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_psy_1_1_shell}{Shell}}}]{\$shell}{, }\item[{string}]{\$code}{}\end{DoxyParamCaption})}
+
+Called before executing user code.
+
+Return a new string to override or rewrite user code.
+
+Note that this is run {\itshape after} the Code Cleaner, so if you return invalid or unsafe PHP here, it\textquotesingle{}ll be executed without any of the safety Code Cleaner provides. This comes with the big kid warranty \+:)
+
+
+\begin{DoxyParams}[1]{Parameters}
+Shell & {\em \$shell} & \\
+\hline
+string & {\em \$code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null User code override 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_abstract_listener_afe2694f7da373afc6809ea1310634ce6}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Abstract\+Listener}}.
+
+\Hypertarget{interface_psy_1_1_execution_loop_1_1_listener_a989c7103ff43512f04f91dcbb776715a}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener@{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener}!onInput@{onInput}}
+\index{onInput@{onInput}!Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener@{Psy\textbackslash{}ExecutionLoop\textbackslash{}Listener}}
+\doxysubsubsection{\texorpdfstring{onInput()}{onInput()}}
+{\footnotesize\ttfamily \label{interface_psy_1_1_execution_loop_1_1_listener_a989c7103ff43512f04f91dcbb776715a} 
+Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Listener\+::on\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_psy_1_1_shell}{Shell}}}]{\$shell}{, }\item[{string}]{\$input}{}\end{DoxyParamCaption})}
+
+Called on user input.
+
+Return a new string to override or rewrite user input.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Shell & {\em \$shell} & \\
+\hline
+string & {\em \$input} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null User input override 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_abstract_listener_ac14c0c434bef6ddc6c4e0d3426640350}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Abstract\+Listener}}, and \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_runkit_reloader_a53987201a6cb96605d0b6674842365d6}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Runkit\+Reloader}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Execution\+Loop/Listener.\+php\end{DoxyCompactItemize}

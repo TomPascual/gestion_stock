@@ -1,0 +1,4 @@
+var class_league_1_1_common_mark_1_1_extension_1_1_description_list_1_1_renderer_1_1_description_term_renderer =
+[
+    [ "render", "class_league_1_1_common_mark_1_1_extension_1_1_description_list_1_1_renderer_1_1_description_term_renderer.html#a4d69634a3905f37d1fa3dd7d6e6d725d", null ]
+];

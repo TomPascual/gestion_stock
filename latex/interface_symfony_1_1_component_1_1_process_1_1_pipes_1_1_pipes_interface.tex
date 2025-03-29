@@ -1,0 +1,122 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}Pipes\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface}{}\label{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}Pipes\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.745098cm]{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_a45bae38842252e8036a77cbed37ed422}{get\+Descriptors}} ()
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_a701b6276f86dd49dc80db794e176966a}{get\+Files}} ()
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_a9a3beaf0bca96f219608c17582dcd47d}{read\+And\+Write}} (bool \$blocking, bool \$\mbox{\hyperlink{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_ab1add0cde0842ece3787de44b83f799a}{close}}=false)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_ae3a1d926fdd2dbb85115e80bbdaba30f}{are\+Open}} ()
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_ad021f8ac4c2ae1530cc93e82d9e8727f}{have\+Read\+Support}} ()
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_ab1add0cde0842ece3787de44b83f799a}{close}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_ab9cbf1ba79651673b06c80076794adcc}\label{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_ab9cbf1ba79651673b06c80076794adcc} 
+const {\bfseries CHUNK\+\_\+\+SIZE} = 16384
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Pipes\+Interface manages descriptors and pipes for the use of proc\+\_\+open.
+
+\begin{DoxyAuthor}{Author}
+Romain Neutron \href{mailto:imprec@gmail.com}{\texttt{ imprec@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_ae3a1d926fdd2dbb85115e80bbdaba30f}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface}!areOpen@{areOpen}}
+\index{areOpen@{areOpen}!Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface}}
+\doxysubsubsection{\texorpdfstring{areOpen()}{areOpen()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_ae3a1d926fdd2dbb85115e80bbdaba30f} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Pipes\+Interface\+::are\+Open (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns if the current state has open file handles or pipes. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_unix_pipes_ae000032bf7e4de2bfba1fd87263d334e}{Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Unix\+Pipes}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_windows_pipes_a340e7f3c06a52ec0aea0856563f71419}{Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Windows\+Pipes}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_ab1add0cde0842ece3787de44b83f799a}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface}!close@{close}}
+\index{close@{close}!Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_ab1add0cde0842ece3787de44b83f799a} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Pipes\+Interface\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Closes file handles and pipes. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_abstract_pipes_a81f876e8255040fba2a79a7507e7c7fb}{Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Abstract\+Pipes}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_windows_pipes_acbce71a4ff1a09e673115bede5e43511}{Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Windows\+Pipes}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_a45bae38842252e8036a77cbed37ed422}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface}!getDescriptors@{getDescriptors}}
+\index{getDescriptors@{getDescriptors}!Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface}}
+\doxysubsubsection{\texorpdfstring{getDescriptors()}{getDescriptors()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_a45bae38842252e8036a77cbed37ed422} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Pipes\+Interface\+::get\+Descriptors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns an array of descriptors for the use of proc\+\_\+open. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_unix_pipes_a8f57228f3381f5bd79587902b43367fa}{Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Unix\+Pipes}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_windows_pipes_a9fcded62c1aebb0f24afd120e69d0929}{Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Windows\+Pipes}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_a701b6276f86dd49dc80db794e176966a}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface}!getFiles@{getFiles}}
+\index{getFiles@{getFiles}!Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface}}
+\doxysubsubsection{\texorpdfstring{getFiles()}{getFiles()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_a701b6276f86dd49dc80db794e176966a} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Pipes\+Interface\+::get\+Files (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns an array of filenames indexed by their related stream in case these pipes use temporary files.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_unix_pipes_a296c3d2b8be31d5bea6793e362a06cf0}{Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Unix\+Pipes}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_windows_pipes_a3d0091a450629e5464e4ef541f711de6}{Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Windows\+Pipes}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_ad021f8ac4c2ae1530cc93e82d9e8727f}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface}!haveReadSupport@{haveReadSupport}}
+\index{haveReadSupport@{haveReadSupport}!Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface}}
+\doxysubsubsection{\texorpdfstring{haveReadSupport()}{haveReadSupport()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_ad021f8ac4c2ae1530cc93e82d9e8727f} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Pipes\+Interface\+::have\+Read\+Support (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns if pipes are able to read output. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_unix_pipes_a87d6c0ccf81aad7a9bcf9d244fc4c60a}{Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Unix\+Pipes}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_windows_pipes_a275bbb11e71ac268cd6b8bb475337cb5}{Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Windows\+Pipes}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_a9a3beaf0bca96f219608c17582dcd47d}\index{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface}!readAndWrite@{readAndWrite}}
+\index{readAndWrite@{readAndWrite}!Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface@{Symfony\textbackslash{}Component\textbackslash{}Process\textbackslash{}Pipes\textbackslash{}PipesInterface}}
+\doxysubsubsection{\texorpdfstring{readAndWrite()}{readAndWrite()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_process_1_1_pipes_1_1_pipes_interface_a9a3beaf0bca96f219608c17582dcd47d} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Pipes\+Interface\+::read\+And\+Write (\begin{DoxyParamCaption}\item[{bool}]{\$blocking}{, }\item[{bool}]{\$close}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Reads data in file handles and pipes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$blocking} & Whether to use blocking calls or not \\
+\hline
+bool & {\em \$close} & Whether to close pipes if they\textquotesingle{}ve reached EOF\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} An array of read data indexed by their fd 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_unix_pipes_ae1ad5c6df3757a854b1c03a6d14b20c9}{Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Unix\+Pipes}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_process_1_1_pipes_1_1_windows_pipes_a506193eb7ba9871452a15c4596a095aa}{Symfony\textbackslash{}\+Component\textbackslash{}\+Process\textbackslash{}\+Pipes\textbackslash{}\+Windows\+Pipes}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/process/\+Pipes/Pipes\+Interface.\+php\end{DoxyCompactItemize}

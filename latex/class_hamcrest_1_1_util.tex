@@ -1,0 +1,80 @@
+\doxysection{Hamcrest\textbackslash{}Util Class Reference}
+\hypertarget{class_hamcrest_1_1_util}{}\label{class_hamcrest_1_1_util}\index{Hamcrest\textbackslash{}Util@{Hamcrest\textbackslash{}Util}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_hamcrest_1_1_util_a62ff481f31094ed4a0406cac74597410}\label{class_hamcrest_1_1_util_a62ff481f31094ed4a0406cac74597410} 
+static {\bfseries register\+Global\+Functions} ()
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_util_a18339689eaf4457f887f4dcfbca25a94}{wrap\+Value\+With\+Is\+Equal}} (\$item)
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_util_acac2faefc3a23241d1c356f6615c7d9a}{check\+All\+Are\+Matchers}} (array \$matchers)
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_util_a76824cf8341a7ba45bbc032e6fc67da5}{create\+Matcher\+Array}} (array \$items)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains utility methods for handling Hamcrest matchers.
+
+\begin{DoxySeeAlso}{See also}
+Hamcrest\textbackslash{}\+Matcher 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hamcrest_1_1_util_acac2faefc3a23241d1c356f6615c7d9a}\index{Hamcrest\textbackslash{}Util@{Hamcrest\textbackslash{}Util}!checkAllAreMatchers@{checkAllAreMatchers}}
+\index{checkAllAreMatchers@{checkAllAreMatchers}!Hamcrest\textbackslash{}Util@{Hamcrest\textbackslash{}Util}}
+\doxysubsubsection{\texorpdfstring{checkAllAreMatchers()}{checkAllAreMatchers()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_util_acac2faefc3a23241d1c356f6615c7d9a} 
+static Hamcrest\textbackslash{}\+Util\+::check\+All\+Are\+Matchers (\begin{DoxyParamCaption}\item[{array}]{\$matchers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Throws an exception if any item in \$matchers is not a Hamcrest\textbackslash{}\+Matcher.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$matchers} & expected to contain only matchers \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception if any item is not a matcher \Hypertarget{class_hamcrest_1_1_util_a76824cf8341a7ba45bbc032e6fc67da5}\index{Hamcrest\textbackslash{}Util@{Hamcrest\textbackslash{}Util}!createMatcherArray@{createMatcherArray}}
+\index{createMatcherArray@{createMatcherArray}!Hamcrest\textbackslash{}Util@{Hamcrest\textbackslash{}Util}}
+\doxysubsubsection{\texorpdfstring{createMatcherArray()}{createMatcherArray()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_util_a76824cf8341a7ba45bbc032e6fc67da5} 
+static Hamcrest\textbackslash{}\+Util\+::create\+Matcher\+Array (\begin{DoxyParamCaption}\item[{array}]{\$items}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a copy of \$items where each non-\/\+Matcher item is replaced by a Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is\+Equal matcher for the item. If the first and only item is an array, it is used as the \$items array to support the old style of passing an array as the sole argument to a matcher.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$items} & contains items and matchers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$\+Matchers$>$ all items are 
+\end{DoxyReturn}
+\Hypertarget{class_hamcrest_1_1_util_a18339689eaf4457f887f4dcfbca25a94}\index{Hamcrest\textbackslash{}Util@{Hamcrest\textbackslash{}Util}!wrapValueWithIsEqual@{wrapValueWithIsEqual}}
+\index{wrapValueWithIsEqual@{wrapValueWithIsEqual}!Hamcrest\textbackslash{}Util@{Hamcrest\textbackslash{}Util}}
+\doxysubsubsection{\texorpdfstring{wrapValueWithIsEqual()}{wrapValueWithIsEqual()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_util_a18339689eaf4457f887f4dcfbca25a94} 
+static Hamcrest\textbackslash{}\+Util\+::wrap\+Value\+With\+Is\+Equal (\begin{DoxyParamCaption}\item[{}]{\$item}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Wraps the item with an Is\+Equal matcher if it isn\textquotesingle{}t a matcher already.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$item} & matcher or any value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Hamcrest\textbackslash{}\+Matcher 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/hamcrest/hamcrest-\/php/hamcrest/\+Hamcrest/Util.\+php\end{DoxyCompactItemize}

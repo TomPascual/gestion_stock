@@ -1,3 +1,11 @@
+{{-- 
+    Vue : mouvements/index.blade.php
+    Description : Affiche la liste complète des mouvements de stock (entrées et sorties) avec leur type, produit, quantité et date.
+    Particularités :
+        - Affiche un badge vert pour les entrées, rouge pour les sorties
+        - Le nom du produit peut être absent (produit supprimé)
+--}}
+
 @extends('layouts.app')
 
 @section('content')

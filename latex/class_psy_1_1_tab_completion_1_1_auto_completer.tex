@@ -1,0 +1,106 @@
+\doxysection{Psy\textbackslash{}Tab\+Completion\textbackslash{}Auto\+Completer Class Reference}
+\hypertarget{class_psy_1_1_tab_completion_1_1_auto_completer}{}\label{class_psy_1_1_tab_completion_1_1_auto_completer}\index{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter@{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_auto_completer_af66b55e29e15e9852285c551a7d527d3}{add\+Matcher}} (\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher}{Abstract\+Matcher}} \$matcher)
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_auto_completer_a96e311114ee95f9b78dd528341af547e}{activate}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_auto_completer_aa180e68c3b342c6b6d0b2a622605d8ae}{process\+Callback}} (string \$input, int \$index, array \$info=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_auto_completer_a4bcb84ae978ca0c7f772059f60606659}{callback}} (string \$input, int \$index)
+\item 
+\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_auto_completer_ae2f6a9c1d18573021178b3e813e9ce40}{\+\_\+\+\_\+destruct}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_psy_1_1_tab_completion_1_1_auto_completer_ab9d2170f27b9bf6a9e94d94539a2d2bd}\label{class_psy_1_1_tab_completion_1_1_auto_completer_ab9d2170f27b9bf6a9e94d94539a2d2bd} 
+{\bfseries \$matchers}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A readline tab completion service.
+
+\begin{DoxyAuthor}{Author}
+Marc Garcia \href{mailto:markcial@gmail.com}{\texttt{ markcial@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_auto_completer_ae2f6a9c1d18573021178b3e813e9ce40}\index{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter@{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter}!\_\_destruct@{\_\_destruct}}
+\index{\_\_destruct@{\_\_destruct}!Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter@{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter}}
+\doxysubsubsection{\texorpdfstring{\_\_destruct()}{\_\_destruct()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_auto_completer_ae2f6a9c1d18573021178b3e813e9ce40} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Auto\+Completer\+::\+\_\+\+\_\+destruct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Remove readline callback handler on destruct. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_auto_completer_a96e311114ee95f9b78dd528341af547e}\index{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter@{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter}!activate@{activate}}
+\index{activate@{activate}!Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter@{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter}}
+\doxysubsubsection{\texorpdfstring{activate()}{activate()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_auto_completer_a96e311114ee95f9b78dd528341af547e} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Auto\+Completer\+::activate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Activate readline tab completion. \Hypertarget{class_psy_1_1_tab_completion_1_1_auto_completer_af66b55e29e15e9852285c551a7d527d3}\index{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter@{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter}!addMatcher@{addMatcher}}
+\index{addMatcher@{addMatcher}!Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter@{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter}}
+\doxysubsubsection{\texorpdfstring{addMatcher()}{addMatcher()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_auto_completer_af66b55e29e15e9852285c551a7d527d3} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Auto\+Completer\+::add\+Matcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_psy_1_1_tab_completion_1_1_matcher_1_1_abstract_matcher}{Abstract\+Matcher}}}]{\$matcher}{}\end{DoxyParamCaption})}
+
+Register a tab completion Matcher.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Abstract\+Matcher & {\em \$matcher} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_auto_completer_a4bcb84ae978ca0c7f772059f60606659}\index{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter@{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter}!callback@{callback}}
+\index{callback@{callback}!Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter@{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter}}
+\doxysubsubsection{\texorpdfstring{callback()}{callback()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_auto_completer_a4bcb84ae978ca0c7f772059f60606659} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Auto\+Completer\+::callback (\begin{DoxyParamCaption}\item[{string}]{\$input}{, }\item[{int}]{\$index}{}\end{DoxyParamCaption})}
+
+The readline\+\_\+completion\+\_\+function callback handler.
+
+\begin{DoxySeeAlso}{See also}
+process\+Callback
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$input} & \\
+\hline
+int & {\em \$index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_tab_completion_1_1_auto_completer_aa180e68c3b342c6b6d0b2a622605d8ae}\index{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter@{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter}!processCallback@{processCallback}}
+\index{processCallback@{processCallback}!Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter@{Psy\textbackslash{}TabCompletion\textbackslash{}AutoCompleter}}
+\doxysubsubsection{\texorpdfstring{processCallback()}{processCallback()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_tab_completion_1_1_auto_completer_aa180e68c3b342c6b6d0b2a622605d8ae} 
+Psy\textbackslash{}\+Tab\+Completion\textbackslash{}\+Auto\+Completer\+::process\+Callback (\begin{DoxyParamCaption}\item[{string}]{\$input}{, }\item[{int}]{\$index}{, }\item[{array}]{\$info}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Handle readline completion.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$input} & Readline current word \\
+\hline
+int & {\em \$index} & Current word index \\
+\hline
+array & {\em \$info} & readline\+\_\+info() data\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Tab\+Completion/Auto\+Completer.\+php\end{DoxyCompactItemize}

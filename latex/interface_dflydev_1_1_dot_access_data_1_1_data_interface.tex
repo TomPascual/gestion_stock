@@ -1,0 +1,263 @@
+\doxysection{Dflydev\textbackslash{}Dot\+Access\+Data\textbackslash{}Data\+Interface Interface Reference}
+\hypertarget{interface_dflydev_1_1_dot_access_data_1_1_data_interface}{}\label{interface_dflydev_1_1_dot_access_data_1_1_data_interface}\index{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}}
+Inheritance diagram for Dflydev\textbackslash{}Dot\+Access\+Data\textbackslash{}Data\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_dflydev_1_1_dot_access_data_1_1_data_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_dflydev_1_1_dot_access_data_1_1_data_interface_ae78f8be1c0ce076585c1eb686f0b2412}{append}} (string \$key, \$value=null)
+\item 
+\mbox{\hyperlink{interface_dflydev_1_1_dot_access_data_1_1_data_interface_abce54ce305762b710a339fabaf03e13b}{set}} (string \$key, \$value=null)
+\item 
+\mbox{\hyperlink{interface_dflydev_1_1_dot_access_data_1_1_data_interface_ae0cbce658a08f0dd8d7084ffc6704e04}{remove}} (string \$key)
+\item 
+\mbox{\hyperlink{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a4238e02e5da2a04467627e0f66318df9}{get}} (string \$key, \$default=null)
+\item 
+\mbox{\hyperlink{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a24ed5db938b20e9c9a53c246a35877c8}{has}} (string \$key)
+\item 
+\mbox{\hyperlink{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a542c460969416f992573cc94ab086fe9}{get\+Data}} (string \$key)
+\item 
+\mbox{\hyperlink{interface_dflydev_1_1_dot_access_data_1_1_data_interface_ac060e3ad8f8a804cc8437424ef45c3ec}{import}} (array \$data, int \$mode=self\+::\+REPLACE)
+\item 
+\mbox{\hyperlink{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a3efcb540b27bcf53e38777593cdbec87}{import\+Data}} (\mbox{\hyperlink{interface_dflydev_1_1_dot_access_data_1_1_data_interface}{Data\+Interface}} \$data, int \$mode=self\+::\+REPLACE)
+\item 
+\mbox{\hyperlink{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a29e81d03a34cb207aedfa797ec2ce3b1}{export}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a0d600a82f5637deaba8bceba0926d78a}\label{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a0d600a82f5637deaba8bceba0926d78a} 
+const {\bfseries PRESERVE} = 0
+\item 
+\Hypertarget{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a6fa539f0816cc3d48804db60a106089c}\label{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a6fa539f0816cc3d48804db60a106089c} 
+const {\bfseries REPLACE} = 1
+\item 
+\Hypertarget{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a5d4419db96c1f49ce051b693ee4053ac}\label{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a5d4419db96c1f49ce051b693ee4053ac} 
+const {\bfseries MERGE} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_dflydev_1_1_dot_access_data_1_1_data_interface_ae78f8be1c0ce076585c1eb686f0b2412}\index{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}!append@{append}}
+\index{append@{append}!Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily \label{interface_dflydev_1_1_dot_access_data_1_1_data_interface_ae78f8be1c0ce076585c1eb686f0b2412} 
+Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data\+Interface\+::append (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Append a value to a key (assumes key refers to an array value)
+
+If the key does not yet exist it will be created. If the key references a non-\/array it\textquotesingle{}s existing contents will be added into a new array before appending the new value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Path\+Exception} & if the given key is empty \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_dflydev_1_1_dot_access_data_1_1_data_a622981c0c7310ce929392c31ba5b9b76}{Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data}}.
+
+\Hypertarget{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a29e81d03a34cb207aedfa797ec2ce3b1}\index{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}!export@{export}}
+\index{export@{export}!Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}}
+\doxysubsubsection{\texorpdfstring{export()}{export()}}
+{\footnotesize\ttfamily \label{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a29e81d03a34cb207aedfa797ec2ce3b1} 
+Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data\+Interface\+::export (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Export data as raw data
+
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$
+\end{DoxyReturn}
+@psalm-\/mutation-\/free 
+
+Implemented in \mbox{\hyperlink{class_dflydev_1_1_dot_access_data_1_1_data_a1554b43c72763195aec3d23b4d14afdd}{Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data}}.
+
+\Hypertarget{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a4238e02e5da2a04467627e0f66318df9}\index{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}!get@{get}}
+\index{get@{get}!Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a4238e02e5da2a04467627e0f66318df9} 
+Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data\+Interface\+::get (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get the raw value for a key
+
+If the key does not exist, an optional default value can be returned instead. If no default is provided then an exception will be thrown instead.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Path\+Exception} & if the given key is empty \\
+\hline
+{\em Invalid\+Path\+Exception} & if the given key does not exist and no default value was given\\
+\hline
+\end{DoxyExceptions}
+@psalm-\/mutation-\/free 
+
+Implemented in \mbox{\hyperlink{class_dflydev_1_1_dot_access_data_1_1_data_ab57f77be667ca19878e988db881b9200}{Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data}}.
+
+\Hypertarget{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a542c460969416f992573cc94ab086fe9}\index{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}!getData@{getData}}
+\index{getData@{getData}!Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily \label{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a542c460969416f992573cc94ab086fe9} 
+Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data\+Interface\+::get\+Data (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Get a data instance for a key
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Data\+Interface
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Path\+Exception} & if the given key is empty \\
+\hline
+{\em Data\+Exception} & if the given key does not reference an array\\
+\hline
+\end{DoxyExceptions}
+@psalm-\/mutation-\/free 
+
+Implemented in \mbox{\hyperlink{class_dflydev_1_1_dot_access_data_1_1_data_a3dc6e78e63029ccc230c5eda33bdebd9}{Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data}}.
+
+\Hypertarget{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a24ed5db938b20e9c9a53c246a35877c8}\index{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}!has@{has}}
+\index{has@{has}!Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a24ed5db938b20e9c9a53c246a35877c8} 
+Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data\+Interface\+::has (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Check if the key exists
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Path\+Exception} & if the given key is empty\\
+\hline
+\end{DoxyExceptions}
+@psalm-\/mutation-\/free 
+
+Implemented in \mbox{\hyperlink{class_dflydev_1_1_dot_access_data_1_1_data_a2ab9697d0949725bb19771e251f5965f}{Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data}}.
+
+\Hypertarget{interface_dflydev_1_1_dot_access_data_1_1_data_interface_ac060e3ad8f8a804cc8437424ef45c3ec}\index{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}!import@{import}}
+\index{import@{import}!Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}}
+\doxysubsubsection{\texorpdfstring{import()}{import()}}
+{\footnotesize\ttfamily \label{interface_dflydev_1_1_dot_access_data_1_1_data_interface_ac060e3ad8f8a804cc8437424ef45c3ec} 
+Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data\+Interface\+::import (\begin{DoxyParamCaption}\item[{array}]{\$data}{, }\item[{int}]{\$mode}{ = {\ttfamily self\+:\+:REPLACE}}\end{DoxyParamCaption})}
+
+Import data into existing data
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$string,mixed$>$} & \$data \\
+\hline
+self\+::\+PRESERVE | self\+::\+REPLACE | self\+::\+MERGE & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_dflydev_1_1_dot_access_data_1_1_data_aa958cea98f7ae5ade238d5cf15eb8142}{Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data}}.
+
+\Hypertarget{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a3efcb540b27bcf53e38777593cdbec87}\index{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}!importData@{importData}}
+\index{importData@{importData}!Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}}
+\doxysubsubsection{\texorpdfstring{importData()}{importData()}}
+{\footnotesize\ttfamily \label{interface_dflydev_1_1_dot_access_data_1_1_data_interface_a3efcb540b27bcf53e38777593cdbec87} 
+Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data\+Interface\+::import\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_dflydev_1_1_dot_access_data_1_1_data_interface}{Data\+Interface}}}]{\$data}{, }\item[{int}]{\$mode}{ = {\ttfamily self\+:\+:REPLACE}}\end{DoxyParamCaption})}
+
+Import data from an external data into existing data
+
+
+\begin{DoxyParams}[1]{Parameters}
+Data\+Interface & {\em \$data} & \\
+\hline
+self\+::\+PRESERVE | self\+::\+REPLACE | self\+::\+MERGE & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_dflydev_1_1_dot_access_data_1_1_data_ad58633293093b6dbaec307fef8cffffd}{Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data}}.
+
+\Hypertarget{interface_dflydev_1_1_dot_access_data_1_1_data_interface_ae0cbce658a08f0dd8d7084ffc6704e04}\index{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}!remove@{remove}}
+\index{remove@{remove}!Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{interface_dflydev_1_1_dot_access_data_1_1_data_interface_ae0cbce658a08f0dd8d7084ffc6704e04} 
+Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data\+Interface\+::remove (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Remove a key
+
+No exception will be thrown if the key does not exist
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Path\+Exception} & if the given key is empty \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_dflydev_1_1_dot_access_data_1_1_data_a72f53930fff8920a7e791a1cbe84ad66}{Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data}}.
+
+\Hypertarget{interface_dflydev_1_1_dot_access_data_1_1_data_interface_abce54ce305762b710a339fabaf03e13b}\index{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}!set@{set}}
+\index{set@{set}!Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface@{Dflydev\textbackslash{}DotAccessData\textbackslash{}DataInterface}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{interface_dflydev_1_1_dot_access_data_1_1_data_interface_abce54ce305762b710a339fabaf03e13b} 
+Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data\+Interface\+::set (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set a value for a key
+
+If the key does not yet exist it will be created.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Path\+Exception} & if the given key is empty \\
+\hline
+{\em Data\+Exception} & if the given key does not target an array \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_dflydev_1_1_dot_access_data_1_1_data_ad61775fa56a1052c3ab366f70d1b62ea}{Dflydev\textbackslash{}\+Dot\+Access\+Data\textbackslash{}\+Data}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/dflydev/dot-\/access-\/data/src/Data\+Interface.\+php\end{DoxyCompactItemize}

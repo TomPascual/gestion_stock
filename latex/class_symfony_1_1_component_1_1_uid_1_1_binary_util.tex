@@ -1,0 +1,110 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}Binary\+Util Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_uid_1_1_binary_util}{}\label{class_symfony_1_1_component_1_1_uid_1_1_binary_util}\index{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil@{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_uid_1_1_binary_util_a263b0204c5452f6e70e1643602599b62}\label{class_symfony_1_1_component_1_1_uid_1_1_binary_util_a263b0204c5452f6e70e1643602599b62} 
+static {\bfseries to\+Base} (string \$bytes, array \$map)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_uid_1_1_binary_util_aad2a403a23590ce11737ac37c09e506f}\label{class_symfony_1_1_component_1_1_uid_1_1_binary_util_aad2a403a23590ce11737ac37c09e506f} 
+static {\bfseries from\+Base} (string \$digits, array \$map)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_uid_1_1_binary_util_a51c7e98c132cabd8fde00eec6359ffaf}\label{class_symfony_1_1_component_1_1_uid_1_1_binary_util_a51c7e98c132cabd8fde00eec6359ffaf} 
+static {\bfseries add} (string \$a, string \$b)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_uid_1_1_binary_util_a4cc98fef886df2145668fc93e22a147c}{hex\+To\+Numeric\+String}} (string \$time)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_uid_1_1_binary_util_af9298e5a69c33b083b2cc112772a1c03}{hex\+To\+Date\+Time}} (string \$time)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_uid_1_1_binary_util_ade63bfa50f50c0c70a2a5f4a2addbf2c}{date\+Time\+To\+Hex}} (\textbackslash{}Date\+Time\+Interface \$time)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_uid_1_1_binary_util_ae35cebc0b1368e4ac74e3f521f722de1}{BASE10}}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_uid_1_1_binary_util_a42d5e22bd98a0f0187693d1f2a929177}{BASE58}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_uid_1_1_binary_util_ade63bfa50f50c0c70a2a5f4a2addbf2c}\index{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil@{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil}!dateTimeToHex@{dateTimeToHex}}
+\index{dateTimeToHex@{dateTimeToHex}!Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil@{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil}}
+\doxysubsubsection{\texorpdfstring{dateTimeToHex()}{dateTimeToHex()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_uid_1_1_binary_util_ade63bfa50f50c0c70a2a5f4a2addbf2c} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Uid\textbackslash{}\+Binary\+Util\+::date\+Time\+To\+Hex (\begin{DoxyParamCaption}\item[{\textbackslash{}Date\+Time\+Interface}]{\$time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+string Count of 100-\/nanosecond intervals since the UUID epoch 1582-\/10-\/15 00\+:00\+:00 in hexadecimal 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_uid_1_1_binary_util_af9298e5a69c33b083b2cc112772a1c03}\index{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil@{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil}!hexToDateTime@{hexToDateTime}}
+\index{hexToDateTime@{hexToDateTime}!Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil@{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil}}
+\doxysubsubsection{\texorpdfstring{hexToDateTime()}{hexToDateTime()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_uid_1_1_binary_util_af9298e5a69c33b083b2cc112772a1c03} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Uid\textbackslash{}\+Binary\+Util\+::hex\+To\+Date\+Time (\begin{DoxyParamCaption}\item[{string}]{\$time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sub-\/microseconds are lost since they are not handled by \textbackslash{}\+Date\+Time\+Immutable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$time} & Count of 100-\/nanosecond intervals since the UUID epoch 1582-\/10-\/15 00\+:00\+:00 in hexadecimal \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_uid_1_1_binary_util_a4cc98fef886df2145668fc93e22a147c}\index{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil@{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil}!hexToNumericString@{hexToNumericString}}
+\index{hexToNumericString@{hexToNumericString}!Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil@{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil}}
+\doxysubsubsection{\texorpdfstring{hexToNumericString()}{hexToNumericString()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_uid_1_1_binary_util_a4cc98fef886df2145668fc93e22a147c} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Uid\textbackslash{}\+Binary\+Util\+::hex\+To\+Numeric\+String (\begin{DoxyParamCaption}\item[{string}]{\$time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$time} & Count of 100-\/nanosecond intervals since the UUID epoch 1582-\/10-\/15 00\+:00\+:00 in hexadecimal\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Count of 100-\/nanosecond intervals since the UUID epoch 1582-\/10-\/15 00\+:00\+:00 as a numeric string 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_uid_1_1_binary_util_ae35cebc0b1368e4ac74e3f521f722de1}\index{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil@{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil}!BASE10@{BASE10}}
+\index{BASE10@{BASE10}!Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil@{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil}}
+\doxysubsubsection{\texorpdfstring{BASE10}{BASE10}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_uid_1_1_binary_util_ae35cebc0b1368e4ac74e3f521f722de1} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Uid\textbackslash{}\+Binary\+Util\+::\+BASE10}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{''}\ =>\ \textcolor{stringliteral}{'0123456789'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 0,\ 1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 7,\ 8,\ 9,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_symfony_1_1_component_1_1_uid_1_1_binary_util_a42d5e22bd98a0f0187693d1f2a929177}\index{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil@{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil}!BASE58@{BASE58}}
+\index{BASE58@{BASE58}!Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil@{Symfony\textbackslash{}Component\textbackslash{}Uid\textbackslash{}BinaryUtil}}
+\doxysubsubsection{\texorpdfstring{BASE58}{BASE58}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_uid_1_1_binary_util_a42d5e22bd98a0f0187693d1f2a929177} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Uid\textbackslash{}\+Binary\+Util\+::\+BASE58}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{''}\ =>\ \textcolor{stringliteral}{'123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ 0,\ 1,\ 2,\ 3,\ 4,\ 5,\ 6,\ 7,\ 8,\ \textcolor{charliteral}{'A'}\ =>\ 9,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'B'}\ =>\ 10,\ \textcolor{charliteral}{'C'}\ =>\ 11,\ \textcolor{charliteral}{'D'}\ =>\ 12,\ \textcolor{charliteral}{'E'}\ =>\ 13,\ \textcolor{charliteral}{'F'}\ =>\ 14,\ \textcolor{charliteral}{'G'}\ =>\ 15,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'H'}\ =>\ 16,\ \textcolor{charliteral}{'J'}\ =>\ 17,\ \textcolor{charliteral}{'K'}\ =>\ 18,\ \textcolor{charliteral}{'L'}\ =>\ 19,\ \textcolor{charliteral}{'M'}\ =>\ 20,\ \textcolor{charliteral}{'N'}\ =>\ 21,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'P'}\ =>\ 22,\ \textcolor{charliteral}{'Q'}\ =>\ 23,\ \textcolor{charliteral}{'R'}\ =>\ 24,\ \textcolor{charliteral}{'S'}\ =>\ 25,\ \textcolor{charliteral}{'T'}\ =>\ 26,\ \textcolor{charliteral}{'U'}\ =>\ 27,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'V'}\ =>\ 28,\ \textcolor{charliteral}{'W'}\ =>\ 29,\ \textcolor{charliteral}{'X'}\ =>\ 30,\ \textcolor{charliteral}{'Y'}\ =>\ 31,\ \textcolor{charliteral}{'Z'}\ =>\ 32,\ \textcolor{charliteral}{'a'}\ =>\ 33,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'b'}\ =>\ 34,\ \textcolor{charliteral}{'c'}\ =>\ 35,\ \textcolor{charliteral}{'d'}\ =>\ 36,\ \textcolor{charliteral}{'e'}\ =>\ 37,\ \textcolor{charliteral}{'f'}\ =>\ 38,\ \textcolor{charliteral}{'g'}\ =>\ 39,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'h'}\ =>\ 40,\ \textcolor{charliteral}{'i'}\ =>\ 41,\ \textcolor{charliteral}{'j'}\ =>\ 42,\ \textcolor{charliteral}{'k'}\ =>\ 43,\ \textcolor{charliteral}{'m'}\ =>\ 44,\ \textcolor{charliteral}{'n'}\ =>\ 45,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'o'}\ =>\ 46,\ \textcolor{charliteral}{'p'}\ =>\ 47,\ \textcolor{charliteral}{'q'}\ =>\ 48,\ \textcolor{charliteral}{'r'}\ =>\ 49,\ \textcolor{charliteral}{'s'}\ =>\ 50,\ \textcolor{charliteral}{'t'}\ =>\ 51,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'u'}\ =>\ 52,\ \textcolor{charliteral}{'v'}\ =>\ 53,\ \textcolor{charliteral}{'w'}\ =>\ 54,\ \textcolor{charliteral}{'x'}\ =>\ 55,\ \textcolor{charliteral}{'y'}\ =>\ 56,\ \textcolor{charliteral}{'z'}\ =>\ 57,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/uid/Binary\+Util.\+php\end{DoxyCompactItemize}

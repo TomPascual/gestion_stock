@@ -1,0 +1,4 @@
+var class_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer_1_1_undefined_function_error_enhancer =
+[
+    [ "enhance", "class_symfony_1_1_component_1_1_error_handler_1_1_error_enhancer_1_1_undefined_function_error_enhancer.html#a9fed325d421f6b71b0df2b3e8a98bac1", null ]
+];

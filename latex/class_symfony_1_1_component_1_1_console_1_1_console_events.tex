@@ -1,0 +1,83 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Console\+Events Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_console_1_1_console_events}{}\label{class_symfony_1_1_component_1_1_console_1_1_console_events}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_console_events_ac879a050cf2c72cb9968876fa141328b}{COMMAND}} = \textquotesingle{}console.\+command\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_console_events_a31c06e46560c862c55e62d2abe4292db}{SIGNAL}} = \textquotesingle{}console.\+signal\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_console_events_a9f79aedf91719c2e6878b43e0d59d112}{TERMINATE}} = \textquotesingle{}console.\+terminate\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_console_events_a191d8e810ade2e3b2661db0320019c85}{ERROR}} = \textquotesingle{}console.\+error\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_console_events_ad1ef1f0e2ef7cace6331b4ad2d149ed2}{ALIASES}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains all events dispatched by an Application.
+
+\begin{DoxyAuthor}{Author}
+Francesco Levorato \href{mailto:git@flevour.net}{\texttt{ git@flevour.\+net}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_console_1_1_console_events_ad1ef1f0e2ef7cace6331b4ad2d149ed2}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents}!ALIASES@{ALIASES}}
+\index{ALIASES@{ALIASES}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents}}
+\doxysubsubsection{\texorpdfstring{ALIASES}{ALIASES}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_console_events_ad1ef1f0e2ef7cace6331b4ad2d149ed2} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Console\+Events\+::\+ALIASES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ConsoleCommandEvent::class\ =>\ self::COMMAND,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ConsoleErrorEvent::class\ =>\ self::ERROR,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ConsoleSignalEvent::class\ =>\ self::SIGNAL,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ConsoleTerminateEvent::class\ =>\ self::TERMINATE,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+Event aliases.
+
+These aliases can be consumed by Register\+Listeners\+Pass. \Hypertarget{class_symfony_1_1_component_1_1_console_1_1_console_events_ac879a050cf2c72cb9968876fa141328b}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents}!COMMAND@{COMMAND}}
+\index{COMMAND@{COMMAND}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents}}
+\doxysubsubsection{\texorpdfstring{COMMAND}{COMMAND}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_console_events_ac879a050cf2c72cb9968876fa141328b} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Console\+Events\+::\+COMMAND = \textquotesingle{}console.\+command\textquotesingle{}}
+
+The COMMAND event allows you to attach listeners before any command is executed by the console. It also allows you to modify the command, input and output before they are handed to the command.
+
+@\+Event("{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Event\textbackslash{}\+Console\+Command\+Event"{}) \Hypertarget{class_symfony_1_1_component_1_1_console_1_1_console_events_a191d8e810ade2e3b2661db0320019c85}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents}!ERROR@{ERROR}}
+\index{ERROR@{ERROR}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents}}
+\doxysubsubsection{\texorpdfstring{ERROR}{ERROR}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_console_events_a191d8e810ade2e3b2661db0320019c85} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Console\+Events\+::\+ERROR = \textquotesingle{}console.\+error\textquotesingle{}}
+
+The ERROR event occurs when an uncaught exception or error appears.
+
+This event allows you to deal with the exception/error or to modify the thrown exception.
+
+@\+Event("{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Event\textbackslash{}\+Console\+Error\+Event"{}) \Hypertarget{class_symfony_1_1_component_1_1_console_1_1_console_events_a31c06e46560c862c55e62d2abe4292db}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents}!SIGNAL@{SIGNAL}}
+\index{SIGNAL@{SIGNAL}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents}}
+\doxysubsubsection{\texorpdfstring{SIGNAL}{SIGNAL}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_console_events_a31c06e46560c862c55e62d2abe4292db} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Console\+Events\+::\+SIGNAL = \textquotesingle{}console.\+signal\textquotesingle{}}
+
+The SIGNAL event allows you to perform some actions after the command execution was interrupted.
+
+@\+Event("{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Event\textbackslash{}\+Console\+Signal\+Event"{}) \Hypertarget{class_symfony_1_1_component_1_1_console_1_1_console_events_a9f79aedf91719c2e6878b43e0d59d112}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents}!TERMINATE@{TERMINATE}}
+\index{TERMINATE@{TERMINATE}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}ConsoleEvents}}
+\doxysubsubsection{\texorpdfstring{TERMINATE}{TERMINATE}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_console_1_1_console_events_a9f79aedf91719c2e6878b43e0d59d112} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Console\+Events\+::\+TERMINATE = \textquotesingle{}console.\+terminate\textquotesingle{}}
+
+The TERMINATE event allows you to attach listeners after a command is executed by the console.
+
+@\+Event("{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Event\textbackslash{}\+Console\+Terminate\+Event"{}) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/console/Console\+Events.\+php\end{DoxyCompactItemize}

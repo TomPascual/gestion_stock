@@ -1,0 +1,63 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Mime\+Type\+Guesser\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_component_1_1_mime_1_1_mime_type_guesser_interface}{}\label{interface_symfony_1_1_component_1_1_mime_1_1_mime_type_guesser_interface}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypeGuesserInterface@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypeGuesserInterface}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Mime\+Type\+Guesser\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.661721cm]{interface_symfony_1_1_component_1_1_mime_1_1_mime_type_guesser_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_mime_1_1_mime_type_guesser_interface_aabe89bcb23d2600ae00492d4a9aca251}{is\+Guesser\+Supported}} ()
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_mime_1_1_mime_type_guesser_interface_a52c999421f0e01b73b10d9b025f98383}{guess\+Mime\+Type}} (string \$path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Guesses the MIME type of a file.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_component_1_1_mime_1_1_mime_type_guesser_interface_a52c999421f0e01b73b10d9b025f98383}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypeGuesserInterface@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypeGuesserInterface}!guessMimeType@{guessMimeType}}
+\index{guessMimeType@{guessMimeType}!Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypeGuesserInterface@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypeGuesserInterface}}
+\doxysubsubsection{\texorpdfstring{guessMimeType()}{guessMimeType()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_mime_1_1_mime_type_guesser_interface_a52c999421f0e01b73b10d9b025f98383} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Mime\+Type\+Guesser\+Interface\+::guess\+Mime\+Type (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+Guesses the MIME type of the file with the given path.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception If the guesser is not supported 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception If the file does not exist or is not readable 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_file_binary_mime_type_guesser_aac53d503e67917dac98a1f65c81e673b}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+File\+Binary\+Mime\+Type\+Guesser}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_fileinfo_mime_type_guesser_a85328b5bdc4ec38a63562e6982c74ab1}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Fileinfo\+Mime\+Type\+Guesser}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a3d379d7ce4d53e47aabff26886f7bb3e}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Mime\+Types}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_mime_1_1_mime_type_guesser_interface_aabe89bcb23d2600ae00492d4a9aca251}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypeGuesserInterface@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypeGuesserInterface}!isGuesserSupported@{isGuesserSupported}}
+\index{isGuesserSupported@{isGuesserSupported}!Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypeGuesserInterface@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypeGuesserInterface}}
+\doxysubsubsection{\texorpdfstring{isGuesserSupported()}{isGuesserSupported()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_mime_1_1_mime_type_guesser_interface_aabe89bcb23d2600ae00492d4a9aca251} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Mime\+Type\+Guesser\+Interface\+::is\+Guesser\+Supported (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true if this guesser is supported. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_file_binary_mime_type_guesser_ae5e83241d83561c6b4610383f87eda67}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+File\+Binary\+Mime\+Type\+Guesser}}, \mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_fileinfo_mime_type_guesser_a36d27666a5354734c2bf3a53852e75af}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Fileinfo\+Mime\+Type\+Guesser}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a989cbec34af61b53e61d4799b67692d2}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Mime\+Types}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/mime/Mime\+Type\+Guesser\+Interface.\+php\end{DoxyCompactItemize}

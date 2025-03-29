@@ -1,0 +1,214 @@
+\doxysection{Php\+Parser\textbackslash{}Error Class Reference}
+\hypertarget{class_php_parser_1_1_error}{}\label{class_php_parser_1_1_error}\index{PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}}
+Inheritance diagram for Php\+Parser\textbackslash{}Error\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_php_parser_1_1_error}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_error_adc736ccc5baa5b0b439b7640dd7d8a4a}{\+\_\+\+\_\+construct}} (string \$message, array \$attributes=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_error_a84345d67401fa7cb9049ede1d86b79e0}{get\+Raw\+Message}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_error_a80ec6c1278cfc350d95e0727092ae3cd}{get\+Start\+Line}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_error_aeea75149f4f6e706d96da72f04b777b5}{get\+End\+Line}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_error_a12b9159eca7506b636e861c909fd3f84}{get\+Attributes}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_error_a2c868d52c255839394c7964b83d6b5e8}{set\+Attributes}} (array \$attributes)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_error_ad74bb986fa26101d7036e9c252194939}{set\+Raw\+Message}} (string \$message)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_error_afdc5e22d31e2394f66f8e4595287509a}{set\+Start\+Line}} (int \$line)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_error_a38adaa46a47a3581110d1ee9338fde3b}{has\+Column\+Info}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_error_af114b664b332cc1cb7dc6dbc8ebba96f}{get\+Start\+Column}} (string \$code)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_error_ad06f35dbc55a6c3f3f2807a404827320}{get\+End\+Column}} (string \$code)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_error_a865045d432c5917a04c02fca99718e50}{get\+Message\+With\+Column\+Info}} (string \$code)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_error_a729647efc70b9efa158a3341f649d44d}{update\+Message}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_php_parser_1_1_error_a301d1bbea8b6c14b2135a69ae9b12469}\label{class_php_parser_1_1_error_a301d1bbea8b6c14b2135a69ae9b12469} 
+string {\bfseries \$raw\+Message}
+\item 
+\Hypertarget{class_php_parser_1_1_error_a87a02528c5cef1531cb367816220c295}\label{class_php_parser_1_1_error_a87a02528c5cef1531cb367816220c295} 
+array {\bfseries \$attributes}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_error_adc736ccc5baa5b0b439b7640dd7d8a4a}\index{PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_error_adc736ccc5baa5b0b439b7640dd7d8a4a} 
+Php\+Parser\textbackslash{}\+Error\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$message}{, }\item[{array}]{\$attributes}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Creates an Exception signifying a parse error.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & Error message \\
+\hline
+ & {\em array$<$string,mixed$>$} & \$attributes Attributes of node/token where error occurred \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_error_a12b9159eca7506b636e861c909fd3f84}\index{PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}!getAttributes@{getAttributes}}
+\index{getAttributes@{getAttributes}!PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}}
+\doxysubsubsection{\texorpdfstring{getAttributes()}{getAttributes()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_error_a12b9159eca7506b636e861c909fd3f84} 
+Php\+Parser\textbackslash{}\+Error\+::get\+Attributes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the attributes of the node/token the error occurred at.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_error_ad06f35dbc55a6c3f3f2807a404827320}\index{PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}!getEndColumn@{getEndColumn}}
+\index{getEndColumn@{getEndColumn}!PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}}
+\doxysubsubsection{\texorpdfstring{getEndColumn()}{getEndColumn()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_error_ad06f35dbc55a6c3f3f2807a404827320} 
+Php\+Parser\textbackslash{}\+Error\+::get\+End\+Column (\begin{DoxyParamCaption}\item[{string}]{\$code}{}\end{DoxyParamCaption})}
+
+Gets the end column (1-\/based) into the line where the error ended.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$code} & Source code of the file \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_error_aeea75149f4f6e706d96da72f04b777b5}\index{PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}!getEndLine@{getEndLine}}
+\index{getEndLine@{getEndLine}!PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}}
+\doxysubsubsection{\texorpdfstring{getEndLine()}{getEndLine()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_error_aeea75149f4f6e706d96da72f04b777b5} 
+Php\+Parser\textbackslash{}\+Error\+::get\+End\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the line the error ends in.
+
+\begin{DoxyReturn}{Returns}
+int Error end line @phpstan-\/return -\/1\texorpdfstring{$\vert$}{|}positive-\/int 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_error_a865045d432c5917a04c02fca99718e50}\index{PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}!getMessageWithColumnInfo@{getMessageWithColumnInfo}}
+\index{getMessageWithColumnInfo@{getMessageWithColumnInfo}!PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}}
+\doxysubsubsection{\texorpdfstring{getMessageWithColumnInfo()}{getMessageWithColumnInfo()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_error_a865045d432c5917a04c02fca99718e50} 
+Php\+Parser\textbackslash{}\+Error\+::get\+Message\+With\+Column\+Info (\begin{DoxyParamCaption}\item[{string}]{\$code}{}\end{DoxyParamCaption})}
+
+Formats message including line and column information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$code} & Source code associated with the error, for calculation of the columns\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Formatted message 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_error_a84345d67401fa7cb9049ede1d86b79e0}\index{PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}!getRawMessage@{getRawMessage}}
+\index{getRawMessage@{getRawMessage}!PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}}
+\doxysubsubsection{\texorpdfstring{getRawMessage()}{getRawMessage()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_error_a84345d67401fa7cb9049ede1d86b79e0} 
+Php\+Parser\textbackslash{}\+Error\+::get\+Raw\+Message (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the error message
+
+\begin{DoxyReturn}{Returns}
+string Error message 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_error_af114b664b332cc1cb7dc6dbc8ebba96f}\index{PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}!getStartColumn@{getStartColumn}}
+\index{getStartColumn@{getStartColumn}!PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}}
+\doxysubsubsection{\texorpdfstring{getStartColumn()}{getStartColumn()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_error_af114b664b332cc1cb7dc6dbc8ebba96f} 
+Php\+Parser\textbackslash{}\+Error\+::get\+Start\+Column (\begin{DoxyParamCaption}\item[{string}]{\$code}{}\end{DoxyParamCaption})}
+
+Gets the start column (1-\/based) into the line where the error started.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$code} & Source code of the file \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_error_a80ec6c1278cfc350d95e0727092ae3cd}\index{PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}!getStartLine@{getStartLine}}
+\index{getStartLine@{getStartLine}!PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}}
+\doxysubsubsection{\texorpdfstring{getStartLine()}{getStartLine()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_error_a80ec6c1278cfc350d95e0727092ae3cd} 
+Php\+Parser\textbackslash{}\+Error\+::get\+Start\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the line the error starts in.
+
+\begin{DoxyReturn}{Returns}
+int Error start line @phpstan-\/return -\/1\texorpdfstring{$\vert$}{|}positive-\/int 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_error_a38adaa46a47a3581110d1ee9338fde3b}\index{PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}!hasColumnInfo@{hasColumnInfo}}
+\index{hasColumnInfo@{hasColumnInfo}!PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}}
+\doxysubsubsection{\texorpdfstring{hasColumnInfo()}{hasColumnInfo()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_error_a38adaa46a47a3581110d1ee9338fde3b} 
+Php\+Parser\textbackslash{}\+Error\+::has\+Column\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns whether the error has start and end column information.
+
+For column information enable the start\+File\+Pos and end\+File\+Pos in the lexer options. \Hypertarget{class_php_parser_1_1_error_a2c868d52c255839394c7964b83d6b5e8}\index{PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}!setAttributes@{setAttributes}}
+\index{setAttributes@{setAttributes}!PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}}
+\doxysubsubsection{\texorpdfstring{setAttributes()}{setAttributes()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_error_a2c868d52c255839394c7964b83d6b5e8} 
+Php\+Parser\textbackslash{}\+Error\+::set\+Attributes (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{}\end{DoxyParamCaption})}
+
+Sets the attributes of the node/token the error occurred at.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$attributes \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_error_ad74bb986fa26101d7036e9c252194939}\index{PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}!setRawMessage@{setRawMessage}}
+\index{setRawMessage@{setRawMessage}!PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}}
+\doxysubsubsection{\texorpdfstring{setRawMessage()}{setRawMessage()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_error_ad74bb986fa26101d7036e9c252194939} 
+Php\+Parser\textbackslash{}\+Error\+::set\+Raw\+Message (\begin{DoxyParamCaption}\item[{string}]{\$message}{}\end{DoxyParamCaption})}
+
+Sets the line of the PHP file the error occurred in.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & Error message \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_error_afdc5e22d31e2394f66f8e4595287509a}\index{PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}!setStartLine@{setStartLine}}
+\index{setStartLine@{setStartLine}!PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}}
+\doxysubsubsection{\texorpdfstring{setStartLine()}{setStartLine()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_error_afdc5e22d31e2394f66f8e4595287509a} 
+Php\+Parser\textbackslash{}\+Error\+::set\+Start\+Line (\begin{DoxyParamCaption}\item[{int}]{\$line}{}\end{DoxyParamCaption})}
+
+Sets the line the error starts in.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$line} & Error start line \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_error_a729647efc70b9efa158a3341f649d44d}\index{PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}!updateMessage@{updateMessage}}
+\index{updateMessage@{updateMessage}!PhpParser\textbackslash{}Error@{PhpParser\textbackslash{}Error}}
+\doxysubsubsection{\texorpdfstring{updateMessage()}{updateMessage()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_error_a729647efc70b9efa158a3341f649d44d} 
+Php\+Parser\textbackslash{}\+Error\+::update\+Message (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Updates the exception message after a change to raw\+Message or raw\+Line. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/nikic/php-\/parser/lib/\+Php\+Parser/Error.\+php\end{DoxyCompactItemize}

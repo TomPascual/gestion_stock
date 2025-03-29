@@ -1,0 +1,80 @@
+\doxysection{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Guid\+Builder Class Reference}
+\hypertarget{class_ramsey_1_1_uuid_1_1_guid_1_1_guid_builder}{}\label{class_ramsey_1_1_uuid_1_1_guid_1_1_guid_builder}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}GuidBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}GuidBuilder}}
+Inheritance diagram for Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Guid\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ramsey_1_1_uuid_1_1_guid_1_1_guid_builder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_guid_1_1_guid_builder_a05df22bd563c9731e79d028a4f72cf8b}{\+\_\+\+\_\+construct}} (private \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_converter_1_1_number_converter_interface}{Number\+Converter\+Interface}} \$number\+Converter, private \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_converter_1_1_time_converter_interface}{Time\+Converter\+Interface}} \$time\+Converter)
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_guid_1_1_guid_builder_a0f9b4706b93fba0fbcfc18627906f2b0}{build}} (\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_codec_1_1_codec_interface}{Codec\+Interface}} \$codec, string \$bytes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_guid_1_1_guid_builder_adc5e3672249888cfbd1706d49554b57e}{build\+Fields}} (string \$bytes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Guid\+Builder builds instances of Guid
+
+\begin{DoxySeeAlso}{See also}
+Guid
+\end{DoxySeeAlso}
+@psalm-\/immutable 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_guid_1_1_guid_builder_a05df22bd563c9731e79d028a4f72cf8b}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}GuidBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}GuidBuilder}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}GuidBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}GuidBuilder}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_guid_1_1_guid_builder_a05df22bd563c9731e79d028a4f72cf8b} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Guid\textbackslash{}\+Guid\+Builder\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_converter_1_1_number_converter_interface}{Number\+Converter\+Interface}}}]{\$number\+Converter}{, }\item[{private \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_converter_1_1_time_converter_interface}{Time\+Converter\+Interface}}}]{\$time\+Converter}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Number\+Converter\+Interface & {\em \$number\+Converter} & The number converter to use when constructing the Guid \\
+\hline
+Time\+Converter\+Interface & {\em \$time\+Converter} & The time converter to use for converting timestamps extracted from a UUID to Unix timestamps \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_guid_1_1_guid_builder_a0f9b4706b93fba0fbcfc18627906f2b0}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}GuidBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}GuidBuilder}!build@{build}}
+\index{build@{build}!Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}GuidBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}GuidBuilder}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_guid_1_1_guid_builder_a0f9b4706b93fba0fbcfc18627906f2b0} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Guid\textbackslash{}\+Guid\+Builder\+::build (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_codec_1_1_codec_interface}{Codec\+Interface}}}]{\$codec}{, }\item[{string}]{\$bytes}{}\end{DoxyParamCaption})}
+
+Builds and returns a Guid
+
+
+\begin{DoxyParams}[1]{Parameters}
+Codec\+Interface & {\em \$codec} & The codec to use for building this Guid instance \\
+\hline
+string & {\em \$bytes} & The byte string from which to construct a UUID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Guid The Guid\+Builder returns an instance of Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Guid\textbackslash{}\+Guid
+\end{DoxyReturn}
+@psalm-\/pure 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_builder_1_1_uuid_builder_interface_a8d264ac2c37c862758b666746907f8af}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Builder\textbackslash{}\+Uuid\+Builder\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_guid_1_1_guid_builder_adc5e3672249888cfbd1706d49554b57e}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}GuidBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}GuidBuilder}!buildFields@{buildFields}}
+\index{buildFields@{buildFields}!Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}GuidBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}GuidBuilder}}
+\doxysubsubsection{\texorpdfstring{buildFields()}{buildFields()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_guid_1_1_guid_builder_adc5e3672249888cfbd1706d49554b57e} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Guid\textbackslash{}\+Guid\+Builder\+::build\+Fields (\begin{DoxyParamCaption}\item[{string}]{\$bytes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Proxy method to allow injecting a mock, for testing 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/ramsey/uuid/src/\+Guid/Guid\+Builder.\+php\end{DoxyCompactItemize}

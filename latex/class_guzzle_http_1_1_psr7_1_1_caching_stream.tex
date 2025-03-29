@@ -1,0 +1,141 @@
+\doxysection{Guzzle\+Http\textbackslash{}Psr7\textbackslash{}Caching\+Stream Class Reference}
+\hypertarget{class_guzzle_http_1_1_psr7_1_1_caching_stream}{}\label{class_guzzle_http_1_1_psr7_1_1_caching_stream}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream}}
+Inheritance diagram for Guzzle\+Http\textbackslash{}Psr7\textbackslash{}Caching\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_guzzle_http_1_1_psr7_1_1_caching_stream}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_caching_stream_a1295b447fb7256713542157f6b69a155}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$stream, ?\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$target=null)
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_caching_stream_a4a4c0693dfcec940ea1f14c686666a4d}{get\+Size}} ()
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_caching_stream_ab893b58302d56d6946ca7355b5816ae4}{rewind}} ()
+\item 
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_caching_stream_a6ae3ecc8a3a8073639793e81431a4a83}\label{class_guzzle_http_1_1_psr7_1_1_caching_stream_a6ae3ecc8a3a8073639793e81431a4a83} 
+{\bfseries seek} (\$offset, \$whence=SEEK\+\_\+\+SET)
+\item 
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_caching_stream_ae9f074ce44f716bcc5d5ef5e4357785b}\label{class_guzzle_http_1_1_psr7_1_1_caching_stream_ae9f074ce44f716bcc5d5ef5e4357785b} 
+{\bfseries read} (\$length)
+\item 
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_caching_stream_a8a6d9a820f1a4e50bbb965febb5acc36}\label{class_guzzle_http_1_1_psr7_1_1_caching_stream_a8a6d9a820f1a4e50bbb965febb5acc36} 
+{\bfseries write} (\$string)
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_caching_stream_ae247cc3e854b0e58fc4b00a0b5fcc9ab}{eof}} ()
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_caching_stream_ac135bf39923eb56263280d2e63c8bc96}{close}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Stream\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a72df4e8851ae1a81087f3415fd6d73cd}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a1670dba880a8c14690746732960d4c9c}{detach}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a9aa2f88a38f496d74100f42ddf0656ef}{tell}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_ad4a27548fd51bd12390d798981a1622b}{is\+Seekable}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a87cff42eb4e13a5c9fd163488d4982d9}{seek}} (int \$offset, int \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a79287940d75d1951b831879fdc493883}{is\+Writable}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_ad1516fb049f8ae1198350006f90ed866}{write}} (string \$string)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_aecf78407aa241622ae200a9faa471d32}{is\+Readable}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_aca95619bcd058ac3d2cbb98ed24f6979}{read}} (int \$length)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a77f73d536f77e4a4e281d548ee905276}{get\+Contents}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a50f840e956d2a19b618a1c819df281c9}{get\+Metadata}} (?string \$key=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stream decorator that can cache previously read bytes from a sequentially read stream. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_caching_stream_a1295b447fb7256713542157f6b69a155}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_caching_stream_a1295b447fb7256713542157f6b69a155} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Caching\+Stream\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}}}]{\$stream}{, }\item[{?\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}}}]{\$target}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+We will treat the buffer object as the body of the stream
+
+
+\begin{DoxyParams}[1]{Parameters}
+Stream\+Interface & {\em \$stream} & Stream to cache. The cursor is assumed to be at the beginning of the stream. \\
+\hline
+Stream\+Interface & {\em \$target} & Optionally specify where data is cached \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_caching_stream_ac135bf39923eb56263280d2e63c8bc96}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream}!close@{close}}
+\index{close@{close}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_caching_stream_ac135bf39923eb56263280d2e63c8bc96} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Caching\+Stream\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Close both the remote stream and buffer stream 
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a0bbd0c821da0ee0c319f9867ff77c598}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Stream\+Interface}}.
+
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_caching_stream_ae247cc3e854b0e58fc4b00a0b5fcc9ab}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream}!eof@{eof}}
+\index{eof@{eof}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream}}
+\doxysubsubsection{\texorpdfstring{eof()}{eof()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_caching_stream_ae247cc3e854b0e58fc4b00a0b5fcc9ab} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Caching\+Stream\+::eof (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true if the stream is at the end of the stream.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a502cc5ca370c6925b78d95d86d68777c}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Stream\+Interface}}.
+
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_caching_stream_a4a4c0693dfcec940ea1f14c686666a4d}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream}!getSize@{getSize}}
+\index{getSize@{getSize}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_caching_stream_a4a4c0693dfcec940ea1f14c686666a4d} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Caching\+Stream\+::get\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the size of the stream if known.
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}null Returns the size in bytes if known, or null if unknown. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a85b9ff28e3ee39d95a47e623d866cf76}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Stream\+Interface}}.
+
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_caching_stream_ab893b58302d56d6946ca7355b5816ae4}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream}!rewind@{rewind}}
+\index{rewind@{rewind}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}CachingStream}}
+\doxysubsubsection{\texorpdfstring{rewind()}{rewind()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_caching_stream_ab893b58302d56d6946ca7355b5816ae4} 
+Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Caching\+Stream\+::rewind (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Seek to the beginning of the stream.
+
+If the stream is not seekable, this method will raise an exception; otherwise, it will perform a seek(0).
+
+\begin{DoxySeeAlso}{See also}
+seek() \doxylink{}{on failure. }
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a48721ef4d5097250a3f94515938393c9}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Stream\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/guzzlehttp/psr7/src/Caching\+Stream.\+php\end{DoxyCompactItemize}

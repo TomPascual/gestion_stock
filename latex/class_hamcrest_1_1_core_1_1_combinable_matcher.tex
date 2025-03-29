@@ -1,0 +1,122 @@
+\doxysection{Hamcrest\textbackslash{}Core\textbackslash{}Combinable\+Matcher Class Reference}
+\hypertarget{class_hamcrest_1_1_core_1_1_combinable_matcher}{}\label{class_hamcrest_1_1_core_1_1_combinable_matcher}\index{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher@{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher}}
+Inheritance diagram for Hamcrest\textbackslash{}Core\textbackslash{}Combinable\+Matcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_hamcrest_1_1_core_1_1_combinable_matcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_hamcrest_1_1_core_1_1_combinable_matcher_a15edac38a64371c45332c1c8de6254d8}\label{class_hamcrest_1_1_core_1_1_combinable_matcher_a15edac38a64371c45332c1c8de6254d8} 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{interface_hamcrest_1_1_matcher}{Matcher}} \$matcher)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_core_1_1_combinable_matcher_a626eb1ef3320b8cf69df5880591f0d39}{matches}} (\$item)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_core_1_1_combinable_matcher_a48b975885d905e68db0bd77c0b41d8b2}{describe\+To}} (\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$description)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_core_1_1_combinable_matcher_a055612d413ec464a69c3af87d5f1c61d}{and\+Also}} (\mbox{\hyperlink{interface_hamcrest_1_1_matcher}{Matcher}} \$other)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_core_1_1_combinable_matcher_a3dd716aa0085e9820e9d98a9b78eb158}{or\+Else}} (\mbox{\hyperlink{interface_hamcrest_1_1_matcher}{Matcher}} \$other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hamcrest_1_1_base_matcher}{Hamcrest\textbackslash{}\+Base\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_base_matcher_ae071961005d0f24d2ee1b3c62d9fe660}{describe\+Mismatch}} (\$item, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$description)
+\item 
+{\bfseries \+\_\+\+\_\+to\+String} ()
+\item 
+{\bfseries \+\_\+\+\_\+invoke} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_combinable_matcher_a38f089a1deeaeb32002f4ff2e770f7ba}{both}} (\mbox{\hyperlink{interface_hamcrest_1_1_matcher}{Matcher}} \$matcher)
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_combinable_matcher_a3bd79291981b1716d9b3f1162155b721}{either}} (\mbox{\hyperlink{interface_hamcrest_1_1_matcher}{Matcher}} \$matcher)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hamcrest_1_1_core_1_1_combinable_matcher_a055612d413ec464a69c3af87d5f1c61d}\index{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher@{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher}!andAlso@{andAlso}}
+\index{andAlso@{andAlso}!Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher@{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher}}
+\doxysubsubsection{\texorpdfstring{andAlso()}{andAlso()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_combinable_matcher_a055612d413ec464a69c3af87d5f1c61d} 
+Hamcrest\textbackslash{}\+Core\textbackslash{}\+Combinable\+Matcher\+::and\+Also (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_hamcrest_1_1_matcher}{Matcher}}}]{\$other}{}\end{DoxyParamCaption})}
+
+Diversion from Hamcrest-\/\+Java... Logical "{}and"{} not permitted \Hypertarget{class_hamcrest_1_1_core_1_1_combinable_matcher_a38f089a1deeaeb32002f4ff2e770f7ba}\index{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher@{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher}!both@{both}}
+\index{both@{both}!Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher@{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher}}
+\doxysubsubsection{\texorpdfstring{both()}{both()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_combinable_matcher_a38f089a1deeaeb32002f4ff2e770f7ba} 
+static Hamcrest\textbackslash{}\+Core\textbackslash{}\+Combinable\+Matcher\+::both (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_hamcrest_1_1_matcher}{Matcher}}}]{\$matcher}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This is useful for fluently combining matchers that must both pass. For example\+: 
+\begin{DoxyPre}
+  assertThat(\$string, both(containsString("{}a"{}))-\/>andAlso(containsString("{}b"{})));
+\end{DoxyPre}
+
+
+@factory \Hypertarget{class_hamcrest_1_1_core_1_1_combinable_matcher_a48b975885d905e68db0bd77c0b41d8b2}\index{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher@{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher}!describeTo@{describeTo}}
+\index{describeTo@{describeTo}!Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher@{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher}}
+\doxysubsubsection{\texorpdfstring{describeTo()}{describeTo()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_combinable_matcher_a48b975885d905e68db0bd77c0b41d8b2} 
+Hamcrest\textbackslash{}\+Core\textbackslash{}\+Combinable\+Matcher\+::describe\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$description}{}\end{DoxyParamCaption})}
+
+Generates a description of the object. The description may be part of a description of a larger object of which this is just a component, so it should be worded appropriately.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Hamcrest\textbackslash{}\+Description & {\em \$description} & The description to be built or appended to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hamcrest_1_1_self_describing_a5358337d01bd2b3a048fa446f9e901d2}{Hamcrest\textbackslash{}\+Self\+Describing}}.
+
+\Hypertarget{class_hamcrest_1_1_core_1_1_combinable_matcher_a3bd79291981b1716d9b3f1162155b721}\index{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher@{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher}!either@{either}}
+\index{either@{either}!Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher@{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher}}
+\doxysubsubsection{\texorpdfstring{either()}{either()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_combinable_matcher_a3bd79291981b1716d9b3f1162155b721} 
+static Hamcrest\textbackslash{}\+Core\textbackslash{}\+Combinable\+Matcher\+::either (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_hamcrest_1_1_matcher}{Matcher}}}]{\$matcher}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+This is useful for fluently combining matchers where either may pass, for example\+: 
+\begin{DoxyPre}
+  assertThat(\$string, either(containsString("{}a"{}))-\/>orElse(containsString("{}b"{})));
+\end{DoxyPre}
+
+
+@factory \Hypertarget{class_hamcrest_1_1_core_1_1_combinable_matcher_a626eb1ef3320b8cf69df5880591f0d39}\index{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher@{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher}!matches@{matches}}
+\index{matches@{matches}!Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher@{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher}}
+\doxysubsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_combinable_matcher_a626eb1ef3320b8cf69df5880591f0d39} 
+Hamcrest\textbackslash{}\+Core\textbackslash{}\+Combinable\+Matcher\+::matches (\begin{DoxyParamCaption}\item[{}]{\$item}{}\end{DoxyParamCaption})}
+
+Evaluates the matcher for argument {\itshape \$item}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$item} & the object against which the matcher is evaluated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean {\ttfamily true} if {\itshape \$item} matches, otherwise {\ttfamily false}.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Hamcrest\textbackslash{}\+Base\+Matcher 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interface_hamcrest_1_1_matcher_a11ade9b98c2cf2e1871c2bb0e6d0de94}{Hamcrest\textbackslash{}\+Matcher}}.
+
+\Hypertarget{class_hamcrest_1_1_core_1_1_combinable_matcher_a3dd716aa0085e9820e9d98a9b78eb158}\index{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher@{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher}!orElse@{orElse}}
+\index{orElse@{orElse}!Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher@{Hamcrest\textbackslash{}Core\textbackslash{}CombinableMatcher}}
+\doxysubsubsection{\texorpdfstring{orElse()}{orElse()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_combinable_matcher_a3dd716aa0085e9820e9d98a9b78eb158} 
+Hamcrest\textbackslash{}\+Core\textbackslash{}\+Combinable\+Matcher\+::or\+Else (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_hamcrest_1_1_matcher}{Matcher}}}]{\$other}{}\end{DoxyParamCaption})}
+
+Diversion from Hamcrest-\/\+Java... Logical "{}or"{} not permitted 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/hamcrest/hamcrest-\/php/hamcrest/\+Hamcrest/\+Core/Combinable\+Matcher.\+php\end{DoxyCompactItemize}

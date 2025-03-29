@@ -1,0 +1,100 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}Xml\+File\+Loader Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader}{}\label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}Xml\+File\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a7a9f2d53aa3e07b0be63af41c861f75c}{load}} (mixed \$file, ?string \$type=null)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a281eea762823d7bc079607330560b362}\label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a281eea762823d7bc079607330560b362} 
+{\bfseries supports} (mixed \$resource, ?string \$type=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a290f99c0f4eb39eeb9501d6c7b605f8c}\label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a290f99c0f4eb39eeb9501d6c7b605f8c} 
+const {\bfseries NAMESPACE\+\_\+\+URI} = \textquotesingle{}http\+://symfony.\+com/schema/routing\textquotesingle{}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a1cf4fdf763e5df6c33232e7af0b0d844}\label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a1cf4fdf763e5df6c33232e7af0b0d844} 
+const {\bfseries SCHEME\+\_\+\+PATH} = \textquotesingle{}/schema/routing/routing-\/1.\+0.xsd\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a8afc06a82f6cd61a272c526caf1cc5bc}{parse\+Node}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_route_collection}{Route\+Collection}} \$collection, \textbackslash{}DOMElement \$node, string \$path, string \$file)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a57038cb9ea116f065574e6637caa7ccb}{parse\+Route}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_route_collection}{Route\+Collection}} \$collection, \textbackslash{}DOMElement \$node, string \$path)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a3951d955de3935d865dc914f133ed505}{load\+File}} (string \$file)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Xml\+File\+Loader loads XML routing files.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+
+Tobias Schultze \href{http://tobion.de}{\texttt{ http\+://tobion.\+de}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a7a9f2d53aa3e07b0be63af41c861f75c}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader}!load@{load}}
+\index{load@{load}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a7a9f2d53aa3e07b0be63af41c861f75c} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Loader\textbackslash{}\+Xml\+File\+Loader\+::load (\begin{DoxyParamCaption}\item[{mixed}]{\$file}{, }\item[{?string}]{\$type}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception when the file cannot be loaded or when the XML cannot be parsed because it does not validate against the scheme \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a3951d955de3935d865dc914f133ed505}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader}!loadFile@{loadFile}}
+\index{loadFile@{loadFile}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader}}
+\doxysubsubsection{\texorpdfstring{loadFile()}{loadFile()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a3951d955de3935d865dc914f133ed505} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Loader\textbackslash{}\+Xml\+File\+Loader\+::load\+File (\begin{DoxyParamCaption}\item[{string}]{\$file}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception When loading of XML file fails because of syntax errors or when the XML structure is not as expected by the scheme -\/ see validate() \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a8afc06a82f6cd61a272c526caf1cc5bc}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader}!parseNode@{parseNode}}
+\index{parseNode@{parseNode}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader}}
+\doxysubsubsection{\texorpdfstring{parseNode()}{parseNode()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a8afc06a82f6cd61a272c526caf1cc5bc} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Loader\textbackslash{}\+Xml\+File\+Loader\+::parse\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_route_collection}{Route\+Collection}}}]{\$collection}{, }\item[{\textbackslash{}DOMElement}]{\$node}{, }\item[{string}]{\$path}{, }\item[{string}]{\$file}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parses a node from a loaded XML file.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception When the XML is invalid \Hypertarget{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a57038cb9ea116f065574e6637caa7ccb}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader}!parseRoute@{parseRoute}}
+\index{parseRoute@{parseRoute}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Loader\textbackslash{}XmlFileLoader}}
+\doxysubsubsection{\texorpdfstring{parseRoute()}{parseRoute()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_routing_1_1_loader_1_1_xml_file_loader_a57038cb9ea116f065574e6637caa7ccb} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Loader\textbackslash{}\+Xml\+File\+Loader\+::parse\+Route (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_route_collection}{Route\+Collection}}}]{\$collection}{, }\item[{\textbackslash{}DOMElement}]{\$node}{, }\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parses a route and adds it to the Route\+Collection.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception When the XML is invalid 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/routing/\+Loader/Xml\+File\+Loader.\+php\end{DoxyCompactItemize}

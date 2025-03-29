@@ -1,0 +1,37 @@
+\doxysection{Php\+Parser\textbackslash{}Parser\+Factory Class Reference}
+\hypertarget{class_php_parser_1_1_parser_factory}{}\label{class_php_parser_1_1_parser_factory}\index{PhpParser\textbackslash{}ParserFactory@{PhpParser\textbackslash{}ParserFactory}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_factory_a9a8eb0c3ad7614a65a763ce9936a00b9}{create\+For\+Version}} (\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}} \$version)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_factory_a74cf7dd6efb759aff635b5f832207274}{create\+For\+Newest\+Supported\+Version}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_factory_a133e944f94813ddcbacc50a42bcf2e5c}{create\+For\+Host\+Version}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_parser_factory_a133e944f94813ddcbacc50a42bcf2e5c}\index{PhpParser\textbackslash{}ParserFactory@{PhpParser\textbackslash{}ParserFactory}!createForHostVersion@{createForHostVersion}}
+\index{createForHostVersion@{createForHostVersion}!PhpParser\textbackslash{}ParserFactory@{PhpParser\textbackslash{}ParserFactory}}
+\doxysubsubsection{\texorpdfstring{createForHostVersion()}{createForHostVersion()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_factory_a133e944f94813ddcbacc50a42bcf2e5c} 
+Php\+Parser\textbackslash{}\+Parser\+Factory\+::create\+For\+Host\+Version (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Create a parser targeting the host PHP version, that is the PHP version we\textquotesingle{}re currently running on. This parser will not use any token emulation. \Hypertarget{class_php_parser_1_1_parser_factory_a74cf7dd6efb759aff635b5f832207274}\index{PhpParser\textbackslash{}ParserFactory@{PhpParser\textbackslash{}ParserFactory}!createForNewestSupportedVersion@{createForNewestSupportedVersion}}
+\index{createForNewestSupportedVersion@{createForNewestSupportedVersion}!PhpParser\textbackslash{}ParserFactory@{PhpParser\textbackslash{}ParserFactory}}
+\doxysubsubsection{\texorpdfstring{createForNewestSupportedVersion()}{createForNewestSupportedVersion()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_factory_a74cf7dd6efb759aff635b5f832207274} 
+Php\+Parser\textbackslash{}\+Parser\+Factory\+::create\+For\+Newest\+Supported\+Version (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Create a parser targeting the newest version supported by this library. Code for older versions will be accepted if there have been no relevant backwards-\/compatibility breaks in PHP. \Hypertarget{class_php_parser_1_1_parser_factory_a9a8eb0c3ad7614a65a763ce9936a00b9}\index{PhpParser\textbackslash{}ParserFactory@{PhpParser\textbackslash{}ParserFactory}!createForVersion@{createForVersion}}
+\index{createForVersion@{createForVersion}!PhpParser\textbackslash{}ParserFactory@{PhpParser\textbackslash{}ParserFactory}}
+\doxysubsubsection{\texorpdfstring{createForVersion()}{createForVersion()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_factory_a9a8eb0c3ad7614a65a763ce9936a00b9} 
+Php\+Parser\textbackslash{}\+Parser\+Factory\+::create\+For\+Version (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}}}]{\$version}{}\end{DoxyParamCaption})}
+
+Create a parser targeting the given version on a best-\/effort basis. The parser will generally accept code for the newest supported version, but will try to accommodate code that becomes invalid in newer versions or changes in interpretation. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/nikic/php-\/parser/lib/\+Php\+Parser/Parser\+Factory.\+php\end{DoxyCompactItemize}

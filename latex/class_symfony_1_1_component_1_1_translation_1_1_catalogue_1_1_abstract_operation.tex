@@ -1,0 +1,161 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}Abstract\+Operation Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation}{}\label{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}Abstract\+Operation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.252011cm]{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a1576ed173592b14d4c43441089fd607f}{\+\_\+\+\_\+construct}} (protected \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface}{Message\+Catalogue\+Interface}} \$source, protected \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface}{Message\+Catalogue\+Interface}} \$target,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a8a79b9587e04c8331361ff7978576c41}{get\+Domains}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_acd819fea99593e4a3ad7428e8f01a779}{get\+Messages}} (string \$domain)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a37894e62ea52ab52afc39499daff7c09}{get\+New\+Messages}} (string \$domain)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a159bdc2912b03a345af7602caa98f668}{get\+Obsolete\+Messages}} (string \$domain)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_abdb77e6f83bf612ac41415125e0dc43e}{get\+Result}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a39fdc06c1c68f78d0833022657900c53}{move\+Messages\+To\+Intl\+Domains\+If\+Possible}} (string \$batch=self\+::\+ALL\+\_\+\+BATCH)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a93ef9b5c69682ac922bddae75bc1fa56}\label{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a93ef9b5c69682ac922bddae75bc1fa56} 
+const {\bfseries OBSOLETE\+\_\+\+BATCH} = \textquotesingle{}obsolete\textquotesingle{}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a4358d1415672da392519a51abb47d318}\label{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a4358d1415672da392519a51abb47d318} 
+const {\bfseries NEW\+\_\+\+BATCH} = \textquotesingle{}new\textquotesingle{}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a11a53643cdce5d40f3600595f2ff33be}\label{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a11a53643cdce5d40f3600595f2ff33be} 
+const {\bfseries ALL\+\_\+\+BATCH} = \textquotesingle{}all\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a139f974aee58a58b1aa7d7d3396611fe}{process\+Domain}} (string \$domain)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a106fde056b538875268601c5602bac14}\label{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a106fde056b538875268601c5602bac14} 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue}{Message\+Catalogue}} {\bfseries \$result}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_ab13095be9b4873ab8b9542292c615f02}\label{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_ab13095be9b4873ab8b9542292c615f02} 
+array {\bfseries \$messages}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base catalogues binary operation class.
+
+A catalogue binary operation performs operation on source (the left argument) and target (the right argument) catalogues.
+
+\begin{DoxyAuthor}{Author}
+Jean-\/\+François Simon \href{mailto:contact@jfsimon.fr}{\texttt{ contact@jfsimon.\+fr}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a1576ed173592b14d4c43441089fd607f}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a1576ed173592b14d4c43441089fd607f} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Abstract\+Operation\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{protected \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface}{Message\+Catalogue\+Interface}}}]{\$source}{, }\item[{protected \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface}{Message\+Catalogue\+Interface}}}]{\$target}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Logic\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a8a79b9587e04c8331361ff7978576c41}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}!getDomains@{getDomains}}
+\index{getDomains@{getDomains}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}}
+\doxysubsubsection{\texorpdfstring{getDomains()}{getDomains()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a8a79b9587e04c8331361ff7978576c41} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Abstract\+Operation\+::get\+Domains (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns domains affected by operation. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_operation_interface_a79054b94c3b3ecabb73c01a838911dca}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Operation\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_acd819fea99593e4a3ad7428e8f01a779}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}!getMessages@{getMessages}}
+\index{getMessages@{getMessages}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}}
+\doxysubsubsection{\texorpdfstring{getMessages()}{getMessages()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_acd819fea99593e4a3ad7428e8f01a779} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Abstract\+Operation\+::get\+Messages (\begin{DoxyParamCaption}\item[{string}]{\$domain}{}\end{DoxyParamCaption})}
+
+Returns all valid messages (\textquotesingle{}all\textquotesingle{}) after operation. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_operation_interface_a305e3592ed39d98e85b757ff9df4e722}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Operation\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a37894e62ea52ab52afc39499daff7c09}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}!getNewMessages@{getNewMessages}}
+\index{getNewMessages@{getNewMessages}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}}
+\doxysubsubsection{\texorpdfstring{getNewMessages()}{getNewMessages()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a37894e62ea52ab52afc39499daff7c09} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Abstract\+Operation\+::get\+New\+Messages (\begin{DoxyParamCaption}\item[{string}]{\$domain}{}\end{DoxyParamCaption})}
+
+Returns new messages (\textquotesingle{}new\textquotesingle{}) after operation. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_operation_interface_a24d5badd0436aede56fefb94a48238cb}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Operation\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a159bdc2912b03a345af7602caa98f668}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}!getObsoleteMessages@{getObsoleteMessages}}
+\index{getObsoleteMessages@{getObsoleteMessages}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}}
+\doxysubsubsection{\texorpdfstring{getObsoleteMessages()}{getObsoleteMessages()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a159bdc2912b03a345af7602caa98f668} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Abstract\+Operation\+::get\+Obsolete\+Messages (\begin{DoxyParamCaption}\item[{string}]{\$domain}{}\end{DoxyParamCaption})}
+
+Returns obsolete messages (\textquotesingle{}obsolete\textquotesingle{}) after operation. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_operation_interface_ae243a11e0149e5ba6527781e3dd50e10}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Operation\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_abdb77e6f83bf612ac41415125e0dc43e}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}!getResult@{getResult}}
+\index{getResult@{getResult}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}}
+\doxysubsubsection{\texorpdfstring{getResult()}{getResult()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_abdb77e6f83bf612ac41415125e0dc43e} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Abstract\+Operation\+::get\+Result (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns resulting catalogue (\textquotesingle{}result\textquotesingle{}). 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_operation_interface_ad2873af5fc9a4ad618106632920b29a0}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Operation\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a39fdc06c1c68f78d0833022657900c53}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}!moveMessagesToIntlDomainsIfPossible@{moveMessagesToIntlDomainsIfPossible}}
+\index{moveMessagesToIntlDomainsIfPossible@{moveMessagesToIntlDomainsIfPossible}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}}
+\doxysubsubsection{\texorpdfstring{moveMessagesToIntlDomainsIfPossible()}{moveMessagesToIntlDomainsIfPossible()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a39fdc06c1c68f78d0833022657900c53} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Abstract\+Operation\+::move\+Messages\+To\+Intl\+Domains\+If\+Possible (\begin{DoxyParamCaption}\item[{string}]{\$batch}{ = {\ttfamily self\+:\+:ALL\+\_\+BATCH}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em self\+::\texorpdfstring{$\ast$}{*}\+\_\+\+BATCH} & \$batch \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a139f974aee58a58b1aa7d7d3396611fe}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}!processDomain@{processDomain}}
+\index{processDomain@{processDomain}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}AbstractOperation}}
+\doxysubsubsection{\texorpdfstring{processDomain()}{processDomain()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a139f974aee58a58b1aa7d7d3396611fe} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Abstract\+Operation\+::process\+Domain (\begin{DoxyParamCaption}\item[{string}]{\$domain}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Performs operation on source and target catalogues for the given domain and stores the results.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$domain} & The domain which the operation will be performed for \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_merge_operation_a1f0582e78b4b1273415fd4599702630a}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Merge\+Operation}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_target_operation_a4308ee561b1a8b7af5047f34674d31c4}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Target\+Operation}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/translation/\+Catalogue/Abstract\+Operation.\+php\end{DoxyCompactItemize}

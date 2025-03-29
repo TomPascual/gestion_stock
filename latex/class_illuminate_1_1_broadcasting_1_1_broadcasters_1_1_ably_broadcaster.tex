@@ -1,0 +1,337 @@
+\doxysection{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}Ably\+Broadcaster Class Reference}
+\hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster}{}\label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}}
+Inheritance diagram for Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}Ably\+Broadcaster\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a447997ea31c21b926ae510f3f0377c30}{\+\_\+\+\_\+construct}} (Ably\+Rest \$ably)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a0c22929a267146d16937dfab717a7dc4}{auth}} (\$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a15ec193cd0cd37208ae4e575744d7ef8}{valid\+Authentication\+Response}} (\$request, \$result)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a7dc6fdb6ca4d15a336b2ec0191e1871c}{generate\+Ably\+Signature}} (\$channel\+Name, \$socket\+Id, \$user\+Data=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a54f2f3b4b9620c82ffc0e4af16331d61}{broadcast}} (array \$channels, \$event, array \$payload=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a933b3e5cfb43106aaad211dfb3d6abeb}{is\+Guarded\+Channel}} (\$\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a8284a1f754004127a4d8d6cfe79ee98f}{channel}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a7618b3cfbf086087fb883a28b4a4f11b}{normalize\+Channel\+Name}} (\$\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a8284a1f754004127a4d8d6cfe79ee98f}{channel}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_acead43e8305bfbbd55618fcfb64bd660}{get\+Ably}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a0279a613d9f1c9e182967d35804d1409}{set\+Ably}} (\$ably)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster}{Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Broadcaster}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_ab760374f58dff6c5eaa736f2a2de5be8}{resolve\+Authenticated\+User}} (\$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a2d580b15b9d128ce7b6e671d7008bbeb}{resolve\+Authenticated\+User\+Using}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a8284a1f754004127a4d8d6cfe79ee98f}{channel}} (\$channel, \$callback, \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_aac63e523888a3e524293bc7bcc148ec8}{get\+Channels}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_aad438f3e15220935a730a810d2836540}{build\+Ably\+Message}} (\$event, array \$payload=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a2e57ed345966462d5f9cf6d1a154b5a4}{format\+Channels}} (array \$channels)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a5cae2affcdf05d93e16d89e04480cf12}{get\+Public\+Token}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_ada3aad682c5ff0e95678818c5ce1ab30}{get\+Private\+Token}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster}{Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Broadcaster}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_affbf1c1c80f06f0a9a3954a354a05333}{verify\+User\+Can\+Access\+Channel}} (\$request, \$\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a8284a1f754004127a4d8d6cfe79ee98f}{channel}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_af6aa6551bf7818037da3171b30496402}{extract\+Auth\+Parameters}} (\$pattern, \$\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a8284a1f754004127a4d8d6cfe79ee98f}{channel}}, \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_af5a1c457ce5fd206bd9992dc62f60722}{extract\+Parameters}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a1916a52104fc68d48f9c6b5b3c45c383}{extract\+Parameters\+From\+Class}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a02e8c3e1d39f4bd7146b701b77dad62f}{extract\+Channel\+Keys}} (\$pattern, \$\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a8284a1f754004127a4d8d6cfe79ee98f}{channel}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_ae64d1af9ccbc2927b850e646090661ae}{resolve\+Binding}} (\$key, \$value, \$callback\+Parameters)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a6c47de19e06464e673ec30e746392c18}{resolve\+Explicit\+Binding\+If\+Possible}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_aadda10517f9646c4657ae67f61ae0a31}{resolve\+Implicit\+Binding\+If\+Possible}} (\$key, \$value, \$callback\+Parameters)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a0b04332c91de2e9ce9740148ec954c27}{is\+Implicitly\+Bindable}} (\$key, \$parameter)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a084f33612c2e58d913d061f897ce470a}{binder}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a1defb506bf29bff8c1a64278814ed158}{normalize\+Channel\+Handler\+To\+Callable}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a19fb44a6bb9e93728ad92459540669c4}{retrieve\+User}} (\$request, \$\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a8284a1f754004127a4d8d6cfe79ee98f}{channel}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a49d7ad416088e63c8c651c066c8299c0}{retrieve\+Channel\+Options}} (\$\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a8284a1f754004127a4d8d6cfe79ee98f}{channel}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a3199664189fde1bf4033f91cd45410cd}{channel\+Name\+Matches\+Pattern}} (\$\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a8284a1f754004127a4d8d6cfe79ee98f}{channel}}, \$pattern)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a54459a0cdee5761973689d59557560d4}\label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a54459a0cdee5761973689d59557560d4} 
+{\bfseries \$ably}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster}{Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Broadcaster}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$authenticated\+User\+Callback} = null
+\item 
+{\bfseries \$channels} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$channel\+Options} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$binding\+Registrar}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Matthew Hall (\href{mailto:matthall28@gmail.com}{\texttt{ matthall28@gmail.\+com}}) 
+
+Taylor Otwell (\href{mailto:taylor@laravel.com}{\texttt{ taylor@laravel.\+com}}) 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a447997ea31c21b926ae510f3f0377c30}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a447997ea31c21b926ae510f3f0377c30} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Ably\+Broadcaster\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Ably\+Rest}]{\$ably}{}\end{DoxyParamCaption})}
+
+Create a new broadcaster instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Ably\textbackslash{}\+Ably\+Rest & {\em \$ably} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a0c22929a267146d16937dfab717a7dc4}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}!auth@{auth}}
+\index{auth@{auth}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}}
+\doxysubsubsection{\texorpdfstring{auth()}{auth()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a0c22929a267146d16937dfab717a7dc4} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Ably\+Broadcaster\+::auth (\begin{DoxyParamCaption}\item[{}]{\$request}{}\end{DoxyParamCaption})}
+
+Authenticate the incoming request for a given channel.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Exception\textbackslash{}\+Access\+Denied\+Http\+Exception \Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a54f2f3b4b9620c82ffc0e4af16331d61}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}!broadcast@{broadcast}}
+\index{broadcast@{broadcast}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}}
+\doxysubsubsection{\texorpdfstring{broadcast()}{broadcast()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a54f2f3b4b9620c82ffc0e4af16331d61} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Ably\+Broadcaster\+::broadcast (\begin{DoxyParamCaption}\item[{array}]{\$channels}{, }\item[{}]{\$event}{, }\item[{array}]{\$payload}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Broadcast the given event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$channels} & \\
+\hline
+string & {\em \$event} & \\
+\hline
+array & {\em \$payload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcast\+Exception \Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_aad438f3e15220935a730a810d2836540}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}!buildAblyMessage@{buildAblyMessage}}
+\index{buildAblyMessage@{buildAblyMessage}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}}
+\doxysubsubsection{\texorpdfstring{buildAblyMessage()}{buildAblyMessage()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_aad438f3e15220935a730a810d2836540} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Ably\+Broadcaster\+::build\+Ably\+Message (\begin{DoxyParamCaption}\item[{}]{\$event}{, }\item[{array}]{\$payload}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Build an Ably message object for broadcasting.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$event} & \\
+\hline
+array & {\em \$payload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Ably\textbackslash{}\+Models\textbackslash{}\+Message 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a2e57ed345966462d5f9cf6d1a154b5a4}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}!formatChannels@{formatChannels}}
+\index{formatChannels@{formatChannels}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}}
+\doxysubsubsection{\texorpdfstring{formatChannels()}{formatChannels()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a2e57ed345966462d5f9cf6d1a154b5a4} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Ably\+Broadcaster\+::format\+Channels (\begin{DoxyParamCaption}\item[{array}]{\$channels}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Format the channel array into an array of strings.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$channels} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_af21eedf86aca04897cb59085a22ce943}{Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Broadcaster}}.
+
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a7dc6fdb6ca4d15a336b2ec0191e1871c}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}!generateAblySignature@{generateAblySignature}}
+\index{generateAblySignature@{generateAblySignature}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}}
+\doxysubsubsection{\texorpdfstring{generateAblySignature()}{generateAblySignature()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a7dc6fdb6ca4d15a336b2ec0191e1871c} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Ably\+Broadcaster\+::generate\+Ably\+Signature (\begin{DoxyParamCaption}\item[{}]{\$channel\+Name}{, }\item[{}]{\$socket\+Id}{, }\item[{}]{\$user\+Data}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Generate the signature needed for Ably authentication headers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$channel\+Name} & \\
+\hline
+string & {\em \$socket\+Id} & \\
+\hline
+array | null & {\em \$user\+Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_acead43e8305bfbbd55618fcfb64bd660}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}!getAbly@{getAbly}}
+\index{getAbly@{getAbly}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}}
+\doxysubsubsection{\texorpdfstring{getAbly()}{getAbly()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_acead43e8305bfbbd55618fcfb64bd660} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Ably\+Broadcaster\+::get\+Ably (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the underlying Ably SDK instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Ably\textbackslash{}\+Ably\+Rest 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_ada3aad682c5ff0e95678818c5ce1ab30}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}!getPrivateToken@{getPrivateToken}}
+\index{getPrivateToken@{getPrivateToken}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}}
+\doxysubsubsection{\texorpdfstring{getPrivateToken()}{getPrivateToken()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_ada3aad682c5ff0e95678818c5ce1ab30} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Ably\+Broadcaster\+::get\+Private\+Token (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the private token value from the Ably key.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a5cae2affcdf05d93e16d89e04480cf12}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}!getPublicToken@{getPublicToken}}
+\index{getPublicToken@{getPublicToken}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}}
+\doxysubsubsection{\texorpdfstring{getPublicToken()}{getPublicToken()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a5cae2affcdf05d93e16d89e04480cf12} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Ably\+Broadcaster\+::get\+Public\+Token (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the public token value from the Ably key.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a933b3e5cfb43106aaad211dfb3d6abeb}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}!isGuardedChannel@{isGuardedChannel}}
+\index{isGuardedChannel@{isGuardedChannel}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}}
+\doxysubsubsection{\texorpdfstring{isGuardedChannel()}{isGuardedChannel()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a933b3e5cfb43106aaad211dfb3d6abeb} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Ably\+Broadcaster\+::is\+Guarded\+Channel (\begin{DoxyParamCaption}\item[{}]{\$channel}{}\end{DoxyParamCaption})}
+
+Return true if the channel is protected by authentication.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$channel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a7618b3cfbf086087fb883a28b4a4f11b}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}!normalizeChannelName@{normalizeChannelName}}
+\index{normalizeChannelName@{normalizeChannelName}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}}
+\doxysubsubsection{\texorpdfstring{normalizeChannelName()}{normalizeChannelName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a7618b3cfbf086087fb883a28b4a4f11b} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Ably\+Broadcaster\+::normalize\+Channel\+Name (\begin{DoxyParamCaption}\item[{}]{\$channel}{}\end{DoxyParamCaption})}
+
+Remove prefix from channel name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$channel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a0279a613d9f1c9e182967d35804d1409}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}!setAbly@{setAbly}}
+\index{setAbly@{setAbly}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}}
+\doxysubsubsection{\texorpdfstring{setAbly()}{setAbly()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a0279a613d9f1c9e182967d35804d1409} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Ably\+Broadcaster\+::set\+Ably (\begin{DoxyParamCaption}\item[{}]{\$ably}{}\end{DoxyParamCaption})}
+
+Set the underlying Ably SDK instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Ably\textbackslash{}\+Ably\+Rest & {\em \$ably} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a15ec193cd0cd37208ae4e575744d7ef8}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}!validAuthenticationResponse@{validAuthenticationResponse}}
+\index{validAuthenticationResponse@{validAuthenticationResponse}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}AblyBroadcaster}}
+\doxysubsubsection{\texorpdfstring{validAuthenticationResponse()}{validAuthenticationResponse()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_ably_broadcaster_a15ec193cd0cd37208ae4e575744d7ef8} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Ably\+Broadcaster\+::valid\+Authentication\+Response (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{}]{\$result}{}\end{DoxyParamCaption})}
+
+Return the valid authentication response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+mixed & {\em \$result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Broadcasting/\+Broadcasters/Ably\+Broadcaster.\+php\end{DoxyCompactItemize}

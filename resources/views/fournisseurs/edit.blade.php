@@ -1,3 +1,10 @@
+{{-- 
+    Vue : fournisseurs/edit.blade.php
+    Description : Affiche le formulaire de modification d’un fournisseur existant.
+    Action du formulaire :
+        - PUT vers la route 'fournisseurs.update' avec l’ID du fournisseur
+--}}
+
 @extends('layouts.app')
 
 @section('content')

@@ -5,9 +5,23 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use App\Models\Categorie;
 
+/**
+ * Class CategorieSeeder
+ *
+ * Seeder pour préremplir la base de données avec une liste de catégories standards.
+ *
+ * @package Database\Seeders
+ */
 class CategorieSeeder extends Seeder
 {
-    public function run()
+    /**
+     * Exécute le seeder.
+     *
+     * Insère une liste de catégories prédéfinies si elles n'existent pas déjà.
+     *
+     * @return void
+     */
+    public function run(): void
     {
         $categories = [
             'Électronique',

@@ -1,0 +1,452 @@
+\doxysection{Illuminate\textbackslash{}Database\textbackslash{}Postgres\+Connection Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_postgres_connection}{}\label{class_illuminate_1_1_database_1_1_postgres_connection}\index{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}}
+Inheritance diagram for Illuminate\textbackslash{}Database\textbackslash{}Postgres\+Connection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_database_1_1_postgres_connection}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_postgres_connection_a838d72e95930b0ef108456ec493dbe52}{get\+Driver\+Title}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_postgres_connection_ac2d2bb83bacfe544e67421a988f3d268}{get\+Schema\+Builder}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_postgres_connection_a3cba6985dfef7294cec9d95cb6ae519d}{get\+Schema\+State}} (?\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem}{Filesystem}} \$files=null, ?callable \$process\+Factory=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_aeaffbf9e7f4afdb2b18ae94e02b0305c}{\+\_\+\+\_\+construct}} (\$pdo, \$database=\textquotesingle{}\textquotesingle{}, \$table\+Prefix=\textquotesingle{}\textquotesingle{}, array \$config=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0b6e595444aeb1d4ba961396535ba6cc}{use\+Default\+Query\+Grammar}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_aa1583e75f21f9e0c3442c81f0fc372eb}{use\+Default\+Schema\+Grammar}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ac58933b35c1e62cd08a7dbbde1abe697}{use\+Default\+Post\+Processor}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ac50902e261c035df38579a9f7c76ab05}{table}} (\$table, \$as=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ac384fb038673db85269aff96d3835e08}{select\+One}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}}, \$bindings=\mbox{[}$\,$\mbox{]}, \$use\+Read\+Pdo=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_af40ff12a9354d318b3db144115027c44}{scalar}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}}, \$bindings=\mbox{[}$\,$\mbox{]}, \$use\+Read\+Pdo=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a7cb2bf7ab165b2a93ca02b8bef5bd07b}{select\+From\+Write\+Connection}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}}, \$bindings=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ae45b53f31eeaa1f0efee6fbd1ab1ebbf}{select}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}}, \$bindings=\mbox{[}$\,$\mbox{]}, \$use\+Read\+Pdo=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_aada042659194e6bf70c7704ca9490a0a}{select\+Result\+Sets}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}}, \$bindings=\mbox{[}$\,$\mbox{]}, \$use\+Read\+Pdo=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a4552d1b034a54afba66b9eeaae5202aa}{cursor}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}}, \$bindings=\mbox{[}$\,$\mbox{]}, \$use\+Read\+Pdo=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_aea30b64c74f04daddc1a5079d152765e}{insert}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}}, \$bindings=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ad9994b3d9851a885fda4de61e1138c90}{update}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}}, \$bindings=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a8f2d94f0af3efbbea33e69d543a97e33}{delete}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}}, \$bindings=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a614e54c7dab7471aeeb1047dc83e9dcb}{statement}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}}, \$bindings=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ada2649f8fe16bbde224db96714344215}{affecting\+Statement}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}}, \$bindings=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ae87aa1495764f444708f0b1f42b25042}{unprepared}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ab9f992611b142ec8a9c7b0059345cbc5}{thread\+Count}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a3541d35f66749079a12f2fef64631525}{pretend}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_acc717e8b410e3c5204b4ef0a0cfa03f2}{without\+Pretending}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ac98a40539129c87fd617bdf83bdcc2e8}{bind\+Values}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a614e54c7dab7471aeeb1047dc83e9dcb}{statement}}, \$bindings)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ada496f92d7426d98cf017c36984bee45}{prepare\+Bindings}} (array \$bindings)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a635dd1a39d290bdae6e8fed6a126aa43}{log\+Query}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}}, \$bindings, \$time=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bb3193a309f46c6222fb4f4646205eb}{when\+Querying\+For\+Longer\+Than}} (\$threshold, \$handler)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a325fd0a1e7929a0350173840f99617a8}{allow\+Query\+Duration\+Handlers\+To\+Run\+Again}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a2bcf555aad238ee9be229535ae00b81e}{total\+Query\+Duration}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a37ba35dc187990137d1a5a624f072922}{reset\+Total\+Query\+Duration}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a898920aaefe44441b3bfb807836a43fc}{reconnect}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_afdf355317847185b16bb686f4add762d}{reconnect\+If\+Missing\+Connection}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_abcf775563537ead3317a1003293a60f4}{disconnect}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_af37c2d9eee61905ce6cee2f8f6c15035}{before\+Starting\+Transaction}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ad15c2cf51d9b3233e52cba67a2a0f068}{before\+Executing}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ae2317f26677f0447735ecca1feff6c46}{listen}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a41f26cbde568153a10e594b3bf85c37a}{raw}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ac2244433375eaac7fd8045f7ca521011}{escape}} (\$value, \$binary=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a9be2a09367122de59a2bb5691668477b}{has\+Modified\+Records}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a6202f62657888bb4edf6cde639489300}{records\+Have\+Been\+Modified}} (\$value=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0f3d3b4596ba8c683999817ec22908ec}{set\+Record\+Modification\+State}} (bool \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_afe26d08223052e6837aaec0d92e608bb}{forget\+Record\+Modification\+State}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0e4f84cba60c1a7be3f23770702a386a}{use\+Write\+Connection\+When\+Reading}} (\$value=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a983578ee8dd120378bf51b9ce9f9d610}{get\+Pdo}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a36848e581871e6d5bf22fd8b8342af0e}{get\+Raw\+Pdo}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ae40a007a5e30a19713ca03b04fabc869}{get\+Read\+Pdo}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a925051af0c4371a0a6284bc8fcfc3fce}{get\+Raw\+Read\+Pdo}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a75385720765d15f5dd2bc49265de1c66}{set\+Pdo}} (\$pdo)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a7ade75f58b1c51d5be8bbfb79c69184f}{set\+Read\+Pdo}} (\$pdo)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a30c5e3992b889fa7c5ca12c8847c448f}{set\+Reconnector}} (callable \$reconnector)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a492107f4b69fa0272b47016e3456f470}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a48f562a7efe70f59160032a9e3ab5064}{get\+Name\+With\+Read\+Write\+Type}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a854a548d6b0f5a0d2928cf14e43717c7}{get\+Config}} (\$option=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a40aa0f135ec933db9d656535b217bf0f}{get\+Driver\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a94698f050b9154c745937fceffc9bb47}{get\+Query\+Grammar}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a1e998424f11d6556cc6869a5850fdb35}{set\+Query\+Grammar}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_grammars_1_1_grammar}{Query\textbackslash{}\+Grammars\textbackslash{}\+Grammar}} \$grammar)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a39882c51401b83e2bf51f5abb962d521}{get\+Schema\+Grammar}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a2f637b5aa212d1566567b6b3e687b658}{set\+Schema\+Grammar}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_schema_1_1_grammars_1_1_grammar}{Schema\textbackslash{}\+Grammars\textbackslash{}\+Grammar}} \$grammar)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a30302de00495a207a3f59fdd28612a42}{get\+Post\+Processor}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ab54193f5eb21fef5f25506c196f665e1}{set\+Post\+Processor}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_1_1_processors_1_1_processor}{Processor}} \$processor)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a545208ef4a9b8ca9699a4bb7cb49d5b2}{get\+Event\+Dispatcher}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_afd7d24fde6500ed71cf8c3619503c161}{set\+Event\+Dispatcher}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}} \$events)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a710feb6e42a71ab8709d6c66c9b47d9c}{unset\+Event\+Dispatcher}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ae8d8e47e1296dab98df2c1fe741c38ae}{set\+Transaction\+Manager}} (\$manager)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_afedaf856968ea6370cf20f6010d6083a}{unset\+Transaction\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a5a38a7adee6e79895b28b338718b5535}{pretending}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a8b08eae1b3bcc61cbcd98b6111235b2a}{get\+Query\+Log}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_af1bbc1a321dd0a10f240667f77dfe539}{get\+Raw\+Query\+Log}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a78909d2fb9396596b50cff3ae4295490}{flush\+Query\+Log}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_aec43b80cfd968b4d8e6a8aad8ed99fb7}{enable\+Query\+Log}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a02ce8ef31cc170cf96afcfdeec0494eb}{disable\+Query\+Log}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_aa81c938e77212b4bc30b840c3e994028}{logging}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a2be1c727333496558e61fe77f0788777}{get\+Database\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ab8f157970076d6fe98e6f83ca5deaddb}{set\+Database\+Name}} (\$database)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a13a42529268286ac12bc5e7a7b8bb349}{set\+Read\+Write\+Type}} (\$read\+Write\+Type)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ad64f00ef08e1644e10c5b3f6fe03f21d}{get\+Table\+Prefix}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a3532fe39752effbb6da0da5e6dc23c95}{set\+Table\+Prefix}} (\$prefix)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ae283aa9dbb0d317660d66cfb7591c93e}{with\+Table\+Prefix}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar}{Grammar}} \$grammar)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_aa790a4e15705481699783d265463effb}{without\+Table\+Prefix}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a548f695b50e1bc67e2d942201987b0a3}{get\+Server\+Version}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connection_interface}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connection_interface_a92c684f60c98bfe18505b91ebf150382}{transaction}} (Closure \$callback, \$attempts=1)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connection_interface_a7272ba2d2058ff908a4812d4cad31c8a}{begin\+Transaction}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connection_interface_ad1ee0148b1736f43b4479ada52772d1e}{commit}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connection_interface_a75542b4e6e3b24126a546685b52318ac}{roll\+Back}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connection_interface_a995ddb42fd71934f0d3657cd15b39f1b}{transaction\+Level}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_postgres_connection_afa7c3a87cc89471b5615fe900a0d2e69}{escape\+Binary}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_postgres_connection_a27c913b93d190514bbd982ccf60d32d4}{escape\+Bool}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_postgres_connection_af71af5bd71bb358a9a1f8f72ba870c28}{is\+Unique\+Constraint\+Error}} (Exception \$exception)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_postgres_connection_af575a304a10eb197e752bb8a86ad6338}{get\+Default\+Query\+Grammar}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_postgres_connection_a86effad3ccd05ae3c9f46305b69a14d8}{get\+Default\+Schema\+Grammar}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_postgres_connection_ac21a10c2d79766d0642fcf6f4a1d7d73}{get\+Default\+Post\+Processor}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a93fe6eacf1a12864c9167b448a23d002}{prepared}} (PDOStatement \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a614e54c7dab7471aeeb1047dc83e9dcb}{statement}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_af69ae54dd0e0aa68219c569134ea62f4}{get\+Pdo\+For\+Select}} (\$use\+Read\+Pdo=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a78055dee4c6043454f482fc352adfeea}{with\+Fresh\+Query\+Log}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a89ee0e2691c9ece4aaba7496d05078a9}{run}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}}, \$bindings, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a57399776b652aaff187156905aa267cf}{run\+Query\+Callback}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}}, \$bindings, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a9f81288ba0665f8fd24c9d3c62e81a9b}{get\+Elapsed\+Time}} (\$start)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a1523c717cf39c274662b6adba6a19ba9}{handle\+Query\+Exception}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_exception}{Query\+Exception}} \$e, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}}, \$bindings, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a2b8a4a7d7336a5521eccf5cbeeae7ce8}{try\+Again\+If\+Caused\+By\+Lost\+Connection}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_query_exception}{Query\+Exception}} \$e, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a0bafdd3f2101359ac840bd18ae263a36}{query}}, \$bindings, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a4f31fe63936943fd89b57069bcff4058}{fire\+Connection\+Event}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ab75f09f81ec384e79cd3d9eed222e2d6}{event}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_ab75f09f81ec384e79cd3d9eed222e2d6}{event}} (\$event)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a3bc4afe2b22d8d46b9fe5f702e47c3a9}{escape\+String}} (\$value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a32038e25b66c7a2d8087b6e609cdebdf}{resolver\+For}} (\$driver, Closure \$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a3d3adcc270a8bd7f1cc50476ffc78b4f}{get\+Resolver}} (\$driver)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$pdo}
+\item 
+{\bfseries \$read\+Pdo}
+\item 
+{\bfseries \$database}
+\item 
+{\bfseries \$read\+Write\+Type}
+\item 
+{\bfseries \$table\+Prefix} = \textquotesingle{}\textquotesingle{}
+\item 
+{\bfseries \$config} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$reconnector}
+\item 
+{\bfseries \$query\+Grammar}
+\item 
+{\bfseries \$schema\+Grammar}
+\item 
+{\bfseries \$post\+Processor}
+\item 
+{\bfseries \$events}
+\item 
+{\bfseries \$fetch\+Mode} = PDO\+::\+FETCH\+\_\+\+OBJ
+\item 
+{\bfseries \$transactions} = 0
+\item 
+{\bfseries \$transactions\+Manager}
+\item 
+{\bfseries \$records\+Modified} = false
+\item 
+{\bfseries \$read\+On\+Write\+Connection} = false
+\item 
+{\bfseries \$query\+Log} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$logging\+Queries} = false
+\item 
+{\bfseries \$total\+Query\+Duration} = 0.\+0
+\item 
+{\bfseries \$query\+Duration\+Handlers} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$pretending} = false
+\item 
+{\bfseries \$before\+Starting\+Transaction} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$before\+Executing\+Callbacks} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$resolvers} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_postgres_connection_afa7c3a87cc89471b5615fe900a0d2e69}\index{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}!escapeBinary@{escapeBinary}}
+\index{escapeBinary@{escapeBinary}!Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}}
+\doxysubsubsection{\texorpdfstring{escapeBinary()}{escapeBinary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_postgres_connection_afa7c3a87cc89471b5615fe900a0d2e69} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Postgres\+Connection\+::escape\+Binary (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Escape a binary value for safe SQL embedding.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a4bc6ae29521b9329b08c96dbbc18dd59}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_postgres_connection_a27c913b93d190514bbd982ccf60d32d4}\index{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}!escapeBool@{escapeBool}}
+\index{escapeBool@{escapeBool}!Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}}
+\doxysubsubsection{\texorpdfstring{escapeBool()}{escapeBool()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_postgres_connection_a27c913b93d190514bbd982ccf60d32d4} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Postgres\+Connection\+::escape\+Bool (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Escape a bool value for safe SQL embedding.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a24644ce8bb3470073a032e16a5a1006b}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_postgres_connection_ac21a10c2d79766d0642fcf6f4a1d7d73}\index{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}!getDefaultPostProcessor@{getDefaultPostProcessor}}
+\index{getDefaultPostProcessor@{getDefaultPostProcessor}!Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}}
+\doxysubsubsection{\texorpdfstring{getDefaultPostProcessor()}{getDefaultPostProcessor()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_postgres_connection_ac21a10c2d79766d0642fcf6f4a1d7d73} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Postgres\+Connection\+::get\+Default\+Post\+Processor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the default post processor instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Processors\textbackslash{}\+Postgres\+Processor 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_af46329b3ceb2878d3239093e5a57a12c}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_postgres_connection_af575a304a10eb197e752bb8a86ad6338}\index{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}!getDefaultQueryGrammar@{getDefaultQueryGrammar}}
+\index{getDefaultQueryGrammar@{getDefaultQueryGrammar}!Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}}
+\doxysubsubsection{\texorpdfstring{getDefaultQueryGrammar()}{getDefaultQueryGrammar()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_postgres_connection_af575a304a10eb197e752bb8a86ad6338} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Postgres\+Connection\+::get\+Default\+Query\+Grammar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the default query grammar instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Grammars\textbackslash{}\+Postgres\+Grammar 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a870312a1cd07fd1f5fbd80739d360480}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_postgres_connection_a86effad3ccd05ae3c9f46305b69a14d8}\index{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}!getDefaultSchemaGrammar@{getDefaultSchemaGrammar}}
+\index{getDefaultSchemaGrammar@{getDefaultSchemaGrammar}!Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}}
+\doxysubsubsection{\texorpdfstring{getDefaultSchemaGrammar()}{getDefaultSchemaGrammar()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_postgres_connection_a86effad3ccd05ae3c9f46305b69a14d8} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Postgres\+Connection\+::get\+Default\+Schema\+Grammar (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the default schema grammar instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Grammars\textbackslash{}\+Postgres\+Grammar 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_aec2191f2d07ecd4613cadb56452e360d}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_postgres_connection_a838d72e95930b0ef108456ec493dbe52}\index{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}!getDriverTitle@{getDriverTitle}}
+\index{getDriverTitle@{getDriverTitle}!Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}}
+\doxysubsubsection{\texorpdfstring{getDriverTitle()}{getDriverTitle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_postgres_connection_a838d72e95930b0ef108456ec493dbe52} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Postgres\+Connection\+::get\+Driver\+Title (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\{Get a human-\/readable name for the given connection driver.
+
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+\} 
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a76930fdfc9eb73e85a00ba985021bb0f}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_postgres_connection_ac2d2bb83bacfe544e67421a988f3d268}\index{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}!getSchemaBuilder@{getSchemaBuilder}}
+\index{getSchemaBuilder@{getSchemaBuilder}!Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}}
+\doxysubsubsection{\texorpdfstring{getSchemaBuilder()}{getSchemaBuilder()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_postgres_connection_ac2d2bb83bacfe544e67421a988f3d268} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Postgres\+Connection\+::get\+Schema\+Builder (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get a schema builder instance for the connection.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Postgres\+Builder 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a3e7d9d0ba77346c248b6b909f170f24f}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_postgres_connection_a3cba6985dfef7294cec9d95cb6ae519d}\index{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}!getSchemaState@{getSchemaState}}
+\index{getSchemaState@{getSchemaState}!Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}}
+\doxysubsubsection{\texorpdfstring{getSchemaState()}{getSchemaState()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_postgres_connection_a3cba6985dfef7294cec9d95cb6ae519d} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Postgres\+Connection\+::get\+Schema\+State (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem}{Filesystem}}}]{\$files}{ = {\ttfamily null}, }\item[{?callable}]{\$process\+Factory}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get the schema state for the connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem | null & {\em \$files} & \\
+\hline
+callable | null & {\em \$process\+Factory} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Postgres\+Schema\+State 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_postgres_connection_af71af5bd71bb358a9a1f8f72ba870c28}\index{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}!isUniqueConstraintError@{isUniqueConstraintError}}
+\index{isUniqueConstraintError@{isUniqueConstraintError}!Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection@{Illuminate\textbackslash{}Database\textbackslash{}PostgresConnection}}
+\doxysubsubsection{\texorpdfstring{isUniqueConstraintError()}{isUniqueConstraintError()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_postgres_connection_af71af5bd71bb358a9a1f8f72ba870c28} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Postgres\+Connection\+::is\+Unique\+Constraint\+Error (\begin{DoxyParamCaption}\item[{Exception}]{\$exception}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the given database exception was caused by a unique constraint violation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Exception & {\em \$exception} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_connection_a29ed9af8ffaf1d9ce3d98c1ecf04d6d7}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Database/Postgres\+Connection.\+php\end{DoxyCompactItemize}

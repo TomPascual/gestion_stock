@@ -1,0 +1,4 @@
+var class_p_h_p_unit_1_1_logging_1_1_team_city_1_1_test_suite_before_first_test_method_errored_subscriber =
+[
+    [ "notify", "class_p_h_p_unit_1_1_logging_1_1_team_city_1_1_test_suite_before_first_test_method_errored_subscriber.html#a0f40b9200c6788bcb4c206b6b9c77149", null ]
+];

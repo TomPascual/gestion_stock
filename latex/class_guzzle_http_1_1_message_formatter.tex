@@ -1,0 +1,80 @@
+\doxysection{Guzzle\+Http\textbackslash{}Message\+Formatter Class Reference}
+\hypertarget{class_guzzle_http_1_1_message_formatter}{}\label{class_guzzle_http_1_1_message_formatter}\index{GuzzleHttp\textbackslash{}MessageFormatter@{GuzzleHttp\textbackslash{}MessageFormatter}}
+Inheritance diagram for Guzzle\+Http\textbackslash{}Message\+Formatter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_guzzle_http_1_1_message_formatter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_message_formatter_a10820d76926d2a6b67bb0d8f867369b0}{\+\_\+\+\_\+construct}} (?string \$template=self\+::\+CLF)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_guzzle_http_1_1_message_formatter_interface}{Guzzle\+Http\textbackslash{}\+Message\+Formatter\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_guzzle_http_1_1_message_formatter_interface_a44051f52f6fc1e69847e5a3227859518}{format}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface}{Request\+Interface}} \$request, ?\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_response_interface}{Response\+Interface}} \$response=null, ?\textbackslash{}Throwable \$error=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_guzzle_http_1_1_message_formatter_a0149d558197521c8d4c2cbf1f7663ffb}\label{class_guzzle_http_1_1_message_formatter_a0149d558197521c8d4c2cbf1f7663ffb} 
+const {\bfseries CLF} = \textquotesingle{}\{hostname\} \{req\+\_\+header\+\_\+\+User-\/Agent\} -\/ \mbox{[}\{date\+\_\+common\+\_\+log\}\mbox{]} "{}\{method\} \{target\} HTTP/\{version\}"{} \{code\} \{res\+\_\+header\+\_\+\+Content-\/Length\}\textquotesingle{}
+\item 
+\Hypertarget{class_guzzle_http_1_1_message_formatter_aa716b1322f171ee59945a2eef707819e}\label{class_guzzle_http_1_1_message_formatter_aa716b1322f171ee59945a2eef707819e} 
+const {\bfseries DEBUG} = "{}$>$$>$$>$$>$$>$$>$$>$$>$\textbackslash{}n\{request\}\textbackslash{}n$<$$<$$<$$<$$<$$<$$<$$<$\textbackslash{}n\{response\}\textbackslash{}n-\/-\/-\/-\/-\/-\/-\/-\/\textbackslash{}n\{error\}"{}
+\item 
+\Hypertarget{class_guzzle_http_1_1_message_formatter_ab54b212f921a0b0d24efbb3fa43a019a}\label{class_guzzle_http_1_1_message_formatter_ab54b212f921a0b0d24efbb3fa43a019a} 
+const {\bfseries SHORT} = \textquotesingle{}\mbox{[}\{ts\}\mbox{]} "{}\{method\} \{target\} HTTP/\{version\}"{} \{code\}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Formats log messages using variable substitutions for requests, responses, and other transactional data.
+
+The following variable substitutions are supported\+:
+
+
+\begin{DoxyItemize}
+\item \{request\}\+: Full HTTP request message
+\item \{response\}\+: Full HTTP response message
+\item \{ts\}\+: ISO 8601 date in GMT
+\item \{date\+\_\+iso\+\_\+8601\} ISO 8601 date in GMT
+\item \{date\+\_\+common\+\_\+log\} Apache common log date using the configured timezone.
+\item \{host\}\+: Host of the request
+\item \{method\}\+: Method of the request
+\item \{uri\}\+: URI of the request
+\item \{version\}\+: Protocol version
+\item \{target\}\+: Request target of the request (path + query + fragment)
+\item \{hostname\}\+: Hostname of the machine that sent the request
+\item \{code\}\+: Status code of the response (if available)
+\item \{phrase\}\+: Reason phrase of the response (if available)
+\item \{error\}\+: Any error messages (if available)
+\item \{req\+\_\+header\+\_\+\texorpdfstring{$\ast$}{*}\}\+: Replace {\ttfamily \texorpdfstring{$\ast$}{*}} with the lowercased name of a request header to add to the message
+\item \{res\+\_\+header\+\_\+\texorpdfstring{$\ast$}{*}\}\+: Replace {\ttfamily \texorpdfstring{$\ast$}{*}} with the lowercased name of a response header to add to the message
+\item \{req\+\_\+headers\}\+: Request headers
+\item \{res\+\_\+headers\}\+: Response headers
+\item \{req\+\_\+body\}\+: Request body
+\item \{res\+\_\+body\}\+: Response body
+\end{DoxyItemize}
+
+@final 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_guzzle_http_1_1_message_formatter_a10820d76926d2a6b67bb0d8f867369b0}\index{GuzzleHttp\textbackslash{}MessageFormatter@{GuzzleHttp\textbackslash{}MessageFormatter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!GuzzleHttp\textbackslash{}MessageFormatter@{GuzzleHttp\textbackslash{}MessageFormatter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_message_formatter_a10820d76926d2a6b67bb0d8f867369b0} 
+Guzzle\+Http\textbackslash{}\+Message\+Formatter\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?string}]{\$template}{ = {\ttfamily self\+:\+:CLF}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$template} & Log message template \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/guzzlehttp/guzzle/src/Message\+Formatter.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,105 @@
+\doxysection{Monolog\textbackslash{}Processor\textbackslash{}Introspection\+Processor Class Reference}
+\hypertarget{class_monolog_1_1_processor_1_1_introspection_processor}{}\label{class_monolog_1_1_processor_1_1_introspection_processor}\index{Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor@{Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor}}
+Inheritance diagram for Monolog\textbackslash{}Processor\textbackslash{}Introspection\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_monolog_1_1_processor_1_1_introspection_processor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monolog_1_1_processor_1_1_introspection_processor_a5390768dcec17c9eb62494ea4eb9bdb4}{\+\_\+\+\_\+construct}} (int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}Level \$level=Level\+::\+Debug, array \$skip\+Classes\+Partials=\mbox{[}$\,$\mbox{]}, int \$skip\+Stack\+Frames\+Count=0)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_processor_1_1_introspection_processor_aa23f7ecaf6fdb26ea83f20fd82c9401c}{\+\_\+\+\_\+invoke}} (\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}} \$record)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_monolog_1_1_processor_1_1_introspection_processor_aa12c7c2b0dd2d2b7c24dad156b818765}\label{class_monolog_1_1_processor_1_1_introspection_processor_aa12c7c2b0dd2d2b7c24dad156b818765} 
+Level {\bfseries \$level}
+\item 
+\Hypertarget{class_monolog_1_1_processor_1_1_introspection_processor_ae0a6943b0ab3dd5d8cabd4b6002268d5}\label{class_monolog_1_1_processor_1_1_introspection_processor_ae0a6943b0ab3dd5d8cabd4b6002268d5} 
+array {\bfseries \$skip\+Classes\+Partials}
+\item 
+\Hypertarget{class_monolog_1_1_processor_1_1_introspection_processor_a5f333036725096df08bc2d5e815d10e1}\label{class_monolog_1_1_processor_1_1_introspection_processor_a5f333036725096df08bc2d5e815d10e1} 
+int {\bfseries \$skip\+Stack\+Frames\+Count}
+\item 
+const \mbox{\hyperlink{class_monolog_1_1_processor_1_1_introspection_processor_a9ad7527fa93cb11d45f856173aa36e93}{SKIP\+\_\+\+FUNCTIONS}}
+\item 
+const \mbox{\hyperlink{class_monolog_1_1_processor_1_1_introspection_processor_a1bb48f274df5f357f79e7bad962ca522}{SKIP\+\_\+\+CLASSES}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Injects line/file\+:class/function where the log message came from
+
+Warning\+: This only works if the handler processes the logs directly. If you put the processor on a handler that is behind a Fingers\+Crossed\+Handler for example, the processor will only be called once the trigger level is reached, and all the log records will have the same file/line/.. data from the call that triggered the Fingers\+Crossed\+Handler.
+
+\begin{DoxyAuthor}{Author}
+Jordi Boggiano \href{mailto:j.boggiano@seld.be}{\texttt{ j.\+boggiano@seld.\+be}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_monolog_1_1_processor_1_1_introspection_processor_a5390768dcec17c9eb62494ea4eb9bdb4}\index{Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor@{Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor@{Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_processor_1_1_introspection_processor_a5390768dcec17c9eb62494ea4eb9bdb4} 
+Monolog\textbackslash{}\+Processor\textbackslash{}\+Introspection\+Processor\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}Level}]{\$level}{ = {\ttfamily Level\+:\+:Debug}, }\item[{array}]{\$skip\+Classes\+Partials}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{int}]{\$skip\+Stack\+Frames\+Count}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | int | Level & {\em \$level} & The minimum logging level at which this Processor will be triggered \\
+\hline
+string\mbox{[}$\,$\mbox{]} & {\em \$skip\+Classes\+Partials} & \\
+\hline
+\end{DoxyParams}
+@phpstan-\/param value-\/of\texorpdfstring{$<$}{<}Level\+::\+VALUES\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}value-\/of\texorpdfstring{$<$}{<}Level\+::\+NAMES\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}\+Level\texorpdfstring{$\vert$}{|}\+Log\+Level\+::\texorpdfstring{$\ast$}{*} \$level 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_monolog_1_1_processor_1_1_introspection_processor_aa23f7ecaf6fdb26ea83f20fd82c9401c}\index{Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor@{Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor}!\_\_invoke@{\_\_invoke}}
+\index{\_\_invoke@{\_\_invoke}!Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor@{Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor}}
+\doxysubsubsection{\texorpdfstring{\_\_invoke()}{\_\_invoke()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_processor_1_1_introspection_processor_aa23f7ecaf6fdb26ea83f20fd82c9401c} 
+Monolog\textbackslash{}\+Processor\textbackslash{}\+Introspection\+Processor\+::\+\_\+\+\_\+invoke (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}}}]{\$record}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_processor_1_1_processor_interface_ab269cbd743464f92846036dfa68d3cf8}{Monolog\textbackslash{}\+Processor\textbackslash{}\+Processor\+Interface}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_monolog_1_1_processor_1_1_introspection_processor_a1bb48f274df5f357f79e7bad962ca522}\index{Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor@{Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor}!SKIP\_CLASSES@{SKIP\_CLASSES}}
+\index{SKIP\_CLASSES@{SKIP\_CLASSES}!Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor@{Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor}}
+\doxysubsubsection{\texorpdfstring{SKIP\_CLASSES}{SKIP\_CLASSES}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_processor_1_1_introspection_processor_a1bb48f274df5f357f79e7bad962ca522} 
+const Monolog\textbackslash{}\+Processor\textbackslash{}\+Introspection\+Processor\+::\+SKIP\+\_\+\+CLASSES\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Monolog\(\backslash\)\(\backslash\)'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_monolog_1_1_processor_1_1_introspection_processor_a9ad7527fa93cb11d45f856173aa36e93}\index{Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor@{Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor}!SKIP\_FUNCTIONS@{SKIP\_FUNCTIONS}}
+\index{SKIP\_FUNCTIONS@{SKIP\_FUNCTIONS}!Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor@{Monolog\textbackslash{}Processor\textbackslash{}IntrospectionProcessor}}
+\doxysubsubsection{\texorpdfstring{SKIP\_FUNCTIONS}{SKIP\_FUNCTIONS}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_processor_1_1_introspection_processor_a9ad7527fa93cb11d45f856173aa36e93} 
+const Monolog\textbackslash{}\+Processor\textbackslash{}\+Introspection\+Processor\+::\+SKIP\+\_\+\+FUNCTIONS\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'call\_user\_func'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'call\_user\_func\_array'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/monolog/monolog/src/\+Monolog/\+Processor/Introspection\+Processor.\+php\end{DoxyCompactItemize}

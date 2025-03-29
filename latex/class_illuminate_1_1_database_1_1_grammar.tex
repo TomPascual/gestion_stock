@@ -1,0 +1,382 @@
+\doxysection{Illuminate\textbackslash{}Database\textbackslash{}Grammar Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_grammar}{}\label{class_illuminate_1_1_database_1_1_grammar}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_a16dda4227f69ced53b85312f8f99d71f}{wrap\+Array}} (array \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_af040077c65f6d93b9b470dd8a848cfa2}{wrap\+Table}} (\$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_a48fe6100d148f34700b8ab84e20ac557}{wrap}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_ace317ba665fa914575ec4e4b894c6ab3}{columnize}} (array \$columns)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_abc65b4c71f413af275ee1ee377a9b5c6}{parameterize}} (array \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_a30e13e0e8b82f10d258930aba835d9e8}{parameter}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_a8d57b9ecac80273e910892b6d565b362}{quote\+String}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_abe91641218f4903059271cdc43b82a78}{escape}} (\$value, \$binary=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_a67d7e2c21124c46547ffcbbad5a756d0}{is\+Expression}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_aebd71cd7d591a5f014bdf558a625583a}{get\+Value}} (\$expression)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_a93c854215904edabbdb83fd8701f09b0}{get\+Date\+Format}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_a45e2b675df6e4c31a494c3bf3387d3d1}{get\+Table\+Prefix}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_aaf68f2eb43f035beef463bcd4fb9e50b}{set\+Table\+Prefix}} (\$prefix)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_a955159b81fc573737226d437521f6da1}{set\+Connection}} (\$connection)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_a73da59bdd4f37e074a54f0282612c879}{wrap\+Aliased\+Value}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_a2240b14a57b033b85eefac1f1df1e088}{wrap\+Aliased\+Table}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_ae9ff9efa0d583b198a9ff70f5e15c0f3}{wrap\+Segments}} (\$segments)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_a8a63d3573cf9e67684c154b72a333b9e}{wrap\+Value}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_aac9f5a9f13fcb4b154d4356ffcb00270}{wrap\+Json\+Selector}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_grammar_afa4880e8b13e2e4b35e869f3badfb8b9}{is\+Json\+Selector}} (\$value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_a41def18d11b3bcf687f5ad30894bea58}\label{class_illuminate_1_1_database_1_1_grammar_a41def18d11b3bcf687f5ad30894bea58} 
+{\bfseries \$connection}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_ab56e13b790775a65e9a1735faa848202}\label{class_illuminate_1_1_database_1_1_grammar_ab56e13b790775a65e9a1735faa848202} 
+{\bfseries \$table\+Prefix} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_ace317ba665fa914575ec4e4b894c6ab3}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!columnize@{columnize}}
+\index{columnize@{columnize}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{columnize()}{columnize()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_ace317ba665fa914575ec4e4b894c6ab3} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::columnize (\begin{DoxyParamCaption}\item[{array}]{\$columns}{}\end{DoxyParamCaption})}
+
+Convert an array of column names into a delimited string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$columns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_abe91641218f4903059271cdc43b82a78}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!escape@{escape}}
+\index{escape@{escape}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{escape()}{escape()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_abe91641218f4903059271cdc43b82a78} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::escape (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{}]{\$binary}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Escapes a value for safe SQL embedding.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | float | int | bool | null & {\em \$value} & \\
+\hline
+bool & {\em \$binary} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_a93c854215904edabbdb83fd8701f09b0}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!getDateFormat@{getDateFormat}}
+\index{getDateFormat@{getDateFormat}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{getDateFormat()}{getDateFormat()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_a93c854215904edabbdb83fd8701f09b0} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::get\+Date\+Format (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the format for database stored dates.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_a45e2b675df6e4c31a494c3bf3387d3d1}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!getTablePrefix@{getTablePrefix}}
+\index{getTablePrefix@{getTablePrefix}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{getTablePrefix()}{getTablePrefix()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_a45e2b675df6e4c31a494c3bf3387d3d1} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::get\+Table\+Prefix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the grammar\textquotesingle{}s table prefix.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_aebd71cd7d591a5f014bdf558a625583a}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!getValue@{getValue}}
+\index{getValue@{getValue}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_aebd71cd7d591a5f014bdf558a625583a} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::get\+Value (\begin{DoxyParamCaption}\item[{}]{\$expression}{}\end{DoxyParamCaption})}
+
+Transforms expressions to their scalar types.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression | string | int | float & {\em \$expression} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_a67d7e2c21124c46547ffcbbad5a756d0}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!isExpression@{isExpression}}
+\index{isExpression@{isExpression}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{isExpression()}{isExpression()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_a67d7e2c21124c46547ffcbbad5a756d0} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::is\+Expression (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Determine if the given value is a raw expression.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_afa4880e8b13e2e4b35e869f3badfb8b9}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!isJsonSelector@{isJsonSelector}}
+\index{isJsonSelector@{isJsonSelector}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{isJsonSelector()}{isJsonSelector()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_afa4880e8b13e2e4b35e869f3badfb8b9} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::is\+Json\+Selector (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the given string is a JSON selector.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_a30e13e0e8b82f10d258930aba835d9e8}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!parameter@{parameter}}
+\index{parameter@{parameter}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{parameter()}{parameter()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_a30e13e0e8b82f10d258930aba835d9e8} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::parameter (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Get the appropriate query parameter place-\/holder for a value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_abc65b4c71f413af275ee1ee377a9b5c6}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!parameterize@{parameterize}}
+\index{parameterize@{parameterize}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{parameterize()}{parameterize()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_abc65b4c71f413af275ee1ee377a9b5c6} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::parameterize (\begin{DoxyParamCaption}\item[{array}]{\$values}{}\end{DoxyParamCaption})}
+
+Create query parameter place-\/holders for an array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_a8d57b9ecac80273e910892b6d565b362}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!quoteString@{quoteString}}
+\index{quoteString@{quoteString}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{quoteString()}{quoteString()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_a8d57b9ecac80273e910892b6d565b362} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::quote\+String (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Quote the given string literal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_a955159b81fc573737226d437521f6da1}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!setConnection@{setConnection}}
+\index{setConnection@{setConnection}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{setConnection()}{setConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_a955159b81fc573737226d437521f6da1} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::set\+Connection (\begin{DoxyParamCaption}\item[{}]{\$connection}{}\end{DoxyParamCaption})}
+
+Set the grammar\textquotesingle{}s database connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection & {\em \$connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_aaf68f2eb43f035beef463bcd4fb9e50b}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!setTablePrefix@{setTablePrefix}}
+\index{setTablePrefix@{setTablePrefix}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{setTablePrefix()}{setTablePrefix()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_aaf68f2eb43f035beef463bcd4fb9e50b} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::set\+Table\+Prefix (\begin{DoxyParamCaption}\item[{}]{\$prefix}{}\end{DoxyParamCaption})}
+
+Set the grammar\textquotesingle{}s table prefix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_a48fe6100d148f34700b8ab84e20ac557}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!wrap@{wrap}}
+\index{wrap@{wrap}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{wrap()}{wrap()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_a48fe6100d148f34700b8ab84e20ac557} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::wrap (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Wrap a value in keyword identifiers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression | string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_a2240b14a57b033b85eefac1f1df1e088}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!wrapAliasedTable@{wrapAliasedTable}}
+\index{wrapAliasedTable@{wrapAliasedTable}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{wrapAliasedTable()}{wrapAliasedTable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_a2240b14a57b033b85eefac1f1df1e088} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::wrap\+Aliased\+Table (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Wrap a table that has an alias.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_a73da59bdd4f37e074a54f0282612c879}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!wrapAliasedValue@{wrapAliasedValue}}
+\index{wrapAliasedValue@{wrapAliasedValue}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{wrapAliasedValue()}{wrapAliasedValue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_a73da59bdd4f37e074a54f0282612c879} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::wrap\+Aliased\+Value (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Wrap a value that has an alias.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_a16dda4227f69ced53b85312f8f99d71f}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!wrapArray@{wrapArray}}
+\index{wrapArray@{wrapArray}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{wrapArray()}{wrapArray()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_a16dda4227f69ced53b85312f8f99d71f} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::wrap\+Array (\begin{DoxyParamCaption}\item[{array}]{\$values}{}\end{DoxyParamCaption})}
+
+Wrap an array of values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_aac9f5a9f13fcb4b154d4356ffcb00270}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!wrapJsonSelector@{wrapJsonSelector}}
+\index{wrapJsonSelector@{wrapJsonSelector}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{wrapJsonSelector()}{wrapJsonSelector()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_aac9f5a9f13fcb4b154d4356ffcb00270} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::wrap\+Json\+Selector (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Wrap the given JSON selector.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{class_illuminate_1_1_database_1_1_grammar_ae9ff9efa0d583b198a9ff70f5e15c0f3}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!wrapSegments@{wrapSegments}}
+\index{wrapSegments@{wrapSegments}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{wrapSegments()}{wrapSegments()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_ae9ff9efa0d583b198a9ff70f5e15c0f3} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::wrap\+Segments (\begin{DoxyParamCaption}\item[{}]{\$segments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Wrap the given value segments.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$segments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_af040077c65f6d93b9b470dd8a848cfa2}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!wrapTable@{wrapTable}}
+\index{wrapTable@{wrapTable}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{wrapTable()}{wrapTable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_af040077c65f6d93b9b470dd8a848cfa2} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::wrap\+Table (\begin{DoxyParamCaption}\item[{}]{\$table}{}\end{DoxyParamCaption})}
+
+Wrap a table in keyword identifiers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression | string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_grammar_a8a63d3573cf9e67684c154b72a333b9e}\index{Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}!wrapValue@{wrapValue}}
+\index{wrapValue@{wrapValue}!Illuminate\textbackslash{}Database\textbackslash{}Grammar@{Illuminate\textbackslash{}Database\textbackslash{}Grammar}}
+\doxysubsubsection{\texorpdfstring{wrapValue()}{wrapValue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_grammar_a8a63d3573cf9e67684c154b72a333b9e} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Grammar\+::wrap\+Value (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Wrap a single string in keyword identifiers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Database/Grammar.\+php\end{DoxyCompactItemize}

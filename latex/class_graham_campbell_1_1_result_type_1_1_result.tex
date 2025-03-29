@@ -1,0 +1,130 @@
+\doxysection{Graham\+Campbell\textbackslash{}Result\+Type\textbackslash{}Result Class Reference}
+\hypertarget{class_graham_campbell_1_1_result_type_1_1_result}{}\label{class_graham_campbell_1_1_result_type_1_1_result}\index{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result@{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result}}
+Inheritance diagram for Graham\+Campbell\textbackslash{}Result\+Type\textbackslash{}Result\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_graham_campbell_1_1_result_type_1_1_result}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_graham_campbell_1_1_result_type_1_1_result_a53f0f705eba3213dab23b7c82bb51020}{success}} ()
+\item 
+\mbox{\hyperlink{class_graham_campbell_1_1_result_type_1_1_result_a10bdbb5a3d62f816d5ee86c9b5bf7bdc}{map}} (callable \$f)
+\item 
+\mbox{\hyperlink{class_graham_campbell_1_1_result_type_1_1_result_af1c6e9fd34fdb2ced8f4485f269dcc84}{flat\+Map}} (callable \$f)
+\item 
+\mbox{\hyperlink{class_graham_campbell_1_1_result_type_1_1_result_a8b77797faf561353b343342d4b5c9f9d}{error}} ()
+\item 
+\mbox{\hyperlink{class_graham_campbell_1_1_result_type_1_1_result_afb5670424b8d49f838dad8ce6ef1f05e}{map\+Error}} (callable \$f)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@template T @template E 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_graham_campbell_1_1_result_type_1_1_result_a8b77797faf561353b343342d4b5c9f9d}\index{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result@{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result}!error@{error}}
+\index{error@{error}!GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result@{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily \label{class_graham_campbell_1_1_result_type_1_1_result_a8b77797faf561353b343342d4b5c9f9d} 
+Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Result\+::error (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get the error option value.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Php\+Option\textbackslash{}\+Option$<$\+E$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_graham_campbell_1_1_result_type_1_1_error_a5231f907c5bb2f5bd43a34351153bf5d}{Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Error}}, and \mbox{\hyperlink{class_graham_campbell_1_1_result_type_1_1_success_ac785353ca044728e4badc102fd0dc21f}{Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Success}}.
+
+\Hypertarget{class_graham_campbell_1_1_result_type_1_1_result_af1c6e9fd34fdb2ced8f4485f269dcc84}\index{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result@{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result}!flatMap@{flatMap}}
+\index{flatMap@{flatMap}!GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result@{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result}}
+\doxysubsubsection{\texorpdfstring{flatMap()}{flatMap()}}
+{\footnotesize\ttfamily \label{class_graham_campbell_1_1_result_type_1_1_result_af1c6e9fd34fdb2ced8f4485f269dcc84} 
+Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Result\+::flat\+Map (\begin{DoxyParamCaption}\item[{callable}]{\$f}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Flat map over the success value.
+
+@template S @template F
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+T)} & \\
+\hline
+\end{DoxyParams}
+Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Result\texorpdfstring{$<$}{<}S,F\texorpdfstring{$>$}{>} \$f
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Result\texorpdfstring{$<$}{<}S,F\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_graham_campbell_1_1_result_type_1_1_success_a8fad039b1b45d510259570ea3bfbe5bd}{Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Success}}.
+
+\Hypertarget{class_graham_campbell_1_1_result_type_1_1_result_a10bdbb5a3d62f816d5ee86c9b5bf7bdc}\index{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result@{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result}!map@{map}}
+\index{map@{map}!GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result@{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily \label{class_graham_campbell_1_1_result_type_1_1_result_a10bdbb5a3d62f816d5ee86c9b5bf7bdc} 
+Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Result\+::map (\begin{DoxyParamCaption}\item[{callable}]{\$f}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Map over the success value.
+
+@template S
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+T)\+:S} & \$f\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Result\texorpdfstring{$<$}{<}S,E\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_graham_campbell_1_1_result_type_1_1_error_af7f9bf62efe5e05a9e0e4b754fbc23ad}{Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Error}}, and \mbox{\hyperlink{class_graham_campbell_1_1_result_type_1_1_success_a3ae9b527f274aa5279ab5a713498a7dc}{Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Success}}.
+
+\Hypertarget{class_graham_campbell_1_1_result_type_1_1_result_afb5670424b8d49f838dad8ce6ef1f05e}\index{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result@{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result}!mapError@{mapError}}
+\index{mapError@{mapError}!GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result@{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result}}
+\doxysubsubsection{\texorpdfstring{mapError()}{mapError()}}
+{\footnotesize\ttfamily \label{class_graham_campbell_1_1_result_type_1_1_result_afb5670424b8d49f838dad8ce6ef1f05e} 
+Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Result\+::map\+Error (\begin{DoxyParamCaption}\item[{callable}]{\$f}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Map over the error value.
+
+@template F
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+E)\+:F} & \$f\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Result\texorpdfstring{$<$}{<}T,F\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_graham_campbell_1_1_result_type_1_1_error_a131e5edcb5bc399fda8b1f1f8c0890e4}{Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Error}}, and \mbox{\hyperlink{class_graham_campbell_1_1_result_type_1_1_success_afb264cefb866d7bdab661660a529ea28}{Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Success}}.
+
+\Hypertarget{class_graham_campbell_1_1_result_type_1_1_result_a53f0f705eba3213dab23b7c82bb51020}\index{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result@{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result}!success@{success}}
+\index{success@{success}!GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result@{GrahamCampbell\textbackslash{}ResultType\textbackslash{}Result}}
+\doxysubsubsection{\texorpdfstring{success()}{success()}}
+{\footnotesize\ttfamily \label{class_graham_campbell_1_1_result_type_1_1_result_a53f0f705eba3213dab23b7c82bb51020} 
+Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Result\+::success (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get the success option value.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Php\+Option\textbackslash{}\+Option$<$\+T$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_graham_campbell_1_1_result_type_1_1_error_a5fb1f3cf1b402db650c80992d4b15ce0}{Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Error}}, and \mbox{\hyperlink{class_graham_campbell_1_1_result_type_1_1_success_ac0315e8e266a332f299b5f1856288b78}{Graham\+Campbell\textbackslash{}\+Result\+Type\textbackslash{}\+Success}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/graham-\/campbell/result-\/type/src/Result.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\doxysection{Guzzle\+Http\textbackslash{}Psr7\textbackslash{}Header Class Reference}
+\hypertarget{class_guzzle_http_1_1_psr7_1_1_header}{}\label{class_guzzle_http_1_1_psr7_1_1_header}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Header@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Header}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_header_a6a6c309a0f2df6c015f7999fba97b3a3}{parse}} (\$header)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_header_abc5c82d9bdc1a107230f41256c8c1769}{normalize}} (\$header)
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_header_a22920c1442dd72ab918afc4abcef09ad}{split\+List}} (\$values)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_header_abc5c82d9bdc1a107230f41256c8c1769}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Header@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Header}!normalize@{normalize}}
+\index{normalize@{normalize}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Header@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Header}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_header_abc5c82d9bdc1a107230f41256c8c1769} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Header\+::normalize (\begin{DoxyParamCaption}\item[{}]{\$header}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts an array of header values that may contain comma separated headers into an array of headers with no comma separated values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$header} & Header to normalize.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000046}{Deprecated}}]Use self\+::split\+List() instead. \end{DoxyRefDesc}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_header_a6a6c309a0f2df6c015f7999fba97b3a3}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Header@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Header}!parse@{parse}}
+\index{parse@{parse}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Header@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Header}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_header_a6a6c309a0f2df6c015f7999fba97b3a3} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Header\+::parse (\begin{DoxyParamCaption}\item[{}]{\$header}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parse an array of header values containing "{};"{} separated data into an array of associative arrays representing the header key value pair data of the header. When a parameter does not contain a value, but just contains a key, this function will inject a key with a \textquotesingle{}\textquotesingle{} string value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$header} & Header to parse into components. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_header_a22920c1442dd72ab918afc4abcef09ad}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Header@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Header}!splitList@{splitList}}
+\index{splitList@{splitList}!GuzzleHttp\textbackslash{}Psr7\textbackslash{}Header@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}Header}}
+\doxysubsubsection{\texorpdfstring{splitList()}{splitList()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_psr7_1_1_header_a22920c1442dd72ab918afc4abcef09ad} 
+static Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Header\+::split\+List (\begin{DoxyParamCaption}\item[{}]{\$values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Splits a HTTP header defined to contain a comma-\/separated list into each individual value. Empty values will be removed.
+
+Example headers include \textquotesingle{}accept\textquotesingle{}, \textquotesingle{}cache-\/control\textquotesingle{} and \textquotesingle{}if-\/none-\/match\textquotesingle{}.
+
+This method must not be used to parse headers that are not defined as a list, such as \textquotesingle{}user-\/agent\textquotesingle{} or \textquotesingle{}set-\/cookie\textquotesingle{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | string\mbox{[}$\,$\mbox{]} & {\em \$values} & Header value as returned by Message\+Interface\+::get\+Header()\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/guzzlehttp/psr7/src/Header.\+php\end{DoxyCompactItemize}

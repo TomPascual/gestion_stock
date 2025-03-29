@@ -1,0 +1,156 @@
+\doxysection{Psy\textbackslash{}Execution\+Loop\textbackslash{}Process\+Forker Class Reference}
+\hypertarget{class_psy_1_1_execution_loop_1_1_process_forker}{}\label{class_psy_1_1_execution_loop_1_1_process_forker}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}}
+Inheritance diagram for Psy\textbackslash{}Execution\+Loop\textbackslash{}Process\+Forker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_psy_1_1_execution_loop_1_1_process_forker}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_process_forker_a06e821c30906e68f04d03f00ccf29eee}{before\+Run}} (\mbox{\hyperlink{class_psy_1_1_shell}{Shell}} \$shell)
+\item 
+\mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_process_forker_a5efe3b7569dc09c6aee53147433b9b99}{before\+Loop}} (\mbox{\hyperlink{class_psy_1_1_shell}{Shell}} \$shell)
+\item 
+\mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_process_forker_abba9dfd1e5ce25cd774f8b0b2ff53497}{after\+Loop}} (\mbox{\hyperlink{class_psy_1_1_shell}{Shell}} \$shell)
+\item 
+\mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_process_forker_a4f614ae7683a987dc19d78af25e1a7ac}{after\+Run}} (\mbox{\hyperlink{class_psy_1_1_shell}{Shell}} \$shell)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_abstract_listener}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Abstract\+Listener}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_abstract_listener_ac14c0c434bef6ddc6c4e0d3426640350}{on\+Input}} (\mbox{\hyperlink{class_psy_1_1_shell}{Shell}} \$shell, string \$input)
+\item 
+\mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_abstract_listener_afe2694f7da373afc6809ea1310634ce6}{on\+Execute}} (\mbox{\hyperlink{class_psy_1_1_shell}{Shell}} \$shell, string \$code)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_process_forker_a52d547972e2f73cee8d732c7a5d3f180}{is\+Supported}} ()
+\item 
+static \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_process_forker_a26babe81590c6c73c077f9048df63b62}{is\+Pcntl\+Supported}} ()
+\item 
+static \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_process_forker_a22dea199c69a3332f2ca431e7bb64d19}{disabled\+Pcntl\+Functions}} ()
+\item 
+static \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_process_forker_ae63b904d188899d100e8ac54a628027c}{is\+Posix\+Supported}} ()
+\item 
+static \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_process_forker_a33f514f1069c3391a5b321105f3ad137}{disabled\+Posix\+Functions}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An execution loop listener that forks the process before executing code.
+
+This is awesome, as the session won\textquotesingle{}t die prematurely if user input includes a fatal error, such as redeclaring a class or function. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_execution_loop_1_1_process_forker_abba9dfd1e5ce25cd774f8b0b2ff53497}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}!afterLoop@{afterLoop}}
+\index{afterLoop@{afterLoop}!Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}}
+\doxysubsubsection{\texorpdfstring{afterLoop()}{afterLoop()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_execution_loop_1_1_process_forker_abba9dfd1e5ce25cd774f8b0b2ff53497} 
+Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Process\+Forker\+::after\+Loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_psy_1_1_shell}{Shell}}}]{\$shell}{}\end{DoxyParamCaption})}
+
+Clean up old savegames at the end of each loop iteration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Shell & {\em \$shell} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_abstract_listener_ab4b6227cf9b917bb3570f98dd69990e7}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Abstract\+Listener}}.
+
+\Hypertarget{class_psy_1_1_execution_loop_1_1_process_forker_a4f614ae7683a987dc19d78af25e1a7ac}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}!afterRun@{afterRun}}
+\index{afterRun@{afterRun}!Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}}
+\doxysubsubsection{\texorpdfstring{afterRun()}{afterRun()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_execution_loop_1_1_process_forker_a4f614ae7683a987dc19d78af25e1a7ac} 
+Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Process\+Forker\+::after\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_psy_1_1_shell}{Shell}}}]{\$shell}{}\end{DoxyParamCaption})}
+
+After the REPL session ends, send the scope variables back up to the main thread (if this is a child thread).
+
+
+\begin{DoxyParams}[1]{Parameters}
+Shell & {\em \$shell} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_abstract_listener_a1ee610956570925eae026e9f9da7c2cc}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Abstract\+Listener}}.
+
+\Hypertarget{class_psy_1_1_execution_loop_1_1_process_forker_a5efe3b7569dc09c6aee53147433b9b99}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}!beforeLoop@{beforeLoop}}
+\index{beforeLoop@{beforeLoop}!Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}}
+\doxysubsubsection{\texorpdfstring{beforeLoop()}{beforeLoop()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_execution_loop_1_1_process_forker_a5efe3b7569dc09c6aee53147433b9b99} 
+Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Process\+Forker\+::before\+Loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_psy_1_1_shell}{Shell}}}]{\$shell}{}\end{DoxyParamCaption})}
+
+Create a savegame at the start of each loop iteration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Shell & {\em \$shell} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_abstract_listener_a06de4112df52297ddcbc940207cabc74}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Abstract\+Listener}}.
+
+\Hypertarget{class_psy_1_1_execution_loop_1_1_process_forker_a06e821c30906e68f04d03f00ccf29eee}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}!beforeRun@{beforeRun}}
+\index{beforeRun@{beforeRun}!Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}}
+\doxysubsubsection{\texorpdfstring{beforeRun()}{beforeRun()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_execution_loop_1_1_process_forker_a06e821c30906e68f04d03f00ccf29eee} 
+Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Process\+Forker\+::before\+Run (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_psy_1_1_shell}{Shell}}}]{\$shell}{}\end{DoxyParamCaption})}
+
+Forks into a main and a loop process.
+
+The loop process will handle the evaluation of all instructions, then return its state via a socket upon completion.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Shell & {\em \$shell} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_psy_1_1_execution_loop_1_1_abstract_listener_afc1f6067328ec2358f2ed10064a0954b}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Abstract\+Listener}}.
+
+\Hypertarget{class_psy_1_1_execution_loop_1_1_process_forker_a22dea199c69a3332f2ca431e7bb64d19}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}!disabledPcntlFunctions@{disabledPcntlFunctions}}
+\index{disabledPcntlFunctions@{disabledPcntlFunctions}!Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}}
+\doxysubsubsection{\texorpdfstring{disabledPcntlFunctions()}{disabledPcntlFunctions()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_execution_loop_1_1_process_forker_a22dea199c69a3332f2ca431e7bb64d19} 
+static Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Process\+Forker\+::disabled\+Pcntl\+Functions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check whether required pcntl functions are disabled. \Hypertarget{class_psy_1_1_execution_loop_1_1_process_forker_a33f514f1069c3391a5b321105f3ad137}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}!disabledPosixFunctions@{disabledPosixFunctions}}
+\index{disabledPosixFunctions@{disabledPosixFunctions}!Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}}
+\doxysubsubsection{\texorpdfstring{disabledPosixFunctions()}{disabledPosixFunctions()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_execution_loop_1_1_process_forker_a33f514f1069c3391a5b321105f3ad137} 
+static Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Process\+Forker\+::disabled\+Posix\+Functions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check whether required posix functions are disabled. \Hypertarget{class_psy_1_1_execution_loop_1_1_process_forker_a26babe81590c6c73c077f9048df63b62}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}!isPcntlSupported@{isPcntlSupported}}
+\index{isPcntlSupported@{isPcntlSupported}!Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}}
+\doxysubsubsection{\texorpdfstring{isPcntlSupported()}{isPcntlSupported()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_execution_loop_1_1_process_forker_a26babe81590c6c73c077f9048df63b62} 
+static Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Process\+Forker\+::is\+Pcntl\+Supported (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Verify that all required pcntl functions are, in fact, available. \Hypertarget{class_psy_1_1_execution_loop_1_1_process_forker_ae63b904d188899d100e8ac54a628027c}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}!isPosixSupported@{isPosixSupported}}
+\index{isPosixSupported@{isPosixSupported}!Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}}
+\doxysubsubsection{\texorpdfstring{isPosixSupported()}{isPosixSupported()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_execution_loop_1_1_process_forker_ae63b904d188899d100e8ac54a628027c} 
+static Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Process\+Forker\+::is\+Posix\+Supported (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Verify that all required posix functions are, in fact, available. \Hypertarget{class_psy_1_1_execution_loop_1_1_process_forker_a52d547972e2f73cee8d732c7a5d3f180}\index{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}!isSupported@{isSupported}}
+\index{isSupported@{isSupported}!Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker@{Psy\textbackslash{}ExecutionLoop\textbackslash{}ProcessForker}}
+\doxysubsubsection{\texorpdfstring{isSupported()}{isSupported()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_execution_loop_1_1_process_forker_a52d547972e2f73cee8d732c7a5d3f180} 
+static Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Process\+Forker\+::is\+Supported (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Process forker is supported if pcntl and posix extensions are available. 
+
+Implements \mbox{\hyperlink{interface_psy_1_1_execution_loop_1_1_listener_ae4c2515f4bd211a5ad899939875701b0}{Psy\textbackslash{}\+Execution\+Loop\textbackslash{}\+Listener}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Execution\+Loop/Process\+Forker.\+php\end{DoxyCompactItemize}

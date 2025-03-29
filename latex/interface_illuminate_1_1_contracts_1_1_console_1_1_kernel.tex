@@ -1,0 +1,134 @@
+\doxysection{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel Interface Reference}
+\hypertarget{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel}{}\label{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a5d3425ddd77be5fc078c47f36b4eba96}{bootstrap}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a60c891b7e27ac9515a85ea55e7947f91}{handle}} (\$input, \$\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a824bb73e8a6e7f6fdc85e02284a4289f}{output}}=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a71b4cba51a03f4304e3294438e3fd700}{call}} (\$command, array \$parameters=\mbox{[}$\,$\mbox{]}, \$output\+Buffer=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a28ed5d238e695cf3db30ef7a3f1e9935}{queue}} (\$command, array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a8c8d36fc98a39405d5f6588d1b94172e}{all}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a824bb73e8a6e7f6fdc85e02284a4289f}{output}} ()
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_ae4dec235bcef014ce8c0c6a3569b7562}{terminate}} (\$input, \$status)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a8c8d36fc98a39405d5f6588d1b94172e}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel}!all@{all}}
+\index{all@{all}!Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a8c8d36fc98a39405d5f6588d1b94172e} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Console\textbackslash{}\+Kernel\+::all (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all of the commands registered with the console.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a5d3425ddd77be5fc078c47f36b4eba96}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel}!bootstrap@{bootstrap}}
+\index{bootstrap@{bootstrap}!Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{bootstrap()}{bootstrap()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a5d3425ddd77be5fc078c47f36b4eba96} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Console\textbackslash{}\+Kernel\+::bootstrap (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Bootstrap the application for artisan commands.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a71b4cba51a03f4304e3294438e3fd700}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel}!call@{call}}
+\index{call@{call}!Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a71b4cba51a03f4304e3294438e3fd700} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Console\textbackslash{}\+Kernel\+::call (\begin{DoxyParamCaption}\item[{}]{\$command}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$output\+Buffer}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Run an Artisan console command by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Output\textbackslash{}\+Output\+Interface | null & {\em \$output\+Buffer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a60c891b7e27ac9515a85ea55e7947f91}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel}!handle@{handle}}
+\index{handle@{handle}!Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a60c891b7e27ac9515a85ea55e7947f91} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Console\textbackslash{}\+Kernel\+::handle (\begin{DoxyParamCaption}\item[{}]{\$input}{, }\item[{}]{\$output}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Handle an incoming console command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Input\textbackslash{}\+Input\+Interface & {\em \$input} & \\
+\hline
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Output\textbackslash{}\+Output\+Interface | null & {\em \$output} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a824bb73e8a6e7f6fdc85e02284a4289f}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel}!output@{output}}
+\index{output@{output}!Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a824bb73e8a6e7f6fdc85e02284a4289f} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Console\textbackslash{}\+Kernel\+::output (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the output for the last run command.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a28ed5d238e695cf3db30ef7a3f1e9935}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel}!queue@{queue}}
+\index{queue@{queue}!Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{queue()}{queue()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_a28ed5d238e695cf3db30ef7a3f1e9935} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Console\textbackslash{}\+Kernel\+::queue (\begin{DoxyParamCaption}\item[{}]{\$command}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Queue an Artisan console command by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Bus\textbackslash{}\+Pending\+Dispatch 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_ae4dec235bcef014ce8c0c6a3569b7562}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel}!terminate@{terminate}}
+\index{terminate@{terminate}!Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Contracts\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{terminate()}{terminate()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_console_1_1_kernel_ae4dec235bcef014ce8c0c6a3569b7562} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Console\textbackslash{}\+Kernel\+::terminate (\begin{DoxyParamCaption}\item[{}]{\$input}{, }\item[{}]{\$status}{}\end{DoxyParamCaption})}
+
+Terminate the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Input\textbackslash{}\+Input\+Interface & {\em \$input} & \\
+\hline
+int & {\em \$status} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Contracts/\+Console/Kernel.\+php\end{DoxyCompactItemize}

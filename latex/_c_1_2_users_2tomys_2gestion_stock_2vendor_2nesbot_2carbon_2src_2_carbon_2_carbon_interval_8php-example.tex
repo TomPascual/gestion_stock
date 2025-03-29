@@ -1,0 +1,2368 @@
+\doxysection{C\+:/\+Users/tomys/gestion\+\_\+stock/vendor/nesbot/carbon/src/\+Carbon/\+Carbon\+Interval.\+php}
+\hypertarget{_c_1_2_users_2tomys_2gestion_stock_2vendor_2nesbot_2carbon_2src_2_carbon_2_carbon_interval_8php-example}{}\label{_c_1_2_users_2tomys_2gestion_stock_2vendor_2nesbot_2carbon_2src_2_carbon_2_carbon_interval_8php-example}Parse a string into a new Carbon\+Interval object according to the specified format.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{echo\ Carboninterval::createFromFormat(\textcolor{stringliteral}{'H:i'},\ \textcolor{stringliteral}{'1:30'});}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$format} & Format of the \$interval input string \\
+\hline
+string | null & {\em \$interval} & Input string to convert into an interval\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Carbon\textbackslash{}\+Exceptions\textbackslash{}\+Parse\+Error\+Exception when the \$interval cannot be parsed as an interval.
+
+\begin{DoxyReturn}{Returns}
+static
+\end{DoxyReturn}
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{declare(strict\_types=1);}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_carbon}{Carbon}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_bad_fluent_constructor_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)BadFluentConstructorException}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_bad_fluent_setter_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)BadFluentSetterException}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_invalid_cast_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)InvalidCastException}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_invalid_format_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)InvalidFormatException}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_invalid_interval_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)InvalidIntervalException}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_out_of_range_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)OutOfRangeException}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_parse_error_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)ParseErrorException}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_unit_not_configured_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)UnitNotConfiguredException}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_unknown_getter_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)UnknownGetterException}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_unknown_setter_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)UnknownSetterException}};}
+\DoxyCodeLine{use\ \mbox{\hyperlink{class_carbon_1_1_exceptions_1_1_unknown_unit_exception}{Carbon\(\backslash\)Exceptions\(\backslash\)UnknownUnitException}};}
+\DoxyCodeLine{use\ Carbon\(\backslash\)Traits\(\backslash\)IntervalRounding;}
+\DoxyCodeLine{use\ Carbon\(\backslash\)Traits\(\backslash\)IntervalStep;}
+\DoxyCodeLine{use\ Carbon\(\backslash\)Traits\(\backslash\)LocalFactory;}
+\DoxyCodeLine{use\ Carbon\(\backslash\)Traits\(\backslash\)MagicParameter;}
+\DoxyCodeLine{use\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a207b78e926a0ab853f96b34d9beb2981}{Carbon\(\backslash\)Traits\(\backslash\)Mixin}};}
+\DoxyCodeLine{use\ Carbon\(\backslash\)Traits\(\backslash\)Options;}
+\DoxyCodeLine{use\ Carbon\(\backslash\)Traits\(\backslash\)ToStringFormat;}
+\DoxyCodeLine{use\ Closure;}
+\DoxyCodeLine{use\ DateInterval;}
+\DoxyCodeLine{use\ DateTime;}
+\DoxyCodeLine{use\ DateTimeInterface;}
+\DoxyCodeLine{use\ DateTimeZone;}
+\DoxyCodeLine{use\ Exception;}
+\DoxyCodeLine{use\ InvalidArgumentException;}
+\DoxyCodeLine{use\ ReflectionException;}
+\DoxyCodeLine{use\ ReturnTypeWillChange;}
+\DoxyCodeLine{use\ RuntimeException;}
+\DoxyCodeLine{use\ \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface}{Symfony\(\backslash\)Contracts\(\backslash\)Translation\(\backslash\)TranslatorInterface}};}
+\DoxyCodeLine{use\ Throwable;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class\ }CarbonInterval\ \textcolor{keyword}{extends}\ DateInterval\ implements\ CarbonConverterInterface}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ use\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a4ccbac08961816aa93e62ad55966e530}{LocalFactory}};}
+\DoxyCodeLine{\ \ \ \ use\ IntervalRounding;}
+\DoxyCodeLine{\ \ \ \ use\ IntervalStep;}
+\DoxyCodeLine{\ \ \ \ use\ MagicParameter;}
+\DoxyCodeLine{\ \ \ \ use\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a207b78e926a0ab853f96b34d9beb2981}{Mixin}}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ Mixin::mixin\ as\ baseMixin;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ use\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a83aca9fa78181a6c95c89b061372f9a0}{Options}};}
+\DoxyCodeLine{\ \ \ \ use\ ToStringFormat;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ NO\_LIMIT\ =\ -\/1;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ POSITIVE\ =\ 1;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ NEGATIVE\ =\ -\/1;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ PERIOD\_PREFIX\ =\ \textcolor{charliteral}{'P'};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ PERIOD\_YEARS\ =\ \textcolor{charliteral}{'Y'};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ PERIOD\_MONTHS\ =\ \textcolor{charliteral}{'M'};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ PERIOD\_DAYS\ =\ \textcolor{charliteral}{'D'};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ PERIOD\_TIME\_PREFIX\ =\ \textcolor{charliteral}{'T'};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ PERIOD\_HOURS\ =\ \textcolor{charliteral}{'H'};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ PERIOD\_MINUTES\ =\ \textcolor{charliteral}{'M'};}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ PERIOD\_SECONDS\ =\ \textcolor{charliteral}{'S'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{const}\ SPECIAL\_TRANSLATIONS\ =\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 1\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'option'}\ =>\ CarbonInterface::ONE\_DAY\_WORDS,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'future'}\ =>\ \textcolor{stringliteral}{'diff\_tomorrow'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'past'}\ =>\ \textcolor{stringliteral}{'diff\_yesterday'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ 2\ =>\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'option'}\ =>\ CarbonInterface::TWO\_DAY\_WORDS,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'future'}\ =>\ \textcolor{stringliteral}{'diff\_after\_tomorrow'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'past'}\ =>\ \textcolor{stringliteral}{'diff\_before\_yesterday'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ ];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{static}\ ?array\ \$cascadeFactors\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{static}\ array\ \$formats\ =\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'y'}\ =>\ \textcolor{charliteral}{'y'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'Y'}\ =>\ \textcolor{charliteral}{'y'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'o'}\ =>\ \textcolor{charliteral}{'y'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'m'}\ =>\ \textcolor{charliteral}{'m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'n'}\ =>\ \textcolor{charliteral}{'m'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'W'}\ =>\ \textcolor{stringliteral}{'weeks'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'d'}\ =>\ \textcolor{charliteral}{'d'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'j'}\ =>\ \textcolor{charliteral}{'d'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'z'}\ =>\ \textcolor{charliteral}{'d'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'h'}\ =>\ \textcolor{charliteral}{'h'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'g'}\ =>\ \textcolor{charliteral}{'h'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'H'}\ =>\ \textcolor{charliteral}{'h'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'G'}\ =>\ \textcolor{charliteral}{'h'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'i'}\ =>\ \textcolor{charliteral}{'i'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'s'}\ =>\ \textcolor{charliteral}{'s'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'u'}\ =>\ \textcolor{stringliteral}{'micro'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'v'}\ =>\ \textcolor{stringliteral}{'milli'},}
+\DoxyCodeLine{\ \ \ \ ];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ ?array\ \$flipCascadeFactors\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \$floatSettersEnabled\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{static}\ array\ \$macros\ =\ [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keyword}{null}\ \$timezoneSetting\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ mixed\ \$originalInput\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ ?CarbonInterface\ \$startDate\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ ?CarbonInterface\ \$endDate\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ ?DateInterval\ \$rawInterval\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ ?array\ \$initialValues\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ad021f23697a34a2339e8ba292315515e}{setTimezone}}(DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}\ \$timezone):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>timezoneSetting\ =\ \$timezone;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>checkStartAndEnd();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$this-\/>startDate)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>startDate\ =\ \$this-\/>startDate}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>avoidMutation()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>setTimezone(\$timezone);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>rawInterval\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$this-\/>endDate)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>endDate\ =\ \$this-\/>endDate}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>avoidMutation()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>setTimezone(\$timezone);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>rawInterval\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a146fff3f775e0c19deb590a692ba0c1b}{shiftTimezone}}(DateTimeZone|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}\ \$timezone):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>timezoneSetting\ =\ \$timezone;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>checkStartAndEnd();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$this-\/>startDate)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>startDate\ =\ \$this-\/>startDate}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>avoidMutation()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>shiftTimezone(\$timezone);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>rawInterval\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$this-\/>endDate)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>endDate\ =\ \$this-\/>endDate}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>avoidMutation()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>shiftTimezone(\$timezone);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>rawInterval\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getCascadeFactors():\ array}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ static::\$cascadeFactors\ ?:\ static::getDefaultCascadeFactors();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getDefaultCascadeFactors():\ array}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'milliseconds'}\ =>\ [CarbonInterface::MICROSECONDS\_PER\_MILLISECOND,\ \textcolor{stringliteral}{'microseconds'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'seconds'}\ =>\ [CarbonInterface::MILLISECONDS\_PER\_SECOND,\ \textcolor{stringliteral}{'milliseconds'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'minutes'}\ =>\ [CarbonInterface::SECONDS\_PER\_MINUTE,\ \textcolor{stringliteral}{'seconds'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'hours'}\ =>\ [CarbonInterface::MINUTES\_PER\_HOUR,\ \textcolor{stringliteral}{'minutes'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'dayz'}\ =>\ [CarbonInterface::HOURS\_PER\_DAY,\ \textcolor{stringliteral}{'hours'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'weeks'}\ =>\ [CarbonInterface::DAYS\_PER\_WEEK,\ \textcolor{stringliteral}{'dayz'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'months'}\ =>\ [CarbonInterface::WEEKS\_PER\_MONTH,\ \textcolor{stringliteral}{'weeks'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'years'}\ =>\ [CarbonInterface::MONTHS\_PER\_YEAR,\ \textcolor{stringliteral}{'months'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ setCascadeFactors(array\ \$cascadeFactors)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::\$flipCascadeFactors\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ static::\$cascadeFactors\ =\ \$cascadeFactors;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ enableFloatSetters(\textcolor{keywordtype}{bool}\ \$floatSettersEnabled\ =\ \textcolor{keyword}{true}):\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::\$floatSettersEnabled\ =\ \$floatSettersEnabled;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \_\_construct(\$years\ =\ \textcolor{keyword}{null},\ \$months\ =\ \textcolor{keyword}{null},\ \$weeks\ =\ \textcolor{keyword}{null},\ \$days\ =\ \textcolor{keyword}{null},\ \$hours\ =\ \textcolor{keyword}{null},\ \$minutes\ =\ \textcolor{keyword}{null},\ \$seconds\ =\ \textcolor{keyword}{null},\ \$microseconds\ =\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>originalInput\ =\ \(\backslash\)func\_num\_args()\ ===\ 1\ ?\ \$years\ :\ \(\backslash\)func\_get\_args();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$years\ instanceof\ Closure)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>step\ =\ \$years;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$years\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$years\ instanceof\ DateInterval)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ parent::\_\_construct(static::getDateIntervalSpec(\$years));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>f\ =\ \$years-\/>f;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self::copyNegativeUnits(\$years,\ \$this);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$spec\ =\ \$years;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$isStringSpec\ =\ (\(\backslash\)is\_string(\$spec)\ \&\&\ !preg\_match(\textcolor{stringliteral}{'/\string^[\(\backslash\)d.]/'},\ \$spec));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\$isStringSpec\ ||\ (\textcolor{keywordtype}{float})\ \$years)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$spec\ =\ static::PERIOD\_PREFIX;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$spec\ .=\ \$years\ >\ 0\ ?\ \$years.static::PERIOD\_YEARS\ :\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$spec\ .=\ \$months\ >\ 0\ ?\ \$months.static::PERIOD\_MONTHS\ :\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$specDays\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$specDays\ +=\ \$weeks\ >\ 0\ ?\ \$weeks\ *\ static::getDaysPerWeek()\ :\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$specDays\ +=\ \$days\ >\ 0\ ?\ \$days\ :\ 0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$spec\ .=\ \$specDays\ >\ 0\ ?\ \$specDays.static::PERIOD\_DAYS\ :\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$hours\ >\ 0\ ||\ \$minutes\ >\ 0\ ||\ \$seconds\ >\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$spec\ .=\ static::PERIOD\_TIME\_PREFIX;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$spec\ .=\ \$hours\ >\ 0\ ?\ \$hours.static::PERIOD\_HOURS\ :\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$spec\ .=\ \$minutes\ >\ 0\ ?\ \$minutes.static::PERIOD\_MINUTES\ :\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$spec\ .=\ \$seconds\ >\ 0\ ?\ \$seconds.static::PERIOD\_SECONDS\ :\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$spec\ ===\ static::PERIOD\_PREFIX)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Allow\ the\ zero\ interval.}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$spec\ .=\ \textcolor{charliteral}{'0'}.static::PERIOD\_YEARS;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ parent::\_\_construct(\$spec);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (Throwable\ \$exception)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ parent::\_\_construct(\textcolor{stringliteral}{'PT0S'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$isStringSpec)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!preg\_match(\textcolor{stringliteral}{'/\string^P}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (?:(?<year>[+-\/]?\(\backslash\)d*(?:\(\backslash\).\(\backslash\)d+)?)Y)?}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (?:(?<month>[+-\/]?\(\backslash\)d*(?:\(\backslash\).\(\backslash\)d+)?)M)?}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (?:(?<week>[+-\/]?\(\backslash\)d*(?:\(\backslash\).\(\backslash\)d+)?)W)?}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (?:(?<day>[+-\/]?\(\backslash\)d*(?:\(\backslash\).\(\backslash\)d+)?)D)?}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (?:T}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (?:(?<hour>[+-\/]?\(\backslash\)d*(?:\(\backslash\).\(\backslash\)d+)?)H)?}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (?:(?<minute>[+-\/]?\(\backslash\)d*(?:\(\backslash\).\(\backslash\)d+)?)M)?}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (?:(?<second>[+-\/]?\(\backslash\)d*(?:\(\backslash\).\(\backslash\)d+)?)S)?}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )?}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$/x'},\ \$spec,\ \$match))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ InvalidArgumentException(\textcolor{stringliteral}{"{}Invalid\ duration:\ \$spec"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$years\ =\ (float)\ (\$match[\textcolor{stringliteral}{'year'}]\ ??\ 0);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>assertSafeForInteger(\textcolor{stringliteral}{'year'},\ \$years);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$months\ =\ (float)\ (\$match[\textcolor{stringliteral}{'month'}]\ ??\ 0);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>assertSafeForInteger(\textcolor{stringliteral}{'month'},\ \$months);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$weeks\ =\ (float)\ (\$match[\textcolor{stringliteral}{'week'}]\ ??\ 0);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>assertSafeForInteger(\textcolor{stringliteral}{'week'},\ \$weeks);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$days\ =\ (float)\ (\$match[\textcolor{stringliteral}{'day'}]\ ??\ 0);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>assertSafeForInteger(\textcolor{stringliteral}{'day'},\ \$days);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$hours\ =\ (float)\ (\$match[\textcolor{stringliteral}{'hour'}]\ ??\ 0);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>assertSafeForInteger(\textcolor{stringliteral}{'hour'},\ \$hours);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$minutes\ =\ (float)\ (\$match[\textcolor{stringliteral}{'minute'}]\ ??\ 0);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>assertSafeForInteger(\textcolor{stringliteral}{'minute'},\ \$minutes);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$seconds\ =\ (float)\ (\$match[\textcolor{stringliteral}{'second'}]\ ??\ 0);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>assertSafeForInteger(\textcolor{stringliteral}{'second'},\ \$seconds);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$microseconds\ =\ (int)\ str\_pad(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ substr(explode(\textcolor{charliteral}{'.'},\ \$match[\textcolor{stringliteral}{'second'}]\ ??\ \textcolor{stringliteral}{'0.0'})[1]\ ??\ \textcolor{charliteral}{'0'},\ 0,\ 6),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 6,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{charliteral}{'0'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$totalDays\ =\ ((\$weeks\ *\ static::getDaysPerWeek())\ +\ \$days);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>assertSafeForInteger(\textcolor{stringliteral}{'days\ total\ (including\ weeks)'},\ \$totalDays);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>y\ =\ (int)\ \$years;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>m\ =\ (int)\ \$months;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>d\ =\ (int)\ \$totalDays;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>h\ =\ (int)\ \$hours;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>i\ =\ (int)\ \$minutes;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>s\ =\ (int)\ \$seconds;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$secondFloatPart\ =\ (float)\ (\$microseconds\ /\ CarbonInterface::MICROSECONDS\_PER\_SECOND);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>f\ =\ \$secondFloatPart;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$intervalMicroseconds\ =\ (int)\ (\$this-\/>f\ *\ CarbonInterface::MICROSECONDS\_PER\_SECOND);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$intervalSeconds\ =\ \$seconds\ -\/\ \$secondFloatPart;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\textcolor{keywordtype}{float})\ \$this-\/>y)\ !==\ \$years\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\textcolor{keywordtype}{float})\ \$this-\/>m)\ !==\ \$months\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\textcolor{keywordtype}{float})\ \$this-\/>d)\ !==\ \$totalDays\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\textcolor{keywordtype}{float})\ \$this-\/>h)\ !==\ \$hours\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\textcolor{keywordtype}{float})\ \$this-\/>i)\ !==\ \$minutes\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ((\textcolor{keywordtype}{float})\ \$this-\/>s)\ !==\ \$intervalSeconds\ ||}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$intervalMicroseconds\ !==\ ((\textcolor{keywordtype}{int})\ \$microseconds)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>add(static::fromString(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\$years\ -\/\ \$this-\/>y).\textcolor{stringliteral}{'\ years\ '}.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\$months\ -\/\ \$this-\/>m).\textcolor{stringliteral}{'\ months\ '}.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\$totalDays\ -\/\ \$this-\/>d).\textcolor{stringliteral}{'\ days\ '}.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\$hours\ -\/\ \$this-\/>h).\textcolor{stringliteral}{'\ hours\ '}.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\$minutes\ -\/\ \$this-\/>i).\textcolor{stringliteral}{'\ minutes\ '}.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\$intervalSeconds\ -\/\ \$this-\/>s).\textcolor{stringliteral}{'\ seconds\ '}.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\$microseconds\ -\/\ \$intervalMicroseconds).\textcolor{stringliteral}{'\ microseconds\ '},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (Throwable\ \$secondException)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \$secondException\ instanceof\ OutOfRangeException\ ?\ \$secondException\ :\ \$exception;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$microseconds\ !==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>f\ =\ \$microseconds\ /\ CarbonInterface::MICROSECONDS\_PER\_SECOND;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ ([\textcolor{stringliteral}{'years'},\ \textcolor{stringliteral}{'months'},\ \textcolor{stringliteral}{'weeks'},\ \textcolor{stringliteral}{'days'},\ \textcolor{stringliteral}{'hours'},\ \textcolor{stringliteral}{'minutes'},\ \textcolor{stringliteral}{'seconds'}]\ as\ \$unit)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$\$unit\ <\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>\textcolor{keyword}{set}(\$unit,\ \$\$unit);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getFactor(\$source,\ \$target)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$source\ =\ self::standardizeUnit(\$source);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$target\ =\ self::standardizeUnit(\$target);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$factors\ =\ self::getFlipCascadeFactors();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (isset(\$factors[\$source]))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ [\$to,\ \$factor]\ =\ \$factors[\$source];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$to\ ===\ \$target)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$factor;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$factor\ *\ static::getFactor(\$to,\ \$target);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getFactorWithDefault(\$source,\ \$target)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$factor\ =\ self::getFactor(\$source,\ \$target);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$factor)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$factor;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \$defaults\ =\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'month'}\ =>\ [\textcolor{stringliteral}{'year'}\ =>\ Carbon::MONTHS\_PER\_YEAR],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'week'}\ =>\ [\textcolor{stringliteral}{'month'}\ =>\ Carbon::WEEKS\_PER\_MONTH],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'day'}\ =>\ [\textcolor{stringliteral}{'week'}\ =>\ Carbon::DAYS\_PER\_WEEK],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'hour'}\ =>\ [\textcolor{stringliteral}{'day'}\ =>\ Carbon::HOURS\_PER\_DAY],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'minute'}\ =>\ [\textcolor{stringliteral}{'hour'}\ =>\ Carbon::MINUTES\_PER\_HOUR],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'second'}\ =>\ [\textcolor{stringliteral}{'minute'}\ =>\ Carbon::SECONDS\_PER\_MINUTE],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'millisecond'}\ =>\ [\textcolor{stringliteral}{'second'}\ =>\ Carbon::MILLISECONDS\_PER\_SECOND],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'microsecond'}\ =>\ [\textcolor{stringliteral}{'millisecond'}\ =>\ Carbon::MICROSECONDS\_PER\_MILLISECOND],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$defaults[\$source][\$target]\ ??\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getDaysPerWeek()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ static::getFactor(\textcolor{stringliteral}{'dayz'},\ \textcolor{stringliteral}{'weeks'})\ ?:\ Carbon::DAYS\_PER\_WEEK;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getHoursPerDay()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ static::getFactor(\textcolor{stringliteral}{'hours'},\ \textcolor{stringliteral}{'dayz'})\ ?:\ Carbon::HOURS\_PER\_DAY;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getMinutesPerHour()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ static::getFactor(\textcolor{stringliteral}{'minutes'},\ \textcolor{stringliteral}{'hours'})\ ?:\ Carbon::MINUTES\_PER\_HOUR;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getSecondsPerMinute()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ static::getFactor(\textcolor{stringliteral}{'seconds'},\ \textcolor{stringliteral}{'minutes'})\ ?:\ Carbon::SECONDS\_PER\_MINUTE;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getMillisecondsPerSecond()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ static::getFactor(\textcolor{stringliteral}{'milliseconds'},\ \textcolor{stringliteral}{'seconds'})\ ?:\ Carbon::MILLISECONDS\_PER\_SECOND;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getMicrosecondsPerMillisecond()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ static::getFactor(\textcolor{stringliteral}{'microseconds'},\ \textcolor{stringliteral}{'milliseconds'})\ ?:\ Carbon::MICROSECONDS\_PER\_MILLISECOND;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ create(\$years\ =\ \textcolor{keyword}{null},\ \$months\ =\ \textcolor{keyword}{null},\ \$weeks\ =\ \textcolor{keyword}{null},\ \$days\ =\ \textcolor{keyword}{null},\ \$hours\ =\ \textcolor{keyword}{null},\ \$minutes\ =\ \textcolor{keyword}{null},\ \$seconds\ =\ \textcolor{keyword}{null},\ \$microseconds\ =\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \textcolor{keyword}{static}(\$years,\ \$months,\ \$weeks,\ \$days,\ \$hours,\ \$minutes,\ \$seconds,\ \$microseconds);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ createFromFormat(\textcolor{keywordtype}{string}\ \$format,\ ?\textcolor{keywordtype}{string}\ \$interval):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$instance\ =\ \textcolor{keyword}{new}\ \textcolor{keyword}{static}(0);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$length\ =\ mb\_strlen(\$format);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (preg\_match(\textcolor{stringliteral}{'/s([,.])([uv])\$/'},\ \$format,\ \$match))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$interval\ =\ explode(\$match[1],\ \$interval);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$index\ =\ \(\backslash\)count(\$interval)\ -\/\ 1;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$interval[\$index]\ =\ str\_pad(\$interval[\$index],\ \$match[2]\ ===\ \textcolor{charliteral}{'v'}\ ?\ 3\ :\ 6,\ \textcolor{charliteral}{'0'});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$interval\ =\ implode(\$match[1],\ \$interval);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$interval\ ??=\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\$index\ =\ 0;\ \$index\ <\ \$length;\ \$index++)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$expected\ =\ mb\_substr(\$format,\ \$index,\ 1);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$nextCharacter\ =\ mb\_substr(\$interval,\ 0,\ 1);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$unit\ =\ static::\$formats[\$expected]\ ??\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$unit)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!preg\_match(\textcolor{stringliteral}{'/\string^-\/?\(\backslash\)d+/'},\ \$interval,\ \$match))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ ParseErrorException(\textcolor{stringliteral}{'number'},\ \$nextCharacter);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$interval\ =\ mb\_substr(\$interval,\ mb\_strlen(\$match[0]));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$instance-\/>\$unit\ +=\ (int)\ (\$match[0]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$nextCharacter\ !==\ \$expected)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ ParseErrorException(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}'\$expected'"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$nextCharacter,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Allowed\ substitutes\ for\ interval\ formats\ are\ '}.implode(\textcolor{stringliteral}{',\ '},\ array\_keys(static::\$formats)).\textcolor{stringliteral}{"{}\(\backslash\)n"{}}.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'See\ https://php.net/manual/en/function.date.php\ for\ their\ meaning'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$interval\ =\ mb\_substr(\$interval,\ 1);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$interval\ !==\ \textcolor{stringliteral}{''})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ ParseErrorException(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'end\ of\ string'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$interval,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$instance;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ original()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>originalInput;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ start():\ ?CarbonInterface}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>checkStartAndEnd();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>startDate;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ end():\ ?CarbonInterface}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>checkStartAndEnd();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>endDate;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ optimize():\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>originalInput\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>startDate\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>endDate\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>rawInterval\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>absolute\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_abcabadb9d4fc0e4fa30f654d839b925e}{copy}}():\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$date\ =\ \textcolor{keyword}{new}\ \textcolor{keyword}{static}(0);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$date-\/>copyProperties(\$this);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$date-\/>step\ =\ \$this-\/>step;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$date;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_ab9cb43f7b45f227d2426299bac08b6ef}{clone}}():\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_abcabadb9d4fc0e4fa30f654d839b925e}{copy}}();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ \_\_callStatic(\textcolor{keywordtype}{string}\ \$method,\ array\ \$parameters)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$interval\ =\ \textcolor{keyword}{new}\ \textcolor{keyword}{static}(0);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_carbon_1_1_traits_a07c00bb2050dbe05c04248230ab3ed0a}{\$localStrictModeEnabled}}\ =\ \$interval-\/>localStrictModeEnabled;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$interval-\/>localStrictModeEnabled\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$result\ =\ static::hasMacro(\$method)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ?\ static::bindMacroContext(\textcolor{keyword}{null},\ \textcolor{keyword}{function}\ ()\ use\ (\&\$method,\ \&\$parameters,\ \&\$interval)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$interval-\/>callMacro(\$method,\ \$parameters);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \$interval-\/>\$method(...\$parameters);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$interval-\/>localStrictModeEnabled\ =\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a07c00bb2050dbe05c04248230ab3ed0a}{\$localStrictModeEnabled}};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$result;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (BadFluentSetterException\ \$exception)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (Carbon::isStrictModeEnabled())\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ BadFluentConstructorException(\$method,\ 0,\ \$exception);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\ \ \ \ \#[ReturnTypeWillChange]}}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ \_\_set\_state(\$dump)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$dateInterval\ =\ parent::\_\_set\_state(\$dump);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ static::instance(\$dateInterval);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ \textcolor{keyword}{this}():\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ end(static::\$macroContextStack)\ ?:\ \textcolor{keyword}{new}\ \textcolor{keyword}{static}(0);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ fromString(\textcolor{keywordtype}{string}\ \$intervalDefinition):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (empty(\$intervalDefinition))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self::withOriginal(\textcolor{keyword}{new}\ \textcolor{keyword}{static}(0),\ \$intervalDefinition);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$years\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$months\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$weeks\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$days\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$hours\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$minutes\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$seconds\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$milliseconds\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$microseconds\ =\ 0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$pattern\ =\ \textcolor{stringliteral}{'/(-\/?\(\backslash\)d+(?:\(\backslash\).\(\backslash\)d+)?)\(\backslash\)h*([\string^\(\backslash\)d\(\backslash\)h]*)/i'};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ preg\_match\_all(\$pattern,\ \$intervalDefinition,\ \$parts,\ PREG\_SET\_ORDER);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ ([\$part,\ \$value,\ \$unit]\ =\ array\_shift(\$parts))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$intValue\ =\ (int)\ \$value;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$fraction\ =\ (float)\ \$value\ -\/\ \$intValue;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Fix\ calculation\ precision}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{namespace_carbon_1_1_traits_a6d476188a9de4ba1dcbc6cb2a9e8d2cf}{round}}(\$fraction,\ 6))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$fraction\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$intValue++;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 0:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$fraction\ =\ 0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\$unit\ ===\ \textcolor{stringliteral}{'µs'}\ ?\ \textcolor{stringliteral}{'µs'}\ :\ strtolower(\$unit))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'millennia'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'millennium'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$years\ +=\ \$intValue\ *\ CarbonInterface::YEARS\_PER\_MILLENNIUM;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'century'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'centuries'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$years\ +=\ \$intValue\ *\ CarbonInterface::YEARS\_PER\_CENTURY;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'decade'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'decades'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$years\ +=\ \$intValue\ *\ CarbonInterface::YEARS\_PER\_DECADE;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'year'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'years'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'y'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'yr'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'yrs'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$years\ +=\ \$intValue;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'quarter'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'quarters'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$months\ +=\ \$intValue\ *\ CarbonInterface::MONTHS\_PER\_QUARTER;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'month'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'months'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'mo'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'mos'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$months\ +=\ \$intValue;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'week'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'weeks'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'w'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$weeks\ +=\ \$intValue;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$fraction)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$parts[]\ =\ [\textcolor{keyword}{null},\ \$fraction\ *\ static::getDaysPerWeek(),\ \textcolor{charliteral}{'d'}];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'day'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'days'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'d'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$days\ +=\ \$intValue;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$fraction)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$parts[]\ =\ [\textcolor{keyword}{null},\ \$fraction\ *\ static::getHoursPerDay(),\ \textcolor{charliteral}{'h'}];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'hour'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'hours'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'h'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$hours\ +=\ \$intValue;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$fraction)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$parts[]\ =\ [\textcolor{keyword}{null},\ \$fraction\ *\ static::getMinutesPerHour(),\ \textcolor{charliteral}{'m'}];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'minute'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'minutes'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'m'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$minutes\ +=\ \$intValue;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$fraction)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$parts[]\ =\ [\textcolor{keyword}{null},\ \$fraction\ *\ static::getSecondsPerMinute(),\ \textcolor{charliteral}{'s'}];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'second'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'seconds'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{charliteral}{'s'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$seconds\ +=\ \$intValue;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$fraction)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$parts[]\ =\ [\textcolor{keyword}{null},\ \$fraction\ *\ static::getMillisecondsPerSecond(),\ \textcolor{stringliteral}{'ms'}];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'millisecond'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'milliseconds'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'milli'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'ms'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$milliseconds\ +=\ \$intValue;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$fraction)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$microseconds\ +=\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a6d476188a9de4ba1dcbc6cb2a9e8d2cf}{round}}(\$fraction\ *\ static::getMicrosecondsPerMillisecond());}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'microsecond'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'microseconds'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'micro'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'µs'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$microseconds\ +=\ \$intValue;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ InvalidIntervalException(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)sprintf(\textcolor{stringliteral}{'Invalid\ part\ \%s\ in\ definition\ \%s'},\ \$part,\ \$intervalDefinition),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self::withOriginal(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \textcolor{keyword}{static}(\$years,\ \$months,\ \$weeks,\ \$days,\ \$hours,\ \$minutes,\ \$seconds,\ \$milliseconds\ *\ Carbon::MICROSECONDS\_PER\_MILLISECOND\ +\ \$microseconds),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$intervalDefinition,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ parseFromLocale(\textcolor{keywordtype}{string}\ \$interval,\ ?\textcolor{keywordtype}{string}\ \$locale\ =\ \textcolor{keyword}{null}):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ static::fromString(Carbon::translateTimeString(\$interval,\ \$locale\ ?:\ static::getLocale(),\ CarbonInterface::DEFAULT\_LOCALE));}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ diff(\$start,\ \$end\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false},\ array\ \$skip\ =\ []):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$start\ =\ \$start\ instanceof\ CarbonInterface\ ?\ \$start\ :\ Carbon::make(\$start);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$end\ =\ \$end\ instanceof\ CarbonInterface\ ?\ \$end\ :\ Carbon::make(\$end);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$rawInterval\ =\ \$start-\/>diffAsDateInterval(\$end,\ \$absolute);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$interval\ =\ static::instance(\$rawInterval,\ \$skip);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$interval-\/>absolute\ =\ \$absolute;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$interval-\/>rawInterval\ =\ \$rawInterval;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$interval-\/>startDate\ =\ \$start;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$interval-\/>endDate\ =\ \$end;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$interval-\/>initialValues\ =\ \$interval-\/>getInnerValues();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$interval;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ abs(\textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{false}):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$absolute\ \&\&\ \$this-\/>invert)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>invert();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ absolute(\textcolor{keywordtype}{bool}\ \$absolute\ =\ \textcolor{keyword}{true}):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>abs(\$absolute);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ cast(\textcolor{keywordtype}{string}\ \$className):\ mixed}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self::castIntervalToClass(\$this,\ \$className);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ instance(DateInterval\ \$interval,\ array\ \$skip\ =\ [],\ \textcolor{keywordtype}{bool}\ \$skipCopy\ =\ \textcolor{keyword}{false}):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$skipCopy\ \&\&\ \$interval\ instanceof\ \textcolor{keyword}{static})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$interval;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self::castIntervalToClass(\$interval,\ static::class,\ \$skip);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ make(\$interval,\ \$unit\ =\ \textcolor{keyword}{null},\ \textcolor{keywordtype}{bool}\ \$skipCopy\ =\ \textcolor{keyword}{false}):\ ?self}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$interval\ instanceof\ Unit)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$interval\ =\ \$interval-\/>interval();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$unit\ instanceof\ Unit)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$unit\ =\ \$unit-\/>value;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$unit)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$interval\ =\ \textcolor{stringliteral}{"{}\$interval\ \$unit"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$interval\ instanceof\ DateInterval)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ static::instance(\$interval,\ [],\ \$skipCopy);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$interval\ instanceof\ Closure)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self::withOriginal(\textcolor{keyword}{new}\ \textcolor{keyword}{static}(\$interval),\ \$interval);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\(\backslash\)is\_string(\$interval))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ static::makeFromString(\$interval);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ makeFromString(\textcolor{keywordtype}{string}\ \$interval):\ ?self}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$interval\ =\ preg\_replace(\textcolor{stringliteral}{'/\(\backslash\)s+/'},\ \textcolor{charliteral}{'\ '},\ trim(\$interval));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (preg\_match(\textcolor{stringliteral}{'/\string^P[T\(\backslash\)d]/'},\ \$interval))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \textcolor{keyword}{static}(\$interval);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (preg\_match(\textcolor{stringliteral}{'/\string^(?:\(\backslash\)h*-\/?\(\backslash\)d+(?:\(\backslash\).\(\backslash\)d+)?\(\backslash\)h*[a-\/z]+)+\$/i'},\ \$interval))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ static::fromString(\$interval);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$intervalInstance\ =\ static::createFromDateString(\$interval);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$intervalInstance-\/>isEmpty()\ ?\ null\ :\ \$intervalInstance;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{function}\ resolveInterval(\$interval):\ ?self}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!(\$interval\ instanceof\ \textcolor{keyword}{self}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self::make(\$interval);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$interval;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ createFromDateString(\textcolor{keywordtype}{string}\ \$datetime):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$string\ =\ strtr(\$datetime,\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{charliteral}{','}\ =>\ \textcolor{charliteral}{'\ '},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'\ and\ '}\ =>\ \textcolor{charliteral}{'\ '},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ]);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$previousException\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$interval\ =\ parent::createFromDateString(\$string);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (Throwable\ \$exception)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$interval\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$previousException\ =\ \$exception;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$interval\ ?:\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ InvalidFormatException(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Could\ not\ create\ interval\ from:\ '}.var\_export(\$datetime,\ \textcolor{keyword}{true}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ previous:\ \$previousException,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!(\$interval\ instanceof\ \textcolor{keyword}{static}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$interval\ =\ static::instance(\$interval);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self::withOriginal(\$interval,\ \$datetime);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \textcolor{keyword}{get}(Unit|\textcolor{keywordtype}{string}\ \$name):\ int|float|string|null}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$name\ =\ Unit::toName(\$name);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (str\_starts\_with(\$name,\ \textcolor{stringliteral}{'total'}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>total(substr(\$name,\ 5));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$resolvedUnit\ =\ Carbon::singularUnit(rtrim(\$name,\ \textcolor{charliteral}{'z'}));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ match\ (\$resolvedUnit)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'tzname'},\ \textcolor{stringliteral}{'tz\_name'}\ =>\ match\ (\textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\$this-\/>timezoneSetting\ ===\ \textcolor{keyword}{null})\ =>\ \textcolor{keyword}{null},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)is\_string(\$this-\/>timezoneSetting)\ =>\ \$this-\/>timezoneSetting,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\$this-\/>timezoneSetting\ instanceof\ DateTimeZone)\ =>\ \$this-\/>timezoneSetting-\/>getName(),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}\ =>\ CarbonTimeZone::instance(\$this-\/>timezoneSetting)-\/>getName(),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'year'}\ =>\ \$this-\/>y,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'month'}\ =>\ \$this-\/>m,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'day'}\ =>\ \$this-\/>d,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'hour'}\ =>\ \$this-\/>h,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'minute'}\ =>\ \$this-\/>i,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'second'}\ =>\ \$this-\/>s,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'milli'},\ \textcolor{stringliteral}{'millisecond'}\ =>\ (int)\ (\mbox{\hyperlink{namespace_carbon_1_1_traits_a6d476188a9de4ba1dcbc6cb2a9e8d2cf}{round}}(\$this-\/>f\ *\ Carbon::MICROSECONDS\_PER\_SECOND)\ /}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Carbon::MICROSECONDS\_PER\_MILLISECOND),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'micro'},\ \textcolor{stringliteral}{'microsecond'}\ =>\ (int)\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a6d476188a9de4ba1dcbc6cb2a9e8d2cf}{round}}(\$this-\/>f\ *\ Carbon::MICROSECONDS\_PER\_SECOND),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'microexcludemilli'}\ =>\ (int)\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a6d476188a9de4ba1dcbc6cb2a9e8d2cf}{round}}(\$this-\/>f\ *\ Carbon::MICROSECONDS\_PER\_SECOND)\ \%}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Carbon::MICROSECONDS\_PER\_MILLISECOND,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'week'}\ =>\ (int)\ (\$this-\/>d\ /\ (\textcolor{keywordtype}{int})\ static::getDaysPerWeek()),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'daysexcludeweek'},\ \textcolor{stringliteral}{'dayzexcludeweek'}\ =>\ \$this-\/>d\ \%\ (int)\ static::getDaysPerWeek(),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'locale'}\ =>\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_aa9a6dba9725d7fff717ed0f1e74e2e35}{getTranslatorLocale}}(),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}\ =>\ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ UnknownGetterException(\$name,\ previous:\ \textcolor{keyword}{new}\ UnknownGetterException(\$resolvedUnit)),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \_\_get(\textcolor{keywordtype}{string}\ \$name):\ int|float|string|null}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\textcolor{keyword}{get}(\$name);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \textcolor{keyword}{set}(\$name,\ \$value\ =\ \textcolor{keyword}{null}):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$properties\ =\ \(\backslash\)is\_array(\$name)\ ?\ \$name\ :\ [\$name\ =>\ \$value];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\$properties\ as\ \$key\ =>\ \$value)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (Carbon::singularUnit(\$key\ instanceof\ Unit\ ?\ \$key-\/>value\ :\ rtrim((\textcolor{keywordtype}{string})\ \$key,\ \textcolor{charliteral}{'z'})))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'year'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>checkIntegerValue(\$key,\ \$value);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>y\ =\ \$value;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>handleDecimalPart(\textcolor{stringliteral}{'year'},\ \$value,\ \$this-\/>y);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'month'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>checkIntegerValue(\$key,\ \$value);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>m\ =\ \$value;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>handleDecimalPart(\textcolor{stringliteral}{'month'},\ \$value,\ \$this-\/>m);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'week'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>checkIntegerValue(\$key,\ \$value);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$days\ =\ \$value\ *\ (int)\ static::getDaysPerWeek();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>assertSafeForInteger(\textcolor{stringliteral}{'days\ total\ (including\ weeks)'},\ \$days);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>d\ =\ \$days;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>handleDecimalPart(\textcolor{stringliteral}{'day'},\ \$days,\ \$this-\/>d);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'day'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$value\ ===\ \textcolor{keyword}{false})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>checkIntegerValue(\$key,\ \$value);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>d\ =\ \$value;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>handleDecimalPart(\textcolor{stringliteral}{'day'},\ \$value,\ \$this-\/>d);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'daysexcludeweek'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'dayzexcludeweek'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>checkIntegerValue(\$key,\ \$value);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$days\ =\ \$this-\/>weeks\ *\ (int)\ static::getDaysPerWeek()\ +\ \$value;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>assertSafeForInteger(\textcolor{stringliteral}{'days\ total\ (including\ weeks)'},\ \$days);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>d\ =\ \$days;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>handleDecimalPart(\textcolor{stringliteral}{'day'},\ \$days,\ \$this-\/>d);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'hour'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>checkIntegerValue(\$key,\ \$value);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>h\ =\ \$value;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>handleDecimalPart(\textcolor{stringliteral}{'hour'},\ \$value,\ \$this-\/>h);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'minute'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>checkIntegerValue(\$key,\ \$value);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>i\ =\ \$value;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>handleDecimalPart(\textcolor{stringliteral}{'minute'},\ \$value,\ \$this-\/>i);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'second'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>checkIntegerValue(\$key,\ \$value);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>s\ =\ \$value;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>handleDecimalPart(\textcolor{stringliteral}{'second'},\ \$value,\ \$this-\/>s);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'milli'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'millisecond'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>microseconds\ =\ \$value\ *\ Carbon::MICROSECONDS\_PER\_MILLISECOND\ +\ \$this-\/>microseconds\ \%\ Carbon::MICROSECONDS\_PER\_MILLISECOND;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'micro'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'microsecond'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>f\ =\ \$value\ /\ Carbon::MICROSECONDS\_PER\_SECOND;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (str\_starts\_with(\$key,\ \textcolor{stringliteral}{'\ *\ '}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>setSetting(substr(\$key,\ 3),\ \$value);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$this-\/>localStrictModeEnabled\ ??\ Carbon::isStrictModeEnabled())\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ UnknownSetterException(\$key);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>\$key\ =\ \$value;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_add25931beb5bb692ff35c29f4f4d435c}{\_\_set}}(\textcolor{keywordtype}{string}\ \$name,\ \$value)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>\textcolor{keyword}{set}(\$name,\ \$value);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ weeksAndDays(\textcolor{keywordtype}{int}\ \$weeks,\ \textcolor{keywordtype}{int}\ \$days):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>dayz\ =\ (\$weeks\ *\ static::getDaysPerWeek())\ +\ \$days;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ isEmpty():\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>years\ ===\ 0\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>months\ ===\ 0\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>dayz\ ===\ 0\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ !\$this-\/>days\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>hours\ ===\ 0\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>minutes\ ===\ 0\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>seconds\ ===\ 0\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>microseconds\ ===\ 0;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ macro(\textcolor{keywordtype}{string}\ \$name,\ ?callable\ \$macro):\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ static::\$macros[\$name]\ =\ \$macro;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ mixin(\$mixin):\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ static::baseMixin(\$mixin);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ hasMacro(\textcolor{keywordtype}{string}\ \$name):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ isset(static::\$macros[\$name]);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{function}\ callMacro(\textcolor{keywordtype}{string}\ \$name,\ array\ \$parameters)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$macro\ =\ static::\$macros[\$name];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$macro\ instanceof\ Closure)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$boundMacro\ =\ @\$macro-\/>bindTo(\$this,\ static::class)\ ?:\ @\$macro-\/>bindTo(\textcolor{keyword}{null},\ static::class);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\$boundMacro\ ?:\ \$macro)(...\$parameters);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$macro(...\$parameters);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \_\_call(\textcolor{keywordtype}{string}\ \$method,\ array\ \$parameters)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (static::hasMacro(\$method))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ static::bindMacroContext(\$this,\ \textcolor{keyword}{function}\ ()\ use\ (\&\$method,\ \&\$parameters)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>callMacro(\$method,\ \$parameters);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$roundedValue\ =\ \$this-\/>callRoundMethod(\$method,\ \$parameters);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$roundedValue\ !==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$roundedValue;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (preg\_match(\textcolor{stringliteral}{'/\string^(?<method>add|sub)(?<unit>[A-\/Z].*)\$/'},\ \$method,\ \$match))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$value\ =\ \$this-\/>getMagicParameter(\$parameters,\ 0,\ Carbon::pluralUnit(\$match[\textcolor{stringliteral}{'unit'}]),\ 0);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\{\$match[\textcolor{stringliteral}{'method'}]\}(\$value,\ \$match[\textcolor{stringliteral}{'unit'}]);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$value\ =\ \$this-\/>getMagicParameter(\$parameters,\ 0,\ Carbon::pluralUnit(\$method),\ 1);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>\textcolor{keyword}{set}(\$method,\ \$value);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (UnknownSetterException\ \$exception)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$this-\/>localStrictModeEnabled\ ??\ Carbon::isStrictModeEnabled())\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ BadFluentSetterException(\$method,\ 0,\ \$exception);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{function}\ getForHumansInitialVariables(\$syntax,\ \$short):\ array}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)is\_array(\$syntax))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$syntax;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)is\_int(\$short))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'parts'}\ =>\ \$short,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'short'}\ =>\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)is\_bool(\$syntax))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'short'}\ =>\ \$syntax,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'syntax'}\ =>\ CarbonInterface::DIFF\_ABSOLUTE,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ [];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{function}\ getForHumansParameters(\$syntax\ =\ \textcolor{keyword}{null},\ \$short\ =\ \textcolor{keyword}{false},\ \$parts\ =\ self::NO\_LIMIT,\ \$options\ =\ \textcolor{keyword}{null}):\ array}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$optionalSpace\ =\ \textcolor{charliteral}{'\ '};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$default\ =\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a960393d0c7451390eb94e4d3d3780332}{getTranslationMessage}}(\textcolor{stringliteral}{'list.0'})\ ??\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a960393d0c7451390eb94e4d3d3780332}{getTranslationMessage}}(\textcolor{stringliteral}{'list'})\ ??\ \textcolor{charliteral}{'\ '};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$join\ =\ \$default\ ===\ \textcolor{stringliteral}{''}\ ?\ \textcolor{stringliteral}{''}\ :\ \textcolor{charliteral}{'\ '};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$altNumbers\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$aUnit\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$minimumUnit\ =\ \textcolor{charliteral}{'s'};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$skip\ =\ [];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ extract(\$this-\/>getForHumansInitialVariables(\$syntax,\ \$short));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$skip\ =\ array\_map(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ fn\ (\$unit)\ =>\ \$unit\ instanceof\ Unit\ ?\ \$unit-\/>value\ :\ \$unit,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (array)\ \$skip,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$skip\ =\ array\_map(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'strtolower'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ array\_filter(\$skip,\ \textcolor{keyword}{static}\ fn\ (\$unit)\ =>\ \(\backslash\)is\_string(\$unit)\ \&\&\ \$unit\ !==\ \textcolor{stringliteral}{''}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$syntax\ ??=\ CarbonInterface::DIFF\_ABSOLUTE;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$parts\ ===\ self::NO\_LIMIT)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$parts\ =\ INF;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$options\ ??=\ static::getHumanDiffOptions();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$join\ ===\ \textcolor{keyword}{false})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$join\ =\ \textcolor{charliteral}{'\ '};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ elseif\ (\$join\ ===\ \textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$join\ =\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$default,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a960393d0c7451390eb94e4d3d3780332}{getTranslationMessage}}(\textcolor{stringliteral}{'list.1'})\ ??\ \$default,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$altNumbers\ \&\&\ \$altNumbers\ !==\ \textcolor{keyword}{true})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$language\ =\ \textcolor{keyword}{new}\ Language(\$this-\/>locale);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$altNumbers\ =\ \(\backslash\)in\_array(\$language-\/>getCode(),\ (array)\ \$altNumbers,\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)is\_array(\$join))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ [\$default,\ \$last]\ =\ \$join;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$default\ !==\ \textcolor{charliteral}{'\ '})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$optionalSpace\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$join\ =\ \textcolor{keyword}{function}\ (\$list)\ use\ (\$default,\ \$last)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)count(\$list)\ <\ 2)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ implode(\textcolor{stringliteral}{''},\ \$list);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$end\ =\ array\_pop(\$list);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ implode(\$default,\ \$list).\$last.\$end;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)is\_string(\$join))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$join\ !==\ \textcolor{charliteral}{'\ '})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$optionalSpace\ =\ \textcolor{stringliteral}{''};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$glue\ =\ \$join;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$join\ =\ \textcolor{keyword}{static}\ fn\ (\$list)\ =>\ implode(\$glue,\ \$list);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$interpolations\ =\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{':optional-\/space'}\ =>\ \$optionalSpace,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$translator\ ??=\ isset(\$locale)\ ?\ Translator::get(\$locale)\ :\ null;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ [\$syntax,\ \$short,\ \$parts,\ \$options,\ \$join,\ \$aUnit,\ \$altNumbers,\ \$interpolations,\ \$minimumUnit,\ \$skip,\ \$translator];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getRoundingMethodFromOptions(\textcolor{keywordtype}{int}\ \$options):\ ?string}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$options\ \&\ CarbonInterface::ROUND)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{'round'};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$options\ \&\ CarbonInterface::CEIL)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{'ceil'};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$options\ \&\ CarbonInterface::FLOOR)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{'floor'};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ toArray():\ array}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'years'}\ =>\ \$this-\/>years,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'months'}\ =>\ \$this-\/>months,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'weeks'}\ =>\ \$this-\/>weeks,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'days'}\ =>\ \$this-\/>daysExcludeWeeks,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'hours'}\ =>\ \$this-\/>hours,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'minutes'}\ =>\ \$this-\/>minutes,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'seconds'}\ =>\ \$this-\/>seconds,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'microseconds'}\ =>\ \$this-\/>microseconds,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ getNonZeroValues():\ array}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ array\_filter(\$this-\/>toArray(),\ \textcolor{stringliteral}{'intval'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ getValuesSequence():\ array}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$nonZeroValues\ =\ \$this-\/>getNonZeroValues();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$nonZeroValues\ ===\ [])\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ [];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$keys\ =\ array\_keys(\$nonZeroValues);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$firstKey\ =\ \$keys[0];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$lastKey\ =\ \$keys[\(\backslash\)count(\$keys)\ -\/\ 1];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$values\ =\ [];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$record\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\$this-\/>toArray()\ as\ \$unit\ =>\ \$count)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$unit\ ===\ \$firstKey)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$record\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$record)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$values[\$unit]\ =\ \$count;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$unit\ ===\ \$lastKey)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$record\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$values;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ forHumans(\$syntax\ =\ \textcolor{keyword}{null},\ \$short\ =\ \textcolor{keyword}{false},\ \$parts\ =\ self::NO\_LIMIT,\ \$options\ =\ \textcolor{keyword}{null}):\ string}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{/*\ @var\ TranslatorInterface|null\ \$translator\ */}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ [\$syntax,\ \$short,\ \$parts,\ \$options,\ \$join,\ \$aUnit,\ \$altNumbers,\ \$interpolations,\ \$minimumUnit,\ \$skip,\ \$translator]\ =\ \$this}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ -\/>getForHumansParameters(\$syntax,\ \$short,\ \$parts,\ \$options);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$interval\ =\ [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$syntax\ =\ (int)\ (\$syntax\ ??\ CarbonInterface::DIFF\_ABSOLUTE);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$absolute\ =\ \$syntax\ ===\ CarbonInterface::DIFF\_ABSOLUTE;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$relativeToNow\ =\ \$syntax\ ===\ CarbonInterface::DIFF\_RELATIVE\_TO\_NOW;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$count\ =\ 1;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$unit\ =\ \$short\ ?\ \textcolor{charliteral}{'s'}\ :\ \textcolor{stringliteral}{'second'};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$isFuture\ =\ \$this-\/>invert\ ===\ 1;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$transId\ =\ \$relativeToNow\ ?\ (\$isFuture\ ?\ \textcolor{stringliteral}{'from\_now'}\ :\ \textcolor{stringliteral}{'ago'})\ :\ (\$isFuture\ ?\ \textcolor{stringliteral}{'after'}\ :\ \textcolor{stringliteral}{'before'});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$declensionMode\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$translator\ ??=\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_aa12f700d2aaab71a826ed731560f391f}{getLocalTranslator}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$handleDeclensions\ =\ \textcolor{keyword}{function}\ (\$unit,\ \$count,\ \$index\ =\ 0,\ \$parts\ =\ 1)\ use\ (\$interpolations,\ \$transId,\ \$translator,\ \$altNumbers,\ \$absolute,\ \&\$declensionMode)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\$absolute)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$declensionMode\ =\ \$declensionMode\ ??\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_adefd89ba8c8dbc7e2adc2b3ff4c067fa}{translate}}(\$transId.\textcolor{stringliteral}{'\_mode'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$this-\/>needsDeclension(\$declensionMode,\ \$index,\ \$parts))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Some\ languages\ have\ special\ pluralization\ for\ past\ and\ future\ tense.}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$key\ =\ \$unit.\textcolor{charliteral}{'\_'}.\$transId;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$result\ =\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_adefd89ba8c8dbc7e2adc2b3ff4c067fa}{translate}}(\$key,\ \$interpolations,\ \$count,\ \$translator,\ \$altNumbers);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$result\ !==\ \$key)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$result;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$result\ =\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_adefd89ba8c8dbc7e2adc2b3ff4c067fa}{translate}}(\$unit,\ \$interpolations,\ \$count,\ \$translator,\ \$altNumbers);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$result\ !==\ \$unit)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$result;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$intervalValues\ =\ \$this;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$method\ =\ static::getRoundingMethodFromOptions(\$options);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$method)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$previousCount\ =\ INF;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)count(\$intervalValues-\/>getNonZeroValues())\ >\ \$parts\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\$count\ =\ \(\backslash\)count(\$keys\ =\ array\_keys(\$intervalValues-\/>getValuesSequence())))\ >\ 1}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ )\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$index\ =\ min(\$count,\ \$previousCount\ -\/\ 1)\ -\/\ 2;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$index\ <\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$intervalValues\ =\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_abcabadb9d4fc0e4fa30f654d839b925e}{copy}}()-\/>roundUnit(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$keys[\$index],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$method,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$previousCount\ =\ \$count;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$diffIntervalArray\ =\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{'value'}\ =>\ \$intervalValues-\/>years,\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'unit'}\ =>\ \textcolor{stringliteral}{'year'},\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'unitShort'}\ =>\ \textcolor{charliteral}{'y'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{'value'}\ =>\ \$intervalValues-\/>months,\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'unit'}\ =>\ \textcolor{stringliteral}{'month'},\ \ \ \ \ \ \ \textcolor{stringliteral}{'unitShort'}\ =>\ \textcolor{charliteral}{'m'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{'value'}\ =>\ \$intervalValues-\/>weeks,\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'unit'}\ =>\ \textcolor{stringliteral}{'week'},\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'unitShort'}\ =>\ \textcolor{charliteral}{'w'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{'value'}\ =>\ \$intervalValues-\/>daysExcludeWeeks,\ \ \textcolor{stringliteral}{'unit'}\ =>\ \textcolor{stringliteral}{'day'},\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'unitShort'}\ =>\ \textcolor{charliteral}{'d'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{'value'}\ =>\ \$intervalValues-\/>hours,\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'unit'}\ =>\ \textcolor{stringliteral}{'hour'},\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'unitShort'}\ =>\ \textcolor{charliteral}{'h'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{'value'}\ =>\ \$intervalValues-\/>minutes,\ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'unit'}\ =>\ \textcolor{stringliteral}{'minute'},\ \ \ \ \ \ \textcolor{stringliteral}{'unitShort'}\ =>\ \textcolor{stringliteral}{'min'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{'value'}\ =>\ \$intervalValues-\/>seconds,\ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'unit'}\ =>\ \textcolor{stringliteral}{'second'},\ \ \ \ \ \ \textcolor{stringliteral}{'unitShort'}\ =>\ \textcolor{charliteral}{'s'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{'value'}\ =>\ \$intervalValues-\/>milliseconds,\ \ \ \ \ \ \textcolor{stringliteral}{'unit'}\ =>\ \textcolor{stringliteral}{'millisecond'},\ \textcolor{stringliteral}{'unitShort'}\ =>\ \textcolor{stringliteral}{'ms'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ [\textcolor{stringliteral}{'value'}\ =>\ \$intervalValues-\/>microExcludeMilli,\ \textcolor{stringliteral}{'unit'}\ =>\ \textcolor{stringliteral}{'microsecond'},\ \textcolor{stringliteral}{'unitShort'}\ =>\ \textcolor{stringliteral}{'µs'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!empty(\$skip))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\$diffIntervalArray\ as\ \$index\ =>\ \&\$unitData)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$nextIndex\ =\ \$index\ +\ 1;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$unitData[\textcolor{stringliteral}{'value'}]\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ isset(\$diffIntervalArray[\$nextIndex])\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)count(array\_intersect([\$unitData[\textcolor{stringliteral}{'unit'}],\ \$unitData[\textcolor{stringliteral}{'unit'}].\textcolor{charliteral}{'s'},\ \$unitData[\textcolor{stringliteral}{'unitShort'}]],\ \$skip))}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$diffIntervalArray[\$nextIndex][\textcolor{stringliteral}{'value'}]\ +=\ \$unitData[\textcolor{stringliteral}{'value'}]\ *}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ self::getFactorWithDefault(\$diffIntervalArray[\$nextIndex][\textcolor{stringliteral}{'unit'}],\ \$unitData[\textcolor{stringliteral}{'unit'}]);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$unitData[\textcolor{stringliteral}{'value'}]\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$transChoice\ =\ \textcolor{keyword}{function}\ (\$short,\ \$unitData,\ \$index,\ \$parts)\ use\ (\$absolute,\ \$handleDeclensions,\ \$translator,\ \$aUnit,\ \$altNumbers,\ \$interpolations)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$count\ =\ \$unitData[\textcolor{stringliteral}{'value'}];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$short)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$result\ =\ \$handleDeclensions(\$unitData[\textcolor{stringliteral}{'unitShort'}],\ \$count,\ \$index,\ \$parts);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$result\ !==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$result;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}\ elseif\ (\$aUnit)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$result\ =\ \$handleDeclensions(\textcolor{stringliteral}{'a\_'}.\$unitData[\textcolor{stringliteral}{'unit'}],\ \$count,\ \$index,\ \$parts);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$result\ !==\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$result;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\$absolute)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$handleDeclensions(\$unitData[\textcolor{stringliteral}{'unit'}],\ \$count,\ \$index,\ \$parts);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_adefd89ba8c8dbc7e2adc2b3ff4c067fa}{translate}}(\$unitData[\textcolor{stringliteral}{'unit'}],\ \$interpolations,\ \$count,\ \$translator,\ \$altNumbers);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$fallbackUnit\ =\ [\textcolor{stringliteral}{'second'},\ \textcolor{charliteral}{'s'}];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\$diffIntervalArray\ as\ \$diffIntervalData)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$diffIntervalData[\textcolor{stringliteral}{'value'}]\ >\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$unit\ =\ \$short\ ?\ \$diffIntervalData[\textcolor{stringliteral}{'unitShort'}]\ :\ \$diffIntervalData[\textcolor{stringliteral}{'unit'}];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$count\ =\ \$diffIntervalData[\textcolor{stringliteral}{'value'}];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$interval[]\ =\ [\$short,\ \$diffIntervalData];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}\ elseif\ (\$options\ \&\ CarbonInterface::SEQUENTIAL\_PARTS\_ONLY\ \&\&\ \(\backslash\)count(\$interval)\ >\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ break\ the\ loop\ after\ we\ get\ the\ required\ number\ of\ parts\ in\ array}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)count(\$interval)\ >=\ \$parts)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ break\ the\ loop\ after\ we\ have\ reached\ the\ minimum\ unit}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)in\_array(\$minimumUnit,\ [\$diffIntervalData[\textcolor{stringliteral}{'unit'}],\ \$diffIntervalData[\textcolor{stringliteral}{'unitShort'}]],\ \textcolor{keyword}{true}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$fallbackUnit\ =\ [\$diffIntervalData[\textcolor{stringliteral}{'unit'}],\ \$diffIntervalData[\textcolor{stringliteral}{'unitShort'}]];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$actualParts\ =\ \(\backslash\)count(\$interval);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\$interval\ as\ \$index\ =>\ \&\$item)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$item\ =\ \$transChoice(\$item[0],\ \$item[1],\ \$index,\ \$actualParts);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)count(\$interval)\ ===\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$relativeToNow\ \&\&\ \$options\ \&\ CarbonInterface::JUST\_NOW)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$key\ =\ \textcolor{stringliteral}{'diff\_now'};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$translation\ =\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_adefd89ba8c8dbc7e2adc2b3ff4c067fa}{translate}}(\$key,\ \$interpolations,\ \textcolor{keyword}{null},\ \$translator);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$translation\ !==\ \$key)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$translation;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$count\ =\ \$options\ \&\ CarbonInterface::NO\_ZERO\_DIFF\ ?\ 1\ :\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$unit\ =\ \$fallbackUnit[\$short\ ?\ 1\ :\ 0];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$interval[]\ =\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_adefd89ba8c8dbc7e2adc2b3ff4c067fa}{translate}}(\$unit,\ \$interpolations,\ \$count,\ \$translator,\ \$altNumbers);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ join\ the\ interval\ parts\ by\ a\ space}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$time\ =\ \$join(\$interval);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ unset(\$diffIntervalArray,\ \$interval);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$absolute)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$time;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$isFuture\ =\ \$this-\/>invert\ ===\ 1;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$transId\ =\ \$relativeToNow\ ?\ (\$isFuture\ ?\ \textcolor{stringliteral}{'from\_now'}\ :\ \textcolor{stringliteral}{'ago'})\ :\ (\$isFuture\ ?\ \textcolor{stringliteral}{'after'}\ :\ \textcolor{stringliteral}{'before'});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$parts\ ===\ 1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$relativeToNow\ \&\&\ \$unit\ ===\ \textcolor{stringliteral}{'day'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$specialTranslations\ =\ static::SPECIAL\_TRANSLATIONS[\$count]\ ??\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$specialTranslations\ \&\&\ \$options\ \&\ \$specialTranslations[\textcolor{stringliteral}{'option'}])\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$key\ =\ \$specialTranslations[\$isFuture\ ?\ \textcolor{stringliteral}{'future'}\ :\ \textcolor{stringliteral}{'past'}];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$translation\ =\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_adefd89ba8c8dbc7e2adc2b3ff4c067fa}{translate}}(\$key,\ \$interpolations,\ \textcolor{keyword}{null},\ \$translator);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$translation\ !==\ \$key)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$translation;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$aTime\ =\ \$aUnit\ ?\ \$handleDeclensions(\textcolor{stringliteral}{'a\_'}.\$unit,\ \$count)\ :\ null;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$time\ =\ \$aTime\ ?:\ \$handleDeclensions(\$unit,\ \$count)\ ?:\ \$time;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$time\ =\ [\textcolor{stringliteral}{':time'}\ =>\ \$time];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_adefd89ba8c8dbc7e2adc2b3ff4c067fa}{translate}}(\$transId,\ array\_merge(\$time,\ \$interpolations,\ \$time),\ \textcolor{keyword}{null},\ \$translator);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a1fd083e85282cb445be3106e6a1ea092}{format}}(\textcolor{keywordtype}{string}\ \$format):\ string}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$output\ =\ parent::format(\$format);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!str\_contains(\$format,\ \textcolor{stringliteral}{'\%a'})\ ||\ !isset(\$this-\/>startDate,\ \$this-\/>endDate))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$output;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>rawInterval\ ??=\ \$this-\/>startDate-\/>diffAsDateInterval(\$this-\/>endDate);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ str\_replace(\textcolor{stringliteral}{'(unknown)'},\ \$this-\/>rawInterval-\/>format(\textcolor{stringliteral}{'\%a'}),\ \$output);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \_\_toString():\ string}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$format\ =\ \$this-\/>localToStringFormat}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ??\ \$this-\/>getFactory()-\/>getSettings()[\textcolor{stringliteral}{'toStringFormat'}]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ??\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\$format)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>forHumans();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$format\ instanceof\ Closure)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$format(\$this);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a1fd083e85282cb445be3106e6a1ea092}{format}}(\$format);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ toDateInterval():\ DateInterval}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self::castIntervalToClass(\$this,\ DateInterval::class);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_aaeed6b95f2aaa8e16215f1deb4013e49}{toPeriod}}(...\$params):\ CarbonPeriod}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$this-\/>timezoneSetting)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$timeZone\ =\ \(\backslash\)is\_string(\$this-\/>timezoneSetting)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ?\ \textcolor{keyword}{new}\ DateTimeZone(\$this-\/>timezoneSetting)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \$this-\/>timezoneSetting;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$timeZone\ instanceof\ DateTimeZone)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ array\_unshift(\$params,\ \$timeZone);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$class\ =\ (\$params[0]\ ??\ \textcolor{keyword}{null})\ instanceof\ DateTime\ ?\ CarbonPeriod::class\ :\ CarbonPeriodImmutable::class;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$class::create(\$this,\ ...\$params);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ stepBy(\$interval,\ Unit|\textcolor{keywordtype}{string}|\textcolor{keyword}{null}\ \$unit\ =\ \textcolor{keyword}{null}):\ CarbonPeriod}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>checkStartAndEnd();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$start\ =\ \$this-\/>startDate\ ??\ CarbonImmutable::make(\textcolor{stringliteral}{'now'});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$end\ =\ \$this-\/>endDate\ ??\ \$start-\/>copy()-\/>add(\$this);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$step\ =\ static::make(\$interval,\ \$unit);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (InvalidFormatException\ \$exception)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$unit\ ||\ (\(\backslash\)is\_string(\$interval)\ ?\ preg\_match(\textcolor{stringliteral}{'/(\(\backslash\)s|\(\backslash\)d)/'},\ \$interval)\ :\ !(\$interval\ instanceof\ Unit)))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \$exception;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$step\ =\ static::make(1,\ \$interval);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$class\ =\ \$start\ instanceof\ DateTime\ ?\ CarbonPeriod::class\ :\ CarbonPeriodImmutable::class;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$class::create(\$step,\ \$start,\ \$end);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ invert(\$inverted\ =\ \textcolor{keyword}{null}):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>invert\ =\ (\(\backslash\)func\_num\_args()\ ===\ 0\ ?\ !\$this-\/>invert\ :\ \$inverted)\ ?\ 1\ :\ 0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{function}\ solveNegativeInterval():\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\$this-\/>isEmpty()\ \&\&\ \$this-\/>years\ <=\ 0\ \&\&\ \$this-\/>months\ <=\ 0\ \&\&\ \$this-\/>dayz\ <=\ 0\ \&\&\ \$this-\/>hours\ <=\ 0\ \&\&\ \$this-\/>minutes\ <=\ 0\ \&\&\ \$this-\/>seconds\ <=\ 0\ \&\&\ \$this-\/>microseconds\ <=\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>years\ *=\ self::NEGATIVE;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>months\ *=\ self::NEGATIVE;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>dayz\ *=\ self::NEGATIVE;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>hours\ *=\ self::NEGATIVE;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>minutes\ *=\ self::NEGATIVE;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>seconds\ *=\ self::NEGATIVE;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>microseconds\ *=\ self::NEGATIVE;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>invert();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ add(\$unit,\ \$value\ =\ 1):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (is\_numeric(\$unit))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ [\$value,\ \$unit]\ =\ [\$unit,\ \$value];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)is\_string(\$unit)\ \&\&\ !preg\_match(\textcolor{stringliteral}{'/\string^\(\backslash\)s*-\/?\(\backslash\)d/'},\ \$unit))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$unit\ =\ \textcolor{stringliteral}{"{}\$value\ \$unit"{}};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$value\ =\ 1;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$interval\ =\ static::make(\$unit);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\$interval)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ InvalidIntervalException(\textcolor{stringliteral}{'This\ type\ of\ data\ cannot\ be\ added/subtracted.'});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$value\ !==\ 1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$interval-\/>times(\$value);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$sign\ =\ (\$this-\/>invert\ ===\ 1)\ !==\ (\$interval-\/>invert\ ===\ 1)\ ?\ self::NEGATIVE\ :\ self::POSITIVE;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>years\ +=\ \$interval-\/>y\ *\ \$sign;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>months\ +=\ \$interval-\/>m\ *\ \$sign;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>dayz\ +=\ (\$interval-\/>days\ ===\ \textcolor{keyword}{false}\ ?\ \$interval-\/>d\ :\ \$interval-\/>days)\ *\ \$sign;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>hours\ +=\ \$interval-\/>h\ *\ \$sign;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>minutes\ +=\ \$interval-\/>i\ *\ \$sign;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>seconds\ +=\ \$interval-\/>s\ *\ \$sign;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>microseconds\ +=\ \$interval-\/>microseconds\ *\ \$sign;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>solveNegativeInterval();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ sub(\$unit,\ \$value\ =\ 1):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (is\_numeric(\$unit))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ [\$value,\ \$unit]\ =\ [\$unit,\ \$value];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>add(\$unit,\ -\/(\textcolor{keywordtype}{float})\ \$value);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ subtract(\$unit,\ \$value\ =\ 1):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>sub(\$unit,\ \$value);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ plus(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$years\ =\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$months\ =\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$weeks\ =\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$days\ =\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$hours\ =\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$minutes\ =\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$seconds\ =\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$microseconds\ =\ 0}
+\DoxyCodeLine{\ \ \ \ ):\ static\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ return\ \$this-\/>add(\textcolor{stringliteral}{"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \$years\ years\ \$months\ months\ \$weeks\ weeks\ \$days\ days}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \$hours\ hours\ \$minutes\ minutes\ \$seconds\ seconds\ \$microseconds\ microseconds}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ minus(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$years\ =\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$months\ =\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$weeks\ =\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$days\ =\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$hours\ =\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$minutes\ =\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$seconds\ =\ 0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$microseconds\ =\ 0}
+\DoxyCodeLine{\ \ \ \ ):\ static\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ return\ \$this-\/>sub(\textcolor{stringliteral}{"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \$years\ years\ \$months\ months\ \$weeks\ weeks\ \$days\ days}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \$hours\ hours\ \$minutes\ minutes\ \$seconds\ seconds\ \$microseconds\ microseconds}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ "{}});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ times(\$factor):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$factor\ <\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>invert\ =\ \$this-\/>invert\ ?\ 0\ :\ 1;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$factor\ =\ -\/\$factor;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>years\ =\ (int)\ round(\$this-\/>years\ *\ \$factor);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>months\ =\ (int)\ round(\$this-\/>months\ *\ \$factor);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>dayz\ =\ (int)\ round(\$this-\/>dayz\ *\ \$factor);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>hours\ =\ (int)\ round(\$this-\/>hours\ *\ \$factor);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>minutes\ =\ (int)\ round(\$this-\/>minutes\ *\ \$factor);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>seconds\ =\ (int)\ round(\$this-\/>seconds\ *\ \$factor);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>microseconds\ =\ (int)\ round(\$this-\/>microseconds\ *\ \$factor);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ shares(\$divider):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>times(1\ /\ \$divider);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{function}\ copyProperties(\textcolor{keyword}{self}\ \$interval,\ \$ignoreSign\ =\ \textcolor{keyword}{false}):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>years\ =\ \$interval-\/>years;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>months\ =\ \$interval-\/>months;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>dayz\ =\ \$interval-\/>dayz;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>hours\ =\ \$interval-\/>hours;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>minutes\ =\ \$interval-\/>minutes;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>seconds\ =\ \$interval-\/>seconds;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>microseconds\ =\ \$interval-\/>microseconds;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\$ignoreSign)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>invert\ =\ \$interval-\/>invert;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ multiply(\$factor):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$factor\ <\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>invert\ =\ \$this-\/>invert\ ?\ 0\ :\ 1;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$factor\ =\ -\/\$factor;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$yearPart\ =\ (int)\ floor(\$this-\/>years\ *\ \$factor);\ \textcolor{comment}{//\ Split\ calculation\ to\ prevent\ imprecision}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$yearPart)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>years\ -\/=\ \$yearPart\ /\ \$factor;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>copyProperties(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ static::create(\$yearPart)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>microseconds(abs(\$this-\/>totalMicroseconds)\ *\ \$factor)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>cascade(),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ divide(\$divider):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>multiply(1\ /\ \$divider);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getDateIntervalSpec(DateInterval\ \$interval,\ \textcolor{keywordtype}{bool}\ \$microseconds\ =\ \textcolor{keyword}{false},\ array\ \$skip\ =\ []):\ string}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$date\ =\ array\_filter([}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ static::PERIOD\_YEARS\ =>\ abs(\$interval-\/>y),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ static::PERIOD\_MONTHS\ =>\ abs(\$interval-\/>m),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ static::PERIOD\_DAYS\ =>\ abs(\$interval-\/>d),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$skip\ =\ array\_map([Unit::class,\ \textcolor{stringliteral}{'toNameIfUnit'}],\ \$skip);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$interval-\/>days\ >=\ CarbonInterface::DAYS\_PER\_WEEK\ *\ CarbonInterface::WEEKS\_PER\_MONTH\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (!isset(\$date[static::PERIOD\_YEARS])\ ||\ \(\backslash\)count(array\_intersect([\textcolor{charliteral}{'y'},\ \textcolor{stringliteral}{'year'},\ \textcolor{stringliteral}{'years'}],\ \$skip)))\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (!isset(\$date[static::PERIOD\_MONTHS])\ ||\ \(\backslash\)count(array\_intersect([\textcolor{charliteral}{'m'},\ \textcolor{stringliteral}{'month'},\ \textcolor{stringliteral}{'months'}],\ \$skip)))}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$date\ =\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ static::PERIOD\_DAYS\ =>\ abs(\$interval-\/>days),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$seconds\ =\ abs(\$interval-\/>s);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$microseconds\ \&\&\ \$interval-\/>f\ >\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$seconds\ =\ \(\backslash\)sprintf(\textcolor{stringliteral}{'\%d.\%06d'},\ \$seconds,\ abs(\$interval-\/>f)\ *\ 1000000);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$time\ =\ array\_filter([}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ static::PERIOD\_HOURS\ =>\ abs(\$interval-\/>h),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ static::PERIOD\_MINUTES\ =>\ abs(\$interval-\/>i),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ static::PERIOD\_SECONDS\ =>\ \$seconds,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$specString\ =\ static::PERIOD\_PREFIX;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\$date\ as\ \$key\ =>\ \$value)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$specString\ .=\ \$value.\$key;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)count(\$time)\ >\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$specString\ .=\ static::PERIOD\_TIME\_PREFIX;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\$time\ as\ \$key\ =>\ \$value)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$specString\ .=\ \$value.\$key;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$specString\ ===\ static::PERIOD\_PREFIX\ ?\ \textcolor{stringliteral}{'PT0S'}\ :\ \$specString;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ spec(\textcolor{keywordtype}{bool}\ \$microseconds\ =\ \textcolor{keyword}{false}):\ string}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ static::getDateIntervalSpec(\$this,\ \$microseconds);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ compareDateIntervals(DateInterval\ \$first,\ DateInterval\ \$second):\ int}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$current\ =\ \mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a9ec1aeae2b196df5cd267723b862b3a7}{Carbon::now}}();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$passed\ =\ \$current-\/>avoidMutation()-\/>add(\$second);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$current-\/>add(\$first);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$current\ <=>\ \$passed;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ compare(DateInterval\ \$interval):\ int}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ static::compareDateIntervals(\$this,\ \$interval);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ cascade():\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>doCascade(\textcolor{keyword}{false});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ hasNegativeValues():\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\$this-\/>toArray()\ as\ \$value)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$value\ <\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ hasPositiveValues():\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\$this-\/>toArray()\ as\ \$value)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$value\ >\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ total(\textcolor{keywordtype}{string}\ \$unit):\ float}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$realUnit\ =\ \$unit\ =\ strtolower(\$unit);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)in\_array(\$unit,\ [\textcolor{stringliteral}{'days'},\ \textcolor{stringliteral}{'weeks'}]))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$realUnit\ =\ \textcolor{stringliteral}{'dayz'};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ elseif\ (!\(\backslash\)in\_array(\$unit,\ [\textcolor{stringliteral}{'microseconds'},\ \textcolor{stringliteral}{'milliseconds'},\ \textcolor{stringliteral}{'seconds'},\ \textcolor{stringliteral}{'minutes'},\ \textcolor{stringliteral}{'hours'},\ \textcolor{stringliteral}{'dayz'},\ \textcolor{stringliteral}{'months'},\ \textcolor{stringliteral}{'years'}]))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ UnknownUnitException(\$unit);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>checkStartAndEnd();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$this-\/>startDate\ \&\&\ \$this-\/>endDate)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$diff\ =\ \$this-\/>startDate-\/>diffInUnit(\$unit,\ \$this-\/>endDate);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>absolute\ ?\ abs(\$diff)\ :\ \$diff;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$result\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$cumulativeFactor\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$unitFound\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$factors\ =\ self::getFlipCascadeFactors();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$daysPerWeek\ =\ (int)\ static::getDaysPerWeek();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$values\ =\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'years'}\ =>\ \$this-\/>years,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'months'}\ =>\ \$this-\/>months,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'weeks'}\ =>\ (int)\ (\$this-\/>d\ /\ \$daysPerWeek),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'dayz'}\ =>\ fmod(\$this-\/>d,\ \$daysPerWeek),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'hours'}\ =>\ \$this-\/>hours,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'minutes'}\ =>\ \$this-\/>minutes,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'seconds'}\ =>\ \$this-\/>seconds,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'milliseconds'}\ =>\ (int)\ (\$this-\/>microseconds\ /\ Carbon::MICROSECONDS\_PER\_MILLISECOND),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'microseconds'}\ =>\ \$this-\/>microseconds\ \%\ Carbon::MICROSECONDS\_PER\_MILLISECOND,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (isset(\$factors[\textcolor{stringliteral}{'dayz'}])\ \&\&\ \$factors[\textcolor{stringliteral}{'dayz'}][0]\ !==\ \textcolor{stringliteral}{'weeks'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$values[\textcolor{stringliteral}{'dayz'}]\ +=\ \$values[\textcolor{stringliteral}{'weeks'}]\ *\ \$daysPerWeek;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$values[\textcolor{stringliteral}{'weeks'}]\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\$factors\ as\ \$source\ =>\ [\$target,\ \$factor])\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$source\ ===\ \$realUnit)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$unitFound\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$value\ =\ \$values[\$source];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$result\ +=\ \$value;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$cumulativeFactor\ =\ 1;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$factor\ ===\ \textcolor{keyword}{false})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$unitFound)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$result\ =\ 0;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$cumulativeFactor\ =\ 0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$target\ ===\ \$realUnit)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$unitFound\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$cumulativeFactor)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$cumulativeFactor\ *=\ \$factor;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$result\ +=\ \$values[\$target]\ *\ \$cumulativeFactor;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$value\ =\ \$values[\$source];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$result\ =\ (\$result\ +\ \$value)\ /\ \$factor;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (isset(\$target)\ \&\&\ !\$cumulativeFactor)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$result\ +=\ \$values[\$target];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\$unitFound)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ UnitNotConfiguredException(\$unit);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$this-\/>invert)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$result\ *=\ self::NEGATIVE;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$unit\ ===\ \textcolor{stringliteral}{'weeks'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$result\ /=\ \$daysPerWeek;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ Cast\ as\ int\ numbers\ with\ no\ decimal\ part}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ fmod(\$result,\ 1)\ ===\ 0.0\ ?\ (int)\ \$result\ :\ \$result;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ eq(\$interval):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>equalTo(\$interval);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ equalTo(\$interval):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$interval\ =\ \$this-\/>resolveInterval(\$interval);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$interval\ ===\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$step\ =\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_adf4d6303a6d1fb99864edd717ad8e6ec}{getStep}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$step)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$step\ ===\ \$interval-\/>getStep();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$this-\/>isEmpty())\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$interval-\/>isEmpty();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$cascadedInterval\ =\ \$this-\/>copy()-\/>cascade();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$comparedInterval\ =\ \$interval-\/>copy()-\/>cascade();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$cascadedInterval-\/>invert\ ===\ \$comparedInterval-\/>invert\ \&\&}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$cascadedInterval-\/>getNonZeroValues()\ ===\ \$comparedInterval-\/>getNonZeroValues();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ ne(\$interval):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>notEqualTo(\$interval);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ notEqualTo(\$interval):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ !\$this-\/>eq(\$interval);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ gt(\$interval):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>greaterThan(\$interval);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ greaterThan(\$interval):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$interval\ =\ \$this-\/>resolveInterval(\$interval);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$interval\ ===\ \textcolor{keyword}{null}\ ||\ \$this-\/>totalMicroseconds\ >\ \$interval-\/>totalMicroseconds;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ gte(\$interval):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>greaterThanOrEqualTo(\$interval);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ greaterThanOrEqualTo(\$interval):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>greaterThan(\$interval)\ ||\ \$this-\/>equalTo(\$interval);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ lt(\$interval):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>lessThan(\$interval);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ lessThan(\$interval):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$interval\ =\ \$this-\/>resolveInterval(\$interval);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$interval\ !==\ \textcolor{keyword}{null}\ \&\&\ \$this-\/>totalMicroseconds\ <\ \$interval-\/>totalMicroseconds;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ lte(\$interval):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>lessThanOrEqualTo(\$interval);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ lessThanOrEqualTo(\$interval):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>lessThan(\$interval)\ ||\ \$this-\/>equalTo(\$interval);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ between(\$interval1,\ \$interval2,\ \textcolor{keywordtype}{bool}\ \$equal\ =\ \textcolor{keyword}{true}):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$equal}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ?\ \$this-\/>greaterThanOrEqualTo(\$interval1)\ \&\&\ \$this-\/>lessThanOrEqualTo(\$interval2)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ :\ \$this-\/>greaterThan(\$interval1)\ \&\&\ \$this-\/>lessThan(\$interval2);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ betweenIncluded(\$interval1,\ \$interval2):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>between(\$interval1,\ \$interval2,\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ betweenExcluded(\$interval1,\ \$interval2):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>between(\$interval1,\ \$interval2,\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ isBetween(\$interval1,\ \$interval2,\ \textcolor{keywordtype}{bool}\ \$equal\ =\ \textcolor{keyword}{true}):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>between(\$interval1,\ \$interval2,\ \$equal);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ roundUnit(\textcolor{keywordtype}{string}\ \$unit,\ DateInterval|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{int}|\textcolor{keywordtype}{float}\ \$precision\ =\ 1,\ \textcolor{keywordtype}{string}\ \$function\ =\ \textcolor{stringliteral}{'round'}):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (static::getCascadeFactors()\ !==\ static::getDefaultCascadeFactors())\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$value\ =\ \$function(\$this-\/>total(\$unit)\ /\ \$precision)\ *\ \$precision;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$inverted\ =\ \$value\ <\ 0;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>copyProperties(self::fromString(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ number\_format(abs(\$value),\ 12,\ \textcolor{charliteral}{'.'},\ \textcolor{stringliteral}{''}).\textcolor{charliteral}{'\ '}.\$unit}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ )-\/>invert(\$inverted)-\/>cascade());}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$base\ =\ CarbonImmutable::parse(\textcolor{stringliteral}{'2000-\/01-\/01\ 00:00:00'},\ \textcolor{stringliteral}{'UTC'})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ -\/>roundUnit(\$unit,\ \$precision,\ \$function);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$next\ =\ \$base-\/>add(\$this);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$inverted\ =\ \$next\ <\ \$base;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$inverted)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$next\ =\ \$base-\/>sub(\$this);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>copyProperties(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$next}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>roundUnit(\$unit,\ \$precision,\ \$function)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>diff(\$base),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>invert(\$inverted);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a898b956b5a61adce47092f8ce119a91f}{floorUnit}}(\textcolor{keywordtype}{string}\ \$unit,\ \$precision\ =\ 1):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>roundUnit(\$unit,\ \$precision,\ \textcolor{stringliteral}{'floor'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a189e83aa81c73d6f83cf401e21d0e846}{ceilUnit}}(\textcolor{keywordtype}{string}\ \$unit,\ \$precision\ =\ 1):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>roundUnit(\$unit,\ \$precision,\ \textcolor{stringliteral}{'ceil'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ round(\$precision\ =\ 1,\ \textcolor{keywordtype}{string}\ \$function\ =\ \textcolor{stringliteral}{'round'}):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>roundWith(\$precision,\ \$function);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ floor(DateInterval|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{float}|\textcolor{keywordtype}{int}\ \$precision\ =\ 1):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>round(\$precision,\ \textcolor{stringliteral}{'floor'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a69bf94ce44c115f8afcaec61a6d1eb35}{ceil}}(DateInterval|\textcolor{keywordtype}{string}|\textcolor{keywordtype}{float}|\textcolor{keywordtype}{int}\ \$precision\ =\ 1):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>round(\$precision,\ \textcolor{stringliteral}{'ceil'});}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \_\_unserialize(array\ \$data):\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$properties\ =\ array\_combine(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ array\_map(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ fn\ (mixed\ \$key)\ =>\ \(\backslash\)is\_string(\$key)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ?\ str\_replace(\textcolor{stringliteral}{'tzName'},\ \textcolor{stringliteral}{'timezoneSetting'},\ \$key)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \$key,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ array\_keys(\$data),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$data,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (method\_exists(parent::class,\ \textcolor{stringliteral}{'\_\_unserialize'}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ PHP\ >=\ 8.2}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ parent::\_\_unserialize(\$properties);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ PHP\ <=\ 8.1}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ @codeCoverageIgnoreStart}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\$properties\ as\ \$property\ =>\ \$value)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$name\ =\ preg\_replace(\textcolor{stringliteral}{'/\string^\(\backslash\)0.+\(\backslash\)0/'},\ \textcolor{stringliteral}{''},\ \$property);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$localStrictMode\ =\ \$this-\/>localStrictModeEnabled;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>localStrictModeEnabled\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>\$name\ =\ \$value;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$name\ !==\ \textcolor{stringliteral}{'localStrictModeEnabled'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>localStrictModeEnabled\ =\ \$localStrictMode;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{comment}{//\ @codeCoverageIgnoreEnd}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ withOriginal(mixed\ \$interval,\ mixed\ \$original):\ mixed}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$interval\ instanceof\ \textcolor{keyword}{self})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$interval-\/>originalInput\ =\ \$original;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$interval;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ standardizeUnit(\textcolor{keywordtype}{string}\ \$unit):\ string}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$unit\ =\ rtrim(\$unit,\ \textcolor{stringliteral}{'sz'}).\textcolor{charliteral}{'s'};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$unit\ ===\ \textcolor{stringliteral}{'days'}\ ?\ \textcolor{stringliteral}{'dayz'}\ :\ \$unit;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getFlipCascadeFactors():\ array}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!self::\$flipCascadeFactors)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self::\$flipCascadeFactors\ =\ [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (self::getCascadeFactors()\ as\ \$to\ =>\ [\$factor,\ \$from])\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ self::\$flipCascadeFactors[self::standardizeUnit(\$from)]\ =\ [self::standardizeUnit(\$to),\ \$factor];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self::\$flipCascadeFactors;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ castIntervalToClass(DateInterval\ \$interval,\ \textcolor{keywordtype}{string}\ \$className,\ array\ \$skip\ =\ []):\ object}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$mainClass\ =\ DateInterval::class;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!is\_a(\$className,\ \$mainClass,\ \textcolor{keyword}{true}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ InvalidCastException(\textcolor{stringliteral}{"{}\$className\ is\ not\ a\ sub-\/class\ of\ \$mainClass."{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$microseconds\ =\ \$interval-\/>f;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$instance\ =\ \textcolor{keyword}{new}\ \$className(static::getDateIntervalSpec(\$interval,\ \textcolor{keyword}{false},\ \$skip));}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$instance\ instanceof\ \textcolor{keyword}{self})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$instance-\/>originalInput\ =\ \$interval;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$microseconds)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$instance-\/>f\ =\ \$microseconds;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$interval\ instanceof\ \textcolor{keyword}{self}\ \&\&\ is\_a(\$className,\ self::class,\ \textcolor{keyword}{true}))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self::copyStep(\$interval,\ \$instance);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::copyNegativeUnits(\$interval,\ \$instance);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ self::withOriginal(\$instance,\ \$interval);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ copyStep(\textcolor{keyword}{self}\ \$from,\ \textcolor{keyword}{self}\ \$to):\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$to-\/>setStep(\$from-\/>getStep());}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ copyNegativeUnits(DateInterval\ \$from,\ DateInterval\ \$to):\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$to-\/>invert\ =\ \$from-\/>invert;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ ([\textcolor{charliteral}{'y'},\ \textcolor{charliteral}{'m'},\ \textcolor{charliteral}{'d'},\ \textcolor{charliteral}{'h'},\ \textcolor{charliteral}{'i'},\ \textcolor{charliteral}{'s'}]\ as\ \$unit)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$from-\/>\$unit\ <\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$to-\/>\$unit\ *=\ self::NEGATIVE;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{function}\ invertCascade(array\ \$values):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\textcolor{keyword}{set}(array\_map(\textcolor{keyword}{function}\ (\$value)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/\$value;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \},\ \$values))-\/>doCascade(\textcolor{keyword}{true})-\/>invert();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{function}\ doCascade(\textcolor{keywordtype}{bool}\ \$deep):\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$originalData\ =\ \$this-\/>toArray();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$originalData[\textcolor{stringliteral}{'milliseconds'}]\ =\ (int)\ (\$originalData[\textcolor{stringliteral}{'microseconds'}]\ /\ static::getMicrosecondsPerMillisecond());}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$originalData[\textcolor{stringliteral}{'microseconds'}]\ =\ \$originalData[\textcolor{stringliteral}{'microseconds'}]\ \%\ static::getMicrosecondsPerMillisecond();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$originalData[\textcolor{stringliteral}{'weeks'}]\ =\ (int)\ (\$this-\/>d\ /\ static::getDaysPerWeek());}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$originalData[\textcolor{stringliteral}{'daysExcludeWeeks'}]\ =\ fmod(\$this-\/>d,\ static::getDaysPerWeek());}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ unset(\$originalData[\textcolor{stringliteral}{'days'}]);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$newData\ =\ \$originalData;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$previous\ =\ [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (self::getFlipCascadeFactors()\ as\ \$source\ =>\ [\$target,\ \$factor])\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ ([\textcolor{stringliteral}{'source'},\ \textcolor{stringliteral}{'target'}]\ as\ \$key)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$\$key\ ===\ \textcolor{stringliteral}{'dayz'})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$\$key\ =\ \textcolor{stringliteral}{'daysExcludeWeeks'};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$value\ =\ \$newData[\$source];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$modulo\ =\ fmod(\$factor\ +\ fmod(\$value,\ \$factor),\ \$factor);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$newData[\$source]\ =\ \$modulo;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$newData[\$target]\ +=\ (\$value\ -\/\ \$modulo)\ /\ \$factor;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$decimalPart\ =\ fmod(\$newData[\$source],\ 1);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$decimalPart\ !==\ 0.0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$unit\ =\ \$source;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\$previous\ as\ [\$subUnit,\ \$subFactor])\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$newData[\$unit]\ -\/=\ \$decimalPart;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$newData[\$subUnit]\ +=\ \$decimalPart\ *\ \$subFactor;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$decimalPart\ =\ fmod(\$newData[\$subUnit],\ 1);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$decimalPart\ ===\ 0.0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$unit\ =\ \$subUnit;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ array\_unshift(\$previous,\ [\$source,\ \$factor]);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$positive\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\$deep)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\$newData\ as\ \$value)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$value)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$positive\ ===\ \textcolor{keyword}{null})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$positive\ =\ (\$value\ >\ 0);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((\$value\ >\ 0)\ !==\ \$positive)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>invertCascade(\$originalData)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>solveNegativeInterval();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>\textcolor{keyword}{set}(\$newData)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ -\/>solveNegativeInterval();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{function}\ needsDeclension(\textcolor{keywordtype}{string}\ \$mode,\ \textcolor{keywordtype}{int}\ \$index,\ \textcolor{keywordtype}{int}\ \$parts):\ bool}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ match\ (\$mode)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'last'}\ =>\ \$index\ ===\ \$parts\ -\/\ 1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}\ =>\ \textcolor{keyword}{true},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{function}\ checkIntegerValue(\textcolor{keywordtype}{string}\ \$name,\ mixed\ \$value):\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)is\_int(\$value))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>assertSafeForInteger(\$name,\ \$value);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)is\_float(\$value)\ \&\&\ (((\textcolor{keywordtype}{float})\ (\textcolor{keywordtype}{int})\ \$value)\ ===\ \$value))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!self::\$floatSettersEnabled)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$type\ =\ \(\backslash\)gettype(\$value);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ @trigger\_error(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Since\ 2.70.0,\ it's\ deprecated\ to\ pass\ \$type\ value\ for\ \$name.\(\backslash\)n"{}}.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}It's\ truncated\ when\ stored\ as\ an\ integer\ interval\ unit.\(\backslash\)n"{}}.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}From\ 3.0.0,\ decimal\ part\ will\ no\ longer\ be\ truncated\ and\ will\ be\ cascaded\ to\ smaller\ units.\(\backslash\)n"{}}.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}-\/\ To\ maintain\ the\ current\ behavior,\ use\ explicit\ cast:\ \$name((int)\ \(\backslash\)\$value)\(\backslash\)n"{}}.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}-\/\ To\ adopt\ the\ new\ behavior\ globally,\ call\ CarbonInterval::enableFloatSetters()\(\backslash\)n"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)E\_USER\_DEPRECATED,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{function}\ assertSafeForInteger(\textcolor{keywordtype}{string}\ \$name,\ mixed\ \$value):\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$value\ \&\&\ !\(\backslash\)is\_int(\$value)\ \&\&\ (\$value\ >=\ 0x7fffffffffffffff\ ||\ \$value\ <=\ -\/0x7fffffffffffffff))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ OutOfRangeException(\$name,\ -\/0x7fffffffffffffff,\ 0x7fffffffffffffff,\ \$value);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{function}\ handleDecimalPart(\textcolor{keywordtype}{string}\ \$unit,\ mixed\ \$value,\ mixed\ \$integerValue):\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (self::\$floatSettersEnabled)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$floatValue\ =\ (float)\ \$value;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$base\ =\ (float)\ \$integerValue;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$floatValue\ ===\ \$base)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$units\ =\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{charliteral}{'y'}\ =>\ \textcolor{stringliteral}{'year'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{charliteral}{'m'}\ =>\ \textcolor{stringliteral}{'month'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{charliteral}{'d'}\ =>\ \textcolor{stringliteral}{'day'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{charliteral}{'h'}\ =>\ \textcolor{stringliteral}{'hour'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{charliteral}{'i'}\ =>\ \textcolor{stringliteral}{'minute'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{charliteral}{'s'}\ =>\ \textcolor{stringliteral}{'second'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ];}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$upper\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\$units\ as\ \$property\ =>\ \$name)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$name\ ===\ \$unit)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$upper\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\$upper\ \&\&\ \$this-\/>\$property\ !==\ 0)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ RuntimeException(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}You\ cannot\ set\ \$unit\ to\ a\ float\ value\ as\ \$name\ would\ be\ overridden,\ "{}}.}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'set\ it\ first\ to\ 0\ explicitly\ if\ you\ really\ want\ to\ erase\ its\ value'}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>add(\$unit,\ \$floatValue\ -\/\ \$base);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{function}\ getInnerValues():\ array}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ [\$this-\/>y,\ \$this-\/>m,\ \$this-\/>d,\ \$this-\/>h,\ \$this-\/>i,\ \$this-\/>s,\ \$this-\/>f,\ \$this-\/>invert,\ \$this-\/>days];}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{function}\ checkStartAndEnd():\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>initialValues\ !==\ \textcolor{keyword}{null}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \&\&\ (\$this-\/>startDate\ !==\ \textcolor{keyword}{null}\ ||\ \$this-\/>endDate\ !==\ \textcolor{keyword}{null})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \&\&\ \$this-\/>initialValues\ !==\ \$this-\/>getInnerValues()}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>absolute\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>startDate\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>endDate\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>rawInterval\ =\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{function}\ setSetting(\textcolor{keywordtype}{string}\ \$setting,\ mixed\ \$value):\ self}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\$setting)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'timezoneSetting'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$value\ ===\ \textcolor{keyword}{null}\ ?\ \$this\ :\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_ad021f23697a34a2339e8ba292315515e}{setTimezone}}(\$value);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'step'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a8c3e0d2a9bf242af39cac6e5f1da7ca3}{setStep}}(\$value);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'localMonthsOverflow'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$value\ ===\ \textcolor{keyword}{null}\ ?\ \$this\ :\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a7ab4265d7259dfda3ff6a8fd388776b2}{settings}}([\textcolor{stringliteral}{'monthOverflow'}\ =>\ \$value]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'localYearsOverflow'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$value\ ===\ \textcolor{keyword}{null}\ ?\ \$this\ :\ \$this-\/>\mbox{\hyperlink{namespace_carbon_1_1_traits_a7ab4265d7259dfda3ff6a8fd388776b2}{settings}}([\textcolor{stringliteral}{'yearOverflow'}\ =>\ \$value]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'localStrictModeEnabled'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'localHumanDiffOptions'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'localToStringFormat'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'localSerializer'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'localMacros'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'localGenericMacros'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'localFormatFunction'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \textcolor{stringliteral}{'localTranslator'}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$this-\/>\$setting\ =\ \$value;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Drop\ unknown\ settings}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCodeInclude}
+ 

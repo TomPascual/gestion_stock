@@ -1,0 +1,119 @@
+\doxysection{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}Timestamp\+First\+Comb\+Codec Class Reference}
+\hypertarget{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_first_comb_codec}{}\label{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_first_comb_codec}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec@{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec}}
+Inheritance diagram for Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}Timestamp\+First\+Comb\+Codec\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_first_comb_codec}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_first_comb_codec_a60ab126f2437358f6578c3f5ef77a05c}{encode}} (\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_interface}{Uuid\+Interface}} \$uuid)
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_first_comb_codec_aa6581ac9745a3a7f87fc8bbce57ce473}{encode\+Binary}} (\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_interface}{Uuid\+Interface}} \$uuid)
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_first_comb_codec_ac331f71c22075270a75808aedfca6339}{decode}} (string \$encoded\+Uuid)
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_first_comb_codec_a69baa24ecad96edcaf1d24347fd132ab}{decode\+Bytes}} (string \$bytes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_string_codec}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Codec\textbackslash{}\+String\+Codec}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_string_codec_ab7df9cd376f688428bdd9a579184e7ab}{\+\_\+\+\_\+construct}} (private \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_builder_1_1_uuid_builder_interface}{Uuid\+Builder\+Interface}} \$builder)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_string_codec}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Codec\textbackslash{}\+String\+Codec}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_string_codec_afc7d4896d6a9c932c6c127a3eed1a887}{get\+Builder}} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_string_codec_afb69fa2766000fce22ce7d44c374f5ec}{get\+Bytes}} (string \$encoded\+Uuid)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Timestamp\+First\+Comb\+Codec encodes and decodes COMBs, with the timestamp as the first 48 bits
+
+In contrast with the Timestamp\+Last\+Comb\+Codec, the Timestamp\+First\+Comb\+Codec adds the timestamp to the first 48 bits of the COMB. To generate a timestamp-\/first COMB, set the Timestamp\+First\+Comb\+Codec as the codec, along with the Comb\+Generator as the random generator.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{php}
+\DoxyCodeLine{\ \ \$factory\ =\ \textcolor{keyword}{new}\ UuidFactory();}
+\DoxyCodeLine{\ }
+\DoxyCodeLine{\ \ \$factory-\/>setCodec(\textcolor{keyword}{new}\ TimestampFirstCombCodec(\$factory-\/>getUuidBuilder()));}
+\DoxyCodeLine{\ }
+\DoxyCodeLine{\ \ \$factory-\/>setRandomGenerator(\textcolor{keyword}{new}\ CombGenerator(}
+\DoxyCodeLine{\ \ \ \ \ \ \$factory-\/>getRandomGenerator(),}
+\DoxyCodeLine{\ \ \ \ \ \ \$factory-\/>getNumberConverter()}
+\DoxyCodeLine{\ \ ));}
+\DoxyCodeLine{\ }
+\DoxyCodeLine{\ \ \$timestampFirstComb\ =\ \$factory-\/>uuid4();}
+
+\end{DoxyCode}
+
+
+\doxylink{}{The Cost of GUIDs as Primary Keys  -\/immutable }
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_first_comb_codec_ac331f71c22075270a75808aedfca6339}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec@{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec}!decode@{decode}}
+\index{decode@{decode}!Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec@{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_first_comb_codec_ac331f71c22075270a75808aedfca6339} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Codec\textbackslash{}\+Timestamp\+First\+Comb\+Codec\+::decode (\begin{DoxyParamCaption}\item[{string}]{\$encoded\+Uuid}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Uuid\+String\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+@inherit\+Doc 
+
+Reimplemented from \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_string_codec_afd3d8a5321240d900b743593236bec7b}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Codec\textbackslash{}\+String\+Codec}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_first_comb_codec_a69baa24ecad96edcaf1d24347fd132ab}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec@{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec}!decodeBytes@{decodeBytes}}
+\index{decodeBytes@{decodeBytes}!Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec@{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec}}
+\doxysubsubsection{\texorpdfstring{decodeBytes()}{decodeBytes()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_first_comb_codec_a69baa24ecad96edcaf1d24347fd132ab} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Codec\textbackslash{}\+Timestamp\+First\+Comb\+Codec\+::decode\+Bytes (\begin{DoxyParamCaption}\item[{string}]{\$bytes}{}\end{DoxyParamCaption})}
+
+Returns a Uuid\+Interface derived from a binary string representation
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$bytes} & The binary string representation to convert into a Uuid\+Interface instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Uuid\+Interface An instance of a UUID decoded from a binary string representation 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_string_codec_a51b1d75bcb3feae071c206e804e45eed}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Codec\textbackslash{}\+String\+Codec}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_first_comb_codec_a60ab126f2437358f6578c3f5ef77a05c}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec@{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec}!encode@{encode}}
+\index{encode@{encode}!Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec@{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_first_comb_codec_a60ab126f2437358f6578c3f5ef77a05c} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Codec\textbackslash{}\+Timestamp\+First\+Comb\+Codec\+::encode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_interface}{Uuid\+Interface}}}]{\$uuid}{}\end{DoxyParamCaption})}
+
+@psalm-\/return non-\/empty-\/string @psalm-\/suppress More\+Specific\+Return\+Type we know that the retrieved {\ttfamily string} is never empty @psalm-\/suppress Less\+Specific\+Return\+Statement we know that the retrieved {\ttfamily string} is never empty 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_codec_1_1_codec_interface_a8c97b70970cf2f9cb55cfb8fbbcbe767}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Codec\textbackslash{}\+Codec\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_first_comb_codec_aa6581ac9745a3a7f87fc8bbce57ce473}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec@{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec}!encodeBinary@{encodeBinary}}
+\index{encodeBinary@{encodeBinary}!Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec@{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampFirstCombCodec}}
+\doxysubsubsection{\texorpdfstring{encodeBinary()}{encodeBinary()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_first_comb_codec_aa6581ac9745a3a7f87fc8bbce57ce473} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Codec\textbackslash{}\+Timestamp\+First\+Comb\+Codec\+::encode\+Binary (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_interface}{Uuid\+Interface}}}]{\$uuid}{}\end{DoxyParamCaption})}
+
+@psalm-\/return non-\/empty-\/string @psalm-\/suppress More\+Specific\+Return\+Type we know that the retrieved {\ttfamily string} is never empty @psalm-\/suppress Less\+Specific\+Return\+Statement we know that the retrieved {\ttfamily string} is never empty @phpstan-\/ignore-\/next-\/line PHPStan complains that this is not a non-\/empty-\/string.
+
+Reimplemented from \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_string_codec_ae93ccae0e491356617d4c5ee1e54658d}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Codec\textbackslash{}\+String\+Codec}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/ramsey/uuid/src/\+Codec/Timestamp\+First\+Comb\+Codec.\+php\end{DoxyCompactItemize}

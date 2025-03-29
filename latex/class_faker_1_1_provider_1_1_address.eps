@@ -1,0 +1,437 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ClassName
+%%Creator: Doxygen
+%%CreationDate: Time
+%%For: 
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 0 0 500 2654.867188
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%EndComments
+
+% ----- variables -----
+
+/boxwidth 0 def
+/boxheight 40 def
+/fontheight 24 def
+/marginwidth 10 def
+/distx 20 def
+/disty 40 def
+/boundaspect 0.188333 def  % aspect ratio of the BoundingBox (width/height)
+/boundx 500 def
+/boundy boundx boundaspect div def
+/xspacing 0 def
+/yspacing 0 def
+/rows 60 def
+/cols 2 def
+/scalefactor 0 def
+/boxfont /Times-Roman findfont fontheight scalefont def
+
+% ----- procedures -----
+
+/dotted { [1 4] 0 setdash } def
+/dashed { [5] 0 setdash } def
+/solid  { [] 0 setdash } def
+
+/max % result = MAX(arg1,arg2)
+{
+  /a exch def
+  /b exch def
+  a b gt {a} {b} ifelse
+} def
+
+/xoffset % result = MAX(0,(scalefactor-(boxwidth*cols+distx*(cols-1)))/2)
+{
+  0 scalefactor boxwidth cols mul distx cols 1 sub mul add sub 2 div max
+} def
+
+/cw % boxwidth = MAX(boxwidth, stringwidth(arg1))
+{
+  /str exch def
+  /boxwidth boxwidth str stringwidth pop max def
+} def
+
+/box % draws a box with text 'arg1' at grid pos (arg2,arg3)
+{ gsave
+  2 setlinewidth
+  newpath
+  exch xspacing mul xoffset add
+  exch yspacing mul
+  moveto
+  boxwidth 0 rlineto 
+  0 boxheight rlineto 
+  boxwidth neg 0 rlineto 
+  0 boxheight neg rlineto 
+  closepath
+  dup stringwidth pop neg boxwidth add 2 div
+  boxheight fontheight 2 div sub 2 div
+  rmoveto show stroke
+  grestore
+} def  
+
+/mark
+{ newpath
+  exch xspacing mul xoffset add boxwidth add
+  exch yspacing mul
+  moveto
+  0 boxheight 4 div rlineto
+  boxheight neg 4 div boxheight neg 4 div rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/arrow
+{ newpath
+  moveto
+  3 -8 rlineto
+  -6 0 rlineto
+  3 8 rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/out % draws an output connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight add
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto 
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/in % draws an input connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul disty 2 div sub
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/hedge
+{
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight 2 div sub
+  /y exch def
+  /x exch def
+  newpath
+  x y moveto
+  boxwidth 2 div distx add 0 rlineto
+  stroke
+  1 eq
+  { newpath x boxwidth 2 div distx add add y moveto
+    -8 3 rlineto
+    0 -6 rlineto
+    8 3 rlineto
+    closepath
+    eofill
+    stroke
+  } if
+} def
+
+/vedge
+{
+  /ye exch def
+  /ys exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add dup
+  ys yspacing mul boxheight 2 div sub
+  moveto
+  ye yspacing mul boxheight 2 div sub
+  lineto
+  stroke
+} def
+
+/conn % connections the blocks from col 'arg1' to 'arg2' of row 'arg3'
+{
+  /ys exch def
+  /xe exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add
+  ys yspacing mul disty 2 div sub
+  moveto
+  xspacing xe xs sub mul 0
+  rlineto
+  stroke
+} def
+
+% ----- main ------
+
+boxfont setfont
+1 boundaspect scale
+(Faker\Provider\Address) cw
+(Faker\Provider\Base) cw
+(Faker\Provider\ar_EG\Address) cw
+(Faker\Provider\ar_JO\Address) cw
+(Faker\Provider\ar_SA\Address) cw
+(Faker\Provider\bn_BD\Address) cw
+(Faker\Provider\cs_CZ\Address) cw
+(Faker\Provider\da_DK\Address) cw
+(Faker\Provider\de_AT\Address) cw
+(Faker\Provider\de_CH\Address) cw
+(Faker\Provider\de_DE\Address) cw
+(Faker\Provider\el_CY\Address) cw
+(Faker\Provider\el_GR\Address) cw
+(Faker\Provider\en_GB\Address) cw
+(Faker\Provider\en_HK\Address) cw
+(Faker\Provider\en_IN\Address) cw
+(Faker\Provider\en_NG\Address) cw
+(Faker\Provider\en_SG\Address) cw
+(Faker\Provider\en_US\Address) cw
+(Faker\Provider\es_ES\Address) cw
+(Faker\Provider\fa_IR\Address) cw
+(Faker\Provider\fi_FI\Address) cw
+(Faker\Provider\fr_FR\Address) cw
+(Faker\Provider\he_IL\Address) cw
+(Faker\Provider\hr_HR\Address) cw
+(Faker\Provider\hu_HU\Address) cw
+(Faker\Provider\hy_AM\Address) cw
+(Faker\Provider\id_ID\Address) cw
+(Faker\Provider\is_IS\Address) cw
+(Faker\Provider\it_IT\Address) cw
+(Faker\Provider\ja_JP\Address) cw
+(Faker\Provider\ka_GE\Address) cw
+(Faker\Provider\kk_KZ\Address) cw
+(Faker\Provider\ko_KR\Address) cw
+(Faker\Provider\lt_LT\Address) cw
+(Faker\Provider\lv_LV\Address) cw
+(Faker\Provider\me_ME\Address) cw
+(Faker\Provider\ms_MY\Address) cw
+(Faker\Provider\nb_NO\Address) cw
+(Faker\Provider\ne_NP\Address) cw
+(Faker\Provider\nl_BE\Address) cw
+(Faker\Provider\nl_NL\Address) cw
+(Faker\Provider\pl_PL\Address) cw
+(Faker\Provider\pt_BR\Address) cw
+(Faker\Provider\pt_PT\Address) cw
+(Faker\Provider\ro_MD\Address) cw
+(Faker\Provider\ro_RO\Address) cw
+(Faker\Provider\ru_RU\Address) cw
+(Faker\Provider\sk_SK\Address) cw
+(Faker\Provider\sl_SI\Address) cw
+(Faker\Provider\sr_Cyrl_RS\Address) cw
+(Faker\Provider\sr_Latn_RS\Address) cw
+(Faker\Provider\sr_RS\Address) cw
+(Faker\Provider\sv_SE\Address) cw
+(Faker\Provider\th_TH\Address) cw
+(Faker\Provider\tr_TR\Address) cw
+(Faker\Provider\uk_UA\Address) cw
+(Faker\Provider\vi_VN\Address) cw
+(Faker\Provider\zh_CN\Address) cw
+(Faker\Provider\zh_TW\Address) cw
+/boxwidth boxwidth marginwidth 2 mul add def
+/xspacing boxwidth distx add def
+/yspacing boxheight disty add def
+/scalefactor 
+  boxwidth cols mul distx cols 1 sub mul add
+  boxheight rows mul disty rows 1 sub mul add boundaspect mul 
+  max def
+boundx scalefactor div boundy scalefactor div scale
+
+% ----- classes -----
+
+ (Faker\Provider\Address) 0.000000 58.000000 box
+ (Faker\Provider\Base) 0.000000 59.000000 box
+ (Faker\Provider\ar_EG\Address) 1.000000 57.000000 box
+ (Faker\Provider\ar_JO\Address) 1.000000 56.000000 box
+ (Faker\Provider\ar_SA\Address) 1.000000 55.000000 box
+ (Faker\Provider\bn_BD\Address) 1.000000 54.000000 box
+ (Faker\Provider\cs_CZ\Address) 1.000000 53.000000 box
+ (Faker\Provider\da_DK\Address) 1.000000 52.000000 box
+ (Faker\Provider\de_AT\Address) 1.000000 51.000000 box
+ (Faker\Provider\de_CH\Address) 1.000000 50.000000 box
+ (Faker\Provider\de_DE\Address) 1.000000 49.000000 box
+ (Faker\Provider\el_CY\Address) 1.000000 48.000000 box
+ (Faker\Provider\el_GR\Address) 1.000000 47.000000 box
+ (Faker\Provider\en_GB\Address) 1.000000 46.000000 box
+ (Faker\Provider\en_HK\Address) 1.000000 45.000000 box
+ (Faker\Provider\en_IN\Address) 1.000000 44.000000 box
+ (Faker\Provider\en_NG\Address) 1.000000 43.000000 box
+ (Faker\Provider\en_SG\Address) 1.000000 42.000000 box
+ (Faker\Provider\en_US\Address) 1.000000 41.000000 box
+1.000000 41.000000 mark
+ (Faker\Provider\es_ES\Address) 1.000000 40.000000 box
+1.000000 40.000000 mark
+ (Faker\Provider\fa_IR\Address) 1.000000 39.000000 box
+ (Faker\Provider\fi_FI\Address) 1.000000 38.000000 box
+ (Faker\Provider\fr_FR\Address) 1.000000 37.000000 box
+1.000000 37.000000 mark
+ (Faker\Provider\he_IL\Address) 1.000000 36.000000 box
+ (Faker\Provider\hr_HR\Address) 1.000000 35.000000 box
+ (Faker\Provider\hu_HU\Address) 1.000000 34.000000 box
+ (Faker\Provider\hy_AM\Address) 1.000000 33.000000 box
+ (Faker\Provider\id_ID\Address) 1.000000 32.000000 box
+ (Faker\Provider\is_IS\Address) 1.000000 31.000000 box
+ (Faker\Provider\it_IT\Address) 1.000000 30.000000 box
+1.000000 30.000000 mark
+ (Faker\Provider\ja_JP\Address) 1.000000 29.000000 box
+ (Faker\Provider\ka_GE\Address) 1.000000 28.000000 box
+ (Faker\Provider\kk_KZ\Address) 1.000000 27.000000 box
+ (Faker\Provider\ko_KR\Address) 1.000000 26.000000 box
+ (Faker\Provider\lt_LT\Address) 1.000000 25.000000 box
+ (Faker\Provider\lv_LV\Address) 1.000000 24.000000 box
+ (Faker\Provider\me_ME\Address) 1.000000 23.000000 box
+ (Faker\Provider\ms_MY\Address) 1.000000 22.000000 box
+ (Faker\Provider\nb_NO\Address) 1.000000 21.000000 box
+ (Faker\Provider\ne_NP\Address) 1.000000 20.000000 box
+ (Faker\Provider\nl_BE\Address) 1.000000 19.000000 box
+ (Faker\Provider\nl_NL\Address) 1.000000 18.000000 box
+ (Faker\Provider\pl_PL\Address) 1.000000 17.000000 box
+ (Faker\Provider\pt_BR\Address) 1.000000 16.000000 box
+ (Faker\Provider\pt_PT\Address) 1.000000 15.000000 box
+ (Faker\Provider\ro_MD\Address) 1.000000 14.000000 box
+ (Faker\Provider\ro_RO\Address) 1.000000 13.000000 box
+ (Faker\Provider\ru_RU\Address) 1.000000 12.000000 box
+ (Faker\Provider\sk_SK\Address) 1.000000 11.000000 box
+ (Faker\Provider\sl_SI\Address) 1.000000 10.000000 box
+ (Faker\Provider\sr_Cyrl_RS\Address) 1.000000 9.000000 box
+ (Faker\Provider\sr_Latn_RS\Address) 1.000000 8.000000 box
+ (Faker\Provider\sr_RS\Address) 1.000000 7.000000 box
+ (Faker\Provider\sv_SE\Address) 1.000000 6.000000 box
+ (Faker\Provider\th_TH\Address) 1.000000 5.000000 box
+ (Faker\Provider\tr_TR\Address) 1.000000 4.000000 box
+ (Faker\Provider\uk_UA\Address) 1.000000 3.000000 box
+ (Faker\Provider\vi_VN\Address) 1.000000 2.000000 box
+ (Faker\Provider\zh_CN\Address) 1.000000 1.000000 box
+ (Faker\Provider\zh_TW\Address) 1.000000 0.000000 box
+
+% ----- relations -----
+
+solid
+0 0.000000 58.000000 out
+solid
+1 0.000000 59.000000 in
+solid
+1 0.000000 57.250000 out
+solid
+0 0.000000 57.500000 hedge
+solid
+0 0.000000 56.500000 hedge
+solid
+0 0.000000 55.500000 hedge
+solid
+0 0.000000 54.500000 hedge
+solid
+0 0.000000 53.500000 hedge
+solid
+0 0.000000 52.500000 hedge
+solid
+0 0.000000 51.500000 hedge
+solid
+0 0.000000 50.500000 hedge
+solid
+0 0.000000 49.500000 hedge
+solid
+0 0.000000 48.500000 hedge
+solid
+0 0.000000 47.500000 hedge
+solid
+0 0.000000 46.500000 hedge
+solid
+0 0.000000 45.500000 hedge
+solid
+0 0.000000 44.500000 hedge
+solid
+0 0.000000 43.500000 hedge
+solid
+0 0.000000 42.500000 hedge
+solid
+0 0.000000 41.500000 hedge
+solid
+0 0.000000 40.500000 hedge
+solid
+0 0.000000 39.500000 hedge
+solid
+0 0.000000 38.500000 hedge
+solid
+0 0.000000 37.500000 hedge
+solid
+0 0.000000 36.500000 hedge
+solid
+0 0.000000 35.500000 hedge
+solid
+0 0.000000 34.500000 hedge
+solid
+0 0.000000 33.500000 hedge
+solid
+0 0.000000 32.500000 hedge
+solid
+0 0.000000 31.500000 hedge
+solid
+0 0.000000 30.500000 hedge
+solid
+0 0.000000 29.500000 hedge
+solid
+0 0.000000 28.500000 hedge
+solid
+0 0.000000 27.500000 hedge
+solid
+0 0.000000 26.500000 hedge
+solid
+0 0.000000 25.500000 hedge
+solid
+0 0.000000 24.500000 hedge
+solid
+0 0.000000 23.500000 hedge
+solid
+0 0.000000 22.500000 hedge
+solid
+0 0.000000 21.500000 hedge
+solid
+0 0.000000 20.500000 hedge
+solid
+0 0.000000 19.500000 hedge
+solid
+0 0.000000 18.500000 hedge
+solid
+0 0.000000 17.500000 hedge
+solid
+0 0.000000 16.500000 hedge
+solid
+0 0.000000 15.500000 hedge
+solid
+0 0.000000 14.500000 hedge
+solid
+0 0.000000 13.500000 hedge
+solid
+0 0.000000 12.500000 hedge
+solid
+0 0.000000 11.500000 hedge
+solid
+0 0.000000 10.500000 hedge
+solid
+0 0.000000 9.500000 hedge
+solid
+0 0.000000 8.500000 hedge
+solid
+0 0.000000 7.500000 hedge
+solid
+0 0.000000 6.500000 hedge
+solid
+0 0.000000 5.500000 hedge
+solid
+0 0.000000 4.500000 hedge
+solid
+0 0.000000 3.500000 hedge
+solid
+0 0.000000 2.500000 hedge
+solid
+0 0.000000 1.500000 hedge
+solid
+0 0.000000 0.500000 hedge
+solid
+0.000000 58.000000 0.500000 vedge

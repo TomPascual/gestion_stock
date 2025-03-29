@@ -1,0 +1,63 @@
+\doxysection{Ramsey\textbackslash{}Uuid\textbackslash{}Validator\textbackslash{}Validator\+Interface Interface Reference}
+\hypertarget{interface_ramsey_1_1_uuid_1_1_validator_1_1_validator_interface}{}\label{interface_ramsey_1_1_uuid_1_1_validator_1_1_validator_interface}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Validator\textbackslash{}ValidatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Validator\textbackslash{}ValidatorInterface}}
+Inheritance diagram for Ramsey\textbackslash{}Uuid\textbackslash{}Validator\textbackslash{}Validator\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_ramsey_1_1_uuid_1_1_validator_1_1_validator_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_validator_1_1_validator_interface_a820e506c299a70b76a000d44ccb9b363}{get\+Pattern}} ()
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_validator_1_1_validator_interface_aae52497fb95931b5e20a96a46cc4d5d3}{validate}} (string \$uuid)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A validator validates a string as a proper UUID
+
+@psalm-\/immutable 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_validator_1_1_validator_interface_a820e506c299a70b76a000d44ccb9b363}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Validator\textbackslash{}ValidatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Validator\textbackslash{}ValidatorInterface}!getPattern@{getPattern}}
+\index{getPattern@{getPattern}!Ramsey\textbackslash{}Uuid\textbackslash{}Validator\textbackslash{}ValidatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Validator\textbackslash{}ValidatorInterface}}
+\doxysubsubsection{\texorpdfstring{getPattern()}{getPattern()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_validator_1_1_validator_interface_a820e506c299a70b76a000d44ccb9b363} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Validator\textbackslash{}\+Validator\+Interface\+::get\+Pattern (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the regular expression pattern used by this validator
+
+\begin{DoxyReturn}{Returns}
+string The regular expression pattern this validator uses
+\end{DoxyReturn}
+@psalm-\/return non-\/empty-\/string 
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_validator_a31349b827d3661123898dbb85b0c528c}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Validator}}, and \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_validator_1_1_generic_validator_a6357fea8e09cfd7d66e7adce993d7bf7}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Validator\textbackslash{}\+Generic\+Validator}}.
+
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_validator_1_1_validator_interface_aae52497fb95931b5e20a96a46cc4d5d3}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Validator\textbackslash{}ValidatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Validator\textbackslash{}ValidatorInterface}!validate@{validate}}
+\index{validate@{validate}!Ramsey\textbackslash{}Uuid\textbackslash{}Validator\textbackslash{}ValidatorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Validator\textbackslash{}ValidatorInterface}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_validator_1_1_validator_interface_aae52497fb95931b5e20a96a46cc4d5d3} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Validator\textbackslash{}\+Validator\+Interface\+::validate (\begin{DoxyParamCaption}\item[{string}]{\$uuid}{}\end{DoxyParamCaption})}
+
+Returns true if the provided string represents a UUID
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uuid} & The string to validate as a UUID\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the string is a valid UUID, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_validator_a7fa82c9951377b75a1e598016c3aeef3}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Validator}}, and \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_validator_1_1_generic_validator_a46cede64f1ff6f35eed3dbf5e2f6e867}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Validator\textbackslash{}\+Generic\+Validator}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/ramsey/uuid/src/\+Validator/Validator\+Interface.\+php\end{DoxyCompactItemize}

@@ -1,3 +1,10 @@
+{{-- 
+    Vue : fournisseurs/show.blade.php
+    Description : Affiche les informations détaillées d’un fournisseur ainsi que la liste de ses produits associés.
+    Actions :
+        - Retour à la liste des fournisseurs
+--}}
+
 @extends('layouts.app')
 
 @section('content')

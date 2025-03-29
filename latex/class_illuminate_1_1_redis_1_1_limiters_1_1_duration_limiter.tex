@@ -1,0 +1,148 @@
+\doxysection{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}Duration\+Limiter Class Reference}
+\hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter}{}\label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter}\index{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter@{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a830f1d420baef0bbd5c0ae53e2670e4a}{\+\_\+\+\_\+construct}} (\$redis, \$name, \$max\+Locks, \$decay)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_afd71290314f352b49b9d006dcdfbd204}{block}} (\$timeout, \$callback=null, \$sleep=750)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a130936b6933354cf2039550698c76913}{acquire}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a1c102e541007d4aa96e91ce279343238}{too\+Many\+Attempts}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_aab95072706c0304b492399ea2a96cdd4}{clear}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_af003a916fe448803be36f0d25b1da983}\label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_af003a916fe448803be36f0d25b1da983} 
+{\bfseries \$decays\+At}
+\item 
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a32c099d165f7c7a9382f7277b19b8bda}\label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a32c099d165f7c7a9382f7277b19b8bda} 
+{\bfseries \$remaining}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_aa5b120664026f1ff2db9b46b61ec60c1}{lua\+Script}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a3ecf5f0a94f609f02be8f161da59daaa}{too\+Many\+Attempts\+Lua\+Script}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a830f1d420baef0bbd5c0ae53e2670e4a}\index{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter@{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter@{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a830f1d420baef0bbd5c0ae53e2670e4a} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Limiters\textbackslash{}\+Duration\+Limiter\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$redis}{, }\item[{}]{\$name}{, }\item[{}]{\$max\+Locks}{, }\item[{}]{\$decay}{}\end{DoxyParamCaption})}
+
+Create a new duration limiter instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection & {\em \$redis} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+int & {\em \$max\+Locks} & \\
+\hline
+int & {\em \$decay} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a130936b6933354cf2039550698c76913}\index{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter@{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter}!acquire@{acquire}}
+\index{acquire@{acquire}!Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter@{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter}}
+\doxysubsubsection{\texorpdfstring{acquire()}{acquire()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a130936b6933354cf2039550698c76913} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Limiters\textbackslash{}\+Duration\+Limiter\+::acquire (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Attempt to acquire the lock.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_afd71290314f352b49b9d006dcdfbd204}\index{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter@{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter}!block@{block}}
+\index{block@{block}!Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter@{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter}}
+\doxysubsubsection{\texorpdfstring{block()}{block()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_afd71290314f352b49b9d006dcdfbd204} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Limiters\textbackslash{}\+Duration\+Limiter\+::block (\begin{DoxyParamCaption}\item[{}]{\$timeout}{, }\item[{}]{\$callback}{ = {\ttfamily null}, }\item[{}]{\$sleep}{ = {\ttfamily 750}}\end{DoxyParamCaption})}
+
+Attempt to acquire the lock for the given number of seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \\
+\hline
+callable | null & {\em \$callback} & \\
+\hline
+int & {\em \$sleep} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Redis\textbackslash{}\+Limiter\+Timeout\+Exception \Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_aab95072706c0304b492399ea2a96cdd4}\index{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter@{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter}!clear@{clear}}
+\index{clear@{clear}!Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter@{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_aab95072706c0304b492399ea2a96cdd4} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Limiters\textbackslash{}\+Duration\+Limiter\+::clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Clear the limiter.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_aa5b120664026f1ff2db9b46b61ec60c1}\index{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter@{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter}!luaScript@{luaScript}}
+\index{luaScript@{luaScript}!Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter@{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter}}
+\doxysubsubsection{\texorpdfstring{luaScript()}{luaScript()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_aa5b120664026f1ff2db9b46b61ec60c1} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Limiters\textbackslash{}\+Duration\+Limiter\+::lua\+Script (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the Lua script for acquiring a lock.
+
+KEYS\mbox{[}1\mbox{]} -\/ The limiter name ARGV\mbox{[}1\mbox{]} -\/ Current time in microseconds ARGV\mbox{[}2\mbox{]} -\/ Current time in seconds ARGV\mbox{[}3\mbox{]} -\/ Duration of the bucket ARGV\mbox{[}4\mbox{]} -\/ Allowed number of tasks
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a1c102e541007d4aa96e91ce279343238}\index{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter@{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter}!tooManyAttempts@{tooManyAttempts}}
+\index{tooManyAttempts@{tooManyAttempts}!Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter@{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter}}
+\doxysubsubsection{\texorpdfstring{tooManyAttempts()}{tooManyAttempts()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a1c102e541007d4aa96e91ce279343238} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Limiters\textbackslash{}\+Duration\+Limiter\+::too\+Many\+Attempts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the key has been "{}accessed"{} too many times.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a3ecf5f0a94f609f02be8f161da59daaa}\index{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter@{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter}!tooManyAttemptsLuaScript@{tooManyAttemptsLuaScript}}
+\index{tooManyAttemptsLuaScript@{tooManyAttemptsLuaScript}!Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter@{Illuminate\textbackslash{}Redis\textbackslash{}Limiters\textbackslash{}DurationLimiter}}
+\doxysubsubsection{\texorpdfstring{tooManyAttemptsLuaScript()}{tooManyAttemptsLuaScript()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_limiters_1_1_duration_limiter_a3ecf5f0a94f609f02be8f161da59daaa} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Limiters\textbackslash{}\+Duration\+Limiter\+::too\+Many\+Attempts\+Lua\+Script (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the Lua script to determine if the key has been "{}accessed"{} too many times.
+
+KEYS\mbox{[}1\mbox{]} -\/ The limiter name ARGV\mbox{[}1\mbox{]} -\/ Current time in microseconds ARGV\mbox{[}2\mbox{]} -\/ Current time in seconds ARGV\mbox{[}3\mbox{]} -\/ Duration of the bucket ARGV\mbox{[}4\mbox{]} -\/ Allowed number of tasks
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Redis/\+Limiters/Duration\+Limiter.\+php\end{DoxyCompactItemize}

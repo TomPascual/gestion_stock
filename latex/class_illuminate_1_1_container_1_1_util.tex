@@ -1,0 +1,93 @@
+\doxysection{Illuminate\textbackslash{}Container\textbackslash{}Util Class Reference}
+\hypertarget{class_illuminate_1_1_container_1_1_util}{}\label{class_illuminate_1_1_container_1_1_util}\index{Illuminate\textbackslash{}Container\textbackslash{}Util@{Illuminate\textbackslash{}Container\textbackslash{}Util}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_container_1_1_util_a23f3f178e039d23ddc026eeb49582596}{array\+Wrap}} (\$value)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_container_1_1_util_aed1224be0962f97e34cc8f9f0b1a3fc5}{unwrap\+If\+Closure}} (\$value,... \$args)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_container_1_1_util_a6eb353edf9d8d03e19349937b516507a}{get\+Parameter\+Class\+Name}} (\$parameter)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_container_1_1_util_a8dfc02cab690fcefd762823bb2b06d38}{get\+Contextual\+Attribute\+From\+Dependency}} (\$dependency)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_container_1_1_util_a23f3f178e039d23ddc026eeb49582596}\index{Illuminate\textbackslash{}Container\textbackslash{}Util@{Illuminate\textbackslash{}Container\textbackslash{}Util}!arrayWrap@{arrayWrap}}
+\index{arrayWrap@{arrayWrap}!Illuminate\textbackslash{}Container\textbackslash{}Util@{Illuminate\textbackslash{}Container\textbackslash{}Util}}
+\doxysubsubsection{\texorpdfstring{arrayWrap()}{arrayWrap()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_container_1_1_util_a23f3f178e039d23ddc026eeb49582596} 
+static Illuminate\textbackslash{}\+Container\textbackslash{}\+Util\+::array\+Wrap (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+If the given value is not an array and not null, wrap it in one.
+
+From Arr\+::wrap() in Illuminate\textbackslash{}\+Support.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_container_1_1_util_a8dfc02cab690fcefd762823bb2b06d38}\index{Illuminate\textbackslash{}Container\textbackslash{}Util@{Illuminate\textbackslash{}Container\textbackslash{}Util}!getContextualAttributeFromDependency@{getContextualAttributeFromDependency}}
+\index{getContextualAttributeFromDependency@{getContextualAttributeFromDependency}!Illuminate\textbackslash{}Container\textbackslash{}Util@{Illuminate\textbackslash{}Container\textbackslash{}Util}}
+\doxysubsubsection{\texorpdfstring{getContextualAttributeFromDependency()}{getContextualAttributeFromDependency()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_container_1_1_util_a8dfc02cab690fcefd762823bb2b06d38} 
+static Illuminate\textbackslash{}\+Container\textbackslash{}\+Util\+::get\+Contextual\+Attribute\+From\+Dependency (\begin{DoxyParamCaption}\item[{}]{\$dependency}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a contextual attribute from a dependency.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Reflection\+Parameter & {\em \$dependency} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Reflection\+Attribute\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_container_1_1_util_a6eb353edf9d8d03e19349937b516507a}\index{Illuminate\textbackslash{}Container\textbackslash{}Util@{Illuminate\textbackslash{}Container\textbackslash{}Util}!getParameterClassName@{getParameterClassName}}
+\index{getParameterClassName@{getParameterClassName}!Illuminate\textbackslash{}Container\textbackslash{}Util@{Illuminate\textbackslash{}Container\textbackslash{}Util}}
+\doxysubsubsection{\texorpdfstring{getParameterClassName()}{getParameterClassName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_container_1_1_util_a6eb353edf9d8d03e19349937b516507a} 
+static Illuminate\textbackslash{}\+Container\textbackslash{}\+Util\+::get\+Parameter\+Class\+Name (\begin{DoxyParamCaption}\item[{}]{\$parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the class name of the given parameter\textquotesingle{}s type, if possible.
+
+From Reflector\+::get\+Parameter\+Class\+Name() in Illuminate\textbackslash{}\+Support.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Reflection\+Parameter & {\em \$parameter} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_container_1_1_util_aed1224be0962f97e34cc8f9f0b1a3fc5}\index{Illuminate\textbackslash{}Container\textbackslash{}Util@{Illuminate\textbackslash{}Container\textbackslash{}Util}!unwrapIfClosure@{unwrapIfClosure}}
+\index{unwrapIfClosure@{unwrapIfClosure}!Illuminate\textbackslash{}Container\textbackslash{}Util@{Illuminate\textbackslash{}Container\textbackslash{}Util}}
+\doxysubsubsection{\texorpdfstring{unwrapIfClosure()}{unwrapIfClosure()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_container_1_1_util_aed1224be0962f97e34cc8f9f0b1a3fc5} 
+static Illuminate\textbackslash{}\+Container\textbackslash{}\+Util\+::unwrap\+If\+Closure (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return the default value of the given value.
+
+From global value() helper in Illuminate\textbackslash{}\+Support.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+ & {\em mixed} & ...\$args \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Container/Util.\+php\end{DoxyCompactItemize}

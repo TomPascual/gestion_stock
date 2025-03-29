@@ -1,0 +1,500 @@
+\doxysection{Illuminate\textbackslash{}Queue\textbackslash{}Redis\+Queue Class Reference}
+\hypertarget{class_illuminate_1_1_queue_1_1_redis_queue}{}\label{class_illuminate_1_1_queue_1_1_redis_queue}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+Inheritance diagram for Illuminate\textbackslash{}Queue\textbackslash{}Redis\+Queue\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.387856cm]{class_illuminate_1_1_queue_1_1_redis_queue}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_a9eb76ce264633c0cbc1a3c5ebbcdc63b}{\+\_\+\+\_\+construct}} (Redis \$redis, \$default=\textquotesingle{}default\textquotesingle{}, \$connection=null, \$retry\+After=60, \$block\+For=null, \$dispatch\+After\+Commit=false, \$migration\+Batch\+Size=-\/1,)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_ac5408dd45d4dfb30fb6111235b4f1b2d}{size}} (\$queue=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_add54e2fe140b01672567423b427c9db0}{bulk}} (\$jobs, \$data=\textquotesingle{}\textquotesingle{}, \$queue=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_a30bcef0f2569ada5ccca8251f4d05043}{push}} (\$job, \$data=\textquotesingle{}\textquotesingle{}, \$queue=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_a79a0668aa4f3755f997ee7478d26e4e8}{push\+Raw}} (\$payload, \$queue=null, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_ac51bf4b118d917138dba2ed81d54d151}{later}} (\$delay, \$job, \$data=\textquotesingle{}\textquotesingle{}, \$queue=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_a86b03a107f9c8a059fbe1a85358e5f02}{pop}} (\$queue=null, \$index=0)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_a910bd2ea5e38e15442680362850e6b90}{migrate\+Expired\+Jobs}} (\$from, \$to)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_aa7b7fb206f1e2e0b3ad94c219ea92188}{delete\+Reserved}} (\$queue, \$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_abd801a5dc2d3cc30a4217e152c088924}{delete\+And\+Release}} (\$queue, \$job, \$delay)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_ab48fb1a3d8a8786d4bffca812cf7ce3c}{clear}} (\$queue)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_ac2776b37ed06138e3468aa79381fee2a}{get\+Queue}} (\$queue)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_a1268b93843478b5cbdcdcd38ecf9c38d}{get\+Connection}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_a75b8ee66595a3da9dc807506c4478434}{get\+Redis}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_a80c472080f5b7579213a50a621c99b3f}{push\+On}} (\$queue, \$job, \$data=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_ae98fa539f5cdab71510d19573ddead3a}{later\+On}} (\$queue, \$delay, \$job, \$data=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_a33e86fb59e42bd42ade3efd788d96f6f}{get\+Job\+Tries}} (\$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_adaed8110dadb22ce0ca62613324ff6b8}{get\+Job\+Backoff}} (\$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_a6c8fe3cab7eb7eafedc41327db20d964}{get\+Job\+Expiration}} (\$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_ac7646340da3e0f8d4cc8059896bf3950}{get\+Connection\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_aae35eadbe97a67394a64e0d1d06573e3}{set\+Connection\+Name}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_a7f5c2b529cb8e5385bf28b4db0dbd985}{get\+Container}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_aea97b1de5e30356d27cc508aae7c0667}{set\+Container}} (\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_afaedf9247a46a12fbaa3f1f5fd2ad3cf}{later\+Raw}} (\$delay, \$payload, \$queue=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_aa9be6e9fb0f477895562141bdb275ebe}{create\+Payload\+Array}} (\$job, \$queue, \$data=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_a3a067d334c95e397f74f21080b8a9e82}{migrate}} (\$queue)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_ab8f7fe9767def5108757e671eded9c32}{retrieve\+Next\+Job}} (\$queue, \$block=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_redis_queue_abc566052f437548cda43bf61bfe05852}{get\+Random\+Id}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_a1664539edb5d7e20fdb4b1f755ca4e61}{create\+Payload}} (\$job, \$queue, \$data=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_aac08853428aa238f22332f9aa34ff6db}{create\+Object\+Payload}} (\$job, \$queue)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_a56e09e5a51d4681c3d97c90e3e92f729}{get\+Display\+Name}} (\$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_a665c50b60eda9bd83486b04cb7fd5a46}{job\+Should\+Be\+Encrypted}} (\$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_a4da31aa22ff4312f625ed69fea185759}{create\+String\+Payload}} (\$job, \$queue, \$data)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_a09c7bf95792bd1d14c8b28a3600aaf53}{with\+Create\+Payload\+Hooks}} (\$queue, array \$payload)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_a32f36ba761a60efc13f198265e8da19d}{enqueue\+Using}} (\$job, \$payload, \$queue, \$delay, \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_ad3a25a036ddd74e9ef16eb535180b321}{should\+Dispatch\+After\+Commit}} (\$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_a561beaca60eacfa22a69b08a3b647785}{raise\+Job\+Queueing\+Event}} (\$queue, \$job, \$payload, \$delay)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_ab08782a5c8a562bdd465c3ea9d94c120}{raise\+Job\+Queued\+Event}} (\$queue, \$job\+Id, \$job, \$payload, \$delay)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_aa17106ffe5403abae18f4da5f0f4837a}\label{class_illuminate_1_1_queue_1_1_redis_queue_aa17106ffe5403abae18f4da5f0f4837a} 
+{\bfseries \$redis}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_a452212484bcb59ea4615c2d64a22c926}\label{class_illuminate_1_1_queue_1_1_redis_queue_a452212484bcb59ea4615c2d64a22c926} 
+{\bfseries \$connection}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_a61eb110b1c1384bc3b6844c3ae197186}\label{class_illuminate_1_1_queue_1_1_redis_queue_a61eb110b1c1384bc3b6844c3ae197186} 
+{\bfseries \$default}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_a5342fdda9efa6db1c69382c5a8e3bcf6}\label{class_illuminate_1_1_queue_1_1_redis_queue_a5342fdda9efa6db1c69382c5a8e3bcf6} 
+{\bfseries \$retry\+After} = 60
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_a3e86c3a7af3256685ce0e2950125f10c}\label{class_illuminate_1_1_queue_1_1_redis_queue_a3e86c3a7af3256685ce0e2950125f10c} 
+{\bfseries \$block\+For} = null
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_a08892edacae8a2a7fb698b89829247b2}\label{class_illuminate_1_1_queue_1_1_redis_queue_a08892edacae8a2a7fb698b89829247b2} 
+{\bfseries \$migration\+Batch\+Size} = -\/1
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_a2acb1e95e1bebc0a4a8aeb378cc1fe30}\label{class_illuminate_1_1_queue_1_1_redis_queue_a2acb1e95e1bebc0a4a8aeb378cc1fe30} 
+{\bfseries \$secondary\+Queue\+Had\+Job} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$container}
+\item 
+{\bfseries \$connection\+Name}
+\item 
+{\bfseries \$dispatch\+After\+Commit}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_ae99a2c0c21ffe714d48f73bf2fb57c28}{create\+Payload\+Using}} (\$callback)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$create\+Payload\+Callbacks} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_a9eb76ce264633c0cbc1a3c5ebbcdc63b}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_a9eb76ce264633c0cbc1a3c5ebbcdc63b} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Redis}]{\$redis}{, }\item[{}]{\$default}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}, }\item[{}]{\$connection}{ = {\ttfamily null}, }\item[{}]{\$retry\+After}{ = {\ttfamily 60}, }\item[{}]{\$block\+For}{ = {\ttfamily null}, }\item[{}]{\$dispatch\+After\+Commit}{ = {\ttfamily false}, }\item[{}]{\$migration\+Batch\+Size}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})}
+
+Create a new Redis queue instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Redis\textbackslash{}\+Factory & {\em \$redis} & \\
+\hline
+string & {\em \$default} & \\
+\hline
+string | null & {\em \$connection} & \\
+\hline
+int & {\em \$retry\+After} & \\
+\hline
+int | null & {\em \$block\+For} & \\
+\hline
+bool & {\em \$dispatch\+After\+Commit} & \\
+\hline
+int & {\em \$migration\+Batch\+Size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_add54e2fe140b01672567423b427c9db0}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!bulk@{bulk}}
+\index{bulk@{bulk}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{bulk()}{bulk()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_add54e2fe140b01672567423b427c9db0} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::bulk (\begin{DoxyParamCaption}\item[{}]{\$jobs}{, }\item[{}]{\$data}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$queue}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Push an array of jobs onto the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$jobs} & \\
+\hline
+mixed & {\em \$data} & \\
+\hline
+string | null & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_a7669cb52871bbdd3a6b0d148a9203765}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_ab48fb1a3d8a8786d4bffca812cf7ce3c}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!clear@{clear}}
+\index{clear@{clear}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_ab48fb1a3d8a8786d4bffca812cf7ce3c} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::clear (\begin{DoxyParamCaption}\item[{}]{\$queue}{}\end{DoxyParamCaption})}
+
+Delete all of the jobs from the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_clearable_queue_a125c800b37ac885bc505621130c9a403}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Clearable\+Queue}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_aa9be6e9fb0f477895562141bdb275ebe}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!createPayloadArray@{createPayloadArray}}
+\index{createPayloadArray@{createPayloadArray}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{createPayloadArray()}{createPayloadArray()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_aa9be6e9fb0f477895562141bdb275ebe} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::create\+Payload\+Array (\begin{DoxyParamCaption}\item[{}]{\$job}{, }\item[{}]{\$queue}{, }\item[{}]{\$data}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a payload string from the given job and data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$job} & \\
+\hline
+string & {\em \$queue} & \\
+\hline
+mixed & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_ac25e2d195e61036938adc4bd048e0b0c}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_abd801a5dc2d3cc30a4217e152c088924}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!deleteAndRelease@{deleteAndRelease}}
+\index{deleteAndRelease@{deleteAndRelease}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{deleteAndRelease()}{deleteAndRelease()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_abd801a5dc2d3cc30a4217e152c088924} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::delete\+And\+Release (\begin{DoxyParamCaption}\item[{}]{\$queue}{, }\item[{}]{\$job}{, }\item[{}]{\$delay}{}\end{DoxyParamCaption})}
+
+Delete a reserved job from the reserved queue and release it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$queue} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Jobs\textbackslash{}\+Redis\+Job & {\em \$job} & \\
+\hline
+int & {\em \$delay} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_aa7b7fb206f1e2e0b3ad94c219ea92188}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!deleteReserved@{deleteReserved}}
+\index{deleteReserved@{deleteReserved}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{deleteReserved()}{deleteReserved()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_aa7b7fb206f1e2e0b3ad94c219ea92188} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::delete\+Reserved (\begin{DoxyParamCaption}\item[{}]{\$queue}{, }\item[{}]{\$job}{}\end{DoxyParamCaption})}
+
+Delete a reserved job from the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$queue} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Jobs\textbackslash{}\+Redis\+Job & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_a1268b93843478b5cbdcdcd38ecf9c38d}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!getConnection@{getConnection}}
+\index{getConnection@{getConnection}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{getConnection()}{getConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_a1268b93843478b5cbdcdcd38ecf9c38d} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::get\+Connection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the connection for the queue.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_ac2776b37ed06138e3468aa79381fee2a}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!getQueue@{getQueue}}
+\index{getQueue@{getQueue}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{getQueue()}{getQueue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_ac2776b37ed06138e3468aa79381fee2a} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::get\+Queue (\begin{DoxyParamCaption}\item[{}]{\$queue}{}\end{DoxyParamCaption})}
+
+Get the queue or return the default.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_abc566052f437548cda43bf61bfe05852}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!getRandomId@{getRandomId}}
+\index{getRandomId@{getRandomId}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{getRandomId()}{getRandomId()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_abc566052f437548cda43bf61bfe05852} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::get\+Random\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get a random ID string.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_a75b8ee66595a3da9dc807506c4478434}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!getRedis@{getRedis}}
+\index{getRedis@{getRedis}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{getRedis()}{getRedis()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_a75b8ee66595a3da9dc807506c4478434} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::get\+Redis (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the underlying Redis instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Redis\textbackslash{}\+Factory 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_ac51bf4b118d917138dba2ed81d54d151}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!later@{later}}
+\index{later@{later}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{later()}{later()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_ac51bf4b118d917138dba2ed81d54d151} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::later (\begin{DoxyParamCaption}\item[{}]{\$delay}{, }\item[{}]{\$job}{, }\item[{}]{\$data}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$queue}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Push a new job onto the queue after a delay.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Date\+Time\+Interface | \textbackslash{}\+Date\+Interval | int & {\em \$delay} & \\
+\hline
+object | string & {\em \$job} & \\
+\hline
+mixed & {\em \$data} & \\
+\hline
+string | null & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_afaedf9247a46a12fbaa3f1f5fd2ad3cf}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!laterRaw@{laterRaw}}
+\index{laterRaw@{laterRaw}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{laterRaw()}{laterRaw()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_afaedf9247a46a12fbaa3f1f5fd2ad3cf} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::later\+Raw (\begin{DoxyParamCaption}\item[{}]{\$delay}{, }\item[{}]{\$payload}{, }\item[{}]{\$queue}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Push a raw job onto the queue after (n) seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Date\+Time\+Interface | \textbackslash{}\+Date\+Interval | int & {\em \$delay} & \\
+\hline
+string & {\em \$payload} & \\
+\hline
+string | null & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_a3a067d334c95e397f74f21080b8a9e82}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!migrate@{migrate}}
+\index{migrate@{migrate}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{migrate()}{migrate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_a3a067d334c95e397f74f21080b8a9e82} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::migrate (\begin{DoxyParamCaption}\item[{}]{\$queue}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Migrate any delayed or expired jobs onto the primary queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_a910bd2ea5e38e15442680362850e6b90}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!migrateExpiredJobs@{migrateExpiredJobs}}
+\index{migrateExpiredJobs@{migrateExpiredJobs}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{migrateExpiredJobs()}{migrateExpiredJobs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_a910bd2ea5e38e15442680362850e6b90} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::migrate\+Expired\+Jobs (\begin{DoxyParamCaption}\item[{}]{\$from}{, }\item[{}]{\$to}{}\end{DoxyParamCaption})}
+
+Migrate the delayed jobs that are ready to the regular queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$from} & \\
+\hline
+string & {\em \$to} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_a86b03a107f9c8a059fbe1a85358e5f02}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!pop@{pop}}
+\index{pop@{pop}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_a86b03a107f9c8a059fbe1a85358e5f02} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::pop (\begin{DoxyParamCaption}\item[{}]{\$queue}{ = {\ttfamily null}, }\item[{}]{\$index}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Pop the next job off of the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Job\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_a30bcef0f2569ada5ccca8251f4d05043}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!push@{push}}
+\index{push@{push}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_a30bcef0f2569ada5ccca8251f4d05043} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::push (\begin{DoxyParamCaption}\item[{}]{\$job}{, }\item[{}]{\$data}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$queue}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Push a new job onto the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object | string & {\em \$job} & \\
+\hline
+mixed & {\em \$data} & \\
+\hline
+string | null & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_a79a0668aa4f3755f997ee7478d26e4e8}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!pushRaw@{pushRaw}}
+\index{pushRaw@{pushRaw}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{pushRaw()}{pushRaw()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_a79a0668aa4f3755f997ee7478d26e4e8} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::push\+Raw (\begin{DoxyParamCaption}\item[{}]{\$payload}{, }\item[{}]{\$queue}{ = {\ttfamily null}, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Push a raw payload onto the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$payload} & \\
+\hline
+string | null & {\em \$queue} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_ab8f7fe9767def5108757e671eded9c32}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!retrieveNextJob@{retrieveNextJob}}
+\index{retrieveNextJob@{retrieveNextJob}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{retrieveNextJob()}{retrieveNextJob()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_ab8f7fe9767def5108757e671eded9c32} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::retrieve\+Next\+Job (\begin{DoxyParamCaption}\item[{}]{\$queue}{, }\item[{}]{\$block}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Retrieve the next job from the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$queue} & \\
+\hline
+bool & {\em \$block} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_redis_queue_ac5408dd45d4dfb30fb6111235b4f1b2d}\index{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}!size@{size}}
+\index{size@{size}!Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue@{Illuminate\textbackslash{}Queue\textbackslash{}RedisQueue}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_redis_queue_ac5408dd45d4dfb30fb6111235b4f1b2d} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Redis\+Queue\+::size (\begin{DoxyParamCaption}\item[{}]{\$queue}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get the size of the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Queue/Redis\+Queue.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,116 @@
+\doxysection{Monolog\textbackslash{}Formatter\textbackslash{}Mongo\+DBFormatter Class Reference}
+\hypertarget{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter}{}\label{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter}\index{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter@{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter}}
+Inheritance diagram for Monolog\textbackslash{}Formatter\textbackslash{}Mongo\+DBFormatter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a1ba198b5ae4faec799f46bdcf902abdc}{\+\_\+\+\_\+construct}} (int \$max\+Nesting\+Level=3, bool \$exception\+Trace\+As\+String=true)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a6d32d021b7266ac6537246eaefcb7d64}{format\+Batch}} (array \$records)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_monolog_1_1_formatter_1_1_formatter_interface}{Monolog\textbackslash{}\+Formatter\textbackslash{}\+Formatter\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_monolog_1_1_formatter_1_1_formatter_interface_ab85727b404977c3e097d17925e3a2068}{format}} (\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}} \$record)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a2e7099f4aac3d081580c488efbe4811e}{format\+Array}} (array \$array, int \$nesting\+Level=0)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a97f966b34a699b53f21c25bffa327218}{format\+Object}} (\$value, int \$nesting\+Level)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a225b8546e8dbd73ad629bb7d34624763}{format\+Exception}} (\textbackslash{}Throwable \$exception, int \$nesting\+Level)
+\item 
+\Hypertarget{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a063e43020b40f16427bd1d9a8f2ae821}\label{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a063e43020b40f16427bd1d9a8f2ae821} 
+{\bfseries format\+Date} (\textbackslash{}Date\+Time\+Interface \$value, int \$nesting\+Level)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Formats a record for use with the Mongo\+DBHandler.
+
+\begin{DoxyAuthor}{Author}
+Florian Plattner \href{mailto:me@florianplattner.de}{\texttt{ me@florianplattner.\+de}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a1ba198b5ae4faec799f46bdcf902abdc}\index{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter@{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter@{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a1ba198b5ae4faec799f46bdcf902abdc} 
+Monolog\textbackslash{}\+Formatter\textbackslash{}\+Mongo\+DBFormatter\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{int}]{\$max\+Nesting\+Level}{ = {\ttfamily 3}, }\item[{bool}]{\$exception\+Trace\+As\+String}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$max\+Nesting\+Level} & 0 means infinite nesting, the \$record itself is level 1, \$record-\/\texorpdfstring{$>$}{>}context is 2 \\
+\hline
+bool & {\em \$exception\+Trace\+As\+String} & set to false to log exception traces as a sub documents instead of strings \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a2e7099f4aac3d081580c488efbe4811e}\index{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter@{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter}!formatArray@{formatArray}}
+\index{formatArray@{formatArray}!Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter@{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter}}
+\doxysubsubsection{\texorpdfstring{formatArray()}{formatArray()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a2e7099f4aac3d081580c488efbe4811e} 
+Monolog\textbackslash{}\+Formatter\textbackslash{}\+Mongo\+DBFormatter\+::format\+Array (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{int}]{\$nesting\+Level}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed\mbox{[}$\,$\mbox{]} & {\em \$array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}string Array except when max nesting level is reached then a string "{}\mbox{[}...\mbox{]}"{} 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a6d32d021b7266ac6537246eaefcb7d64}\index{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter@{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter}!formatBatch@{formatBatch}}
+\index{formatBatch@{formatBatch}!Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter@{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter}}
+\doxysubsubsection{\texorpdfstring{formatBatch()}{formatBatch()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a6d32d021b7266ac6537246eaefcb7d64} 
+Monolog\textbackslash{}\+Formatter\textbackslash{}\+Mongo\+DBFormatter\+::format\+Batch (\begin{DoxyParamCaption}\item[{array}]{\$records}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc
+
+\begin{DoxyReturn}{Returns}
+array$<$mixed\mbox{[}$\,$\mbox{]}$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_formatter_1_1_formatter_interface_a8ed55c9038438190263a0f97087c083b}{Monolog\textbackslash{}\+Formatter\textbackslash{}\+Formatter\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a225b8546e8dbd73ad629bb7d34624763}\index{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter@{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter}!formatException@{formatException}}
+\index{formatException@{formatException}!Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter@{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter}}
+\doxysubsubsection{\texorpdfstring{formatException()}{formatException()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a225b8546e8dbd73ad629bb7d34624763} 
+Monolog\textbackslash{}\+Formatter\textbackslash{}\+Mongo\+DBFormatter\+::format\+Exception (\begin{DoxyParamCaption}\item[{\textbackslash{}Throwable}]{\$exception}{, }\item[{int}]{\$nesting\+Level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+mixed\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a97f966b34a699b53f21c25bffa327218}\index{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter@{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter}!formatObject@{formatObject}}
+\index{formatObject@{formatObject}!Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter@{Monolog\textbackslash{}Formatter\textbackslash{}MongoDBFormatter}}
+\doxysubsubsection{\texorpdfstring{formatObject()}{formatObject()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_formatter_1_1_mongo_d_b_formatter_a97f966b34a699b53f21c25bffa327218} 
+Monolog\textbackslash{}\+Formatter\textbackslash{}\+Mongo\+DBFormatter\+::format\+Object (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{int}]{\$nesting\+Level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/monolog/monolog/src/\+Monolog/\+Formatter/Mongo\+DBFormatter.\+php\end{DoxyCompactItemize}

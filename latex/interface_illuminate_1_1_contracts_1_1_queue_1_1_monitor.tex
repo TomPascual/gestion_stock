@@ -1,0 +1,85 @@
+\doxysection{Illuminate\textbackslash{}Contracts\textbackslash{}Queue\textbackslash{}Monitor Interface Reference}
+\hypertarget{interface_illuminate_1_1_contracts_1_1_queue_1_1_monitor}{}\label{interface_illuminate_1_1_contracts_1_1_queue_1_1_monitor}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Queue\textbackslash{}Monitor@{Illuminate\textbackslash{}Contracts\textbackslash{}Queue\textbackslash{}Monitor}}
+Inheritance diagram for Illuminate\textbackslash{}Contracts\textbackslash{}Queue\textbackslash{}Monitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_illuminate_1_1_contracts_1_1_queue_1_1_monitor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_monitor_a8049498b6aaa8de63ef6011932311ceb}{looping}} (\$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_monitor_ab17a18997b5f911f70750a5030bb5404}{failing}} (\$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_queue_1_1_monitor_a0142223192d8c5ded798dab6f1c1ac46}{stopping}} (\$callback)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_queue_1_1_monitor_ab17a18997b5f911f70750a5030bb5404}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Queue\textbackslash{}Monitor@{Illuminate\textbackslash{}Contracts\textbackslash{}Queue\textbackslash{}Monitor}!failing@{failing}}
+\index{failing@{failing}!Illuminate\textbackslash{}Contracts\textbackslash{}Queue\textbackslash{}Monitor@{Illuminate\textbackslash{}Contracts\textbackslash{}Queue\textbackslash{}Monitor}}
+\doxysubsubsection{\texorpdfstring{failing()}{failing()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_queue_1_1_monitor_ab17a18997b5f911f70750a5030bb5404} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Monitor\+::failing (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a callback to be executed when a job fails after the maximum number of retries.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_manager_ad8c38e963154feee3fe17badd96be8b5}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue\+Manager}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_queue_1_1_monitor_a8049498b6aaa8de63ef6011932311ceb}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Queue\textbackslash{}Monitor@{Illuminate\textbackslash{}Contracts\textbackslash{}Queue\textbackslash{}Monitor}!looping@{looping}}
+\index{looping@{looping}!Illuminate\textbackslash{}Contracts\textbackslash{}Queue\textbackslash{}Monitor@{Illuminate\textbackslash{}Contracts\textbackslash{}Queue\textbackslash{}Monitor}}
+\doxysubsubsection{\texorpdfstring{looping()}{looping()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_queue_1_1_monitor_a8049498b6aaa8de63ef6011932311ceb} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Monitor\+::looping (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a callback to be executed on every iteration through the queue loop.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_manager_a7dbd420c6c8ee227bc43068ddc5fee3e}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue\+Manager}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_queue_1_1_monitor_a0142223192d8c5ded798dab6f1c1ac46}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Queue\textbackslash{}Monitor@{Illuminate\textbackslash{}Contracts\textbackslash{}Queue\textbackslash{}Monitor}!stopping@{stopping}}
+\index{stopping@{stopping}!Illuminate\textbackslash{}Contracts\textbackslash{}Queue\textbackslash{}Monitor@{Illuminate\textbackslash{}Contracts\textbackslash{}Queue\textbackslash{}Monitor}}
+\doxysubsubsection{\texorpdfstring{stopping()}{stopping()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_queue_1_1_monitor_a0142223192d8c5ded798dab6f1c1ac46} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Monitor\+::stopping (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a callback to be executed when a daemon queue is stopping.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_queue_manager_a16e82ece513674637f68bb9680604765}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue\+Manager}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Contracts/\+Queue/Monitor.\+php\end{DoxyCompactItemize}

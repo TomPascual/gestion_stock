@@ -1,0 +1,64 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Crypto\textbackslash{}SMime\+Signer Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_s_mime_signer}{}\label{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_s_mime_signer}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Crypto\textbackslash{}SMimeSigner@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Crypto\textbackslash{}SMimeSigner}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Crypto\textbackslash{}SMime\+Signer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_s_mime_signer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_s_mime_signer_ab3f0a39f66e10aec6e74bfc690d3c172}{\+\_\+\+\_\+construct}} (string \$certificate, string \$private\+Key, ?string \$private\+Key\+Passphrase=null, ?string \$extra\+Certs=null, ?int \$sign\+Options=null)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_s_mime_signer_a96343d4aefe33b63f01d8af0dad43962}\label{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_s_mime_signer_a96343d4aefe33b63f01d8af0dad43962} 
+{\bfseries sign} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_message}{Message}} \$message)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_s_mime}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Crypto\textbackslash{}\+SMime}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries normalize\+File\+Path} (string \$path)
+\item 
+{\bfseries iterator\+To\+File} (iterable \$iterator, \$stream)
+\item 
+{\bfseries convert\+Message\+To\+SMime\+Part} (\$stream, string \$type, string \$subtype)
+\item 
+{\bfseries get\+Stream\+Iterator} (\$stream)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Sebastiaan Stok \href{mailto:s.stok@rollerscapes.net}{\texttt{ s.\+stok@rollerscapes.\+net}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_s_mime_signer_ab3f0a39f66e10aec6e74bfc690d3c172}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Crypto\textbackslash{}SMimeSigner@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Crypto\textbackslash{}SMimeSigner}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Crypto\textbackslash{}SMimeSigner@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Crypto\textbackslash{}SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mime_1_1_crypto_1_1_s_mime_signer_ab3f0a39f66e10aec6e74bfc690d3c172} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Crypto\textbackslash{}\+SMime\+Signer\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$certificate}{, }\item[{string}]{\$private\+Key}{, }\item[{?string}]{\$private\+Key\+Passphrase}{ = {\ttfamily null}, }\item[{?string}]{\$extra\+Certs}{ = {\ttfamily null}, }\item[{?int}]{\$sign\+Options}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$certificate} & The path of the file containing the signing certificate (in PEM format) \\
+\hline
+string & {\em \$private\+Key} & The path of the file containing the private key (in PEM format) \\
+\hline
+string | null & {\em \$private\+Key\+Passphrase} & A passphrase of the private key (if any) \\
+\hline
+string | null & {\em \$extra\+Certs} & The path of the file containing intermediate certificates (in PEM format) needed by the signing certificate \\
+\hline
+int | null & {\em \$sign\+Options} & Bitwise operator options for openssl\+\_\+pkcs7\+\_\+sign() (\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{https://secure.php.net/manual/en/openssl.pkcs7.flags.php}{\texttt{ https\+://secure.\+php.\+net/manual/en/openssl.\+pkcs7.\+flags.\+php}}) 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/mime/\+Crypto/SMime\+Signer.\+php\end{DoxyCompactItemize}

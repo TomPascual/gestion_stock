@@ -1,0 +1,73 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Event\+Listener\textbackslash{}Dump\+Listener Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_dump_listener}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_dump_listener}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}DumpListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}DumpListener}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Event\+Listener\textbackslash{}Dump\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_dump_listener}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_dump_listener_af7eaeb4050d43092cf6a05823f7c6703}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_dump_listener_af7eaeb4050d43092cf6a05823f7c6703} 
+{\bfseries \+\_\+\+\_\+construct} (private \mbox{\hyperlink{interface_symfony_1_1_component_1_1_var_dumper_1_1_cloner_1_1_cloner_interface}{Cloner\+Interface}} \$cloner, private \mbox{\hyperlink{interface_symfony_1_1_component_1_1_var_dumper_1_1_dumper_1_1_data_dumper_interface}{Data\+Dumper\+Interface}} \$dumper, private ?\mbox{\hyperlink{class_symfony_1_1_component_1_1_var_dumper_1_1_server_1_1_connection}{Connection}} \$connection=null,)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_dump_listener_a476cb9ca219def2252688f503bd7b130}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_dump_listener_a476cb9ca219def2252688f503bd7b130} 
+{\bfseries configure} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_dump_listener_a6af5e2a5090bf14a13bcf7f8c784e33c}{get\+Subscribed\+Events}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Configures dump() handler.
+
+\begin{DoxyAuthor}{Author}
+Nicolas Grekas \href{mailto:p@tchwork.com}{\texttt{ p@tchwork.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_dump_listener_a6af5e2a5090bf14a13bcf7f8c784e33c}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}DumpListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}DumpListener}!getSubscribedEvents@{getSubscribedEvents}}
+\index{getSubscribedEvents@{getSubscribedEvents}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}DumpListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}DumpListener}}
+\doxysubsubsection{\texorpdfstring{getSubscribedEvents()}{getSubscribedEvents()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_dump_listener_a6af5e2a5090bf14a13bcf7f8c784e33c} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Dump\+Listener\+::get\+Subscribed\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an array of event names this subscriber wants to listen to.
+
+The array keys are event names and the value can be\+:
+
+
+\begin{DoxyItemize}
+\item The method name to call (priority defaults to 0)
+\item An array composed of the method name to call and the priority
+\item An array of arrays composed of the method names to call and respective priorities, or 0 if unset
+\end{DoxyItemize}
+
+For instance\+:
+
+
+\begin{DoxyItemize}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}method\+Name\textquotesingle{}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\textquotesingle{}method\+Name\textquotesingle{}, \$priority\mbox{]}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\mbox{[}\textquotesingle{}method\+Name1\textquotesingle{}, \$priority\mbox{]}, \mbox{[}\textquotesingle{}method\+Name2\textquotesingle{}\mbox{]}\mbox{]}\mbox{]}
+\end{DoxyItemize}
+
+The code must not depend on runtime state as it will only be called at compile time. All logic depending on runtime state must be put into the individual methods handling the events.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, string\texorpdfstring{$\vert$}{|}array\{0\+: string, 1\+: int\}\texorpdfstring{$\vert$}{|}list\texorpdfstring{$<$}{<}array\{0\+: string, 1?\+: int\}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface_a1f40b93f2c531f690bb4cd5bc5764c73}{Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event\+Subscriber\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/kernel/\+Event\+Listener/Dump\+Listener.\+php\end{DoxyCompactItemize}

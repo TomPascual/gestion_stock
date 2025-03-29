@@ -1,0 +1,172 @@
+\doxysection{Cron\textbackslash{}Abstract\+Field Class Reference}
+\hypertarget{class_cron_1_1_abstract_field}{}\label{class_cron_1_1_abstract_field}\index{Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}}
+Inheritance diagram for Cron\textbackslash{}Abstract\+Field\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.210526cm]{class_cron_1_1_abstract_field}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cron_1_1_abstract_field_ae77883bdacf1900f05e555335dbb864c}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_cron_1_1_abstract_field_a530baf81b838ca84e3667013abc4e9c4}{is\+Satisfied}} (int \$date\+Value, string \$value)
+\item 
+\mbox{\hyperlink{class_cron_1_1_abstract_field_a393ff83e1b7750b189bafb608fd8b409}{is\+Range}} (string \$value)
+\item 
+\mbox{\hyperlink{class_cron_1_1_abstract_field_ab65b2c6400c268f8c694f1020bf9b3ad}{is\+Increments\+Of\+Ranges}} (string \$value)
+\item 
+\mbox{\hyperlink{class_cron_1_1_abstract_field_a4fd4422b81e02fc95540a052f56a0b46}{is\+In\+Range}} (int \$date\+Value, \$value)
+\item 
+\mbox{\hyperlink{class_cron_1_1_abstract_field_a3b3fbdcce13ee7c60907b482e90c6d32}{is\+In\+Increments\+Of\+Ranges}} (int \$date\+Value, string \$value)
+\item 
+\mbox{\hyperlink{class_cron_1_1_abstract_field_af674de6481f93247532e445910bbf131}{get\+Range\+For\+Expression}} (string \$expression, int \$max)
+\item 
+\mbox{\hyperlink{class_cron_1_1_abstract_field_a048886300b82bda36dd029593f5d22a7}{validate}} (string \$value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_cron_1_1_field_interface}{Cron\textbackslash{}\+Field\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_cron_1_1_field_interface_a07a0031fe6d9874aea423e6210ac0312}{is\+Satisfied\+By}} (Date\+Time\+Interface \$date, \$value, bool \$invert)
+\item 
+\mbox{\hyperlink{interface_cron_1_1_field_interface_a9016d6370d4622c5ec6b358650485a97}{increment}} (Date\+Time\+Interface \&\$date, \$invert=false, \$parts=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cron_1_1_abstract_field_a833517697762a63842977d6fac1cf433}{convert\+Literals}} (string \$value)
+\item 
+\Hypertarget{class_cron_1_1_abstract_field_a7b92b3a0744007410e1a98b0002a74c2}\label{class_cron_1_1_abstract_field_a7b92b3a0744007410e1a98b0002a74c2} 
+{\bfseries timezone\+Safe\+Modify} (Date\+Time\+Interface \$dt, string \$modification)
+\item 
+\Hypertarget{class_cron_1_1_abstract_field_ad9892469421f3f09765e57e3701de126}\label{class_cron_1_1_abstract_field_ad9892469421f3f09765e57e3701de126} 
+{\bfseries set\+Time\+Hour} (Date\+Time\+Interface \$date, bool \$invert, int \$original\+Timestamp)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_cron_1_1_abstract_field_abd64b7b1be6801c3eaf6d867ba358408}\label{class_cron_1_1_abstract_field_abd64b7b1be6801c3eaf6d867ba358408} 
+{\bfseries \$full\+Range} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_cron_1_1_abstract_field_a7501162472b9384ca2fa88725d4cac6b}\label{class_cron_1_1_abstract_field_a7501162472b9384ca2fa88725d4cac6b} 
+{\bfseries \$literals} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_cron_1_1_abstract_field_a484cc47fc661b1d52b1873ce1a9de066}\label{class_cron_1_1_abstract_field_a484cc47fc661b1d52b1873ce1a9de066} 
+{\bfseries \$range\+Start}
+\item 
+\Hypertarget{class_cron_1_1_abstract_field_a1541e4b4f43b95a9759a2046b6b74d69}\label{class_cron_1_1_abstract_field_a1541e4b4f43b95a9759a2046b6b74d69} 
+{\bfseries \$range\+End}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract CRON expression field. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_cron_1_1_abstract_field_ae77883bdacf1900f05e555335dbb864c}\index{Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_abstract_field_ae77883bdacf1900f05e555335dbb864c} 
+Cron\textbackslash{}\+Abstract\+Field\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Constructor 
+
+Reimplemented in \mbox{\hyperlink{class_cron_1_1_day_of_week_field_a0171c54cbcb7704b1cb1401be87a0978}{Cron\textbackslash{}\+Day\+Of\+Week\+Field}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cron_1_1_abstract_field_a833517697762a63842977d6fac1cf433}\index{Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}!convertLiterals@{convertLiterals}}
+\index{convertLiterals@{convertLiterals}!Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}}
+\doxysubsubsection{\texorpdfstring{convertLiterals()}{convertLiterals()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_abstract_field_a833517697762a63842977d6fac1cf433} 
+Cron\textbackslash{}\+Abstract\+Field\+::convert\+Literals (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Convert literal.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_cron_1_1_abstract_field_af674de6481f93247532e445910bbf131}\index{Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}!getRangeForExpression@{getRangeForExpression}}
+\index{getRangeForExpression@{getRangeForExpression}!Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}}
+\doxysubsubsection{\texorpdfstring{getRangeForExpression()}{getRangeForExpression()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_abstract_field_af674de6481f93247532e445910bbf131} 
+Cron\textbackslash{}\+Abstract\+Field\+::get\+Range\+For\+Expression (\begin{DoxyParamCaption}\item[{string}]{\$expression}{, }\item[{int}]{\$max}{}\end{DoxyParamCaption})}
+
+Returns a range of values for the given cron expression.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expression} & The expression to evaluate \\
+\hline
+int & {\em \$max} & Maximum offset for range\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_cron_1_1_abstract_field_ab65b2c6400c268f8c694f1020bf9b3ad}\index{Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}!isIncrementsOfRanges@{isIncrementsOfRanges}}
+\index{isIncrementsOfRanges@{isIncrementsOfRanges}!Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}}
+\doxysubsubsection{\texorpdfstring{isIncrementsOfRanges()}{isIncrementsOfRanges()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_abstract_field_ab65b2c6400c268f8c694f1020bf9b3ad} 
+Cron\textbackslash{}\+Abstract\+Field\+::is\+Increments\+Of\+Ranges (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Check if a value is an increments of ranges. \Hypertarget{class_cron_1_1_abstract_field_a3b3fbdcce13ee7c60907b482e90c6d32}\index{Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}!isInIncrementsOfRanges@{isInIncrementsOfRanges}}
+\index{isInIncrementsOfRanges@{isInIncrementsOfRanges}!Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}}
+\doxysubsubsection{\texorpdfstring{isInIncrementsOfRanges()}{isInIncrementsOfRanges()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_abstract_field_a3b3fbdcce13ee7c60907b482e90c6d32} 
+Cron\textbackslash{}\+Abstract\+Field\+::is\+In\+Increments\+Of\+Ranges (\begin{DoxyParamCaption}\item[{int}]{\$date\+Value}{, }\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Test if a value is within an increments of ranges (offset\mbox{[}-\/to\mbox{]}/step size). @phpstan-\/ignore-\/next-\/line\Hypertarget{class_cron_1_1_abstract_field_a4fd4422b81e02fc95540a052f56a0b46}\index{Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}!isInRange@{isInRange}}
+\index{isInRange@{isInRange}!Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}}
+\doxysubsubsection{\texorpdfstring{isInRange()}{isInRange()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_abstract_field_a4fd4422b81e02fc95540a052f56a0b46} 
+Cron\textbackslash{}\+Abstract\+Field\+::is\+In\+Range (\begin{DoxyParamCaption}\item[{int}]{\$date\+Value}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Test if a value is within a range. \Hypertarget{class_cron_1_1_abstract_field_a393ff83e1b7750b189bafb608fd8b409}\index{Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}!isRange@{isRange}}
+\index{isRange@{isRange}!Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}}
+\doxysubsubsection{\texorpdfstring{isRange()}{isRange()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_abstract_field_a393ff83e1b7750b189bafb608fd8b409} 
+Cron\textbackslash{}\+Abstract\+Field\+::is\+Range (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Check if a value is a range. \Hypertarget{class_cron_1_1_abstract_field_a530baf81b838ca84e3667013abc4e9c4}\index{Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}!isSatisfied@{isSatisfied}}
+\index{isSatisfied@{isSatisfied}!Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}}
+\doxysubsubsection{\texorpdfstring{isSatisfied()}{isSatisfied()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_abstract_field_a530baf81b838ca84e3667013abc4e9c4} 
+Cron\textbackslash{}\+Abstract\+Field\+::is\+Satisfied (\begin{DoxyParamCaption}\item[{int}]{\$date\+Value}{, }\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Check to see if a field is satisfied by a value. \Hypertarget{class_cron_1_1_abstract_field_a048886300b82bda36dd029593f5d22a7}\index{Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}!validate@{validate}}
+\index{validate@{validate}!Cron\textbackslash{}AbstractField@{Cron\textbackslash{}AbstractField}}
+\doxysubsubsection{\texorpdfstring{validate()}{validate()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_abstract_field_a048886300b82bda36dd029593f5d22a7} 
+Cron\textbackslash{}\+Abstract\+Field\+::validate (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Checks to see if a value is valid for the field.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_cron_1_1_field_interface_a4fa26022a4c7454e2e4e31edf247c190}{Cron\textbackslash{}\+Field\+Interface}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_cron_1_1_day_of_month_field_af5658620a1b363e0d7b5483c35b193da}{Cron\textbackslash{}\+Day\+Of\+Month\+Field}}, and \mbox{\hyperlink{class_cron_1_1_day_of_week_field_ad921d3d6563ea22cc63c3d3a0390efce}{Cron\textbackslash{}\+Day\+Of\+Week\+Field}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/dragonmantank/cron-\/expression/src/\+Cron/Abstract\+Field.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,717 @@
+\doxysection{Illuminate\textbackslash{}Mail\textbackslash{}Mailer Class Reference}
+\hypertarget{class_illuminate_1_1_mail_1_1_mailer}{}\label{class_illuminate_1_1_mail_1_1_mailer}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+Inheritance diagram for Illuminate\textbackslash{}Mail\textbackslash{}Mailer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_mail_1_1_mailer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_ac1e563ee33a8b3ea003b58019ba8cc18}{\+\_\+\+\_\+construct}} (string \$name, \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_view_1_1_factory}{Factory}} \$views, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_transport_interface}{Transport\+Interface}} \$transport, ?\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}} \$events=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a6f5c2727f46eaa3692e70285fcfc3268}{always\+From}} (\$address, \$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a7a6bcd53ad7ed9b85fc86386f73743b0}{always\+Reply\+To}} (\$address, \$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_abc9f2d319283fe2336adb24f61e60466}{always\+Return\+Path}} (\$address)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a1d1e544fac0e15052c1b56493ffcbc36}{always\+To}} (\$address, \$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_ad2a2af31a54c624666f2df24bb5d5132}{to}} (\$users, \$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a1162a06251148b0736a4b70efe6c6129}{cc}} (\$users, \$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a780f9617ccd16afb3f787499ef515ebf}{bcc}} (\$users, \$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a1176b48b63c55cad1472e18d772b94dd}{html}} (\$html, \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_adc6a0ac3ef0b2c6954a7c2bcc0a7d74d}{raw}} (\$text, \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_aec3e2565e6f83efbfa03b7d5427ca0d9}{plain}} (\$view, array \$data, \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_ac72e18c8efd247b2113add190df5c522}{render}} (\$view, array \$data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a4b9878683b174fd1e139b0a8598de302}{send}} (\$view, array \$data=\mbox{[}$\,$\mbox{]}, \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_ae5d11a57d1e7485068a63332f34bc7fc}{send\+Now}} (\$mailable, array \$data=\mbox{[}$\,$\mbox{]}, \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_aa16f3c318ac1aff65848de5e723bfff9}{queue}} (\$view, \$queue=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a65658722c2ca1d21ce041aec36b1e2a5}{on\+Queue}} (\$\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_aa16f3c318ac1aff65848de5e723bfff9}{queue}}, \$view)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a111aef77dd52b24f788f73d9c2847f29}{queue\+On}} (\$\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_aa16f3c318ac1aff65848de5e723bfff9}{queue}}, \$view)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a9dafa1970b5b8dd470c543b8e6eefc0a}{later}} (\$delay, \$view, \$\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_aa16f3c318ac1aff65848de5e723bfff9}{queue}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a24e49333f879ed18dbaa4bd8e493e5c5}{later\+On}} (\$\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_aa16f3c318ac1aff65848de5e723bfff9}{queue}}, \$delay, \$view)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_af1ba6465aa67163aa6846162342ac136}{get\+Symfony\+Transport}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a1ee0c700a8f4b14ae52b18ec70d9dd55}{get\+View\+Factory}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_ab349352dbcf95c41e7b762f2c7ebfe78}{set\+Symfony\+Transport}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_transport_interface}{Transport\+Interface}} \$transport)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_add7b557b3f1b25b46db6e7634c20a11c}{set\+Queue}} (Queue\+Contract \$\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_aa16f3c318ac1aff65848de5e723bfff9}{queue}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_aee9e1a34950b6877094194d32dcd208a}{replace\+Embedded\+Attachments}} (string \$rendered\+View, array \$attachments)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a732652c0bfa48b25c67974fe2b867fb6}{send\+Mailable}} (Mailable\+Contract \$mailable)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a15382ebd8fdb4286f0c48fbb133fd2d2}{parse\+View}} (\$view)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_aa1f3214745a4f945f8af23876d2ad079}{add\+Content}} (\$message, \$view, \$\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_aec3e2565e6f83efbfa03b7d5427ca0d9}{plain}}, \$\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_adc6a0ac3ef0b2c6954a7c2bcc0a7d74d}{raw}}, \$data)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a3d03265cce2b872903d368ccdef54c4d}{render\+View}} (\$view, \$data)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_aba7ae030ff2bd757eaaf2b780a3b2813}{set\+Global\+To\+And\+Remove\+Cc\+And\+Bcc}} (\$message)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a1106ca4edc76fdafa5d4789d9425db79}{create\+Message}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_a5b14c992151981bc05caf4027ae499b9}{send\+Symfony\+Message}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_email}{Email}} \$message)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_abd6375d83f928a0c03da1e139b6597d3}{should\+Send\+Message}} (\$message, \$data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_mailer_ad3e83c5cdd75db84b3b4317a54da0ad3}{dispatch\+Sent\+Event}} (\$message, \$data=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a3d2e466452b0e5fc713ce3e1e3597f60}\label{class_illuminate_1_1_mail_1_1_mailer_a3d2e466452b0e5fc713ce3e1e3597f60} 
+{\bfseries \$name}
+\item 
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a77d7934d25a8ebba6bed8193d22a202b}\label{class_illuminate_1_1_mail_1_1_mailer_a77d7934d25a8ebba6bed8193d22a202b} 
+{\bfseries \$views}
+\item 
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a1c1fdbc3942b0b22f1364a8954efe55d}\label{class_illuminate_1_1_mail_1_1_mailer_a1c1fdbc3942b0b22f1364a8954efe55d} 
+{\bfseries \$transport}
+\item 
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_aa751bbf54ec218033a582ff82fef5edb}\label{class_illuminate_1_1_mail_1_1_mailer_aa751bbf54ec218033a582ff82fef5edb} 
+{\bfseries \$events}
+\item 
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_ad7e2e9b35f50faa13d757eec3bf25c60}\label{class_illuminate_1_1_mail_1_1_mailer_ad7e2e9b35f50faa13d757eec3bf25c60} 
+{\bfseries \$from}
+\item 
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a31b26ea2708573a1982f4c9f7e3bc522}\label{class_illuminate_1_1_mail_1_1_mailer_a31b26ea2708573a1982f4c9f7e3bc522} 
+{\bfseries \$reply\+To}
+\item 
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_ae79171ed7d9b1921e79b01b7fea15d92}\label{class_illuminate_1_1_mail_1_1_mailer_ae79171ed7d9b1921e79b01b7fea15d92} 
+{\bfseries \$return\+Path}
+\item 
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_ad253c5b298674a24d107506564a9a9de}\label{class_illuminate_1_1_mail_1_1_mailer_ad253c5b298674a24d107506564a9a9de} 
+{\bfseries \$to}
+\item 
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a0b2393f12f9a4526ce4746422277199d}\label{class_illuminate_1_1_mail_1_1_mailer_a0b2393f12f9a4526ce4746422277199d} 
+{\bfseries \$queue}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_ac1e563ee33a8b3ea003b58019ba8cc18}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_ac1e563ee33a8b3ea003b58019ba8cc18} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_view_1_1_factory}{Factory}}}]{\$views}{, }\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_transport_interface}{Transport\+Interface}}}]{\$transport}{, }\item[{?\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}}}]{\$events}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new Mailer instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+Factory & {\em \$views} & \\
+\hline
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Transport\+Interface & {\em \$transport} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Events\textbackslash{}\+Dispatcher | null & {\em \$events} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_aa1f3214745a4f945f8af23876d2ad079}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!addContent@{addContent}}
+\index{addContent@{addContent}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{addContent()}{addContent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_aa1f3214745a4f945f8af23876d2ad079} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::add\+Content (\begin{DoxyParamCaption}\item[{}]{\$message}{, }\item[{}]{\$view}{, }\item[{}]{\$plain}{, }\item[{}]{\$raw}{, }\item[{}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add the content to a given message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Message & {\em \$message} & \\
+\hline
+string | null & {\em \$view} & \\
+\hline
+string | null & {\em \$plain} & \\
+\hline
+string | null & {\em \$raw} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a6f5c2727f46eaa3692e70285fcfc3268}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!alwaysFrom@{alwaysFrom}}
+\index{alwaysFrom@{alwaysFrom}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{alwaysFrom()}{alwaysFrom()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a6f5c2727f46eaa3692e70285fcfc3268} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::always\+From (\begin{DoxyParamCaption}\item[{}]{\$address}{, }\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set the global from address and name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & \\
+\hline
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a7a6bcd53ad7ed9b85fc86386f73743b0}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!alwaysReplyTo@{alwaysReplyTo}}
+\index{alwaysReplyTo@{alwaysReplyTo}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{alwaysReplyTo()}{alwaysReplyTo()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a7a6bcd53ad7ed9b85fc86386f73743b0} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::always\+Reply\+To (\begin{DoxyParamCaption}\item[{}]{\$address}{, }\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set the global reply-\/to address and name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & \\
+\hline
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_abc9f2d319283fe2336adb24f61e60466}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!alwaysReturnPath@{alwaysReturnPath}}
+\index{alwaysReturnPath@{alwaysReturnPath}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{alwaysReturnPath()}{alwaysReturnPath()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_abc9f2d319283fe2336adb24f61e60466} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::always\+Return\+Path (\begin{DoxyParamCaption}\item[{}]{\$address}{}\end{DoxyParamCaption})}
+
+Set the global return path address.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a1d1e544fac0e15052c1b56493ffcbc36}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!alwaysTo@{alwaysTo}}
+\index{alwaysTo@{alwaysTo}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{alwaysTo()}{alwaysTo()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a1d1e544fac0e15052c1b56493ffcbc36} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::always\+To (\begin{DoxyParamCaption}\item[{}]{\$address}{, }\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set the global to address and name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & \\
+\hline
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a780f9617ccd16afb3f787499ef515ebf}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!bcc@{bcc}}
+\index{bcc@{bcc}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{bcc()}{bcc()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a780f9617ccd16afb3f787499ef515ebf} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::bcc (\begin{DoxyParamCaption}\item[{}]{\$users}{, }\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Begin the process of mailing a mailable class instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$users} & \\
+\hline
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Pending\+Mail 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a1162a06251148b0736a4b70efe6c6129}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!cc@{cc}}
+\index{cc@{cc}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{cc()}{cc()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a1162a06251148b0736a4b70efe6c6129} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::cc (\begin{DoxyParamCaption}\item[{}]{\$users}{, }\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Begin the process of mailing a mailable class instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$users} & \\
+\hline
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Pending\+Mail 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a1106ca4edc76fdafa5d4789d9425db79}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!createMessage@{createMessage}}
+\index{createMessage@{createMessage}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{createMessage()}{createMessage()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a1106ca4edc76fdafa5d4789d9425db79} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::create\+Message (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new message instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Message 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_ad3e83c5cdd75db84b3b4317a54da0ad3}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!dispatchSentEvent@{dispatchSentEvent}}
+\index{dispatchSentEvent@{dispatchSentEvent}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{dispatchSentEvent()}{dispatchSentEvent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_ad3e83c5cdd75db84b3b4317a54da0ad3} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::dispatch\+Sent\+Event (\begin{DoxyParamCaption}\item[{}]{\$message}{, }\item[{}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Dispatch the message sent event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Sent\+Message & {\em \$message} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_af1ba6465aa67163aa6846162342ac136}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!getSymfonyTransport@{getSymfonyTransport}}
+\index{getSymfonyTransport@{getSymfonyTransport}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{getSymfonyTransport()}{getSymfonyTransport()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_af1ba6465aa67163aa6846162342ac136} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::get\+Symfony\+Transport (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the Symfony Transport instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Transport\+Interface 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a1ee0c700a8f4b14ae52b18ec70d9dd55}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!getViewFactory@{getViewFactory}}
+\index{getViewFactory@{getViewFactory}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{getViewFactory()}{getViewFactory()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a1ee0c700a8f4b14ae52b18ec70d9dd55} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::get\+View\+Factory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the view factory instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+Factory 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a1176b48b63c55cad1472e18d772b94dd}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!html@{html}}
+\index{html@{html}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{html()}{html()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a1176b48b63c55cad1472e18d772b94dd} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::html (\begin{DoxyParamCaption}\item[{}]{\$html}{, }\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Send a new message with only an HTML part.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$html} & \\
+\hline
+mixed & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Sent\+Message\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a9dafa1970b5b8dd470c543b8e6eefc0a}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!later@{later}}
+\index{later@{later}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{later()}{later()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a9dafa1970b5b8dd470c543b8e6eefc0a} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::later (\begin{DoxyParamCaption}\item[{}]{\$delay}{, }\item[{}]{\$view}{, }\item[{}]{\$queue}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Queue a new mail message for sending after (n) seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Date\+Time\+Interface | \textbackslash{}\+Date\+Interval | int & {\em \$delay} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Mail\textbackslash{}\+Mailable & {\em \$view} & \\
+\hline
+string | null & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a24e49333f879ed18dbaa4bd8e493e5c5}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!laterOn@{laterOn}}
+\index{laterOn@{laterOn}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{laterOn()}{laterOn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a24e49333f879ed18dbaa4bd8e493e5c5} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::later\+On (\begin{DoxyParamCaption}\item[{}]{\$queue}{, }\item[{}]{\$delay}{, }\item[{}]{\$view}{}\end{DoxyParamCaption})}
+
+Queue a new mail message for sending after (n) seconds on the given queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$queue} & \\
+\hline
+\textbackslash{}\+Date\+Time\+Interface | \textbackslash{}\+Date\+Interval | int & {\em \$delay} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Mail\textbackslash{}\+Mailable & {\em \$view} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a65658722c2ca1d21ce041aec36b1e2a5}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!onQueue@{onQueue}}
+\index{onQueue@{onQueue}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{onQueue()}{onQueue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a65658722c2ca1d21ce041aec36b1e2a5} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::on\+Queue (\begin{DoxyParamCaption}\item[{}]{\$queue}{, }\item[{}]{\$view}{}\end{DoxyParamCaption})}
+
+Queue a new mail message for sending on the given queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Backed\+Enum | string | null & {\em \$queue} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Mail\textbackslash{}\+Mailable & {\em \$view} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a15382ebd8fdb4286f0c48fbb133fd2d2}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!parseView@{parseView}}
+\index{parseView@{parseView}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{parseView()}{parseView()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a15382ebd8fdb4286f0c48fbb133fd2d2} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::parse\+View (\begin{DoxyParamCaption}\item[{}]{\$view}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse the given view name or array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | array | string & {\em \$view} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_mail_1_1_mailer_aec3e2565e6f83efbfa03b7d5427ca0d9}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!plain@{plain}}
+\index{plain@{plain}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{plain()}{plain()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_aec3e2565e6f83efbfa03b7d5427ca0d9} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::plain (\begin{DoxyParamCaption}\item[{}]{\$view}{, }\item[{array}]{\$data}{, }\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Send a new message with only a plain part.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$view} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+mixed & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Sent\+Message\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_aa16f3c318ac1aff65848de5e723bfff9}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!queue@{queue}}
+\index{queue@{queue}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{queue()}{queue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_aa16f3c318ac1aff65848de5e723bfff9} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::queue (\begin{DoxyParamCaption}\item[{}]{\$view}{, }\item[{}]{\$queue}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Queue a new mail message for sending.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Mail\textbackslash{}\+Mailable | string | array & {\em \$view} & \\
+\hline
+\textbackslash{}\+Backed\+Enum | string | null & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a111aef77dd52b24f788f73d9c2847f29}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!queueOn@{queueOn}}
+\index{queueOn@{queueOn}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{queueOn()}{queueOn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a111aef77dd52b24f788f73d9c2847f29} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::queue\+On (\begin{DoxyParamCaption}\item[{}]{\$queue}{, }\item[{}]{\$view}{}\end{DoxyParamCaption})}
+
+Queue a new mail message for sending on the given queue.
+
+This method didn\textquotesingle{}t match rest of framework\textquotesingle{}s "{}on\+Queue"{} phrasing. Added "{}on\+Queue"{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$queue} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Mail\textbackslash{}\+Mailable & {\em \$view} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_adc6a0ac3ef0b2c6954a7c2bcc0a7d74d}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!raw@{raw}}
+\index{raw@{raw}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{raw()}{raw()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_adc6a0ac3ef0b2c6954a7c2bcc0a7d74d} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::raw (\begin{DoxyParamCaption}\item[{}]{\$text}{, }\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Send a new message with only a raw text part.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & \\
+\hline
+mixed & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Sent\+Message\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_ac72e18c8efd247b2113add190df5c522}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!render@{render}}
+\index{render@{render}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_ac72e18c8efd247b2113add190df5c522} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::render (\begin{DoxyParamCaption}\item[{}]{\$view}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Render the given message as a view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$view} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a3d03265cce2b872903d368ccdef54c4d}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!renderView@{renderView}}
+\index{renderView@{renderView}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{renderView()}{renderView()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a3d03265cce2b872903d368ccdef54c4d} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::render\+View (\begin{DoxyParamCaption}\item[{}]{\$view}{, }\item[{}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Render the given view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | string & {\em \$view} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_aee9e1a34950b6877094194d32dcd208a}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!replaceEmbeddedAttachments@{replaceEmbeddedAttachments}}
+\index{replaceEmbeddedAttachments@{replaceEmbeddedAttachments}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{replaceEmbeddedAttachments()}{replaceEmbeddedAttachments()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_aee9e1a34950b6877094194d32dcd208a} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::replace\+Embedded\+Attachments (\begin{DoxyParamCaption}\item[{string}]{\$rendered\+View}{, }\item[{array}]{\$attachments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Replace the embedded image attachments with raw, inline image data for browser rendering.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$rendered\+View} & \\
+\hline
+array & {\em \$attachments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a4b9878683b174fd1e139b0a8598de302}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!send@{send}}
+\index{send@{send}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a4b9878683b174fd1e139b0a8598de302} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::send (\begin{DoxyParamCaption}\item[{}]{\$view}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Send a new message using a view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Mail\textbackslash{}\+Mailable | string | array & {\em \$view} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+\textbackslash{}\+Closure | string | null & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Sent\+Message\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a732652c0bfa48b25c67974fe2b867fb6}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!sendMailable@{sendMailable}}
+\index{sendMailable@{sendMailable}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{sendMailable()}{sendMailable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a732652c0bfa48b25c67974fe2b867fb6} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::send\+Mailable (\begin{DoxyParamCaption}\item[{Mailable\+Contract}]{\$mailable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Send the given mailable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Mail\textbackslash{}\+Mailable & {\em \$mailable} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Sent\+Message\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_ae5d11a57d1e7485068a63332f34bc7fc}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!sendNow@{sendNow}}
+\index{sendNow@{sendNow}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{sendNow()}{sendNow()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_ae5d11a57d1e7485068a63332f34bc7fc} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::send\+Now (\begin{DoxyParamCaption}\item[{}]{\$mailable}{, }\item[{array}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Send a new message synchronously using a view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Mail\textbackslash{}\+Mailable | string | array & {\em \$mailable} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+\textbackslash{}\+Closure | string | null & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Sent\+Message\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_a5b14c992151981bc05caf4027ae499b9}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!sendSymfonyMessage@{sendSymfonyMessage}}
+\index{sendSymfonyMessage@{sendSymfonyMessage}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{sendSymfonyMessage()}{sendSymfonyMessage()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_a5b14c992151981bc05caf4027ae499b9} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::send\+Symfony\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_email}{Email}}}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Send a Symfony Email instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Email & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Sent\+Message\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_aba7ae030ff2bd757eaaf2b780a3b2813}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!setGlobalToAndRemoveCcAndBcc@{setGlobalToAndRemoveCcAndBcc}}
+\index{setGlobalToAndRemoveCcAndBcc@{setGlobalToAndRemoveCcAndBcc}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{setGlobalToAndRemoveCcAndBcc()}{setGlobalToAndRemoveCcAndBcc()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_aba7ae030ff2bd757eaaf2b780a3b2813} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::set\+Global\+To\+And\+Remove\+Cc\+And\+Bcc (\begin{DoxyParamCaption}\item[{}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set the global "{}to"{} address on the given message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Message & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_add7b557b3f1b25b46db6e7634c20a11c}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!setQueue@{setQueue}}
+\index{setQueue@{setQueue}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{setQueue()}{setQueue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_add7b557b3f1b25b46db6e7634c20a11c} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::set\+Queue (\begin{DoxyParamCaption}\item[{Queue\+Contract}]{\$queue}{}\end{DoxyParamCaption})}
+
+Set the queue manager instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Factory & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_ab349352dbcf95c41e7b762f2c7ebfe78}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!setSymfonyTransport@{setSymfonyTransport}}
+\index{setSymfonyTransport@{setSymfonyTransport}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{setSymfonyTransport()}{setSymfonyTransport()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_ab349352dbcf95c41e7b762f2c7ebfe78} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::set\+Symfony\+Transport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_transport_interface}{Transport\+Interface}}}]{\$transport}{}\end{DoxyParamCaption})}
+
+Set the Symfony Transport instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Transport\+Interface & {\em \$transport} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_abd6375d83f928a0c03da1e139b6597d3}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!shouldSendMessage@{shouldSendMessage}}
+\index{shouldSendMessage@{shouldSendMessage}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{shouldSendMessage()}{shouldSendMessage()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_abd6375d83f928a0c03da1e139b6597d3} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::should\+Send\+Message (\begin{DoxyParamCaption}\item[{}]{\$message}{, }\item[{}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determines if the email can be sent.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Email & {\em \$message} & \\
+\hline
+array & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_mailer_ad2a2af31a54c624666f2df24bb5d5132}\index{Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}!to@{to}}
+\index{to@{to}!Illuminate\textbackslash{}Mail\textbackslash{}Mailer@{Illuminate\textbackslash{}Mail\textbackslash{}Mailer}}
+\doxysubsubsection{\texorpdfstring{to()}{to()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_mailer_ad2a2af31a54c624666f2df24bb5d5132} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailer\+::to (\begin{DoxyParamCaption}\item[{}]{\$users}{, }\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Begin the process of mailing a mailable class instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$users} & \\
+\hline
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Pending\+Mail 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Mail/Mailer.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,27 @@
+var class_brick_1_1_math_1_1_big_rational =
+[
+    [ "__construct", "class_brick_1_1_math_1_1_big_rational.html#aab9d73587d590568384454b57fabb5b3", null ],
+    [ "__serialize", "class_brick_1_1_math_1_1_big_rational.html#a67e9b5473af874038d1b380e524f8f24", null ],
+    [ "__toString", "class_brick_1_1_math_1_1_big_rational.html#a5807c879d33030df2fc628f0c866354d", null ],
+    [ "__unserialize", "class_brick_1_1_math_1_1_big_rational.html#acb31bfe9d3d70e6637717aa3805ccaef", null ],
+    [ "abs", "class_brick_1_1_math_1_1_big_rational.html#a30b3e0be94531d5f5ab0846938103fee", null ],
+    [ "compareTo", "class_brick_1_1_math_1_1_big_rational.html#a0afc1e86e664dcfaeac095312e3705ec", null ],
+    [ "dividedBy", "class_brick_1_1_math_1_1_big_rational.html#a8f86f6ae33f92a6b7c7cccc18a9851f0", null ],
+    [ "getSign", "class_brick_1_1_math_1_1_big_rational.html#a4f16ef7937203df163bf4d48a0aa73ed", null ],
+    [ "minus", "class_brick_1_1_math_1_1_big_rational.html#af75bc5c1567f2fbd4189c3b1a9432c60", null ],
+    [ "multipliedBy", "class_brick_1_1_math_1_1_big_rational.html#aecd96c89192c3a921c32d97d35caeff5", null ],
+    [ "negated", "class_brick_1_1_math_1_1_big_rational.html#a425179a1e76a4c03838f13bc17de79f0", null ],
+    [ "plus", "class_brick_1_1_math_1_1_big_rational.html#a9580c81cb8cc39bdec64c48b29a6de6d", null ],
+    [ "power", "class_brick_1_1_math_1_1_big_rational.html#a229997a05dc08bbd5e54795a0a575b9d", null ],
+    [ "quotient", "class_brick_1_1_math_1_1_big_rational.html#a049e6950a64af591e806e7443df84a3b", null ],
+    [ "quotientAndRemainder", "class_brick_1_1_math_1_1_big_rational.html#aa6bfbbc00bd56b848f15b3d1d2d45027", null ],
+    [ "reciprocal", "class_brick_1_1_math_1_1_big_rational.html#aa67c1d366949f2fca64a67591a98d0f7", null ],
+    [ "remainder", "class_brick_1_1_math_1_1_big_rational.html#a9fb14fcd1feda018ea60e05aa2ed8d44", null ],
+    [ "simplified", "class_brick_1_1_math_1_1_big_rational.html#a844a606ab8d54e4b2644f2556ff0fd2c", null ],
+    [ "toBigDecimal", "class_brick_1_1_math_1_1_big_rational.html#a7768436bc7f4595013cc4adf6b33b469", null ],
+    [ "toBigInteger", "class_brick_1_1_math_1_1_big_rational.html#a606082f640ec779442c8c505fc65e8b9", null ],
+    [ "toBigRational", "class_brick_1_1_math_1_1_big_rational.html#a489a9a70bb422be43817f38a7799a9cb", null ],
+    [ "toFloat", "class_brick_1_1_math_1_1_big_rational.html#a6dc36d73203b4d0f85a9b4cb39a6182a", null ],
+    [ "toInt", "class_brick_1_1_math_1_1_big_rational.html#ab0bc639abc107e2518a6e4c21917282c", null ],
+    [ "toScale", "class_brick_1_1_math_1_1_big_rational.html#aeb259e36923eacb2735068f58ef7c161", null ]
+];

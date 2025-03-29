@@ -1,0 +1,238 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Foundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}Pdo\+Session\+Handler Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler}{}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Foundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}Pdo\+Session\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.647059cm]{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_aa0ddfabda4acbaca98c7c3ee18cdc807}{\+\_\+\+\_\+construct}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \textbackslash{}PDO\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$pdo\+Or\+Dsn=null, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a5a30b8e2450d30418f9ef84d53ee57e1}{configure\+Schema}} (Schema \$schema, ?\textbackslash{}Closure \$is\+Same\+Database=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a79f3c33bca16be6cdd08ca4d708daf21}{create\+Table}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a26c29f09173aed655c99623d033ec14c}{is\+Session\+Expired}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_adde36e0a8c2706da66f3f1f2d4114939}{open}} (string \$save\+Path, string \$session\+Name)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a6147ac50a7892bdf8a1e966f548e4025}{read}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a45e515dcc591790361a3bd17c18dde2b}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a45e515dcc591790361a3bd17c18dde2b} 
+{\bfseries gc} (int \$maxlifetime)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_aebd8da9a689e1e91b2b4388cc481be1f}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_aebd8da9a689e1e91b2b4388cc481be1f} 
+{\bfseries update\+Timestamp} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id, string \$data)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_aad9a6d49c1745c62444ed37f41bdae46}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_aad9a6d49c1745c62444ed37f41bdae46} 
+{\bfseries close} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Session\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries validate\+Id} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\item 
+{\bfseries write} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id, string \$data)
+\item 
+{\bfseries destroy} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_ad8bff1e1c71e5dfb8e0c29df93fb1fa5}{LOCK\+\_\+\+NONE}} = 0
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a25aaeebb2ee3e2336ac57ff0b621578e}{LOCK\+\_\+\+ADVISORY}} = 1
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a7f081a524251208204724adcf6050770}{LOCK\+\_\+\+TRANSACTIONAL}} = 2
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a4dc064926a3f9056c104deff1a1d7869}{do\+Destroy}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_ab7f54afc33113feab6bd01b7dcb4cd25}{do\+Write}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id, string \$data)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a4b9654bdd54ab21e33cf8ee71a180ef0}{do\+Read}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a94d62b652419e50ce36dee19383c1726}{get\+Connection}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Session handler using a PDO connection to read and write data.
+
+It works with My\+SQL, Postgre\+SQL, Oracle, SQL Server and SQLite and implements different locking strategies to handle concurrent access to the same session. Locking is necessary to prevent loss of data due to race conditions and to keep the session data consistent between read() and write(). With locking, requests for the same session will wait until the other one finished writing. For this reason it\textquotesingle{}s best practice to close a session as early as possible to improve concurrency. PHPs internal files session handler also implements locking.
+
+Attention\+: Since SQLite does not support row level locks but locks the whole database, it means only one session can be accessed at a time. Even different sessions would wait for another to finish. So saving session in SQLite should only be considered for development or prototypes.
+
+Session data is a binary string that can contain non-\/printable characters like the null byte. For this reason it must be saved in a binary column in the database like BLOB in My\+SQL. Saving it in a character column could corrupt the data. You can use create\+Table() to initialize a correctly defined table.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://php.net/sessionhandlerinterface}{\texttt{ https\+://php.\+net/sessionhandlerinterface}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+
+Michael Williams \href{mailto:michael.williams@funsational.com}{\texttt{ michael.\+williams@funsational.\+com}} 
+
+Tobias Schultze \href{http://tobion.de}{\texttt{ http\+://tobion.\+de}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_aa0ddfabda4acbaca98c7c3ee18cdc807}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_aa0ddfabda4acbaca98c7c3ee18cdc807} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Pdo\+Session\+Handler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\# \textbackslash{}PDO\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$pdo\+Or\+Dsn}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]} = {\ttfamily null}, }\item[{\# array}]{\$options}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]} = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+You can either pass an existing database connection as PDO instance or pass a DSN string that will be used to lazy-\/connect to the database when the session is actually used. Furthermore it\textquotesingle{}s possible to pass null which will then use the session.\+save\+\_\+path ini setting as PDO DSN parameter.
+
+List of available options\+:
+\begin{DoxyItemize}
+\item db\+\_\+table\+: The name of the table \mbox{[}default\+: sessions\mbox{]}
+\item db\+\_\+id\+\_\+col\+: The column where to store the session id \mbox{[}default\+: sess\+\_\+id\mbox{]}
+\item db\+\_\+data\+\_\+col\+: The column where to store the session data \mbox{[}default\+: sess\+\_\+data\mbox{]}
+\item db\+\_\+lifetime\+\_\+col\+: The column where to store the lifetime \mbox{[}default\+: sess\+\_\+lifetime\mbox{]}
+\item db\+\_\+time\+\_\+col\+: The column where to store the timestamp \mbox{[}default\+: sess\+\_\+time\mbox{]}
+\item db\+\_\+username\+: The username when lazy-\/connect \mbox{[}default\+: \textquotesingle{}\textquotesingle{}\mbox{]}
+\item db\+\_\+password\+: The password when lazy-\/connect \mbox{[}default\+: \textquotesingle{}\textquotesingle{}\mbox{]}
+\item db\+\_\+connection\+\_\+options\+: An array of driver-\/specific connection options \mbox{[}default\+: \mbox{[}\mbox{]}\mbox{]}
+\item lock\+\_\+mode\+: The strategy for locking, see constants \mbox{[}default\+: LOCK\+\_\+\+TRANSACTIONAL\mbox{]}
+\item ttl\+: The time to live in seconds.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+PDO | string | null & {\em \$pdo\+Or\+Dsn} & A \textbackslash{}\+PDO instance or DSN string or URL string or null\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception When PDO error mode is not PDO\+::\+ERRMODE\+\_\+\+EXCEPTION 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a5a30b8e2450d30418f9ef84d53ee57e1}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}!configureSchema@{configureSchema}}
+\index{configureSchema@{configureSchema}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}}
+\doxysubsubsection{\texorpdfstring{configureSchema()}{configureSchema()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a5a30b8e2450d30418f9ef84d53ee57e1} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Pdo\+Session\+Handler\+::configure\+Schema (\begin{DoxyParamCaption}\item[{Schema}]{\$schema}{, }\item[{?\textbackslash{}Closure}]{\$is\+Same\+Database}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Adds the Table to the Schema if it doesn\textquotesingle{}t exist. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a79f3c33bca16be6cdd08ca4d708daf21}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}!createTable@{createTable}}
+\index{createTable@{createTable}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}}
+\doxysubsubsection{\texorpdfstring{createTable()}{createTable()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a79f3c33bca16be6cdd08ca4d708daf21} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Pdo\+Session\+Handler\+::create\+Table (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Creates the table to store sessions which can be called once for setup.
+
+Session ID is saved in a column of maximum length 128 because that is enough even for a 512 bit configured session.\+hash\+\_\+function like Whirlpool. Session data is saved in a BLOB. One could also use a shorter inlined varbinary column if one was sure the data fits into it.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+PDOException When the table already exists 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Domain\+Exception When an unsupported PDO driver is used \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a4dc064926a3f9056c104deff1a1d7869}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}!doDestroy@{doDestroy}}
+\index{doDestroy@{doDestroy}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}}
+\doxysubsubsection{\texorpdfstring{doDestroy()}{doDestroy()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a4dc064926a3f9056c104deff1a1d7869} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Pdo\+Session\+Handler\+::do\+Destroy (\begin{DoxyParamCaption}\item[{\# string}]{\$session\+Id}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Session\+Handler}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a4b9654bdd54ab21e33cf8ee71a180ef0}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}!doRead@{doRead}}
+\index{doRead@{doRead}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}}
+\doxysubsubsection{\texorpdfstring{doRead()}{doRead()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a4b9654bdd54ab21e33cf8ee71a180ef0} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Pdo\+Session\+Handler\+::do\+Read (\begin{DoxyParamCaption}\item[{\# string}]{\$session\+Id}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Reads the session data in respect to the different locking strategies.
+
+We need to make sure we do not return session data that is already considered garbage according to the session.\+gc\+\_\+maxlifetime setting because gc() is called after read() and only sometimes. 
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Session\+Handler}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_ab7f54afc33113feab6bd01b7dcb4cd25}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}!doWrite@{doWrite}}
+\index{doWrite@{doWrite}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}}
+\doxysubsubsection{\texorpdfstring{doWrite()}{doWrite()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_ab7f54afc33113feab6bd01b7dcb4cd25} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Pdo\+Session\+Handler\+::do\+Write (\begin{DoxyParamCaption}\item[{\# string}]{\$session\+Id}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{string}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Session\+Handler}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a94d62b652419e50ce36dee19383c1726}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}!getConnection@{getConnection}}
+\index{getConnection@{getConnection}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}}
+\doxysubsubsection{\texorpdfstring{getConnection()}{getConnection()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a94d62b652419e50ce36dee19383c1726} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Pdo\+Session\+Handler\+::get\+Connection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Return a PDO instance. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a26c29f09173aed655c99623d033ec14c}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}!isSessionExpired@{isSessionExpired}}
+\index{isSessionExpired@{isSessionExpired}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}}
+\doxysubsubsection{\texorpdfstring{isSessionExpired()}{isSessionExpired()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a26c29f09173aed655c99623d033ec14c} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Pdo\+Session\+Handler\+::is\+Session\+Expired (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true when the current session exists but expired according to session.\+gc\+\_\+maxlifetime.
+
+Can be used to distinguish between a new session and one that expired due to inactivity. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_adde36e0a8c2706da66f3f1f2d4114939}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}!open@{open}}
+\index{open@{open}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_adde36e0a8c2706da66f3f1f2d4114939} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Pdo\+Session\+Handler\+::open (\begin{DoxyParamCaption}\item[{string}]{\$save\+Path}{, }\item[{string}]{\$session\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Session\+Handler}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a6147ac50a7892bdf8a1e966f548e4025}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}!read@{read}}
+\index{read@{read}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a6147ac50a7892bdf8a1e966f548e4025} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Pdo\+Session\+Handler\+::read (\begin{DoxyParamCaption}\item[{\# string}]{\$session\+Id}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Session\+Handler}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a25aaeebb2ee3e2336ac57ff0b621578e}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}!LOCK\_ADVISORY@{LOCK\_ADVISORY}}
+\index{LOCK\_ADVISORY@{LOCK\_ADVISORY}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}}
+\doxysubsubsection{\texorpdfstring{LOCK\_ADVISORY}{LOCK\_ADVISORY}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a25aaeebb2ee3e2336ac57ff0b621578e} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Pdo\+Session\+Handler\+::\+LOCK\+\_\+\+ADVISORY = 1}
+
+Creates an application-\/level lock on a session. The disadvantage is that the lock is not enforced by the database and thus other, unaware parts of the application could still concurrently modify the session. The advantage is it does not require a transaction. This mode is not available for SQLite and not yet implemented for oci and sqlsrv. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_ad8bff1e1c71e5dfb8e0c29df93fb1fa5}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}!LOCK\_NONE@{LOCK\_NONE}}
+\index{LOCK\_NONE@{LOCK\_NONE}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}}
+\doxysubsubsection{\texorpdfstring{LOCK\_NONE}{LOCK\_NONE}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_ad8bff1e1c71e5dfb8e0c29df93fb1fa5} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Pdo\+Session\+Handler\+::\+LOCK\+\_\+\+NONE = 0}
+
+No locking is done. This means sessions are prone to loss of data due to race conditions of concurrent requests to the same session. The last session write will win in this case. It might be useful when you implement your own logic to deal with this like an optimistic approach. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a7f081a524251208204724adcf6050770}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}!LOCK\_TRANSACTIONAL@{LOCK\_TRANSACTIONAL}}
+\index{LOCK\_TRANSACTIONAL@{LOCK\_TRANSACTIONAL}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}PdoSessionHandler}}
+\doxysubsubsection{\texorpdfstring{LOCK\_TRANSACTIONAL}{LOCK\_TRANSACTIONAL}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_pdo_session_handler_a7f081a524251208204724adcf6050770} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Pdo\+Session\+Handler\+::\+LOCK\+\_\+\+TRANSACTIONAL = 2}
+
+Issues a real row lock. Since it uses a transaction between opening and closing a session, you have to be careful when you use same database connection that you also use for your application logic. This mode is the default because it\textquotesingle{}s the only reliable solution across DBMSs. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/foundation/\+Session/\+Storage/\+Handler/Pdo\+Session\+Handler.\+php\end{DoxyCompactItemize}

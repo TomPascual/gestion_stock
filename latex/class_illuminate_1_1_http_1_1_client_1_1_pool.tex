@@ -1,0 +1,116 @@
+\doxysection{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool Class Reference}
+\hypertarget{class_illuminate_1_1_http_1_1_client_1_1_pool}{}\label{class_illuminate_1_1_http_1_1_client_1_1_pool}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_pool_ad78fca63724956719626228772cffd57}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_factory}{Factory}} \$factory=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_pool_a92295b992446479fc55af13ead334d5f}{as}} (string \$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_pool_a376ea59d7e8a9bf201ed55293af74d21}{get\+Requests}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_pool_acf40dc79ee95dafbb629b61f1308a03f}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_pool_a1cbaa12a8ceafbeaff70f6b0d4be5c8a}{async\+Request}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_pool_acc783e4a5895f27802e428b50279ad23}\label{class_illuminate_1_1_http_1_1_client_1_1_pool_acc783e4a5895f27802e428b50279ad23} 
+{\bfseries \$factory}
+\item 
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_pool_a1589b612cf8a17db76048d73844ad41a}\label{class_illuminate_1_1_http_1_1_client_1_1_pool_a1589b612cf8a17db76048d73844ad41a} 
+{\bfseries \$handler}
+\item 
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_pool_a5868b4d96b7b6391ed3a8565d5041ed8}\label{class_illuminate_1_1_http_1_1_client_1_1_pool_a5868b4d96b7b6391ed3a8565d5041ed8} 
+{\bfseries \$pool} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@mixin \textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Factory 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_pool_ad78fca63724956719626228772cffd57}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_pool_ad78fca63724956719626228772cffd57} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Pool\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_illuminate_1_1_http_1_1_client_1_1_factory}{Factory}}}]{\$factory}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new requests pool.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Factory | null & {\em \$factory} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_pool_acf40dc79ee95dafbb629b61f1308a03f}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_pool_acf40dc79ee95dafbb629b61f1308a03f} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Pool\+::\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Add a request to the pool with a numeric index.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Pending\+Request\texorpdfstring{$\vert$}{|}\textbackslash{}\+Guzzle\+Http\textbackslash{}\+Promise\textbackslash{}\+Promise 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_pool_a92295b992446479fc55af13ead334d5f}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool}!as@{as}}
+\index{as@{as}!Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool}}
+\doxysubsubsection{\texorpdfstring{as()}{as()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_pool_a92295b992446479fc55af13ead334d5f} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Pool\+::as (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Add a request to the pool with a key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Pending\+Request 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_pool_a1cbaa12a8ceafbeaff70f6b0d4be5c8a}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool}!asyncRequest@{asyncRequest}}
+\index{asyncRequest@{asyncRequest}!Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool}}
+\doxysubsubsection{\texorpdfstring{asyncRequest()}{asyncRequest()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_pool_a1cbaa12a8ceafbeaff70f6b0d4be5c8a} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Pool\+::async\+Request (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Retrieve a new async pending request.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Pending\+Request 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_client_1_1_pool_a376ea59d7e8a9bf201ed55293af74d21}\index{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool}!getRequests@{getRequests}}
+\index{getRequests@{getRequests}!Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool@{Illuminate\textbackslash{}Http\textbackslash{}Client\textbackslash{}Pool}}
+\doxysubsubsection{\texorpdfstring{getRequests()}{getRequests()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_client_1_1_pool_a376ea59d7e8a9bf201ed55293af74d21} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Client\textbackslash{}\+Pool\+::get\+Requests (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieve the requests in the pool.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Http/\+Client/Pool.\+php\end{DoxyCompactItemize}

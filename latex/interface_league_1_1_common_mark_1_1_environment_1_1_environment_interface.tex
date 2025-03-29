@@ -1,0 +1,99 @@
+\doxysection{League\textbackslash{}Common\+Mark\textbackslash{}Environment\textbackslash{}Environment\+Interface Interface Reference}
+\hypertarget{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface}{}\label{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface}\index{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface}}
+Inheritance diagram for League\textbackslash{}Common\+Mark\textbackslash{}Environment\textbackslash{}Environment\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.463343cm]{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface_aac3a71e34b4390e0b0db16fd1fe420be}{get\+Extensions}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface_aef246bb64db9390e5b874151ec9f86b1}{get\+Block\+Start\+Parsers}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface_a48377cd3a8930f9bfc2587f2412369f8}{get\+Inline\+Parsers}} ()
+\item 
+\Hypertarget{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface_a4b18175f72101de517434f56f268af15}\label{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface_a4b18175f72101de517434f56f268af15} 
+{\bfseries get\+Delimiter\+Processors} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface_a82c1daccb6ba6ea4fdeed76b66690e7f}{get\+Renderers\+For\+Class}} (string \$node\+Class)
+\item 
+\Hypertarget{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface_a38759fdc5ab9059466b5d80db6f61efc}\label{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface_a38759fdc5ab9059466b5d80db6f61efc} 
+{\bfseries get\+Slug\+Normalizer} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_league_1_1_config_1_1_configuration_provider_interface}{League\textbackslash{}\+Config\textbackslash{}\+Configuration\+Provider\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries get\+Configuration} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Psr\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event\+Dispatcher\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface_a3f2822355abd9379dd27524362f3e400}{dispatch}} (object \$event)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface_aef246bb64db9390e5b874151ec9f86b1}\index{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface}!getBlockStartParsers@{getBlockStartParsers}}
+\index{getBlockStartParsers@{getBlockStartParsers}!League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface}}
+\doxysubsubsection{\texorpdfstring{getBlockStartParsers()}{getBlockStartParsers()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface_aef246bb64db9390e5b874151ec9f86b1} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment\+Interface\+::get\+Block\+Start\+Parsers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+iterable$<$\+Block\+Start\+Parser\+Interface$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_common_mark_1_1_environment_1_1_environment_a837086d7a90d4c046a23874dcc8d0867}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment}}.
+
+\Hypertarget{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface_aac3a71e34b4390e0b0db16fd1fe420be}\index{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface}!getExtensions@{getExtensions}}
+\index{getExtensions@{getExtensions}!League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface}}
+\doxysubsubsection{\texorpdfstring{getExtensions()}{getExtensions()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface_aac3a71e34b4390e0b0db16fd1fe420be} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment\+Interface\+::get\+Extensions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all registered extensions
+
+\begin{DoxyReturn}{Returns}
+Extension\+Interface\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_common_mark_1_1_environment_1_1_environment_ae9cc0e7d90669116ed7de0aae74827ec}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment}}.
+
+\Hypertarget{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface_a48377cd3a8930f9bfc2587f2412369f8}\index{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface}!getInlineParsers@{getInlineParsers}}
+\index{getInlineParsers@{getInlineParsers}!League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface}}
+\doxysubsubsection{\texorpdfstring{getInlineParsers()}{getInlineParsers()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface_a48377cd3a8930f9bfc2587f2412369f8} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment\+Interface\+::get\+Inline\+Parsers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+iterable$<$\+Inline\+Parser\+Interface$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_common_mark_1_1_environment_1_1_environment_a4c477323fe121ef39e6b397ba7d61001}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment}}.
+
+\Hypertarget{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface_a82c1daccb6ba6ea4fdeed76b66690e7f}\index{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface}!getRenderersForClass@{getRenderersForClass}}
+\index{getRenderersForClass@{getRenderersForClass}!League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface@{League\textbackslash{}CommonMark\textbackslash{}Environment\textbackslash{}EnvironmentInterface}}
+\doxysubsubsection{\texorpdfstring{getRenderersForClass()}{getRenderersForClass()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_common_mark_1_1_environment_1_1_environment_interface_a82c1daccb6ba6ea4fdeed76b66690e7f} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment\+Interface\+::get\+Renderers\+For\+Class (\begin{DoxyParamCaption}\item[{string}]{\$node\+Class}{}\end{DoxyParamCaption})}
+
+@psalm-\/param class-\/string$<$\+Node$>$ \$node\+Class
+
+\begin{DoxyReturn}{Returns}
+iterable$<$\+Node\+Renderer\+Interface$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_common_mark_1_1_environment_1_1_environment_a420c1a6f196ee07907f84026bca799c1}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Environment\textbackslash{}\+Environment}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/league/commonmark/src/\+Environment/Environment\+Interface.\+php\end{DoxyCompactItemize}

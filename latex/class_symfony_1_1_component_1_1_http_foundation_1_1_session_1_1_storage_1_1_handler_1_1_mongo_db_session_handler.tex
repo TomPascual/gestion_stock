@@ -1,0 +1,135 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Foundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}Mongo\+Db\+Session\+Handler Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler}{}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Foundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}Mongo\+Db\+Session\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.621622cm]{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_a4f03591903e1968ffdc580dd6903b461}{\+\_\+\+\_\+construct}} (Client\texorpdfstring{$\vert$}{|}Manager \$mongo, array \$options)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_aee99eb1e8e4eeafbb7c461b9de4ffa8f}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_aee99eb1e8e4eeafbb7c461b9de4ffa8f} 
+{\bfseries close} ()
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_a16edf58a939fe33808cb0f3a49ab8487}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_a16edf58a939fe33808cb0f3a49ab8487} 
+{\bfseries gc} (int \$maxlifetime)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_a70d18431fbec2f63741d978f33bf09f7}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_a70d18431fbec2f63741d978f33bf09f7} 
+{\bfseries update\+Timestamp} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id, string \$data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Session\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries open} (string \$save\+Path, string \$session\+Name)
+\item 
+{\bfseries validate\+Id} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\item 
+{\bfseries read} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\item 
+{\bfseries write} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id, string \$data)
+\item 
+{\bfseries destroy} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_a1383d1f4b0dd3750d208cc02d19dcb95}{do\+Destroy}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_a861bbaf5b5c2d03859552b2ca61e30cd}{do\+Write}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id, string \$data)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_ae9c279e911d050640be9e90f0e188265}{do\+Read}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Session handler using the Mongo\+DB driver extension.
+
+\begin{DoxyAuthor}{Author}
+Markus Bachmann \href{mailto:markus.bachmann@bachi.biz}{\texttt{ markus.\+bachmann@bachi.\+biz}} 
+
+Jérôme Tamarelle \href{mailto:jerome@tamarelle.net}{\texttt{ jerome@tamarelle.\+net}}
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See also}
+\href{https://php.net/mongodb}{\texttt{ https\+://php.\+net/mongodb}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_a4f03591903e1968ffdc580dd6903b461}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_a4f03591903e1968ffdc580dd6903b461} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Mongo\+Db\+Session\+Handler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Client\texorpdfstring{$\vert$}{|}Manager}]{\$mongo}{, }\item[{array}]{\$options}{}\end{DoxyParamCaption})}
+
+Constructor.
+
+List of available options\+:
+\begin{DoxyItemize}
+\item database\+: The name of the database \mbox{[}required\mbox{]}
+\item collection\+: The name of the collection \mbox{[}required\mbox{]}
+\item id\+\_\+field\+: The field name for storing the session id \mbox{[}default\+: \+\_\+id\mbox{]}
+\item data\+\_\+field\+: The field name for storing the session data \mbox{[}default\+: data\mbox{]}
+\item time\+\_\+field\+: The field name for storing the timestamp \mbox{[}default\+: time\mbox{]}
+\item expiry\+\_\+field\+: The field name for storing the expiry-\/timestamp \mbox{[}default\+: expires\+\_\+at\mbox{]}
+\item ttl\+: The time to live in seconds.
+\end{DoxyItemize}
+
+It is strongly recommended to put an index on the {\ttfamily expiry\+\_\+field} for garbage-\/collection. Alternatively it\textquotesingle{}s possible to automatically expire the sessions in the database as described below\+:
+
+A TTL collections can be used on Mongo\+DB 2.\+2+ to cleanup expired sessions automatically. Such an index can for example look like this\+: \begin{DoxyVerb}db.<session-collection>.createIndex(
+    { "<expiry-field>": 1 },
+    { "expireAfterSeconds": 0 }
+)
+\end{DoxyVerb}
+
+
+More details on\+: \href{https://docs.mongodb.org/manual/tutorial/expire-data/}{\texttt{ https\+://docs.\+mongodb.\+org/manual/tutorial/expire-\/data/}}
+
+If you use such an index, you can drop {\ttfamily gc\+\_\+probability} to 0 since no garbage-\/collection is required.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception When "{}database"{} or "{}collection"{} not provided 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_a1383d1f4b0dd3750d208cc02d19dcb95}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler}!doDestroy@{doDestroy}}
+\index{doDestroy@{doDestroy}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler}}
+\doxysubsubsection{\texorpdfstring{doDestroy()}{doDestroy()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_a1383d1f4b0dd3750d208cc02d19dcb95} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Mongo\+Db\+Session\+Handler\+::do\+Destroy (\begin{DoxyParamCaption}\item[{\# string}]{\$session\+Id}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Session\+Handler}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_ae9c279e911d050640be9e90f0e188265}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler}!doRead@{doRead}}
+\index{doRead@{doRead}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler}}
+\doxysubsubsection{\texorpdfstring{doRead()}{doRead()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_ae9c279e911d050640be9e90f0e188265} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Mongo\+Db\+Session\+Handler\+::do\+Read (\begin{DoxyParamCaption}\item[{\# string}]{\$session\+Id}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Session\+Handler}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_a861bbaf5b5c2d03859552b2ca61e30cd}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler}!doWrite@{doWrite}}
+\index{doWrite@{doWrite}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}MongoDbSessionHandler}}
+\doxysubsubsection{\texorpdfstring{doWrite()}{doWrite()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_mongo_db_session_handler_a861bbaf5b5c2d03859552b2ca61e30cd} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Mongo\+Db\+Session\+Handler\+::do\+Write (\begin{DoxyParamCaption}\item[{\# string}]{\$session\+Id}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{string}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Session\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/foundation/\+Session/\+Storage/\+Handler/Mongo\+Db\+Session\+Handler.\+php\end{DoxyCompactItemize}

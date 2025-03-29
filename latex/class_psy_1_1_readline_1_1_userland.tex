@@ -1,0 +1,206 @@
+\doxysection{Psy\textbackslash{}Readline\textbackslash{}Userland Class Reference}
+\hypertarget{class_psy_1_1_readline_1_1_userland}{}\label{class_psy_1_1_readline_1_1_userland}\index{Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}}
+Inheritance diagram for Psy\textbackslash{}Readline\textbackslash{}Userland\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_psy_1_1_readline_1_1_userland}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_userland_a7042f09a71d5675774be22bfc7ae97bc}{\+\_\+\+\_\+construct}} (\$history\+File=null, \$history\+Size=0, \$erase\+Dups=false)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_userland_a00dc2a033e2eca73dce685e990206031}{add\+History}} (string \$line)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_userland_a40274aa04e08e616dc44f26a65477656}{clear\+History}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_userland_a4bf71850af3d08e7c2b61d49c28b9503}{list\+History}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_userland_a3f6887cdecb898a14ec243908ae03f14}{read\+History}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_userland_a9d9bbe55d48588783aefa77dc38b7ba2}{readline}} (?string \$prompt=null)
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_userland_a9db46793e00866a5e45d8d0e3d27fafd}{redisplay}} ()
+\item 
+\mbox{\hyperlink{class_psy_1_1_readline_1_1_userland_a9df4d0df546a99c20a57a579c9a9bd08}{write\+History}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_userland_a7f4b15e33832db8c43c019a100c6c461}{is\+Supported}} ()
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_userland_a38f77f2c7f4bd20441f6360bdf45cd59}{supports\+Bracketed\+Paste}} ()
+\item 
+static \mbox{\hyperlink{class_psy_1_1_readline_1_1_userland_a6fa7aded199b238a61abe157e53d3ed0}{bootstrap\+Hoa}} (bool \$with\+Terminal\+Resize=false)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Userland Readline implementation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_psy_1_1_readline_1_1_userland_a7042f09a71d5675774be22bfc7ae97bc}\index{Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_userland_a7042f09a71d5675774be22bfc7ae97bc} 
+Psy\textbackslash{}\+Readline\textbackslash{}\+Userland\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$history\+File}{ = {\ttfamily null}, }\item[{}]{\$history\+Size}{ = {\ttfamily 0}, }\item[{}]{\$erase\+Dups}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Doesn\textquotesingle{}t (currently) support history file, size or erase dupes configs. 
+
+Implements \mbox{\hyperlink{interface_psy_1_1_readline_1_1_readline_a8b4f2cca2cbdd801f2deb3383812bd97}{Psy\textbackslash{}\+Readline\textbackslash{}\+Readline}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_readline_1_1_userland_a00dc2a033e2eca73dce685e990206031}\index{Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}!addHistory@{addHistory}}
+\index{addHistory@{addHistory}!Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}}
+\doxysubsubsection{\texorpdfstring{addHistory()}{addHistory()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_userland_a00dc2a033e2eca73dce685e990206031} 
+Psy\textbackslash{}\+Readline\textbackslash{}\+Userland\+::add\+History (\begin{DoxyParamCaption}\item[{string}]{\$line}{}\end{DoxyParamCaption})}
+
+\{Add a line to the command history.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$line} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Success
+\end{DoxyReturn}
+\} 
+
+Implements \mbox{\hyperlink{interface_psy_1_1_readline_1_1_readline_a91fcb69f16769d806e18d14512891ec5}{Psy\textbackslash{}\+Readline\textbackslash{}\+Readline}}.
+
+\Hypertarget{class_psy_1_1_readline_1_1_userland_a6fa7aded199b238a61abe157e53d3ed0}\index{Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}!bootstrapHoa@{bootstrapHoa}}
+\index{bootstrapHoa@{bootstrapHoa}!Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}}
+\doxysubsubsection{\texorpdfstring{bootstrapHoa()}{bootstrapHoa()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_userland_a6fa7aded199b238a61abe157e53d3ed0} 
+static Psy\textbackslash{}\+Readline\textbackslash{}\+Userland\+::bootstrap\+Hoa (\begin{DoxyParamCaption}\item[{bool}]{\$with\+Terminal\+Resize}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Bootstrap some things that Hoa used to do itself. \Hypertarget{class_psy_1_1_readline_1_1_userland_a40274aa04e08e616dc44f26a65477656}\index{Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}!clearHistory@{clearHistory}}
+\index{clearHistory@{clearHistory}!Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}}
+\doxysubsubsection{\texorpdfstring{clearHistory()}{clearHistory()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_userland_a40274aa04e08e616dc44f26a65477656} 
+Psy\textbackslash{}\+Readline\textbackslash{}\+Userland\+::clear\+History (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\{Clear the command history.
+
+\begin{DoxyReturn}{Returns}
+bool Success
+\end{DoxyReturn}
+\} 
+
+Implements \mbox{\hyperlink{interface_psy_1_1_readline_1_1_readline_a30754ce4e72d597745f71e2d50e8b34d}{Psy\textbackslash{}\+Readline\textbackslash{}\+Readline}}.
+
+\Hypertarget{class_psy_1_1_readline_1_1_userland_a7f4b15e33832db8c43c019a100c6c461}\index{Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}!isSupported@{isSupported}}
+\index{isSupported@{isSupported}!Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}}
+\doxysubsubsection{\texorpdfstring{isSupported()}{isSupported()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_userland_a7f4b15e33832db8c43c019a100c6c461} 
+static Psy\textbackslash{}\+Readline\textbackslash{}\+Userland\+::is\+Supported (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check whether this Readline class is supported by the current system. 
+
+Implements \mbox{\hyperlink{interface_psy_1_1_readline_1_1_readline_a440339cb103c8f876cc4c3c9cf39fbf7}{Psy\textbackslash{}\+Readline\textbackslash{}\+Readline}}.
+
+\Hypertarget{class_psy_1_1_readline_1_1_userland_a4bf71850af3d08e7c2b61d49c28b9503}\index{Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}!listHistory@{listHistory}}
+\index{listHistory@{listHistory}!Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}}
+\doxysubsubsection{\texorpdfstring{listHistory()}{listHistory()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_userland_a4bf71850af3d08e7c2b61d49c28b9503} 
+Psy\textbackslash{}\+Readline\textbackslash{}\+Userland\+::list\+History (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\{List the command history.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]}
+\end{DoxyReturn}
+\} 
+
+Implements \mbox{\hyperlink{interface_psy_1_1_readline_1_1_readline_a17c972ba47fb9b8135d1362c961cebfd}{Psy\textbackslash{}\+Readline\textbackslash{}\+Readline}}.
+
+\Hypertarget{class_psy_1_1_readline_1_1_userland_a3f6887cdecb898a14ec243908ae03f14}\index{Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}!readHistory@{readHistory}}
+\index{readHistory@{readHistory}!Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}}
+\doxysubsubsection{\texorpdfstring{readHistory()}{readHistory()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_userland_a3f6887cdecb898a14ec243908ae03f14} 
+Psy\textbackslash{}\+Readline\textbackslash{}\+Userland\+::read\+History (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\{Read the command history.
+
+\begin{DoxyReturn}{Returns}
+bool Success
+\end{DoxyReturn}
+\} 
+
+Implements \mbox{\hyperlink{interface_psy_1_1_readline_1_1_readline_ad41e5106eb220cd085f639cf6f2c1e77}{Psy\textbackslash{}\+Readline\textbackslash{}\+Readline}}.
+
+\Hypertarget{class_psy_1_1_readline_1_1_userland_a9d9bbe55d48588783aefa77dc38b7ba2}\index{Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}!readline@{readline}}
+\index{readline@{readline}!Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}}
+\doxysubsubsection{\texorpdfstring{readline()}{readline()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_userland_a9d9bbe55d48588783aefa77dc38b7ba2} 
+Psy\textbackslash{}\+Readline\textbackslash{}\+Userland\+::readline (\begin{DoxyParamCaption}\item[{?string}]{\$prompt}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\{Read a single line of input from the user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$prompt} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false\texorpdfstring{$\vert$}{|}string
+\end{DoxyReturn}
+\}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Break\+Exception} & if user hits Ctrl+D\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_psy_1_1_readline_1_1_readline_ab6510a48751a260636acdf7b16a08819}{Psy\textbackslash{}\+Readline\textbackslash{}\+Readline}}.
+
+\Hypertarget{class_psy_1_1_readline_1_1_userland_a9db46793e00866a5e45d8d0e3d27fafd}\index{Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}!redisplay@{redisplay}}
+\index{redisplay@{redisplay}!Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}}
+\doxysubsubsection{\texorpdfstring{redisplay()}{redisplay()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_userland_a9db46793e00866a5e45d8d0e3d27fafd} 
+Psy\textbackslash{}\+Readline\textbackslash{}\+Userland\+::redisplay (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\{Redraw readline to redraw the display.\} 
+
+Implements \mbox{\hyperlink{interface_psy_1_1_readline_1_1_readline_a6f4f78a3b7a5f0e8f6d1445fd2712f2b}{Psy\textbackslash{}\+Readline\textbackslash{}\+Readline}}.
+
+\Hypertarget{class_psy_1_1_readline_1_1_userland_a38f77f2c7f4bd20441f6360bdf45cd59}\index{Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}!supportsBracketedPaste@{supportsBracketedPaste}}
+\index{supportsBracketedPaste@{supportsBracketedPaste}!Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}}
+\doxysubsubsection{\texorpdfstring{supportsBracketedPaste()}{supportsBracketedPaste()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_userland_a38f77f2c7f4bd20441f6360bdf45cd59} 
+static Psy\textbackslash{}\+Readline\textbackslash{}\+Userland\+::supports\+Bracketed\+Paste (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\{Check whether this \doxylink{interface_psy_1_1_readline_1_1_readline}{Readline} class supports bracketed paste.\} 
+
+Implements \mbox{\hyperlink{interface_psy_1_1_readline_1_1_readline_a419e11fa87a39927e9b888d91306768b}{Psy\textbackslash{}\+Readline\textbackslash{}\+Readline}}.
+
+\Hypertarget{class_psy_1_1_readline_1_1_userland_a9df4d0df546a99c20a57a579c9a9bd08}\index{Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}!writeHistory@{writeHistory}}
+\index{writeHistory@{writeHistory}!Psy\textbackslash{}Readline\textbackslash{}Userland@{Psy\textbackslash{}Readline\textbackslash{}Userland}}
+\doxysubsubsection{\texorpdfstring{writeHistory()}{writeHistory()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_readline_1_1_userland_a9df4d0df546a99c20a57a579c9a9bd08} 
+Psy\textbackslash{}\+Readline\textbackslash{}\+Userland\+::write\+History (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\{Write the command history to a file.
+
+\begin{DoxyReturn}{Returns}
+bool Success
+\end{DoxyReturn}
+\} 
+
+Implements \mbox{\hyperlink{interface_psy_1_1_readline_1_1_readline_a3d27c50b589112182f6951ffbd9d612f}{Psy\textbackslash{}\+Readline\textbackslash{}\+Readline}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Readline/Userland.\+php\end{DoxyCompactItemize}

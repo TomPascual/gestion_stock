@@ -1,0 +1,221 @@
+\doxysection{Illuminate\textbackslash{}Mail\textbackslash{}Attachment Class Reference}
+\hypertarget{class_illuminate_1_1_mail_1_1_attachment}{}\label{class_illuminate_1_1_mail_1_1_attachment}\index{Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_attachment_ab1d099a4f6ed6e8246d4b0bcb46dae41}{as}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_attachment_a6ccfaf929cc5791e59e9b47def656a0d}{with\+Mime}} (\$mime)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_attachment_a7590fcf37783a42bfb9fbb0b2e365f8c}{attach\+With}} (Closure \$path\+Strategy, Closure \$data\+Strategy)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_attachment_adc8d1253127b152f74071ed828a97d8a}{attach\+To}} (\$mail, \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_attachment_a72778b4fff08724d85b70ff920f2292e}{is\+Equivalent}} (\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_attachment}{Attachment}} \$attachment, \$options=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_mail_1_1_attachment_aeef30de28f75b0af12b681e3706f516d}{from\+Path}} (\$path)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_mail_1_1_attachment_a9c6b0e8542cf9092b1c777edbff7c4e9}{from\+Url}} (\$url)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_mail_1_1_attachment_ab3aa56d61443caa2c9865eab4166ce15}{from\+Data}} (Closure \$data, \$name=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_mail_1_1_attachment_a187167abec2b4d2e4c39b96c11630612}{from\+Storage}} (\$path)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_mail_1_1_attachment_a23afda6732b6590faeab1e20cee5f6b9}{from\+Storage\+Disk}} (\$disk, \$path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_mail_1_1_attachment_a9aec270624a041d83be598ea0adc9ef0}\label{class_illuminate_1_1_mail_1_1_attachment_a9aec270624a041d83be598ea0adc9ef0} 
+{\bfseries \$as}
+\item 
+\Hypertarget{class_illuminate_1_1_mail_1_1_attachment_adcc2cf73ac5403f6250a446d89834fec}\label{class_illuminate_1_1_mail_1_1_attachment_adcc2cf73ac5403f6250a446d89834fec} 
+{\bfseries \$mime}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_mail_1_1_attachment_a90c3a5961cdc0112366ffd479bf89fc6}\label{class_illuminate_1_1_mail_1_1_attachment_a90c3a5961cdc0112366ffd479bf89fc6} 
+{\bfseries \$resolver}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_mail_1_1_attachment_ab1d099a4f6ed6e8246d4b0bcb46dae41}\index{Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}!as@{as}}
+\index{as@{as}!Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}}
+\doxysubsubsection{\texorpdfstring{as()}{as()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_attachment_ab1d099a4f6ed6e8246d4b0bcb46dae41} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Attachment\+::as (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Set the attached file\textquotesingle{}s filename.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_attachment_adc8d1253127b152f74071ed828a97d8a}\index{Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}!attachTo@{attachTo}}
+\index{attachTo@{attachTo}!Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}}
+\doxysubsubsection{\texorpdfstring{attachTo()}{attachTo()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_attachment_adc8d1253127b152f74071ed828a97d8a} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Attachment\+::attach\+To (\begin{DoxyParamCaption}\item[{}]{\$mail}{, }\item[{}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Attach the attachment to a built-\/in mail type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Mailable | \textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Message | \textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Messages\textbackslash{}\+Mail\+Message & {\em \$mail} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_attachment_a7590fcf37783a42bfb9fbb0b2e365f8c}\index{Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}!attachWith@{attachWith}}
+\index{attachWith@{attachWith}!Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}}
+\doxysubsubsection{\texorpdfstring{attachWith()}{attachWith()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_attachment_a7590fcf37783a42bfb9fbb0b2e365f8c} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Attachment\+::attach\+With (\begin{DoxyParamCaption}\item[{Closure}]{\$path\+Strategy}{, }\item[{Closure}]{\$data\+Strategy}{}\end{DoxyParamCaption})}
+
+Attach the attachment with the given strategies.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$path\+Strategy} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$data\+Strategy} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_attachment_ab3aa56d61443caa2c9865eab4166ce15}\index{Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}!fromData@{fromData}}
+\index{fromData@{fromData}!Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}}
+\doxysubsubsection{\texorpdfstring{fromData()}{fromData()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_attachment_ab3aa56d61443caa2c9865eab4166ce15} 
+static Illuminate\textbackslash{}\+Mail\textbackslash{}\+Attachment\+::from\+Data (\begin{DoxyParamCaption}\item[{Closure}]{\$data}{, }\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a mail attachment from in-\/memory data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure & {\em \$data} & \\
+\hline
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_attachment_aeef30de28f75b0af12b681e3706f516d}\index{Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}!fromPath@{fromPath}}
+\index{fromPath@{fromPath}!Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}}
+\doxysubsubsection{\texorpdfstring{fromPath()}{fromPath()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_attachment_aeef30de28f75b0af12b681e3706f516d} 
+static Illuminate\textbackslash{}\+Mail\textbackslash{}\+Attachment\+::from\+Path (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a mail attachment from a path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_attachment_a187167abec2b4d2e4c39b96c11630612}\index{Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}!fromStorage@{fromStorage}}
+\index{fromStorage@{fromStorage}!Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}}
+\doxysubsubsection{\texorpdfstring{fromStorage()}{fromStorage()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_attachment_a187167abec2b4d2e4c39b96c11630612} 
+static Illuminate\textbackslash{}\+Mail\textbackslash{}\+Attachment\+::from\+Storage (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a mail attachment from a file in the default storage disk.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_attachment_a23afda6732b6590faeab1e20cee5f6b9}\index{Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}!fromStorageDisk@{fromStorageDisk}}
+\index{fromStorageDisk@{fromStorageDisk}!Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}}
+\doxysubsubsection{\texorpdfstring{fromStorageDisk()}{fromStorageDisk()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_attachment_a23afda6732b6590faeab1e20cee5f6b9} 
+static Illuminate\textbackslash{}\+Mail\textbackslash{}\+Attachment\+::from\+Storage\+Disk (\begin{DoxyParamCaption}\item[{}]{\$disk}{, }\item[{}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a mail attachment from a file in the specified storage disk.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$disk} & \\
+\hline
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_attachment_a9c6b0e8542cf9092b1c777edbff7c4e9}\index{Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}!fromUrl@{fromUrl}}
+\index{fromUrl@{fromUrl}!Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}}
+\doxysubsubsection{\texorpdfstring{fromUrl()}{fromUrl()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_attachment_a9c6b0e8542cf9092b1c777edbff7c4e9} 
+static Illuminate\textbackslash{}\+Mail\textbackslash{}\+Attachment\+::from\+Url (\begin{DoxyParamCaption}\item[{}]{\$url}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a mail attachment from a URL.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_attachment_a72778b4fff08724d85b70ff920f2292e}\index{Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}!isEquivalent@{isEquivalent}}
+\index{isEquivalent@{isEquivalent}!Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}}
+\doxysubsubsection{\texorpdfstring{isEquivalent()}{isEquivalent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_attachment_a72778b4fff08724d85b70ff920f2292e} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Attachment\+::is\+Equivalent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_mail_1_1_attachment}{Attachment}}}]{\$attachment}{, }\item[{}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Determine if the given attachment is equivalent to this attachment.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Attachment & {\em \$attachment} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_mail_1_1_attachment_a6ccfaf929cc5791e59e9b47def656a0d}\index{Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}!withMime@{withMime}}
+\index{withMime@{withMime}!Illuminate\textbackslash{}Mail\textbackslash{}Attachment@{Illuminate\textbackslash{}Mail\textbackslash{}Attachment}}
+\doxysubsubsection{\texorpdfstring{withMime()}{withMime()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_mail_1_1_attachment_a6ccfaf929cc5791e59e9b47def656a0d} 
+Illuminate\textbackslash{}\+Mail\textbackslash{}\+Attachment\+::with\+Mime (\begin{DoxyParamCaption}\item[{}]{\$mime}{}\end{DoxyParamCaption})}
+
+Set the attached file\textquotesingle{}s mime type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mime} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Mail/Attachment.\+php\end{DoxyCompactItemize}

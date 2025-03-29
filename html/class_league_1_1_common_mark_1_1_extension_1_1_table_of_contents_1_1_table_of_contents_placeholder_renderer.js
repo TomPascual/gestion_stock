@@ -1,0 +1,5 @@
+var class_league_1_1_common_mark_1_1_extension_1_1_table_of_contents_1_1_table_of_contents_placeholder_renderer =
+[
+    [ "getXmlAttributes", "class_league_1_1_common_mark_1_1_extension_1_1_table_of_contents_1_1_table_of_contents_placeholder_renderer.html#aa12c38e2360696432ce8dd11778e5f01", null ],
+    [ "render", "class_league_1_1_common_mark_1_1_extension_1_1_table_of_contents_1_1_table_of_contents_placeholder_renderer.html#adcded79bf72f984aa39d7be5735df885", null ]
+];

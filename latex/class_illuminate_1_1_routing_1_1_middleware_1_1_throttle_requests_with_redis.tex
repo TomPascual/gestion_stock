@@ -1,0 +1,216 @@
+\doxysection{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}Throttle\+Requests\+With\+Redis Class Reference}
+\hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis}{}\label{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis}\index{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis@{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis}}
+Inheritance diagram for Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}Throttle\+Requests\+With\+Redis\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_ace4c41e2170ed02131069017342bf86d}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_rate_limiter}{Rate\+Limiter}} \$limiter, Redis \$redis)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests}{Illuminate\textbackslash{}\+Routing\textbackslash{}\+Middleware\textbackslash{}\+Throttle\+Requests}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_a9dbf95188d45150b4123821e69833318}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_rate_limiter}{Rate\+Limiter}} \$limiter)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_a1dac40b19e93fc72649a4aef44ba7ce8}{handle}} (\$request, Closure \$next, \$max\+Attempts=60, \$decay\+Minutes=1, \$prefix=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_a9d7f2492adcdd747c156f73132462d08}\label{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_a9d7f2492adcdd747c156f73132462d08} 
+{\bfseries \$decays\+At} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_ad4a62af92bf227eb9b93b567c5331083}\label{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_ad4a62af92bf227eb9b93b567c5331083} 
+{\bfseries \$remaining} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_a0c9358edc965770a2131577eb5b72cad}{handle\+Request}} (\$request, Closure \$next, array \$limits)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_ac9713169d9719bced1ccf4f89ab596d2}{too\+Many\+Attempts}} (\$key, \$max\+Attempts, \$decay\+Seconds)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_ae9ecf6da1b4775eb73c2f20d931a1913}{calculate\+Remaining\+Attempts}} (\$key, \$max\+Attempts, \$retry\+After=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_a64f91778eaabf2bd5f6f9ff6098ee19c}{get\+Time\+Until\+Next\+Retry}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_aee25cfa0d2d681b833261bde5277384f}{get\+Redis\+Connection}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests}{Illuminate\textbackslash{}\+Routing\textbackslash{}\+Middleware\textbackslash{}\+Throttle\+Requests}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_a13e51a75311412926c4070f9239bebff}{handle\+Request\+Using\+Named\+Limiter}} (\$request, Closure \$next, \$limiter\+Name, Closure \$limiter)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_a53e16adc4ab0e8701215ab12873ffc26}{resolve\+Max\+Attempts}} (\$request, \$max\+Attempts)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_a81fa26139a6d0ec7482457067876d858}{resolve\+Request\+Signature}} (\$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_ab65e9cbae91bd4754f6f922d23799270}{build\+Exception}} (\$request, \$key, \$max\+Attempts, \$response\+Callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_aea89d3cea3f86c237279ac6a2679a0a8}{add\+Headers}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response, \$max\+Attempts, \$remaining\+Attempts, \$retry\+After=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_a248de1bc75267925f03e35417ee634a4}{get\+Headers}} (\$max\+Attempts, \$remaining\+Attempts, \$retry\+After=null, ?\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_ae0d42941b92fea722a04f73c1c5d684e}\label{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_ae0d42941b92fea722a04f73c1c5d684e} 
+{\bfseries \$redis}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests}{Illuminate\textbackslash{}\+Routing\textbackslash{}\+Middleware\textbackslash{}\+Throttle\+Requests}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$limiter}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests}{Illuminate\textbackslash{}\+Routing\textbackslash{}\+Middleware\textbackslash{}\+Throttle\+Requests}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_a170788aa2be8d3ce0fe0cd203edec599}{using}} (\$name)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_aabacd5d7c2f09467bee8ae70f48764ec}{with}} (\$max\+Attempts=60, \$decay\+Minutes=1, \$prefix=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_a350758ef8d86a48a85a6c5d8685b237e}{should\+Hash\+Keys}} (bool \$should\+Hash\+Keys=true)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests}{Illuminate\textbackslash{}\+Routing\textbackslash{}\+Middleware\textbackslash{}\+Throttle\+Requests}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$should\+Hash\+Keys} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_ace4c41e2170ed02131069017342bf86d}\index{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis@{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis@{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_ace4c41e2170ed02131069017342bf86d} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Middleware\textbackslash{}\+Throttle\+Requests\+With\+Redis\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_rate_limiter}{Rate\+Limiter}}}]{\$limiter}{, }\item[{Redis}]{\$redis}{}\end{DoxyParamCaption})}
+
+Create a new request throttler.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Rate\+Limiter & {\em \$limiter} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Redis\textbackslash{}\+Factory & {\em \$redis} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_ae9ecf6da1b4775eb73c2f20d931a1913}\index{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis@{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis}!calculateRemainingAttempts@{calculateRemainingAttempts}}
+\index{calculateRemainingAttempts@{calculateRemainingAttempts}!Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis@{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis}}
+\doxysubsubsection{\texorpdfstring{calculateRemainingAttempts()}{calculateRemainingAttempts()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_ae9ecf6da1b4775eb73c2f20d931a1913} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Middleware\textbackslash{}\+Throttle\+Requests\+With\+Redis\+::calculate\+Remaining\+Attempts (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$max\+Attempts}{, }\item[{}]{\$retry\+After}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Calculate the number of remaining attempts.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+int & {\em \$max\+Attempts} & \\
+\hline
+int | null & {\em \$retry\+After} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_a296a3ab540c79f6473acfa14dca285c1}{Illuminate\textbackslash{}\+Routing\textbackslash{}\+Middleware\textbackslash{}\+Throttle\+Requests}}.
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_aee25cfa0d2d681b833261bde5277384f}\index{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis@{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis}!getRedisConnection@{getRedisConnection}}
+\index{getRedisConnection@{getRedisConnection}!Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis@{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis}}
+\doxysubsubsection{\texorpdfstring{getRedisConnection()}{getRedisConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_aee25cfa0d2d681b833261bde5277384f} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Middleware\textbackslash{}\+Throttle\+Requests\+With\+Redis\+::get\+Redis\+Connection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the Redis connection that should be used for throttling.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_a64f91778eaabf2bd5f6f9ff6098ee19c}\index{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis@{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis}!getTimeUntilNextRetry@{getTimeUntilNextRetry}}
+\index{getTimeUntilNextRetry@{getTimeUntilNextRetry}!Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis@{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis}}
+\doxysubsubsection{\texorpdfstring{getTimeUntilNextRetry()}{getTimeUntilNextRetry()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_a64f91778eaabf2bd5f6f9ff6098ee19c} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Middleware\textbackslash{}\+Throttle\+Requests\+With\+Redis\+::get\+Time\+Until\+Next\+Retry (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the number of seconds until the lock is released.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_abc357f4ee48ec923deb10f60d076d480}{Illuminate\textbackslash{}\+Routing\textbackslash{}\+Middleware\textbackslash{}\+Throttle\+Requests}}.
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_a0c9358edc965770a2131577eb5b72cad}\index{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis@{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis}!handleRequest@{handleRequest}}
+\index{handleRequest@{handleRequest}!Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis@{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis}}
+\doxysubsubsection{\texorpdfstring{handleRequest()}{handleRequest()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_a0c9358edc965770a2131577eb5b72cad} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Middleware\textbackslash{}\+Throttle\+Requests\+With\+Redis\+::handle\+Request (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{Closure}]{\$next}{, }\item[{array}]{\$limits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handle an incoming request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$next} & \\
+\hline
+array & {\em \$limits} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Response
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Exceptions\textbackslash{}\+Throttle\+Requests\+Exception 
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_a616aacc09995fda525f2c128244992ce}{Illuminate\textbackslash{}\+Routing\textbackslash{}\+Middleware\textbackslash{}\+Throttle\+Requests}}.
+
+\Hypertarget{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_ac9713169d9719bced1ccf4f89ab596d2}\index{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis@{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis}!tooManyAttempts@{tooManyAttempts}}
+\index{tooManyAttempts@{tooManyAttempts}!Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis@{Illuminate\textbackslash{}Routing\textbackslash{}Middleware\textbackslash{}ThrottleRequestsWithRedis}}
+\doxysubsubsection{\texorpdfstring{tooManyAttempts()}{tooManyAttempts()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_routing_1_1_middleware_1_1_throttle_requests_with_redis_ac9713169d9719bced1ccf4f89ab596d2} 
+Illuminate\textbackslash{}\+Routing\textbackslash{}\+Middleware\textbackslash{}\+Throttle\+Requests\+With\+Redis\+::too\+Many\+Attempts (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$max\+Attempts}{, }\item[{}]{\$decay\+Seconds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the given key has been "{}accessed"{} too many times.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+int & {\em \$max\+Attempts} & \\
+\hline
+int & {\em \$decay\+Seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Routing/\+Middleware/Throttle\+Requests\+With\+Redis.\+php\end{DoxyCompactItemize}

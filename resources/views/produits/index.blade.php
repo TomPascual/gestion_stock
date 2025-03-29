@@ -1,3 +1,13 @@
+{{-- 
+    Vue : produits/index.blade.php
+    Description : Affiche la liste des produits avec options de recherche et filtres (catégorie, fournisseur).
+    Fonctions disponibles :
+        - Filtres dynamiques par nom, catégorie, fournisseur
+        - Bouton d’ajout de produit
+        - Accès aux mouvements du produit
+        - Actions CRUD (modifier, supprimer)
+--}}
+
 @extends('layouts.app')
 
 @section('content')
@@ -13,7 +23,7 @@
                        value="{{ request('search') }}">
             </div>
 
-            <!--  Filtre par Catégorie -->
+            <!-- Filtre par Catégorie -->
             <div class="col-md-3">
                 <select name="categorie_id" class="form-select">
                     <option value="">Toutes les catégories</option>
@@ -25,7 +35,7 @@
                 </select>
             </div>
 
-            <!--  Filtre par Fournisseur -->
+            <!-- Filtre par Fournisseur -->
             <div class="col-md-3">
                 <select name="fournisseur_id" class="form-select">
                     <option value="">Tous les fournisseurs</option>
@@ -37,13 +47,14 @@
                 </select>
             </div>
 
-            <!-- Bouton de filtre -->
+            <!-- Bouton de recherche -->
             <div class="col-md-2">
                 <button type="submit" class="btn btn-primary w-100">🔎 Rechercher</button>
             </div>
         </div>
     </form>
 
+    <!-- Bouton d'ajout -->
     <div class="d-flex justify-content-between mb-3">
         <a href="{{ route('produits.create') }}" class="btn btn-lg btn-primary">
             ➕ Ajouter un Produit
@@ -54,6 +65,7 @@
         <div class="alert alert-success">{{ session('success') }}</div>
     @endif
 
+    <!-- Tableau des produits -->
     <table class="table table-hover">
         <thead class="table-dark">
             <tr>

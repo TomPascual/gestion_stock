@@ -1,0 +1,78 @@
+\doxysection{Nette\textbackslash{}Utils\textbackslash{}Json Class Reference}
+\hypertarget{class_nette_1_1_utils_1_1_json}{}\label{class_nette_1_1_utils_1_1_json}\index{Nette\textbackslash{}Utils\textbackslash{}Json@{Nette\textbackslash{}Utils\textbackslash{}Json}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_json_a3e8b26b8295beca5effd2d525e55a335}{encode}} (mixed \$value, bool\texorpdfstring{$\vert$}{|}int \$pretty=false, bool \$ascii\+Safe=false, bool \$html\+Safe=false, bool \$force\+Objects=false,)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_json_aefd2c9a60b319ad71dbcc2731aa91ef6}{decode}} (string \$json, bool\texorpdfstring{$\vert$}{|}int \$force\+Arrays=false)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_nette_1_1_utils_1_1_json_ac223a72a78a5ff0d06653d544b4a2b63}{FORCE\+\_\+\+ARRAY}} = JSON\+\_\+\+OBJECT\+\_\+\+AS\+\_\+\+ARRAY
+\item 
+const \mbox{\hyperlink{class_nette_1_1_utils_1_1_json_aaebd3ec52896e52e85cb2ad0adab9a9e}{PRETTY}} = JSON\+\_\+\+PRETTY\+\_\+\+PRINT
+\item 
+const \mbox{\hyperlink{class_nette_1_1_utils_1_1_json_a0b6cb10b6d806cbf04176a4835debd16}{ESCAPE\+\_\+\+UNICODE}} = 1 $<$$<$ 19
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+JSON encoder and decoder. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_nette_1_1_utils_1_1_json_aefd2c9a60b319ad71dbcc2731aa91ef6}\index{Nette\textbackslash{}Utils\textbackslash{}Json@{Nette\textbackslash{}Utils\textbackslash{}Json}!decode@{decode}}
+\index{decode@{decode}!Nette\textbackslash{}Utils\textbackslash{}Json@{Nette\textbackslash{}Utils\textbackslash{}Json}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_json_aefd2c9a60b319ad71dbcc2731aa91ef6} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Json\+::decode (\begin{DoxyParamCaption}\item[{string}]{\$json}{, }\item[{bool\texorpdfstring{$\vert$}{|}int}]{\$force\+Arrays}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses JSON to PHP value. The \$force\+Arrays enforces the decoding of objects as arrays. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Json\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_nette_1_1_utils_1_1_json_a3e8b26b8295beca5effd2d525e55a335}\index{Nette\textbackslash{}Utils\textbackslash{}Json@{Nette\textbackslash{}Utils\textbackslash{}Json}!encode@{encode}}
+\index{encode@{encode}!Nette\textbackslash{}Utils\textbackslash{}Json@{Nette\textbackslash{}Utils\textbackslash{}Json}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_json_a3e8b26b8295beca5effd2d525e55a335} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Json\+::encode (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{, }\item[{bool\texorpdfstring{$\vert$}{|}int}]{\$pretty}{ = {\ttfamily false}, }\item[{bool}]{\$ascii\+Safe}{ = {\ttfamily false}, }\item[{bool}]{\$html\+Safe}{ = {\ttfamily false}, }\item[{bool}]{\$force\+Objects}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts value to JSON format. Use \$pretty for easier reading and clarity, \$ascii\+Safe for ASCII output and \$html\+Safe for HTML escaping, \$force\+Objects enforces the encoding of non-\/associateve arrays as objects. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Json\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_nette_1_1_utils_1_1_json_a0b6cb10b6d806cbf04176a4835debd16}\index{Nette\textbackslash{}Utils\textbackslash{}Json@{Nette\textbackslash{}Utils\textbackslash{}Json}!ESCAPE\_UNICODE@{ESCAPE\_UNICODE}}
+\index{ESCAPE\_UNICODE@{ESCAPE\_UNICODE}!Nette\textbackslash{}Utils\textbackslash{}Json@{Nette\textbackslash{}Utils\textbackslash{}Json}}
+\doxysubsubsection{\texorpdfstring{ESCAPE\_UNICODE}{ESCAPE\_UNICODE}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_json_a0b6cb10b6d806cbf04176a4835debd16} 
+const Nette\textbackslash{}\+Utils\textbackslash{}\+Json\+::\+ESCAPE\+\_\+\+UNICODE = 1 $<$$<$ 19}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000184}{Deprecated}}]use Json\+::encode(..., ascii\+Safe\+: true) \end{DoxyRefDesc}
+\Hypertarget{class_nette_1_1_utils_1_1_json_ac223a72a78a5ff0d06653d544b4a2b63}\index{Nette\textbackslash{}Utils\textbackslash{}Json@{Nette\textbackslash{}Utils\textbackslash{}Json}!FORCE\_ARRAY@{FORCE\_ARRAY}}
+\index{FORCE\_ARRAY@{FORCE\_ARRAY}!Nette\textbackslash{}Utils\textbackslash{}Json@{Nette\textbackslash{}Utils\textbackslash{}Json}}
+\doxysubsubsection{\texorpdfstring{FORCE\_ARRAY}{FORCE\_ARRAY}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_json_ac223a72a78a5ff0d06653d544b4a2b63} 
+const Nette\textbackslash{}\+Utils\textbackslash{}\+Json\+::\+FORCE\+\_\+\+ARRAY = JSON\+\_\+\+OBJECT\+\_\+\+AS\+\_\+\+ARRAY}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000182}{Deprecated}}]use Json\+::decode(..., force\+Arrays\+: true) \end{DoxyRefDesc}
+\Hypertarget{class_nette_1_1_utils_1_1_json_aaebd3ec52896e52e85cb2ad0adab9a9e}\index{Nette\textbackslash{}Utils\textbackslash{}Json@{Nette\textbackslash{}Utils\textbackslash{}Json}!PRETTY@{PRETTY}}
+\index{PRETTY@{PRETTY}!Nette\textbackslash{}Utils\textbackslash{}Json@{Nette\textbackslash{}Utils\textbackslash{}Json}}
+\doxysubsubsection{\texorpdfstring{PRETTY}{PRETTY}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_json_aaebd3ec52896e52e85cb2ad0adab9a9e} 
+const Nette\textbackslash{}\+Utils\textbackslash{}\+Json\+::\+PRETTY = JSON\+\_\+\+PRETTY\+\_\+\+PRINT}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000183}{Deprecated}}]use Json\+::encode(..., pretty\+: true) \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/nette/utils/src/\+Utils/Json.\+php\end{DoxyCompactItemize}

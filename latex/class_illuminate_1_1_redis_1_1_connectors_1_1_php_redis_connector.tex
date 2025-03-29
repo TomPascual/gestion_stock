@@ -1,0 +1,171 @@
+\doxysection{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}Php\+Redis\+Connector Class Reference}
+\hypertarget{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector}{}\label{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector@{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector}}
+Inheritance diagram for Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}Php\+Redis\+Connector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a14d87c8eea92eefc055f6a6dfdc3e274}{connect}} (array \$config, array \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a3585ed6ab0530c7e8d638e8b6823f134}{connect\+To\+Cluster}} (array \$config, array \$cluster\+Options, array \$options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_ac8d1a3f0576191b895df981815267fcc}{build\+Cluster\+Connection\+String}} (array \$server)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a90f3e644717207dd28da28fde96d51d0}{create\+Client}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a80b0050fdbbaa72e11427bdf9ed22d38}{establish\+Connection}} (\$client, array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a850fc15fcc492755bb5e9e03baa27547}{create\+Redis\+Cluster\+Instance}} (array \$servers, array \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a5f36c4df2740c2d53aac8910deb28ead}{format\+Host}} (array \$options)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_ac8d1a3f0576191b895df981815267fcc}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector@{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector}!buildClusterConnectionString@{buildClusterConnectionString}}
+\index{buildClusterConnectionString@{buildClusterConnectionString}!Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector@{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector}}
+\doxysubsubsection{\texorpdfstring{buildClusterConnectionString()}{buildClusterConnectionString()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_ac8d1a3f0576191b895df981815267fcc} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connectors\textbackslash{}\+Php\+Redis\+Connector\+::build\+Cluster\+Connection\+String (\begin{DoxyParamCaption}\item[{array}]{\$server}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Build a single cluster seed string from an array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$server} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a14d87c8eea92eefc055f6a6dfdc3e274}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector@{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector}!connect@{connect}}
+\index{connect@{connect}!Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector@{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a14d87c8eea92eefc055f6a6dfdc3e274} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connectors\textbackslash{}\+Php\+Redis\+Connector\+::connect (\begin{DoxyParamCaption}\item[{array}]{\$config}{, }\item[{array}]{\$options}{}\end{DoxyParamCaption})}
+
+Create a new connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Php\+Redis\+Connection 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_redis_1_1_connector_a1886eb2958c53d31464c11e1bed2835b}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Redis\textbackslash{}\+Connector}}.
+
+\Hypertarget{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a3585ed6ab0530c7e8d638e8b6823f134}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector@{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector}!connectToCluster@{connectToCluster}}
+\index{connectToCluster@{connectToCluster}!Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector@{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector}}
+\doxysubsubsection{\texorpdfstring{connectToCluster()}{connectToCluster()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a3585ed6ab0530c7e8d638e8b6823f134} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connectors\textbackslash{}\+Php\+Redis\+Connector\+::connect\+To\+Cluster (\begin{DoxyParamCaption}\item[{array}]{\$config}{, }\item[{array}]{\$cluster\+Options}{, }\item[{array}]{\$options}{}\end{DoxyParamCaption})}
+
+Create a new clustered Php\+Redis connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+array & {\em \$cluster\+Options} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Php\+Redis\+Cluster\+Connection 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_redis_1_1_connector_ac6874fe0b3499ecb764c52ad148a3bb0}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Redis\textbackslash{}\+Connector}}.
+
+\Hypertarget{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a90f3e644717207dd28da28fde96d51d0}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector@{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector}!createClient@{createClient}}
+\index{createClient@{createClient}!Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector@{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector}}
+\doxysubsubsection{\texorpdfstring{createClient()}{createClient()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a90f3e644717207dd28da28fde96d51d0} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connectors\textbackslash{}\+Php\+Redis\+Connector\+::create\+Client (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the Redis client instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Redis
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception \Hypertarget{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a850fc15fcc492755bb5e9e03baa27547}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector@{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector}!createRedisClusterInstance@{createRedisClusterInstance}}
+\index{createRedisClusterInstance@{createRedisClusterInstance}!Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector@{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector}}
+\doxysubsubsection{\texorpdfstring{createRedisClusterInstance()}{createRedisClusterInstance()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a850fc15fcc492755bb5e9e03baa27547} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connectors\textbackslash{}\+Php\+Redis\+Connector\+::create\+Redis\+Cluster\+Instance (\begin{DoxyParamCaption}\item[{array}]{\$servers}{, }\item[{array}]{\$options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new redis cluster instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$servers} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Redis\+Cluster 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a80b0050fdbbaa72e11427bdf9ed22d38}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector@{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector}!establishConnection@{establishConnection}}
+\index{establishConnection@{establishConnection}!Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector@{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector}}
+\doxysubsubsection{\texorpdfstring{establishConnection()}{establishConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a80b0050fdbbaa72e11427bdf9ed22d38} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connectors\textbackslash{}\+Php\+Redis\+Connector\+::establish\+Connection (\begin{DoxyParamCaption}\item[{}]{\$client}{, }\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Establish a connection with the Redis host.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Redis & {\em \$client} & \\
+\hline
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a5f36c4df2740c2d53aac8910deb28ead}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector@{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector}!formatHost@{formatHost}}
+\index{formatHost@{formatHost}!Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector@{Illuminate\textbackslash{}Redis\textbackslash{}Connectors\textbackslash{}PhpRedisConnector}}
+\doxysubsubsection{\texorpdfstring{formatHost()}{formatHost()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connectors_1_1_php_redis_connector_a5f36c4df2740c2d53aac8910deb28ead} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connectors\textbackslash{}\+Php\+Redis\+Connector\+::format\+Host (\begin{DoxyParamCaption}\item[{array}]{\$options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Format the host using the scheme if available.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Redis/\+Connectors/Php\+Redis\+Connector.\+php\end{DoxyCompactItemize}

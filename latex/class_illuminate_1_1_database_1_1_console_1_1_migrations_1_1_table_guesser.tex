@@ -1,0 +1,69 @@
+\doxysection{Illuminate\textbackslash{}Database\textbackslash{}Console\textbackslash{}Migrations\textbackslash{}Table\+Guesser Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_console_1_1_migrations_1_1_table_guesser}{}\label{class_illuminate_1_1_database_1_1_console_1_1_migrations_1_1_table_guesser}\index{Illuminate\textbackslash{}Database\textbackslash{}Console\textbackslash{}Migrations\textbackslash{}TableGuesser@{Illuminate\textbackslash{}Database\textbackslash{}Console\textbackslash{}Migrations\textbackslash{}TableGuesser}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_migrations_1_1_table_guesser_a326b8895b32e4f5fb99ed9733486e26e}{guess}} (\$migration)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_migrations_1_1_table_guesser_aa3a2021cf93966578bb8a18eb92d3354}{CREATE\+\_\+\+PATTERNS}}
+\item 
+const \mbox{\hyperlink{class_illuminate_1_1_database_1_1_console_1_1_migrations_1_1_table_guesser_a7c80124cfb0f0f1d31cdc90ca4f80ba3}{CHANGE\+\_\+\+PATTERNS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_console_1_1_migrations_1_1_table_guesser_a326b8895b32e4f5fb99ed9733486e26e}\index{Illuminate\textbackslash{}Database\textbackslash{}Console\textbackslash{}Migrations\textbackslash{}TableGuesser@{Illuminate\textbackslash{}Database\textbackslash{}Console\textbackslash{}Migrations\textbackslash{}TableGuesser}!guess@{guess}}
+\index{guess@{guess}!Illuminate\textbackslash{}Database\textbackslash{}Console\textbackslash{}Migrations\textbackslash{}TableGuesser@{Illuminate\textbackslash{}Database\textbackslash{}Console\textbackslash{}Migrations\textbackslash{}TableGuesser}}
+\doxysubsubsection{\texorpdfstring{guess()}{guess()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_console_1_1_migrations_1_1_table_guesser_a326b8895b32e4f5fb99ed9733486e26e} 
+static Illuminate\textbackslash{}\+Database\textbackslash{}\+Console\textbackslash{}\+Migrations\textbackslash{}\+Table\+Guesser\+::guess (\begin{DoxyParamCaption}\item[{}]{\$migration}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Attempt to guess the table name and "{}creation"{} status of the given migration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$migration} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_console_1_1_migrations_1_1_table_guesser_a7c80124cfb0f0f1d31cdc90ca4f80ba3}\index{Illuminate\textbackslash{}Database\textbackslash{}Console\textbackslash{}Migrations\textbackslash{}TableGuesser@{Illuminate\textbackslash{}Database\textbackslash{}Console\textbackslash{}Migrations\textbackslash{}TableGuesser}!CHANGE\_PATTERNS@{CHANGE\_PATTERNS}}
+\index{CHANGE\_PATTERNS@{CHANGE\_PATTERNS}!Illuminate\textbackslash{}Database\textbackslash{}Console\textbackslash{}Migrations\textbackslash{}TableGuesser@{Illuminate\textbackslash{}Database\textbackslash{}Console\textbackslash{}Migrations\textbackslash{}TableGuesser}}
+\doxysubsubsection{\texorpdfstring{CHANGE\_PATTERNS}{CHANGE\_PATTERNS}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_console_1_1_migrations_1_1_table_guesser_a7c80124cfb0f0f1d31cdc90ca4f80ba3} 
+const Illuminate\textbackslash{}\+Database\textbackslash{}\+Console\textbackslash{}\+Migrations\textbackslash{}\+Table\+Guesser\+::\+CHANGE\+\_\+\+PATTERNS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'/.+\_(to|from|in)\_(\(\backslash\)w+)\_table\$/'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'/.+\_(to|from|in)\_(\(\backslash\)w+)\$/'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_illuminate_1_1_database_1_1_console_1_1_migrations_1_1_table_guesser_aa3a2021cf93966578bb8a18eb92d3354}\index{Illuminate\textbackslash{}Database\textbackslash{}Console\textbackslash{}Migrations\textbackslash{}TableGuesser@{Illuminate\textbackslash{}Database\textbackslash{}Console\textbackslash{}Migrations\textbackslash{}TableGuesser}!CREATE\_PATTERNS@{CREATE\_PATTERNS}}
+\index{CREATE\_PATTERNS@{CREATE\_PATTERNS}!Illuminate\textbackslash{}Database\textbackslash{}Console\textbackslash{}Migrations\textbackslash{}TableGuesser@{Illuminate\textbackslash{}Database\textbackslash{}Console\textbackslash{}Migrations\textbackslash{}TableGuesser}}
+\doxysubsubsection{\texorpdfstring{CREATE\_PATTERNS}{CREATE\_PATTERNS}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_console_1_1_migrations_1_1_table_guesser_aa3a2021cf93966578bb8a18eb92d3354} 
+const Illuminate\textbackslash{}\+Database\textbackslash{}\+Console\textbackslash{}\+Migrations\textbackslash{}\+Table\+Guesser\+::\+CREATE\+\_\+\+PATTERNS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'/\string^create\_(\(\backslash\)w+)\_table\$/'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'/\string^create\_(\(\backslash\)w+)\$/'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Database/\+Console/\+Migrations/Table\+Guesser.\+php\end{DoxyCompactItemize}

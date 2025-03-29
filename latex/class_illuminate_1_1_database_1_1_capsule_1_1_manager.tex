@@ -1,0 +1,263 @@
+\doxysection{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_capsule_1_1_manager}{}\label{class_illuminate_1_1_database_1_1_capsule_1_1_manager}\index{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_ad3e3466f0c74759fba6a9bb5a29d702f}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a67274c61a96aa68f1e542288276146ac}{get\+Connection}} (\$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a55fa8a1404914196784deed2c5e194ba}{add\+Connection}} (array \$config, \$name=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a47fec188780056ce232d2b70b652dacc}{boot\+Eloquent}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a99bed451a37e3e409068e2d58acb81cf}{set\+Fetch\+Mode}} (\$fetch\+Mode)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_acd81c4142e7cd896d3e26c115f1b089d}{get\+Database\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_ac4bd99a7fa2dc4d2dc8e236405db0692}{get\+Event\+Dispatcher}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a65d75b61b35245d0f17aa14fd7dde01c}{set\+Event\+Dispatcher}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}} \$dispatcher)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a849cafb9481ff409f404a4a825041571}{connection}} (\$connection=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a8e1e0365c02a4e1d4c9503eb2c853dee}{table}} (\$table, \$as=null, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a849cafb9481ff409f404a4a825041571}{connection}}=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_ae81e0603df421221386e4a87e72a91be}{schema}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a849cafb9481ff409f404a4a825041571}{connection}}=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_aacc1c0e6dc8fea00868b63efae1dd499}{\+\_\+\+\_\+call\+Static}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a36d420a48f395997be9bb0f089e18eeb}{setup\+Default\+Configuration}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_capsule_1_1_manager_ab8bdbdbecee6601c503118ff955cf227}{setup\+Manager}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_capsule_1_1_manager_ae71e45f7db626df31608b207d080efc5}\label{class_illuminate_1_1_database_1_1_capsule_1_1_manager_ae71e45f7db626df31608b207d080efc5} 
+{\bfseries \$manager}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_capsule_1_1_manager_ad3e3466f0c74759fba6a9bb5a29d702f}\index{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_capsule_1_1_manager_ad3e3466f0c74759fba6a9bb5a29d702f} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}}}]{\$container}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new database capsule manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Container\textbackslash{}\+Container | null & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_capsule_1_1_manager_aacc1c0e6dc8fea00868b63efae1dd499}\index{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}!\_\_callStatic@{\_\_callStatic}}
+\index{\_\_callStatic@{\_\_callStatic}!Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{\_\_callStatic()}{\_\_callStatic()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_capsule_1_1_manager_aacc1c0e6dc8fea00868b63efae1dd499} 
+static Illuminate\textbackslash{}\+Database\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::\+\_\+\+\_\+call\+Static (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Dynamically pass methods to the default connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a55fa8a1404914196784deed2c5e194ba}\index{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}!addConnection@{addConnection}}
+\index{addConnection@{addConnection}!Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{addConnection()}{addConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a55fa8a1404914196784deed2c5e194ba} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::add\+Connection (\begin{DoxyParamCaption}\item[{array}]{\$config}{, }\item[{}]{\$name}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Register a connection with the manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a47fec188780056ce232d2b70b652dacc}\index{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}!bootEloquent@{bootEloquent}}
+\index{bootEloquent@{bootEloquent}!Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{bootEloquent()}{bootEloquent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a47fec188780056ce232d2b70b652dacc} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::boot\+Eloquent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Bootstrap Eloquent so it is ready for usage.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a849cafb9481ff409f404a4a825041571}\index{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}!connection@{connection}}
+\index{connection@{connection}!Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{connection()}{connection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a849cafb9481ff409f404a4a825041571} 
+static Illuminate\textbackslash{}\+Database\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::connection (\begin{DoxyParamCaption}\item[{}]{\$connection}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a connection instance from the global manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a67274c61a96aa68f1e542288276146ac}\index{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}!getConnection@{getConnection}}
+\index{getConnection@{getConnection}!Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{getConnection()}{getConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a67274c61a96aa68f1e542288276146ac} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::get\+Connection (\begin{DoxyParamCaption}\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a registered connection instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_capsule_1_1_manager_acd81c4142e7cd896d3e26c115f1b089d}\index{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}!getDatabaseManager@{getDatabaseManager}}
+\index{getDatabaseManager@{getDatabaseManager}!Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{getDatabaseManager()}{getDatabaseManager()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_capsule_1_1_manager_acd81c4142e7cd896d3e26c115f1b089d} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::get\+Database\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the database manager instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Database\+Manager 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_capsule_1_1_manager_ac4bd99a7fa2dc4d2dc8e236405db0692}\index{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}!getEventDispatcher@{getEventDispatcher}}
+\index{getEventDispatcher@{getEventDispatcher}!Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{getEventDispatcher()}{getEventDispatcher()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_capsule_1_1_manager_ac4bd99a7fa2dc4d2dc8e236405db0692} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::get\+Event\+Dispatcher (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the current event dispatcher instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Events\textbackslash{}\+Dispatcher\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_capsule_1_1_manager_ae81e0603df421221386e4a87e72a91be}\index{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}!schema@{schema}}
+\index{schema@{schema}!Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{schema()}{schema()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_capsule_1_1_manager_ae81e0603df421221386e4a87e72a91be} 
+static Illuminate\textbackslash{}\+Database\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::schema (\begin{DoxyParamCaption}\item[{}]{\$connection}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a schema builder instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Schema\textbackslash{}\+Builder 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a65d75b61b35245d0f17aa14fd7dde01c}\index{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}!setEventDispatcher@{setEventDispatcher}}
+\index{setEventDispatcher@{setEventDispatcher}!Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{setEventDispatcher()}{setEventDispatcher()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a65d75b61b35245d0f17aa14fd7dde01c} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::set\+Event\+Dispatcher (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}}}]{\$dispatcher}{}\end{DoxyParamCaption})}
+
+Set the event dispatcher instance to be used by connections.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Events\textbackslash{}\+Dispatcher & {\em \$dispatcher} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a99bed451a37e3e409068e2d58acb81cf}\index{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}!setFetchMode@{setFetchMode}}
+\index{setFetchMode@{setFetchMode}!Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{setFetchMode()}{setFetchMode()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a99bed451a37e3e409068e2d58acb81cf} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::set\+Fetch\+Mode (\begin{DoxyParamCaption}\item[{}]{\$fetch\+Mode}{}\end{DoxyParamCaption})}
+
+Set the fetch mode for the database connections.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$fetch\+Mode} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a36d420a48f395997be9bb0f089e18eeb}\index{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}!setupDefaultConfiguration@{setupDefaultConfiguration}}
+\index{setupDefaultConfiguration@{setupDefaultConfiguration}!Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{setupDefaultConfiguration()}{setupDefaultConfiguration()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a36d420a48f395997be9bb0f089e18eeb} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::setup\+Default\+Configuration (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Setup the default database configuration options.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_capsule_1_1_manager_ab8bdbdbecee6601c503118ff955cf227}\index{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}!setupManager@{setupManager}}
+\index{setupManager@{setupManager}!Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{setupManager()}{setupManager()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_capsule_1_1_manager_ab8bdbdbecee6601c503118ff955cf227} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::setup\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Build the database manager instance.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a8e1e0365c02a4e1d4c9503eb2c853dee}\index{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}!table@{table}}
+\index{table@{table}!Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Database\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{table()}{table()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_capsule_1_1_manager_a8e1e0365c02a4e1d4c9503eb2c853dee} 
+static Illuminate\textbackslash{}\+Database\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::table (\begin{DoxyParamCaption}\item[{}]{\$table}{, }\item[{}]{\$as}{ = {\ttfamily null}, }\item[{}]{\$connection}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a fluent query builder instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder | string & {\em \$table} & \\
+\hline
+string | null & {\em \$as} & \\
+\hline
+string | null & {\em \$connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Database/\+Capsule/Manager.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_envelope}{}\label{class_symfony_1_1_component_1_1_mailer_1_1_envelope}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_mailer_1_1_envelope}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a9b0babab881f9d415a2909073ff2beb7}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_address}{Address}} \$sender, array \$recipients)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a2dd8cab82d53e0db905f44b697df6442}\label{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a2dd8cab82d53e0db905f44b697df6442} 
+{\bfseries set\+Sender} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_address}{Address}} \$sender)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a1eb5bde170b78a01878105169d73015b}{get\+Sender}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a298045dad2f584a5d9637a234a50fc04}{set\+Recipients}} (array \$recipients)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a5792105d2900f71026496bd015ba79fe}{get\+Recipients}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a6df055f29688894e0112fcd474a21ffa}{any\+Address\+Has\+Unicode\+Localpart}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a29d0dc626b7408400dbd7855f86ee632}\label{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a29d0dc626b7408400dbd7855f86ee632} 
+static {\bfseries create} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_raw_message}{Raw\+Message}} \$message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a9b0babab881f9d415a2909073ff2beb7}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a9b0babab881f9d415a2909073ff2beb7} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Envelope\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_address}{Address}}}]{\$sender}{, }\item[{array}]{\$recipients}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Address\mbox{[}$\,$\mbox{]} & {\em \$recipients} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a6df055f29688894e0112fcd474a21ffa}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope}!anyAddressHasUnicodeLocalpart@{anyAddressHasUnicodeLocalpart}}
+\index{anyAddressHasUnicodeLocalpart@{anyAddressHasUnicodeLocalpart}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope}}
+\doxysubsubsection{\texorpdfstring{anyAddressHasUnicodeLocalpart()}{anyAddressHasUnicodeLocalpart()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a6df055f29688894e0112fcd474a21ffa} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Envelope\+::any\+Address\+Has\+Unicode\+Localpart (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true if any address\textquotesingle{} localpart contains at least one non-\/\+ASCII character, and false if all addresses have all-\/\+ASCII localparts.
+
+This helps to decide whether to the SMTPUTF8 extensions (RFC 6530 and following) for any given message.
+
+The SMTPUTF8 extension is strictly required if any address contains a non-\/\+ASCII character in its localpart. If non-\/\+ASCII is only used in domains (e.\+g. \href{mailto:horst@freiherr-von-m\%C3\%BChlhausen.de}{\texttt{ horst@freiherr-\/von-\/mühlhausen.\+de}}) then it is possible to send the message using IDN encoding instead of SMTPUTF8. The most common software will display the message as intended. \Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a5792105d2900f71026496bd015ba79fe}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope}!getRecipients@{getRecipients}}
+\index{getRecipients@{getRecipients}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope}}
+\doxysubsubsection{\texorpdfstring{getRecipients()}{getRecipients()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a5792105d2900f71026496bd015ba79fe} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Envelope\+::get\+Recipients (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Address\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_delayed_envelope_a6d86d8cb775f6238b9d155ce1673173e}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Delayed\+Envelope}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a1eb5bde170b78a01878105169d73015b}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope}!getSender@{getSender}}
+\index{getSender@{getSender}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope}}
+\doxysubsubsection{\texorpdfstring{getSender()}{getSender()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a1eb5bde170b78a01878105169d73015b} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Envelope\+::get\+Sender (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Address Returns a "{}mailbox"{} as specified by RFC 2822 Must be converted to an "{}addr-\/spec"{} when used as a "{}\+MAIL FROM"{} value in SMTP (use get\+Address()) 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_delayed_envelope_a409ef9fa4b096ab61cc005f7d9b39a99}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Delayed\+Envelope}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a298045dad2f584a5d9637a234a50fc04}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope}!setRecipients@{setRecipients}}
+\index{setRecipients@{setRecipients}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Envelope}}
+\doxysubsubsection{\texorpdfstring{setRecipients()}{setRecipients()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_envelope_a298045dad2f584a5d9637a234a50fc04} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Envelope\+::set\+Recipients (\begin{DoxyParamCaption}\item[{array}]{\$recipients}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Address\mbox{[}$\,$\mbox{]} & {\em \$recipients} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_delayed_envelope_ab98b74eb9b5ee28a11f817831dca418c}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Delayed\+Envelope}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/mailer/Envelope.\+php\end{DoxyCompactItemize}

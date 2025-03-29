@@ -1,0 +1,91 @@
+\doxysection{Illuminate\textbackslash{}Contracts\textbackslash{}Redis\textbackslash{}Connection Interface Reference}
+\hypertarget{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection}{}\label{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Redis\textbackslash{}Connection@{Illuminate\textbackslash{}Contracts\textbackslash{}Redis\textbackslash{}Connection}}
+Inheritance diagram for Illuminate\textbackslash{}Contracts\textbackslash{}Redis\textbackslash{}Connection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.456140cm]{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection_af3061d5bc8ffc2db31c9c4afa1e75fc5}{subscribe}} (\$channels, Closure \$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection_ae80f7424f4cf14a12635a53d57758cb1}{psubscribe}} (\$channels, Closure \$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection_adb146b65ee504717bdfe79cd57f48ad2}{command}} (\$method, array \$parameters=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection_adb146b65ee504717bdfe79cd57f48ad2}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Redis\textbackslash{}Connection@{Illuminate\textbackslash{}Contracts\textbackslash{}Redis\textbackslash{}Connection}!command@{command}}
+\index{command@{command}!Illuminate\textbackslash{}Contracts\textbackslash{}Redis\textbackslash{}Connection@{Illuminate\textbackslash{}Contracts\textbackslash{}Redis\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{command()}{command()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection_adb146b65ee504717bdfe79cd57f48ad2} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Redis\textbackslash{}\+Connection\+::command (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Run a command against the Redis database.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_php_redis_connection_abc0299ef182eb110b22e5f7adeb348cc}{Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Php\+Redis\+Connection}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection_ae80f7424f4cf14a12635a53d57758cb1}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Redis\textbackslash{}Connection@{Illuminate\textbackslash{}Contracts\textbackslash{}Redis\textbackslash{}Connection}!psubscribe@{psubscribe}}
+\index{psubscribe@{psubscribe}!Illuminate\textbackslash{}Contracts\textbackslash{}Redis\textbackslash{}Connection@{Illuminate\textbackslash{}Contracts\textbackslash{}Redis\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{psubscribe()}{psubscribe()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection_ae80f7424f4cf14a12635a53d57758cb1} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Redis\textbackslash{}\+Connection\+::psubscribe (\begin{DoxyParamCaption}\item[{}]{\$channels}{, }\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Subscribe to a set of given channels with wildcards.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$channels} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_php_redis_connection_ae8a023ec97c0f60e190d5881f23d5382}{Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Php\+Redis\+Connection}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection_af3061d5bc8ffc2db31c9c4afa1e75fc5}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Redis\textbackslash{}Connection@{Illuminate\textbackslash{}Contracts\textbackslash{}Redis\textbackslash{}Connection}!subscribe@{subscribe}}
+\index{subscribe@{subscribe}!Illuminate\textbackslash{}Contracts\textbackslash{}Redis\textbackslash{}Connection@{Illuminate\textbackslash{}Contracts\textbackslash{}Redis\textbackslash{}Connection}}
+\doxysubsubsection{\texorpdfstring{subscribe()}{subscribe()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection_af3061d5bc8ffc2db31c9c4afa1e75fc5} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Redis\textbackslash{}\+Connection\+::subscribe (\begin{DoxyParamCaption}\item[{}]{\$channels}{, }\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Subscribe to a set of given channels for messages.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$channels} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_php_redis_connection_a8f5ea41ac57a8c3c14d1557a7b337219}{Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Php\+Redis\+Connection}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Contracts/\+Redis/Connection.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,82 @@
+\doxysection{Php\+Parser\textbackslash{}Lexer\textbackslash{}Token\+Emulator\textbackslash{}Token\+Emulator Class Reference}
+\hypertarget{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator}{}\label{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator}\index{PhpParser\textbackslash{}Lexer\textbackslash{}TokenEmulator\textbackslash{}TokenEmulator@{PhpParser\textbackslash{}Lexer\textbackslash{}TokenEmulator\textbackslash{}TokenEmulator}}
+Inheritance diagram for Php\+Parser\textbackslash{}Lexer\textbackslash{}Token\+Emulator\textbackslash{}Token\+Emulator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.696517cm]{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_aa13a098e8c99422d86cf60577dfef920}\label{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_aa13a098e8c99422d86cf60577dfef920} 
+{\bfseries get\+Php\+Version} ()
+\item 
+\Hypertarget{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_a1766295164f524d2e9ccf9878a20a005}\label{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_a1766295164f524d2e9ccf9878a20a005} 
+{\bfseries is\+Emulation\+Needed} (string \$code)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_a6864410a5e7639ea44b491088e1838db}{emulate}} (string \$code, array \$tokens)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_a2241639e38f014f4e9eac2b50353c176}{reverse\+Emulate}} (string \$code, array \$tokens)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_aea15dd0696e234ea9384b530eab19d76}{preprocess\+Code}} (string \$code, array \&\$patches)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_a6864410a5e7639ea44b491088e1838db}\index{PhpParser\textbackslash{}Lexer\textbackslash{}TokenEmulator\textbackslash{}TokenEmulator@{PhpParser\textbackslash{}Lexer\textbackslash{}TokenEmulator\textbackslash{}TokenEmulator}!emulate@{emulate}}
+\index{emulate@{emulate}!PhpParser\textbackslash{}Lexer\textbackslash{}TokenEmulator\textbackslash{}TokenEmulator@{PhpParser\textbackslash{}Lexer\textbackslash{}TokenEmulator\textbackslash{}TokenEmulator}}
+\doxysubsubsection{\texorpdfstring{emulate()}{emulate()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_a6864410a5e7639ea44b491088e1838db} 
+Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Token\+Emulator\+::emulate (\begin{DoxyParamCaption}\item[{string}]{\$code}{, }\item[{array}]{\$tokens}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Token\mbox{[}$\,$\mbox{]} & {\em \$tokens} & Original tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Token\mbox{[}\mbox{]} Modified Tokens 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_a4b90cb6f6432b28e222d8b63f71a67f9}{Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Asymmetric\+Visibility\+Token\+Emulator}}, \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_attribute_emulator_aa76104cf883953c93baa44a23903db84}{Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Attribute\+Emulator}}, \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_explicit_octal_emulator_adfe98efa4c2ae0e047cd9b792e843fa6}{Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Explicit\+Octal\+Emulator}}, \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator_ada37aef1d2c877b8b96ac4f8a75eb310}{Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Keyword\+Emulator}}, \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_nullsafe_token_emulator_ac4a20dbf7b0b2aaa9da829fbd74009e4}{Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Nullsafe\+Token\+Emulator}}, and \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_reverse_emulator_a728f687f53c82ff781595bc43818e59e}{Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Reverse\+Emulator}}.
+
+\Hypertarget{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_aea15dd0696e234ea9384b530eab19d76}\index{PhpParser\textbackslash{}Lexer\textbackslash{}TokenEmulator\textbackslash{}TokenEmulator@{PhpParser\textbackslash{}Lexer\textbackslash{}TokenEmulator\textbackslash{}TokenEmulator}!preprocessCode@{preprocessCode}}
+\index{preprocessCode@{preprocessCode}!PhpParser\textbackslash{}Lexer\textbackslash{}TokenEmulator\textbackslash{}TokenEmulator@{PhpParser\textbackslash{}Lexer\textbackslash{}TokenEmulator\textbackslash{}TokenEmulator}}
+\doxysubsubsection{\texorpdfstring{preprocessCode()}{preprocessCode()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_aea15dd0696e234ea9384b530eab19d76} 
+Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Token\+Emulator\+::preprocess\+Code (\begin{DoxyParamCaption}\item[{string}]{\$code}{, }\item[{array \&}]{\$patches}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array\{int,string,string\}\mbox{[}$\,$\mbox{]}} & \$patches \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_attribute_emulator_a065d37c550607af02dc3bbf3ad10d305}{Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Attribute\+Emulator}}, and \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_reverse_emulator_a8bf119cdf95aea01df5398f53db14430}{Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Reverse\+Emulator}}.
+
+\Hypertarget{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_a2241639e38f014f4e9eac2b50353c176}\index{PhpParser\textbackslash{}Lexer\textbackslash{}TokenEmulator\textbackslash{}TokenEmulator@{PhpParser\textbackslash{}Lexer\textbackslash{}TokenEmulator\textbackslash{}TokenEmulator}!reverseEmulate@{reverseEmulate}}
+\index{reverseEmulate@{reverseEmulate}!PhpParser\textbackslash{}Lexer\textbackslash{}TokenEmulator\textbackslash{}TokenEmulator@{PhpParser\textbackslash{}Lexer\textbackslash{}TokenEmulator\textbackslash{}TokenEmulator}}
+\doxysubsubsection{\texorpdfstring{reverseEmulate()}{reverseEmulate()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_a2241639e38f014f4e9eac2b50353c176} 
+Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Token\+Emulator\+::reverse\+Emulate (\begin{DoxyParamCaption}\item[{string}]{\$code}{, }\item[{array}]{\$tokens}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Token\mbox{[}$\,$\mbox{]} & {\em \$tokens} & Original tokens \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Token\mbox{[}\mbox{]} Modified Tokens 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_asymmetric_visibility_token_emulator_aeae22cfc7679b7fb35bd0204fb00a89c}{Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Asymmetric\+Visibility\+Token\+Emulator}}, \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_attribute_emulator_a11846e0d2b3c2840bb34fe4db72a3c99}{Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Attribute\+Emulator}}, \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_explicit_octal_emulator_abf2cd4e4ca97c719096c0764297ea71f}{Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Explicit\+Octal\+Emulator}}, \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator_aae0f38b8bc2c07fab0a6266ed85f0d83}{Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Keyword\+Emulator}}, \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_nullsafe_token_emulator_a2cbdf0897c8f6ca7da2ea0b96d22c977}{Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Nullsafe\+Token\+Emulator}}, \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_readonly_function_token_emulator_a3a65c5aaaae7ccd8c08d68777a79d7ca}{Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Readonly\+Function\+Token\+Emulator}}, and \mbox{\hyperlink{class_php_parser_1_1_lexer_1_1_token_emulator_1_1_reverse_emulator_aee05557e8bf76e94de9768beb34326a7}{Php\+Parser\textbackslash{}\+Lexer\textbackslash{}\+Token\+Emulator\textbackslash{}\+Reverse\+Emulator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/nikic/php-\/parser/lib/\+Php\+Parser/\+Lexer/\+Token\+Emulator/Token\+Emulator.\+php\end{DoxyCompactItemize}

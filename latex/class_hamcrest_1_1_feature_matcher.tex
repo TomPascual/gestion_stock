@@ -1,0 +1,149 @@
+\doxysection{Hamcrest\textbackslash{}Feature\+Matcher Class Reference}
+\hypertarget{class_hamcrest_1_1_feature_matcher}{}\label{class_hamcrest_1_1_feature_matcher}\index{Hamcrest\textbackslash{}FeatureMatcher@{Hamcrest\textbackslash{}FeatureMatcher}}
+Inheritance diagram for Hamcrest\textbackslash{}Feature\+Matcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.740458cm]{class_hamcrest_1_1_feature_matcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_feature_matcher_a29acf06806092edcabad53a2443cba35}{\+\_\+\+\_\+construct}} (\$type, \$subtype, \mbox{\hyperlink{interface_hamcrest_1_1_matcher}{Matcher}} \$sub\+Matcher, \$feature\+Description, \$feature\+Name)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_feature_matcher_a888087fbae0d1f5b0887c492245b28fd}{matches\+Safely\+With\+Diagnostic\+Description}} (\$actual, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$mismatch\+Description)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_feature_matcher_a60f448e97d2fb18ec10799b57afd24ba}{describe\+To}} (\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$description)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hamcrest_1_1_type_safe_diagnosing_matcher}{Hamcrest\textbackslash{}\+Type\+Safe\+Diagnosing\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_type_safe_diagnosing_matcher_a0be90012ab772b44906e1a31c6a09ba1}{matches\+Safely}} (\$item)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_type_safe_diagnosing_matcher_a6aa6571c29b2b4c27437e9054e8bbf21}{describe\+Mismatch\+Safely}} (\$item, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$mismatch\+Description)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hamcrest_1_1_type_safe_matcher}{Hamcrest\textbackslash{}\+Type\+Safe\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+construct} (\$expected\+Type, \$expected\+Subtype=null)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_type_safe_matcher_a3b478b57cc6f0f3fc8b6e313bae224ba}{matches}} (\$item)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_type_safe_matcher_aa81354a42b826cf3fec764da1e02c1af}{describe\+Mismatch}} (\$item, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$mismatch\+Description)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hamcrest_1_1_base_matcher}{Hamcrest\textbackslash{}\+Base\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+to\+String} ()
+\item 
+{\bfseries \+\_\+\+\_\+invoke} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_feature_matcher_a3abcd2ff23c3c224c916d76cd49e67c1}{feature\+Value\+Of}} (\$actual)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_hamcrest_1_1_type_safe_matcher}{Hamcrest\textbackslash{}\+Type\+Safe\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries TYPE\+\_\+\+ANY} = 0
+\item 
+const {\bfseries TYPE\+\_\+\+STRING} = 1
+\item 
+const {\bfseries TYPE\+\_\+\+NUMERIC} = 2
+\item 
+const {\bfseries TYPE\+\_\+\+ARRAY} = 3
+\item 
+const {\bfseries TYPE\+\_\+\+OBJECT} = 4
+\item 
+const {\bfseries TYPE\+\_\+\+RESOURCE} = 5
+\item 
+const {\bfseries TYPE\+\_\+\+BOOLEAN} = 6
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Supporting class for matching a feature of an object. Implement {\ttfamily feature\+Value\+Of()} in a subclass to pull out the feature to be matched against. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_hamcrest_1_1_feature_matcher_a29acf06806092edcabad53a2443cba35}\index{Hamcrest\textbackslash{}FeatureMatcher@{Hamcrest\textbackslash{}FeatureMatcher}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Hamcrest\textbackslash{}FeatureMatcher@{Hamcrest\textbackslash{}FeatureMatcher}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_feature_matcher_a29acf06806092edcabad53a2443cba35} 
+Hamcrest\textbackslash{}\+Feature\+Matcher\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$type}{, }\item[{}]{\$subtype}{, }\item[{\mbox{\hyperlink{interface_hamcrest_1_1_matcher}{Matcher}}}]{\$sub\+Matcher}{, }\item[{}]{\$feature\+Description}{, }\item[{}]{\$feature\+Name}{}\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+string & {\em \$subtype} & \\
+\hline
+\textbackslash{}\+Hamcrest\textbackslash{}\+Matcher & {\em \$sub\+Matcher} & The matcher to apply to the feature \\
+\hline
+string & {\em \$feature\+Description} & Descriptive text to use in describe\+To \\
+\hline
+string & {\em \$feature\+Name} & Identifying text for mismatch message \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hamcrest_1_1_feature_matcher_a60f448e97d2fb18ec10799b57afd24ba}\index{Hamcrest\textbackslash{}FeatureMatcher@{Hamcrest\textbackslash{}FeatureMatcher}!describeTo@{describeTo}}
+\index{describeTo@{describeTo}!Hamcrest\textbackslash{}FeatureMatcher@{Hamcrest\textbackslash{}FeatureMatcher}}
+\doxysubsubsection{\texorpdfstring{describeTo()}{describeTo()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_feature_matcher_a60f448e97d2fb18ec10799b57afd24ba} 
+Hamcrest\textbackslash{}\+Feature\+Matcher\+::describe\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$description}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+Generates a description of the object. The description may be part of a description of a larger object of which this is just a component, so it should be worded appropriately.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Hamcrest\textbackslash{}\+Description & {\em \$description} & The description to be built or appended to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hamcrest_1_1_self_describing_a5358337d01bd2b3a048fa446f9e901d2}{Hamcrest\textbackslash{}\+Self\+Describing}}.
+
+\Hypertarget{class_hamcrest_1_1_feature_matcher_a3abcd2ff23c3c224c916d76cd49e67c1}\index{Hamcrest\textbackslash{}FeatureMatcher@{Hamcrest\textbackslash{}FeatureMatcher}!featureValueOf@{featureValueOf}}
+\index{featureValueOf@{featureValueOf}!Hamcrest\textbackslash{}FeatureMatcher@{Hamcrest\textbackslash{}FeatureMatcher}}
+\doxysubsubsection{\texorpdfstring{featureValueOf()}{featureValueOf()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_feature_matcher_a3abcd2ff23c3c224c916d76cd49e67c1} 
+Hamcrest\textbackslash{}\+Feature\+Matcher\+::feature\+Value\+Of (\begin{DoxyParamCaption}\item[{}]{\$actual}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Implement this to extract the interesting feature.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$actual} & the target object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed the feature to be matched 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_hamcrest_1_1_arrays_1_1_is_array_with_size_af40dfdf536f98ee5ce7e92011a8fc492}{Hamcrest\textbackslash{}\+Arrays\textbackslash{}\+Is\+Array\+With\+Size}}, \mbox{\hyperlink{class_hamcrest_1_1_collection_1_1_is_traversable_with_size_afaa71375e96094d9b37ef241f85047f7}{Hamcrest\textbackslash{}\+Collection\textbackslash{}\+Is\+Traversable\+With\+Size}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_has_to_string_a240c2396725ca0d46a085ad7fac451e2}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Has\+To\+String}}, and \mbox{\hyperlink{class_hamcrest_1_1_result_matcher_aa6fe4396886ea39c0f0a95f7e86e2851}{Hamcrest\textbackslash{}\+Result\+Matcher}}.
+
+\Hypertarget{class_hamcrest_1_1_feature_matcher_a888087fbae0d1f5b0887c492245b28fd}\index{Hamcrest\textbackslash{}FeatureMatcher@{Hamcrest\textbackslash{}FeatureMatcher}!matchesSafelyWithDiagnosticDescription@{matchesSafelyWithDiagnosticDescription}}
+\index{matchesSafelyWithDiagnosticDescription@{matchesSafelyWithDiagnosticDescription}!Hamcrest\textbackslash{}FeatureMatcher@{Hamcrest\textbackslash{}FeatureMatcher}}
+\doxysubsubsection{\texorpdfstring{matchesSafelyWithDiagnosticDescription()}{matchesSafelyWithDiagnosticDescription()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_feature_matcher_a888087fbae0d1f5b0887c492245b28fd} 
+Hamcrest\textbackslash{}\+Feature\+Matcher\+::matches\+Safely\+With\+Diagnostic\+Description (\begin{DoxyParamCaption}\item[{}]{\$item}{, }\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$mismatch\+Description}{}\end{DoxyParamCaption})}
+
+Subclasses should implement these. The item will already have been checked for the specific type. 
+
+Reimplemented from \mbox{\hyperlink{class_hamcrest_1_1_type_safe_diagnosing_matcher_addaa39367c0643dea24e5f7a3358af0a}{Hamcrest\textbackslash{}\+Type\+Safe\+Diagnosing\+Matcher}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_has_to_string_ad73820bb7f1b7a36631fbf6b0e810eb9}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Has\+To\+String}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/hamcrest/hamcrest-\/php/hamcrest/\+Hamcrest/Feature\+Matcher.\+php\end{DoxyCompactItemize}

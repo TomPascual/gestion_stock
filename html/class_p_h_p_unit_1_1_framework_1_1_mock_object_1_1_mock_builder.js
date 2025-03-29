@@ -1,0 +1,26 @@
+var class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder =
+[
+    [ "__construct", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#a4288edbccbddef8e746ff5345939aa1e", null ],
+    [ "addMethods", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#ab48607b8ff0bf3b6502921774dac186b", null ],
+    [ "allowMockingUnknownTypes", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#adbb82863329753e83fc548c5216a1f58", null ],
+    [ "disableArgumentCloning", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#ab7cb55c1ba637d627f42a5298764580b", null ],
+    [ "disableAutoload", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#ab34ae5d4595685b661bcab5b5d8e946d", null ],
+    [ "disableAutoReturnValueGeneration", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#afcfb3d9e91cb0feceace1fc6c93729cc", null ],
+    [ "disableOriginalClone", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#a2d013142e642ccfa966eb666f02aad95", null ],
+    [ "disableOriginalConstructor", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#a5df197f9998891470d804c25ec0349ee", null ],
+    [ "disableProxyingToOriginalMethods", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#a6ed0a5caed76c9b07646ce190aa729fe", null ],
+    [ "disallowMockingUnknownTypes", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#a164a242c0f8e9f35f3e45a83334163ae", null ],
+    [ "enableArgumentCloning", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#a645b6632f8417369415d419c1bab610e", null ],
+    [ "enableAutoload", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#a78b887a89c6e4895cfe060f02769d1e4", null ],
+    [ "enableAutoReturnValueGeneration", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#ad5e9e46eb594633c8d91106807e7c991", null ],
+    [ "enableOriginalClone", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#a8f47ca3d73bbdbe6bda54587c283d5d3", null ],
+    [ "enableOriginalConstructor", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#abb386fbdba253e77cd8c5078890196b9", null ],
+    [ "enableProxyingToOriginalMethods", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#a0503b60976d2708b5fa9b70282ad6335", null ],
+    [ "getMock", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#ac393188f9764cffab480c6d330ab8703", null ],
+    [ "getMockForAbstractClass", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#a1999fb9cdf3ae5a77c4e7df046ffa9ed", null ],
+    [ "getMockForTrait", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#afff4d5a02933a9e6344c03a761256ec1", null ],
+    [ "onlyMethods", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#a5bcc1e468ac6baf4698ab5d6e5dd7905", null ],
+    [ "setConstructorArgs", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#abc2b77127fb84f5ea611d512b97953c4", null ],
+    [ "setMockClassName", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#a41d86ed2ffebe110fa71870cf0006870", null ],
+    [ "setProxyTarget", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_mock_builder.html#ac21c47b0d71532e7c031344bbbdcb84b", null ]
+];

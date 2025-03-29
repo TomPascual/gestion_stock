@@ -1,0 +1,102 @@
+\doxysection{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Queueing\+Dispatcher Interface Reference}
+\hypertarget{interface_illuminate_1_1_contracts_1_1_bus_1_1_queueing_dispatcher}{}\label{interface_illuminate_1_1_contracts_1_1_bus_1_1_queueing_dispatcher}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}QueueingDispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}QueueingDispatcher}}
+Inheritance diagram for Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Queueing\+Dispatcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_illuminate_1_1_contracts_1_1_bus_1_1_queueing_dispatcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_queueing_dispatcher_a5cf4097c1ef4eb81642c7ff65234785a}{find\+Batch}} (string \$batch\+Id)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_queueing_dispatcher_a082d02a1997d74562cea2c671b430991}{batch}} (\$jobs)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_queueing_dispatcher_a97e33f948a1b014b521b51edea588c82}{dispatch\+To\+Queue}} (\$command)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Bus\textbackslash{}\+Dispatcher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_a96f5dfc2138533d86be92b6320070931}{dispatch}} (\$command)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_a7b21ec6e3d2d9042cf3c34d5a5783aad}{dispatch\+Sync}} (\$command, \$handler=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_ae518a6f8a59d78e46e88afce81d34868}{dispatch\+Now}} (\$command, \$handler=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_afff1b2ee3b0d4570e7c43809afca521c}{has\+Command\+Handler}} (\$command)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_a840e1f0b6fc46bdf0f7df260ae2c1cc0}{get\+Command\+Handler}} (\$command)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_ab90dd1000363ba516059c5d5ba354e5a}{pipe\+Through}} (array \$pipes)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_af5584241bfd28a25c4cda85493feff2a}{map}} (array \$map)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_bus_1_1_queueing_dispatcher_a082d02a1997d74562cea2c671b430991}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}QueueingDispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}QueueingDispatcher}!batch@{batch}}
+\index{batch@{batch}!Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}QueueingDispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}QueueingDispatcher}}
+\doxysubsubsection{\texorpdfstring{batch()}{batch()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_bus_1_1_queueing_dispatcher_a082d02a1997d74562cea2c671b430991} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Bus\textbackslash{}\+Queueing\+Dispatcher\+::batch (\begin{DoxyParamCaption}\item[{}]{\$jobs}{}\end{DoxyParamCaption})}
+
+Create a new batch of queueable jobs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection | array & {\em \$jobs} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Pending\+Batch 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dispatcher_ad250b3f8d86681d9f61db2a43034a40e}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dispatcher}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_bus_fake_a7127940d5eb84a6a8d19188ee849c001}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Bus\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_bus_1_1_queueing_dispatcher_a97e33f948a1b014b521b51edea588c82}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}QueueingDispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}QueueingDispatcher}!dispatchToQueue@{dispatchToQueue}}
+\index{dispatchToQueue@{dispatchToQueue}!Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}QueueingDispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}QueueingDispatcher}}
+\doxysubsubsection{\texorpdfstring{dispatchToQueue()}{dispatchToQueue()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_bus_1_1_queueing_dispatcher_a97e33f948a1b014b521b51edea588c82} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Bus\textbackslash{}\+Queueing\+Dispatcher\+::dispatch\+To\+Queue (\begin{DoxyParamCaption}\item[{}]{\$command}{}\end{DoxyParamCaption})}
+
+Dispatch a command to its appropriate handler behind a queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dispatcher_a23868da21efb3d5e6bd2e557ce4e69af}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dispatcher}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_bus_fake_a6ba7a6be9591bea1f4cb03c543ae2f04}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Bus\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_bus_1_1_queueing_dispatcher_a5cf4097c1ef4eb81642c7ff65234785a}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}QueueingDispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}QueueingDispatcher}!findBatch@{findBatch}}
+\index{findBatch@{findBatch}!Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}QueueingDispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}QueueingDispatcher}}
+\doxysubsubsection{\texorpdfstring{findBatch()}{findBatch()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_bus_1_1_queueing_dispatcher_a5cf4097c1ef4eb81642c7ff65234785a} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Bus\textbackslash{}\+Queueing\+Dispatcher\+::find\+Batch (\begin{DoxyParamCaption}\item[{string}]{\$batch\+Id}{}\end{DoxyParamCaption})}
+
+Attempt to find the batch with the given ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$batch\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dispatcher_a574a2f45065ab931ce630bf22a179042}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dispatcher}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_bus_fake_a0dcf8229c45125863458c3f254969741}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Bus\+Fake}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Contracts/\+Bus/Queueing\+Dispatcher.\+php\end{DoxyCompactItemize}

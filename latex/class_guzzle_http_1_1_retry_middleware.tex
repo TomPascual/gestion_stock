@@ -1,0 +1,57 @@
+\doxysection{Guzzle\+Http\textbackslash{}Retry\+Middleware Class Reference}
+\hypertarget{class_guzzle_http_1_1_retry_middleware}{}\label{class_guzzle_http_1_1_retry_middleware}\index{GuzzleHttp\textbackslash{}RetryMiddleware@{GuzzleHttp\textbackslash{}RetryMiddleware}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_retry_middleware_a3e8cafa5dc5214fd9e7127f1fc62a177}{\+\_\+\+\_\+construct}} (callable \$decider, callable \$next\+Handler, ?callable \$delay=null)
+\item 
+\Hypertarget{class_guzzle_http_1_1_retry_middleware_a31ec131078ab18cf48e60b4c49421e77}\label{class_guzzle_http_1_1_retry_middleware_a31ec131078ab18cf48e60b4c49421e77} 
+{\bfseries \+\_\+\+\_\+invoke} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface}{Request\+Interface}} \$request, array \$options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_retry_middleware_a2d061a78eae3c0d441b2a44fee762785}{exponential\+Delay}} (int \$retries)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Middleware that retries requests based on the boolean result of invoking the provided "{}decider"{} function.
+
+@final 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_guzzle_http_1_1_retry_middleware_a3e8cafa5dc5214fd9e7127f1fc62a177}\index{GuzzleHttp\textbackslash{}RetryMiddleware@{GuzzleHttp\textbackslash{}RetryMiddleware}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!GuzzleHttp\textbackslash{}RetryMiddleware@{GuzzleHttp\textbackslash{}RetryMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_retry_middleware_a3e8cafa5dc5214fd9e7127f1fc62a177} 
+Guzzle\+Http\textbackslash{}\+Retry\+Middleware\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{callable}]{\$decider}{, }\item[{callable}]{\$next\+Handler}{, }\item[{?callable}]{\$delay}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$decider} & Function that accepts the number of retries, a request, \mbox{[}response\mbox{]}, and \mbox{[}exception\mbox{]} and returns true if the request is to be retried. \\
+\hline
+ & {\em callable(\+Request\+Interface,array)} & Promise\+Interface \$next\+Handler Next handler to invoke. \\
+\hline
+ & {\em (callable(int)} & int)\texorpdfstring{$\vert$}{|}null \$delay Function that accepts the number of retries and returns the number of milliseconds to delay. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_guzzle_http_1_1_retry_middleware_a2d061a78eae3c0d441b2a44fee762785}\index{GuzzleHttp\textbackslash{}RetryMiddleware@{GuzzleHttp\textbackslash{}RetryMiddleware}!exponentialDelay@{exponentialDelay}}
+\index{exponentialDelay@{exponentialDelay}!GuzzleHttp\textbackslash{}RetryMiddleware@{GuzzleHttp\textbackslash{}RetryMiddleware}}
+\doxysubsubsection{\texorpdfstring{exponentialDelay()}{exponentialDelay()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_retry_middleware_a2d061a78eae3c0d441b2a44fee762785} 
+static Guzzle\+Http\textbackslash{}\+Retry\+Middleware\+::exponential\+Delay (\begin{DoxyParamCaption}\item[{int}]{\$retries}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Default exponential backoff delay function.
+
+\begin{DoxyReturn}{Returns}
+int milliseconds. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/guzzlehttp/guzzle/src/Retry\+Middleware.\+php\end{DoxyCompactItemize}

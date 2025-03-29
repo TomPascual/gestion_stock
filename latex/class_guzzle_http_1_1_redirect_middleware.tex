@@ -1,0 +1,88 @@
+\doxysection{Guzzle\+Http\textbackslash{}Redirect\+Middleware Class Reference}
+\hypertarget{class_guzzle_http_1_1_redirect_middleware}{}\label{class_guzzle_http_1_1_redirect_middleware}\index{GuzzleHttp\textbackslash{}RedirectMiddleware@{GuzzleHttp\textbackslash{}RedirectMiddleware}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_redirect_middleware_a4ee9dcdc33181a39a8abd9ef09b595cf}{\+\_\+\+\_\+construct}} (callable \$next\+Handler)
+\item 
+\Hypertarget{class_guzzle_http_1_1_redirect_middleware_a48bae420b672649ad449d61dfb70cc70}\label{class_guzzle_http_1_1_redirect_middleware_a48bae420b672649ad449d61dfb70cc70} 
+{\bfseries \+\_\+\+\_\+invoke} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface}{Request\+Interface}} \$request, array \$options)
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_redirect_middleware_ad2d75b09de5c059b8fde5facce3ae87c}{check\+Redirect}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface}{Request\+Interface}} \$request, array \$options, \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_response_interface}{Response\+Interface}} \$response)
+\item 
+\Hypertarget{class_guzzle_http_1_1_redirect_middleware_a514ffae64d75e8e20e1dba10a54a4720}\label{class_guzzle_http_1_1_redirect_middleware_a514ffae64d75e8e20e1dba10a54a4720} 
+{\bfseries modify\+Request} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface}{Request\+Interface}} \$request, array \$options, \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_response_interface}{Response\+Interface}} \$response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_guzzle_http_1_1_redirect_middleware_aac96a1350899ddd1169d8234b4451029}\label{class_guzzle_http_1_1_redirect_middleware_aac96a1350899ddd1169d8234b4451029} 
+const {\bfseries HISTORY\+\_\+\+HEADER} = \textquotesingle{}X-\/Guzzle-\/Redirect-\/History\textquotesingle{}
+\item 
+\Hypertarget{class_guzzle_http_1_1_redirect_middleware_a9e91ecf2a14e2ed2dd9cc6142e08b721}\label{class_guzzle_http_1_1_redirect_middleware_a9e91ecf2a14e2ed2dd9cc6142e08b721} 
+const {\bfseries STATUS\+\_\+\+HISTORY\+\_\+\+HEADER} = \textquotesingle{}X-\/Guzzle-\/Redirect-\/Status-\/History\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_guzzle_http_1_1_redirect_middleware_a09e8d1d8f1056c001714c411312f8937}{\$default\+Settings}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Request redirect middleware.
+
+Apply this middleware like other middleware using \{\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Guzzle\+Http\textbackslash{}\+Middleware\+::redirect()\}.
+\end{DoxySeeAlso}
+@final 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_guzzle_http_1_1_redirect_middleware_a4ee9dcdc33181a39a8abd9ef09b595cf}\index{GuzzleHttp\textbackslash{}RedirectMiddleware@{GuzzleHttp\textbackslash{}RedirectMiddleware}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!GuzzleHttp\textbackslash{}RedirectMiddleware@{GuzzleHttp\textbackslash{}RedirectMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_redirect_middleware_a4ee9dcdc33181a39a8abd9ef09b595cf} 
+Guzzle\+Http\textbackslash{}\+Redirect\+Middleware\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{callable}]{\$next\+Handler}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+Request\+Interface,array)} & Promise\+Interface \$next\+Handler Next handler to invoke. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_guzzle_http_1_1_redirect_middleware_ad2d75b09de5c059b8fde5facce3ae87c}\index{GuzzleHttp\textbackslash{}RedirectMiddleware@{GuzzleHttp\textbackslash{}RedirectMiddleware}!checkRedirect@{checkRedirect}}
+\index{checkRedirect@{checkRedirect}!GuzzleHttp\textbackslash{}RedirectMiddleware@{GuzzleHttp\textbackslash{}RedirectMiddleware}}
+\doxysubsubsection{\texorpdfstring{checkRedirect()}{checkRedirect()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_redirect_middleware_ad2d75b09de5c059b8fde5facce3ae87c} 
+Guzzle\+Http\textbackslash{}\+Redirect\+Middleware\+::check\+Redirect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface}{Request\+Interface}}}]{\$request}{, }\item[{array}]{\$options}{, }\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_response_interface}{Response\+Interface}}}]{\$response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+Response\+Interface\texorpdfstring{$\vert$}{|}\+Promise\+Interface 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_guzzle_http_1_1_redirect_middleware_a09e8d1d8f1056c001714c411312f8937}\index{GuzzleHttp\textbackslash{}RedirectMiddleware@{GuzzleHttp\textbackslash{}RedirectMiddleware}!\$defaultSettings@{\$defaultSettings}}
+\index{\$defaultSettings@{\$defaultSettings}!GuzzleHttp\textbackslash{}RedirectMiddleware@{GuzzleHttp\textbackslash{}RedirectMiddleware}}
+\doxysubsubsection{\texorpdfstring{\$defaultSettings}{\$defaultSettings}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_redirect_middleware_a09e8d1d8f1056c001714c411312f8937} 
+Guzzle\+Http\textbackslash{}\+Redirect\+Middleware\+::\$default\+Settings\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'max'}\ =>\ 5,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'protocols'}\ =>\ [\textcolor{stringliteral}{'http'},\ \textcolor{stringliteral}{'https'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'strict'}\ =>\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'referer'}\ =>\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'track\_redirects'}\ =>\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/guzzlehttp/guzzle/src/Redirect\+Middleware.\+php\end{DoxyCompactItemize}

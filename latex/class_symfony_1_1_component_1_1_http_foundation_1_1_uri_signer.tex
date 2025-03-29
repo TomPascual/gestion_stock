@@ -1,0 +1,65 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Foundation\textbackslash{}Uri\+Signer Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_uri_signer}{}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_uri_signer}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}UriSigner@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}UriSigner}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_uri_signer_a9e9ce6dcc4f870b1691435baf4c38b7f}{\+\_\+\+\_\+construct}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} private string \$secret, private string \$hash\+Parameter=\textquotesingle{}\+\_\+hash\textquotesingle{}, private string \$expiration\+Parameter=\textquotesingle{}\+\_\+expiration\textquotesingle{},)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_uri_signer_a5186f4d15a6b3dbaf566aea89df62c3f}{sign}} (string \$uri)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_uri_signer_a4f2b6b137a272e060dba379bc7339ab5}{check}} (string \$uri)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_uri_signer_a0bbf060da2ec652d3270411f5d6d6cba}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_uri_signer_a0bbf060da2ec652d3270411f5d6d6cba} 
+{\bfseries check\+Request} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_uri_signer_a9e9ce6dcc4f870b1691435baf4c38b7f}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}UriSigner@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}UriSigner}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}UriSigner@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}UriSigner}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_uri_signer_a9e9ce6dcc4f870b1691435baf4c38b7f} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Uri\+Signer\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\# private string}]{\$secret}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{private string}]{\$hash\+Parameter}{ = {\ttfamily \textquotesingle{}\+\_\+hash\textquotesingle{}}, }\item[{private string}]{\$expiration\+Parameter}{ = {\ttfamily \textquotesingle{}\+\_\+expiration\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$hash\+Parameter} & Query string parameter to use \\
+\hline
+string & {\em \$expiration\+Parameter} & Query string parameter to use for expiration \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_uri_signer_a4f2b6b137a272e060dba379bc7339ab5}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}UriSigner@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}UriSigner}!check@{check}}
+\index{check@{check}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}UriSigner@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}UriSigner}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_uri_signer_a4f2b6b137a272e060dba379bc7339ab5} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Uri\+Signer\+::check (\begin{DoxyParamCaption}\item[{string}]{\$uri}{}\end{DoxyParamCaption})}
+
+Checks that a URI contains the correct hash. Also checks if the URI has not expired (If you used expiration during signing). \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_uri_signer_a5186f4d15a6b3dbaf566aea89df62c3f}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}UriSigner@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}UriSigner}!sign@{sign}}
+\index{sign@{sign}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}UriSigner@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}UriSigner}}
+\doxysubsubsection{\texorpdfstring{sign()}{sign()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_uri_signer_a5186f4d15a6b3dbaf566aea89df62c3f} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Uri\+Signer\+::sign (\begin{DoxyParamCaption}\item[{string}]{\$uri}{}\end{DoxyParamCaption})}
+
+Signs a URI.
+
+The given URI is signed by adding the query string parameter which value depends on the URI and the secret.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Date\+Time\+Interface | \textbackslash{}\+Date\+Interval | int | null & {\em \$expiration} & The expiration for the given URI. If \$expiration is a \textbackslash{}\+Date\+Time\+Interface, it\textquotesingle{}s expected to be the exact date + time. If \$expiration is a \textbackslash{}\+Date\+Interval, the interval is added to "{}now"{} to get the date + time. If \$expiration is an int, it\textquotesingle{}s expected to be a timestamp in seconds of the exact date + time. If \$expiration is null, no expiration.\\
+\hline
+\end{DoxyParams}
+The expiration is added as a query string parameter. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/foundation/Uri\+Signer.\+php\end{DoxyCompactItemize}

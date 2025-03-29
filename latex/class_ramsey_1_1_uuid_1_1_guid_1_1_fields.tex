@@ -1,0 +1,130 @@
+\doxysection{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields Class Reference}
+\hypertarget{class_ramsey_1_1_uuid_1_1_guid_1_1_fields}{}\label{class_ramsey_1_1_uuid_1_1_guid_1_1_fields}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields}}
+Inheritance diagram for Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_ramsey_1_1_uuid_1_1_guid_1_1_fields}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_a3017a2135df13384b0a0ed5a642c972a}{\+\_\+\+\_\+construct}} (private string \$bytes)
+\item 
+\Hypertarget{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_af6144108fdc67a3bc475a7b771cade6d}\label{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_af6144108fdc67a3bc475a7b771cade6d} 
+{\bfseries get\+Bytes} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_aa4e47323d3d12f5b0996245a8f468cbf}{get\+Timestamp}} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_abd053d025e9cb6d42d6edc96677204fa}{get\+Clock\+Seq}} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_a4af821caedcdde45efa97a5168041206}{get\+Clock\+Seq\+Hi\+And\+Reserved}} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_a48e89a7f451baa663503675bb1cab439}{get\+Clock\+Seq\+Low}} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_a02f40b8a31019d4a689e2390fd25cf2f}{get\+Node}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_aea2189ce66470814be959b7b1e34b38b}{get\+Time\+Hi\+And\+Version}} ()
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_afa07457ce30bb1dbd0ff439da61d4d9b}{get\+Time\+Low}} ()
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_aab0d2914d1de3ede83b1a07b66dce580}{get\+Time\+Mid}} ()
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_a048690b61621a2451edb00adaec36902}{get\+Variant}} ()
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_a3045455ff3afb2b68abd6b8061eff9c0}{get\+Version}} ()
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_a3cbb39510ba79b75a459b0f749ff94fe}{is\+Nil}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+GUIDs are comprised of a set of named fields, according to RFC 4122
+
+\begin{DoxySeeAlso}{See also}
+Guid
+\end{DoxySeeAlso}
+@psalm-\/immutable 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_a3017a2135df13384b0a0ed5a642c972a}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_a3017a2135df13384b0a0ed5a642c972a} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Guid\textbackslash{}\+Fields\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private string}]{\$bytes}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$bytes} & A 16-\/byte binary string representation of a UUID\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & if the byte string is not exactly 16 bytes \\
+\hline
+{\em Invalid\+Argument\+Exception} & if the byte string does not represent a GUID \\
+\hline
+{\em Invalid\+Argument\+Exception} & if the byte string does not contain a valid version \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_abd053d025e9cb6d42d6edc96677204fa}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields}!getClockSeq@{getClockSeq}}
+\index{getClockSeq@{getClockSeq}!Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields}}
+\doxysubsubsection{\texorpdfstring{getClockSeq()}{getClockSeq()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_abd053d025e9cb6d42d6edc96677204fa} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Guid\textbackslash{}\+Fields\+::get\+Clock\+Seq (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the full 16-\/bit clock sequence, with the variant bits (two most significant bits) masked out 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_a7b6cc53a38c1e3406b957589c76f8657}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_a4af821caedcdde45efa97a5168041206}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields}!getClockSeqHiAndReserved@{getClockSeqHiAndReserved}}
+\index{getClockSeqHiAndReserved@{getClockSeqHiAndReserved}!Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields}}
+\doxysubsubsection{\texorpdfstring{getClockSeqHiAndReserved()}{getClockSeqHiAndReserved()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_a4af821caedcdde45efa97a5168041206} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Guid\textbackslash{}\+Fields\+::get\+Clock\+Seq\+Hi\+And\+Reserved (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the high field of the clock sequence multiplexed with the variant 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_a0b792b102a0b6c2b631453f5f7996d57}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_a48e89a7f451baa663503675bb1cab439}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields}!getClockSeqLow@{getClockSeqLow}}
+\index{getClockSeqLow@{getClockSeqLow}!Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields}}
+\doxysubsubsection{\texorpdfstring{getClockSeqLow()}{getClockSeqLow()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_a48e89a7f451baa663503675bb1cab439} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Guid\textbackslash{}\+Fields\+::get\+Clock\+Seq\+Low (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the low field of the clock sequence 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_a0439b024eba54779e4ea64aabab20336}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_a02f40b8a31019d4a689e2390fd25cf2f}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields}!getNode@{getNode}}
+\index{getNode@{getNode}!Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields}}
+\doxysubsubsection{\texorpdfstring{getNode()}{getNode()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_a02f40b8a31019d4a689e2390fd25cf2f} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Guid\textbackslash{}\+Fields\+::get\+Node (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the node field 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_acedcac3f492d582fe8d3c7b473e2737c}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_aa4e47323d3d12f5b0996245a8f468cbf}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields}!getTimestamp@{getTimestamp}}
+\index{getTimestamp@{getTimestamp}!Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields@{Ramsey\textbackslash{}Uuid\textbackslash{}Guid\textbackslash{}Fields}}
+\doxysubsubsection{\texorpdfstring{getTimestamp()}{getTimestamp()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_guid_1_1_fields_aa4e47323d3d12f5b0996245a8f468cbf} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Guid\textbackslash{}\+Fields\+::get\+Timestamp (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the full 60-\/bit timestamp, without the version 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_rfc4122_1_1_fields_interface_a506ce24dee2c39a0104c34cf6d2aa4ac}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Fields\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/ramsey/uuid/src/\+Guid/Fields.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,152 @@
+\doxysection{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Predis\+Connection Class Reference}
+\hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_predis_connection}{}\label{class_illuminate_1_1_redis_1_1_connections_1_1_predis_connection}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}PredisConnection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}PredisConnection}}
+Inheritance diagram for Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}Predis\+Connection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.584615cm]{class_illuminate_1_1_redis_1_1_connections_1_1_predis_connection}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_predis_connection_aa4ef739c91665ccfe6a7310a428188a1}{\+\_\+\+\_\+construct}} (\$\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a7adfa7512f165d1ddcf6c91c2e679c17}{client}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_predis_connection_a5ce37192e98ea5de3ed09598537daf0e}{create\+Subscription}} (\$channels, Closure \$callback, \$method=\textquotesingle{}\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection_af3061d5bc8ffc2db31c9c4afa1e75fc5}{subscribe}}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection}{Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_aa0a47e26b7f72916256b3d09539010f5}{funnel}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a19dda1e98104c12ab5d6acd659fea595}{throttle}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a7adfa7512f165d1ddcf6c91c2e679c17}{client}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a456cc1e2f4247e5285281d246688a752}{subscribe}} (\$channels, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a433a3557fbb66ecba459edd456ea3097}{psubscribe}} (\$channels, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a43cd15447d50cac0c1422aeace4ac56a}{command}} (\$method, array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a453d81d399b8040d325d17e5d90b2ce3}{listen}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a4ed45c462bdd97c13248a31de8f203b2}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a71291783a8f6ffb7997c66940db56c95}{set\+Name}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_ab65bf815c8017ccbd956d0540a1aa559}{get\+Event\+Dispatcher}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a8ba9e1c06420c4ea6324c2dbf70c7214}{set\+Event\+Dispatcher}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}} \$events)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a8cc47f36aa95212e687e6314b638e411}{unset\+Event\+Dispatcher}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a4ad6ab1d7f98da346a5d31a7811c911e}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Redis\textbackslash{}\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection_af3061d5bc8ffc2db31c9c4afa1e75fc5}{subscribe}} (\$channels, Closure \$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection_ae80f7424f4cf14a12635a53d57758cb1}{psubscribe}} (\$channels, Closure \$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection_adb146b65ee504717bdfe79cd57f48ad2}{command}} (\$method, array \$parameters=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_predis_connection_a7ca04aeaff7cd17c4f923374eb2c2a96}{parse\+Parameters\+For\+Event}} (array \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection}{Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_ab74927712804eab6f2f862f36987a09d}{event}} (\$event)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_predis_connection_a859720eefddbcabea8bc220269725ec4}\label{class_illuminate_1_1_redis_1_1_connections_1_1_predis_connection_a859720eefddbcabea8bc220269725ec4} 
+{\bfseries \$client}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection}{Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$client}
+\item 
+{\bfseries \$name}
+\item 
+{\bfseries \$events}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@mixin \textbackslash{}\+Predis\textbackslash{}\+Client 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_predis_connection_aa4ef739c91665ccfe6a7310a428188a1}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}PredisConnection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}PredisConnection}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}PredisConnection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}PredisConnection}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_predis_connection_aa4ef739c91665ccfe6a7310a428188a1} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Predis\+Connection\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$client}{}\end{DoxyParamCaption})}
+
+Create a new Predis connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Predis\textbackslash{}\+Client & {\em \$client} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_predis_connection_a5ce37192e98ea5de3ed09598537daf0e}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}PredisConnection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}PredisConnection}!createSubscription@{createSubscription}}
+\index{createSubscription@{createSubscription}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}PredisConnection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}PredisConnection}}
+\doxysubsubsection{\texorpdfstring{createSubscription()}{createSubscription()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_predis_connection_a5ce37192e98ea5de3ed09598537daf0e} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Predis\+Connection\+::create\+Subscription (\begin{DoxyParamCaption}\item[{}]{\$channels}{, }\item[{Closure}]{\$callback}{, }\item[{}]{\$method}{ = {\ttfamily \textquotesingle{}\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_redis_1_1_connection_af3061d5bc8ffc2db31c9c4afa1e75fc5}{subscribe}}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Subscribe to a set of given channels for messages.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$channels} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+string & {\em \$method} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_a8fc35b0477120d7c06b9ae8ffa114a28}{Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection}}.
+
+\Hypertarget{class_illuminate_1_1_redis_1_1_connections_1_1_predis_connection_a7ca04aeaff7cd17c4f923374eb2c2a96}\index{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}PredisConnection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}PredisConnection}!parseParametersForEvent@{parseParametersForEvent}}
+\index{parseParametersForEvent@{parseParametersForEvent}!Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}PredisConnection@{Illuminate\textbackslash{}Redis\textbackslash{}Connections\textbackslash{}PredisConnection}}
+\doxysubsubsection{\texorpdfstring{parseParametersForEvent()}{parseParametersForEvent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_redis_1_1_connections_1_1_predis_connection_a7ca04aeaff7cd17c4f923374eb2c2a96} 
+Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Predis\+Connection\+::parse\+Parameters\+For\+Event (\begin{DoxyParamCaption}\item[{array}]{\$parameters}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse the command\textquotesingle{}s parameters for event dispatching.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_redis_1_1_connections_1_1_connection_abe5130483c1f31a1bdd142e3d34a16f6}{Illuminate\textbackslash{}\+Redis\textbackslash{}\+Connections\textbackslash{}\+Connection}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Redis/\+Connections/Predis\+Connection.\+php\end{DoxyCompactItemize}

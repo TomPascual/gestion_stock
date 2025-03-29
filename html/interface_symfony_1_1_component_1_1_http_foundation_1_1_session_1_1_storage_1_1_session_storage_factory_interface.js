@@ -1,0 +1,4 @@
+var interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_session_storage_factory_interface =
+[
+    [ "createStorage", "interface_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_session_storage_factory_interface.html#a316bb20d0d06ade3888f549da18dfacc", null ]
+];

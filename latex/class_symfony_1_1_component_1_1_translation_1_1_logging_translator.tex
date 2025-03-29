@@ -1,0 +1,122 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Logging\+Translator Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_translation_1_1_logging_translator}{}\label{class_symfony_1_1_component_1_1_translation_1_1_logging_translator}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Logging\+Translator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.114428cm]{class_symfony_1_1_component_1_1_translation_1_1_logging_translator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a29c0c3938298dd705e74431e3fa27a5f}\label{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a29c0c3938298dd705e74431e3fa27a5f} 
+{\bfseries \+\_\+\+\_\+construct} (private \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface}{Translator\+Interface}} \&\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface}{Translator\+Bag\+Interface}} \&\mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_locale_aware_interface}{Locale\+Aware\+Interface}} \$translator, private \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger,)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a5d73dcc0a5a1e2b85bea9bf6f01f91fa}\label{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a5d73dcc0a5a1e2b85bea9bf6f01f91fa} 
+{\bfseries trans} (?string \$id, array \$parameters=\mbox{[}$\,$\mbox{]}, ?string \$domain=null, ?string \$locale=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a6052a6a61db5206618dd2e38ffa91cd7}{set\+Locale}} (string \$locale)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a8ff7c0bc017226cc75458628cb14cb6b}{get\+Locale}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_acbb266a2264cae9cc105bb549e684a44}{get\+Catalogue}} (?string \$locale=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a8338dc287edfef8af7cc37050ff76fa0}{get\+Catalogues}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a57f945da514fed6c2817d3cfce96add2}{get\+Fallback\+Locales}} ()
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a2117119774ba06e2b78c125ab24da991}\label{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a2117119774ba06e2b78c125ab24da991} 
+{\bfseries \+\_\+\+\_\+call} (string \$method, array \$args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface}{Symfony\textbackslash{}\+Contracts\textbackslash{}\+Translation\textbackslash{}\+Translator\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface_ad7e1e68dcdaadcffac0efaa33dd62ba9}{trans}} (string \$id, array \$parameters=\mbox{[}$\,$\mbox{]}, ?string \$domain=null, ?string \$locale=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Abdellatif Ait boudad \href{mailto:a.aitboudad@gmail.com}{\texttt{ a.\+aitboudad@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_acbb266a2264cae9cc105bb549e684a44}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator}!getCatalogue@{getCatalogue}}
+\index{getCatalogue@{getCatalogue}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator}}
+\doxysubsubsection{\texorpdfstring{getCatalogue()}{getCatalogue()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_acbb266a2264cae9cc105bb549e684a44} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Logging\+Translator\+::get\+Catalogue (\begin{DoxyParamCaption}\item[{?string}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Gets the catalogue by locale.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$locale} & The locale or null to use the default\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & If the locale contains invalid characters \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface_ac630a8bf65fd1370f46dac316b9becd4}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Translator\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a8338dc287edfef8af7cc37050ff76fa0}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator}!getCatalogues@{getCatalogues}}
+\index{getCatalogues@{getCatalogues}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator}}
+\doxysubsubsection{\texorpdfstring{getCatalogues()}{getCatalogues()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a8338dc287edfef8af7cc37050ff76fa0} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Logging\+Translator\+::get\+Catalogues (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns all catalogues of the instance.
+
+\begin{DoxyReturn}{Returns}
+Message\+Catalogue\+Interface\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_translator_bag_interface_a1a5089009d3c71c3b77a59e4fe1901d0}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Translator\+Bag\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a57f945da514fed6c2817d3cfce96add2}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator}!getFallbackLocales@{getFallbackLocales}}
+\index{getFallbackLocales@{getFallbackLocales}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator}}
+\doxysubsubsection{\texorpdfstring{getFallbackLocales()}{getFallbackLocales()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a57f945da514fed6c2817d3cfce96add2} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Logging\+Translator\+::get\+Fallback\+Locales (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the fallback locales. \Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a8ff7c0bc017226cc75458628cb14cb6b}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator}!getLocale@{getLocale}}
+\index{getLocale@{getLocale}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator}}
+\doxysubsubsection{\texorpdfstring{getLocale()}{getLocale()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a8ff7c0bc017226cc75458628cb14cb6b} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Logging\+Translator\+::get\+Locale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the default locale. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_translator_interface_afc16512bdd18e0930c57fc4916a9d4cd}{Symfony\textbackslash{}\+Contracts\textbackslash{}\+Translation\textbackslash{}\+Translator\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a6052a6a61db5206618dd2e38ffa91cd7}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator}!setLocale@{setLocale}}
+\index{setLocale@{setLocale}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}LoggingTranslator}}
+\doxysubsubsection{\texorpdfstring{setLocale()}{setLocale()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_logging_translator_a6052a6a61db5206618dd2e38ffa91cd7} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Logging\+Translator\+::set\+Locale (\begin{DoxyParamCaption}\item[{string}]{\$locale}{}\end{DoxyParamCaption})}
+
+Sets the current locale.
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception If the locale contains invalid characters 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_translation_1_1_locale_aware_interface_ad6d8470747ec5f5b465a0666566e7dc7}{Symfony\textbackslash{}\+Contracts\textbackslash{}\+Translation\textbackslash{}\+Locale\+Aware\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/translation/Logging\+Translator.\+php\end{DoxyCompactItemize}

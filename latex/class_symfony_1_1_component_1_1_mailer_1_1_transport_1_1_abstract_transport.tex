@@ -1,0 +1,96 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}Abstract\+Transport Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport}{}\label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}Abstract\+Transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.108033cm]{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a07e553cc7a034ccebf1b92b0fff20cc4}\label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a07e553cc7a034ccebf1b92b0fff20cc4} 
+{\bfseries \+\_\+\+\_\+construct} (private ?\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}} \$dispatcher=null, ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a417c8f476ba1b664dd6e7155b83969ad}{set\+Max\+Per\+Second}} (float \$rate)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_ab4f6125bd3143823535c10c3d9633ce7}{send}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_raw_message}{Raw\+Message}} \$message, ?\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope}{Envelope}} \$envelope=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a7ea36695f980e0f15b2e20196cc9dc45}{do\+Send}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_sent_message}{Sent\+Message}} \$message)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a1ad4fb2a9e2e169961b9df4ba4b30645}{stringify\+Addresses}} (array \$addresses)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a022b45e28bfa06c06e2851e3af7abd8d}\label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a022b45e28bfa06c06e2851e3af7abd8d} 
+{\bfseries get\+Logger} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a7ea36695f980e0f15b2e20196cc9dc45}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport}!doSend@{doSend}}
+\index{doSend@{doSend}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport}}
+\doxysubsubsection{\texorpdfstring{doSend()}{doSend()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a7ea36695f980e0f15b2e20196cc9dc45} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Abstract\+Transport\+::do\+Send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_sent_message}{Sent\+Message}}}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_mail_1_1_transport_1_1_resend_transport_aacbcb2d2b215b7725247bcfc67207423}{Illuminate\textbackslash{}\+Mail\textbackslash{}\+Transport\textbackslash{}\+Resend\+Transport}}, \mbox{\hyperlink{class_illuminate_1_1_mail_1_1_transport_1_1_ses_transport_a098d73d624c54ac965d5dbaae244f4db}{Illuminate\textbackslash{}\+Mail\textbackslash{}\+Transport\textbackslash{}\+Ses\+Transport}}, and \mbox{\hyperlink{class_illuminate_1_1_mail_1_1_transport_1_1_ses_v2_transport_aaed5f1cc5e740bd22dc8b9489b2ace53}{Illuminate\textbackslash{}\+Mail\textbackslash{}\+Transport\textbackslash{}\+Ses\+V2\+Transport}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_ab4f6125bd3143823535c10c3d9633ce7}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport}!send@{send}}
+\index{send@{send}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_ab4f6125bd3143823535c10c3d9633ce7} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Abstract\+Transport\+::send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_raw_message}{Raw\+Message}}}]{\$message}{, }\item[{?\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope}{Envelope}}}]{\$envelope}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Transport\+Exception\+Interface} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_transport_interface_a85bfc56d11e710faf1bbd5056a2f0dad}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Transport\+Interface}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_sendmail_transport_a23544e7b46babaa804d7aba5e4153f41}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Sendmail\+Transport}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_smtp_1_1_smtp_transport_a7dd7c0fe2dc8bc531feac0a160cb31e8}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Smtp\textbackslash{}\+Smtp\+Transport}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a417c8f476ba1b664dd6e7155b83969ad}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport}!setMaxPerSecond@{setMaxPerSecond}}
+\index{setMaxPerSecond@{setMaxPerSecond}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport}}
+\doxysubsubsection{\texorpdfstring{setMaxPerSecond()}{setMaxPerSecond()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a417c8f476ba1b664dd6e7155b83969ad} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Abstract\+Transport\+::set\+Max\+Per\+Second (\begin{DoxyParamCaption}\item[{float}]{\$rate}{}\end{DoxyParamCaption})}
+
+Sets the maximum number of messages to send per second (0 to disable).
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a1ad4fb2a9e2e169961b9df4ba4b30645}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport}!stringifyAddresses@{stringifyAddresses}}
+\index{stringifyAddresses@{stringifyAddresses}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}AbstractTransport}}
+\doxysubsubsection{\texorpdfstring{stringifyAddresses()}{stringifyAddresses()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a1ad4fb2a9e2e169961b9df4ba4b30645} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Abstract\+Transport\+::stringify\+Addresses (\begin{DoxyParamCaption}\item[{array}]{\$addresses}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Address\mbox{[}$\,$\mbox{]} & {\em \$addresses} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/mailer/\+Transport/Abstract\+Transport.\+php\end{DoxyCompactItemize}

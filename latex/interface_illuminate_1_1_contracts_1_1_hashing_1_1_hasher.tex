@@ -1,0 +1,115 @@
+\doxysection{Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher Interface Reference}
+\hypertarget{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher}{}\label{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher@{Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher}}
+Inheritance diagram for Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.488889cm]{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher_accd043a60b65930b6b27fe9055869aba}{info}} (\$hashed\+Value)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher_a359c5b97f7508d9780feddf955886ea9}{make}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$value, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher_a8b9855613fbe78f99271ae99ecfdf9c2}{check}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$value, \$hashed\+Value, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher_a7b07d8c9166b3378825f2393e462d163}{needs\+Rehash}} (\$hashed\+Value, array \$options=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher_a8b9855613fbe78f99271ae99ecfdf9c2}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher@{Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher}!check@{check}}
+\index{check@{check}!Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher@{Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher_a8b9855613fbe78f99271ae99ecfdf9c2} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Hashing\textbackslash{}\+Hasher\+::check (\begin{DoxyParamCaption}\item[{\#}]{\$value}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{}]{\$hashed\+Value}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Check the given plain value against a hash.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+string & {\em \$hashed\+Value} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_argon2_id_hasher_a515d0c56e75ba215f55cb975a880d22d}{Illuminate\textbackslash{}\+Hashing\textbackslash{}\+Argon2\+Id\+Hasher}}, \mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_argon_hasher_a2c8e141b76be21232feedb79f6726df2}{Illuminate\textbackslash{}\+Hashing\textbackslash{}\+Argon\+Hasher}}, \mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a479c5f281b22413860d745412b035bfe}{Illuminate\textbackslash{}\+Hashing\textbackslash{}\+Bcrypt\+Hasher}}, and \mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_hash_manager_a9cdda9a59ce73249401128e762f4111b}{Illuminate\textbackslash{}\+Hashing\textbackslash{}\+Hash\+Manager}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher_accd043a60b65930b6b27fe9055869aba}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher@{Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher}!info@{info}}
+\index{info@{info}!Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher@{Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher}}
+\doxysubsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher_accd043a60b65930b6b27fe9055869aba} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Hashing\textbackslash{}\+Hasher\+::info (\begin{DoxyParamCaption}\item[{}]{\$hashed\+Value}{}\end{DoxyParamCaption})}
+
+Get information about the given hashed value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$hashed\+Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_hash_manager_acbd648512346b2981cdb4c3b1b708b02}{Illuminate\textbackslash{}\+Hashing\textbackslash{}\+Hash\+Manager}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher_a359c5b97f7508d9780feddf955886ea9}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher@{Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher}!make@{make}}
+\index{make@{make}!Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher@{Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher_a359c5b97f7508d9780feddf955886ea9} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Hashing\textbackslash{}\+Hasher\+::make (\begin{DoxyParamCaption}\item[{\#}]{\$value}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Hash the given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_argon_hasher_aa3c0abd039f8061bd6cf002c65830fb9}{Illuminate\textbackslash{}\+Hashing\textbackslash{}\+Argon\+Hasher}}, \mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_aed05c44200b004e390f5c54e37625e31}{Illuminate\textbackslash{}\+Hashing\textbackslash{}\+Bcrypt\+Hasher}}, and \mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_hash_manager_a8eef3e90557cdf2d2268801a035852da}{Illuminate\textbackslash{}\+Hashing\textbackslash{}\+Hash\+Manager}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher_a7b07d8c9166b3378825f2393e462d163}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher@{Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher}!needsRehash@{needsRehash}}
+\index{needsRehash@{needsRehash}!Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher@{Illuminate\textbackslash{}Contracts\textbackslash{}Hashing\textbackslash{}Hasher}}
+\doxysubsubsection{\texorpdfstring{needsRehash()}{needsRehash()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_hashing_1_1_hasher_a7b07d8c9166b3378825f2393e462d163} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Hashing\textbackslash{}\+Hasher\+::needs\+Rehash (\begin{DoxyParamCaption}\item[{}]{\$hashed\+Value}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Check if the given hash has been hashed using the given options.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$hashed\+Value} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_argon_hasher_a9370d41c175ac24bbbeb3eb03f212e97}{Illuminate\textbackslash{}\+Hashing\textbackslash{}\+Argon\+Hasher}}, \mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_bcrypt_hasher_a9e83c47e38c4544c6ca6c276266a67da}{Illuminate\textbackslash{}\+Hashing\textbackslash{}\+Bcrypt\+Hasher}}, and \mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_hash_manager_aee96288061fbf98774c4018daa037651}{Illuminate\textbackslash{}\+Hashing\textbackslash{}\+Hash\+Manager}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Contracts/\+Hashing/Hasher.\+php\end{DoxyCompactItemize}

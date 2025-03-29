@@ -1,0 +1,160 @@
+\doxysection{League\textbackslash{}Config\textbackslash{}Configuration Class Reference}
+\hypertarget{class_league_1_1_config_1_1_configuration}{}\label{class_league_1_1_config_1_1_configuration}\index{League\textbackslash{}Config\textbackslash{}Configuration@{League\textbackslash{}Config\textbackslash{}Configuration}}
+Inheritance diagram for League\textbackslash{}Config\textbackslash{}Configuration\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.014389cm]{class_league_1_1_config_1_1_configuration}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_league_1_1_config_1_1_configuration_ada6d2ece68b0110cb85f11a194cd6de6}{\+\_\+\+\_\+construct}} (array \$base\+Schemas=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_league_1_1_config_1_1_configuration_ad6801b02e95f4ba565a90f6968e2637a}{add\+Schema}} (string \$key, Schema \$schema)
+\item 
+\mbox{\hyperlink{class_league_1_1_config_1_1_configuration_a0c2a15530291fd9d27a2b6a5d3e9799b}{merge}} (array \$config=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_league_1_1_config_1_1_configuration_af384ff133fa59071bcd21ecbb146b595}{set}} (string \$key, \$value)
+\item 
+\mbox{\hyperlink{class_league_1_1_config_1_1_configuration_a455c7e20e50566fb0a19c3b67b1a316a}{get}} (string \$key)
+\item 
+\mbox{\hyperlink{class_league_1_1_config_1_1_configuration_a3664c1c0b5182d878d90944974227d11}{exists}} (string \$key)
+\item 
+\mbox{\hyperlink{class_league_1_1_config_1_1_configuration_a72313753b154a5bf00e6bffab4e0bcd0}{reader}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_league_1_1_config_1_1_configuration_ada6d2ece68b0110cb85f11a194cd6de6}\index{League\textbackslash{}Config\textbackslash{}Configuration@{League\textbackslash{}Config\textbackslash{}Configuration}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!League\textbackslash{}Config\textbackslash{}Configuration@{League\textbackslash{}Config\textbackslash{}Configuration}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_league_1_1_config_1_1_configuration_ada6d2ece68b0110cb85f11a194cd6de6} 
+League\textbackslash{}\+Config\textbackslash{}\+Configuration\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$base\+Schemas}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,Schema$>$} & \$base\+Schemas \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_league_1_1_config_1_1_configuration_ad6801b02e95f4ba565a90f6968e2637a}\index{League\textbackslash{}Config\textbackslash{}Configuration@{League\textbackslash{}Config\textbackslash{}Configuration}!addSchema@{addSchema}}
+\index{addSchema@{addSchema}!League\textbackslash{}Config\textbackslash{}Configuration@{League\textbackslash{}Config\textbackslash{}Configuration}}
+\doxysubsubsection{\texorpdfstring{addSchema()}{addSchema()}}
+{\footnotesize\ttfamily \label{class_league_1_1_config_1_1_configuration_ad6801b02e95f4ba565a90f6968e2637a} 
+League\textbackslash{}\+Config\textbackslash{}\+Configuration\+::add\+Schema (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{Schema}]{\$schema}{}\end{DoxyParamCaption})}
+
+Registers a new configuration schema at the given top-\/level key
+
+@psalm-\/allow-\/private-\/mutation 
+
+Implements \mbox{\hyperlink{interface_league_1_1_config_1_1_schema_builder_interface_a04a9be89abb1712e593345fc9b5b42d7}{League\textbackslash{}\+Config\textbackslash{}\+Schema\+Builder\+Interface}}.
+
+\Hypertarget{class_league_1_1_config_1_1_configuration_a3664c1c0b5182d878d90944974227d11}\index{League\textbackslash{}Config\textbackslash{}Configuration@{League\textbackslash{}Config\textbackslash{}Configuration}!exists@{exists}}
+\index{exists@{exists}!League\textbackslash{}Config\textbackslash{}Configuration@{League\textbackslash{}Config\textbackslash{}Configuration}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily \label{class_league_1_1_config_1_1_configuration_a3664c1c0b5182d878d90944974227d11} 
+League\textbackslash{}\+Config\textbackslash{}\+Configuration\+::exists (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \doxylink{class_league_1_1_config_1_1_configuration}{Configuration} option path/key\\
+\hline
+\end{DoxyParams}
+@psalm-\/param non-\/empty-\/string \$key
+
+\begin{DoxyReturn}{Returns}
+bool Whether the given option exists
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_league_1_1_config_1_1_exception_1_1_validation_exception}{Validation\+Exception}} & if the schema failed to validate the given input\\
+\hline
+\end{DoxyExceptions}
+
+
+@psalm-\/external-\/mutation-\/free 
+
+Implements \mbox{\hyperlink{interface_league_1_1_config_1_1_configuration_interface_a1dcfb1e85602e9dd68b2a3f4a5a7a0cb}{League\textbackslash{}\+Config\textbackslash{}\+Configuration\+Interface}}.
+
+\Hypertarget{class_league_1_1_config_1_1_configuration_a455c7e20e50566fb0a19c3b67b1a316a}\index{League\textbackslash{}Config\textbackslash{}Configuration@{League\textbackslash{}Config\textbackslash{}Configuration}!get@{get}}
+\index{get@{get}!League\textbackslash{}Config\textbackslash{}Configuration@{League\textbackslash{}Config\textbackslash{}Configuration}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_league_1_1_config_1_1_configuration_a455c7e20e50566fb0a19c3b67b1a316a} 
+League\textbackslash{}\+Config\textbackslash{}\+Configuration\+::get (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \doxylink{class_league_1_1_config_1_1_configuration}{Configuration} option path/key\\
+\hline
+\end{DoxyParams}
+@psalm-\/param non-\/empty-\/string \$key
+
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_league_1_1_config_1_1_exception_1_1_validation_exception}{Validation\+Exception}} & if the schema failed to validate the given input \\
+\hline
+{\em \doxylink{class_league_1_1_config_1_1_exception_1_1_unknown_option_exception}{Unknown\+Option\+Exception}} & if the requested key does not exist or is malformed\\
+\hline
+\end{DoxyExceptions}
+
+
+@psalm-\/external-\/mutation-\/free 
+
+Implements \mbox{\hyperlink{interface_league_1_1_config_1_1_configuration_interface_a021700e5296fbf977e101221ea46ef6d}{League\textbackslash{}\+Config\textbackslash{}\+Configuration\+Interface}}.
+
+\Hypertarget{class_league_1_1_config_1_1_configuration_a0c2a15530291fd9d27a2b6a5d3e9799b}\index{League\textbackslash{}Config\textbackslash{}Configuration@{League\textbackslash{}Config\textbackslash{}Configuration}!merge@{merge}}
+\index{merge@{merge}!League\textbackslash{}Config\textbackslash{}Configuration@{League\textbackslash{}Config\textbackslash{}Configuration}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily \label{class_league_1_1_config_1_1_configuration_a0c2a15530291fd9d27a2b6a5d3e9799b} 
+League\textbackslash{}\+Config\textbackslash{}\+Configuration\+::merge (\begin{DoxyParamCaption}\item[{array}]{\$config}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$config\\
+\hline
+\end{DoxyParams}
+
+
+@psalm-\/allow-\/private-\/mutation 
+
+Implements \mbox{\hyperlink{interface_league_1_1_config_1_1_mutable_configuration_interface_a965238bcaef3856b8b7a8540a79bcf6e}{League\textbackslash{}\+Config\textbackslash{}\+Mutable\+Configuration\+Interface}}.
+
+\Hypertarget{class_league_1_1_config_1_1_configuration_a72313753b154a5bf00e6bffab4e0bcd0}\index{League\textbackslash{}Config\textbackslash{}Configuration@{League\textbackslash{}Config\textbackslash{}Configuration}!reader@{reader}}
+\index{reader@{reader}!League\textbackslash{}Config\textbackslash{}Configuration@{League\textbackslash{}Config\textbackslash{}Configuration}}
+\doxysubsubsection{\texorpdfstring{reader()}{reader()}}
+{\footnotesize\ttfamily \label{class_league_1_1_config_1_1_configuration_a72313753b154a5bf00e6bffab4e0bcd0} 
+League\textbackslash{}\+Config\textbackslash{}\+Configuration\+::reader (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+@psalm-\/mutation-\/free \Hypertarget{class_league_1_1_config_1_1_configuration_af384ff133fa59071bcd21ecbb146b595}\index{League\textbackslash{}Config\textbackslash{}Configuration@{League\textbackslash{}Config\textbackslash{}Configuration}!set@{set}}
+\index{set@{set}!League\textbackslash{}Config\textbackslash{}Configuration@{League\textbackslash{}Config\textbackslash{}Configuration}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_league_1_1_config_1_1_configuration_af384ff133fa59071bcd21ecbb146b595} 
+League\textbackslash{}\+Config\textbackslash{}\+Configuration\+::set (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_league_1_1_config_1_1_exception_1_1_unknown_option_exception}{Unknown\+Option\+Exception}} & if \$key contains a nested path which doesn\textquotesingle{}t point to an array value\\
+\hline
+\end{DoxyExceptions}
+
+
+@psalm-\/allow-\/private-\/mutation 
+
+Implements \mbox{\hyperlink{interface_league_1_1_config_1_1_mutable_configuration_interface_a623cdff3bce983f755f50edffb632759}{League\textbackslash{}\+Config\textbackslash{}\+Mutable\+Configuration\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/league/config/src/Configuration.\+php\end{DoxyCompactItemize}

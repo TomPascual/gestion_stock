@@ -1,0 +1,66 @@
+\doxysection{Illuminate\textbackslash{}Bus\textbackslash{}Prunable\+Batch\+Repository Interface Reference}
+\hypertarget{interface_illuminate_1_1_bus_1_1_prunable_batch_repository}{}\label{interface_illuminate_1_1_bus_1_1_prunable_batch_repository}\index{Illuminate\textbackslash{}Bus\textbackslash{}PrunableBatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}PrunableBatchRepository}}
+Inheritance diagram for Illuminate\textbackslash{}Bus\textbackslash{}Prunable\+Batch\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_illuminate_1_1_bus_1_1_prunable_batch_repository}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_prunable_batch_repository_a386d2d19028e04a2b34381f18f5746b9}{prune}} (Date\+Time\+Interface \$before)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch\+Repository}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_af332f4dbbee8d4e3315e7d0d012e272b}{get}} (\$limit, \$before)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_ab3af3ca47fd334b3d0992134cfa960c3}{find}} (string \$batch\+Id)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_a7af626ff162d7c1e1891daf9c97b1d5b}{store}} (\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_pending_batch}{Pending\+Batch}} \$batch)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_a710f921f330193240c5172e4fb35ee76}{increment\+Total\+Jobs}} (string \$batch\+Id, int \$amount)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_a6df50e4b6e9d96a18fef806d6060570c}{decrement\+Pending\+Jobs}} (string \$batch\+Id, string \$job\+Id)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_aa0d049ea05a9a932f2b5bf8f49ff0669}{increment\+Failed\+Jobs}} (string \$batch\+Id, string \$job\+Id)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_aa2ae68ac2ad472797ddf1463eeea123a}{mark\+As\+Finished}} (string \$batch\+Id)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_ae08ff86fd17fae9fba338cd60fd0756e}{cancel}} (string \$batch\+Id)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_a7485b91ab7c309d1f0f1f429f0382db8}{delete}} (string \$batch\+Id)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_ab90c0e2b4cd2b2b72d021c439f979036}{transaction}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository_ab1fcf88e9854c82512ef1f855a5629c3}{roll\+Back}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_illuminate_1_1_bus_1_1_prunable_batch_repository_a386d2d19028e04a2b34381f18f5746b9}\index{Illuminate\textbackslash{}Bus\textbackslash{}PrunableBatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}PrunableBatchRepository}!prune@{prune}}
+\index{prune@{prune}!Illuminate\textbackslash{}Bus\textbackslash{}PrunableBatchRepository@{Illuminate\textbackslash{}Bus\textbackslash{}PrunableBatchRepository}}
+\doxysubsubsection{\texorpdfstring{prune()}{prune()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_bus_1_1_prunable_batch_repository_a386d2d19028e04a2b34381f18f5746b9} 
+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Prunable\+Batch\+Repository\+::prune (\begin{DoxyParamCaption}\item[{Date\+Time\+Interface}]{\$before}{}\end{DoxyParamCaption})}
+
+Prune all of the entries older than the given date.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Date\+Time\+Interface & {\em \$before} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_database_batch_repository_aaadba13ca7b6486d03650969bf44c2b4}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Database\+Batch\+Repository}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Bus/Prunable\+Batch\+Repository.\+php\end{DoxyCompactItemize}

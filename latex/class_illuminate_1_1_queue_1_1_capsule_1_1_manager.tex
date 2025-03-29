@@ -1,0 +1,271 @@
+\doxysection{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager Class Reference}
+\hypertarget{class_illuminate_1_1_queue_1_1_capsule_1_1_manager}{}\label{class_illuminate_1_1_queue_1_1_capsule_1_1_manager}\index{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a0b453a37f5269c0cd6ac6aea8c079729}{\+\_\+\+\_\+construct}} (?\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}} \$container=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a6b85311c71f94011710868b7b94fe1d6}{get\+Connection}} (\$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a919548edd36307e1c9da41656d6a1bb3}{add\+Connection}} (array \$config, \$name=\textquotesingle{}default\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a68ff84c2c623657b086f638522e5f5ac}{get\+Queue\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_ad94f7d82ad93dba3d1e6d54db23c848b}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_aa8026b53046cbdd33df24bed1079d38e}{connection}} (\$connection=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_ac68073a67d0dc571b1998d7a6582d3f3}{push}} (\$job, \$data=\textquotesingle{}\textquotesingle{}, \$queue=null, \$\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_aa8026b53046cbdd33df24bed1079d38e}{connection}}=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a09d1d309c2759000b797082e74167bc8}{bulk}} (\$jobs, \$data=\textquotesingle{}\textquotesingle{}, \$queue=null, \$\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_aa8026b53046cbdd33df24bed1079d38e}{connection}}=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_ad306590bfd20a2b33585a3e8f95d4c01}{later}} (\$delay, \$job, \$data=\textquotesingle{}\textquotesingle{}, \$queue=null, \$\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_aa8026b53046cbdd33df24bed1079d38e}{connection}}=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_afeb04b6d9ffb148b31be1840a008edea}{\+\_\+\+\_\+call\+Static}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a8ac612eaf093bb1ab2dc7b9c74117e23}{setup\+Default\+Configuration}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a11adbd9a5e064b12832def82509f0296}{setup\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a057d4249c311856c02be7be6c46e01cc}{register\+Connectors}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_ae305c5551bc7654f7f169c6b8e4c9a03}\label{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_ae305c5551bc7654f7f169c6b8e4c9a03} 
+{\bfseries \$manager}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@mixin \textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue\+Manager @mixin \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Queue 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a0b453a37f5269c0cd6ac6aea8c079729}\index{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a0b453a37f5269c0cd6ac6aea8c079729} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?\mbox{\hyperlink{class_illuminate_1_1_container_1_1_container}{Container}}}]{\$container}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new queue capsule manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Container\textbackslash{}\+Container | null & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_ad94f7d82ad93dba3d1e6d54db23c848b}\index{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_ad94f7d82ad93dba3d1e6d54db23c848b} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Pass dynamic instance methods to the manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_afeb04b6d9ffb148b31be1840a008edea}\index{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}!\_\_callStatic@{\_\_callStatic}}
+\index{\_\_callStatic@{\_\_callStatic}!Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{\_\_callStatic()}{\_\_callStatic()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_afeb04b6d9ffb148b31be1840a008edea} 
+static Illuminate\textbackslash{}\+Queue\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::\+\_\+\+\_\+call\+Static (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Dynamically pass methods to the default connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a919548edd36307e1c9da41656d6a1bb3}\index{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}!addConnection@{addConnection}}
+\index{addConnection@{addConnection}!Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{addConnection()}{addConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a919548edd36307e1c9da41656d6a1bb3} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::add\+Connection (\begin{DoxyParamCaption}\item[{array}]{\$config}{, }\item[{}]{\$name}{ = {\ttfamily \textquotesingle{}default\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Register a connection with the manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a09d1d309c2759000b797082e74167bc8}\index{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}!bulk@{bulk}}
+\index{bulk@{bulk}!Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{bulk()}{bulk()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a09d1d309c2759000b797082e74167bc8} 
+static Illuminate\textbackslash{}\+Queue\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::bulk (\begin{DoxyParamCaption}\item[{}]{\$jobs}{, }\item[{}]{\$data}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$queue}{ = {\ttfamily null}, }\item[{}]{\$connection}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Push a new an array of jobs onto the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$jobs} & \\
+\hline
+mixed & {\em \$data} & \\
+\hline
+string | null & {\em \$queue} & \\
+\hline
+string | null & {\em \$connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_aa8026b53046cbdd33df24bed1079d38e}\index{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}!connection@{connection}}
+\index{connection@{connection}!Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{connection()}{connection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_aa8026b53046cbdd33df24bed1079d38e} 
+static Illuminate\textbackslash{}\+Queue\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::connection (\begin{DoxyParamCaption}\item[{}]{\$connection}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a connection instance from the global manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Queue 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a6b85311c71f94011710868b7b94fe1d6}\index{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}!getConnection@{getConnection}}
+\index{getConnection@{getConnection}!Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{getConnection()}{getConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a6b85311c71f94011710868b7b94fe1d6} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::get\+Connection (\begin{DoxyParamCaption}\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a registered connection instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Queue\textbackslash{}\+Queue 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a68ff84c2c623657b086f638522e5f5ac}\index{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}!getQueueManager@{getQueueManager}}
+\index{getQueueManager@{getQueueManager}!Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{getQueueManager()}{getQueueManager()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a68ff84c2c623657b086f638522e5f5ac} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::get\+Queue\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the queue manager instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Queue\+Manager 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_ad306590bfd20a2b33585a3e8f95d4c01}\index{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}!later@{later}}
+\index{later@{later}!Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{later()}{later()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_ad306590bfd20a2b33585a3e8f95d4c01} 
+static Illuminate\textbackslash{}\+Queue\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::later (\begin{DoxyParamCaption}\item[{}]{\$delay}{, }\item[{}]{\$job}{, }\item[{}]{\$data}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$queue}{ = {\ttfamily null}, }\item[{}]{\$connection}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Push a new job onto the queue after (n) seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Date\+Time\+Interface | \textbackslash{}\+Date\+Interval | int & {\em \$delay} & \\
+\hline
+string & {\em \$job} & \\
+\hline
+mixed & {\em \$data} & \\
+\hline
+string | null & {\em \$queue} & \\
+\hline
+string | null & {\em \$connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_ac68073a67d0dc571b1998d7a6582d3f3}\index{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}!push@{push}}
+\index{push@{push}!Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_ac68073a67d0dc571b1998d7a6582d3f3} 
+static Illuminate\textbackslash{}\+Queue\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::push (\begin{DoxyParamCaption}\item[{}]{\$job}{, }\item[{}]{\$data}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$queue}{ = {\ttfamily null}, }\item[{}]{\$connection}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Push a new job onto the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$job} & \\
+\hline
+mixed & {\em \$data} & \\
+\hline
+string | null & {\em \$queue} & \\
+\hline
+string | null & {\em \$connection} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a057d4249c311856c02be7be6c46e01cc}\index{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}!registerConnectors@{registerConnectors}}
+\index{registerConnectors@{registerConnectors}!Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{registerConnectors()}{registerConnectors()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a057d4249c311856c02be7be6c46e01cc} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::register\+Connectors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the default connectors that the component ships with.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a8ac612eaf093bb1ab2dc7b9c74117e23}\index{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}!setupDefaultConfiguration@{setupDefaultConfiguration}}
+\index{setupDefaultConfiguration@{setupDefaultConfiguration}!Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{setupDefaultConfiguration()}{setupDefaultConfiguration()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a8ac612eaf093bb1ab2dc7b9c74117e23} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::setup\+Default\+Configuration (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Setup the default queue configuration options.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a11adbd9a5e064b12832def82509f0296}\index{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}!setupManager@{setupManager}}
+\index{setupManager@{setupManager}!Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager@{Illuminate\textbackslash{}Queue\textbackslash{}Capsule\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{setupManager()}{setupManager()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_capsule_1_1_manager_a11adbd9a5e064b12832def82509f0296} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Capsule\textbackslash{}\+Manager\+::setup\+Manager (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Build the queue manager instance.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Queue/\+Capsule/Manager.\+php\end{DoxyCompactItemize}

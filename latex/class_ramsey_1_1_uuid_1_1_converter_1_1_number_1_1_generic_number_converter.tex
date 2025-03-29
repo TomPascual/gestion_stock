@@ -1,0 +1,51 @@
+\doxysection{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Number\textbackslash{}Generic\+Number\+Converter Class Reference}
+\hypertarget{class_ramsey_1_1_uuid_1_1_converter_1_1_number_1_1_generic_number_converter}{}\label{class_ramsey_1_1_uuid_1_1_converter_1_1_number_1_1_generic_number_converter}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Number\textbackslash{}GenericNumberConverter@{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Number\textbackslash{}GenericNumberConverter}}
+Inheritance diagram for Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Number\textbackslash{}Generic\+Number\+Converter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ramsey_1_1_uuid_1_1_converter_1_1_number_1_1_generic_number_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_ramsey_1_1_uuid_1_1_converter_1_1_number_1_1_generic_number_converter_a96de6671cf68a54613bb39dfe2f59481}\label{class_ramsey_1_1_uuid_1_1_converter_1_1_number_1_1_generic_number_converter_a96de6671cf68a54613bb39dfe2f59481} 
+{\bfseries \+\_\+\+\_\+construct} (private \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface}{Calculator\+Interface}} \$calculator)
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_converter_1_1_number_1_1_generic_number_converter_a68177b3f7383a4b10c11f026157c9609}{from\+Hex}} (string \$hex)
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_converter_1_1_number_1_1_generic_number_converter_a5aff797ab8f77fd8d9fb3b54a5ce6507}{to\+Hex}} (string \$number)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generic\+Number\+Converter uses the provided calculator to convert decimal numbers to and from hexadecimal values
+
+@psalm-\/immutable 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_converter_1_1_number_1_1_generic_number_converter_a68177b3f7383a4b10c11f026157c9609}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Number\textbackslash{}GenericNumberConverter@{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Number\textbackslash{}GenericNumberConverter}!fromHex@{fromHex}}
+\index{fromHex@{fromHex}!Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Number\textbackslash{}GenericNumberConverter@{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Number\textbackslash{}GenericNumberConverter}}
+\doxysubsubsection{\texorpdfstring{fromHex()}{fromHex()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_converter_1_1_number_1_1_generic_number_converter_a68177b3f7383a4b10c11f026157c9609} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Converter\textbackslash{}\+Number\textbackslash{}\+Generic\+Number\+Converter\+::from\+Hex (\begin{DoxyParamCaption}\item[{string}]{\$hex}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc @psalm-\/pure @psalm-\/return numeric-\/string @psalm-\/suppress More\+Specific\+Return\+Type we know that the retrieved {\ttfamily string} is never empty @psalm-\/suppress Less\+Specific\+Return\+Statement we know that the retrieved {\ttfamily string} is never empty 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_converter_1_1_number_converter_interface_a2fa2c32b179bf475a4555ede02b438a4}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Converter\textbackslash{}\+Number\+Converter\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_converter_1_1_number_1_1_generic_number_converter_a5aff797ab8f77fd8d9fb3b54a5ce6507}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Number\textbackslash{}GenericNumberConverter@{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Number\textbackslash{}GenericNumberConverter}!toHex@{toHex}}
+\index{toHex@{toHex}!Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Number\textbackslash{}GenericNumberConverter@{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Number\textbackslash{}GenericNumberConverter}}
+\doxysubsubsection{\texorpdfstring{toHex()}{toHex()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_converter_1_1_number_1_1_generic_number_converter_a5aff797ab8f77fd8d9fb3b54a5ce6507} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Converter\textbackslash{}\+Number\textbackslash{}\+Generic\+Number\+Converter\+::to\+Hex (\begin{DoxyParamCaption}\item[{string}]{\$number}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc @psalm-\/pure @psalm-\/return non-\/empty-\/string @psalm-\/suppress More\+Specific\+Return\+Type we know that the retrieved {\ttfamily string} is never empty @psalm-\/suppress Less\+Specific\+Return\+Statement we know that the retrieved {\ttfamily string} is never empty @phpstan-\/ignore-\/next-\/line PHPStan complains that this is not a non-\/empty-\/string.
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_converter_1_1_number_converter_interface_ac3fb3fbf2d192a746dc7c71b79ab15de}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Converter\textbackslash{}\+Number\+Converter\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/ramsey/uuid/src/\+Converter/\+Number/Generic\+Number\+Converter.\+php\end{DoxyCompactItemize}

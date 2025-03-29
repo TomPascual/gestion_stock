@@ -1,0 +1,98 @@
+\doxysection{Hamcrest\textbackslash{}Diagnosing\+Matcher Class Reference}
+\hypertarget{class_hamcrest_1_1_diagnosing_matcher}{}\label{class_hamcrest_1_1_diagnosing_matcher}\index{Hamcrest\textbackslash{}DiagnosingMatcher@{Hamcrest\textbackslash{}DiagnosingMatcher}}
+Inheritance diagram for Hamcrest\textbackslash{}Diagnosing\+Matcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.991087cm]{class_hamcrest_1_1_diagnosing_matcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_diagnosing_matcher_a65babc0264e96bd2256652f4b8f3332a}{matches}} (\$item)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_diagnosing_matcher_a558c787ed9062e6f6aa283fd9754176c}{describe\+Mismatch}} (\$item, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$mismatch\+Description)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hamcrest_1_1_base_matcher}{Hamcrest\textbackslash{}\+Base\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+to\+String} ()
+\item 
+{\bfseries \+\_\+\+\_\+invoke} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_hamcrest_1_1_self_describing}{Hamcrest\textbackslash{}\+Self\+Describing}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_hamcrest_1_1_self_describing_a5358337d01bd2b3a048fa446f9e901d2}{describe\+To}} (\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$description)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_diagnosing_matcher_ac9c63ce066e6cd9db786887799f7ab6b}{matches\+With\+Diagnostic\+Description}} (\$item, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$mismatch\+Description)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Official documentation for this class is missing. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hamcrest_1_1_diagnosing_matcher_a558c787ed9062e6f6aa283fd9754176c}\index{Hamcrest\textbackslash{}DiagnosingMatcher@{Hamcrest\textbackslash{}DiagnosingMatcher}!describeMismatch@{describeMismatch}}
+\index{describeMismatch@{describeMismatch}!Hamcrest\textbackslash{}DiagnosingMatcher@{Hamcrest\textbackslash{}DiagnosingMatcher}}
+\doxysubsubsection{\texorpdfstring{describeMismatch()}{describeMismatch()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_diagnosing_matcher_a558c787ed9062e6f6aa283fd9754176c} 
+Hamcrest\textbackslash{}\+Diagnosing\+Matcher\+::describe\+Mismatch (\begin{DoxyParamCaption}\item[{}]{\$item}{, }\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$description}{}\end{DoxyParamCaption})}
+
+Generate a description of why the matcher has not accepted the item. The description will be part of a larger description of why a matching failed, so it should be concise. This method assumes that {\ttfamily matches(\$item)} is false, but will not check this.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$item} & The item that the Matcher has rejected. \\
+\hline
+Description & {\em \$description} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_hamcrest_1_1_base_matcher_ae071961005d0f24d2ee1b3c62d9fe660}{Hamcrest\textbackslash{}\+Base\+Matcher}}.
+
+\Hypertarget{class_hamcrest_1_1_diagnosing_matcher_a65babc0264e96bd2256652f4b8f3332a}\index{Hamcrest\textbackslash{}DiagnosingMatcher@{Hamcrest\textbackslash{}DiagnosingMatcher}!matches@{matches}}
+\index{matches@{matches}!Hamcrest\textbackslash{}DiagnosingMatcher@{Hamcrest\textbackslash{}DiagnosingMatcher}}
+\doxysubsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_diagnosing_matcher_a65babc0264e96bd2256652f4b8f3332a} 
+Hamcrest\textbackslash{}\+Diagnosing\+Matcher\+::matches (\begin{DoxyParamCaption}\item[{}]{\$item}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+Evaluates the matcher for argument {\itshape \$item}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$item} & the object against which the matcher is evaluated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean {\ttfamily true} if {\itshape \$item} matches, otherwise {\ttfamily false}.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Hamcrest\textbackslash{}\+Base\+Matcher 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interface_hamcrest_1_1_matcher_a11ade9b98c2cf2e1871c2bb0e6d0de94}{Hamcrest\textbackslash{}\+Matcher}}.
+
+\Hypertarget{class_hamcrest_1_1_diagnosing_matcher_ac9c63ce066e6cd9db786887799f7ab6b}\index{Hamcrest\textbackslash{}DiagnosingMatcher@{Hamcrest\textbackslash{}DiagnosingMatcher}!matchesWithDiagnosticDescription@{matchesWithDiagnosticDescription}}
+\index{matchesWithDiagnosticDescription@{matchesWithDiagnosticDescription}!Hamcrest\textbackslash{}DiagnosingMatcher@{Hamcrest\textbackslash{}DiagnosingMatcher}}
+\doxysubsubsection{\texorpdfstring{matchesWithDiagnosticDescription()}{matchesWithDiagnosticDescription()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_diagnosing_matcher_ac9c63ce066e6cd9db786887799f7ab6b} 
+Hamcrest\textbackslash{}\+Diagnosing\+Matcher\+::matches\+With\+Diagnostic\+Description (\begin{DoxyParamCaption}\item[{}]{\$item}{, }\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$mismatch\+Description}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_hamcrest_1_1_xml_1_1_has_x_path_a8fa52deec1219ddb4cfff1ff81b1967c}{Hamcrest\textbackslash{}\+Xml\textbackslash{}\+Has\+XPath}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/hamcrest/hamcrest-\/php/hamcrest/\+Hamcrest/Diagnosing\+Matcher.\+php\end{DoxyCompactItemize}

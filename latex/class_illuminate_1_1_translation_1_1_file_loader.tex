@@ -1,0 +1,284 @@
+\doxysection{Illuminate\textbackslash{}Translation\textbackslash{}File\+Loader Class Reference}
+\hypertarget{class_illuminate_1_1_translation_1_1_file_loader}{}\label{class_illuminate_1_1_translation_1_1_file_loader}\index{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}}
+Inheritance diagram for Illuminate\textbackslash{}Translation\textbackslash{}File\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_translation_1_1_file_loader}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_translation_1_1_file_loader_ad994fa67e57a13593aabb6b532303bf8}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem}{Filesystem}} \$files, array\texorpdfstring{$\vert$}{|}string \$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_translation_1_1_file_loader_ade528a27ba8e1f875bd7556ad34dc75b}{load}} (\$locale, \$group, \$namespace=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_translation_1_1_file_loader_a7e921d803e114166b5c75b0899cf3705}{add\+Namespace}} (\$namespace, \$hint)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_translation_1_1_file_loader_a3d1c51b708ed8ed71505bca2ba62e657}{namespaces}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_translation_1_1_file_loader_afcccc2f2b9a404358ddf25b3ad034fb2}{add\+Path}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_translation_1_1_file_loader_aaddcefa79c7b612f89826f06d2688589}{add\+Json\+Path}} (\$path)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_translation_1_1_file_loader_a6bcc873c896ff5071c339d41bb4d5197}{paths}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_translation_1_1_file_loader_a6341641def541b28cdb211557c256889}{json\+Paths}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_translation_1_1_file_loader_a18bf6e1389800703e46bffb6dba3213d}{load\+Namespaced}} (\$locale, \$group, \$namespace)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_translation_1_1_file_loader_a9dca9fa508a9e58992ca5a627bec00d8}{load\+Namespace\+Overrides}} (array \$lines, \$locale, \$group, \$namespace)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_translation_1_1_file_loader_a2442756cf2bdf4f8b09ff5543829c8e4}{load\+Paths}} (array \$\mbox{\hyperlink{class_illuminate_1_1_translation_1_1_file_loader_a6bcc873c896ff5071c339d41bb4d5197}{paths}}, \$locale, \$group)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_translation_1_1_file_loader_ab1413bddd33b10a7fc0e19170cb80e68}{load\+Json\+Paths}} (\$locale)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_translation_1_1_file_loader_afe4edc6475486f7bb3f0aada879c06b3}\label{class_illuminate_1_1_translation_1_1_file_loader_afe4edc6475486f7bb3f0aada879c06b3} 
+{\bfseries \$files}
+\item 
+\Hypertarget{class_illuminate_1_1_translation_1_1_file_loader_ac4b772d2f702313036250b3c13b29930}\label{class_illuminate_1_1_translation_1_1_file_loader_ac4b772d2f702313036250b3c13b29930} 
+{\bfseries \$paths}
+\item 
+\Hypertarget{class_illuminate_1_1_translation_1_1_file_loader_a8adc0a95dbde571eadc0378edaa88fe4}\label{class_illuminate_1_1_translation_1_1_file_loader_a8adc0a95dbde571eadc0378edaa88fe4} 
+{\bfseries \$json\+Paths} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_translation_1_1_file_loader_a11fac04c6fd25d6d13acfeb9db25b611}\label{class_illuminate_1_1_translation_1_1_file_loader_a11fac04c6fd25d6d13acfeb9db25b611} 
+{\bfseries \$hints} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_translation_1_1_file_loader_ad994fa67e57a13593aabb6b532303bf8}\index{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_translation_1_1_file_loader_ad994fa67e57a13593aabb6b532303bf8} 
+Illuminate\textbackslash{}\+Translation\textbackslash{}\+File\+Loader\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_filesystem_1_1_filesystem}{Filesystem}}}]{\$files}{, }\item[{array\texorpdfstring{$\vert$}{|}string}]{\$path}{}\end{DoxyParamCaption})}
+
+Create a new file loader instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Filesystem\textbackslash{}\+Filesystem & {\em \$files} & \\
+\hline
+array | string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_translation_1_1_file_loader_aaddcefa79c7b612f89826f06d2688589}\index{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}!addJsonPath@{addJsonPath}}
+\index{addJsonPath@{addJsonPath}!Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}}
+\doxysubsubsection{\texorpdfstring{addJsonPath()}{addJsonPath()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_translation_1_1_file_loader_aaddcefa79c7b612f89826f06d2688589} 
+Illuminate\textbackslash{}\+Translation\textbackslash{}\+File\+Loader\+::add\+Json\+Path (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Add a new JSON path to the loader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_translation_1_1_loader_a8f9b9bcf62139bb5c4f5976d70a0950f}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Translation\textbackslash{}\+Loader}}.
+
+\Hypertarget{class_illuminate_1_1_translation_1_1_file_loader_a7e921d803e114166b5c75b0899cf3705}\index{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}!addNamespace@{addNamespace}}
+\index{addNamespace@{addNamespace}!Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}}
+\doxysubsubsection{\texorpdfstring{addNamespace()}{addNamespace()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_translation_1_1_file_loader_a7e921d803e114166b5c75b0899cf3705} 
+Illuminate\textbackslash{}\+Translation\textbackslash{}\+File\+Loader\+::add\+Namespace (\begin{DoxyParamCaption}\item[{}]{\$namespace}{, }\item[{}]{\$hint}{}\end{DoxyParamCaption})}
+
+Add a new namespace to the loader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$namespace} & \\
+\hline
+string & {\em \$hint} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_translation_1_1_loader_a7c3b6a0e9c0859bcc9db4fe798835d44}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Translation\textbackslash{}\+Loader}}.
+
+\Hypertarget{class_illuminate_1_1_translation_1_1_file_loader_afcccc2f2b9a404358ddf25b3ad034fb2}\index{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}!addPath@{addPath}}
+\index{addPath@{addPath}!Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}}
+\doxysubsubsection{\texorpdfstring{addPath()}{addPath()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_translation_1_1_file_loader_afcccc2f2b9a404358ddf25b3ad034fb2} 
+Illuminate\textbackslash{}\+Translation\textbackslash{}\+File\+Loader\+::add\+Path (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Add a new path to the loader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_translation_1_1_file_loader_a6341641def541b28cdb211557c256889}\index{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}!jsonPaths@{jsonPaths}}
+\index{jsonPaths@{jsonPaths}!Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}}
+\doxysubsubsection{\texorpdfstring{jsonPaths()}{jsonPaths()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_translation_1_1_file_loader_a6341641def541b28cdb211557c256889} 
+Illuminate\textbackslash{}\+Translation\textbackslash{}\+File\+Loader\+::json\+Paths (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get an array of all the registered paths to JSON translation files.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_translation_1_1_file_loader_ade528a27ba8e1f875bd7556ad34dc75b}\index{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}!load@{load}}
+\index{load@{load}!Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_translation_1_1_file_loader_ade528a27ba8e1f875bd7556ad34dc75b} 
+Illuminate\textbackslash{}\+Translation\textbackslash{}\+File\+Loader\+::load (\begin{DoxyParamCaption}\item[{}]{\$locale}{, }\item[{}]{\$group}{, }\item[{}]{\$namespace}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Load the messages for the given locale.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locale} & \\
+\hline
+string & {\em \$group} & \\
+\hline
+string | null & {\em \$namespace} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_translation_1_1_loader_a5cd76a5df417785453c18817df145f0e}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Translation\textbackslash{}\+Loader}}.
+
+\Hypertarget{class_illuminate_1_1_translation_1_1_file_loader_ab1413bddd33b10a7fc0e19170cb80e68}\index{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}!loadJsonPaths@{loadJsonPaths}}
+\index{loadJsonPaths@{loadJsonPaths}!Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}}
+\doxysubsubsection{\texorpdfstring{loadJsonPaths()}{loadJsonPaths()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_translation_1_1_file_loader_ab1413bddd33b10a7fc0e19170cb80e68} 
+Illuminate\textbackslash{}\+Translation\textbackslash{}\+File\+Loader\+::load\+Json\+Paths (\begin{DoxyParamCaption}\item[{}]{\$locale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Load a locale from the given JSON file path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locale} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{class_illuminate_1_1_translation_1_1_file_loader_a18bf6e1389800703e46bffb6dba3213d}\index{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}!loadNamespaced@{loadNamespaced}}
+\index{loadNamespaced@{loadNamespaced}!Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}}
+\doxysubsubsection{\texorpdfstring{loadNamespaced()}{loadNamespaced()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_translation_1_1_file_loader_a18bf6e1389800703e46bffb6dba3213d} 
+Illuminate\textbackslash{}\+Translation\textbackslash{}\+File\+Loader\+::load\+Namespaced (\begin{DoxyParamCaption}\item[{}]{\$locale}{, }\item[{}]{\$group}{, }\item[{}]{\$namespace}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Load a namespaced translation group.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locale} & \\
+\hline
+string & {\em \$group} & \\
+\hline
+string & {\em \$namespace} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_translation_1_1_file_loader_a9dca9fa508a9e58992ca5a627bec00d8}\index{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}!loadNamespaceOverrides@{loadNamespaceOverrides}}
+\index{loadNamespaceOverrides@{loadNamespaceOverrides}!Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}}
+\doxysubsubsection{\texorpdfstring{loadNamespaceOverrides()}{loadNamespaceOverrides()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_translation_1_1_file_loader_a9dca9fa508a9e58992ca5a627bec00d8} 
+Illuminate\textbackslash{}\+Translation\textbackslash{}\+File\+Loader\+::load\+Namespace\+Overrides (\begin{DoxyParamCaption}\item[{array}]{\$lines}{, }\item[{}]{\$locale}{, }\item[{}]{\$group}{, }\item[{}]{\$namespace}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Load a local namespaced translation group for overrides.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$lines} & \\
+\hline
+string & {\em \$locale} & \\
+\hline
+string & {\em \$group} & \\
+\hline
+string & {\em \$namespace} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_translation_1_1_file_loader_a2442756cf2bdf4f8b09ff5543829c8e4}\index{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}!loadPaths@{loadPaths}}
+\index{loadPaths@{loadPaths}!Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}}
+\doxysubsubsection{\texorpdfstring{loadPaths()}{loadPaths()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_translation_1_1_file_loader_a2442756cf2bdf4f8b09ff5543829c8e4} 
+Illuminate\textbackslash{}\+Translation\textbackslash{}\+File\+Loader\+::load\+Paths (\begin{DoxyParamCaption}\item[{array}]{\$paths}{, }\item[{}]{\$locale}{, }\item[{}]{\$group}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Load a locale from a given path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$paths} & \\
+\hline
+string & {\em \$locale} & \\
+\hline
+string & {\em \$group} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_translation_1_1_file_loader_a3d1c51b708ed8ed71505bca2ba62e657}\index{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}!namespaces@{namespaces}}
+\index{namespaces@{namespaces}!Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}}
+\doxysubsubsection{\texorpdfstring{namespaces()}{namespaces()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_translation_1_1_file_loader_a3d1c51b708ed8ed71505bca2ba62e657} 
+Illuminate\textbackslash{}\+Translation\textbackslash{}\+File\+Loader\+::namespaces (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get an array of all the registered namespaces.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_translation_1_1_loader_a554c53cecaa5f0f312152d035fadf830}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Translation\textbackslash{}\+Loader}}.
+
+\Hypertarget{class_illuminate_1_1_translation_1_1_file_loader_a6bcc873c896ff5071c339d41bb4d5197}\index{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}!paths@{paths}}
+\index{paths@{paths}!Illuminate\textbackslash{}Translation\textbackslash{}FileLoader@{Illuminate\textbackslash{}Translation\textbackslash{}FileLoader}}
+\doxysubsubsection{\texorpdfstring{paths()}{paths()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_translation_1_1_file_loader_a6bcc873c896ff5071c339d41bb4d5197} 
+Illuminate\textbackslash{}\+Translation\textbackslash{}\+File\+Loader\+::paths (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get an array of all the registered paths to translation files.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Translation/File\+Loader.\+php\end{DoxyCompactItemize}

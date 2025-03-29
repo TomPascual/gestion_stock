@@ -1,0 +1,82 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Fileinfo\+Mime\+Type\+Guesser Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_mime_1_1_fileinfo_mime_type_guesser}{}\label{class_symfony_1_1_component_1_1_mime_1_1_fileinfo_mime_type_guesser}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}FileinfoMimeTypeGuesser@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}FileinfoMimeTypeGuesser}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Fileinfo\+Mime\+Type\+Guesser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_mime_1_1_fileinfo_mime_type_guesser}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_fileinfo_mime_type_guesser_a63fb3a9bb60150cbd487b5f8fa4b57ce}{\+\_\+\+\_\+construct}} (private ?string \$magic\+File=null,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_fileinfo_mime_type_guesser_a36d27666a5354734c2bf3a53852e75af}{is\+Guesser\+Supported}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_fileinfo_mime_type_guesser_a85328b5bdc4ec38a63562e6982c74ab1}{guess\+Mime\+Type}} (string \$path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Guesses the MIME type using the PECL extension File\+Info.
+
+\begin{DoxyAuthor}{Author}
+Bernhard Schussek \href{mailto:bschussek@gmail.com}{\texttt{ bschussek@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_fileinfo_mime_type_guesser_a63fb3a9bb60150cbd487b5f8fa4b57ce}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}FileinfoMimeTypeGuesser@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}FileinfoMimeTypeGuesser}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}FileinfoMimeTypeGuesser@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}FileinfoMimeTypeGuesser}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mime_1_1_fileinfo_mime_type_guesser_a63fb3a9bb60150cbd487b5f8fa4b57ce} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Fileinfo\+Mime\+Type\+Guesser\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private ?string}]{\$magic\+File}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$magic\+File} & A magic file to use with the finfo instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\href{http://www.php.net/manual/en/function.finfo-open.php}{\texttt{ http\+://www.\+php.\+net/manual/en/function.\+finfo-\/open.\+php}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_fileinfo_mime_type_guesser_a85328b5bdc4ec38a63562e6982c74ab1}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}FileinfoMimeTypeGuesser@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}FileinfoMimeTypeGuesser}!guessMimeType@{guessMimeType}}
+\index{guessMimeType@{guessMimeType}!Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}FileinfoMimeTypeGuesser@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}FileinfoMimeTypeGuesser}}
+\doxysubsubsection{\texorpdfstring{guessMimeType()}{guessMimeType()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mime_1_1_fileinfo_mime_type_guesser_a85328b5bdc4ec38a63562e6982c74ab1} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Fileinfo\+Mime\+Type\+Guesser\+::guess\+Mime\+Type (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+Guesses the MIME type of the file with the given path.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception If the guesser is not supported 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception If the file does not exist or is not readable 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_mime_1_1_mime_type_guesser_interface_a52c999421f0e01b73b10d9b025f98383}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Mime\+Type\+Guesser\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_fileinfo_mime_type_guesser_a36d27666a5354734c2bf3a53852e75af}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}FileinfoMimeTypeGuesser@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}FileinfoMimeTypeGuesser}!isGuesserSupported@{isGuesserSupported}}
+\index{isGuesserSupported@{isGuesserSupported}!Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}FileinfoMimeTypeGuesser@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}FileinfoMimeTypeGuesser}}
+\doxysubsubsection{\texorpdfstring{isGuesserSupported()}{isGuesserSupported()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mime_1_1_fileinfo_mime_type_guesser_a36d27666a5354734c2bf3a53852e75af} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Fileinfo\+Mime\+Type\+Guesser\+::is\+Guesser\+Supported (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true if this guesser is supported. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_mime_1_1_mime_type_guesser_interface_aabe89bcb23d2600ae00492d4a9aca251}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Mime\+Type\+Guesser\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/mime/Fileinfo\+Mime\+Type\+Guesser.\+php\end{DoxyCompactItemize}

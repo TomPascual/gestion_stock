@@ -1,0 +1,60 @@
+\doxysection{League\textbackslash{}Uri\textbackslash{}Uri\+Resolver Class Reference}
+\hypertarget{class_league_1_1_uri_1_1_uri_resolver}{}\label{class_league_1_1_uri_1_1_uri_resolver}\index{League\textbackslash{}Uri\textbackslash{}UriResolver@{League\textbackslash{}Uri\textbackslash{}UriResolver}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_uri_resolver_ae3b44e7fa4bb7cb4d599726cc190aa33}{resolve}} (Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}} \$uri, Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}} \$base\+Uri)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_uri_resolver_aa33505129c694a74b972c32cd0290834}{relativize}} (Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}} \$uri, Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}} \$base\+Uri)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000099}{Deprecated}}]since version 7.\+0.\+0 @code\+Coverage\+Ignore \end{DoxyRefDesc}
+\begin{DoxySeeAlso}{See also}
+Base\+Uri 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_league_1_1_uri_1_1_uri_resolver_aa33505129c694a74b972c32cd0290834}\index{League\textbackslash{}Uri\textbackslash{}UriResolver@{League\textbackslash{}Uri\textbackslash{}UriResolver}!relativize@{relativize}}
+\index{relativize@{relativize}!League\textbackslash{}Uri\textbackslash{}UriResolver@{League\textbackslash{}Uri\textbackslash{}UriResolver}}
+\doxysubsubsection{\texorpdfstring{relativize()}{relativize()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_resolver_aa33505129c694a74b972c32cd0290834} 
+static League\textbackslash{}\+Uri\textbackslash{}\+Uri\+Resolver\+::relativize (\begin{DoxyParamCaption}\item[{Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}}}]{\$uri}{, }\item[{Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}}}]{\$base\+Uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Relativizes a URI according to a base URI.
+
+This method MUST retain the state of the submitted URI instance, and return a URI instance of the same type that contains the applied modifications.
+
+This method MUST be transparent when dealing with error and exceptions. It MUST not alter or silence them apart from validating its own parameters.
+
+Returns the target URI as a relative reference from the base URI.
+
+This method is the counterpart to resolve()\+:
+
+(string) \$target === (string) Uri\+Resolver\+::resolve(\$base, Uri\+Resolver\+::relativize(\$base, \$target))
+
+One use-\/case is to use the current request URI as base URI and then generate relative links in your documents to reduce the document size or offer self-\/contained downloadable document archives.
+
+\$base = new Uri(\textquotesingle{}\href{http://example.com/a/b/'}{\texttt{ http\+://example.\+com/a/b/\textquotesingle{}}}); echo Uri\+Resolver\+::relativize(\$base, new Uri(\textquotesingle{}\href{http://example.com/a/b/c'}{\texttt{ http\+://example.\+com/a/b/c\textquotesingle{}}})); // prints \textquotesingle{}c\textquotesingle{}. echo Uri\+Resolver\+::relativize(\$base, new Uri(\textquotesingle{}\href{http://example.com/a/x/y'}{\texttt{ http\+://example.\+com/a/x/y\textquotesingle{}}})); // prints \textquotesingle{}../x/y\textquotesingle{}. echo Uri\+Resolver\+::relativize(\$base, new Uri(\textquotesingle{}\href{http://example.com/a/b/?q'}{\texttt{ http\+://example.\+com/a/b/?q\textquotesingle{}}})); // prints \textquotesingle{}?q\textquotesingle{}. echo Uri\+Resolver\+::relativize(\$base, new Uri(\textquotesingle{}\href{http://example.org/a/b/'}{\texttt{ http\+://example.\+org/a/b/\textquotesingle{}}})); // prints \textquotesingle{}//example.org/a/b/\textquotesingle{}.
+
+This method also accepts a target that is already relative and will try to relativize it further. Only a relative-\/path reference will be returned as-\/is.
+
+echo Uri\+Resolver\+::relativize(\$base, new Uri(\textquotesingle{}/a/b/c\textquotesingle{})); // prints \textquotesingle{}c\textquotesingle{} as well \Hypertarget{class_league_1_1_uri_1_1_uri_resolver_ae3b44e7fa4bb7cb4d599726cc190aa33}\index{League\textbackslash{}Uri\textbackslash{}UriResolver@{League\textbackslash{}Uri\textbackslash{}UriResolver}!resolve@{resolve}}
+\index{resolve@{resolve}!League\textbackslash{}Uri\textbackslash{}UriResolver@{League\textbackslash{}Uri\textbackslash{}UriResolver}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_resolver_ae3b44e7fa4bb7cb4d599726cc190aa33} 
+static League\textbackslash{}\+Uri\textbackslash{}\+Uri\+Resolver\+::resolve (\begin{DoxyParamCaption}\item[{Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}}}]{\$uri}{, }\item[{Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}}}]{\$base\+Uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Resolves a URI against a base URI using RFC3986 rules.
+
+This method MUST retain the state of the submitted URI instance, and return a URI instance of the same type that contains the applied modifications.
+
+This method MUST be transparent when dealing with error and exceptions. It MUST not alter or silence them apart from validating its own parameters. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+vendor/league/uri/Uri\+Resolver.\+php\item 
+vendor/guzzlehttp/psr7/src/Uri\+Resolver.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,133 @@
+\doxysection{Monolog\textbackslash{}Error\+Handler Class Reference}
+\hypertarget{class_monolog_1_1_error_handler}{}\label{class_monolog_1_1_error_handler}\index{Monolog\textbackslash{}ErrorHandler@{Monolog\textbackslash{}ErrorHandler}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_monolog_1_1_error_handler_a2139d7109a4e7ac57b5e31b7ca21dca2}\label{class_monolog_1_1_error_handler_a2139d7109a4e7ac57b5e31b7ca21dca2} 
+{\bfseries \+\_\+\+\_\+construct} (private \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_error_handler_a0683e12c1989bf6e8ba2f0e6a7952a51}{register\+Exception\+Handler}} (array \$level\+Map=\mbox{[}$\,$\mbox{]}, bool \$call\+Previous=true)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_error_handler_a8e2a13d7c7624a1b553ce115142d03f7}{register\+Error\+Handler}} (array \$level\+Map=\mbox{[}$\,$\mbox{]}, bool \$call\+Previous=true, int \$error\+Types=-\/1, bool \$handle\+Only\+Reported\+Errors=true)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_error_handler_a7e5279d45732beb8cbfefa2423fdb616}{register\+Fatal\+Handler}} (\$level=null, int \$reserved\+Memory\+Size=20)
+\item 
+\Hypertarget{class_monolog_1_1_error_handler_a4468f0ee43135a022f4b533b940f7af5}\label{class_monolog_1_1_error_handler_a4468f0ee43135a022f4b533b940f7af5} 
+{\bfseries handle\+Fatal\+Error} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_monolog_1_1_error_handler_a51f41187a04422c2e21109f9bf0b71ae}{register}} (\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger, \$error\+Level\+Map=\mbox{[}$\,$\mbox{]}, \$exception\+Level\+Map=\mbox{[}$\,$\mbox{]}, \$fatal\+Level=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monolog_1_1_error_handler_a501516dc48244a5df727605cf72986f9}{default\+Exception\+Level\+Map}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_error_handler_a36f490dfc48562b690bb23d0cf7e42c9}{default\+Error\+Level\+Map}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Monolog error handler
+
+A facility to enable logging of runtime errors, exceptions and fatal errors.
+
+Quick setup\+: {\ttfamily Error\+Handler\+::register(\$logger);}
+
+\begin{DoxyAuthor}{Author}
+Jordi Boggiano \href{mailto:j.boggiano@seld.be}{\texttt{ j.\+boggiano@seld.\+be}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_monolog_1_1_error_handler_a36f490dfc48562b690bb23d0cf7e42c9}\index{Monolog\textbackslash{}ErrorHandler@{Monolog\textbackslash{}ErrorHandler}!defaultErrorLevelMap@{defaultErrorLevelMap}}
+\index{defaultErrorLevelMap@{defaultErrorLevelMap}!Monolog\textbackslash{}ErrorHandler@{Monolog\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{defaultErrorLevelMap()}{defaultErrorLevelMap()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_error_handler_a36f490dfc48562b690bb23d0cf7e42c9} 
+Monolog\textbackslash{}\+Error\+Handler\+::default\+Error\+Level\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+array$<$int, Log\+Level\textbackslash{}\texorpdfstring{$\ast$}{*}$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_error_handler_a501516dc48244a5df727605cf72986f9}\index{Monolog\textbackslash{}ErrorHandler@{Monolog\textbackslash{}ErrorHandler}!defaultExceptionLevelMap@{defaultExceptionLevelMap}}
+\index{defaultExceptionLevelMap@{defaultExceptionLevelMap}!Monolog\textbackslash{}ErrorHandler@{Monolog\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{defaultExceptionLevelMap()}{defaultExceptionLevelMap()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_error_handler_a501516dc48244a5df727605cf72986f9} 
+Monolog\textbackslash{}\+Error\+Handler\+::default\+Exception\+Level\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}class-\/string, Log\+Level\+:\+:\texorpdfstring{$\ast$}{*}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_error_handler_a51f41187a04422c2e21109f9bf0b71ae}\index{Monolog\textbackslash{}ErrorHandler@{Monolog\textbackslash{}ErrorHandler}!register@{register}}
+\index{register@{register}!Monolog\textbackslash{}ErrorHandler@{Monolog\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_error_handler_a51f41187a04422c2e21109f9bf0b71ae} 
+static Monolog\textbackslash{}\+Error\+Handler\+::register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}}]{\$logger}{, }\item[{}]{\$error\+Level\+Map}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$exception\+Level\+Map}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$fatal\+Level}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registers a new Error\+Handler for a given Logger
+
+By default it will handle errors, exceptions and fatal errors
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,Log\+Level\+::\texorpdfstring{$\ast$}{*}$>$\texorpdfstring{$\vert$}{|}false} & \$error\+Level\+Map an array of E\+\_\+\texorpdfstring{$\ast$}{*} constant to Log\+Level\+:\+:\texorpdfstring{$\ast$}{*} constant mapping, or false to disable error handling \\
+\hline
+{\em array$<$class-\/string,Log\+Level\+::\texorpdfstring{$\ast$}{*}$>$\texorpdfstring{$\vert$}{|}false} & \$exception\+Level\+Map an array of class name to Log\+Level\+:\+:\texorpdfstring{$\ast$}{*} constant mapping, or false to disable exception handling \\
+\hline
+{\em Log\+Level\+::\texorpdfstring{$\ast$}{*}\texorpdfstring{$\vert$}{|}null\texorpdfstring{$\vert$}{|}false} & \$fatal\+Level a Log\+Level\+:\+:\texorpdfstring{$\ast$}{*} constant, null to use the default Log\+Level\+::\+ALERT or false to disable fatal error handling \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+@phpstan-\/ignore-\/next-\/line\Hypertarget{class_monolog_1_1_error_handler_a8e2a13d7c7624a1b553ce115142d03f7}\index{Monolog\textbackslash{}ErrorHandler@{Monolog\textbackslash{}ErrorHandler}!registerErrorHandler@{registerErrorHandler}}
+\index{registerErrorHandler@{registerErrorHandler}!Monolog\textbackslash{}ErrorHandler@{Monolog\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{registerErrorHandler()}{registerErrorHandler()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_error_handler_a8e2a13d7c7624a1b553ce115142d03f7} 
+Monolog\textbackslash{}\+Error\+Handler\+::register\+Error\+Handler (\begin{DoxyParamCaption}\item[{array}]{\$level\+Map}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{bool}]{\$call\+Previous}{ = {\ttfamily true}, }\item[{int}]{\$error\+Types}{ = {\ttfamily -\/1}, }\item[{bool}]{\$handle\+Only\+Reported\+Errors}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,Log\+Level\+::\texorpdfstring{$\ast$}{*}$>$} & \$level\+Map an array of E\+\_\+\texorpdfstring{$\ast$}{*} constant to Log\+Level\+:\+:\texorpdfstring{$\ast$}{*} constant mapping \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_error_handler_a0683e12c1989bf6e8ba2f0e6a7952a51}\index{Monolog\textbackslash{}ErrorHandler@{Monolog\textbackslash{}ErrorHandler}!registerExceptionHandler@{registerExceptionHandler}}
+\index{registerExceptionHandler@{registerExceptionHandler}!Monolog\textbackslash{}ErrorHandler@{Monolog\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{registerExceptionHandler()}{registerExceptionHandler()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_error_handler_a0683e12c1989bf6e8ba2f0e6a7952a51} 
+Monolog\textbackslash{}\+Error\+Handler\+::register\+Exception\+Handler (\begin{DoxyParamCaption}\item[{array}]{\$level\+Map}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{bool}]{\$call\+Previous}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$class-\/string,Log\+Level\+::\texorpdfstring{$\ast$}{*}$>$} & \$level\+Map an array of class name to Log\+Level\+:\+:\texorpdfstring{$\ast$}{*} constant mapping \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_error_handler_a7e5279d45732beb8cbfefa2423fdb616}\index{Monolog\textbackslash{}ErrorHandler@{Monolog\textbackslash{}ErrorHandler}!registerFatalHandler@{registerFatalHandler}}
+\index{registerFatalHandler@{registerFatalHandler}!Monolog\textbackslash{}ErrorHandler@{Monolog\textbackslash{}ErrorHandler}}
+\doxysubsubsection{\texorpdfstring{registerFatalHandler()}{registerFatalHandler()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_error_handler_a7e5279d45732beb8cbfefa2423fdb616} 
+Monolog\textbackslash{}\+Error\+Handler\+::register\+Fatal\+Handler (\begin{DoxyParamCaption}\item[{}]{\$level}{ = {\ttfamily null}, }\item[{int}]{\$reserved\+Memory\+Size}{ = {\ttfamily 20}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em Log\+Level\+::\texorpdfstring{$\ast$}{*}\texorpdfstring{$\vert$}{|}null} & \$level a Log\+Level\+:\+:\texorpdfstring{$\ast$}{*} constant, null to use the default Log\+Level\+::\+ALERT \\
+\hline
+int & {\em \$reserved\+Memory\+Size} & Amount of KBs to reserve in memory so that it can be freed when handling fatal errors giving Monolog some room in memory to get its job done \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/monolog/monolog/src/\+Monolog/Error\+Handler.\+php\end{DoxyCompactItemize}

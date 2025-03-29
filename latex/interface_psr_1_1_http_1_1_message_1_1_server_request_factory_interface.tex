@@ -1,0 +1,47 @@
+\doxysection{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}Server\+Request\+Factory\+Interface Interface Reference}
+\hypertarget{interface_psr_1_1_http_1_1_message_1_1_server_request_factory_interface}{}\label{interface_psr_1_1_http_1_1_message_1_1_server_request_factory_interface}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}ServerRequestFactoryInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}ServerRequestFactoryInterface}}
+Inheritance diagram for Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}Server\+Request\+Factory\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_psr_1_1_http_1_1_message_1_1_server_request_factory_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_server_request_factory_interface_a26484cad5bd2d750ba8d7c47163067b4}{create\+Server\+Request}} (string \$method, \$uri, array \$server\+Params=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_server_request_factory_interface_a26484cad5bd2d750ba8d7c47163067b4}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}ServerRequestFactoryInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}ServerRequestFactoryInterface}!createServerRequest@{createServerRequest}}
+\index{createServerRequest@{createServerRequest}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}ServerRequestFactoryInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}ServerRequestFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{createServerRequest()}{createServerRequest()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_server_request_factory_interface_a26484cad5bd2d750ba8d7c47163067b4} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Server\+Request\+Factory\+Interface\+::create\+Server\+Request (\begin{DoxyParamCaption}\item[{string}]{\$method}{, }\item[{}]{\$uri}{, }\item[{array}]{\$server\+Params}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Create a new server request.
+
+Note that server-\/params are taken precisely as given -\/ no parsing/processing of the given values is performed, and, in particular, no attempt is made to determine the HTTP method or URI, which must be provided explicitly.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & The HTTP method associated with the request. \\
+\hline
+Uri\+Interface | string & {\em \$uri} & The URI associated with the request. If the value is a string, the factory MUST create a Uri\+Interface instance based on it. \\
+\hline
+array & {\em \$server\+Params} & Array of SAPI parameters with which to seed the generated request instance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Server\+Request\+Interface 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_http_factory_ad9a24006ea87d6d83302011c9869ccad}{Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Http\+Factory}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psr/http-\/factory/src/Server\+Request\+Factory\+Interface.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,149 @@
+\doxysection{Hamcrest\textbackslash{}Description Interface Reference}
+\hypertarget{interface_hamcrest_1_1_description}{}\label{interface_hamcrest_1_1_description}\index{Hamcrest\textbackslash{}Description@{Hamcrest\textbackslash{}Description}}
+Inheritance diagram for Hamcrest\textbackslash{}Description\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_hamcrest_1_1_description}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_hamcrest_1_1_description_aedc8e6e555fd7759c8ccebfccc74b85b}{append\+Text}} (\$text)
+\item 
+\mbox{\hyperlink{interface_hamcrest_1_1_description_a5a1e4b65cfd34eb05a32a2d7e130b8df}{append\+Description\+Of}} (\mbox{\hyperlink{interface_hamcrest_1_1_self_describing}{Self\+Describing}} \$value)
+\item 
+\mbox{\hyperlink{interface_hamcrest_1_1_description_a382fef344cb8b49f56de5951c5c89731}{append\+Value}} (\$value)
+\item 
+\mbox{\hyperlink{interface_hamcrest_1_1_description_a5624634bd27c21925c26f9bb1ca1fff4}{append\+Value\+List}} (\$start, \$separator, \$end, \$values)
+\item 
+\mbox{\hyperlink{interface_hamcrest_1_1_description_a52a6e0ad6444530755c740c5c4cbc40b}{append\+List}} (\$start, \$separator, \$end, \$values)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A description of a Matcher. A Matcher will describe itself to a description which can later be used for reporting.
+
+\begin{DoxySeeAlso}{See also}
+Hamcrest\textbackslash{}\+Matcher\+::describe\+To() 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_hamcrest_1_1_description_a5a1e4b65cfd34eb05a32a2d7e130b8df}\index{Hamcrest\textbackslash{}Description@{Hamcrest\textbackslash{}Description}!appendDescriptionOf@{appendDescriptionOf}}
+\index{appendDescriptionOf@{appendDescriptionOf}!Hamcrest\textbackslash{}Description@{Hamcrest\textbackslash{}Description}}
+\doxysubsubsection{\texorpdfstring{appendDescriptionOf()}{appendDescriptionOf()}}
+{\footnotesize\ttfamily \label{interface_hamcrest_1_1_description_a5a1e4b65cfd34eb05a32a2d7e130b8df} 
+Hamcrest\textbackslash{}\+Description\+::append\+Description\+Of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_hamcrest_1_1_self_describing}{Self\+Describing}}}]{\$value}{}\end{DoxyParamCaption})}
+
+Appends the description of a {\ttfamily \doxylink{}{Hamcrest\textbackslash{}\+Self\+Describing}} value to this description.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Hamcrest\textbackslash{}\+Self\+Describing & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Hamcrest\textbackslash{}\+Description 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_hamcrest_1_1_base_description_a21805ca7b5364d01472249b0cf4b7792}{Hamcrest\textbackslash{}\+Base\+Description}}, and \mbox{\hyperlink{class_hamcrest_1_1_null_description_a8099e1c5177c80d578b0695c19f1ddc1}{Hamcrest\textbackslash{}\+Null\+Description}}.
+
+\Hypertarget{interface_hamcrest_1_1_description_a52a6e0ad6444530755c740c5c4cbc40b}\index{Hamcrest\textbackslash{}Description@{Hamcrest\textbackslash{}Description}!appendList@{appendList}}
+\index{appendList@{appendList}!Hamcrest\textbackslash{}Description@{Hamcrest\textbackslash{}Description}}
+\doxysubsubsection{\texorpdfstring{appendList()}{appendList()}}
+{\footnotesize\ttfamily \label{interface_hamcrest_1_1_description_a52a6e0ad6444530755c740c5c4cbc40b} 
+Hamcrest\textbackslash{}\+Description\+::append\+List (\begin{DoxyParamCaption}\item[{}]{\$start}{, }\item[{}]{\$separator}{, }\item[{}]{\$end}{, }\item[{}]{\$values}{}\end{DoxyParamCaption})}
+
+Appends a list of {\ttfamily \doxylink{}{Hamcrest\textbackslash{}\+Self\+Describing}} objects to the description.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$start} & \\
+\hline
+string & {\em \$separator} & \\
+\hline
+string & {\em \$end} & \\
+\hline
+array | \textbackslash{}\textbackslash{}\+Iterator\+Aggregate | \textbackslash{}\textbackslash{}\+Iterator & {\em \$values} & must be instances of {\ttfamily \doxylink{}{Hamcrest\textbackslash{}\+Self\+Describing}}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Hamcrest\textbackslash{}\+Description 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_hamcrest_1_1_base_description_a3f38b03151d6c4cbeaf903db91691714}{Hamcrest\textbackslash{}\+Base\+Description}}, and \mbox{\hyperlink{class_hamcrest_1_1_null_description_ac284a5e258796fdb432c5f90739189ce}{Hamcrest\textbackslash{}\+Null\+Description}}.
+
+\Hypertarget{interface_hamcrest_1_1_description_aedc8e6e555fd7759c8ccebfccc74b85b}\index{Hamcrest\textbackslash{}Description@{Hamcrest\textbackslash{}Description}!appendText@{appendText}}
+\index{appendText@{appendText}!Hamcrest\textbackslash{}Description@{Hamcrest\textbackslash{}Description}}
+\doxysubsubsection{\texorpdfstring{appendText()}{appendText()}}
+{\footnotesize\ttfamily \label{interface_hamcrest_1_1_description_aedc8e6e555fd7759c8ccebfccc74b85b} 
+Hamcrest\textbackslash{}\+Description\+::append\+Text (\begin{DoxyParamCaption}\item[{}]{\$text}{}\end{DoxyParamCaption})}
+
+Appends some plain text to the description.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Hamcrest\textbackslash{}\+Description 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_hamcrest_1_1_base_description_a0dcce2dd1d65d42eac98356449f5364a}{Hamcrest\textbackslash{}\+Base\+Description}}, and \mbox{\hyperlink{class_hamcrest_1_1_null_description_a3d6aed951d2788441569562eb3811b7f}{Hamcrest\textbackslash{}\+Null\+Description}}.
+
+\Hypertarget{interface_hamcrest_1_1_description_a382fef344cb8b49f56de5951c5c89731}\index{Hamcrest\textbackslash{}Description@{Hamcrest\textbackslash{}Description}!appendValue@{appendValue}}
+\index{appendValue@{appendValue}!Hamcrest\textbackslash{}Description@{Hamcrest\textbackslash{}Description}}
+\doxysubsubsection{\texorpdfstring{appendValue()}{appendValue()}}
+{\footnotesize\ttfamily \label{interface_hamcrest_1_1_description_a382fef344cb8b49f56de5951c5c89731} 
+Hamcrest\textbackslash{}\+Description\+::append\+Value (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Appends an arbitary value to the description.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Hamcrest\textbackslash{}\+Description 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_hamcrest_1_1_base_description_a0bda836b4ccead604685797c2c007f41}{Hamcrest\textbackslash{}\+Base\+Description}}, and \mbox{\hyperlink{class_hamcrest_1_1_null_description_a00692b3404ec0ab45a8982f5102fd3d6}{Hamcrest\textbackslash{}\+Null\+Description}}.
+
+\Hypertarget{interface_hamcrest_1_1_description_a5624634bd27c21925c26f9bb1ca1fff4}\index{Hamcrest\textbackslash{}Description@{Hamcrest\textbackslash{}Description}!appendValueList@{appendValueList}}
+\index{appendValueList@{appendValueList}!Hamcrest\textbackslash{}Description@{Hamcrest\textbackslash{}Description}}
+\doxysubsubsection{\texorpdfstring{appendValueList()}{appendValueList()}}
+{\footnotesize\ttfamily \label{interface_hamcrest_1_1_description_a5624634bd27c21925c26f9bb1ca1fff4} 
+Hamcrest\textbackslash{}\+Description\+::append\+Value\+List (\begin{DoxyParamCaption}\item[{}]{\$start}{, }\item[{}]{\$separator}{, }\item[{}]{\$end}{, }\item[{}]{\$values}{}\end{DoxyParamCaption})}
+
+Appends a list of values to the description.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$start} & \\
+\hline
+string & {\em \$separator} & \\
+\hline
+string & {\em \$end} & \\
+\hline
+array | \textbackslash{}\+Iterator\+Aggregate | \textbackslash{}\+Iterator & {\em \$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Hamcrest\textbackslash{}\+Description 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_hamcrest_1_1_base_description_a7dee0daa11058181a38f87ff2ef3f4cf}{Hamcrest\textbackslash{}\+Base\+Description}}, and \mbox{\hyperlink{class_hamcrest_1_1_null_description_ac40f9689f1d1fa156f650883ef73fc59}{Hamcrest\textbackslash{}\+Null\+Description}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/hamcrest/hamcrest-\/php/hamcrest/\+Hamcrest/Description.\+php\end{DoxyCompactItemize}

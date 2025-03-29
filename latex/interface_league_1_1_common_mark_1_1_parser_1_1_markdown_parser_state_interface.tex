@@ -1,0 +1,55 @@
+\doxysection{League\textbackslash{}Common\+Mark\textbackslash{}Parser\textbackslash{}Markdown\+Parser\+State\+Interface Interface Reference}
+\hypertarget{interface_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_state_interface}{}\label{interface_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_state_interface}\index{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}MarkdownParserStateInterface@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}MarkdownParserStateInterface}}
+Inheritance diagram for League\textbackslash{}Common\+Mark\textbackslash{}Parser\textbackslash{}Markdown\+Parser\+State\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_state_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_state_interface_abd28391cde95fde4c1cfadd22fc4fb3d}{get\+Active\+Block\+Parser}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_state_interface_a900b108c125d140d3e5962e4adccdb75}{get\+Last\+Matched\+Block\+Parser}} ()
+\item 
+\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_state_interface_afb65c6083db310144e64af7f055515a1}{get\+Paragraph\+Content}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_state_interface_abd28391cde95fde4c1cfadd22fc4fb3d}\index{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}MarkdownParserStateInterface@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}MarkdownParserStateInterface}!getActiveBlockParser@{getActiveBlockParser}}
+\index{getActiveBlockParser@{getActiveBlockParser}!League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}MarkdownParserStateInterface@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}MarkdownParserStateInterface}}
+\doxysubsubsection{\texorpdfstring{getActiveBlockParser()}{getActiveBlockParser()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_state_interface_abd28391cde95fde4c1cfadd22fc4fb3d} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Markdown\+Parser\+State\+Interface\+::get\+Active\+Block\+Parser (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the deepest open block parser 
+
+Implemented in \mbox{\hyperlink{class_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_state_a70490389e77dc1ba39db9cb19cf5631e}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Markdown\+Parser\+State}}.
+
+\Hypertarget{interface_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_state_interface_a900b108c125d140d3e5962e4adccdb75}\index{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}MarkdownParserStateInterface@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}MarkdownParserStateInterface}!getLastMatchedBlockParser@{getLastMatchedBlockParser}}
+\index{getLastMatchedBlockParser@{getLastMatchedBlockParser}!League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}MarkdownParserStateInterface@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}MarkdownParserStateInterface}}
+\doxysubsubsection{\texorpdfstring{getLastMatchedBlockParser()}{getLastMatchedBlockParser()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_state_interface_a900b108c125d140d3e5962e4adccdb75} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Markdown\+Parser\+State\+Interface\+::get\+Last\+Matched\+Block\+Parser (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Open block parser that was last matched during the continue phase. This is different from the currently active block parser, as an unmatched block is only closed when a new block is started. 
+
+Implemented in \mbox{\hyperlink{class_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_state_a76882e871695f506c353689ea0ff84cf}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Markdown\+Parser\+State}}.
+
+\Hypertarget{interface_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_state_interface_afb65c6083db310144e64af7f055515a1}\index{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}MarkdownParserStateInterface@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}MarkdownParserStateInterface}!getParagraphContent@{getParagraphContent}}
+\index{getParagraphContent@{getParagraphContent}!League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}MarkdownParserStateInterface@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}MarkdownParserStateInterface}}
+\doxysubsubsection{\texorpdfstring{getParagraphContent()}{getParagraphContent()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_state_interface_afb65c6083db310144e64af7f055515a1} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Markdown\+Parser\+State\+Interface\+::get\+Paragraph\+Content (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current content of the paragraph if the matched block is a paragraph. The content can be multiple lines separated by newlines. 
+
+Implemented in \mbox{\hyperlink{class_league_1_1_common_mark_1_1_parser_1_1_markdown_parser_state_aa0f66b98a15b098dae046ed08f8ce77c}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Markdown\+Parser\+State}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/league/commonmark/src/\+Parser/Markdown\+Parser\+State\+Interface.\+php\end{DoxyCompactItemize}

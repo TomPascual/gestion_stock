@@ -1,0 +1,161 @@
+\doxysection{Monolog\textbackslash{}Handler\textbackslash{}Abstract\+Handler Class Reference}
+\hypertarget{class_monolog_1_1_handler_1_1_abstract_handler}{}\label{class_monolog_1_1_handler_1_1_abstract_handler}\index{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler@{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler}}
+Inheritance diagram for Monolog\textbackslash{}Handler\textbackslash{}Abstract\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.456077cm]{class_monolog_1_1_handler_1_1_abstract_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_handler_ac7aa3733ecb055b715b3bf32f2a705c2}{\+\_\+\+\_\+construct}} (int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}Level \$level=Level\+::\+Debug, bool \$bubble=true)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_handler_a4db293ae756304f9eebac94394655322}{is\+Handling}} (\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}} \$record)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_handler_a1b2969dede93d4bc0e1510a931f8ff88}{set\+Level}} (int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}Level \$level)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_handler_add1449d0c17746feec37c794a18e3a9f}{get\+Level}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_handler_a4befb1a01b856f3b8ea10194f88f6e88}{set\+Bubble}} (bool \$bubble)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_handler_a11da3967fa955d92c915a1d53d73ac72}{get\+Bubble}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_handler_a26c602e5f30eafa78995573cedd1dd02}{reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler_afc043f871cc3b239c06844659c57b1f3}{handle\+Batch}} (array \$records)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler_a9bb38a0b778020efe72622640820afb5}{close}} ()
+\item 
+{\bfseries \+\_\+\+\_\+sleep} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_monolog_1_1_handler_1_1_handler_interface}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_monolog_1_1_handler_1_1_handler_interface_a67e67137c72fdb29860ef42e9d01f3c9}{handle}} (\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}} \$record)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_monolog_1_1_handler_1_1_abstract_handler_a771c12a491e1eff47bef28f417cb5818}\label{class_monolog_1_1_handler_1_1_abstract_handler_a771c12a491e1eff47bef28f417cb5818} 
+Level {\bfseries \$level} = Level\+::\+Debug
+\item 
+\Hypertarget{class_monolog_1_1_handler_1_1_abstract_handler_a2365213b115da85eb68f123acd3c4d54}\label{class_monolog_1_1_handler_1_1_abstract_handler_a2365213b115da85eb68f123acd3c4d54} 
+bool {\bfseries \$bubble} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base Handler class providing basic level/bubble support
+
+\begin{DoxyAuthor}{Author}
+Jordi Boggiano \href{mailto:j.boggiano@seld.be}{\texttt{ j.\+boggiano@seld.\+be}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_monolog_1_1_handler_1_1_abstract_handler_ac7aa3733ecb055b715b3bf32f2a705c2}\index{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler@{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler@{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_abstract_handler_ac7aa3733ecb055b715b3bf32f2a705c2} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Handler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}Level}]{\$level}{ = {\ttfamily Level\+:\+:Debug}, }\item[{bool}]{\$bubble}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}\+Level\texorpdfstring{$\vert$}{|}\+Log\+Level\+::\texorpdfstring{$\ast$}{*}} & \$level The minimum logging level at which this handler will be triggered \\
+\hline
+bool & {\em \$bubble} & Whether the messages that are handled can bubble up the stack or not\\
+\hline
+\end{DoxyParams}
+@phpstan-\/param value-\/of\texorpdfstring{$<$}{<}Level\+::\+VALUES\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}value-\/of\texorpdfstring{$<$}{<}Level\+::\+NAMES\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}\+Level\texorpdfstring{$\vert$}{|}\+Log\+Level\+::\texorpdfstring{$\ast$}{*} \$level 
+
+Reimplemented in \mbox{\hyperlink{class_monolog_1_1_handler_1_1_chrome_p_h_p_handler_a535d6dd1b01bad8607c880cd012175ff}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Chrome\+PHPHandler}}, and \mbox{\hyperlink{class_monolog_1_1_handler_1_1_zend_monitor_handler_a556efa47d55cce8ad25950d985685d8e}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Zend\+Monitor\+Handler}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_monolog_1_1_handler_1_1_abstract_handler_a11da3967fa955d92c915a1d53d73ac72}\index{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler@{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler}!getBubble@{getBubble}}
+\index{getBubble@{getBubble}!Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler@{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler}}
+\doxysubsubsection{\texorpdfstring{getBubble()}{getBubble()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_abstract_handler_a11da3967fa955d92c915a1d53d73ac72} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Handler\+::get\+Bubble (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the bubbling behavior.
+
+\begin{DoxyReturn}{Returns}
+bool true means that this handler allows bubbling. false means that bubbling is not permitted. 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_handler_1_1_abstract_handler_add1449d0c17746feec37c794a18e3a9f}\index{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler@{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler}!getLevel@{getLevel}}
+\index{getLevel@{getLevel}!Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler@{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler}}
+\doxysubsubsection{\texorpdfstring{getLevel()}{getLevel()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_abstract_handler_add1449d0c17746feec37c794a18e3a9f} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Handler\+::get\+Level (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets minimum logging level at which this handler will be triggered. \Hypertarget{class_monolog_1_1_handler_1_1_abstract_handler_a4db293ae756304f9eebac94394655322}\index{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler@{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler}!isHandling@{isHandling}}
+\index{isHandling@{isHandling}!Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler@{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler}}
+\doxysubsubsection{\texorpdfstring{isHandling()}{isHandling()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_abstract_handler_a4db293ae756304f9eebac94394655322} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Handler\+::is\+Handling (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}}}]{\$record}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_handler_1_1_handler_interface_a62b78f4d0c923d1fff41393a9474d22d}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Interface}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_monolog_1_1_handler_1_1_sampling_handler_a45a2373d13323118cee7e3a68a3c38cb}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Sampling\+Handler}}.
+
+\Hypertarget{class_monolog_1_1_handler_1_1_abstract_handler_a26c602e5f30eafa78995573cedd1dd02}\index{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler@{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler}!reset@{reset}}
+\index{reset@{reset}!Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler@{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_abstract_handler_a26c602e5f30eafa78995573cedd1dd02} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Handler\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_resettable_interface}{Monolog\textbackslash{}\+Resettable\+Interface}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_processing_handler_a75cf32d37f779625ed639d684cee5ace}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Processing\+Handler}}, \mbox{\hyperlink{class_monolog_1_1_handler_1_1_browser_console_handler_a22ce96512ba8946e28d90c9daacffbef}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Browser\+Console\+Handler}}, \mbox{\hyperlink{class_monolog_1_1_handler_1_1_buffer_handler_a504468165f0da1a2a17f7e4f81c41f6c}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Buffer\+Handler}}, \mbox{\hyperlink{class_monolog_1_1_handler_1_1_rollbar_handler_a8882c07f9cb8173b73bcc4e9d37f9dac}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Rollbar\+Handler}}, \mbox{\hyperlink{class_monolog_1_1_handler_1_1_rotating_file_handler_a2718aa89c790f543a31433f03e331f14}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Rotating\+File\+Handler}}, \mbox{\hyperlink{class_monolog_1_1_handler_1_1_stream_handler_a4b47fa4229f0e25516fceef56a0433d0}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Stream\+Handler}}, and \mbox{\hyperlink{class_monolog_1_1_handler_1_1_test_handler_a7a51c994e9885aef48438ab40ffbfba7}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Test\+Handler}}.
+
+\Hypertarget{class_monolog_1_1_handler_1_1_abstract_handler_a4befb1a01b856f3b8ea10194f88f6e88}\index{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler@{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler}!setBubble@{setBubble}}
+\index{setBubble@{setBubble}!Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler@{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler}}
+\doxysubsubsection{\texorpdfstring{setBubble()}{setBubble()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_abstract_handler_a4befb1a01b856f3b8ea10194f88f6e88} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Handler\+::set\+Bubble (\begin{DoxyParamCaption}\item[{bool}]{\$bubble}{}\end{DoxyParamCaption})}
+
+Sets the bubbling behavior.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$bubble} & true means that this handler allows bubbling. false means that bubbling is not permitted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_handler_1_1_abstract_handler_a1b2969dede93d4bc0e1510a931f8ff88}\index{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler@{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler}!setLevel@{setLevel}}
+\index{setLevel@{setLevel}!Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler@{Monolog\textbackslash{}Handler\textbackslash{}AbstractHandler}}
+\doxysubsubsection{\texorpdfstring{setLevel()}{setLevel()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_abstract_handler_a1b2969dede93d4bc0e1510a931f8ff88} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Handler\+::set\+Level (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}Level}]{\$level}{}\end{DoxyParamCaption})}
+
+Sets minimum logging level at which this handler will be triggered.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Level\texorpdfstring{$\vert$}{|}\+Log\+Level\+::\texorpdfstring{$\ast$}{*}} & \$level Level or level name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+@phpstan-\/param value-\/of\texorpdfstring{$<$}{<}Level\+::\+VALUES\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}value-\/of\texorpdfstring{$<$}{<}Level\+::\+NAMES\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}\+Level\texorpdfstring{$\vert$}{|}\+Log\+Level\+::\texorpdfstring{$\ast$}{*} \$level 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/monolog/monolog/src/\+Monolog/\+Handler/Abstract\+Handler.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,105 @@
+\doxysection{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}Stream\+Factory\+Interface Interface Reference}
+\hypertarget{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface}{}\label{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}StreamFactoryInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}StreamFactoryInterface}}
+Inheritance diagram for Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}Stream\+Factory\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface_a6e627dc094de04fa275d543c8e14094d}{create\+Stream}} (string \$content=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface_ab818d12fa04b09cb4ffd430a1c0e6aef}{create\+Stream\+From\+File}} (string \$filename, string \$mode=\textquotesingle{}r\textquotesingle{})
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface_a44f013bf7b4635b6fac77791da305bb2}{create\+Stream\+From\+Resource}} (\$resource)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface_a6e627dc094de04fa275d543c8e14094d}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}StreamFactoryInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}StreamFactoryInterface}!createStream@{createStream}}
+\index{createStream@{createStream}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}StreamFactoryInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}StreamFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{createStream()}{createStream()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface_a6e627dc094de04fa275d543c8e14094d} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Stream\+Factory\+Interface\+::create\+Stream (\begin{DoxyParamCaption}\item[{string}]{\$content}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a new stream from a string.
+
+The stream SHOULD be created with a temporary resource.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & String content with which to populate the stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Stream\+Interface 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_http_factory_a0c0263fe69d53252ad316ea5699d2642}{Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Http\+Factory}}.
+
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface_ab818d12fa04b09cb4ffd430a1c0e6aef}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}StreamFactoryInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}StreamFactoryInterface}!createStreamFromFile@{createStreamFromFile}}
+\index{createStreamFromFile@{createStreamFromFile}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}StreamFactoryInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}StreamFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{createStreamFromFile()}{createStreamFromFile()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface_ab818d12fa04b09cb4ffd430a1c0e6aef} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Stream\+Factory\+Interface\+::create\+Stream\+From\+File (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{string}]{\$mode}{ = {\ttfamily \textquotesingle{}r\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a stream from an existing file.
+
+The file MUST be opened using the given mode, which may be any mode supported by the {\ttfamily fopen} function.
+
+The {\ttfamily \$filename} MAY be any string supported by {\ttfamily fopen()}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & Filename or stream URI to use as basis of stream. \\
+\hline
+string & {\em \$mode} & Mode with which to open the underlying filename/stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Stream\+Interface 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception If the file cannot be opened. 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception If the mode is invalid. 
+
+Implemented in \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_http_factory_a0c0072bfddab4999ef37a9124638f296}{Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Http\+Factory}}.
+
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface_a44f013bf7b4635b6fac77791da305bb2}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}StreamFactoryInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}StreamFactoryInterface}!createStreamFromResource@{createStreamFromResource}}
+\index{createStreamFromResource@{createStreamFromResource}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}StreamFactoryInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}StreamFactoryInterface}}
+\doxysubsubsection{\texorpdfstring{createStreamFromResource()}{createStreamFromResource()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_stream_factory_interface_a44f013bf7b4635b6fac77791da305bb2} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Stream\+Factory\+Interface\+::create\+Stream\+From\+Resource (\begin{DoxyParamCaption}\item[{}]{\$resource}{}\end{DoxyParamCaption})}
+
+Create a new stream from an existing resource.
+
+The stream MUST be readable and may be writable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+resource & {\em \$resource} & PHP resource to use as basis of stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Stream\+Interface 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_http_factory_afe3a983ffa10a61928919df82bbce5ec}{Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Http\+Factory}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psr/http-\/factory/src/Stream\+Factory\+Interface.\+php\end{DoxyCompactItemize}

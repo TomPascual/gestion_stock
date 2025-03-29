@@ -1,0 +1,72 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_component_1_1_routing_1_1_router_interface}{}\label{interface_symfony_1_1_component_1_1_routing_1_1_router_interface}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouterInterface@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouterInterface}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}Router\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.027027cm]{interface_symfony_1_1_component_1_1_routing_1_1_router_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_router_interface_ad9cc67a8e3d248b54035e8f399a4c694}{get\+Route\+Collection}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_matcher_1_1_url_matcher_interface}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Matcher\textbackslash{}\+Url\+Matcher\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_matcher_1_1_url_matcher_interface_a8dfc5147c204c0c5a8d1869007cb13d3}{match}} (string \$pathinfo)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_request_context_aware_interface}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Request\+Context\+Aware\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_request_context_aware_interface_a6dfa45b8d2ac2292c28dd816ccf2dae1}{set\+Context}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_request_context}{Request\+Context}} \$context)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_request_context_aware_interface_a2bac55ce4790b56572e3f11c4bbae028}{get\+Context}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Url\+Generator\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface_a5866e4cf5e898c0915f01c52e68911d6}{generate}} (string \$name, array \$parameters=\mbox{[}$\,$\mbox{]}, int \$reference\+Type=self\+::\+ABSOLUTE\+\_\+\+PATH)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Generator\textbackslash{}\+Url\+Generator\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface_ab63738022a126499c9a408ea2d94ac82}{ABSOLUTE\+\_\+\+URL}} = 0
+\item 
+const \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface_a8be266fca6d8c5e74c23674935efba50}{ABSOLUTE\+\_\+\+PATH}} = 1
+\item 
+const \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface_ad9f0f70794b29744229890dca6b49876}{RELATIVE\+\_\+\+PATH}} = 2
+\item 
+const \mbox{\hyperlink{interface_symfony_1_1_component_1_1_routing_1_1_generator_1_1_url_generator_interface_a5a3d861947183074b954968bd2cdab1d}{NETWORK\+\_\+\+PATH}} = 3
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Router\+Interface is the interface that all Router classes must implement.
+
+This interface is the concatenation of Url\+Matcher\+Interface and Url\+Generator\+Interface.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_component_1_1_routing_1_1_router_interface_ad9cc67a8e3d248b54035e8f399a4c694}\index{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouterInterface@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouterInterface}!getRouteCollection@{getRouteCollection}}
+\index{getRouteCollection@{getRouteCollection}!Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouterInterface@{Symfony\textbackslash{}Component\textbackslash{}Routing\textbackslash{}RouterInterface}}
+\doxysubsubsection{\texorpdfstring{getRouteCollection()}{getRouteCollection()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_routing_1_1_router_interface_ad9cc67a8e3d248b54035e8f399a4c694} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Router\+Interface\+::get\+Route\+Collection (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the Route\+Collection instance associated with this Router.
+
+WARNING\+: This method should never be used at runtime as it is SLOW. You might use it in a cache warmer though. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_routing_1_1_router_a48b52339e72162b9b584ae5d1c008f8f}{Symfony\textbackslash{}\+Component\textbackslash{}\+Routing\textbackslash{}\+Router}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/routing/Router\+Interface.\+php\end{DoxyCompactItemize}

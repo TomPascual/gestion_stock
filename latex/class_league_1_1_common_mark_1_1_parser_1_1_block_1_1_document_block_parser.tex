@@ -1,0 +1,92 @@
+\doxysection{League\textbackslash{}Common\+Mark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}Document\+Block\+Parser Class Reference}
+\hypertarget{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser}{}\label{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser}\index{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser}}
+Inheritance diagram for League\textbackslash{}Common\+Mark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}Document\+Block\+Parser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_ab110dfbd93ddd87a9865cd2e2573562b}\label{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_ab110dfbd93ddd87a9865cd2e2573562b} 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_reference_1_1_reference_map_interface}{Reference\+Map\+Interface}} \$reference\+Map)
+\item 
+\mbox{\hyperlink{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_ab327e9d7caa9eb50a375cd5495d6e855}{get\+Block}} ()
+\item 
+\mbox{\hyperlink{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_acf52705da0f140515253c03501b5a549}{is\+Container}} ()
+\item 
+\mbox{\hyperlink{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_a710ffb0b9d811cfd450c2db900aa95d3}{can\+Contain}} (\mbox{\hyperlink{class_league_1_1_common_mark_1_1_node_1_1_block_1_1_abstract_block}{Abstract\+Block}} \$child\+Block)
+\item 
+\mbox{\hyperlink{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_a1812db21eba2d291d6c03ce2a2fd612b}{try\+Continue}} (\mbox{\hyperlink{class_league_1_1_common_mark_1_1_parser_1_1_cursor}{Cursor}} \$cursor, \mbox{\hyperlink{interface_league_1_1_common_mark_1_1_parser_1_1_block_1_1_block_continue_parser_interface}{Block\+Continue\+Parser\+Interface}} \$active\+Block\+Parser)
+\item 
+\mbox{\hyperlink{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_a7938977b028e17872e1e5926ccfdd522}{close\+Block}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_abstract_block_continue_parser}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Block\textbackslash{}\+Abstract\+Block\+Continue\+Parser}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_abstract_block_continue_parser_ae3df1e41468169841db7280aa731722e}{can\+Have\+Lazy\+Continuation\+Lines}} ()
+\item 
+\mbox{\hyperlink{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_abstract_block_continue_parser_acc032aa53ffc7379c9388c05b0c0f0b3}{add\+Line}} (string \$line)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Parser implementation which ensures everything is added to the root-\/level Document 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_a710ffb0b9d811cfd450c2db900aa95d3}\index{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser}!canContain@{canContain}}
+\index{canContain@{canContain}!League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser}}
+\doxysubsubsection{\texorpdfstring{canContain()}{canContain()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_a710ffb0b9d811cfd450c2db900aa95d3} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Block\textbackslash{}\+Document\+Block\+Parser\+::can\+Contain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_league_1_1_common_mark_1_1_node_1_1_block_1_1_abstract_block}{Abstract\+Block}}}]{\$child\+Block}{}\end{DoxyParamCaption})}
+
+Determine whether the current block being parsed can contain the given child block 
+
+Reimplemented from \mbox{\hyperlink{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_abstract_block_continue_parser_ad090eaefb2ef5cf7d3691a3fee6cf1cf}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Block\textbackslash{}\+Abstract\+Block\+Continue\+Parser}}.
+
+\Hypertarget{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_a7938977b028e17872e1e5926ccfdd522}\index{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser}!closeBlock@{closeBlock}}
+\index{closeBlock@{closeBlock}!League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser}}
+\doxysubsubsection{\texorpdfstring{closeBlock()}{closeBlock()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_a7938977b028e17872e1e5926ccfdd522} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Block\textbackslash{}\+Document\+Block\+Parser\+::close\+Block (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Close and finalize the current block 
+
+Reimplemented from \mbox{\hyperlink{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_abstract_block_continue_parser_a4bd80428b8612269a9a8dda48aa70404}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Block\textbackslash{}\+Abstract\+Block\+Continue\+Parser}}.
+
+\Hypertarget{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_ab327e9d7caa9eb50a375cd5495d6e855}\index{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser}!getBlock@{getBlock}}
+\index{getBlock@{getBlock}!League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser}}
+\doxysubsubsection{\texorpdfstring{getBlock()}{getBlock()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_ab327e9d7caa9eb50a375cd5495d6e855} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Block\textbackslash{}\+Document\+Block\+Parser\+::get\+Block (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return the current block being parsed by this parser 
+
+Implements \mbox{\hyperlink{interface_league_1_1_common_mark_1_1_parser_1_1_block_1_1_block_continue_parser_interface_ad844c08678ccd808138148fd103b8521}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Block\textbackslash{}\+Block\+Continue\+Parser\+Interface}}.
+
+\Hypertarget{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_acf52705da0f140515253c03501b5a549}\index{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser}!isContainer@{isContainer}}
+\index{isContainer@{isContainer}!League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser}}
+\doxysubsubsection{\texorpdfstring{isContainer()}{isContainer()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_acf52705da0f140515253c03501b5a549} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Block\textbackslash{}\+Document\+Block\+Parser\+::is\+Container (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return whether we are parsing a container block 
+
+Reimplemented from \mbox{\hyperlink{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_abstract_block_continue_parser_ad98c21c77de34291686025efaba18016}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Block\textbackslash{}\+Abstract\+Block\+Continue\+Parser}}.
+
+\Hypertarget{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_a1812db21eba2d291d6c03ce2a2fd612b}\index{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser}!tryContinue@{tryContinue}}
+\index{tryContinue@{tryContinue}!League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser@{League\textbackslash{}CommonMark\textbackslash{}Parser\textbackslash{}Block\textbackslash{}DocumentBlockParser}}
+\doxysubsubsection{\texorpdfstring{tryContinue()}{tryContinue()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_parser_1_1_block_1_1_document_block_parser_a1812db21eba2d291d6c03ce2a2fd612b} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Block\textbackslash{}\+Document\+Block\+Parser\+::try\+Continue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_league_1_1_common_mark_1_1_parser_1_1_cursor}{Cursor}}}]{\$cursor}{, }\item[{\mbox{\hyperlink{interface_league_1_1_common_mark_1_1_parser_1_1_block_1_1_block_continue_parser_interface}{Block\+Continue\+Parser\+Interface}}}]{\$active\+Block\+Parser}{}\end{DoxyParamCaption})}
+
+Attempt to parse the given line 
+
+Implements \mbox{\hyperlink{interface_league_1_1_common_mark_1_1_parser_1_1_block_1_1_block_continue_parser_interface_af0998b66a3bc2b97e524bb39b51e0a5a}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Parser\textbackslash{}\+Block\textbackslash{}\+Block\+Continue\+Parser\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/league/commonmark/src/\+Parser/\+Block/Document\+Block\+Parser.\+php\end{DoxyCompactItemize}

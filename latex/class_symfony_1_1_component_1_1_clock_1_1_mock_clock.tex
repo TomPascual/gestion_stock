@@ -1,0 +1,91 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Mock\+Clock Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_clock_1_1_mock_clock}{}\label{class_symfony_1_1_component_1_1_clock_1_1_mock_clock}\index{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock@{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}Mock\+Clock\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_clock_1_1_mock_clock}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a3837854126953468475af955276236b9}{\+\_\+\+\_\+construct}} (\textbackslash{}Date\+Time\+Immutable\texorpdfstring{$\vert$}{|}string \$\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a4bc292300a0c67bb2c20872c562dce8a}{now}}=\textquotesingle{}\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a4bc292300a0c67bb2c20872c562dce8a}{now}}\textquotesingle{}, \textbackslash{}Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$timezone=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a4bc292300a0c67bb2c20872c562dce8a}{now}} ()
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a8c5048c4e2fda2d0f2d72b92be2043cf}\label{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a8c5048c4e2fda2d0f2d72b92be2043cf} 
+{\bfseries sleep} (float\texorpdfstring{$\vert$}{|}int \$seconds)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a4302f5a8748e4b801ead17b62848e3b8}{modify}} (string \$modifier)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a0e26152976d24d4bcbf65e97736e6c49}{with\+Time\+Zone}} (\textbackslash{}Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string \$timezone)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A clock that always returns the same date, suitable for testing time-\/sensitive logic.
+
+Consider using Clock\+Sensitive\+Trait in your test cases instead of using this class directly.
+
+\begin{DoxyAuthor}{Author}
+Nicolas Grekas \href{mailto:p@tchwork.com}{\texttt{ p@tchwork.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a3837854126953468475af955276236b9}\index{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock@{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock@{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a3837854126953468475af955276236b9} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Clock\textbackslash{}\+Mock\+Clock\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\textbackslash{}Date\+Time\+Immutable\texorpdfstring{$\vert$}{|}string}]{\$now}{ = {\ttfamily \textquotesingle{}\mbox{\hyperlink{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a4bc292300a0c67bb2c20872c562dce8a}{now}}\textquotesingle{}}, }\item[{\textbackslash{}Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$timezone}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Date\+Malformed\+String\+Exception When \$now is invalid 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Date\+Invalid\+Time\+Zone\+Exception When \$timezone is invalid 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a4302f5a8748e4b801ead17b62848e3b8}\index{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock@{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock}!modify@{modify}}
+\index{modify@{modify}!Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock@{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock}}
+\doxysubsubsection{\texorpdfstring{modify()}{modify()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a4302f5a8748e4b801ead17b62848e3b8} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Clock\textbackslash{}\+Mock\+Clock\+::modify (\begin{DoxyParamCaption}\item[{string}]{\$modifier}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Date\+Malformed\+String\+Exception When \$modifier is invalid \Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a4bc292300a0c67bb2c20872c562dce8a}\index{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock@{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock}!now@{now}}
+\index{now@{now}!Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock@{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock}}
+\doxysubsubsection{\texorpdfstring{now()}{now()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a4bc292300a0c67bb2c20872c562dce8a} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Clock\textbackslash{}\+Mock\+Clock\+::now (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current time as a Date\+Time\+Immutable Object 
+
+Implements \mbox{\hyperlink{interface_psr_1_1_clock_1_1_clock_interface_a9ec1aeae2b196df5cd267723b862b3a7}{Psr\textbackslash{}\+Clock\textbackslash{}\+Clock\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a0e26152976d24d4bcbf65e97736e6c49}\index{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock@{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock}!withTimeZone@{withTimeZone}}
+\index{withTimeZone@{withTimeZone}!Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock@{Symfony\textbackslash{}Component\textbackslash{}Clock\textbackslash{}MockClock}}
+\doxysubsubsection{\texorpdfstring{withTimeZone()}{withTimeZone()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_clock_1_1_mock_clock_a0e26152976d24d4bcbf65e97736e6c49} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Clock\textbackslash{}\+Mock\+Clock\+::with\+Time\+Zone (\begin{DoxyParamCaption}\item[{\textbackslash{}Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string}]{\$timezone}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Date\+Invalid\+Time\+Zone\+Exception When the timezone name is invalid 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/clock/Mock\+Clock.\+php\end{DoxyCompactItemize}

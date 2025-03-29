@@ -1,0 +1,735 @@
+\doxysection{Monolog\textbackslash{}Logger Class Reference}
+\hypertarget{class_monolog_1_1_logger}{}\label{class_monolog_1_1_logger}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+Inheritance diagram for Monolog\textbackslash{}Logger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_monolog_1_1_logger}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_ab140af37b1cccbfa258f96018311fe6c}{\+\_\+\+\_\+construct}} (string \$name, array \$handlers=\mbox{[}$\,$\mbox{]}, array \$processors=\mbox{[}$\,$\mbox{]}, Date\+Time\+Zone\texorpdfstring{$\vert$}{|}null \$timezone=null)
+\item 
+\Hypertarget{class_monolog_1_1_logger_abccad4d5e2d03a27c19b7fd5ca2efd20}\label{class_monolog_1_1_logger_abccad4d5e2d03a27c19b7fd5ca2efd20} 
+{\bfseries get\+Name} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a1c7a10099bce1feba487344486713871}{with\+Name}} (string \$name)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a112ab07a6032f0e6c7a290c7c1fb14e1}{push\+Handler}} (\mbox{\hyperlink{interface_monolog_1_1_handler_1_1_handler_interface}{Handler\+Interface}} \$handler)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_aa37d210dbb036735aece4b9cbb4fc67f}{pop\+Handler}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a1808c675af21c044f8552a0b0e56833f}{set\+Handlers}} (array \$handlers)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a7489bc656ee2b50ec74110b8bdbd47e8}{get\+Handlers}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a04b192d3dda7745db05940b264d5443d}{push\+Processor}} (\mbox{\hyperlink{interface_monolog_1_1_processor_1_1_processor_interface}{Processor\+Interface}}\texorpdfstring{$\vert$}{|}callable \$callback)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a720f8ba4bba0eb1117b2fbf517e1f5a7}{pop\+Processor}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_ace2656678f686018d7780b2b2c6da95b}{get\+Processors}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a078ef70bbbb99f84738f189f2945958e}{use\+Microsecond\+Timestamps}} (bool \$micro)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a49c20090ecaa286ccf1d8c65fd0c25c2}{use\+Logging\+Loop\+Detection}} (bool \$detect\+Cycles)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a2652ff32458f7365d57b06cce32d822d}{add\+Record}} (int\texorpdfstring{$\vert$}{|}Level \$level, string \$message, array \$context=\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{class_monolog_1_1_json_serializable_date_time_immutable}{Json\+Serializable\+Date\+Time\+Immutable}}\texorpdfstring{$\vert$}{|}null \$datetime=null)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_aa9e61be6f40645708842e2cba90d0a2c}{close}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a60ce4530acac43d65a92b01ca0e597d7}{reset}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_adac88c1e2413549059cb547fb99f6c77}{is\+Handling}} (int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}Level \$level)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_af89b5f5f52cdefeee9899b080b7b3655}{set\+Exception\+Handler}} (Closure\texorpdfstring{$\vert$}{|}null \$callback)
+\item 
+\Hypertarget{class_monolog_1_1_logger_a3d3c147d081be50d6cec29a0e20a5f3f}\label{class_monolog_1_1_logger_a3d3c147d081be50d6cec29a0e20a5f3f} 
+{\bfseries get\+Exception\+Handler} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a60f7901cf4fc92e45ff0b1b7ce142665}{log}} (\$level, string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_aec2e39dd7406d286fdac8086799ba493}{debug}} (string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a53d386dcf4ea73cb09e9865b1f6432c0}{info}} (string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a8ae9631f3d17ddb6015189842287b9d2}{notice}} (string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a3e1508a23acd28b7308d996476ab814e}{warning}} (string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a7cfc375269d438168619d135931581f7}{error}} (string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a9ea863ed0c65b37ec76e145795e0f95f}{critical}} (string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a2b07fbb0e9c93039a19f410774df82cc}{alert}} (string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a10486b0907809d85976d5381769454ef}{emergency}} (string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable \$message, array \$context=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_ae3265bf1f477479f23cb3aab1abb30f8}{set\+Timezone}} (Date\+Time\+Zone \$tz)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a7deaacdb111b78e795da872982a2dcb0}{get\+Timezone}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_af221056fd648652880ba015a548cc94a}{\+\_\+\+\_\+serialize}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_ac4773be9484540aa6172ef972d2efdb5}{\+\_\+\+\_\+unserialize}} (array \$data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_monolog_1_1_logger_a9f836823f9dd8789d6d2d80ef84a0a00}{get\+Level\+Name}} (int\texorpdfstring{$\vert$}{|}Level \$level)
+\item 
+static \mbox{\hyperlink{class_monolog_1_1_logger_a9c8ed4ef800979a1e8bd7496176ec44e}{to\+Monolog\+Level}} (string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}Level \$level)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_monolog_1_1_logger_ae2cb6f88fa87e09b1d8c355a2477b9bf}{DEBUG}} = 100
+\item 
+const \mbox{\hyperlink{class_monolog_1_1_logger_abc97a22650dfd188c44f4eedd74f90c4}{INFO}} = 200
+\item 
+const \mbox{\hyperlink{class_monolog_1_1_logger_af42abdf8b3a233980b62cfba1a093bbf}{NOTICE}} = 250
+\item 
+const \mbox{\hyperlink{class_monolog_1_1_logger_aa7f7b657ebaef94d93c93ff472556431}{WARNING}} = 300
+\item 
+const \mbox{\hyperlink{class_monolog_1_1_logger_a49efb7c5d80f3d4d1546628ed3d7753e}{ERROR}} = 400
+\item 
+const \mbox{\hyperlink{class_monolog_1_1_logger_a4d1a1c7785e99dfc31f302b567802004}{CRITICAL}} = 500
+\item 
+const \mbox{\hyperlink{class_monolog_1_1_logger_af74503fc81aaad651239aca88b335fca}{ALERT}} = 550
+\item 
+const \mbox{\hyperlink{class_monolog_1_1_logger_a0f8af2e6f2bf3b1e0225cdedcbdc76d8}{EMERGENCY}} = 600
+\item 
+const \mbox{\hyperlink{class_monolog_1_1_logger_a32beb2a875e3882b7d19626b4b3a3e23}{API}} = 3
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monolog_1_1_logger_a7f2de74a9e4dbb0876c867a49861c567}{handle\+Exception}} (Throwable \$e, \mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}} \$record)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_monolog_1_1_logger_a39c0be929048f2387d5070d12ebdbdd6}\label{class_monolog_1_1_logger_a39c0be929048f2387d5070d12ebdbdd6} 
+string {\bfseries \$name}
+\item 
+\Hypertarget{class_monolog_1_1_logger_a1f53f8106fb1f64916f7982e664c9cc9}\label{class_monolog_1_1_logger_a1f53f8106fb1f64916f7982e664c9cc9} 
+array {\bfseries \$handlers}
+\item 
+\Hypertarget{class_monolog_1_1_logger_a06fc81d6c7f07bc922589900fd1ffa3f}\label{class_monolog_1_1_logger_a06fc81d6c7f07bc922589900fd1ffa3f} 
+array {\bfseries \$processors}
+\item 
+\Hypertarget{class_monolog_1_1_logger_aa18717df99fd6e262d6a6524b729d1b1}\label{class_monolog_1_1_logger_aa18717df99fd6e262d6a6524b729d1b1} 
+bool {\bfseries \$microsecond\+Timestamps} = true
+\item 
+\Hypertarget{class_monolog_1_1_logger_a0d7587ee5a1f10b97555f311f8688fb9}\label{class_monolog_1_1_logger_a0d7587ee5a1f10b97555f311f8688fb9} 
+Date\+Time\+Zone {\bfseries \$timezone}
+\item 
+\Hypertarget{class_monolog_1_1_logger_a02660fd4bbd3ecde3329651a83014e20}\label{class_monolog_1_1_logger_a02660fd4bbd3ecde3329651a83014e20} 
+Closure null {\bfseries \$exception\+Handler} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Monolog log channel
+
+It contains a stack of Handlers and a stack of Processors, and uses them to store records that are added to it.
+
+\begin{DoxyAuthor}{Author}
+Jordi Boggiano \href{mailto:j.boggiano@seld.be}{\texttt{ j.\+boggiano@seld.\+be}} @final 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_monolog_1_1_logger_ab140af37b1cccbfa258f96018311fe6c}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_ab140af37b1cccbfa258f96018311fe6c} 
+Monolog\textbackslash{}\+Logger\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{array}]{\$handlers}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$processors}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{Date\+Time\+Zone\texorpdfstring{$\vert$}{|}null}]{\$timezone}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The logging channel, a simple descriptive name that is attached to all log records \\
+\hline
+ & {\em list$<$\+Handler\+Interface$>$} & \$handlers Optional stack of handlers, the first one in the array is called first, etc. \\
+\hline
+callable\mbox{[}$\,$\mbox{]} & {\em \$processors} & Optional array of processors \\
+\hline
+Date\+Time\+Zone | null & {\em \$timezone} & Optional timezone, if not provided date\+\_\+default\+\_\+timezone\+\_\+get() will be used\\
+\hline
+\end{DoxyParams}
+@phpstan-\/param array\texorpdfstring{$<$}{<}(callable(\+Log\+Record)\+: Log\+Record)\texorpdfstring{$\vert$}{|}\+Processor\+Interface\texorpdfstring{$>$}{>} \$processors 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_monolog_1_1_logger_af221056fd648652880ba015a548cc94a}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!\_\_serialize@{\_\_serialize}}
+\index{\_\_serialize@{\_\_serialize}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{\_\_serialize()}{\_\_serialize()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_af221056fd648652880ba015a548cc94a} 
+Monolog\textbackslash{}\+Logger\+::\+\_\+\+\_\+serialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_logger_ac4773be9484540aa6172ef972d2efdb5}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!\_\_unserialize@{\_\_unserialize}}
+\index{\_\_unserialize@{\_\_unserialize}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{\_\_unserialize()}{\_\_unserialize()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_ac4773be9484540aa6172ef972d2efdb5} 
+Monolog\textbackslash{}\+Logger\+::\+\_\+\+\_\+unserialize (\begin{DoxyParamCaption}\item[{array}]{\$data}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$data \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_monolog_1_1_logger_a2652ff32458f7365d57b06cce32d822d}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!addRecord@{addRecord}}
+\index{addRecord@{addRecord}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{addRecord()}{addRecord()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a2652ff32458f7365d57b06cce32d822d} 
+Monolog\textbackslash{}\+Logger\+::add\+Record (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}Level}]{\$level}{, }\item[{string}]{\$message}{, }\item[{array}]{\$context}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{\mbox{\hyperlink{class_monolog_1_1_json_serializable_date_time_immutable}{Json\+Serializable\+Date\+Time\+Immutable}}\texorpdfstring{$\vert$}{|}null}]{\$datetime}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Adds a log record.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$level} & The logging level (a Monolog or RFC 5424 level) \\
+\hline
+string & {\em \$message} & The log message \\
+\hline
+mixed\mbox{[}$\,$\mbox{]} & {\em \$context} & The log context \\
+\hline
+Json\+Serializable\+Date\+Time\+Immutable | null & {\em \$datetime} & Optional log date to log into the past or future\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Whether the record has been processed
+\end{DoxyReturn}
+@phpstan-\/param value-\/of\texorpdfstring{$<$}{<}Level\+::\+VALUES\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}\+Level \$level \Hypertarget{class_monolog_1_1_logger_a2b07fbb0e9c93039a19f410774df82cc}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!alert@{alert}}
+\index{alert@{alert}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{alert()}{alert()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a2b07fbb0e9c93039a19f410774df82cc} 
+Monolog\textbackslash{}\+Logger\+::alert (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable}]{\$message}{, }\item[{array}]{\$context}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Adds a log record at the ALERT level.
+
+This method allows for compatibility with common interfaces.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Stringable & {\em \$message} & The log message \\
+\hline
+mixed\mbox{[}$\,$\mbox{]} & {\em \$context} & The log context \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_a55179e427a94ae27bba8180f47723fe9}{Psr\textbackslash{}\+Log\textbackslash{}\+Logger\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_logger_aa9e61be6f40645708842e2cba90d0a2c}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!close@{close}}
+\index{close@{close}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_aa9e61be6f40645708842e2cba90d0a2c} 
+Monolog\textbackslash{}\+Logger\+::close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Ends a log cycle and frees all resources used by handlers.
+
+Closing a Handler means flushing all buffers and freeing any open resources/handles. Handlers that have been closed should be able to accept log records again and re-\/open themselves on demand, but this may not always be possible depending on implementation.
+
+This is useful at the end of a request and will be called automatically on every handler when they get destructed. \Hypertarget{class_monolog_1_1_logger_a9ea863ed0c65b37ec76e145795e0f95f}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!critical@{critical}}
+\index{critical@{critical}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{critical()}{critical()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a9ea863ed0c65b37ec76e145795e0f95f} 
+Monolog\textbackslash{}\+Logger\+::critical (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable}]{\$message}{, }\item[{array}]{\$context}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Adds a log record at the CRITICAL level.
+
+This method allows for compatibility with common interfaces.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Stringable & {\em \$message} & The log message \\
+\hline
+mixed\mbox{[}$\,$\mbox{]} & {\em \$context} & The log context \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_af40cc3669b78654a1eda232189c1be55}{Psr\textbackslash{}\+Log\textbackslash{}\+Logger\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_logger_aec2e39dd7406d286fdac8086799ba493}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!debug@{debug}}
+\index{debug@{debug}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_aec2e39dd7406d286fdac8086799ba493} 
+Monolog\textbackslash{}\+Logger\+::debug (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable}]{\$message}{, }\item[{array}]{\$context}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Adds a log record at the DEBUG level.
+
+This method allows for compatibility with common interfaces.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Stringable & {\em \$message} & The log message \\
+\hline
+mixed\mbox{[}$\,$\mbox{]} & {\em \$context} & The log context \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_ac8e5c5e7fac367087de201b6261939c1}{Psr\textbackslash{}\+Log\textbackslash{}\+Logger\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_logger_a10486b0907809d85976d5381769454ef}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!emergency@{emergency}}
+\index{emergency@{emergency}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{emergency()}{emergency()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a10486b0907809d85976d5381769454ef} 
+Monolog\textbackslash{}\+Logger\+::emergency (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable}]{\$message}{, }\item[{array}]{\$context}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Adds a log record at the EMERGENCY level.
+
+This method allows for compatibility with common interfaces.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Stringable & {\em \$message} & The log message \\
+\hline
+mixed\mbox{[}$\,$\mbox{]} & {\em \$context} & The log context \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_a4843fab307ff69f85ff2d48e6e24deb7}{Psr\textbackslash{}\+Log\textbackslash{}\+Logger\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_logger_a7cfc375269d438168619d135931581f7}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!error@{error}}
+\index{error@{error}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a7cfc375269d438168619d135931581f7} 
+Monolog\textbackslash{}\+Logger\+::error (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable}]{\$message}{, }\item[{array}]{\$context}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Adds a log record at the ERROR level.
+
+This method allows for compatibility with common interfaces.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Stringable & {\em \$message} & The log message \\
+\hline
+mixed\mbox{[}$\,$\mbox{]} & {\em \$context} & The log context \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_af92fb724195a60b1cb6a7c3b717bad44}{Psr\textbackslash{}\+Log\textbackslash{}\+Logger\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_logger_a7489bc656ee2b50ec74110b8bdbd47e8}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!getHandlers@{getHandlers}}
+\index{getHandlers@{getHandlers}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{getHandlers()}{getHandlers()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a7489bc656ee2b50ec74110b8bdbd47e8} 
+Monolog\textbackslash{}\+Logger\+::get\+Handlers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+list$<$\+Handler\+Interface$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_logger_a9f836823f9dd8789d6d2d80ef84a0a00}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!getLevelName@{getLevelName}}
+\index{getLevelName@{getLevelName}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{getLevelName()}{getLevelName()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a9f836823f9dd8789d6d2d80ef84a0a00} 
+static Monolog\textbackslash{}\+Logger\+::get\+Level\+Name (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}Level}]{\$level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets the name of the logging level as a string.
+
+This still returns a string instead of a Level for BC, but new code should not rely on this method.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Psr\textbackslash{}\+Log\textbackslash{}\+Invalid\+Argument\+Exception If level is not defined
+
+@phpstan-\/param value-\/of\texorpdfstring{$<$}{<}Level\+::\+VALUES\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}\+Level \$level @phpstan-\/return value-\/of\texorpdfstring{$<$}{<}Level\+::\+NAMES\texorpdfstring{$>$}{>}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000126}{Deprecated}}]Since 3.\+0, use \{\end{DoxyRefDesc}
+\begin{DoxySeeAlso}{See also}
+to\+Monolog\+Level\} or \{
+
+\textbackslash{}\+Monolog\textbackslash{}\+Level-\/\texorpdfstring{$>$}{>}get\+Name()\} instead 
+\end{DoxySeeAlso}
+\Hypertarget{class_monolog_1_1_logger_ace2656678f686018d7780b2b2c6da95b}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!getProcessors@{getProcessors}}
+\index{getProcessors@{getProcessors}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{getProcessors()}{getProcessors()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_ace2656678f686018d7780b2b2c6da95b} 
+Monolog\textbackslash{}\+Logger\+::get\+Processors (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+callable\mbox{[}\mbox{]} @phpstan-\/return array\texorpdfstring{$<$}{<}Processor\+Interface\texorpdfstring{$\vert$}{|}(callable(\+Log\+Record)\+: Log\+Record)\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_logger_a7deaacdb111b78e795da872982a2dcb0}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!getTimezone@{getTimezone}}
+\index{getTimezone@{getTimezone}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{getTimezone()}{getTimezone()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a7deaacdb111b78e795da872982a2dcb0} 
+Monolog\textbackslash{}\+Logger\+::get\+Timezone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the timezone to be used for the timestamp of log records. \Hypertarget{class_monolog_1_1_logger_a7f2de74a9e4dbb0876c867a49861c567}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!handleException@{handleException}}
+\index{handleException@{handleException}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{handleException()}{handleException()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a7f2de74a9e4dbb0876c867a49861c567} 
+Monolog\textbackslash{}\+Logger\+::handle\+Exception (\begin{DoxyParamCaption}\item[{Throwable}]{\$e}{, }\item[{\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}}}]{\$record}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Delegates exception management to the custom exception handler, or throws the exception if no custom handler is set. \Hypertarget{class_monolog_1_1_logger_a53d386dcf4ea73cb09e9865b1f6432c0}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!info@{info}}
+\index{info@{info}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a53d386dcf4ea73cb09e9865b1f6432c0} 
+Monolog\textbackslash{}\+Logger\+::info (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable}]{\$message}{, }\item[{array}]{\$context}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Adds a log record at the INFO level.
+
+This method allows for compatibility with common interfaces.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Stringable & {\em \$message} & The log message \\
+\hline
+mixed\mbox{[}$\,$\mbox{]} & {\em \$context} & The log context \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_a741006b64755db72e2b7016d73416a3d}{Psr\textbackslash{}\+Log\textbackslash{}\+Logger\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_logger_adac88c1e2413549059cb547fb99f6c77}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!isHandling@{isHandling}}
+\index{isHandling@{isHandling}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{isHandling()}{isHandling()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_adac88c1e2413549059cb547fb99f6c77} 
+Monolog\textbackslash{}\+Logger\+::is\+Handling (\begin{DoxyParamCaption}\item[{int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}Level}]{\$level}{}\end{DoxyParamCaption})}
+
+Checks whether the Logger has a handler that listens on the given level
+
+@phpstan-\/param value-\/of\texorpdfstring{$<$}{<}Level\+::\+VALUES\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}value-\/of\texorpdfstring{$<$}{<}Level\+::\+NAMES\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}\+Level\texorpdfstring{$\vert$}{|}\+Log\+Level\+::\texorpdfstring{$\ast$}{*} \$level \Hypertarget{class_monolog_1_1_logger_a60f7901cf4fc92e45ff0b1b7ce142665}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!log@{log}}
+\index{log@{log}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a60f7901cf4fc92e45ff0b1b7ce142665} 
+Monolog\textbackslash{}\+Logger\+::log (\begin{DoxyParamCaption}\item[{}]{\$level}{, }\item[{string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable}]{\$message}{, }\item[{array}]{\$context}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Adds a log record at an arbitrary level.
+
+This method allows for compatibility with common interfaces.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$level} & The log level (a Monolog, PSR-\/3 or RFC 5424 level) \\
+\hline
+string | Stringable & {\em \$message} & The log message \\
+\hline
+mixed\mbox{[}$\,$\mbox{]} & {\em \$context} & The log context\\
+\hline
+\end{DoxyParams}
+@phpstan-\/param Level\texorpdfstring{$\vert$}{|}\+Log\+Level\+::\texorpdfstring{$\ast$}{*} \$level 
+
+Implements \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_a8dbb4a9bdc1c65ace13af1d45b221373}{Psr\textbackslash{}\+Log\textbackslash{}\+Logger\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_logger_a8ae9631f3d17ddb6015189842287b9d2}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!notice@{notice}}
+\index{notice@{notice}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{notice()}{notice()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a8ae9631f3d17ddb6015189842287b9d2} 
+Monolog\textbackslash{}\+Logger\+::notice (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable}]{\$message}{, }\item[{array}]{\$context}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Adds a log record at the NOTICE level.
+
+This method allows for compatibility with common interfaces.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Stringable & {\em \$message} & The log message \\
+\hline
+mixed\mbox{[}$\,$\mbox{]} & {\em \$context} & The log context \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_a6a9a0e724ec201737658cbd098d53239}{Psr\textbackslash{}\+Log\textbackslash{}\+Logger\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_logger_aa37d210dbb036735aece4b9cbb4fc67f}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!popHandler@{popHandler}}
+\index{popHandler@{popHandler}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{popHandler()}{popHandler()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_aa37d210dbb036735aece4b9cbb4fc67f} 
+Monolog\textbackslash{}\+Logger\+::pop\+Handler (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Pops a handler from the stack
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception If empty handler stack \Hypertarget{class_monolog_1_1_logger_a720f8ba4bba0eb1117b2fbf517e1f5a7}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!popProcessor@{popProcessor}}
+\index{popProcessor@{popProcessor}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{popProcessor()}{popProcessor()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a720f8ba4bba0eb1117b2fbf517e1f5a7} 
+Monolog\textbackslash{}\+Logger\+::pop\+Processor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Removes the processor on top of the stack and returns it.
+
+@phpstan-\/return Processor\+Interface\texorpdfstring{$\vert$}{|}(callable(\+Log\+Record)\+: Log\+Record) 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception If empty processor stack \Hypertarget{class_monolog_1_1_logger_a112ab07a6032f0e6c7a290c7c1fb14e1}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!pushHandler@{pushHandler}}
+\index{pushHandler@{pushHandler}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{pushHandler()}{pushHandler()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a112ab07a6032f0e6c7a290c7c1fb14e1} 
+Monolog\textbackslash{}\+Logger\+::push\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_monolog_1_1_handler_1_1_handler_interface}{Handler\+Interface}}}]{\$handler}{}\end{DoxyParamCaption})}
+
+Pushes a handler on to the stack.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_logger_a04b192d3dda7745db05940b264d5443d}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!pushProcessor@{pushProcessor}}
+\index{pushProcessor@{pushProcessor}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{pushProcessor()}{pushProcessor()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a04b192d3dda7745db05940b264d5443d} 
+Monolog\textbackslash{}\+Logger\+::push\+Processor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_monolog_1_1_processor_1_1_processor_interface}{Processor\+Interface}}\texorpdfstring{$\vert$}{|}callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Adds a processor on to the stack.
+
+@phpstan-\/param Processor\+Interface\texorpdfstring{$\vert$}{|}(callable(\+Log\+Record)\+: Log\+Record) \$callback \begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_logger_a60ce4530acac43d65a92b01ca0e597d7}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!reset@{reset}}
+\index{reset@{reset}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a60ce4530acac43d65a92b01ca0e597d7} 
+Monolog\textbackslash{}\+Logger\+::reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Ends a log cycle and resets all handlers and processors to their initial state.
+
+Resetting a Handler or a Processor means flushing/cleaning all buffers, resetting internal state, and getting it back to a state in which it can receive log records again.
+
+This is useful in case you want to avoid logs leaking between two requests or jobs when you have a long running process like a worker or an application server serving multiple requests in one process. 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_resettable_interface}{Monolog\textbackslash{}\+Resettable\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_logger_af89b5f5f52cdefeee9899b080b7b3655}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!setExceptionHandler@{setExceptionHandler}}
+\index{setExceptionHandler@{setExceptionHandler}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{setExceptionHandler()}{setExceptionHandler()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_af89b5f5f52cdefeee9899b080b7b3655} 
+Monolog\textbackslash{}\+Logger\+::set\+Exception\+Handler (\begin{DoxyParamCaption}\item[{Closure\texorpdfstring{$\vert$}{|}null}]{\$callback}{}\end{DoxyParamCaption})}
+
+Set a custom exception handler that will be called if adding a new record fails
+
+The Closure will receive an exception object and the record that failed to be logged
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_logger_a1808c675af21c044f8552a0b0e56833f}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!setHandlers@{setHandlers}}
+\index{setHandlers@{setHandlers}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{setHandlers()}{setHandlers()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a1808c675af21c044f8552a0b0e56833f} 
+Monolog\textbackslash{}\+Logger\+::set\+Handlers (\begin{DoxyParamCaption}\item[{array}]{\$handlers}{}\end{DoxyParamCaption})}
+
+Set handlers, replacing all existing ones.
+
+If a map is passed, keys will be ignored.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list$<$\+Handler\+Interface$>$} & \$handlers \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_logger_ae3265bf1f477479f23cb3aab1abb30f8}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!setTimezone@{setTimezone}}
+\index{setTimezone@{setTimezone}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{setTimezone()}{setTimezone()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_ae3265bf1f477479f23cb3aab1abb30f8} 
+Monolog\textbackslash{}\+Logger\+::set\+Timezone (\begin{DoxyParamCaption}\item[{Date\+Time\+Zone}]{\$tz}{}\end{DoxyParamCaption})}
+
+Sets the timezone to be used for the timestamp of log records.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_logger_a9c8ed4ef800979a1e8bd7496176ec44e}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!toMonologLevel@{toMonologLevel}}
+\index{toMonologLevel@{toMonologLevel}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{toMonologLevel()}{toMonologLevel()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a9c8ed4ef800979a1e8bd7496176ec44e} 
+static Monolog\textbackslash{}\+Logger\+::to\+Monolog\+Level (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}Level}]{\$level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts PSR-\/3 levels to Monolog ones if necessary
+
+
+\begin{DoxyParams}{Parameters}
+{\em int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}\+Level\texorpdfstring{$\vert$}{|}\+Log\+Level\+::\texorpdfstring{$\ast$}{*}} & \$level Level number (monolog) or name (PSR-\/3) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Psr\textbackslash{}\+Log\textbackslash{}\+Invalid\+Argument\+Exception If level is not defined
+
+@phpstan-\/param value-\/of\texorpdfstring{$<$}{<}Level\+::\+VALUES\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}value-\/of\texorpdfstring{$<$}{<}Level\+::\+NAMES\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}\+Level\texorpdfstring{$\vert$}{|}\+Log\+Level\+::\texorpdfstring{$\ast$}{*} \$level \Hypertarget{class_monolog_1_1_logger_a49c20090ecaa286ccf1d8c65fd0c25c2}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!useLoggingLoopDetection@{useLoggingLoopDetection}}
+\index{useLoggingLoopDetection@{useLoggingLoopDetection}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{useLoggingLoopDetection()}{useLoggingLoopDetection()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a49c20090ecaa286ccf1d8c65fd0c25c2} 
+Monolog\textbackslash{}\+Logger\+::use\+Logging\+Loop\+Detection (\begin{DoxyParamCaption}\item[{bool}]{\$detect\+Cycles}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_logger_a078ef70bbbb99f84738f189f2945958e}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!useMicrosecondTimestamps@{useMicrosecondTimestamps}}
+\index{useMicrosecondTimestamps@{useMicrosecondTimestamps}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{useMicrosecondTimestamps()}{useMicrosecondTimestamps()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a078ef70bbbb99f84738f189f2945958e} 
+Monolog\textbackslash{}\+Logger\+::use\+Microsecond\+Timestamps (\begin{DoxyParamCaption}\item[{bool}]{\$micro}{}\end{DoxyParamCaption})}
+
+Control the use of microsecond resolution timestamps in the \textquotesingle{}datetime\textquotesingle{} member of new records.
+
+As of PHP7.\+1 microseconds are always included by the engine, so there is no performance penalty and Monolog 2 enabled microseconds by default. This function lets you disable them though in case you want to suppress microseconds from the output.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$micro} & True to use microtime() to create timestamps \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_logger_a3e1508a23acd28b7308d996476ab814e}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!warning@{warning}}
+\index{warning@{warning}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{warning()}{warning()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a3e1508a23acd28b7308d996476ab814e} 
+Monolog\textbackslash{}\+Logger\+::warning (\begin{DoxyParamCaption}\item[{string\texorpdfstring{$\vert$}{|}\textbackslash{}Stringable}]{\$message}{, }\item[{array}]{\$context}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Adds a log record at the WARNING level.
+
+This method allows for compatibility with common interfaces.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | Stringable & {\em \$message} & The log message \\
+\hline
+mixed\mbox{[}$\,$\mbox{]} & {\em \$context} & The log context \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface_afa46cae2ba9d1e477081cecd3f66437d}{Psr\textbackslash{}\+Log\textbackslash{}\+Logger\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_logger_a1c7a10099bce1feba487344486713871}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!withName@{withName}}
+\index{withName@{withName}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{withName()}{withName()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a1c7a10099bce1feba487344486713871} 
+Monolog\textbackslash{}\+Logger\+::with\+Name (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Return a new cloned instance with the name changed
+
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_monolog_1_1_logger_af74503fc81aaad651239aca88b335fca}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!ALERT@{ALERT}}
+\index{ALERT@{ALERT}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{ALERT}{ALERT}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_af74503fc81aaad651239aca88b335fca} 
+const Monolog\textbackslash{}\+Logger\+::\+ALERT = 550}
+
+Action must be taken immediately
+
+Example\+: Entire website down, database unavailable, etc. This should trigger the SMS alerts and wake you up.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000124}{Deprecated}}]Use \textbackslash{}\+Monolog\textbackslash{}\+Level\+::\+Alert \end{DoxyRefDesc}
+\Hypertarget{class_monolog_1_1_logger_a32beb2a875e3882b7d19626b4b3a3e23}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!API@{API}}
+\index{API@{API}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{API}{API}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a32beb2a875e3882b7d19626b4b3a3e23} 
+const Monolog\textbackslash{}\+Logger\+::\+API = 3}
+
+Monolog API version
+
+This is only bumped when API breaks are done and should follow the major version of the library \Hypertarget{class_monolog_1_1_logger_a4d1a1c7785e99dfc31f302b567802004}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!CRITICAL@{CRITICAL}}
+\index{CRITICAL@{CRITICAL}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{CRITICAL}{CRITICAL}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a4d1a1c7785e99dfc31f302b567802004} 
+const Monolog\textbackslash{}\+Logger\+::\+CRITICAL = 500}
+
+Critical conditions
+
+Example\+: Application component unavailable, unexpected exception.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000123}{Deprecated}}]Use \textbackslash{}\+Monolog\textbackslash{}\+Level\+::\+Critical \end{DoxyRefDesc}
+\Hypertarget{class_monolog_1_1_logger_ae2cb6f88fa87e09b1d8c355a2477b9bf}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!DEBUG@{DEBUG}}
+\index{DEBUG@{DEBUG}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{DEBUG}{DEBUG}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_ae2cb6f88fa87e09b1d8c355a2477b9bf} 
+const Monolog\textbackslash{}\+Logger\+::\+DEBUG = 100}
+
+Detailed debug information
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000118}{Deprecated}}]Use \textbackslash{}\+Monolog\textbackslash{}\+Level\+::\+Debug \end{DoxyRefDesc}
+\Hypertarget{class_monolog_1_1_logger_a0f8af2e6f2bf3b1e0225cdedcbdc76d8}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!EMERGENCY@{EMERGENCY}}
+\index{EMERGENCY@{EMERGENCY}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{EMERGENCY}{EMERGENCY}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a0f8af2e6f2bf3b1e0225cdedcbdc76d8} 
+const Monolog\textbackslash{}\+Logger\+::\+EMERGENCY = 600}
+
+Urgent alert.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000125}{Deprecated}}]Use \textbackslash{}\+Monolog\textbackslash{}\+Level\+::\+Emergency \end{DoxyRefDesc}
+\Hypertarget{class_monolog_1_1_logger_a49efb7c5d80f3d4d1546628ed3d7753e}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!ERROR@{ERROR}}
+\index{ERROR@{ERROR}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{ERROR}{ERROR}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_a49efb7c5d80f3d4d1546628ed3d7753e} 
+const Monolog\textbackslash{}\+Logger\+::\+ERROR = 400}
+
+Runtime errors
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000122}{Deprecated}}]Use \textbackslash{}\+Monolog\textbackslash{}\+LevelError \end{DoxyRefDesc}
+\Hypertarget{class_monolog_1_1_logger_abc97a22650dfd188c44f4eedd74f90c4}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!INFO@{INFO}}
+\index{INFO@{INFO}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{INFO}{INFO}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_abc97a22650dfd188c44f4eedd74f90c4} 
+const Monolog\textbackslash{}\+Logger\+::\+INFO = 200}
+
+Interesting events
+
+Examples\+: User logs in, SQL logs.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000119}{Deprecated}}]Use \textbackslash{}\+Monolog\textbackslash{}\+LevelInfo \end{DoxyRefDesc}
+\Hypertarget{class_monolog_1_1_logger_af42abdf8b3a233980b62cfba1a093bbf}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!NOTICE@{NOTICE}}
+\index{NOTICE@{NOTICE}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{NOTICE}{NOTICE}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_af42abdf8b3a233980b62cfba1a093bbf} 
+const Monolog\textbackslash{}\+Logger\+::\+NOTICE = 250}
+
+Uncommon events
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000120}{Deprecated}}]Use \textbackslash{}\+Monolog\textbackslash{}\+Level\+::\+Notice \end{DoxyRefDesc}
+\Hypertarget{class_monolog_1_1_logger_aa7f7b657ebaef94d93c93ff472556431}\index{Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}!WARNING@{WARNING}}
+\index{WARNING@{WARNING}!Monolog\textbackslash{}Logger@{Monolog\textbackslash{}Logger}}
+\doxysubsubsection{\texorpdfstring{WARNING}{WARNING}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_logger_aa7f7b657ebaef94d93c93ff472556431} 
+const Monolog\textbackslash{}\+Logger\+::\+WARNING = 300}
+
+Exceptional occurrences that are not errors
+
+Examples\+: Use of deprecated APIs, poor use of an API, undesirable things that are not necessarily wrong.
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000121}{Deprecated}}]Use \textbackslash{}\+Monolog\textbackslash{}\+LevelWarning \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/monolog/monolog/src/\+Monolog/Logger.\+php\end{DoxyCompactItemize}

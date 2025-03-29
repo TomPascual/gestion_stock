@@ -1,0 +1,204 @@
+\doxysection{Illuminate\textbackslash{}Notifications\textbackslash{}Notification\+Sender Class Reference}
+\hypertarget{class_illuminate_1_1_notifications_1_1_notification_sender}{}\label{class_illuminate_1_1_notifications_1_1_notification_sender}\index{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_notification_sender_a104933dd64a2a7528460643566a110dd}{\+\_\+\+\_\+construct}} (\$manager, \$bus, \$events, \$locale=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_notification_sender_a9e99b7568407e9d1f847a461c790f493}{send}} (\$notifiables, \$notification)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_notification_sender_a1990320b805bf67abd1bdb1f007644b4}{send\+Now}} (\$notifiables, \$notification, ?array \$channels=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_notification_sender_a9abd1d9202031d12094e9924758b4072}{preferred\+Locale}} (\$notifiable, \$notification)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_notification_sender_a4a92a6d65bee7d459bb7da37cc094c7f}{send\+To\+Notifiable}} (\$notifiable, \$id, \$notification, \$channel)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_notification_sender_adbdb815c942ea44e72307d5ee0e27864}{should\+Send\+Notification}} (\$notifiable, \$notification, \$channel)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_notification_sender_aac070dc2b977f77bb17363610c123adb}{queue\+Notification}} (\$notifiables, \$notification)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_notification_sender_a9ed7dd0ce0d3047e02dc0b30dc149827}{format\+Notifiables}} (\$notifiables)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_notifications_1_1_notification_sender_a41e4f2c90003180a9e369d424a185deb}\label{class_illuminate_1_1_notifications_1_1_notification_sender_a41e4f2c90003180a9e369d424a185deb} 
+{\bfseries \$manager}
+\item 
+\Hypertarget{class_illuminate_1_1_notifications_1_1_notification_sender_a53aba282c6949beb1d088a0d6250d34f}\label{class_illuminate_1_1_notifications_1_1_notification_sender_a53aba282c6949beb1d088a0d6250d34f} 
+{\bfseries \$bus}
+\item 
+\Hypertarget{class_illuminate_1_1_notifications_1_1_notification_sender_ac330460145b935cdbe5d768447e64b5b}\label{class_illuminate_1_1_notifications_1_1_notification_sender_ac330460145b935cdbe5d768447e64b5b} 
+{\bfseries \$events}
+\item 
+\Hypertarget{class_illuminate_1_1_notifications_1_1_notification_sender_a7fd8220a6ab021655188c2c0bb17af99}\label{class_illuminate_1_1_notifications_1_1_notification_sender_a7fd8220a6ab021655188c2c0bb17af99} 
+{\bfseries \$locale}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_notification_sender_a104933dd64a2a7528460643566a110dd}\index{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_notification_sender_a104933dd64a2a7528460643566a110dd} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notification\+Sender\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$manager}{, }\item[{}]{\$bus}{, }\item[{}]{\$events}{, }\item[{}]{\$locale}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new notification sender instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channel\+Manager & {\em \$manager} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Bus\textbackslash{}\+Dispatcher & {\em \$bus} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Events\textbackslash{}\+Dispatcher & {\em \$events} & \\
+\hline
+string | null & {\em \$locale} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_notification_sender_a9ed7dd0ce0d3047e02dc0b30dc149827}\index{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}!formatNotifiables@{formatNotifiables}}
+\index{formatNotifiables@{formatNotifiables}!Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}}
+\doxysubsubsection{\texorpdfstring{formatNotifiables()}{formatNotifiables()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_notification_sender_a9ed7dd0ce0d3047e02dc0b30dc149827} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notification\+Sender\+::format\+Notifiables (\begin{DoxyParamCaption}\item[{}]{\$notifiables}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Format the notifiables into a Collection / array if necessary.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$notifiables} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Collection\texorpdfstring{$\vert$}{|}array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_notification_sender_a9abd1d9202031d12094e9924758b4072}\index{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}!preferredLocale@{preferredLocale}}
+\index{preferredLocale@{preferredLocale}!Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}}
+\doxysubsubsection{\texorpdfstring{preferredLocale()}{preferredLocale()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_notification_sender_a9abd1d9202031d12094e9924758b4072} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notification\+Sender\+::preferred\+Locale (\begin{DoxyParamCaption}\item[{}]{\$notifiable}{, }\item[{}]{\$notification}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the notifiable\textquotesingle{}s preferred locale for the notification.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$notifiable} & \\
+\hline
+mixed & {\em \$notification} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_notification_sender_aac070dc2b977f77bb17363610c123adb}\index{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}!queueNotification@{queueNotification}}
+\index{queueNotification@{queueNotification}!Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}}
+\doxysubsubsection{\texorpdfstring{queueNotification()}{queueNotification()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_notification_sender_aac070dc2b977f77bb17363610c123adb} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notification\+Sender\+::queue\+Notification (\begin{DoxyParamCaption}\item[{}]{\$notifiables}{, }\item[{}]{\$notification}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Queue the given notification instances.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$notifiables} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notification & {\em \$notification} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_notification_sender_a9e99b7568407e9d1f847a461c790f493}\index{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}!send@{send}}
+\index{send@{send}!Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_notification_sender_a9e99b7568407e9d1f847a461c790f493} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notification\+Sender\+::send (\begin{DoxyParamCaption}\item[{}]{\$notifiables}{, }\item[{}]{\$notification}{}\end{DoxyParamCaption})}
+
+Send the given notification to the given notifiable entities.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection | array | mixed & {\em \$notifiables} & \\
+\hline
+mixed & {\em \$notification} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_notification_sender_a1990320b805bf67abd1bdb1f007644b4}\index{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}!sendNow@{sendNow}}
+\index{sendNow@{sendNow}!Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}}
+\doxysubsubsection{\texorpdfstring{sendNow()}{sendNow()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_notification_sender_a1990320b805bf67abd1bdb1f007644b4} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notification\+Sender\+::send\+Now (\begin{DoxyParamCaption}\item[{}]{\$notifiables}{, }\item[{}]{\$notification}{, }\item[{?array}]{\$channels}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Send the given notification immediately.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection | array | mixed & {\em \$notifiables} & \\
+\hline
+mixed & {\em \$notification} & \\
+\hline
+array | null & {\em \$channels} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_notification_sender_a4a92a6d65bee7d459bb7da37cc094c7f}\index{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}!sendToNotifiable@{sendToNotifiable}}
+\index{sendToNotifiable@{sendToNotifiable}!Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}}
+\doxysubsubsection{\texorpdfstring{sendToNotifiable()}{sendToNotifiable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_notification_sender_a4a92a6d65bee7d459bb7da37cc094c7f} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notification\+Sender\+::send\+To\+Notifiable (\begin{DoxyParamCaption}\item[{}]{\$notifiable}{, }\item[{}]{\$id}{, }\item[{}]{\$notification}{, }\item[{}]{\$channel}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Send the given notification to the given notifiable via a channel.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$notifiable} & \\
+\hline
+string & {\em \$id} & \\
+\hline
+mixed & {\em \$notification} & \\
+\hline
+string & {\em \$channel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_notifications_1_1_notification_sender_adbdb815c942ea44e72307d5ee0e27864}\index{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}!shouldSendNotification@{shouldSendNotification}}
+\index{shouldSendNotification@{shouldSendNotification}!Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender@{Illuminate\textbackslash{}Notifications\textbackslash{}NotificationSender}}
+\doxysubsubsection{\texorpdfstring{shouldSendNotification()}{shouldSendNotification()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_notifications_1_1_notification_sender_adbdb815c942ea44e72307d5ee0e27864} 
+Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Notification\+Sender\+::should\+Send\+Notification (\begin{DoxyParamCaption}\item[{}]{\$notifiable}{, }\item[{}]{\$notification}{, }\item[{}]{\$channel}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determines if the notification can be sent.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$notifiable} & \\
+\hline
+mixed & {\em \$notification} & \\
+\hline
+string & {\em \$channel} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Notifications/Notification\+Sender.\+php\end{DoxyCompactItemize}

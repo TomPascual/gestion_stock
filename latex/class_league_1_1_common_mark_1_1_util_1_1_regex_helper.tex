@@ -1,0 +1,248 @@
+\doxysection{League\textbackslash{}Common\+Mark\textbackslash{}Util\textbackslash{}Regex\+Helper Class Reference}
+\hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper}{}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper}\index{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a6ce9cef8f689f4e54e1e862cf34bf2b1}{is\+Escapable}} (string \$character)
+\item 
+static \mbox{\hyperlink{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a0b9979bfd94606b71095bdf5d495710b}{is\+Whitespace}} (string \$character)
+\item 
+static \mbox{\hyperlink{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_ac0f94b0329a76335016eafbb354f2a72}{is\+Letter}} (?string \$character)
+\item 
+static \mbox{\hyperlink{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a6e85bbd0ed4264d947fcb76b54c85ef5}{match\+At}} (string \$regex, string \$string, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a095b2aed69f72235aded933f47f884f0}{match\+First}} (string \$pattern, string \$subject, int \$offset=0)
+\item 
+static \mbox{\hyperlink{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_af444f9b0a05fee92a651519fde6d9206}{unescape}} (string \$string)
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_aa0b264f72afcd4665843f49278357e71}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_aa0b264f72afcd4665843f49278357e71} 
+static {\bfseries get\+Html\+Block\+Open\+Regex} (int \$type)
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_aadb1461a1e93849709e4937cdfbf03d7}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_aadb1461a1e93849709e4937cdfbf03d7} 
+static {\bfseries get\+Html\+Block\+Close\+Regex} (int \$type)
+\item 
+static \mbox{\hyperlink{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a64a9b51915a9c03f52c3af39b0ce3cce}{is\+Link\+Potentially\+Unsafe}} (string \$url)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a6da146be0641bec8434dde4b939bc9c2}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a6da146be0641bec8434dde4b939bc9c2} 
+const {\bfseries PARTIAL\+\_\+\+ENTITY} = \textquotesingle{}\&(?\+:\#x\mbox{[}a-\/f0-\/9\mbox{]}\{1,6\}\texorpdfstring{$\vert$}{|}\#\mbox{[}0-\/9\mbox{]}\{1,7\}\texorpdfstring{$\vert$}{|}\mbox{[}a-\/z\mbox{]}\mbox{[}a-\/z0-\/9\mbox{]}\{1,31\});\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_ad077ed153e9c81892086b6f231d1c0b7}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_ad077ed153e9c81892086b6f231d1c0b7} 
+const {\bfseries PARTIAL\+\_\+\+ESCAPABLE} = \textquotesingle{}\mbox{[}!"{}\#\$\%\&\textbackslash{}\textquotesingle{}()\texorpdfstring{$\ast$}{*}+,.\textbackslash{}/\+:;$<$=$>$?@\mbox{[}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\mbox{]}\texorpdfstring{$^\wedge$}{\string^}\+\_\+\`{}\{\texorpdfstring{$\vert$}{|}\}\texorpdfstring{$\sim$}{\string~}-\/\mbox{]}\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_ac0ecf1b4135c3de06662e6855c7a07d7}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_ac0ecf1b4135c3de06662e6855c7a07d7} 
+const {\bfseries PARTIAL\+\_\+\+ESCAPED\+\_\+\+CHAR} = \textquotesingle{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\textquotesingle{} . self\+::\+PARTIAL\+\_\+\+ESCAPABLE
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a7429c1b38e9cd109c814abdf1d966bf8}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a7429c1b38e9cd109c814abdf1d966bf8} 
+const {\bfseries PARTIAL\+\_\+\+IN\+\_\+\+DOUBLE\+\_\+\+QUOTES} = \textquotesingle{}"{}(\textquotesingle{} . self\+::\+PARTIAL\+\_\+\+ESCAPED\+\_\+\+CHAR . \textquotesingle{}\texorpdfstring{$\vert$}{|}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}"{}\textbackslash{}x00\mbox{]})\texorpdfstring{$\ast$}{*}"{}\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a2c2ec35447a3993814c5f4fa6be9f5d1}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a2c2ec35447a3993814c5f4fa6be9f5d1} 
+const {\bfseries PARTIAL\+\_\+\+IN\+\_\+\+SINGLE\+\_\+\+QUOTES} = \textquotesingle{}\textbackslash{}\textquotesingle{}(\textquotesingle{} . self\+::\+PARTIAL\+\_\+\+ESCAPED\+\_\+\+CHAR . \textquotesingle{}\texorpdfstring{$\vert$}{|}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\textquotesingle{}\textbackslash{}x00\mbox{]})\texorpdfstring{$\ast$}{*}\textbackslash{}\textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_aad25bc4bf0fc80e0d6ca083527228af4}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_aad25bc4bf0fc80e0d6ca083527228af4} 
+const {\bfseries PARTIAL\+\_\+\+IN\+\_\+\+PARENS} = \textquotesingle{}\textbackslash{}\textbackslash{}((\textquotesingle{} . self\+::\+PARTIAL\+\_\+\+ESCAPED\+\_\+\+CHAR . \textquotesingle{}\texorpdfstring{$\vert$}{|}\mbox{[}\texorpdfstring{$^\wedge$}{\string^})\textbackslash{}x00\mbox{]})\texorpdfstring{$\ast$}{*}\textbackslash{}\textbackslash{})\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a022decaf7d0d8218395642b56612e2f5}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a022decaf7d0d8218395642b56612e2f5} 
+const {\bfseries PARTIAL\+\_\+\+REG\+\_\+\+CHAR} = \textquotesingle{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}()\textbackslash{}x00-\/\textbackslash{}x20\mbox{]}\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a729b63e1c777eda28bcd66914398fe5d}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a729b63e1c777eda28bcd66914398fe5d} 
+const {\bfseries PARTIAL\+\_\+\+IN\+\_\+\+PARENS\+\_\+\+NOSP} = \textquotesingle{}\textbackslash{}((\textquotesingle{} . self\+::\+PARTIAL\+\_\+\+REG\+\_\+\+CHAR . \textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{} . self\+::\+PARTIAL\+\_\+\+ESCAPED\+\_\+\+CHAR . \textquotesingle{}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{})\texorpdfstring{$\ast$}{*}\textbackslash{})\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a47bc01e75c79f0c08394c15e35f31cc4}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a47bc01e75c79f0c08394c15e35f31cc4} 
+const {\bfseries PARTIAL\+\_\+\+TAGNAME} = \textquotesingle{}\mbox{[}a-\/z\mbox{]}\mbox{[}a-\/z0-\/9-\/\mbox{]}\texorpdfstring{$\ast$}{*}\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a2f3574fc6ec27550b6cc7f90861f51ac}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a2f3574fc6ec27550b6cc7f90861f51ac} 
+const {\bfseries PARTIAL\+\_\+\+BLOCKTAGNAME} = \textquotesingle{}(?\+:address\texorpdfstring{$\vert$}{|}article\texorpdfstring{$\vert$}{|}aside\texorpdfstring{$\vert$}{|}base\texorpdfstring{$\vert$}{|}basefont\texorpdfstring{$\vert$}{|}blockquote\texorpdfstring{$\vert$}{|}body\texorpdfstring{$\vert$}{|}caption\texorpdfstring{$\vert$}{|}center\texorpdfstring{$\vert$}{|}col\texorpdfstring{$\vert$}{|}colgroup\texorpdfstring{$\vert$}{|}dd\texorpdfstring{$\vert$}{|}details\texorpdfstring{$\vert$}{|}dialog\texorpdfstring{$\vert$}{|}dir\texorpdfstring{$\vert$}{|}div\texorpdfstring{$\vert$}{|}dl\texorpdfstring{$\vert$}{|}dt\texorpdfstring{$\vert$}{|}fieldset\texorpdfstring{$\vert$}{|}figcaption\texorpdfstring{$\vert$}{|}figure\texorpdfstring{$\vert$}{|}footer\texorpdfstring{$\vert$}{|}form\texorpdfstring{$\vert$}{|}frame\texorpdfstring{$\vert$}{|}frameset\texorpdfstring{$\vert$}{|}h1\texorpdfstring{$\vert$}{|}head\texorpdfstring{$\vert$}{|}header\texorpdfstring{$\vert$}{|}hr\texorpdfstring{$\vert$}{|}html\texorpdfstring{$\vert$}{|}iframe\texorpdfstring{$\vert$}{|}legend\texorpdfstring{$\vert$}{|}li\texorpdfstring{$\vert$}{|}link\texorpdfstring{$\vert$}{|}main\texorpdfstring{$\vert$}{|}menu\texorpdfstring{$\vert$}{|}menuitem\texorpdfstring{$\vert$}{|}nav\texorpdfstring{$\vert$}{|}noframes\texorpdfstring{$\vert$}{|}ol\texorpdfstring{$\vert$}{|}optgroup\texorpdfstring{$\vert$}{|}option\texorpdfstring{$\vert$}{|}p\texorpdfstring{$\vert$}{|}param\texorpdfstring{$\vert$}{|}search\texorpdfstring{$\vert$}{|}section\texorpdfstring{$\vert$}{|}summary\texorpdfstring{$\vert$}{|}table\texorpdfstring{$\vert$}{|}tbody\texorpdfstring{$\vert$}{|}td\texorpdfstring{$\vert$}{|}tfoot\texorpdfstring{$\vert$}{|}th\texorpdfstring{$\vert$}{|}thead\texorpdfstring{$\vert$}{|}title\texorpdfstring{$\vert$}{|}tr\texorpdfstring{$\vert$}{|}track\texorpdfstring{$\vert$}{|}ul)\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a44e725d9693ce992d41f285808e41b03}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a44e725d9693ce992d41f285808e41b03} 
+const {\bfseries PARTIAL\+\_\+\+ATTRIBUTENAME} = \textquotesingle{}\mbox{[}a-\/z\+\_\+\+:\mbox{]}\mbox{[}a-\/z0-\/9\+:.\+\_\+-\/\mbox{]}\texorpdfstring{$\ast$}{*}\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a7358afcd025425a1734044abbb21912c}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a7358afcd025425a1734044abbb21912c} 
+const {\bfseries PARTIAL\+\_\+\+UNQUOTEDVALUE} = \textquotesingle{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}"{}\textbackslash{}\textquotesingle{}=$<$$>$\`{}\textbackslash{}x00-\/\textbackslash{}x20\mbox{]}+\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_acffa7a803fa8de538298effa525fe1fd}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_acffa7a803fa8de538298effa525fe1fd} 
+const {\bfseries PARTIAL\+\_\+\+SINGLEQUOTEDVALUE} = \textquotesingle{}\textbackslash{}\textquotesingle{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\textquotesingle{}\mbox{]}\texorpdfstring{$\ast$}{*}\textbackslash{}\textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a98a00ae2155b1db150acbea52ba13a37}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a98a00ae2155b1db150acbea52ba13a37} 
+const {\bfseries PARTIAL\+\_\+\+DOUBLEQUOTEDVALUE} = \textquotesingle{}"{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}"{}\mbox{]}\texorpdfstring{$\ast$}{*}"{}\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a3180c52c990c68342da6c792d21fc9f7}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a3180c52c990c68342da6c792d21fc9f7} 
+const {\bfseries PARTIAL\+\_\+\+ATTRIBUTEVALUE} = \textquotesingle{}(?\+:\textquotesingle{} . self\+::\+PARTIAL\+\_\+\+UNQUOTEDVALUE . \textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{} . self\+::\+PARTIAL\+\_\+\+SINGLEQUOTEDVALUE . \textquotesingle{}\texorpdfstring{$\vert$}{|}\textquotesingle{} . self\+::\+PARTIAL\+\_\+\+DOUBLEQUOTEDVALUE . \textquotesingle{})\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_af4c79b0ca01fff00a1c4bcbffeddf195}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_af4c79b0ca01fff00a1c4bcbffeddf195} 
+const {\bfseries PARTIAL\+\_\+\+ATTRIBUTEVALUESPEC} = \textquotesingle{}(?\+:\textquotesingle{} . \textquotesingle{}\textbackslash{}s\texorpdfstring{$\ast$}{*}=\textquotesingle{} . \textquotesingle{}\textbackslash{}s\texorpdfstring{$\ast$}{*}\textquotesingle{} . self\+::\+PARTIAL\+\_\+\+ATTRIBUTEVALUE . \textquotesingle{})\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a121c84ad42477bee4bf0c56a40fb99f7}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a121c84ad42477bee4bf0c56a40fb99f7} 
+const {\bfseries PARTIAL\+\_\+\+ATTRIBUTE} = \textquotesingle{}(?\+:\textquotesingle{} . \textquotesingle{}\textbackslash{}s+\textquotesingle{} . self\+::\+PARTIAL\+\_\+\+ATTRIBUTENAME . self\+::\+PARTIAL\+\_\+\+ATTRIBUTEVALUESPEC . \textquotesingle{}?)\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_ac4b22241e5a0d1e9f1f25858a51870fa}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_ac4b22241e5a0d1e9f1f25858a51870fa} 
+const {\bfseries PARTIAL\+\_\+\+OPENTAG} = \textquotesingle{}$<$\textquotesingle{} . self\+::\+PARTIAL\+\_\+\+TAGNAME . self\+::\+PARTIAL\+\_\+\+ATTRIBUTE . \textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{} . \textquotesingle{}\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}/?$>$\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a2b197d1dd07c411c022c8c679a4c5d38}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a2b197d1dd07c411c022c8c679a4c5d38} 
+const {\bfseries PARTIAL\+\_\+\+CLOSETAG} = \textquotesingle{}$<$\textbackslash{}/\textquotesingle{} . self\+::\+PARTIAL\+\_\+\+TAGNAME . \textquotesingle{}\textbackslash{}s\texorpdfstring{$\ast$}{*}\mbox{[}$>$\mbox{]}\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a1c74d6c45191bb02a8b97d7d1878d14f}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a1c74d6c45191bb02a8b97d7d1878d14f} 
+const {\bfseries PARTIAL\+\_\+\+OPENBLOCKTAG} = \textquotesingle{}$<$\textquotesingle{} . self\+::\+PARTIAL\+\_\+\+BLOCKTAGNAME . self\+::\+PARTIAL\+\_\+\+ATTRIBUTE . \textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{} . \textquotesingle{}\textbackslash{}s\texorpdfstring{$\ast$}{*}\textbackslash{}/?$>$\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a81b7b71f6d5f656994e850c02f45b4b4}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a81b7b71f6d5f656994e850c02f45b4b4} 
+const {\bfseries PARTIAL\+\_\+\+CLOSEBLOCKTAG} = \textquotesingle{}$<$\textbackslash{}/\textquotesingle{} . self\+::\+PARTIAL\+\_\+\+BLOCKTAGNAME . \textquotesingle{}\textbackslash{}s\texorpdfstring{$\ast$}{*}\mbox{[}$>$\mbox{]}\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_aef971d0561087b24af0b629b114ca65c}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_aef971d0561087b24af0b629b114ca65c} 
+const {\bfseries PARTIAL\+\_\+\+HTMLCOMMENT} = \textquotesingle{}$<$!-\/-\/$>$\texorpdfstring{$\vert$}{|}$<$!-\/-\/-\/$>$\texorpdfstring{$\vert$}{|}$<$!-\/-\/\mbox{[}\textbackslash{}s\textbackslash{}S\mbox{]}\texorpdfstring{$\ast$}{*}?-\/-\/$>$\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_adb84889da79dca8e476895c2d9082507}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_adb84889da79dca8e476895c2d9082507} 
+const {\bfseries PARTIAL\+\_\+\+PROCESSINGINSTRUCTION} = \textquotesingle{}\mbox{[}$<$\mbox{]}\mbox{[}?\mbox{]}\mbox{[}\textbackslash{}s\textbackslash{}S\mbox{]}\texorpdfstring{$\ast$}{*}?\mbox{[}?\mbox{]}\mbox{[}$>$\mbox{]}\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_ac1f4add904ce1528f23b34e96d3d332f}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_ac1f4add904ce1528f23b34e96d3d332f} 
+const {\bfseries PARTIAL\+\_\+\+DECLARATION} = \textquotesingle{}$<$!\mbox{[}A-\/Za-\/z\mbox{]}+\textquotesingle{} . \textquotesingle{}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}$>$\mbox{]}\texorpdfstring{$\ast$}{*}$>$\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a44d1696b3db6bf59151bcbc70b0496ad}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a44d1696b3db6bf59151bcbc70b0496ad} 
+const {\bfseries PARTIAL\+\_\+\+CDATA} = \textquotesingle{}$<$!\textbackslash{}\mbox{[}CDATA\textbackslash{}\mbox{[}\mbox{[}\textbackslash{}s\textbackslash{}S\mbox{]}\texorpdfstring{$\ast$}{*}?\mbox{]}\textbackslash{}\mbox{]}$>$\textquotesingle{}
+\item 
+const \mbox{\hyperlink{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a4f92165260f43c575740135ca6faf933}{PARTIAL\+\_\+\+HTMLTAG}}
+\item 
+const \mbox{\hyperlink{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a763d5b34355d6e6e54f96840e88415ff}{PARTIAL\+\_\+\+HTMLBLOCKOPEN}}
+\item 
+const \mbox{\hyperlink{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_ab50e8b78b2e8d549ea1a62c74fb41539}{PARTIAL\+\_\+\+LINK\+\_\+\+TITLE}}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_abff06f4ef4dd571ef7f86d71c31ba30b}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_abff06f4ef4dd571ef7f86d71c31ba30b} 
+const {\bfseries REGEX\+\_\+\+PUNCTUATION} = \textquotesingle{}/\texorpdfstring{$^\wedge$}{\string^}\mbox{[}!"{}\#\$\%\&\textbackslash{}\textquotesingle{}()\texorpdfstring{$\ast$}{*}+,\textbackslash{}-\/.\textbackslash{}\textbackslash{}/\+:;$<$=$>$?@\textbackslash{}\textbackslash{}\mbox{[}\textbackslash{}\textbackslash{}\mbox{]}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\texorpdfstring{$^\wedge$}{\string^}\+\_\+\`{}\{\texorpdfstring{$\vert$}{|}\}\texorpdfstring{$\sim$}{\string~}\textbackslash{}p\{P\}\textbackslash{}p\{S\}\mbox{]}/u\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a1ece2370e1e380d10a9f1cd21456674f}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a1ece2370e1e380d10a9f1cd21456674f} 
+const {\bfseries REGEX\+\_\+\+UNSAFE\+\_\+\+PROTOCOL} = \textquotesingle{}/\texorpdfstring{$^\wedge$}{\string^}javascript\+:\texorpdfstring{$\vert$}{|}vbscript\+:\texorpdfstring{$\vert$}{|}file\+:\texorpdfstring{$\vert$}{|}data\+:/i\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a61beff82deb9f020d131293acca57e3a}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a61beff82deb9f020d131293acca57e3a} 
+const {\bfseries REGEX\+\_\+\+SAFE\+\_\+\+DATA\+\_\+\+PROTOCOL} = \textquotesingle{}/\texorpdfstring{$^\wedge$}{\string^}data\+:image\textbackslash{}/(?\+:png\texorpdfstring{$\vert$}{|}gif\texorpdfstring{$\vert$}{|}jpeg\texorpdfstring{$\vert$}{|}webp)/i\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_ab6ef3f9213b94be5f74c37871a63e1c6}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_ab6ef3f9213b94be5f74c37871a63e1c6} 
+const {\bfseries REGEX\+\_\+\+NON\+\_\+\+SPACE} = \textquotesingle{}/\mbox{[}\texorpdfstring{$^\wedge$}{\string^} \textbackslash{}t\textbackslash{}f\textbackslash{}v\textbackslash{}r\textbackslash{}n\mbox{]}/\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_afaa5c06874bc0a5f92c1a89862d3692f}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_afaa5c06874bc0a5f92c1a89862d3692f} 
+const {\bfseries REGEX\+\_\+\+WHITESPACE\+\_\+\+CHAR} = \textquotesingle{}/\texorpdfstring{$^\wedge$}{\string^}\mbox{[} \textbackslash{}t\textbackslash{}n\textbackslash{}x0b\textbackslash{}x0c\textbackslash{}x0d\mbox{]}/\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a1fec55a717296613250c309d3a8c93e7}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a1fec55a717296613250c309d3a8c93e7} 
+const {\bfseries REGEX\+\_\+\+UNICODE\+\_\+\+WHITESPACE\+\_\+\+CHAR} = \textquotesingle{}/\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}pZ\texorpdfstring{$\vert$}{|}\textbackslash{}s/u\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a38fe4c74cea51534ac51a24836c4c9eb}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a38fe4c74cea51534ac51a24836c4c9eb} 
+const {\bfseries REGEX\+\_\+\+THEMATIC\+\_\+\+BREAK} = \textquotesingle{}/\texorpdfstring{$^\wedge$}{\string^}(?\+:\textbackslash{}\texorpdfstring{$\ast$}{*}\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*})\{3,\}\$\texorpdfstring{$\vert$}{|}\texorpdfstring{$^\wedge$}{\string^}(?\+:\+\_\+\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*})\{3,\}\$\texorpdfstring{$\vert$}{|}\texorpdfstring{$^\wedge$}{\string^}(?\+:-\/\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*})\{3,\}\$/\textquotesingle{}
+\item 
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a90b2341ea72b9a0506d328d4a39401c5}\label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a90b2341ea72b9a0506d328d4a39401c5} 
+const {\bfseries REGEX\+\_\+\+LINK\+\_\+\+DESTINATION\+\_\+\+BRACES} = \textquotesingle{}/\texorpdfstring{$^\wedge$}{\string^}(?\+:$<$(?\+:\mbox{[}\texorpdfstring{$^\wedge$}{\string^}$<$$>$\textbackslash{}\textbackslash{}n\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}x00\mbox{]}\texorpdfstring{$\vert$}{|}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}.)\texorpdfstring{$\ast$}{*}$>$)/\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides regular expressions and utilities for parsing Markdown
+
+All of the PARTIAL\+\_\+ regex constants assume that they\textquotesingle{}ll be used in case-\/insensitive searches All other complete regexes provided by this class (either via constants or methods) will have case-\/insensitivity enabled.
+
+@phpcs\+:disable Generic.\+Strings.\+Unnecessary\+String\+Concat.\+Found
+
+@psalm-\/immutable 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a6ce9cef8f689f4e54e1e862cf34bf2b1}\index{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}!isEscapable@{isEscapable}}
+\index{isEscapable@{isEscapable}!League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}}
+\doxysubsubsection{\texorpdfstring{isEscapable()}{isEscapable()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a6ce9cef8f689f4e54e1e862cf34bf2b1} 
+static League\textbackslash{}\+Common\+Mark\textbackslash{}\+Util\textbackslash{}\+Regex\+Helper\+::is\+Escapable (\begin{DoxyParamCaption}\item[{string}]{\$character}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+@psalm-\/pure \Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_ac0f94b0329a76335016eafbb354f2a72}\index{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}!isLetter@{isLetter}}
+\index{isLetter@{isLetter}!League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}}
+\doxysubsubsection{\texorpdfstring{isLetter()}{isLetter()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_ac0f94b0329a76335016eafbb354f2a72} 
+static League\textbackslash{}\+Common\+Mark\textbackslash{}\+Util\textbackslash{}\+Regex\+Helper\+::is\+Letter (\begin{DoxyParamCaption}\item[{?string}]{\$character}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+@psalm-\/pure \Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a64a9b51915a9c03f52c3af39b0ce3cce}\index{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}!isLinkPotentiallyUnsafe@{isLinkPotentiallyUnsafe}}
+\index{isLinkPotentiallyUnsafe@{isLinkPotentiallyUnsafe}!League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}}
+\doxysubsubsection{\texorpdfstring{isLinkPotentiallyUnsafe()}{isLinkPotentiallyUnsafe()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a64a9b51915a9c03f52c3af39b0ce3cce} 
+static League\textbackslash{}\+Common\+Mark\textbackslash{}\+Util\textbackslash{}\+Regex\+Helper\+::is\+Link\+Potentially\+Unsafe (\begin{DoxyParamCaption}\item[{string}]{\$url}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+@psalm-\/pure \Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a0b9979bfd94606b71095bdf5d495710b}\index{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}!isWhitespace@{isWhitespace}}
+\index{isWhitespace@{isWhitespace}!League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}}
+\doxysubsubsection{\texorpdfstring{isWhitespace()}{isWhitespace()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a0b9979bfd94606b71095bdf5d495710b} 
+static League\textbackslash{}\+Common\+Mark\textbackslash{}\+Util\textbackslash{}\+Regex\+Helper\+::is\+Whitespace (\begin{DoxyParamCaption}\item[{string}]{\$character}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+@psalm-\/suppress Invalid\+Literal\+Argument\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a6e85bbd0ed4264d947fcb76b54c85ef5}\index{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}!matchAt@{matchAt}}
+\index{matchAt@{matchAt}!League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}}
+\doxysubsubsection{\texorpdfstring{matchAt()}{matchAt()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a6e85bbd0ed4264d947fcb76b54c85ef5} 
+static League\textbackslash{}\+Common\+Mark\textbackslash{}\+Util\textbackslash{}\+Regex\+Helper\+::match\+At (\begin{DoxyParamCaption}\item[{string}]{\$regex}{, }\item[{string}]{\$string}{, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Attempt to match a regex in string s at offset offset
+
+@psalm-\/param non-\/empty-\/string \$regex
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}null Index of match, or null
+\end{DoxyReturn}
+@psalm-\/pure \Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a095b2aed69f72235aded933f47f884f0}\index{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}!matchFirst@{matchFirst}}
+\index{matchFirst@{matchFirst}!League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}}
+\doxysubsubsection{\texorpdfstring{matchFirst()}{matchFirst()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a095b2aed69f72235aded933f47f884f0} 
+static League\textbackslash{}\+Common\+Mark\textbackslash{}\+Util\textbackslash{}\+Regex\+Helper\+::match\+First (\begin{DoxyParamCaption}\item[{string}]{\$pattern}{, }\item[{string}]{\$subject}{, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Functional wrapper around preg\+\_\+match\+\_\+all which only returns the first set of matches
+
+@psalm-\/param non-\/empty-\/string \$pattern
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null
+\end{DoxyReturn}
+@psalm-\/pure \Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_af444f9b0a05fee92a651519fde6d9206}\index{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}!unescape@{unescape}}
+\index{unescape@{unescape}!League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}}
+\doxysubsubsection{\texorpdfstring{unescape()}{unescape()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_af444f9b0a05fee92a651519fde6d9206} 
+static League\textbackslash{}\+Common\+Mark\textbackslash{}\+Util\textbackslash{}\+Regex\+Helper\+::unescape (\begin{DoxyParamCaption}\item[{string}]{\$string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Replace backslash escapes with literal characters
+
+@psalm-\/pure 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a763d5b34355d6e6e54f96840e88415ff}\index{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}!PARTIAL\_HTMLBLOCKOPEN@{PARTIAL\_HTMLBLOCKOPEN}}
+\index{PARTIAL\_HTMLBLOCKOPEN@{PARTIAL\_HTMLBLOCKOPEN}!League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}}
+\doxysubsubsection{\texorpdfstring{PARTIAL\_HTMLBLOCKOPEN}{PARTIAL\_HTMLBLOCKOPEN}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a763d5b34355d6e6e54f96840e88415ff} 
+const League\textbackslash{}\+Common\+Mark\textbackslash{}\+Util\textbackslash{}\+Regex\+Helper\+::\+PARTIAL\+\_\+\+HTMLBLOCKOPEN}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{stringliteral}{'<(?:'}\ .\ self::PARTIAL\_BLOCKTAGNAME\ .\ \textcolor{stringliteral}{'(?:[\(\backslash\)s\(\backslash\)/>]|\$)'}\ .\ \textcolor{charliteral}{'|'}\ .}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'\(\backslash\)/'}\ .\ self::PARTIAL\_BLOCKTAGNAME\ .\ \textcolor{stringliteral}{'(?:[\(\backslash\)s>]|\$)'}\ .\ \textcolor{charliteral}{'|'}\ .\ \textcolor{stringliteral}{'[?!])'}}
+
+\end{DoxyCode}
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a4f92165260f43c575740135ca6faf933}\index{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}!PARTIAL\_HTMLTAG@{PARTIAL\_HTMLTAG}}
+\index{PARTIAL\_HTMLTAG@{PARTIAL\_HTMLTAG}!League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}}
+\doxysubsubsection{\texorpdfstring{PARTIAL\_HTMLTAG}{PARTIAL\_HTMLTAG}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_a4f92165260f43c575740135ca6faf933} 
+const League\textbackslash{}\+Common\+Mark\textbackslash{}\+Util\textbackslash{}\+Regex\+Helper\+::\+PARTIAL\+\_\+\+HTMLTAG}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{stringliteral}{'(?:'}\ .\ self::PARTIAL\_OPENTAG\ .\ \textcolor{charliteral}{'|'}\ .\ self::PARTIAL\_CLOSETAG\ .\ \textcolor{charliteral}{'|'}\ .\ self::PARTIAL\_HTMLCOMMENT\ .\ \textcolor{charliteral}{'|'}\ .}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::PARTIAL\_PROCESSINGINSTRUCTION\ .\ \textcolor{charliteral}{'|'}\ .\ self::PARTIAL\_DECLARATION\ .\ \textcolor{charliteral}{'|'}\ .\ self::PARTIAL\_CDATA\ .\ \textcolor{charliteral}{')'}}
+
+\end{DoxyCode}
+\Hypertarget{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_ab50e8b78b2e8d549ea1a62c74fb41539}\index{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}!PARTIAL\_LINK\_TITLE@{PARTIAL\_LINK\_TITLE}}
+\index{PARTIAL\_LINK\_TITLE@{PARTIAL\_LINK\_TITLE}!League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper@{League\textbackslash{}CommonMark\textbackslash{}Util\textbackslash{}RegexHelper}}
+\doxysubsubsection{\texorpdfstring{PARTIAL\_LINK\_TITLE}{PARTIAL\_LINK\_TITLE}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_util_1_1_regex_helper_ab50e8b78b2e8d549ea1a62c74fb41539} 
+const League\textbackslash{}\+Common\+Mark\textbackslash{}\+Util\textbackslash{}\+Regex\+Helper\+::\+PARTIAL\+\_\+\+LINK\+\_\+\+TITLE}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \textcolor{stringliteral}{'\string^(?:"{}('}\ .\ self::PARTIAL\_ESCAPED\_CHAR\ .\ \textcolor{stringliteral}{'|[\string^"{}\(\backslash\)x00])*+"{}'}\ .}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'|'}\ .\ \textcolor{charliteral}{'\(\backslash\)'}(\textcolor{stringliteral}{'\ .\ self::PARTIAL\_ESCAPED\_CHAR\ .\ '}|[\string^\(\backslash\)\textcolor{stringliteral}{'\(\backslash\)x00])*+\(\backslash\)''}\ .}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'|'}\ .\ \textcolor{stringliteral}{'\(\backslash\)(('}\ .\ self::PARTIAL\_ESCAPED\_CHAR\ .\ \textcolor{stringliteral}{'|[\string^()\(\backslash\)x00])*+\(\backslash\)))'}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/league/commonmark/src/\+Util/Regex\+Helper.\+php\end{DoxyCompactItemize}

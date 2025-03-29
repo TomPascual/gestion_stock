@@ -1,0 +1,83 @@
+\doxysection{Guzzle\+Http\textbackslash{}Handler\textbackslash{}Curl\+Multi\+Handler Class Reference}
+\hypertarget{class_guzzle_http_1_1_handler_1_1_curl_multi_handler}{}\label{class_guzzle_http_1_1_handler_1_1_curl_multi_handler}\index{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_handler_1_1_curl_multi_handler_a7760c090b147a8127fdafc5e64f484ba}{\+\_\+\+\_\+construct}} (array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_handler_1_1_curl_multi_handler_a699b1e9c3b426af88fc7e0da3e5d3b81}{\+\_\+\+\_\+get}} (\$name)
+\item 
+\Hypertarget{class_guzzle_http_1_1_handler_1_1_curl_multi_handler_ad73bec484f40d2e411d370e36fd45aa0}\label{class_guzzle_http_1_1_handler_1_1_curl_multi_handler_ad73bec484f40d2e411d370e36fd45aa0} 
+{\bfseries \+\_\+\+\_\+invoke} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface}{Request\+Interface}} \$request, array \$options)
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_handler_1_1_curl_multi_handler_a0b90b8c277957da0258c1b3cb539b3a7}{tick}} ()
+\item 
+\mbox{\hyperlink{class_guzzle_http_1_1_handler_1_1_curl_multi_handler_afb724c45e653474792ff7744fc257c7f}{execute}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Returns an asynchronous response using curl\+\_\+multi\+\_\+\texorpdfstring{$\ast$}{*} functions.
+
+When using the Curl\+Multi\+Handler, custom curl options can be specified as an associative array of curl option constants mapping to values in the {\bfseries{curl}} key of the provided request options.
+
+@final 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_guzzle_http_1_1_handler_1_1_curl_multi_handler_a7760c090b147a8127fdafc5e64f484ba}\index{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_handler_1_1_curl_multi_handler_a7760c090b147a8127fdafc5e64f484ba} 
+Guzzle\+Http\textbackslash{}\+Handler\textbackslash{}\+Curl\+Multi\+Handler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+This handler accepts the following options\+:
+
+
+\begin{DoxyItemize}
+\item handle\+\_\+factory\+: An optional factory used to create curl handles
+\item select\+\_\+timeout\+: Optional timeout (in seconds) to block before timing out while selecting curl handles. Defaults to 1 second.
+\item options\+: An associative array of CURLMOPT\+\_\+\texorpdfstring{$\ast$}{*} options and corresponding values for curl\+\_\+multi\+\_\+setopt() 
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_guzzle_http_1_1_handler_1_1_curl_multi_handler_a699b1e9c3b426af88fc7e0da3e5d3b81}\index{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler}!\_\_get@{\_\_get}}
+\index{\_\_get@{\_\_get}!GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_get()}{\_\_get()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_handler_1_1_curl_multi_handler_a699b1e9c3b426af88fc7e0da3e5d3b81} 
+Guzzle\+Http\textbackslash{}\+Handler\textbackslash{}\+Curl\+Multi\+Handler\+::\+\_\+\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resource\texorpdfstring{$\vert$}{|}\textbackslash{}\+Curl\+Multi\+Handle
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Bad\+Method\+Call\+Exception when another field as {\ttfamily \+\_\+mh} will be gotten 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception when curl can not initialize a multi handle \Hypertarget{class_guzzle_http_1_1_handler_1_1_curl_multi_handler_afb724c45e653474792ff7744fc257c7f}\index{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler}!execute@{execute}}
+\index{execute@{execute}!GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_handler_1_1_curl_multi_handler_afb724c45e653474792ff7744fc257c7f} 
+Guzzle\+Http\textbackslash{}\+Handler\textbackslash{}\+Curl\+Multi\+Handler\+::execute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Runs until all outstanding connections have completed. \Hypertarget{class_guzzle_http_1_1_handler_1_1_curl_multi_handler_a0b90b8c277957da0258c1b3cb539b3a7}\index{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler}!tick@{tick}}
+\index{tick@{tick}!GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler@{GuzzleHttp\textbackslash{}Handler\textbackslash{}CurlMultiHandler}}
+\doxysubsubsection{\texorpdfstring{tick()}{tick()}}
+{\footnotesize\ttfamily \label{class_guzzle_http_1_1_handler_1_1_curl_multi_handler_a0b90b8c277957da0258c1b3cb539b3a7} 
+Guzzle\+Http\textbackslash{}\+Handler\textbackslash{}\+Curl\+Multi\+Handler\+::tick (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Ticks the curl event loop. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/guzzlehttp/guzzle/src/\+Handler/Curl\+Multi\+Handler.\+php\end{DoxyCompactItemize}

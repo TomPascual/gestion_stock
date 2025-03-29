@@ -1,0 +1,194 @@
+\doxysection{Nette\textbackslash{}Utils\textbackslash{}Validators Class Reference}
+\hypertarget{class_nette_1_1_utils_1_1_validators}{}\label{class_nette_1_1_utils_1_1_validators}\index{Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_validators_a34da2774be14fd117afe40f9b3162ff3}{assert}} (mixed \$value, string \$expected, string \$label=\textquotesingle{}variable\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_validators_af0f3fb0c0705023f32ff182be2fea322}{assert\+Field}} (array \$array, \$key, ?string \$expected=null, string \$label="{}item \textquotesingle{}\%\textquotesingle{} in array"{},)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_validators_ad2a3231ed6155a2938592d7ebf07a4b5}{is}} (mixed \$value, string \$expected)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_validators_af54f59b699408d0523af662655087a20}{every\+Is}} (iterable \$values, string \$expected)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_validators_ab0faff8c34ed7fe33041e25b66cf8cb8}{is\+Number}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_validators_ad6f8e2d7f1796b831e1aedd564594592}{is\+Numeric\+Int}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_validators_a9ffcd3f4b25456ad275a1bc581c514a0}{is\+Numeric}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_validators_a234fd8711e50ee2a5170d5bf93be8c4d}{is\+Callable}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_validators_a937e41053dc3700bc1eb636036a6158d}{is\+Unicode}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_validators_a3a2fa210254624a0fecd683f14f2e216}{is\+None}} (mixed \$value)
+\item 
+\Hypertarget{class_nette_1_1_utils_1_1_validators_aa17f7c2c36b044b4081d7154f34d7db1}\label{class_nette_1_1_utils_1_1_validators_aa17f7c2c36b044b4081d7154f34d7db1} 
+static {\bfseries is\+Mixed} ()
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_validators_a41861e1ca85c19f000b61f6f8d04204b}{is\+List}} (mixed \$value)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_validators_adcfca874caedd94fa2160d396e916865}{is\+In\+Range}} (mixed \$value, array \$range)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_validators_a5e5a773a0e4b8c0e9d78ce7cf8c35872}{is\+Email}} (string \$value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_nette_1_1_utils_1_1_validators_a512522b45f526be1f7bd7972aa99e757}\label{class_nette_1_1_utils_1_1_validators_a512522b45f526be1f7bd7972aa99e757} 
+static {\bfseries \$validators}
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_validators_a0380ac00b6dcdbc24d2250237d857f4b}{\$counters}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Validation utilities. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_nette_1_1_utils_1_1_validators_a34da2774be14fd117afe40f9b3162ff3}\index{Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}!assert@{assert}}
+\index{assert@{assert}!Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}}
+\doxysubsubsection{\texorpdfstring{assert()}{assert()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_validators_a34da2774be14fd117afe40f9b3162ff3} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Validators\+::assert (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{, }\item[{string}]{\$expected}{, }\item[{string}]{\$label}{ = {\ttfamily \textquotesingle{}variable\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Verifies that the value is of expected types separated by pipe. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Assertion\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_nette_1_1_utils_1_1_validators_af0f3fb0c0705023f32ff182be2fea322}\index{Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}!assertField@{assertField}}
+\index{assertField@{assertField}!Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}}
+\doxysubsubsection{\texorpdfstring{assertField()}{assertField()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_validators_af0f3fb0c0705023f32ff182be2fea322} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Validators\+::assert\+Field (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{}]{\$key}{, }\item[{?string}]{\$expected}{ = {\ttfamily null}, }\item[{string}]{\$label}{ = {\ttfamily "{}item~\textquotesingle{}\%\textquotesingle{}~in~array"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Verifies that element \$key in array is of expected types separated by pipe. 
+\begin{DoxyParams}[1]{Parameters}
+mixed\mbox{[}$\,$\mbox{]} & {\em \$array} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Assertion\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_nette_1_1_utils_1_1_validators_af54f59b699408d0523af662655087a20}\index{Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}!everyIs@{everyIs}}
+\index{everyIs@{everyIs}!Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}}
+\doxysubsubsection{\texorpdfstring{everyIs()}{everyIs()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_validators_af54f59b699408d0523af662655087a20} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Validators\+::every\+Is (\begin{DoxyParamCaption}\item[{iterable}]{\$values}{, }\item[{string}]{\$expected}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Finds whether all values are of expected types separated by pipe. 
+\begin{DoxyParams}[1]{Parameters}
+mixed\mbox{[}$\,$\mbox{]} & {\em \$values} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_nette_1_1_utils_1_1_validators_ad2a3231ed6155a2938592d7ebf07a4b5}\index{Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}!is@{is}}
+\index{is@{is}!Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}}
+\doxysubsubsection{\texorpdfstring{is()}{is()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_validators_ad2a3231ed6155a2938592d7ebf07a4b5} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Validators\+::is (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{, }\item[{string}]{\$expected}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Verifies that the value is of expected types separated by pipe. \Hypertarget{class_nette_1_1_utils_1_1_validators_a234fd8711e50ee2a5170d5bf93be8c4d}\index{Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}!isCallable@{isCallable}}
+\index{isCallable@{isCallable}!Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}}
+\doxysubsubsection{\texorpdfstring{isCallable()}{isCallable()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_validators_a234fd8711e50ee2a5170d5bf93be8c4d} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Validators\+::is\+Callable (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the value is a syntactically correct callback. \Hypertarget{class_nette_1_1_utils_1_1_validators_a5e5a773a0e4b8c0e9d78ce7cf8c35872}\index{Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}!isEmail@{isEmail}}
+\index{isEmail@{isEmail}!Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}}
+\doxysubsubsection{\texorpdfstring{isEmail()}{isEmail()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_validators_a5e5a773a0e4b8c0e9d78ce7cf8c35872} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Validators\+::is\+Email (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the value is a valid email address. It does not verify that the domain actually exists, only the syntax is verified. \Hypertarget{class_nette_1_1_utils_1_1_validators_adcfca874caedd94fa2160d396e916865}\index{Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}!isInRange@{isInRange}}
+\index{isInRange@{isInRange}!Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}}
+\doxysubsubsection{\texorpdfstring{isInRange()}{isInRange()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_validators_adcfca874caedd94fa2160d396e916865} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Validators\+::is\+In\+Range (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{, }\item[{array}]{\$range}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the value is in the given range \mbox{[}min, max\mbox{]}, where the upper or lower limit can be omitted (null). Numbers, strings and Date\+Time objects can be compared. \Hypertarget{class_nette_1_1_utils_1_1_validators_a41861e1ca85c19f000b61f6f8d04204b}\index{Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}!isList@{isList}}
+\index{isList@{isList}!Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}}
+\doxysubsubsection{\texorpdfstring{isList()}{isList()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_validators_a41861e1ca85c19f000b61f6f8d04204b} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Validators\+::is\+List (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if a variable is a zero-\/based integer indexed array. \begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000195}{Deprecated}}]use Nette\textbackslash{}\+Utils\textbackslash{}\+Arrays\+::is\+List \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+(\$value is list ? true \+: false) 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_validators_a3a2fa210254624a0fecd683f14f2e216}\index{Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}!isNone@{isNone}}
+\index{isNone@{isNone}!Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}}
+\doxysubsubsection{\texorpdfstring{isNone()}{isNone()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_validators_a3a2fa210254624a0fecd683f14f2e216} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Validators\+::is\+None (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the value is 0, \textquotesingle{}\textquotesingle{}, false or null. \begin{DoxyReturn}{Returns}
+(\$value is 0\texorpdfstring{$\vert$}{|}\textquotesingle{}\textquotesingle{}\texorpdfstring{$\vert$}{|}false\texorpdfstring{$\vert$}{|}null ? true \+: false) 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_validators_ab0faff8c34ed7fe33041e25b66cf8cb8}\index{Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}!isNumber@{isNumber}}
+\index{isNumber@{isNumber}!Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}}
+\doxysubsubsection{\texorpdfstring{isNumber()}{isNumber()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_validators_ab0faff8c34ed7fe33041e25b66cf8cb8} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Validators\+::is\+Number (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the value is an integer or a float. \begin{DoxyReturn}{Returns}
+(\$value is int\texorpdfstring{$\vert$}{|}float ? true \+: false) 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_validators_a9ffcd3f4b25456ad275a1bc581c514a0}\index{Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}!isNumeric@{isNumeric}}
+\index{isNumeric@{isNumeric}!Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}}
+\doxysubsubsection{\texorpdfstring{isNumeric()}{isNumeric()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_validators_a9ffcd3f4b25456ad275a1bc581c514a0} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Validators\+::is\+Numeric (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the value is a number or a number written in a string. \begin{DoxyReturn}{Returns}
+(\$value is non-\/empty-\/string ? bool \+: (\$value is int\texorpdfstring{$\vert$}{|}float ? true \+: false)) 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_validators_ad6f8e2d7f1796b831e1aedd564594592}\index{Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}!isNumericInt@{isNumericInt}}
+\index{isNumericInt@{isNumericInt}!Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}}
+\doxysubsubsection{\texorpdfstring{isNumericInt()}{isNumericInt()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_validators_ad6f8e2d7f1796b831e1aedd564594592} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Validators\+::is\+Numeric\+Int (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the value is an integer or a integer written in a string. \begin{DoxyReturn}{Returns}
+(\$value is non-\/empty-\/string ? bool \+: (\$value is int ? true \+: false)) 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_validators_a937e41053dc3700bc1eb636036a6158d}\index{Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}!isUnicode@{isUnicode}}
+\index{isUnicode@{isUnicode}!Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}}
+\doxysubsubsection{\texorpdfstring{isUnicode()}{isUnicode()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_validators_a937e41053dc3700bc1eb636036a6158d} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Validators\+::is\+Unicode (\begin{DoxyParamCaption}\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the value is a valid UTF-\/8 string. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_nette_1_1_utils_1_1_validators_a0380ac00b6dcdbc24d2250237d857f4b}\index{Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}!\$counters@{\$counters}}
+\index{\$counters@{\$counters}!Nette\textbackslash{}Utils\textbackslash{}Validators@{Nette\textbackslash{}Utils\textbackslash{}Validators}}
+\doxysubsubsection{\texorpdfstring{\$counters}{\$counters}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_validators_a0380ac00b6dcdbc24d2250237d857f4b} 
+Nette\textbackslash{}\+Utils\textbackslash{}\+Validators\+::\$counters\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'string'}\ =>\ \textcolor{stringliteral}{'strlen'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'unicode'}\ =>\ [Strings::class,\ \textcolor{stringliteral}{'length'}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'array'}\ =>\ \textcolor{stringliteral}{'count'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'list'}\ =>\ \textcolor{stringliteral}{'count'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'alnum'}\ =>\ \textcolor{stringliteral}{'strlen'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'alpha'}\ =>\ \textcolor{stringliteral}{'strlen'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'digit'}\ =>\ \textcolor{stringliteral}{'strlen'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'lower'}\ =>\ \textcolor{stringliteral}{'strlen'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'space'}\ =>\ \textcolor{stringliteral}{'strlen'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'upper'}\ =>\ \textcolor{stringliteral}{'strlen'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'xdigit'}\ =>\ \textcolor{stringliteral}{'strlen'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/nette/utils/src/\+Utils/Validators.\+php\end{DoxyCompactItemize}

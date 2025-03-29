@@ -1,0 +1,66 @@
+\doxysection{Guzzle\+Http\textbackslash{}Psr7\textbackslash{}Inflate\+Stream Class Reference}
+\hypertarget{class_guzzle_http_1_1_psr7_1_1_inflate_stream}{}\label{class_guzzle_http_1_1_psr7_1_1_inflate_stream}\index{GuzzleHttp\textbackslash{}Psr7\textbackslash{}InflateStream@{GuzzleHttp\textbackslash{}Psr7\textbackslash{}InflateStream}}
+Inheritance diagram for Guzzle\+Http\textbackslash{}Psr7\textbackslash{}Inflate\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_guzzle_http_1_1_psr7_1_1_inflate_stream}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_guzzle_http_1_1_psr7_1_1_inflate_stream_a06a51bed07c69de59ee68f78dcc817ff}\label{class_guzzle_http_1_1_psr7_1_1_inflate_stream_a06a51bed07c69de59ee68f78dcc817ff} 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$stream)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Stream\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a72df4e8851ae1a81087f3415fd6d73cd}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a0bbd0c821da0ee0c319f9867ff77c598}{close}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a1670dba880a8c14690746732960d4c9c}{detach}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a85b9ff28e3ee39d95a47e623d866cf76}{get\+Size}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a9aa2f88a38f496d74100f42ddf0656ef}{tell}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a502cc5ca370c6925b78d95d86d68777c}{eof}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_ad4a27548fd51bd12390d798981a1622b}{is\+Seekable}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a87cff42eb4e13a5c9fd163488d4982d9}{seek}} (int \$offset, int \$whence=SEEK\+\_\+\+SET)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a48721ef4d5097250a3f94515938393c9}{rewind}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a79287940d75d1951b831879fdc493883}{is\+Writable}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_ad1516fb049f8ae1198350006f90ed866}{write}} (string \$string)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_aecf78407aa241622ae200a9faa471d32}{is\+Readable}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_aca95619bcd058ac3d2cbb98ed24f6979}{read}} (int \$length)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a77f73d536f77e4a4e281d548ee905276}{get\+Contents}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface_a50f840e956d2a19b618a1c819df281c9}{get\+Metadata}} (?string \$key=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Uses PHP\textquotesingle{}s zlib.\+inflate filter to inflate zlib (HTTP deflate, RFC1950) or gzipped (RFC1952) content.
+
+This stream decorator converts the provided stream to a PHP stream resource, then appends the zlib.\+inflate filter. The stream is then converted back to a Guzzle stream resource to be used as a Guzzle stream.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://datatracker.ietf.org/doc/html/rfc1950}{\texttt{ https\+://datatracker.\+ietf.\+org/doc/html/rfc1950}} 
+
+\href{https://datatracker.ietf.org/doc/html/rfc1952}{\texttt{ https\+://datatracker.\+ietf.\+org/doc/html/rfc1952}} 
+
+\href{https://www.php.net/manual/en/filters.compression.php}{\texttt{ https\+://www.\+php.\+net/manual/en/filters.\+compression.\+php}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/guzzlehttp/psr7/src/Inflate\+Stream.\+php\end{DoxyCompactItemize}

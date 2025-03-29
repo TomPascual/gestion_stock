@@ -1,3 +1,12 @@
+{{-- 
+    Vue : produits/mouvements.blade.php
+    Description : Affiche l’historique des mouvements (entrées/sorties) pour un produit donné, 
+                  et permet d’ajouter un nouveau mouvement.
+    Actions :
+        - POST vers la route 'produits.ajouterMouvement' pour créer un nouveau mouvement
+        - Affichage d'un tableau listant les mouvements existants
+--}}
+
 @extends('layouts.app')
 
 @section('content')
@@ -81,7 +90,6 @@
                         </tr>
                     @endif
                 </tbody>
-
             </table>
         </div>
     </div>

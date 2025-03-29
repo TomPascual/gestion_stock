@@ -1,0 +1,189 @@
+\doxysection{Nette\textbackslash{}Utils\textbackslash{}File\+System Class Reference}
+\hypertarget{class_nette_1_1_utils_1_1_file_system}{}\label{class_nette_1_1_utils_1_1_file_system}\index{Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_file_system_a2d9dbb9338eae84e5e563d9dd8d371e3}{create\+Dir}} (string \$dir, int \$mode=0777)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_file_system_ae362b5fa6ef0e39ad41bbaf01d624e01}{copy}} (string \$origin, string \$target, bool \$overwrite=true)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_file_system_aa8c661f24cd63ea990cc8b2046adf1d6}{open}} (string \$path, string \$mode)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_file_system_a8bcd11ff88300b7127e1df2501aa9f54}{delete}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_file_system_a778b74806992383a077e5458dfb73e2f}{rename}} (string \$origin, string \$target, bool \$overwrite=true)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_file_system_a1abbb815a0841117cbd01d290e7bc08c}{read}} (string \$file)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_file_system_a08fd361170ad18932f84eddb77605d85}{read\+Lines}} (string \$file, bool \$strip\+New\+Lines=true)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_file_system_aed8a278f8b2ac0e78e95d3036a819a38}{write}} (string \$file, string \$content, ?int \$mode=0666)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_file_system_a36a625fd0da0f92ef92d45375f973bd8}{make\+Writable}} (string \$path, int \$dir\+Mode=0777, int \$file\+Mode=0666)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_file_system_a25042404ed410f510785a351d95e2f13}{is\+Absolute}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_file_system_a94eb5948d18cbf69612ecd5d78a91b3f}{normalize\+Path}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_file_system_a20de2f432e0b72577cdca389a4a91b31}{join\+Paths}} (string ... \$paths)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_file_system_aa3688fffd9f73355fca9bdb0724e4554}{unix\+Slashes}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_file_system_a2c5c603e924cb614ead5bd92d27dfb4d}{platform\+Slashes}} (string \$path)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+File system tool. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_nette_1_1_utils_1_1_file_system_ae362b5fa6ef0e39ad41bbaf01d624e01}\index{Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}!copy@{copy}}
+\index{copy@{copy}!Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_file_system_ae362b5fa6ef0e39ad41bbaf01d624e01} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+File\+System\+::copy (\begin{DoxyParamCaption}\item[{string}]{\$origin}{, }\item[{string}]{\$target}{, }\item[{bool}]{\$overwrite}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Copies a file or an entire directory. Overwrites existing files and directories by default. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Nette} & \\
+\hline
+\end{DoxyExceptions}
+IOException on error occurred 
+\begin{DoxyExceptions}{Exceptions}
+{\em Nette} & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+State\+Exception if \$overwrite is set to false and destination already exists \Hypertarget{class_nette_1_1_utils_1_1_file_system_a2d9dbb9338eae84e5e563d9dd8d371e3}\index{Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}!createDir@{createDir}}
+\index{createDir@{createDir}!Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}}
+\doxysubsubsection{\texorpdfstring{createDir()}{createDir()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_file_system_a2d9dbb9338eae84e5e563d9dd8d371e3} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+File\+System\+::create\+Dir (\begin{DoxyParamCaption}\item[{string}]{\$dir}{, }\item[{int}]{\$mode}{ = {\ttfamily 0777}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates a directory if it does not exist, including parent directories. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Nette} & \\
+\hline
+\end{DoxyExceptions}
+IOException on error occurred \Hypertarget{class_nette_1_1_utils_1_1_file_system_a8bcd11ff88300b7127e1df2501aa9f54}\index{Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}!delete@{delete}}
+\index{delete@{delete}!Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_file_system_a8bcd11ff88300b7127e1df2501aa9f54} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+File\+System\+::delete (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Deletes a file or an entire directory if exists. If the directory is not empty, it deletes its contents first. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Nette} & \\
+\hline
+\end{DoxyExceptions}
+IOException on error occurred \Hypertarget{class_nette_1_1_utils_1_1_file_system_a25042404ed410f510785a351d95e2f13}\index{Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}!isAbsolute@{isAbsolute}}
+\index{isAbsolute@{isAbsolute}!Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}}
+\doxysubsubsection{\texorpdfstring{isAbsolute()}{isAbsolute()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_file_system_a25042404ed410f510785a351d95e2f13} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+File\+System\+::is\+Absolute (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determines if the path is absolute. \Hypertarget{class_nette_1_1_utils_1_1_file_system_a20de2f432e0b72577cdca389a4a91b31}\index{Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}!joinPaths@{joinPaths}}
+\index{joinPaths@{joinPaths}!Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}}
+\doxysubsubsection{\texorpdfstring{joinPaths()}{joinPaths()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_file_system_a20de2f432e0b72577cdca389a4a91b31} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+File\+System\+::join\+Paths (\begin{DoxyParamCaption}\item[{string ...}]{\$paths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Joins all segments of the path and normalizes the result. \Hypertarget{class_nette_1_1_utils_1_1_file_system_a36a625fd0da0f92ef92d45375f973bd8}\index{Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}!makeWritable@{makeWritable}}
+\index{makeWritable@{makeWritable}!Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}}
+\doxysubsubsection{\texorpdfstring{makeWritable()}{makeWritable()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_file_system_a36a625fd0da0f92ef92d45375f973bd8} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+File\+System\+::make\+Writable (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{int}]{\$dir\+Mode}{ = {\ttfamily 0777}, }\item[{int}]{\$file\+Mode}{ = {\ttfamily 0666}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sets file permissions to {\ttfamily \$file\+Mode} or directory permissions to {\ttfamily \$dir\+Mode}. Recursively traverses and sets permissions on the entire contents of the directory as well. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Nette} & \\
+\hline
+\end{DoxyExceptions}
+IOException on error occurred \Hypertarget{class_nette_1_1_utils_1_1_file_system_a94eb5948d18cbf69612ecd5d78a91b3f}\index{Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}!normalizePath@{normalizePath}}
+\index{normalizePath@{normalizePath}!Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}}
+\doxysubsubsection{\texorpdfstring{normalizePath()}{normalizePath()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_file_system_a94eb5948d18cbf69612ecd5d78a91b3f} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+File\+System\+::normalize\+Path (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes {\ttfamily ..} and {\ttfamily .} and directory separators in path. \Hypertarget{class_nette_1_1_utils_1_1_file_system_aa8c661f24cd63ea990cc8b2046adf1d6}\index{Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}!open@{open}}
+\index{open@{open}!Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_file_system_aa8c661f24cd63ea990cc8b2046adf1d6} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+File\+System\+::open (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{string}]{\$mode}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Opens file and returns resource. \begin{DoxyReturn}{Returns}
+resource 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nette} & \\
+\hline
+\end{DoxyExceptions}
+IOException on error occurred \Hypertarget{class_nette_1_1_utils_1_1_file_system_a2c5c603e924cb614ead5bd92d27dfb4d}\index{Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}!platformSlashes@{platformSlashes}}
+\index{platformSlashes@{platformSlashes}!Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}}
+\doxysubsubsection{\texorpdfstring{platformSlashes()}{platformSlashes()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_file_system_a2c5c603e924cb614ead5bd92d27dfb4d} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+File\+System\+::platform\+Slashes (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts slashes to platform-\/specific directory separators. \Hypertarget{class_nette_1_1_utils_1_1_file_system_a1abbb815a0841117cbd01d290e7bc08c}\index{Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}!read@{read}}
+\index{read@{read}!Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_file_system_a1abbb815a0841117cbd01d290e7bc08c} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+File\+System\+::read (\begin{DoxyParamCaption}\item[{string}]{\$file}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Reads the content of a file. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Nette} & \\
+\hline
+\end{DoxyExceptions}
+IOException on error occurred \Hypertarget{class_nette_1_1_utils_1_1_file_system_a08fd361170ad18932f84eddb77605d85}\index{Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}!readLines@{readLines}}
+\index{readLines@{readLines}!Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}}
+\doxysubsubsection{\texorpdfstring{readLines()}{readLines()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_file_system_a08fd361170ad18932f84eddb77605d85} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+File\+System\+::read\+Lines (\begin{DoxyParamCaption}\item[{string}]{\$file}{, }\item[{bool}]{\$strip\+New\+Lines}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Reads the file content line by line. Because it reads continuously as we iterate over the lines, it is possible to read files larger than the available memory. \begin{DoxyReturn}{Returns}
+\textbackslash{}\+Generator\texorpdfstring{$<$}{<}int, string\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nette} & \\
+\hline
+\end{DoxyExceptions}
+IOException on error occurred \Hypertarget{class_nette_1_1_utils_1_1_file_system_a778b74806992383a077e5458dfb73e2f}\index{Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}!rename@{rename}}
+\index{rename@{rename}!Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}}
+\doxysubsubsection{\texorpdfstring{rename()}{rename()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_file_system_a778b74806992383a077e5458dfb73e2f} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+File\+System\+::rename (\begin{DoxyParamCaption}\item[{string}]{\$origin}{, }\item[{string}]{\$target}{, }\item[{bool}]{\$overwrite}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Renames or moves a file or a directory. Overwrites existing files and directories by default. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Nette} & \\
+\hline
+\end{DoxyExceptions}
+IOException on error occurred 
+\begin{DoxyExceptions}{Exceptions}
+{\em Nette} & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+State\+Exception if \$overwrite is set to false and destination already exists \Hypertarget{class_nette_1_1_utils_1_1_file_system_aa3688fffd9f73355fca9bdb0724e4554}\index{Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}!unixSlashes@{unixSlashes}}
+\index{unixSlashes@{unixSlashes}!Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}}
+\doxysubsubsection{\texorpdfstring{unixSlashes()}{unixSlashes()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_file_system_aa3688fffd9f73355fca9bdb0724e4554} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+File\+System\+::unix\+Slashes (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts backslashes to slashes. \Hypertarget{class_nette_1_1_utils_1_1_file_system_aed8a278f8b2ac0e78e95d3036a819a38}\index{Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}!write@{write}}
+\index{write@{write}!Nette\textbackslash{}Utils\textbackslash{}FileSystem@{Nette\textbackslash{}Utils\textbackslash{}FileSystem}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_file_system_aed8a278f8b2ac0e78e95d3036a819a38} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+File\+System\+::write (\begin{DoxyParamCaption}\item[{string}]{\$file}{, }\item[{string}]{\$content}{, }\item[{?int}]{\$mode}{ = {\ttfamily 0666}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Writes the string to a file. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Nette} & \\
+\hline
+\end{DoxyExceptions}
+IOException on error occurred 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/nette/utils/src/\+Utils/File\+System.\+php\end{DoxyCompactItemize}

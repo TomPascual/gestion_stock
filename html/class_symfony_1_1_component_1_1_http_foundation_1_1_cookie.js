@@ -1,0 +1,27 @@
+var class_symfony_1_1_component_1_1_http_foundation_1_1_cookie =
+[
+    [ "__construct", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#a4b5d976a778287c4ea4bac616f01c815", null ],
+    [ "__toString", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#ab1d1ddde2144afe110276139db23c36a", null ],
+    [ "getDomain", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#aaf08abe3009b6e6cd36394fec799c4ba", null ],
+    [ "getExpiresTime", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#a3d50894be30284e081c854fdf386e54e", null ],
+    [ "getMaxAge", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#afdc71f83e63fa121be91f4c75a171ea9", null ],
+    [ "getName", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#ae2bc9d87e94b485fc23af29640b17d76", null ],
+    [ "getPath", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#ac977be9c384edcbbf528f478b7b4a1c6", null ],
+    [ "getSameSite", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#a31d3b8f7a639967338a12f7fba63a665", null ],
+    [ "getValue", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#af4cc11e96720b8734351fb75eaf2c551", null ],
+    [ "isCleared", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#a814f04ab1f5469e8f2f0d4375201d385", null ],
+    [ "isHttpOnly", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#a8dcb5983ba21312c9a5ab33bf45599a5", null ],
+    [ "isPartitioned", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#acc00b7c7262ade6aa3e7eca955eb884e", null ],
+    [ "isRaw", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#a60cb84eb9f5fdd90e465e5cef33cf0a1", null ],
+    [ "isSecure", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#a43126a16f1194de9fcd8562ee1412f8d", null ],
+    [ "setSecureDefault", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#a8661fc92ee291d0146f55fcb450a6a50", null ],
+    [ "withDomain", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#aa53233b55de165479ea90f0dce222567", null ],
+    [ "withExpires", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#a3b1f2a4e480b7774a578a517c56dc57b", null ],
+    [ "withHttpOnly", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#a0594a2badda9b8c26944fbb2cc8b4608", null ],
+    [ "withPartitioned", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#a46c7832b24fb0c29ccf37a6677afe5aa", null ],
+    [ "withPath", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#a1a368d6caf3444fbe873343a70f173db", null ],
+    [ "withRaw", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#a6d46a02fc93613e1a2f1f15869f22a76", null ],
+    [ "withSameSite", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#a5a446c6ecf2fe4d9a17289afc6765691", null ],
+    [ "withSecure", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#aa5f69257df6f05c1c60effc1cec5b163", null ],
+    [ "withValue", "class_symfony_1_1_component_1_1_http_foundation_1_1_cookie.html#a8f767b5f5c4bbdb3fba582a6fce10d5a", null ]
+];

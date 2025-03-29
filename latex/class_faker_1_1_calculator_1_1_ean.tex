@@ -1,0 +1,56 @@
+\doxysection{Faker\textbackslash{}Calculator\textbackslash{}Ean Class Reference}
+\hypertarget{class_faker_1_1_calculator_1_1_ean}{}\label{class_faker_1_1_calculator_1_1_ean}\index{Faker\textbackslash{}Calculator\textbackslash{}Ean@{Faker\textbackslash{}Calculator\textbackslash{}Ean}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_faker_1_1_calculator_1_1_ean_a603c5643edc1facbc73530b50f3d252d}{checksum}} (string \$digits)
+\item 
+static \mbox{\hyperlink{class_faker_1_1_calculator_1_1_ean_adaab1f9ab3955e727998c7f146f52690}{is\+Valid}} (string \$ean)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_faker_1_1_calculator_1_1_ean_a17149f9909547b8de351d8d441f38b7d}\label{class_faker_1_1_calculator_1_1_ean_a17149f9909547b8de351d8d441f38b7d} 
+const {\bfseries PATTERN} = \textquotesingle{}/\texorpdfstring{$^\wedge$}{\string^}(?\+:\textbackslash{}d\{8\}\texorpdfstring{$\vert$}{|}\textbackslash{}d\{13\})\$/\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility class for validating EAN-\/8 and EAN-\/13 numbers 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_faker_1_1_calculator_1_1_ean_a603c5643edc1facbc73530b50f3d252d}\index{Faker\textbackslash{}Calculator\textbackslash{}Ean@{Faker\textbackslash{}Calculator\textbackslash{}Ean}!checksum@{checksum}}
+\index{checksum@{checksum}!Faker\textbackslash{}Calculator\textbackslash{}Ean@{Faker\textbackslash{}Calculator\textbackslash{}Ean}}
+\doxysubsubsection{\texorpdfstring{checksum()}{checksum()}}
+{\footnotesize\ttfamily \label{class_faker_1_1_calculator_1_1_ean_a603c5643edc1facbc73530b50f3d252d} 
+static Faker\textbackslash{}\+Calculator\textbackslash{}\+Ean\+::checksum (\begin{DoxyParamCaption}\item[{string}]{\$digits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Computes the checksum of an EAN number.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://en.wikipedia.org/wiki/International_Article_Number}{\texttt{ https\+://en.\+wikipedia.\+org/wiki/\+International\+\_\+\+Article\+\_\+\+Number}}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_faker_1_1_calculator_1_1_ean_adaab1f9ab3955e727998c7f146f52690}\index{Faker\textbackslash{}Calculator\textbackslash{}Ean@{Faker\textbackslash{}Calculator\textbackslash{}Ean}!isValid@{isValid}}
+\index{isValid@{isValid}!Faker\textbackslash{}Calculator\textbackslash{}Ean@{Faker\textbackslash{}Calculator\textbackslash{}Ean}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily \label{class_faker_1_1_calculator_1_1_ean_adaab1f9ab3955e727998c7f146f52690} 
+static Faker\textbackslash{}\+Calculator\textbackslash{}\+Ean\+::is\+Valid (\begin{DoxyParamCaption}\item[{string}]{\$ean}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks whether the provided number is an EAN compliant number and that the checksum is correct.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ean} & An EAN number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/fakerphp/faker/src/\+Faker/\+Calculator/Ean.\+php\end{DoxyCompactItemize}

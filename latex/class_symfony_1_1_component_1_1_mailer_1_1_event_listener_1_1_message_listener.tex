@@ -1,0 +1,111 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Event\+Listener\textbackslash{}Message\+Listener Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener}{}\label{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageListener@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageListener}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Event\+Listener\textbackslash{}Message\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_afe7d80d2f355084745f39b27994f8b5e}\label{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_afe7d80d2f355084745f39b27994f8b5e} 
+{\bfseries \+\_\+\+\_\+construct} (private ?\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_header_1_1_headers}{Headers}} \$headers=null, private ?\mbox{\hyperlink{interface_symfony_1_1_component_1_1_mime_1_1_body_renderer_interface}{Body\+Renderer\+Interface}} \$renderer=null, array \$header\+Rules=self\+::\+DEFAULT\+\_\+\+RULES,)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_abd10655e9a5479bd1d5a3a3634a985a9}\label{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_abd10655e9a5479bd1d5a3a3634a985a9} 
+{\bfseries add\+Header\+Rule} (string \$header\+Name, int \$rule)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_a374147f443465d5e6afa4cbad7a44ee9}\label{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_a374147f443465d5e6afa4cbad7a44ee9} 
+{\bfseries on\+Message} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_event_1_1_message_event}{Message\+Event}} \$event)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_adca5d019c4f38c783e2a2b68085b4fbd}{get\+Subscribed\+Events}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_a10d5891bd8e47196b8a7a77cb97fcb21}\label{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_a10d5891bd8e47196b8a7a77cb97fcb21} 
+const {\bfseries HEADER\+\_\+\+SET\+\_\+\+IF\+\_\+\+EMPTY} = 1
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_aeb2fd85c3b9ecd908496f718d25b4d29}\label{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_aeb2fd85c3b9ecd908496f718d25b4d29} 
+const {\bfseries HEADER\+\_\+\+ADD} = 2
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_ac49b2030092ea91dd894bf641c9567c7}\label{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_ac49b2030092ea91dd894bf641c9567c7} 
+const {\bfseries HEADER\+\_\+\+REPLACE} = 3
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_a2d3c63247607b0c1e5f6c16e5ce0be8a}{DEFAULT\+\_\+\+RULES}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manipulates the headers and the body of a Message.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_adca5d019c4f38c783e2a2b68085b4fbd}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageListener@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageListener}!getSubscribedEvents@{getSubscribedEvents}}
+\index{getSubscribedEvents@{getSubscribedEvents}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageListener@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageListener}}
+\doxysubsubsection{\texorpdfstring{getSubscribedEvents()}{getSubscribedEvents()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_adca5d019c4f38c783e2a2b68085b4fbd} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Event\+Listener\textbackslash{}\+Message\+Listener\+::get\+Subscribed\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an array of event names this subscriber wants to listen to.
+
+The array keys are event names and the value can be\+:
+
+
+\begin{DoxyItemize}
+\item The method name to call (priority defaults to 0)
+\item An array composed of the method name to call and the priority
+\item An array of arrays composed of the method names to call and respective priorities, or 0 if unset
+\end{DoxyItemize}
+
+For instance\+:
+
+
+\begin{DoxyItemize}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}method\+Name\textquotesingle{}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\textquotesingle{}method\+Name\textquotesingle{}, \$priority\mbox{]}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\mbox{[}\textquotesingle{}method\+Name1\textquotesingle{}, \$priority\mbox{]}, \mbox{[}\textquotesingle{}method\+Name2\textquotesingle{}\mbox{]}\mbox{]}\mbox{]}
+\end{DoxyItemize}
+
+The code must not depend on runtime state as it will only be called at compile time. All logic depending on runtime state must be put into the individual methods handling the events.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, string\texorpdfstring{$\vert$}{|}array\{0\+: string, 1\+: int\}\texorpdfstring{$\vert$}{|}list\texorpdfstring{$<$}{<}array\{0\+: string, 1?\+: int\}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface_a1f40b93f2c531f690bb4cd5bc5764c73}{Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event\+Subscriber\+Interface}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_a2d3c63247607b0c1e5f6c16e5ce0be8a}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageListener@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageListener}!DEFAULT\_RULES@{DEFAULT\_RULES}}
+\index{DEFAULT\_RULES@{DEFAULT\_RULES}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageListener@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}EventListener\textbackslash{}MessageListener}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_RULES}{DEFAULT\_RULES}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_event_listener_1_1_message_listener_a2d3c63247607b0c1e5f6c16e5ce0be8a} 
+const Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Event\+Listener\textbackslash{}\+Message\+Listener\+::\+DEFAULT\+\_\+\+RULES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'from'}\ =>\ self::HEADER\_SET\_IF\_EMPTY,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'return-\/path'}\ =>\ self::HEADER\_SET\_IF\_EMPTY,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'reply-\/to'}\ =>\ self::HEADER\_ADD,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'to'}\ =>\ self::HEADER\_SET\_IF\_EMPTY,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'cc'}\ =>\ self::HEADER\_ADD,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'bcc'}\ =>\ self::HEADER\_ADD,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/mailer/\+Event\+Listener/Message\+Listener.\+php\end{DoxyCompactItemize}

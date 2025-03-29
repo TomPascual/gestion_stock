@@ -1,0 +1,4 @@
+var class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_strict_session_handler =
+[
+    [ "isWrapper", "class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_strict_session_handler.html#a0f103f08680dc7f3cdb2791cdb3e5827", null ]
+];

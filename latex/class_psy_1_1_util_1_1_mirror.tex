@@ -1,0 +1,69 @@
+\doxysection{Psy\textbackslash{}Util\textbackslash{}Mirror Class Reference}
+\hypertarget{class_psy_1_1_util_1_1_mirror}{}\label{class_psy_1_1_util_1_1_mirror}\index{Psy\textbackslash{}Util\textbackslash{}Mirror@{Psy\textbackslash{}Util\textbackslash{}Mirror}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_util_1_1_mirror_abdb4d38f67fe59323170fe0480982fb1}{get}} (\$value, ?string \$member=null, int \$filter=15)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_psy_1_1_util_1_1_mirror_a37bfe3fcf6b66a7a13d6589a3fcae2b5}\label{class_psy_1_1_util_1_1_mirror_a37bfe3fcf6b66a7a13d6589a3fcae2b5} 
+const {\bfseries CONSTANT} = 1
+\item 
+\Hypertarget{class_psy_1_1_util_1_1_mirror_a08e8464c70d3b293dfc9ff8bf506b9d9}\label{class_psy_1_1_util_1_1_mirror_a08e8464c70d3b293dfc9ff8bf506b9d9} 
+const {\bfseries METHOD} = 2
+\item 
+\Hypertarget{class_psy_1_1_util_1_1_mirror_ab939b6235348eda8b05fa64da16c1212}\label{class_psy_1_1_util_1_1_mirror_ab939b6235348eda8b05fa64da16c1212} 
+const {\bfseries STATIC\+\_\+\+PROPERTY} = 4
+\item 
+\Hypertarget{class_psy_1_1_util_1_1_mirror_a1db8c792546ca9e798a6eeb384f354b0}\label{class_psy_1_1_util_1_1_mirror_a1db8c792546ca9e798a6eeb384f354b0} 
+const {\bfseries PROPERTY} = 8
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A utility class for getting Reflectors. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_util_1_1_mirror_abdb4d38f67fe59323170fe0480982fb1}\index{Psy\textbackslash{}Util\textbackslash{}Mirror@{Psy\textbackslash{}Util\textbackslash{}Mirror}!get@{get}}
+\index{get@{get}!Psy\textbackslash{}Util\textbackslash{}Mirror@{Psy\textbackslash{}Util\textbackslash{}Mirror}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_util_1_1_mirror_abdb4d38f67fe59323170fe0480982fb1} 
+static Psy\textbackslash{}\+Util\textbackslash{}\+Mirror\+::get (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{?string}]{\$member}{ = {\ttfamily null}, }\item[{int}]{\$filter}{ = {\ttfamily 15}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a Reflector for a function, class or instance, constant, method or property.
+
+Optionally, pass a \$filter param to restrict the types of members checked. For example, to only Reflectors for static properties and constants, pass\+:
+
+\$filter = Mirror\+::\+CONSTANT \texorpdfstring{$\vert$}{|} Mirror\+::\+STATIC\+\_\+\+PROPERTY
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Psy\textbackslash{}\+Exception\textbackslash{}\+Runtime\+Exception when a \$member specified but not present on \$value 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception if \$value is something other than an object or class/function name
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & Class or function name, or variable instance \\
+\hline
+string & {\em \$member} & Optional\+: property, constant or method name (default\+: null) \\
+\hline
+int & {\em \$filter} & (default\+: CONSTANT \texorpdfstring{$\vert$}{|} METHOD \texorpdfstring{$\vert$}{|} PROPERTY \texorpdfstring{$\vert$}{|} STATIC\+\_\+\+PROPERTY)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Reflector 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Util/Mirror.\+php\end{DoxyCompactItemize}

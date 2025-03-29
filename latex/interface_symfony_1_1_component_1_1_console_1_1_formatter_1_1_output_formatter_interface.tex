@@ -1,0 +1,106 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}Output\+Formatter\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface}{}\label{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}Output\+Formatter\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.866667cm]{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_a8e36ccc3a4a063c64a999620b8aa7bd7}{set\+Decorated}} (bool \$decorated)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_a0b4010c2c5187bfe16b9a8f4327c5ed6}{is\+Decorated}} ()
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_a2bd2c05f9a2173fe471ebb921d2882d1}{set\+Style}} (string \$name, \mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_style_interface}{Output\+Formatter\+Style\+Interface}} \$style)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_a728d4aa3e4b837a4e5be8f51468258ef}{has\+Style}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_af44722dc017759644b182d2b980e69f3}{get\+Style}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_a15ea0939304c9679cb9a43bcb141de9c}{format}} (?string \$message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Formatter interface for console output.
+
+\begin{DoxyAuthor}{Author}
+Konstantin Kudryashov \href{mailto:ever.zet@gmail.com}{\texttt{ ever.\+zet@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_a15ea0939304c9679cb9a43bcb141de9c}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface}!format@{format}}
+\index{format@{format}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_a15ea0939304c9679cb9a43bcb141de9c} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Output\+Formatter\+Interface\+::format (\begin{DoxyParamCaption}\item[{?string}]{\$message}{}\end{DoxyParamCaption})}
+
+Formats a message according to the given styles. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_formatter_1_1_null_output_formatter_a06ecbb814e9c31fc74167f4355774fe0}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Null\+Output\+Formatter}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_a9b412bb620140fa1ae71f5c91862623b}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Output\+Formatter}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_af44722dc017759644b182d2b980e69f3}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface}!getStyle@{getStyle}}
+\index{getStyle@{getStyle}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface}}
+\doxysubsubsection{\texorpdfstring{getStyle()}{getStyle()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_af44722dc017759644b182d2b980e69f3} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Output\+Formatter\+Interface\+::get\+Style (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Gets style options from style with specified name.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception When style isn\textquotesingle{}t defined 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_formatter_1_1_null_output_formatter_ab272cc61cb23fe9813616df52328c1ad}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Null\+Output\+Formatter}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_a6fda094e34af65d2d294330b02217661}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Output\+Formatter}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_a728d4aa3e4b837a4e5be8f51468258ef}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface}!hasStyle@{hasStyle}}
+\index{hasStyle@{hasStyle}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface}}
+\doxysubsubsection{\texorpdfstring{hasStyle()}{hasStyle()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_a728d4aa3e4b837a4e5be8f51468258ef} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Output\+Formatter\+Interface\+::has\+Style (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})}
+
+Checks if output formatter has style with specified name. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_formatter_1_1_null_output_formatter_a0f6a2ece4a964bb5358b4e133ea31915}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Null\+Output\+Formatter}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_a864fd9eada78b3343b0d1434ec1bed00}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Output\+Formatter}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_a0b4010c2c5187bfe16b9a8f4327c5ed6}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface}!isDecorated@{isDecorated}}
+\index{isDecorated@{isDecorated}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface}}
+\doxysubsubsection{\texorpdfstring{isDecorated()}{isDecorated()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_a0b4010c2c5187bfe16b9a8f4327c5ed6} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Output\+Formatter\+Interface\+::is\+Decorated (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Whether the output will decorate messages. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_formatter_1_1_null_output_formatter_a3e973f505c14604d793c33d46f6904ba}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Null\+Output\+Formatter}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_ac7ec55fb9461338349d5fa04c9418434}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Output\+Formatter}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_a8e36ccc3a4a063c64a999620b8aa7bd7}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface}!setDecorated@{setDecorated}}
+\index{setDecorated@{setDecorated}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface}}
+\doxysubsubsection{\texorpdfstring{setDecorated()}{setDecorated()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_a8e36ccc3a4a063c64a999620b8aa7bd7} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Output\+Formatter\+Interface\+::set\+Decorated (\begin{DoxyParamCaption}\item[{bool}]{\$decorated}{}\end{DoxyParamCaption})}
+
+Sets the decorated flag. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_formatter_1_1_null_output_formatter_a794ca900664777a5d56b4b3766597740}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Null\+Output\+Formatter}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_ad9c27638edb153e3bf7d5709ae52e695}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Output\+Formatter}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_a2bd2c05f9a2173fe471ebb921d2882d1}\index{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface}!setStyle@{setStyle}}
+\index{setStyle@{setStyle}!Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface@{Symfony\textbackslash{}Component\textbackslash{}Console\textbackslash{}Formatter\textbackslash{}OutputFormatterInterface}}
+\doxysubsubsection{\texorpdfstring{setStyle()}{setStyle()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_interface_a2bd2c05f9a2173fe471ebb921d2882d1} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Output\+Formatter\+Interface\+::set\+Style (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_style_interface}{Output\+Formatter\+Style\+Interface}}}]{\$style}{}\end{DoxyParamCaption})}
+
+Sets a new style. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_formatter_1_1_null_output_formatter_a8acaa200485c3c49082bb357e654eee0}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Null\+Output\+Formatter}}, and \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter_a63a1a569c916d94b533f67f11eea2d43}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Formatter\textbackslash{}\+Output\+Formatter}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/console/\+Formatter/Output\+Formatter\+Interface.\+php\end{DoxyCompactItemize}

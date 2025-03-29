@@ -1,0 +1,90 @@
+\doxysection{Faker\textbackslash{}Unique\+Generator Class Reference}
+\hypertarget{class_faker_1_1_unique_generator}{}\label{class_faker_1_1_unique_generator}\index{Faker\textbackslash{}UniqueGenerator@{Faker\textbackslash{}UniqueGenerator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_faker_1_1_unique_generator_a529f894fb7ae0f40a82c49166b3fec69}{\+\_\+\+\_\+construct}} (\$generator, \$max\+Retries=10000, \&\$uniques=\mbox{[}$\,$\mbox{]})
+\item 
+\Hypertarget{class_faker_1_1_unique_generator_a3e6600d56197682e2a43b8cab2c3e0b1}\label{class_faker_1_1_unique_generator_a3e6600d56197682e2a43b8cab2c3e0b1} 
+{\bfseries ext} (string \$id)
+\item 
+\mbox{\hyperlink{class_faker_1_1_unique_generator_a3ea0a75e308604059c537f08e96d877a}{\+\_\+\+\_\+get}} (\$attribute)
+\item 
+\mbox{\hyperlink{class_faker_1_1_unique_generator_a9cb8d67651fc9d8fd2bd3eaf7ec8a2a1}{\+\_\+\+\_\+call}} (\$name, \$arguments)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_faker_1_1_unique_generator_a12cb0d878d9101ffc008ca154d136d3e}\label{class_faker_1_1_unique_generator_a12cb0d878d9101ffc008ca154d136d3e} 
+{\bfseries \$generator}
+\item 
+\Hypertarget{class_faker_1_1_unique_generator_a0f066f9609c2bec876abb574c15ef7d0}\label{class_faker_1_1_unique_generator_a0f066f9609c2bec876abb574c15ef7d0} 
+{\bfseries \$max\+Retries}
+\item 
+\Hypertarget{class_faker_1_1_unique_generator_af0c1a1c3117f04f8e07c025b8a1fc951}\label{class_faker_1_1_unique_generator_af0c1a1c3117f04f8e07c025b8a1fc951} 
+{\bfseries \$uniques} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Proxy for other generators that returns only unique values.
+
+Instantiated through \begin{DoxySeeAlso}{See also}
+Generator\+::unique().
+\end{DoxySeeAlso}
+@mixin Generator 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_faker_1_1_unique_generator_a529f894fb7ae0f40a82c49166b3fec69}\index{Faker\textbackslash{}UniqueGenerator@{Faker\textbackslash{}UniqueGenerator}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Faker\textbackslash{}UniqueGenerator@{Faker\textbackslash{}UniqueGenerator}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_faker_1_1_unique_generator_a529f894fb7ae0f40a82c49166b3fec69} 
+Faker\textbackslash{}\+Unique\+Generator\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$generator}{, }\item[{}]{\$max\+Retries}{ = {\ttfamily 10000}, }\item[{\&}]{\$uniques}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Extension | Generator & {\em \$generator} & \\
+\hline
+int & {\em \$max\+Retries} & \\
+\hline
+ & {\em array$<$string,array$<$string,null$>$$>$} & \$uniques \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_faker_1_1_unique_generator_a9cb8d67651fc9d8fd2bd3eaf7ec8a2a1}\index{Faker\textbackslash{}UniqueGenerator@{Faker\textbackslash{}UniqueGenerator}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!Faker\textbackslash{}UniqueGenerator@{Faker\textbackslash{}UniqueGenerator}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_faker_1_1_unique_generator_a9cb8d67651fc9d8fd2bd3eaf7ec8a2a1} 
+Faker\textbackslash{}\+Unique\+Generator\+::\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$arguments}{}\end{DoxyParamCaption})}
+
+Catch and proxy all generator calls with arguments but return only unique values
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_faker_1_1_unique_generator_a3ea0a75e308604059c537f08e96d877a}\index{Faker\textbackslash{}UniqueGenerator@{Faker\textbackslash{}UniqueGenerator}!\_\_get@{\_\_get}}
+\index{\_\_get@{\_\_get}!Faker\textbackslash{}UniqueGenerator@{Faker\textbackslash{}UniqueGenerator}}
+\doxysubsubsection{\texorpdfstring{\_\_get()}{\_\_get()}}
+{\footnotesize\ttfamily \label{class_faker_1_1_unique_generator_a3ea0a75e308604059c537f08e96d877a} 
+Faker\textbackslash{}\+Unique\+Generator\+::\+\_\+\+\_\+get (\begin{DoxyParamCaption}\item[{}]{\$attribute}{}\end{DoxyParamCaption})}
+
+Catch and proxy all generator calls but return only unique values
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$attribute} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000027}{Deprecated}}]Use a method instead. \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/fakerphp/faker/src/\+Faker/Unique\+Generator.\+php\end{DoxyCompactItemize}

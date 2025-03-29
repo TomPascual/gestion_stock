@@ -1,0 +1,110 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Foundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}Redis\+Session\+Handler Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler}{}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Foundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}Redis\+Session\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.647059cm]{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_a0255f230d84afb42118407677ad70101}{\+\_\+\+\_\+construct}} (private \textbackslash{}Redis\texorpdfstring{$\vert$}{|}Relay\texorpdfstring{$\vert$}{|}\textbackslash{}Redis\+Array\texorpdfstring{$\vert$}{|}\textbackslash{}Redis\+Cluster\texorpdfstring{$\vert$}{|}\textbackslash{}Predis\textbackslash{}\+Client\+Interface \$redis, array \$options=\mbox{[}$\,$\mbox{]},)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_ab56f06d54d9ee844f7322713a1a5d808}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_ab56f06d54d9ee844f7322713a1a5d808} 
+{\bfseries close} ()
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_a3540f05b785c2f52a6a96b114a71b5db}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_a3540f05b785c2f52a6a96b114a71b5db} 
+{\bfseries gc} (int \$maxlifetime)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_aa3f6333bb79d9f556d57c1831e073657}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_aa3f6333bb79d9f556d57c1831e073657} 
+{\bfseries update\+Timestamp} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id, string \$data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Session\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries open} (string \$save\+Path, string \$session\+Name)
+\item 
+{\bfseries validate\+Id} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\item 
+{\bfseries read} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\item 
+{\bfseries write} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id, string \$data)
+\item 
+{\bfseries destroy} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_ae542d578bdf1e060b47eb5260323953b}{do\+Read}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_a266eee0909d64fa1377ac944edd4f4bf}{do\+Write}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id, string \$data)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_a0da7098a3f1feecb6e40e6aab51f856b}{do\+Destroy}} (\#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} string \$session\+Id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Redis based session storage handler based on the Redis class provided by the PHP redis extension.
+
+\begin{DoxyAuthor}{Author}
+Dalibor Karlović \href{mailto:dalibor@flexolabs.io}{\texttt{ dalibor@flexolabs.\+io}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_a0255f230d84afb42118407677ad70101}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_a0255f230d84afb42118407677ad70101} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Redis\+Session\+Handler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private \textbackslash{}Redis\texorpdfstring{$\vert$}{|}Relay\texorpdfstring{$\vert$}{|}\textbackslash{}Redis\+Array\texorpdfstring{$\vert$}{|}\textbackslash{}Redis\+Cluster\texorpdfstring{$\vert$}{|}\textbackslash{}Predis\textbackslash{}\+Client\+Interface}]{\$redis}{, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+List of available options\+:
+\begin{DoxyItemize}
+\item prefix\+: The prefix to use for the keys in order to avoid collision on the Redis server
+\item ttl\+: The time to live in seconds.
+\end{DoxyItemize}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception When unsupported client or options are passed 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_a0da7098a3f1feecb6e40e6aab51f856b}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler}!doDestroy@{doDestroy}}
+\index{doDestroy@{doDestroy}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler}}
+\doxysubsubsection{\texorpdfstring{doDestroy()}{doDestroy()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_a0da7098a3f1feecb6e40e6aab51f856b} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Redis\+Session\+Handler\+::do\+Destroy (\begin{DoxyParamCaption}\item[{\# string}]{\$session\+Id}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Session\+Handler}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_ae542d578bdf1e060b47eb5260323953b}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler}!doRead@{doRead}}
+\index{doRead@{doRead}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler}}
+\doxysubsubsection{\texorpdfstring{doRead()}{doRead()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_ae542d578bdf1e060b47eb5260323953b} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Redis\+Session\+Handler\+::do\+Read (\begin{DoxyParamCaption}\item[{\# string}]{\$session\+Id}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Session\+Handler}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_a266eee0909d64fa1377ac944edd4f4bf}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler}!doWrite@{doWrite}}
+\index{doWrite@{doWrite}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}Session\textbackslash{}Storage\textbackslash{}Handler\textbackslash{}RedisSessionHandler}}
+\doxysubsubsection{\texorpdfstring{doWrite()}{doWrite()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_redis_session_handler_a266eee0909d64fa1377ac944edd4f4bf} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Redis\+Session\+Handler\+::do\+Write (\begin{DoxyParamCaption}\item[{\# string}]{\$session\+Id}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{string}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_session_1_1_storage_1_1_handler_1_1_abstract_session_handler}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Session\textbackslash{}\+Storage\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Session\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/foundation/\+Session/\+Storage/\+Handler/Redis\+Session\+Handler.\+php\end{DoxyCompactItemize}

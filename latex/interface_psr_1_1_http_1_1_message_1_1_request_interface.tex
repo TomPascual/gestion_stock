@@ -1,0 +1,182 @@
+\doxysection{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}Request\+Interface Interface Reference}
+\hypertarget{interface_psr_1_1_http_1_1_message_1_1_request_interface}{}\label{interface_psr_1_1_http_1_1_message_1_1_request_interface}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface}}
+Inheritance diagram for Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}Request\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interface_psr_1_1_http_1_1_message_1_1_request_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface_a4b9117fe12afd5c5555d3ae7d183ded2}{get\+Request\+Target}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface_a11f014f71395ba46f6e4782e2f6cebfb}{with\+Request\+Target}} (string \$request\+Target)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface_a1aceab5bc5a2067500f4a80ac314fbc9}{get\+Method}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface_a1765dffd183825f192a2e61b07a8750a}{with\+Method}} (string \$method)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface_a179c55f570319eb0736f9a8209c9cac6}{get\+Uri}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_request_interface_a8b408f2e45effb88d6f0c8043e731b5b}{with\+Uri}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}} \$uri, bool \$preserve\+Host=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface}{Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Message\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_af9eb3a7d44050ba1b4792c0332635121}{get\+Protocol\+Version}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_ae0fba5f0d505bc1d88bfabebbb31c61c}{with\+Protocol\+Version}} (string \$version)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_a510ab87eb5cce38a8bb4cbec8f3f7565}{get\+Headers}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_a4e841b9a91c717afea7ffd0645a18905}{has\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_ac8635b198b86934da52d8e13efb1eb8b}{get\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_a8196467162c8496a4a244dd1b4948a0c}{get\+Header\+Line}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_a518e298e6ed5f00e66f3aa2304354737}{with\+Header}} (string \$name, \$value)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_aaaa70dba5f8b3ed9006d576ae5aeb74a}{with\+Added\+Header}} (string \$name, \$value)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_a1c7ff8d96b16217ba8cb1ae54e797102}{without\+Header}} (string \$name)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_a7d016c18bd79d98029cf538a59827421}{get\+Body}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_message_interface_a45af72ddafb601548ea60d0ddd961e65}{with\+Body}} (\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_stream_interface}{Stream\+Interface}} \$body)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representation of an outgoing, client-\/side request.
+
+Per the HTTP specification, this interface includes properties for each of the following\+:
+
+
+\begin{DoxyItemize}
+\item Protocol version
+\item HTTP method
+\item URI
+\item Headers
+\item Message body
+\end{DoxyItemize}
+
+During construction, implementations MUST attempt to set the Host header from a provided URI if no Host header is provided.
+
+Requests are considered immutable; all methods that might change state MUST be implemented such that they retain the internal state of the current message and return an instance that contains the changed state. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_request_interface_a1aceab5bc5a2067500f4a80ac314fbc9}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface}!getMethod@{getMethod}}
+\index{getMethod@{getMethod}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface}}
+\doxysubsubsection{\texorpdfstring{getMethod()}{getMethod()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_request_interface_a1aceab5bc5a2067500f4a80ac314fbc9} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Request\+Interface\+::get\+Method (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieves the HTTP method of the request.
+
+\begin{DoxyReturn}{Returns}
+string Returns the request method. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_request_a4eafa27a3768e0d353882e9aad075709}{Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Request}}.
+
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_request_interface_a4b9117fe12afd5c5555d3ae7d183ded2}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface}!getRequestTarget@{getRequestTarget}}
+\index{getRequestTarget@{getRequestTarget}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface}}
+\doxysubsubsection{\texorpdfstring{getRequestTarget()}{getRequestTarget()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_request_interface_a4b9117fe12afd5c5555d3ae7d183ded2} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Request\+Interface\+::get\+Request\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieves the message\textquotesingle{}s request target.
+
+Retrieves the message\textquotesingle{}s request-\/target either as it will appear (for clients), as it appeared at request (for servers), or as it was specified for the instance (see with\+Request\+Target()).
+
+In most cases, this will be the origin-\/form of the composed URI, unless a value was provided to the concrete implementation (see with\+Request\+Target() below).
+
+If no URI is available, and no request-\/target has been specifically provided, this method MUST return the string "{}/"{}.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_request_a0dae2eaf80f250109b69b9e7fb504b3c}{Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Request}}.
+
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_request_interface_a179c55f570319eb0736f9a8209c9cac6}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface}!getUri@{getUri}}
+\index{getUri@{getUri}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface}}
+\doxysubsubsection{\texorpdfstring{getUri()}{getUri()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_request_interface_a179c55f570319eb0736f9a8209c9cac6} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Request\+Interface\+::get\+Uri (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Retrieves the URI instance.
+
+This method MUST return a Uri\+Interface instance.
+
+\doxylink{}{Uri\+Interface Returns a Uri\+Interface instance representing the URI of the request. }
+
+Implemented in \mbox{\hyperlink{class_guzzle_http_1_1_psr7_1_1_request_a79d73a7f5e75d671a379ee95e3692a1e}{Guzzle\+Http\textbackslash{}\+Psr7\textbackslash{}\+Request}}.
+
+\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_request_interface_a1765dffd183825f192a2e61b07a8750a}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface}!withMethod@{withMethod}}
+\index{withMethod@{withMethod}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface}}
+\doxysubsubsection{\texorpdfstring{withMethod()}{withMethod()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_request_interface_a1765dffd183825f192a2e61b07a8750a} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Request\+Interface\+::with\+Method (\begin{DoxyParamCaption}\item[{string}]{\$method}{}\end{DoxyParamCaption})}
+
+Return an instance with the provided HTTP method.
+
+While HTTP method names are typically all uppercase characters, HTTP method names are case-\/sensitive and thus implementations SHOULD NOT modify the given string.
+
+This method MUST be implemented in such a way as to retain the immutability of the message, and MUST return an instance that has the changed request method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & Case-\/sensitive method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception for invalid HTTP methods. \Hypertarget{interface_psr_1_1_http_1_1_message_1_1_request_interface_a11f014f71395ba46f6e4782e2f6cebfb}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface}!withRequestTarget@{withRequestTarget}}
+\index{withRequestTarget@{withRequestTarget}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface}}
+\doxysubsubsection{\texorpdfstring{withRequestTarget()}{withRequestTarget()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_request_interface_a11f014f71395ba46f6e4782e2f6cebfb} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Request\+Interface\+::with\+Request\+Target (\begin{DoxyParamCaption}\item[{string}]{\$request\+Target}{}\end{DoxyParamCaption})}
+
+Return an instance with the specific request-\/target.
+
+If the request needs a non-\/origin-\/form request-\/target — e.\+g., for specifying an absolute-\/form, authority-\/form, or asterisk-\/form — this method may be used to create an instance with the specified request-\/target, verbatim.
+
+This method MUST be implemented in such a way as to retain the immutability of the message, and MUST return an instance that has the changed request target.
+
+\doxylink{}{(for the various request-\/target forms allowed in request messages)  string \$request\+Target  static }\Hypertarget{interface_psr_1_1_http_1_1_message_1_1_request_interface_a8b408f2e45effb88d6f0c8043e731b5b}\index{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface}!withUri@{withUri}}
+\index{withUri@{withUri}!Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface@{Psr\textbackslash{}Http\textbackslash{}Message\textbackslash{}RequestInterface}}
+\doxysubsubsection{\texorpdfstring{withUri()}{withUri()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_http_1_1_message_1_1_request_interface_a8b408f2e45effb88d6f0c8043e731b5b} 
+Psr\textbackslash{}\+Http\textbackslash{}\+Message\textbackslash{}\+Request\+Interface\+::with\+Uri (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_psr_1_1_http_1_1_message_1_1_uri_interface}{Uri\+Interface}}}]{\$uri}{, }\item[{bool}]{\$preserve\+Host}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Returns an instance with the provided URI.
+
+This method MUST update the Host header of the returned request by default if the URI contains a host component. If the URI does not contain a host component, any pre-\/existing Host header MUST be carried over to the returned request.
+
+You can opt-\/in to preserving the original state of the Host header by setting {\ttfamily \$preserve\+Host} to {\ttfamily true}. When {\ttfamily \$preserve\+Host} is set to {\ttfamily true}, this method interacts with the Host header in the following ways\+:
+
+
+\begin{DoxyItemize}
+\item If the Host header is missing or empty, and the new URI contains a host component, this method MUST update the Host header in the returned request.
+\item If the Host header is missing or empty, and the new URI does not contain a host component, this method MUST NOT update the Host header in the returned request.
+\item If a Host header is present and non-\/empty, this method MUST NOT update the Host header in the returned request.
+\end{DoxyItemize}
+
+This method MUST be implemented in such a way as to retain the immutability of the message, and MUST return an instance that has the new Uri\+Interface instance.
+
+\doxylink{}{Uri\+Interface \$uri New request URI to use.  bool \$preserve\+Host Preserve the original state of the Host header.  static }
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psr/http-\/message/src/Request\+Interface.\+php\end{DoxyCompactItemize}

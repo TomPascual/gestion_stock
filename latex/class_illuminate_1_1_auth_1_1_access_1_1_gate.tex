@@ -1,0 +1,936 @@
+\doxysection{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate Class Reference}
+\hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate}{}\label{class_illuminate_1_1_auth_1_1_access_1_1_gate}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+Inheritance diagram for Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_auth_1_1_access_1_1_gate}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a7aba13ab71d72df2d2a6bcd59d179d24}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_container_1_1_container}{Container}} \$container, callable \$user\+Resolver, array \$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a2955bfcae7dd928080c139eca12b60ce}{abilities}}=\mbox{[}$\,$\mbox{]}, array \$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a970c46b402208f600298596bc0d70fa5}{policies}}=\mbox{[}$\,$\mbox{]}, array \$before\+Callbacks=\mbox{[}$\,$\mbox{]}, array \$after\+Callbacks=\mbox{[}$\,$\mbox{]}, ?callable \$guess\+Policy\+Names\+Using\+Callback=null,)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a6b254ad5efad0512519efb3519653ee2}{has}} (\$ability)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a2619260bf4229668f76d886930e01425}{allow\+If}} (\$condition, \$message=null, \$code=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_aca1fb058179834cf5678c2ab7a66efaf}{deny\+If}} (\$condition, \$message=null, \$code=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a6d529bafd72021244639fbdef46f5663}{define}} (\$ability, \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_ad38f924f57bec8ecd4c212e2cf2ddb1a}{resource}} (\$name, \$class, ?array \$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a2955bfcae7dd928080c139eca12b60ce}{abilities}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a5e14a56ebf32f51c183815ca5d9a3477}{policy}} (\$class, \$policy)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_ad234e977a21857dab2e764c08be3c931}{before}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a0678a73ec381dd92f202a3b6dcc20aee}{after}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_ad9e26418020b423e271875c82440c8cb}{allows}} (\$ability, \$arguments=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_aa4afffbce19db1136884cfa9d99c148c}{denies}} (\$ability, \$arguments=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_acb40dfdf3bfeea6a23df73e4816aaba1}{check}} (\$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a2955bfcae7dd928080c139eca12b60ce}{abilities}}, \$arguments=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a868a1281acf98a620c63169b35ba7f39}{any}} (\$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a2955bfcae7dd928080c139eca12b60ce}{abilities}}, \$arguments=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_ad092c0b71c4315bfa2f7c96e5279466c}{none}} (\$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a2955bfcae7dd928080c139eca12b60ce}{abilities}}, \$arguments=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a7b6db83a43bb91d7954cff54b341c3f4}{authorize}} (\$ability, \$arguments=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a58d02caccb5811c11be20cdbc0b1eece}{inspect}} (\$ability, \$arguments=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a4810d323196318f8902af3cf892c8963}{raw}} (\$ability, \$arguments=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a890133f7286713cbfde8a670cddf0aee}{get\+Policy\+For}} (\$class)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_aff83894f3d350924f1c7b9197e290b37}{guess\+Policy\+Names\+Using}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a6e260d74dcdceebfe2405ba70ec9ff0a}{resolve\+Policy}} (\$class)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a847dd1aea69bfac2943cfdc37bd2e2bf}{for\+User}} (\$user)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a2955bfcae7dd928080c139eca12b60ce}{abilities}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a970c46b402208f600298596bc0d70fa5}{policies}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a16ba2ffb75876ac2f9270c060b6442c5}{default\+Denial\+Response}} (\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_response}{Response}} \$response)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_acee6f0922c1a7150e1860ccc6a5259e1}{set\+Container}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_container_1_1_container}{Container}} \$container)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_af166bd1decfe5551cc48c69212ef84bc}{authorize\+On\+Demand}} (\$condition, \$message, \$code, \$allow\+When\+Response\+Is)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a37016def5b5a8f666d6da66322adb8fe}{build\+Ability\+Callback}} (\$ability, \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a2cdd33d80dc9a7b938fae3c2629b615e}{can\+Be\+Called\+With\+User}} (\$user, \$class, \$method=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_acedce8afab2dd5112c27045715a09cf2}{method\+Allows\+Guests}} (\$class, \$method)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a3dced8a707b4f80c5aa81e0d3fd614b0}{callback\+Allows\+Guests}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a3f36d5fc1281a5ff126543dc94cbb95c}{parameter\+Allows\+Guests}} (\$parameter)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_acd2226e4cb026aa00047a35e3ca40a4b}{call\+Auth\+Callback}} (\$user, \$ability, array \$arguments)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a9f4296ff16c635878867fb2d76fd12b1}{call\+Before\+Callbacks}} (\$user, \$ability, array \$arguments)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_ace847b92ee213f78c1005096e3c3023c}{call\+After\+Callbacks}} (\$user, \$ability, array \$arguments, \$result)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_ab4e3569e27e8792b93788fd5caf545ea}{dispatch\+Gate\+Evaluated\+Event}} (\$user, \$ability, array \$arguments, \$result)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a8d739f0a5b2844bea7c16d30dde91923}{resolve\+Auth\+Callback}} (\$user, \$ability, array \$arguments)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_aeeeebfc85f82b5d803716ef73805bd54}{guess\+Policy\+Name}} (\$class)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a287ac21305dc3f9b398ae5ef27e0435c}{resolve\+Policy\+Callback}} (\$user, \$ability, array \$arguments, \$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a5e14a56ebf32f51c183815ca5d9a3477}{policy}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_ae1d765e906bcf9b9308e4fa51b80588c}{call\+Policy\+Before}} (\$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a5e14a56ebf32f51c183815ca5d9a3477}{policy}}, \$user, \$ability, \$arguments)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a6f03685d29ac5b3906860429b94dbeef}{call\+Policy\+Method}} (\$\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a5e14a56ebf32f51c183815ca5d9a3477}{policy}}, \$method, \$user, array \$arguments)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_ac2363a344f3d629ee2e4dd02ef85e986}{format\+Ability\+To\+Method}} (\$ability)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_gate_a8408a260e22429a1f873f3a1d648a9ed}{resolve\+User}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a0028a072d4e1e021c268b474fad06d3e}\label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a0028a072d4e1e021c268b474fad06d3e} 
+{\bfseries \$container}
+\item 
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a25ae599c2b6f36a309a85af1e4120a89}\label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a25ae599c2b6f36a309a85af1e4120a89} 
+{\bfseries \$user\+Resolver}
+\item 
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a78164ef7d95cd4747bcb8e4332d48153}\label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a78164ef7d95cd4747bcb8e4332d48153} 
+{\bfseries \$abilities} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a863375cda0241f0ab8e09736c4ec8a0e}\label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a863375cda0241f0ab8e09736c4ec8a0e} 
+{\bfseries \$policies} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_ac8859793ee2445f19fec16b9c3b400f4}\label{class_illuminate_1_1_auth_1_1_access_1_1_gate_ac8859793ee2445f19fec16b9c3b400f4} 
+{\bfseries \$before\+Callbacks} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a6268c57762c7d83c749070211bb64c2a}\label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a6268c57762c7d83c749070211bb64c2a} 
+{\bfseries \$after\+Callbacks} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a6eac2f38ca46b1f9a177b3f52389e93f}\label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a6eac2f38ca46b1f9a177b3f52389e93f} 
+{\bfseries \$string\+Callbacks} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a83a4aa2c8706727f34434a9bb9442c2d}\label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a83a4aa2c8706727f34434a9bb9442c2d} 
+{\bfseries \$default\+Denial\+Response}
+\item 
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a65f2f069eb5b8d61363f5d28bd320d06}\label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a65f2f069eb5b8d61363f5d28bd320d06} 
+{\bfseries \$guess\+Policy\+Names\+Using\+Callback}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a7aba13ab71d72df2d2a6bcd59d179d24}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a7aba13ab71d72df2d2a6bcd59d179d24} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_container_1_1_container}{Container}}}]{\$container}{, }\item[{callable}]{\$user\+Resolver}{, }\item[{array}]{\$abilities}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$policies}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$before\+Callbacks}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$after\+Callbacks}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?callable}]{\$guess\+Policy\+Names\+Using\+Callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new gate instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+callable & {\em \$user\+Resolver} & \\
+\hline
+array & {\em \$abilities} & \\
+\hline
+array & {\em \$policies} & \\
+\hline
+array & {\em \$before\+Callbacks} & \\
+\hline
+array & {\em \$after\+Callbacks} & \\
+\hline
+callable | null & {\em \$guess\+Policy\+Names\+Using\+Callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a2955bfcae7dd928080c139eca12b60ce}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!abilities@{abilities}}
+\index{abilities@{abilities}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{abilities()}{abilities()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a2955bfcae7dd928080c139eca12b60ce} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::abilities (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all of the defined abilities.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a0678a73ec381dd92f202a3b6dcc20aee}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!after@{after}}
+\index{after@{after}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{after()}{after()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a0678a73ec381dd92f202a3b6dcc20aee} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::after (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a callback to run after all Gate checks.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a2619260bf4229668f76d886930e01425}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!allowIf@{allowIf}}
+\index{allowIf@{allowIf}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{allowIf()}{allowIf()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a2619260bf4229668f76d886930e01425} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::allow\+If (\begin{DoxyParamCaption}\item[{}]{\$condition}{, }\item[{}]{\$message}{ = {\ttfamily null}, }\item[{}]{\$code}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Perform an on-\/demand authorization check. Throw an authorization exception if the condition or callback is false.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Response | \textbackslash{}\+Closure | bool & {\em \$condition} & \\
+\hline
+string | null & {\em \$message} & \\
+\hline
+string | null & {\em \$code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Response
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Authorization\+Exception \Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_ad9e26418020b423e271875c82440c8cb}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!allows@{allows}}
+\index{allows@{allows}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{allows()}{allows()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_ad9e26418020b423e271875c82440c8cb} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::allows (\begin{DoxyParamCaption}\item[{}]{\$ability}{, }\item[{}]{\$arguments}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Determine if all of the given abilities should be granted for the current user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+iterable | \textbackslash{}\+Unit\+Enum | string & {\em \$ability} & \\
+\hline
+array | mixed & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a868a1281acf98a620c63169b35ba7f39}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!any@{any}}
+\index{any@{any}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{any()}{any()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a868a1281acf98a620c63169b35ba7f39} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::any (\begin{DoxyParamCaption}\item[{}]{\$abilities}{, }\item[{}]{\$arguments}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Determine if any one of the given abilities should be granted for the current user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+iterable | \textbackslash{}\+Unit\+Enum | string & {\em \$abilities} & \\
+\hline
+array | mixed & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a7b6db83a43bb91d7954cff54b341c3f4}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!authorize@{authorize}}
+\index{authorize@{authorize}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{authorize()}{authorize()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a7b6db83a43bb91d7954cff54b341c3f4} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::authorize (\begin{DoxyParamCaption}\item[{}]{\$ability}{, }\item[{}]{\$arguments}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Determine if the given ability should be granted for the current user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Unit\+Enum | string & {\em \$ability} & \\
+\hline
+array | mixed & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Response
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Authorization\+Exception \Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_af166bd1decfe5551cc48c69212ef84bc}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!authorizeOnDemand@{authorizeOnDemand}}
+\index{authorizeOnDemand@{authorizeOnDemand}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{authorizeOnDemand()}{authorizeOnDemand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_af166bd1decfe5551cc48c69212ef84bc} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::authorize\+On\+Demand (\begin{DoxyParamCaption}\item[{}]{\$condition}{, }\item[{}]{\$message}{, }\item[{}]{\$code}{, }\item[{}]{\$allow\+When\+Response\+Is}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Authorize a given condition or callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Response | \textbackslash{}\+Closure | bool & {\em \$condition} & \\
+\hline
+string | null & {\em \$message} & \\
+\hline
+string | null & {\em \$code} & \\
+\hline
+bool & {\em \$allow\+When\+Response\+Is} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Response
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Authorization\+Exception \Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_ad234e977a21857dab2e764c08be3c931}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!before@{before}}
+\index{before@{before}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{before()}{before()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_ad234e977a21857dab2e764c08be3c931} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::before (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a callback to run before all Gate checks.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a37016def5b5a8f666d6da66322adb8fe}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!buildAbilityCallback@{buildAbilityCallback}}
+\index{buildAbilityCallback@{buildAbilityCallback}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{buildAbilityCallback()}{buildAbilityCallback()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a37016def5b5a8f666d6da66322adb8fe} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::build\+Ability\+Callback (\begin{DoxyParamCaption}\item[{}]{\$ability}{, }\item[{}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create the ability callback for a callback string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ability} & \\
+\hline
+string & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Closure 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_ace847b92ee213f78c1005096e3c3023c}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!callAfterCallbacks@{callAfterCallbacks}}
+\index{callAfterCallbacks@{callAfterCallbacks}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{callAfterCallbacks()}{callAfterCallbacks()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_ace847b92ee213f78c1005096e3c3023c} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::call\+After\+Callbacks (\begin{DoxyParamCaption}\item[{}]{\$user}{, }\item[{}]{\$ability}{, }\item[{array}]{\$arguments}{, }\item[{}]{\$result}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Call all of the after callbacks with check result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable & {\em \$user} & \\
+\hline
+string & {\em \$ability} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+bool | null & {\em \$result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_acd2226e4cb026aa00047a35e3ca40a4b}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!callAuthCallback@{callAuthCallback}}
+\index{callAuthCallback@{callAuthCallback}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{callAuthCallback()}{callAuthCallback()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_acd2226e4cb026aa00047a35e3ca40a4b} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::call\+Auth\+Callback (\begin{DoxyParamCaption}\item[{}]{\$user}{, }\item[{}]{\$ability}{, }\item[{array}]{\$arguments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolve and call the appropriate authorization callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable | null & {\em \$user} & \\
+\hline
+string & {\em \$ability} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a3dced8a707b4f80c5aa81e0d3fd614b0}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!callbackAllowsGuests@{callbackAllowsGuests}}
+\index{callbackAllowsGuests@{callbackAllowsGuests}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{callbackAllowsGuests()}{callbackAllowsGuests()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a3dced8a707b4f80c5aa81e0d3fd614b0} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::callback\+Allows\+Guests (\begin{DoxyParamCaption}\item[{}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the callback allows guests.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Reflection\+Exception \Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a9f4296ff16c635878867fb2d76fd12b1}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!callBeforeCallbacks@{callBeforeCallbacks}}
+\index{callBeforeCallbacks@{callBeforeCallbacks}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{callBeforeCallbacks()}{callBeforeCallbacks()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a9f4296ff16c635878867fb2d76fd12b1} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::call\+Before\+Callbacks (\begin{DoxyParamCaption}\item[{}]{\$user}{, }\item[{}]{\$ability}{, }\item[{array}]{\$arguments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Call all of the before callbacks and return if a result is given.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable | null & {\em \$user} & \\
+\hline
+string & {\em \$ability} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_ae1d765e906bcf9b9308e4fa51b80588c}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!callPolicyBefore@{callPolicyBefore}}
+\index{callPolicyBefore@{callPolicyBefore}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{callPolicyBefore()}{callPolicyBefore()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_ae1d765e906bcf9b9308e4fa51b80588c} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::call\+Policy\+Before (\begin{DoxyParamCaption}\item[{}]{\$policy}{, }\item[{}]{\$user}{, }\item[{}]{\$ability}{, }\item[{}]{\$arguments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Call the "{}before"{} method on the given policy, if applicable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$policy} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable & {\em \$user} & \\
+\hline
+string & {\em \$ability} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a6f03685d29ac5b3906860429b94dbeef}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!callPolicyMethod@{callPolicyMethod}}
+\index{callPolicyMethod@{callPolicyMethod}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{callPolicyMethod()}{callPolicyMethod()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a6f03685d29ac5b3906860429b94dbeef} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::call\+Policy\+Method (\begin{DoxyParamCaption}\item[{}]{\$policy}{, }\item[{}]{\$method}{, }\item[{}]{\$user}{, }\item[{array}]{\$arguments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Call the appropriate method on the given policy.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$policy} & \\
+\hline
+string & {\em \$method} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable | null & {\em \$user} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a2cdd33d80dc9a7b938fae3c2629b615e}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!canBeCalledWithUser@{canBeCalledWithUser}}
+\index{canBeCalledWithUser@{canBeCalledWithUser}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{canBeCalledWithUser()}{canBeCalledWithUser()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a2cdd33d80dc9a7b938fae3c2629b615e} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::can\+Be\+Called\+With\+User (\begin{DoxyParamCaption}\item[{}]{\$user}{, }\item[{}]{\$class}{, }\item[{}]{\$method}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine whether the callback/method can be called with the given user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable | null & {\em \$user} & \\
+\hline
+\textbackslash{}\+Closure | string | array & {\em \$class} & \\
+\hline
+string | null & {\em \$method} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_acb40dfdf3bfeea6a23df73e4816aaba1}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!check@{check}}
+\index{check@{check}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_acb40dfdf3bfeea6a23df73e4816aaba1} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::check (\begin{DoxyParamCaption}\item[{}]{\$abilities}{, }\item[{}]{\$arguments}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Determine if all of the given abilities should be granted for the current user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+iterable | \textbackslash{}\+Unit\+Enum | string & {\em \$abilities} & \\
+\hline
+array | mixed & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a16ba2ffb75876ac2f9270c060b6442c5}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!defaultDenialResponse@{defaultDenialResponse}}
+\index{defaultDenialResponse@{defaultDenialResponse}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{defaultDenialResponse()}{defaultDenialResponse()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a16ba2ffb75876ac2f9270c060b6442c5} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::default\+Denial\+Response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_auth_1_1_access_1_1_response}{Response}}}]{\$response}{}\end{DoxyParamCaption})}
+
+Set the default denial response for gates and policies.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Response & {\em \$response} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a6d529bafd72021244639fbdef46f5663}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!define@{define}}
+\index{define@{define}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{define()}{define()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a6d529bafd72021244639fbdef46f5663} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::define (\begin{DoxyParamCaption}\item[{}]{\$ability}{, }\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Define a new ability.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Unit\+Enum | string & {\em \$ability} & \\
+\hline
+callable | array | string & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_aa4afffbce19db1136884cfa9d99c148c}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!denies@{denies}}
+\index{denies@{denies}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{denies()}{denies()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_aa4afffbce19db1136884cfa9d99c148c} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::denies (\begin{DoxyParamCaption}\item[{}]{\$ability}{, }\item[{}]{\$arguments}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Determine if any of the given abilities should be denied for the current user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+iterable | \textbackslash{}\+Unit\+Enum | string & {\em \$ability} & \\
+\hline
+array | mixed & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_aca1fb058179834cf5678c2ab7a66efaf}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!denyIf@{denyIf}}
+\index{denyIf@{denyIf}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{denyIf()}{denyIf()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_aca1fb058179834cf5678c2ab7a66efaf} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::deny\+If (\begin{DoxyParamCaption}\item[{}]{\$condition}{, }\item[{}]{\$message}{ = {\ttfamily null}, }\item[{}]{\$code}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Perform an on-\/demand authorization check. Throw an authorization exception if the condition or callback is true.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Response | \textbackslash{}\+Closure | bool & {\em \$condition} & \\
+\hline
+string | null & {\em \$message} & \\
+\hline
+string | null & {\em \$code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Response
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Authorization\+Exception \Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_ab4e3569e27e8792b93788fd5caf545ea}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!dispatchGateEvaluatedEvent@{dispatchGateEvaluatedEvent}}
+\index{dispatchGateEvaluatedEvent@{dispatchGateEvaluatedEvent}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{dispatchGateEvaluatedEvent()}{dispatchGateEvaluatedEvent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_ab4e3569e27e8792b93788fd5caf545ea} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::dispatch\+Gate\+Evaluated\+Event (\begin{DoxyParamCaption}\item[{}]{\$user}{, }\item[{}]{\$ability}{, }\item[{array}]{\$arguments}{, }\item[{}]{\$result}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Dispatch a gate evaluation event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable | null & {\em \$user} & \\
+\hline
+string & {\em \$ability} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+bool | null & {\em \$result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_ac2363a344f3d629ee2e4dd02ef85e986}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!formatAbilityToMethod@{formatAbilityToMethod}}
+\index{formatAbilityToMethod@{formatAbilityToMethod}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{formatAbilityToMethod()}{formatAbilityToMethod()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_ac2363a344f3d629ee2e4dd02ef85e986} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::format\+Ability\+To\+Method (\begin{DoxyParamCaption}\item[{}]{\$ability}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Format the policy ability into a method name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ability} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a847dd1aea69bfac2943cfdc37bd2e2bf}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!forUser@{forUser}}
+\index{forUser@{forUser}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{forUser()}{forUser()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a847dd1aea69bfac2943cfdc37bd2e2bf} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::for\+User (\begin{DoxyParamCaption}\item[{}]{\$user}{}\end{DoxyParamCaption})}
+
+Get a gate instance for the given user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable | mixed & {\em \$user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+static 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a890133f7286713cbfde8a670cddf0aee}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!getPolicyFor@{getPolicyFor}}
+\index{getPolicyFor@{getPolicyFor}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{getPolicyFor()}{getPolicyFor()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a890133f7286713cbfde8a670cddf0aee} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::get\+Policy\+For (\begin{DoxyParamCaption}\item[{}]{\$class}{}\end{DoxyParamCaption})}
+
+Get a policy instance for a given class.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object | string & {\em \$class} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_aeeeebfc85f82b5d803716ef73805bd54}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!guessPolicyName@{guessPolicyName}}
+\index{guessPolicyName@{guessPolicyName}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{guessPolicyName()}{guessPolicyName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_aeeeebfc85f82b5d803716ef73805bd54} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::guess\+Policy\+Name (\begin{DoxyParamCaption}\item[{}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Guess the policy name for the given class.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_aff83894f3d350924f1c7b9197e290b37}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!guessPolicyNamesUsing@{guessPolicyNamesUsing}}
+\index{guessPolicyNamesUsing@{guessPolicyNamesUsing}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{guessPolicyNamesUsing()}{guessPolicyNamesUsing()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_aff83894f3d350924f1c7b9197e290b37} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::guess\+Policy\+Names\+Using (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Specify a callback to be used to guess policy names.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a6b254ad5efad0512519efb3519653ee2}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!has@{has}}
+\index{has@{has}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a6b254ad5efad0512519efb3519653ee2} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::has (\begin{DoxyParamCaption}\item[{}]{\$ability}{}\end{DoxyParamCaption})}
+
+Determine if a given ability has been defined.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$ability} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a58d02caccb5811c11be20cdbc0b1eece}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!inspect@{inspect}}
+\index{inspect@{inspect}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{inspect()}{inspect()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a58d02caccb5811c11be20cdbc0b1eece} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::inspect (\begin{DoxyParamCaption}\item[{}]{\$ability}{, }\item[{}]{\$arguments}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Inspect the user for the given ability.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Unit\+Enum | string & {\em \$ability} & \\
+\hline
+array | mixed & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_acedce8afab2dd5112c27045715a09cf2}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!methodAllowsGuests@{methodAllowsGuests}}
+\index{methodAllowsGuests@{methodAllowsGuests}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{methodAllowsGuests()}{methodAllowsGuests()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_acedce8afab2dd5112c27045715a09cf2} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::method\+Allows\+Guests (\begin{DoxyParamCaption}\item[{}]{\$class}{, }\item[{}]{\$method}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the given class method allows guests.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & \\
+\hline
+string & {\em \$method} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_ad092c0b71c4315bfa2f7c96e5279466c}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!none@{none}}
+\index{none@{none}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{none()}{none()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_ad092c0b71c4315bfa2f7c96e5279466c} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::none (\begin{DoxyParamCaption}\item[{}]{\$abilities}{, }\item[{}]{\$arguments}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Determine if all of the given abilities should be denied for the current user.
+
+
+\begin{DoxyParams}[1]{Parameters}
+iterable | \textbackslash{}\+Unit\+Enum | string & {\em \$abilities} & \\
+\hline
+array | mixed & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a3f36d5fc1281a5ff126543dc94cbb95c}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!parameterAllowsGuests@{parameterAllowsGuests}}
+\index{parameterAllowsGuests@{parameterAllowsGuests}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{parameterAllowsGuests()}{parameterAllowsGuests()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a3f36d5fc1281a5ff126543dc94cbb95c} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::parameter\+Allows\+Guests (\begin{DoxyParamCaption}\item[{}]{\$parameter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the given parameter allows guests.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Reflection\+Parameter & {\em \$parameter} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a970c46b402208f600298596bc0d70fa5}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!policies@{policies}}
+\index{policies@{policies}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{policies()}{policies()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a970c46b402208f600298596bc0d70fa5} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::policies (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all of the defined policies.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a5e14a56ebf32f51c183815ca5d9a3477}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!policy@{policy}}
+\index{policy@{policy}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{policy()}{policy()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a5e14a56ebf32f51c183815ca5d9a3477} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::policy (\begin{DoxyParamCaption}\item[{}]{\$class}{, }\item[{}]{\$policy}{}\end{DoxyParamCaption})}
+
+Define a policy class for a given class type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & \\
+\hline
+string & {\em \$policy} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a4810d323196318f8902af3cf892c8963}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!raw@{raw}}
+\index{raw@{raw}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{raw()}{raw()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a4810d323196318f8902af3cf892c8963} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::raw (\begin{DoxyParamCaption}\item[{}]{\$ability}{, }\item[{}]{\$arguments}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Get the raw result from the authorization callback.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ability} & \\
+\hline
+array | mixed & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Authorization\+Exception \Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a8d739f0a5b2844bea7c16d30dde91923}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!resolveAuthCallback@{resolveAuthCallback}}
+\index{resolveAuthCallback@{resolveAuthCallback}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{resolveAuthCallback()}{resolveAuthCallback()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a8d739f0a5b2844bea7c16d30dde91923} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::resolve\+Auth\+Callback (\begin{DoxyParamCaption}\item[{}]{\$user}{, }\item[{}]{\$ability}{, }\item[{array}]{\$arguments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolve the callable for the given ability and arguments.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable | null & {\em \$user} & \\
+\hline
+string & {\em \$ability} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+callable 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a6e260d74dcdceebfe2405ba70ec9ff0a}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!resolvePolicy@{resolvePolicy}}
+\index{resolvePolicy@{resolvePolicy}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{resolvePolicy()}{resolvePolicy()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a6e260d74dcdceebfe2405ba70ec9ff0a} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::resolve\+Policy (\begin{DoxyParamCaption}\item[{}]{\$class}{}\end{DoxyParamCaption})}
+
+Build a policy class instance of the given type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object | string & {\em \$class} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Binding\+Resolution\+Exception \Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a287ac21305dc3f9b398ae5ef27e0435c}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!resolvePolicyCallback@{resolvePolicyCallback}}
+\index{resolvePolicyCallback@{resolvePolicyCallback}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{resolvePolicyCallback()}{resolvePolicyCallback()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a287ac21305dc3f9b398ae5ef27e0435c} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::resolve\+Policy\+Callback (\begin{DoxyParamCaption}\item[{}]{\$user}{, }\item[{}]{\$ability}{, }\item[{array}]{\$arguments}{, }\item[{}]{\$policy}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolve the callback for a policy check.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Auth\textbackslash{}\+Authenticatable & {\em \$user} & \\
+\hline
+string & {\em \$ability} & \\
+\hline
+array & {\em \$arguments} & \\
+\hline
+mixed & {\em \$policy} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}callable 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_a8408a260e22429a1f873f3a1d648a9ed}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!resolveUser@{resolveUser}}
+\index{resolveUser@{resolveUser}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{resolveUser()}{resolveUser()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_a8408a260e22429a1f873f3a1d648a9ed} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::resolve\+User (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolve the user from the user resolver.
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_ad38f924f57bec8ecd4c212e2cf2ddb1a}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!resource@{resource}}
+\index{resource@{resource}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{resource()}{resource()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_ad38f924f57bec8ecd4c212e2cf2ddb1a} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::resource (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$class}{, }\item[{?array}]{\$abilities}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Define abilities for a resource.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$class} & \\
+\hline
+array | null & {\em \$abilities} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_auth_1_1_access_1_1_gate_acee6f0922c1a7150e1860ccc6a5259e1}\index{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}!setContainer@{setContainer}}
+\index{setContainer@{setContainer}!Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate@{Illuminate\textbackslash{}Auth\textbackslash{}Access\textbackslash{}Gate}}
+\doxysubsubsection{\texorpdfstring{setContainer()}{setContainer()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_auth_1_1_access_1_1_gate_acee6f0922c1a7150e1860ccc6a5259e1} 
+Illuminate\textbackslash{}\+Auth\textbackslash{}\+Access\textbackslash{}\+Gate\+::set\+Container (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_container_1_1_container}{Container}}}]{\$container}{}\end{DoxyParamCaption})}
+
+Set the container instance used by the gate.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Auth/\+Access/Gate.\+php\end{DoxyCompactItemize}

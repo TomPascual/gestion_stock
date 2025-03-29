@@ -1,0 +1,62 @@
+\doxysection{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Uuid\+Builder Class Reference}
+\hypertarget{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_uuid_builder}{}\label{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_uuid_builder}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}UuidBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}UuidBuilder}}
+Inheritance diagram for Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}Uuid\+Builder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_uuid_builder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_uuid_builder_a53a01f8eee82579f8eca554027876b13}{\+\_\+\+\_\+construct}} (private \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_converter_1_1_number_converter_interface}{Number\+Converter\+Interface}} \$number\+Converter, private \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_converter_1_1_time_converter_interface}{Time\+Converter\+Interface}} \$time\+Converter, ?\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_converter_1_1_time_converter_interface}{Time\+Converter\+Interface}} \$unix\+Time\+Converter=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_builder_1_1_uuid_builder_interface}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Builder\textbackslash{}\+Uuid\+Builder\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_builder_1_1_uuid_builder_interface_a8d264ac2c37c862758b666746907f8af}{build}} (\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_codec_1_1_codec_interface}{Codec\+Interface}} \$codec, string \$bytes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_uuid_builder_ab971bdf441149b27c534f278f484cfcc}{build\+Fields}} (string \$bytes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Uuid\+Builder builds instances of RFC 4122 UUIDs
+
+@psalm-\/immutable 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_uuid_builder_a53a01f8eee82579f8eca554027876b13}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}UuidBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}UuidBuilder}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}UuidBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}UuidBuilder}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_uuid_builder_a53a01f8eee82579f8eca554027876b13} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Uuid\+Builder\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_converter_1_1_number_converter_interface}{Number\+Converter\+Interface}}}]{\$number\+Converter}{, }\item[{private \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_converter_1_1_time_converter_interface}{Time\+Converter\+Interface}}}]{\$time\+Converter}{, }\item[{?\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_converter_1_1_time_converter_interface}{Time\+Converter\+Interface}}}]{\$unix\+Time\+Converter}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Constructs the Default\+Uuid\+Builder
+
+
+\begin{DoxyParams}[1]{Parameters}
+Number\+Converter\+Interface & {\em \$number\+Converter} & The number converter to use when constructing the Uuid \\
+\hline
+Time\+Converter\+Interface & {\em \$time\+Converter} & The time converter to use for converting Gregorian time extracted from version 1, 2, and 6 UUIDs to Unix timestamps \\
+\hline
+Time\+Converter\+Interface | null & {\em \$unix\+Time\+Converter} & The time converter to use for converter Unix Epoch time extracted from version 7 UUIDs to Unix timestamps \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_uuid_builder_ab971bdf441149b27c534f278f484cfcc}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}UuidBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}UuidBuilder}!buildFields@{buildFields}}
+\index{buildFields@{buildFields}!Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}UuidBuilder@{Ramsey\textbackslash{}Uuid\textbackslash{}Rfc4122\textbackslash{}UuidBuilder}}
+\doxysubsubsection{\texorpdfstring{buildFields()}{buildFields()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_rfc4122_1_1_uuid_builder_ab971bdf441149b27c534f278f484cfcc} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Rfc4122\textbackslash{}\+Uuid\+Builder\+::build\+Fields (\begin{DoxyParamCaption}\item[{string}]{\$bytes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Proxy method to allow injecting a mock, for testing 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/ramsey/uuid/src/\+Rfc4122/Uuid\+Builder.\+php\end{DoxyCompactItemize}

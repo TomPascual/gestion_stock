@@ -1,0 +1,119 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Mime\+Types Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_mime_1_1_mime_types}{}\label{class_symfony_1_1_component_1_1_mime_1_1_mime_types}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}Mime\+Types\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_symfony_1_1_component_1_1_mime_1_1_mime_types}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a33a2666e0aaf9cf64aed38e317ecc18c}\label{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a33a2666e0aaf9cf64aed38e317ecc18c} 
+{\bfseries \+\_\+\+\_\+construct} (array \$map=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a83a6ee06f06a4b5322f4e7522127feb4}{register\+Guesser}} (\mbox{\hyperlink{interface_symfony_1_1_component_1_1_mime_1_1_mime_type_guesser_interface}{Mime\+Type\+Guesser\+Interface}} \$guesser)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_mime_types_ab046f141fdf6d58b392bc5498fe8625c}{get\+Extensions}} (string \$mime\+Type)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a34f9816ef56d01d20b1a22ca766cb1b7}{get\+Mime\+Types}} (string \$ext)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a989cbec34af61b53e61d4799b67692d2}{is\+Guesser\+Supported}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a3d379d7ce4d53e47aabff26886f7bb3e}{guess\+Mime\+Type}} (string \$path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_mime_types_af13153c3bbd3a159886e8098ae0bec56}\label{class_symfony_1_1_component_1_1_mime_1_1_mime_types_af13153c3bbd3a159886e8098ae0bec56} 
+static {\bfseries set\+Default} (self \$default)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a1e396ea5791b341a45b031556489f0a5}\label{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a1e396ea5791b341a45b031556489f0a5} 
+static {\bfseries get\+Default} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages MIME types and file extensions.
+
+For MIME type guessing, you can register custom guessers by calling the register\+Guesser() method. Custom guessers are always called before any default ones\+: \begin{DoxyVerb}$guesser = new MimeTypes();
+$guesser->registerGuesser(new MyCustomMimeTypeGuesser());
+\end{DoxyVerb}
+
+
+If you want to change the order of the default guessers, just re-\/register your preferred one as a custom one. The last registered guesser is preferred over previously registered ones.
+
+Re-\/registering a built-\/in guesser also allows you to configure it\+: \begin{DoxyVerb}$guesser = new MimeTypes();
+$guesser->registerGuesser(new FileinfoMimeTypeGuesser('/path/to/magic/file'));
+\end{DoxyVerb}
+
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_mime_types_ab046f141fdf6d58b392bc5498fe8625c}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes}!getExtensions@{getExtensions}}
+\index{getExtensions@{getExtensions}!Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes}}
+\doxysubsubsection{\texorpdfstring{getExtensions()}{getExtensions()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mime_1_1_mime_types_ab046f141fdf6d58b392bc5498fe8625c} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Mime\+Types\+::get\+Extensions (\begin{DoxyParamCaption}\item[{string}]{\$mime\+Type}{}\end{DoxyParamCaption})}
+
+Gets the extensions for the given MIME type in decreasing order of preference.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_mime_1_1_mime_types_interface_a368d7a716bfbec8a618e48e029865498}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Mime\+Types\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a34f9816ef56d01d20b1a22ca766cb1b7}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes}!getMimeTypes@{getMimeTypes}}
+\index{getMimeTypes@{getMimeTypes}!Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes}}
+\doxysubsubsection{\texorpdfstring{getMimeTypes()}{getMimeTypes()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a34f9816ef56d01d20b1a22ca766cb1b7} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Mime\+Types\+::get\+Mime\+Types (\begin{DoxyParamCaption}\item[{string}]{\$ext}{}\end{DoxyParamCaption})}
+
+Gets the MIME types for the given extension in decreasing order of preference.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_mime_1_1_mime_types_interface_acf123c3dab8989edeebd65f04b306798}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Mime\+Types\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a3d379d7ce4d53e47aabff26886f7bb3e}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes}!guessMimeType@{guessMimeType}}
+\index{guessMimeType@{guessMimeType}!Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes}}
+\doxysubsubsection{\texorpdfstring{guessMimeType()}{guessMimeType()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a3d379d7ce4d53e47aabff26886f7bb3e} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Mime\+Types\+::guess\+Mime\+Type (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})}
+
+The file is passed to each registered MIME type guesser in reverse order of their registration (last registered is queried first). Once a guesser returns a value that is not null, this method terminates and returns the value. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_mime_1_1_mime_type_guesser_interface_a52c999421f0e01b73b10d9b025f98383}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Mime\+Type\+Guesser\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a989cbec34af61b53e61d4799b67692d2}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes}!isGuesserSupported@{isGuesserSupported}}
+\index{isGuesserSupported@{isGuesserSupported}!Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes}}
+\doxysubsubsection{\texorpdfstring{isGuesserSupported()}{isGuesserSupported()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a989cbec34af61b53e61d4799b67692d2} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Mime\+Types\+::is\+Guesser\+Supported (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true if this guesser is supported. 
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_mime_1_1_mime_type_guesser_interface_aabe89bcb23d2600ae00492d4a9aca251}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Mime\+Type\+Guesser\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a83a6ee06f06a4b5322f4e7522127feb4}\index{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes}!registerGuesser@{registerGuesser}}
+\index{registerGuesser@{registerGuesser}!Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes@{Symfony\textbackslash{}Component\textbackslash{}Mime\textbackslash{}MimeTypes}}
+\doxysubsubsection{\texorpdfstring{registerGuesser()}{registerGuesser()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mime_1_1_mime_types_a83a6ee06f06a4b5322f4e7522127feb4} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mime\textbackslash{}\+Mime\+Types\+::register\+Guesser (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_symfony_1_1_component_1_1_mime_1_1_mime_type_guesser_interface}{Mime\+Type\+Guesser\+Interface}}}]{\$guesser}{}\end{DoxyParamCaption})}
+
+Registers a MIME type guesser.
+
+The last registered guesser has precedence over the other ones. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/mime/Mime\+Types.\+php\end{DoxyCompactItemize}

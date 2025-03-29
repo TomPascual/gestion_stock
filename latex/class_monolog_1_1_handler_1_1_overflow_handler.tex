@@ -1,0 +1,136 @@
+\doxysection{Monolog\textbackslash{}Handler\textbackslash{}Overflow\+Handler Class Reference}
+\hypertarget{class_monolog_1_1_handler_1_1_overflow_handler}{}\label{class_monolog_1_1_handler_1_1_overflow_handler}\index{Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler@{Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler}}
+Inheritance diagram for Monolog\textbackslash{}Handler\textbackslash{}Overflow\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.638398cm]{class_monolog_1_1_handler_1_1_overflow_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_overflow_handler_aa139093d27f9efd5002f6985d65ca487}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_monolog_1_1_handler_1_1_handler_interface}{Handler\+Interface}} \$handler, array \$threshold\+Map=\mbox{[}$\,$\mbox{]}, \$level=Level\+::\+Debug, bool \$bubble=true)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_overflow_handler_af7bd62de1af617d106f45589e5e6b545}{handle}} (\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}} \$record)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_overflow_handler_ab5d1d8dda4d959d8cb1d926be94e23ca}{set\+Formatter}} (\mbox{\hyperlink{interface_monolog_1_1_formatter_1_1_formatter_interface}{Formatter\+Interface}} \$formatter)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_overflow_handler_ad7e68f8ebab19980aea8a270bb3003ce}{get\+Formatter}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_handler}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_handler_ac7aa3733ecb055b715b3bf32f2a705c2}{\+\_\+\+\_\+construct}} (int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}Level \$level=Level\+::\+Debug, bool \$bubble=true)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_handler_a4db293ae756304f9eebac94394655322}{is\+Handling}} (\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}} \$record)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_handler_a1b2969dede93d4bc0e1510a931f8ff88}{set\+Level}} (int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}Level \$level)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_handler_add1449d0c17746feec37c794a18e3a9f}{get\+Level}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_handler_a4befb1a01b856f3b8ea10194f88f6e88}{set\+Bubble}} (bool \$bubble)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_handler_a11da3967fa955d92c915a1d53d73ac72}{get\+Bubble}} ()
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_handler_a26c602e5f30eafa78995573cedd1dd02}{reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler_afc043f871cc3b239c06844659c57b1f3}{handle\+Batch}} (array \$records)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler_a9bb38a0b778020efe72622640820afb5}{close}} ()
+\item 
+{\bfseries \+\_\+\+\_\+sleep} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_monolog_1_1_handler_1_1_abstract_handler}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Abstract\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+Level {\bfseries \$level} = Level\+::\+Debug
+\item 
+bool {\bfseries \$bubble} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handler to only pass log messages when a certain threshold of number of messages is reached.
+
+This can be useful in cases of processing a batch of data, but you\textquotesingle{}re for example only interested in case it fails catastrophically instead of a warning for 1 or 2 events. Worse things can happen, right?
+
+Usage example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$log\ =\ \textcolor{keyword}{new}\ Logger(\textcolor{stringliteral}{'application'});}
+\DoxyCodeLine{\$handler\ =\ \textcolor{keyword}{new}\ SomeHandler(...)}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ Pass\ all\ warnings\ to\ the\ handler\ when\ more\ than\ 10\ \&\ all\ error\ messages\ when\ more\ then\ 5}}
+\DoxyCodeLine{\$overflow\ =\ new\ OverflowHandler(\$handler,\ [Level::Warning-\/>value\ =>\ 10,\ Level::Error-\/>value\ =>\ 5]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\$log-\/>pushHandler(\$overflow);}
+
+\end{DoxyCode}
+
+
+\begin{DoxyAuthor}{Author}
+Kris Buist \href{mailto:krisbuist@gmail.com}{\texttt{ krisbuist@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_monolog_1_1_handler_1_1_overflow_handler_aa139093d27f9efd5002f6985d65ca487}\index{Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler@{Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler@{Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_overflow_handler_aa139093d27f9efd5002f6985d65ca487} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Overflow\+Handler\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_monolog_1_1_handler_1_1_handler_interface}{Handler\+Interface}}}]{\$handler}{, }\item[{array}]{\$threshold\+Map}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$level}{ = {\ttfamily Level\+:\+:Debug}, }\item[{bool}]{\$bubble}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,int$>$} & \$threshold\+Map Dictionary of log level value =\texorpdfstring{$>$}{>} threshold \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_monolog_1_1_handler_1_1_overflow_handler_ad7e68f8ebab19980aea8a270bb3003ce}\index{Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler@{Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler}!getFormatter@{getFormatter}}
+\index{getFormatter@{getFormatter}!Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler@{Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler}}
+\doxysubsubsection{\texorpdfstring{getFormatter()}{getFormatter()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_overflow_handler_ad7e68f8ebab19980aea8a270bb3003ce} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Overflow\+Handler\+::get\+Formatter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_handler_1_1_formattable_handler_interface_ab71f8d90a1f328410e53f0258e2b6c7c}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Formattable\+Handler\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_handler_1_1_overflow_handler_af7bd62de1af617d106f45589e5e6b545}\index{Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler@{Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler}!handle@{handle}}
+\index{handle@{handle}!Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler@{Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_overflow_handler_af7bd62de1af617d106f45589e5e6b545} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Overflow\+Handler\+::handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}}}]{\$record}{}\end{DoxyParamCaption})}
+
+Handles a record.
+
+All records may be passed to this method, and the handler should discard those that it does not want to handle.
+
+The return value of this function controls the bubbling process of the handler stack. Unless the bubbling is interrupted (by returning true), the Logger class will keep on calling further handlers in the stack with a given log record.
+
+@inherit\+Doc 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_handler_1_1_handler_interface_a67e67137c72fdb29860ef42e9d01f3c9}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Interface}}.
+
+\Hypertarget{class_monolog_1_1_handler_1_1_overflow_handler_ab5d1d8dda4d959d8cb1d926be94e23ca}\index{Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler@{Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler}!setFormatter@{setFormatter}}
+\index{setFormatter@{setFormatter}!Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler@{Monolog\textbackslash{}Handler\textbackslash{}OverflowHandler}}
+\doxysubsubsection{\texorpdfstring{setFormatter()}{setFormatter()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_handler_1_1_overflow_handler_ab5d1d8dda4d959d8cb1d926be94e23ca} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Overflow\+Handler\+::set\+Formatter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_monolog_1_1_formatter_1_1_formatter_interface}{Formatter\+Interface}}}]{\$formatter}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_handler_1_1_formattable_handler_interface_adf7eb01d482b254b9cfdb7f58639f362}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Formattable\+Handler\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/monolog/monolog/src/\+Monolog/\+Handler/Overflow\+Handler.\+php\end{DoxyCompactItemize}

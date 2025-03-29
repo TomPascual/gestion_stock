@@ -1,3 +1,11 @@
+{{-- 
+    Vue : produits/show.blade.php
+    Description : Affiche les détails d’un produit spécifique, avec ses informations (quantité, prix, catégorie, fournisseur).
+    Fonctions :
+        - Lien vers la fiche du fournisseur si défini
+        - Boutons de retour à la liste et de modification
+--}}
+
 @extends('layouts.app')
 
 @section('content')

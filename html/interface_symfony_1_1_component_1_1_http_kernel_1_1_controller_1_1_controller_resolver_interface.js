@@ -1,0 +1,4 @@
+var interface_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_interface =
+[
+    [ "getController", "interface_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_interface.html#a8203651adc2c2314fffaa946cc36a61b", null ]
+];

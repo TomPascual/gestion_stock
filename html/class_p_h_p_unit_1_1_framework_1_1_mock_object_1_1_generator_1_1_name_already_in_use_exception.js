@@ -1,0 +1,4 @@
+var class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_name_already_in_use_exception =
+[
+    [ "__construct", "class_p_h_p_unit_1_1_framework_1_1_mock_object_1_1_generator_1_1_name_already_in_use_exception.html#a777548928c20763e320ff926194974ba", null ]
+];

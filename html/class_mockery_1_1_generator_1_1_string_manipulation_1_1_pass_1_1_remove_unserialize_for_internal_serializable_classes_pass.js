@@ -1,0 +1,4 @@
+var class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass =
+[
+    [ "apply", "class_mockery_1_1_generator_1_1_string_manipulation_1_1_pass_1_1_remove_unserialize_for_internal_serializable_classes_pass.html#aedff14f3b876e24d30a2520160faaaab", null ]
+];

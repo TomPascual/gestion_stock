@@ -1,0 +1,79 @@
+\doxysection{Psy\textbackslash{}Var\+Dumper\textbackslash{}Presenter Class Reference}
+\hypertarget{class_psy_1_1_var_dumper_1_1_presenter}{}\label{class_psy_1_1_var_dumper_1_1_presenter}\index{Psy\textbackslash{}VarDumper\textbackslash{}Presenter@{Psy\textbackslash{}VarDumper\textbackslash{}Presenter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_psy_1_1_var_dumper_1_1_presenter_af88c6980604e4d5933bc2ecc05228771}\label{class_psy_1_1_var_dumper_1_1_presenter_af88c6980604e4d5933bc2ecc05228771} 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_formatter_1_1_output_formatter}{Output\+Formatter}} \$formatter, \$force\+Array\+Indexes=false)
+\item 
+\mbox{\hyperlink{class_psy_1_1_var_dumper_1_1_presenter_af438b64865e1109d760f1a9308d03ac6}{add\+Casters}} (array \$casters)
+\item 
+\mbox{\hyperlink{class_psy_1_1_var_dumper_1_1_presenter_a6de31a28f23eae5cae1ba6a15e4e5101}{present\+Ref}} (\$value)
+\item 
+\mbox{\hyperlink{class_psy_1_1_var_dumper_1_1_presenter_a6069aa93d2696bc2b34566c9ff1affa1}{present}} (\$value, ?int \$depth=null, int \$options=0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_psy_1_1_var_dumper_1_1_presenter_a1ee8b255e8ab55b988a4a6f480ac9957}\label{class_psy_1_1_var_dumper_1_1_presenter_a1ee8b255e8ab55b988a4a6f480ac9957} 
+const {\bfseries VERBOSE} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A Presenter service. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_var_dumper_1_1_presenter_af438b64865e1109d760f1a9308d03ac6}\index{Psy\textbackslash{}VarDumper\textbackslash{}Presenter@{Psy\textbackslash{}VarDumper\textbackslash{}Presenter}!addCasters@{addCasters}}
+\index{addCasters@{addCasters}!Psy\textbackslash{}VarDumper\textbackslash{}Presenter@{Psy\textbackslash{}VarDumper\textbackslash{}Presenter}}
+\doxysubsubsection{\texorpdfstring{addCasters()}{addCasters()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_var_dumper_1_1_presenter_af438b64865e1109d760f1a9308d03ac6} 
+Psy\textbackslash{}\+Var\+Dumper\textbackslash{}\+Presenter\+::add\+Casters (\begin{DoxyParamCaption}\item[{array}]{\$casters}{}\end{DoxyParamCaption})}
+
+Register casters.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://symfony.com/doc/current/components/var_dumper/advanced.html\#casters}{\texttt{ http\+://symfony.\+com/doc/current/components/var\+\_\+dumper/advanced.\+html\#casters}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+callable\mbox{[}$\,$\mbox{]} & {\em \$casters} & A map of casters \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_var_dumper_1_1_presenter_a6069aa93d2696bc2b34566c9ff1affa1}\index{Psy\textbackslash{}VarDumper\textbackslash{}Presenter@{Psy\textbackslash{}VarDumper\textbackslash{}Presenter}!present@{present}}
+\index{present@{present}!Psy\textbackslash{}VarDumper\textbackslash{}Presenter@{Psy\textbackslash{}VarDumper\textbackslash{}Presenter}}
+\doxysubsubsection{\texorpdfstring{present()}{present()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_var_dumper_1_1_presenter_a6069aa93d2696bc2b34566c9ff1affa1} 
+Psy\textbackslash{}\+Var\+Dumper\textbackslash{}\+Presenter\+::present (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{?int}]{\$depth}{ = {\ttfamily null}, }\item[{int}]{\$options}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Present a full representation of the value.
+
+If \$depth is 0, the value will be presented as a ref instead.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+int & {\em \$depth} & (default\+: null) \\
+\hline
+int & {\em \$options} & One of Presenter constants \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_var_dumper_1_1_presenter_a6de31a28f23eae5cae1ba6a15e4e5101}\index{Psy\textbackslash{}VarDumper\textbackslash{}Presenter@{Psy\textbackslash{}VarDumper\textbackslash{}Presenter}!presentRef@{presentRef}}
+\index{presentRef@{presentRef}!Psy\textbackslash{}VarDumper\textbackslash{}Presenter@{Psy\textbackslash{}VarDumper\textbackslash{}Presenter}}
+\doxysubsubsection{\texorpdfstring{presentRef()}{presentRef()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_var_dumper_1_1_presenter_a6de31a28f23eae5cae1ba6a15e4e5101} 
+Psy\textbackslash{}\+Var\+Dumper\textbackslash{}\+Presenter\+::present\+Ref (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Present a reference to the value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Var\+Dumper/Presenter.\+php\end{DoxyCompactItemize}

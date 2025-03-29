@@ -1,0 +1,190 @@
+\doxysection{C\+:/\+Users/tomys/gestion\+\_\+stock/vendor/nesbot/carbon/src/\+Carbon/\+Traits/\+Mixin.\+php}
+\hypertarget{_c_1_2_users_2tomys_2gestion_stock_2vendor_2nesbot_2carbon_2src_2_carbon_2_traits_2_mixin_8php-example}{}\label{_c_1_2_users_2tomys_2gestion_stock_2vendor_2nesbot_2carbon_2src_2_carbon_2_traits_2_mixin_8php-example}Mix another object into the class.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Carbon::mixin(\textcolor{keyword}{new}\ \textcolor{keyword}{class}\ \{}
+\DoxyCodeLine{\ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ addMoon()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>addDays(30);}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ subMoon()\ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{function}\ ()\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>subDays(30);}
+\DoxyCodeLine{\ \ \ \ \};}
+\DoxyCodeLine{\ \ \}}
+\DoxyCodeLine{\});}
+\DoxyCodeLine{\$fullMoon\ =\ Carbon::create(\textcolor{stringliteral}{'2018-\/12-\/22'});}
+\DoxyCodeLine{\$nextFullMoon\ =\ \$fullMoon-\/>addMoon();}
+\DoxyCodeLine{\$blackMoon\ =\ Carbon::create(\textcolor{stringliteral}{'2019-\/01-\/06'});}
+\DoxyCodeLine{\$previousBlackMoon\ =\ \$blackMoon-\/>subMoon();}
+\DoxyCodeLine{echo\ \textcolor{stringliteral}{"{}\$nextFullMoon\(\backslash\)n"{}};}
+\DoxyCodeLine{echo\ \textcolor{stringliteral}{"{}\$previousBlackMoon\(\backslash\)n"{}};}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Reflection\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{declare(strict\_types=1);}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{namespace\ }Carbon\(\backslash\)Traits;}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ Carbon\(\backslash\)CarbonInterface;}
+\DoxyCodeLine{use\ Carbon\(\backslash\)CarbonInterval;}
+\DoxyCodeLine{use\ Carbon\(\backslash\)CarbonPeriod;}
+\DoxyCodeLine{use\ Closure;}
+\DoxyCodeLine{use\ Generator;}
+\DoxyCodeLine{use\ ReflectionClass;}
+\DoxyCodeLine{use\ ReflectionException;}
+\DoxyCodeLine{use\ ReflectionMethod;}
+\DoxyCodeLine{use\ Throwable;}
+\DoxyCodeLine{}
+\DoxyCodeLine{trait\ \mbox{\hyperlink{namespace_carbon_1_1_traits_a207b78e926a0ab853f96b34d9beb2981}{Mixin}}}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{static}\ array\ \$macroContextStack\ =\ [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ mixin(\textcolor{keywordtype}{object}|\textcolor{keywordtype}{string}\ \$mixin):\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)is\_string(\$mixin)\ \&\&\ trait\_exists(\$mixin)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ?\ self::loadMixinTrait(\$mixin)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ :\ self::loadMixinClass(\$mixin);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ loadMixinClass(\textcolor{keywordtype}{object}|\textcolor{keywordtype}{string}\ \$mixin):\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$methods\ =\ (\textcolor{keyword}{new}\ ReflectionClass(\$mixin))-\/>getMethods(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ReflectionMethod::IS\_PUBLIC\ |\ ReflectionMethod::IS\_PROTECTED,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ );}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (\$methods\ as\ \$method)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$method-\/>isConstructor()\ ||\ \$method-\/>isDestructor())\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$macro\ =\ \$method-\/>invoke(\$mixin);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\(\backslash\)is\_callable(\$macro))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ static::macro(\$method-\/>name,\ \$macro);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ loadMixinTrait(\textcolor{keywordtype}{string}\ \$trait):\ void}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$context\ =\ eval(self::getAnonymousClassCodeForTrait(\$trait));}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$className\ =\ \(\backslash\)get\_class(\$context);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$baseClass\ =\ static::class;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (self::getMixableMethods(\$context)\ as\ \$name)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$closureBase\ =\ Closure::fromCallable([\$context,\ \$name]);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ static::macro(\$name,\ \textcolor{keyword}{function}\ (...\$parameters)\ use\ (\$closureBase,\ \$className,\ \$baseClass)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$downContext\ =\ isset(\$this)\ ?\ (\$this)\ :\ new\ \$baseClass();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$context\ =\ isset(\$this)\ ?\ \$this-\/>\mbox{\hyperlink{interface_carbon_1_1_carbon_interface_a79d848d0bc5741d8cc52e331c339ccf3}{cast}}(\$className)\ :\ new\ \$className();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ @\ is\ required\ to\ handle\ error\ if\ not\ converted\ into\ exceptions}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$closure\ =\ @\$closureBase-\/>bindTo(\$context);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (Throwable)\ \{\ \textcolor{comment}{//\ @codeCoverageIgnore}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$closure\ =\ \$closureBase;\ \textcolor{comment}{//\ @codeCoverageIgnore}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ in\ case\ of\ errors\ not\ converted\ into\ exceptions}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$closure\ =\ \$closure\ ?:\ \$closureBase;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$result\ =\ \$closure(...\$parameters);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!(\$result\ instanceof\ \$className))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$result;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$downContext\ instanceof\ \mbox{\hyperlink{interface_carbon_1_1_carbon_interface}{CarbonInterface}}\ \&\&\ \$result\ instanceof\ \mbox{\hyperlink{interface_carbon_1_1_carbon_interface}{CarbonInterface}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$context\ !==\ \$result)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$downContext\ =\ \$downContext-\/>copy();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$downContext}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>setTimezone(\$result-\/>getTimezone())}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>modify(\$result-\/>format(\textcolor{stringliteral}{'Y-\/m-\/d\ H:i:s.u'}))}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>settings(\$result-\/>getSettings());}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$downContext\ instanceof\ \mbox{\hyperlink{class_carbon_1_1_carbon_interval}{CarbonInterval}}\ \&\&\ \$result\ instanceof\ \mbox{\hyperlink{class_carbon_1_1_carbon_interval}{CarbonInterval}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$context\ !==\ \$result)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$downContext\ =\ \$downContext-\/>copy();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$downContext-\/>copyProperties(\$result);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ self::copyStep(\$downContext,\ \$result);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ self::copyNegativeUnits(\$downContext,\ \$result);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$downContext-\/>settings(\$result-\/>getSettings());}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$downContext\ instanceof\ \mbox{\hyperlink{class_carbon_1_1_carbon_period}{CarbonPeriod}}\ \&\&\ \$result\ instanceof\ \mbox{\hyperlink{class_carbon_1_1_carbon_period}{CarbonPeriod}})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$context\ !==\ \$result)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$downContext\ =\ \$downContext-\/>copy();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$downContext}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>setDates(\$result-\/>getStartDate(),\ \$result-\/>getEndDate())}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>setRecurrences(\$result-\/>getRecurrences())}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>setOptions(\$result-\/>getOptions())}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ -\/>settings(\$result-\/>getSettings());}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$result;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getAnonymousClassCodeForTrait(\textcolor{keywordtype}{string}\ \$trait):\ string}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{'return\ new\ class()\ extends\ '}.static::class.\textcolor{stringliteral}{'\ \{use\ '}.\$trait.\textcolor{stringliteral}{';\};'};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ getMixableMethods(\textcolor{keyword}{self}\ \$context):\ Generator}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{foreach}\ (get\_class\_methods(\$context)\ as\ \$name)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (method\_exists(static::class,\ \$name))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ yield\ \$name;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ bindMacroContext(?\textcolor{keyword}{self}\ \$context,\ callable\ \$callable):\ mixed}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ static::\$macroContextStack[]\ =\ \$context;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$callable();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{finally}\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ array\_pop(static::\$macroContextStack);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ context():\ ?static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_carbon_1_1_carbon_interval_a51c1add38b3d30696da20bd5a94152bc}{end}}(static::\$macroContextStack)\ ?:\ \textcolor{keyword}{null};}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{static}\ \textcolor{keyword}{function}\ \textcolor{keyword}{this}():\ static}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_carbon_1_1_carbon_interval_a51c1add38b3d30696da20bd5a94152bc}{end}}(static::\$macroContextStack)\ ?:\ \textcolor{keyword}{new}\ \textcolor{keyword}{static}();}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCodeInclude}
+ 

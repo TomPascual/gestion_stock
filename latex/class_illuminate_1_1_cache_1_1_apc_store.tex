@@ -1,0 +1,257 @@
+\doxysection{Illuminate\textbackslash{}Cache\textbackslash{}Apc\+Store Class Reference}
+\hypertarget{class_illuminate_1_1_cache_1_1_apc_store}{}\label{class_illuminate_1_1_cache_1_1_apc_store}\index{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}}
+Inheritance diagram for Illuminate\textbackslash{}Cache\textbackslash{}Apc\+Store\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_cache_1_1_apc_store}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_store_ad1ae072b15bf7cc0f4a4c44046fac14a}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_wrapper}{Apc\+Wrapper}} \$apc, \$prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_store_a054f403911fc6c331c90f090a2d74ab7}{get}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_store_a4b74daedc593dcf2b71ed42dc1ce3981}{put}} (\$key, \$value, \$seconds)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_store_a86f45548249e00a6a54f7a39a314609e}{increment}} (\$key, \$value=1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_store_a0c032aeece80402eb81ea2fb6c4f5055}{decrement}} (\$key, \$value=1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_store_aae5ea480baa7d200525a1b42f3ac5444}{forever}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_store_a1bf30d566114fab72d11f0a7e0b02b16}{forget}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_store_a3d15a5b8a4a3d01130e0826260845572}{flush}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_store_aef684aaf8862cf3b6996b700eda0af87}{get\+Prefix}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_store_adf495ae3f897bd5edf9cf419cf917fd2}{set\+Prefix}} (\$prefix)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_taggable_store}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Taggable\+Store}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_taggable_store_ad9e7a5ae0a4c8b94ae9e655433361c66}{tags}} (\$names)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_acd26c0fb0e85829dca6cf34497caa605}{many}} (array \$keys)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_af1c13c5ce3d6ae7cdb92954316da33ac}{put\+Many}} (array \$values, \$seconds)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_store_a2bbb767260d52d80bdb8a194be126942}\label{class_illuminate_1_1_cache_1_1_apc_store_a2bbb767260d52d80bdb8a194be126942} 
+{\bfseries \$apc}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_store_a691101a8a8242159406721f4ae7eb697}\label{class_illuminate_1_1_cache_1_1_apc_store_a691101a8a8242159406721f4ae7eb697} 
+{\bfseries \$prefix}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_store_ad1ae072b15bf7cc0f4a4c44046fac14a}\index{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_apc_store_ad1ae072b15bf7cc0f4a4c44046fac14a} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Apc\+Store\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_apc_wrapper}{Apc\+Wrapper}}}]{\$apc}{, }\item[{}]{\$prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a new APC store.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Apc\+Wrapper & {\em \$apc} & \\
+\hline
+string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_store_a0c032aeece80402eb81ea2fb6c4f5055}\index{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}!decrement@{decrement}}
+\index{decrement@{decrement}!Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}}
+\doxysubsubsection{\texorpdfstring{decrement()}{decrement()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_apc_store_a0c032aeece80402eb81ea2fb6c4f5055} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Apc\+Store\+::decrement (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Decrement the value of an item in the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a5535f41edfe28cf81a37b164283cbeae}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_store_a3d15a5b8a4a3d01130e0826260845572}\index{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}!flush@{flush}}
+\index{flush@{flush}!Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_apc_store_a3d15a5b8a4a3d01130e0826260845572} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Apc\+Store\+::flush (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Remove all items from the cache.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_ac0f8554721326578beed63e536cacb4c}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_store_aae5ea480baa7d200525a1b42f3ac5444}\index{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}!forever@{forever}}
+\index{forever@{forever}!Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}}
+\doxysubsubsection{\texorpdfstring{forever()}{forever()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_apc_store_aae5ea480baa7d200525a1b42f3ac5444} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Apc\+Store\+::forever (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Store an item in the cache indefinitely.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_acc81ba5be408507d39f43560c8c3b097}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_store_a1bf30d566114fab72d11f0a7e0b02b16}\index{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}!forget@{forget}}
+\index{forget@{forget}!Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}}
+\doxysubsubsection{\texorpdfstring{forget()}{forget()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_apc_store_a1bf30d566114fab72d11f0a7e0b02b16} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Apc\+Store\+::forget (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Remove an item from the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_ac735132a55c57063607508d3ddf1bbcc}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_store_a054f403911fc6c331c90f090a2d74ab7}\index{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}!get@{get}}
+\index{get@{get}!Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_apc_store_a054f403911fc6c331c90f090a2d74ab7} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Apc\+Store\+::get (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Retrieve an item from the cache by key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a76a1f3cd25865c30893e5498b7f9f22f}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_store_aef684aaf8862cf3b6996b700eda0af87}\index{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}!getPrefix@{getPrefix}}
+\index{getPrefix@{getPrefix}!Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}}
+\doxysubsubsection{\texorpdfstring{getPrefix()}{getPrefix()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_apc_store_aef684aaf8862cf3b6996b700eda0af87} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Apc\+Store\+::get\+Prefix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the cache key prefix.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a7052d7e499811475bfab1cda35aaa24a}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_store_a86f45548249e00a6a54f7a39a314609e}\index{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}!increment@{increment}}
+\index{increment@{increment}!Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}}
+\doxysubsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_apc_store_a86f45548249e00a6a54f7a39a314609e} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Apc\+Store\+::increment (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+Increment the value of an item in the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a6c0f3189449cee80c854f9f2b9a84aa8}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_store_a4b74daedc593dcf2b71ed42dc1ce3981}\index{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}!put@{put}}
+\index{put@{put}!Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_apc_store_a4b74daedc593dcf2b71ed42dc1ce3981} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Apc\+Store\+::put (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{, }\item[{}]{\$seconds}{}\end{DoxyParamCaption})}
+
+Store an item in the cache for a given number of seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store_a1b289bda788cce15cbbb698d8c48b745}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_apc_store_adf495ae3f897bd5edf9cf419cf917fd2}\index{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}!setPrefix@{setPrefix}}
+\index{setPrefix@{setPrefix}!Illuminate\textbackslash{}Cache\textbackslash{}ApcStore@{Illuminate\textbackslash{}Cache\textbackslash{}ApcStore}}
+\doxysubsubsection{\texorpdfstring{setPrefix()}{setPrefix()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_apc_store_adf495ae3f897bd5edf9cf419cf917fd2} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Apc\+Store\+::set\+Prefix (\begin{DoxyParamCaption}\item[{}]{\$prefix}{}\end{DoxyParamCaption})}
+
+Set the cache key prefix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Cache/Apc\+Store.\+php\end{DoxyCompactItemize}

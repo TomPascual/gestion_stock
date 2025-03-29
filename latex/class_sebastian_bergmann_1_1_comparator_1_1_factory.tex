@@ -1,0 +1,45 @@
+\doxysection{Sebastian\+Bergmann\textbackslash{}Comparator\textbackslash{}Factory Class Reference}
+\hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_factory}{}\label{class_sebastian_bergmann_1_1_comparator_1_1_factory}\index{SebastianBergmann\textbackslash{}Comparator\textbackslash{}Factory@{SebastianBergmann\textbackslash{}Comparator\textbackslash{}Factory}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_factory_a251b50a52ba78b5c4ec151f905876a99}\label{class_sebastian_bergmann_1_1_comparator_1_1_factory_a251b50a52ba78b5c4ec151f905876a99} 
+{\bfseries get\+Comparator\+For} (mixed \$expected, mixed \$actual)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_factory_abd55efa9f80b070684215c025ae2abf0}{register}} (\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator}{Comparator}} \$comparator)
+\item 
+\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_factory_af2faa4fc2c5efa290820b65d2672c84d}{unregister}} (\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator}{Comparator}} \$comparator)
+\item 
+\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_factory_a2865b7ec47274a23884192ad123f6ee4}\label{class_sebastian_bergmann_1_1_comparator_1_1_factory_a2865b7ec47274a23884192ad123f6ee4} 
+{\bfseries reset} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_factory_a2abad6a08471ccf25890e2aaeea3dd62}\label{class_sebastian_bergmann_1_1_comparator_1_1_factory_a2abad6a08471ccf25890e2aaeea3dd62} 
+static {\bfseries get\+Instance} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_factory_abd55efa9f80b070684215c025ae2abf0}\index{SebastianBergmann\textbackslash{}Comparator\textbackslash{}Factory@{SebastianBergmann\textbackslash{}Comparator\textbackslash{}Factory}!register@{register}}
+\index{register@{register}!SebastianBergmann\textbackslash{}Comparator\textbackslash{}Factory@{SebastianBergmann\textbackslash{}Comparator\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_comparator_1_1_factory_abd55efa9f80b070684215c025ae2abf0} 
+Sebastian\+Bergmann\textbackslash{}\+Comparator\textbackslash{}\+Factory\+::register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator}{Comparator}}}]{\$comparator}{}\end{DoxyParamCaption})}
+
+Registers a new comparator.
+
+This comparator will be returned by get\+Comparator\+For() if its accept() method returns TRUE for the compared values. It has higher priority than the existing comparators, meaning that its accept() method will be invoked before those of the other comparators. \Hypertarget{class_sebastian_bergmann_1_1_comparator_1_1_factory_af2faa4fc2c5efa290820b65d2672c84d}\index{SebastianBergmann\textbackslash{}Comparator\textbackslash{}Factory@{SebastianBergmann\textbackslash{}Comparator\textbackslash{}Factory}!unregister@{unregister}}
+\index{unregister@{unregister}!SebastianBergmann\textbackslash{}Comparator\textbackslash{}Factory@{SebastianBergmann\textbackslash{}Comparator\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{unregister()}{unregister()}}
+{\footnotesize\ttfamily \label{class_sebastian_bergmann_1_1_comparator_1_1_factory_af2faa4fc2c5efa290820b65d2672c84d} 
+Sebastian\+Bergmann\textbackslash{}\+Comparator\textbackslash{}\+Factory\+::unregister (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sebastian_bergmann_1_1_comparator_1_1_comparator}{Comparator}}}]{\$comparator}{}\end{DoxyParamCaption})}
+
+Unregisters a comparator.
+
+This comparator will no longer be considered by get\+Comparator\+For(). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/sebastian/comparator/src/Factory.\+php\end{DoxyCompactItemize}

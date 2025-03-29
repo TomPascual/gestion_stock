@@ -1,0 +1,593 @@
+\doxysection{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel Class Reference}
+\hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel}{}\label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+Inheritance diagram for Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_foundation_1_1_console_1_1_kernel}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a53ce4d9e651de05cd52f7a202ce7d91c}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_foundation_1_1_application}{Application}} \$app, \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}} \$events)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a22ce01729aad1b7205d842e1804c2723}{reroute\+Symfony\+Command\+Events}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_add630b3f6757f63946ed38ed2b0fbc42}{handle}} (\$input, \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a85bd0bdb8b845b7bee858360d94c51a7}{output}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_aefc94ad29e830f9660d8e95e158109ae}{terminate}} (\$input, \$status)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ad62bdc5e2315a0864397649ade659972}{when\+Command\+Lifecycle\+Is\+Longer\+Than}} (\$threshold, \$handler)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_af40f0209f280a9f4684d262d0666fb3b}{command\+Started\+At}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a479317c7e7ed79e080497a5bb3dda4f5}{resolve\+Console\+Schedule}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_abe07c4bbb5de99623d9596c13c092f3c}{command}} (\$signature, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a6346fb43e301325e215d542e967de7c2}{register\+Command}} (\$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_abe07c4bbb5de99623d9596c13c092f3c}{command}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ac5b7d06cd3f353b606fa19086d5ca23f}{call}} (\$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_abe07c4bbb5de99623d9596c13c092f3c}{command}}, array \$parameters=\mbox{[}$\,$\mbox{]}, \$output\+Buffer=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ac77e4f55b8584c94d6dbc7d48693cd2f}{queue}} (\$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_abe07c4bbb5de99623d9596c13c092f3c}{command}}, array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_afe4218db897c15666661357e39c95f65}{all}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a85bd0bdb8b845b7bee858360d94c51a7}{output}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a8de66fbe84b6d4843e380cd45c5bd0db}{bootstrap}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ac2a38b3e29c342fa2b8d1c4456c34890}{bootstrap\+Without\+Booting\+Providers}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a491af57b95536b4e5b8818dea5e9d35e}{set\+Artisan}} (\$artisan)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a09db4ace2cf303a63911f78a2fc3721f}{add\+Commands}} (array \$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ab15a5f6fc19f15eaeeca1ba12dc819b0}{commands}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a95a6008008f0081cfde7c448e89186a5}{add\+Command\+Paths}} (array \$paths)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a14ede7b36f58dc1f92e6859bdc18bd0b}{add\+Command\+Route\+Paths}} (array \$paths)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a707793bbc7a55dd13e82ad963eadab93}{schedule}} (\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_schedule}{Schedule}} \$schedule)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ae162a636b1459ab086f62162de43659e}{schedule\+Timezone}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a7ca6f8b71858834f14fc948f9c98539a}{schedule\+Cache}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ab15a5f6fc19f15eaeeca1ba12dc819b0}{commands}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ac7d1f293c892dec3379976bc9afa2636}{load}} (\$paths)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ad2be2ff11b10e150afa37f45f41baf13}{command\+Class\+From\+File}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_finder_1_1_spl_file_info}{Spl\+File\+Info}} \$file, string \$namespace)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a77f30da225f6161726b0da19463a4fba}{discover\+Commands}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ab277730a47b1c0d55bb8ad84ac8127fa}{should\+Discover\+Commands}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a6e023e52a5779ebb9e10d35e352a479e}{get\+Artisan}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a6cf6ebbc3578ed37047f5d263bf7cb5a}{bootstrappers}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a28745a2a5fe7c4408a21e3312047173f}{report\+Exception}} (Throwable \$e)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a457b8f500cd11d6816afe67f2a4aa08a}{render\+Exception}} (\$\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a85bd0bdb8b845b7bee858360d94c51a7}{output}}, Throwable \$e)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ae242cb332dbecc397791c042e8a3ae92}\label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ae242cb332dbecc397791c042e8a3ae92} 
+{\bfseries \$app}
+\item 
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_acdff5cb05266018feb47d926a3148fdb}\label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_acdff5cb05266018feb47d926a3148fdb} 
+{\bfseries \$events}
+\item 
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_add67422b0a88a06c885019ac3dc6c595}\label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_add67422b0a88a06c885019ac3dc6c595} 
+{\bfseries \$symfony\+Dispatcher}
+\item 
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a402a4f96de2fafa8c942b42d3bc2cb72}\label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a402a4f96de2fafa8c942b42d3bc2cb72} 
+{\bfseries \$artisan}
+\item 
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a6dac451dff0b29bf8b282af3189845b2}\label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a6dac451dff0b29bf8b282af3189845b2} 
+{\bfseries \$commands} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a4ee782a6fcfe06688558443928e8e17c}\label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a4ee782a6fcfe06688558443928e8e17c} 
+{\bfseries \$command\+Paths} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a932565cf1e5e579991ab4d999e0b9e9f}\label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a932565cf1e5e579991ab4d999e0b9e9f} 
+{\bfseries \$command\+Route\+Paths} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ab6b737538e32ac2164888be240f80592}\label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ab6b737538e32ac2164888be240f80592} 
+{\bfseries \$commands\+Loaded} = false
+\item 
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a1678f70431e15d746b0704adabcbf8c8}\label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a1678f70431e15d746b0704adabcbf8c8} 
+{\bfseries \$loaded\+Paths} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_adabc755f99905bdf675348239de69e76}\label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_adabc755f99905bdf675348239de69e76} 
+{\bfseries \$command\+Lifecycle\+Duration\+Handlers} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a64cd920340fbbf35e65458d6928fc0ed}\label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a64cd920340fbbf35e65458d6928fc0ed} 
+{\bfseries \$command\+Started\+At}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a1e18c4c13bc8da299ad2dc915ea13a05}{\$bootstrappers}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a53ce4d9e651de05cd52f7a202ce7d91c}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a53ce4d9e651de05cd52f7a202ce7d91c} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_foundation_1_1_application}{Application}}}]{\$app}{, }\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_events_1_1_dispatcher}{Dispatcher}}}]{\$events}{}\end{DoxyParamCaption})}
+
+Create a new console kernel instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Foundation\textbackslash{}\+Application & {\em \$app} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Events\textbackslash{}\+Dispatcher & {\em \$events} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a95a6008008f0081cfde7c448e89186a5}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!addCommandPaths@{addCommandPaths}}
+\index{addCommandPaths@{addCommandPaths}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{addCommandPaths()}{addCommandPaths()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a95a6008008f0081cfde7c448e89186a5} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::add\+Command\+Paths (\begin{DoxyParamCaption}\item[{array}]{\$paths}{}\end{DoxyParamCaption})}
+
+Set the paths that should have their Artisan commands automatically discovered.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$paths} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a14ede7b36f58dc1f92e6859bdc18bd0b}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!addCommandRoutePaths@{addCommandRoutePaths}}
+\index{addCommandRoutePaths@{addCommandRoutePaths}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{addCommandRoutePaths()}{addCommandRoutePaths()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a14ede7b36f58dc1f92e6859bdc18bd0b} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::add\+Command\+Route\+Paths (\begin{DoxyParamCaption}\item[{array}]{\$paths}{}\end{DoxyParamCaption})}
+
+Set the paths that should have their Artisan "{}routes"{} automatically discovered.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$paths} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a09db4ace2cf303a63911f78a2fc3721f}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!addCommands@{addCommands}}
+\index{addCommands@{addCommands}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{addCommands()}{addCommands()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a09db4ace2cf303a63911f78a2fc3721f} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::add\+Commands (\begin{DoxyParamCaption}\item[{array}]{\$commands}{}\end{DoxyParamCaption})}
+
+Set the Artisan commands provided by the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$commands} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_afe4218db897c15666661357e39c95f65}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!all@{all}}
+\index{all@{all}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_afe4218db897c15666661357e39c95f65} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::all (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all of the commands registered with the console.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a8de66fbe84b6d4843e380cd45c5bd0db}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!bootstrap@{bootstrap}}
+\index{bootstrap@{bootstrap}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{bootstrap()}{bootstrap()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a8de66fbe84b6d4843e380cd45c5bd0db} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::bootstrap (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Bootstrap the application for artisan commands.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a6cf6ebbc3578ed37047f5d263bf7cb5a}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!bootstrappers@{bootstrappers}}
+\index{bootstrappers@{bootstrappers}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{bootstrappers()}{bootstrappers()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a6cf6ebbc3578ed37047f5d263bf7cb5a} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::bootstrappers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the bootstrap classes for the application.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ac2a38b3e29c342fa2b8d1c4456c34890}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!bootstrapWithoutBootingProviders@{bootstrapWithoutBootingProviders}}
+\index{bootstrapWithoutBootingProviders@{bootstrapWithoutBootingProviders}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{bootstrapWithoutBootingProviders()}{bootstrapWithoutBootingProviders()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ac2a38b3e29c342fa2b8d1c4456c34890} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::bootstrap\+Without\+Booting\+Providers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Bootstrap the application without booting service providers.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ac5b7d06cd3f353b606fa19086d5ca23f}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!call@{call}}
+\index{call@{call}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ac5b7d06cd3f353b606fa19086d5ca23f} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::call (\begin{DoxyParamCaption}\item[{}]{\$command}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$output\+Buffer}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Run an Artisan console command by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Output\textbackslash{}\+Output\+Interface | null & {\em \$output\+Buffer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Exception\textbackslash{}\+Command\+Not\+Found\+Exception \Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_abe07c4bbb5de99623d9596c13c092f3c}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!command@{command}}
+\index{command@{command}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{command()}{command()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_abe07c4bbb5de99623d9596c13c092f3c} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::command (\begin{DoxyParamCaption}\item[{}]{\$signature}{, }\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a Closure based command with the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$signature} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Closure\+Command 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ad2be2ff11b10e150afa37f45f41baf13}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!commandClassFromFile@{commandClassFromFile}}
+\index{commandClassFromFile@{commandClassFromFile}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{commandClassFromFile()}{commandClassFromFile()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ad2be2ff11b10e150afa37f45f41baf13} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::command\+Class\+From\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_finder_1_1_spl_file_info}{Spl\+File\+Info}}}]{\$file}{, }\item[{string}]{\$namespace}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Extract the command class name from the given file path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Spl\+File\+Info & {\em \$file} & \\
+\hline
+string & {\em \$namespace} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ab15a5f6fc19f15eaeeca1ba12dc819b0}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!commands@{commands}}
+\index{commands@{commands}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{commands()}{commands()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ab15a5f6fc19f15eaeeca1ba12dc819b0} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::commands (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register the commands for the application.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_af40f0209f280a9f4684d262d0666fb3b}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!commandStartedAt@{commandStartedAt}}
+\index{commandStartedAt@{commandStartedAt}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{commandStartedAt()}{commandStartedAt()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_af40f0209f280a9f4684d262d0666fb3b} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::command\+Started\+At (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+When the command being handled started.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Carbon\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a77f30da225f6161726b0da19463a4fba}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!discoverCommands@{discoverCommands}}
+\index{discoverCommands@{discoverCommands}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{discoverCommands()}{discoverCommands()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a77f30da225f6161726b0da19463a4fba} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::discover\+Commands (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Discover the commands that should be automatically loaded.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a6e023e52a5779ebb9e10d35e352a479e}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!getArtisan@{getArtisan}}
+\index{getArtisan@{getArtisan}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{getArtisan()}{getArtisan()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a6e023e52a5779ebb9e10d35e352a479e} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::get\+Artisan (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the Artisan application instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Console\textbackslash{}\+Application 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_add630b3f6757f63946ed38ed2b0fbc42}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!handle@{handle}}
+\index{handle@{handle}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_add630b3f6757f63946ed38ed2b0fbc42} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::handle (\begin{DoxyParamCaption}\item[{}]{\$input}{, }\item[{}]{\$output}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Run the console application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Input\textbackslash{}\+Input\+Interface & {\em \$input} & \\
+\hline
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Output\textbackslash{}\+Output\+Interface | null & {\em \$output} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ac7d1f293c892dec3379976bc9afa2636}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!load@{load}}
+\index{load@{load}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ac7d1f293c892dec3379976bc9afa2636} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::load (\begin{DoxyParamCaption}\item[{}]{\$paths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Register all of the commands in the given directory.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$paths} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a85bd0bdb8b845b7bee858360d94c51a7}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!output@{output}}
+\index{output@{output}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a85bd0bdb8b845b7bee858360d94c51a7} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::output (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the output for the last run command.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ac77e4f55b8584c94d6dbc7d48693cd2f}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!queue@{queue}}
+\index{queue@{queue}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{queue()}{queue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ac77e4f55b8584c94d6dbc7d48693cd2f} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::queue (\begin{DoxyParamCaption}\item[{}]{\$command}{, }\item[{array}]{\$parameters}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Queue the given console command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Bus\textbackslash{}\+Pending\+Dispatch 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a6346fb43e301325e215d542e967de7c2}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!registerCommand@{registerCommand}}
+\index{registerCommand@{registerCommand}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{registerCommand()}{registerCommand()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a6346fb43e301325e215d542e967de7c2} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::register\+Command (\begin{DoxyParamCaption}\item[{}]{\$command}{}\end{DoxyParamCaption})}
+
+Register the given command with the console application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Command\textbackslash{}\+Command & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a457b8f500cd11d6816afe67f2a4aa08a}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!renderException@{renderException}}
+\index{renderException@{renderException}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{renderException()}{renderException()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a457b8f500cd11d6816afe67f2a4aa08a} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::render\+Exception (\begin{DoxyParamCaption}\item[{}]{\$output}{, }\item[{Throwable}]{\$e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Render the given exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Output\textbackslash{}\+Output\+Interface & {\em \$output} & \\
+\hline
+\textbackslash{}\+Throwable & {\em \$e} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a28745a2a5fe7c4408a21e3312047173f}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!reportException@{reportException}}
+\index{reportException@{reportException}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{reportException()}{reportException()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a28745a2a5fe7c4408a21e3312047173f} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::report\+Exception (\begin{DoxyParamCaption}\item[{Throwable}]{\$e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Report the exception to the exception handler.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Throwable & {\em \$e} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a22ce01729aad1b7205d842e1804c2723}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!rerouteSymfonyCommandEvents@{rerouteSymfonyCommandEvents}}
+\index{rerouteSymfonyCommandEvents@{rerouteSymfonyCommandEvents}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{rerouteSymfonyCommandEvents()}{rerouteSymfonyCommandEvents()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a22ce01729aad1b7205d842e1804c2723} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::reroute\+Symfony\+Command\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Re-\/route the Symfony command events to their Laravel counterparts. \Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a479317c7e7ed79e080497a5bb3dda4f5}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!resolveConsoleSchedule@{resolveConsoleSchedule}}
+\index{resolveConsoleSchedule@{resolveConsoleSchedule}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{resolveConsoleSchedule()}{resolveConsoleSchedule()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a479317c7e7ed79e080497a5bb3dda4f5} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::resolve\+Console\+Schedule (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Resolve a console schedule instance.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Console\textbackslash{}\+Scheduling\textbackslash{}\+Schedule 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a707793bbc7a55dd13e82ad963eadab93}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!schedule@{schedule}}
+\index{schedule@{schedule}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{schedule()}{schedule()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a707793bbc7a55dd13e82ad963eadab93} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::schedule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_console_1_1_scheduling_1_1_schedule}{Schedule}}}]{\$schedule}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Define the application\textquotesingle{}s command schedule.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Console\textbackslash{}\+Scheduling\textbackslash{}\+Schedule & {\em \$schedule} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a7ca6f8b71858834f14fc948f9c98539a}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!scheduleCache@{scheduleCache}}
+\index{scheduleCache@{scheduleCache}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{scheduleCache()}{scheduleCache()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a7ca6f8b71858834f14fc948f9c98539a} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::schedule\+Cache (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the name of the cache store that should manage scheduling mutexes.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ae162a636b1459ab086f62162de43659e}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!scheduleTimezone@{scheduleTimezone}}
+\index{scheduleTimezone@{scheduleTimezone}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{scheduleTimezone()}{scheduleTimezone()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ae162a636b1459ab086f62162de43659e} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::schedule\+Timezone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the timezone that should be used by default for scheduled events.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Date\+Time\+Zone\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a491af57b95536b4e5b8818dea5e9d35e}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!setArtisan@{setArtisan}}
+\index{setArtisan@{setArtisan}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{setArtisan()}{setArtisan()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a491af57b95536b4e5b8818dea5e9d35e} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::set\+Artisan (\begin{DoxyParamCaption}\item[{}]{\$artisan}{}\end{DoxyParamCaption})}
+
+Set the Artisan application instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Console\textbackslash{}\+Application | null & {\em \$artisan} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ab277730a47b1c0d55bb8ad84ac8127fa}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!shouldDiscoverCommands@{shouldDiscoverCommands}}
+\index{shouldDiscoverCommands@{shouldDiscoverCommands}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{shouldDiscoverCommands()}{shouldDiscoverCommands()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ab277730a47b1c0d55bb8ad84ac8127fa} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::should\+Discover\+Commands (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the kernel should discover commands.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_aefc94ad29e830f9660d8e95e158109ae}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!terminate@{terminate}}
+\index{terminate@{terminate}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{terminate()}{terminate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_aefc94ad29e830f9660d8e95e158109ae} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::terminate (\begin{DoxyParamCaption}\item[{}]{\$input}{, }\item[{}]{\$status}{}\end{DoxyParamCaption})}
+
+Terminate the application.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Input\textbackslash{}\+Input\+Interface & {\em \$input} & \\
+\hline
+int & {\em \$status} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ad62bdc5e2315a0864397649ade659972}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!whenCommandLifecycleIsLongerThan@{whenCommandLifecycleIsLongerThan}}
+\index{whenCommandLifecycleIsLongerThan@{whenCommandLifecycleIsLongerThan}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{whenCommandLifecycleIsLongerThan()}{whenCommandLifecycleIsLongerThan()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_ad62bdc5e2315a0864397649ade659972} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::when\+Command\+Lifecycle\+Is\+Longer\+Than (\begin{DoxyParamCaption}\item[{}]{\$threshold}{, }\item[{}]{\$handler}{}\end{DoxyParamCaption})}
+
+Register a callback to be invoked when the command lifecycle duration exceeds a given amount of time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Date\+Time\+Interface | \textbackslash{}\+Carbon\textbackslash{}\+Carbon\+Interval | float | int & {\em \$threshold} & \\
+\hline
+callable & {\em \$handler} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a1e18c4c13bc8da299ad2dc915ea13a05}\index{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}!\$bootstrappers@{\$bootstrappers}}
+\index{\$bootstrappers@{\$bootstrappers}!Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel@{Illuminate\textbackslash{}Foundation\textbackslash{}Console\textbackslash{}Kernel}}
+\doxysubsubsection{\texorpdfstring{\$bootstrappers}{\$bootstrappers}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_foundation_1_1_console_1_1_kernel_a1e18c4c13bc8da299ad2dc915ea13a05} 
+Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Console\textbackslash{}\+Kernel\+::\$bootstrappers\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Foundation\(\backslash\)Bootstrap\(\backslash\)LoadEnvironmentVariables::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Foundation\(\backslash\)Bootstrap\(\backslash\)LoadConfiguration::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Foundation\(\backslash\)Bootstrap\(\backslash\)HandleExceptions::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Foundation\(\backslash\)Bootstrap\(\backslash\)RegisterFacades::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Foundation\(\backslash\)Bootstrap\(\backslash\)SetRequestForConsole::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Foundation\(\backslash\)Bootstrap\(\backslash\)RegisterProviders::class,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \(\backslash\)Illuminate\(\backslash\)Foundation\(\backslash\)Bootstrap\(\backslash\)BootProviders::class,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Foundation/\+Console/Kernel.\+php\end{DoxyCompactItemize}

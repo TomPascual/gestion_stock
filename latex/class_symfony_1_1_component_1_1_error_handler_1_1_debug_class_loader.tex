@@ -1,0 +1,95 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Error\+Handler\textbackslash{}Debug\+Class\+Loader Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader}{}\label{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}DebugClassLoader@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}DebugClassLoader}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_a1abf9a29e55c7de7d3c1b5aed5a65861}\label{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_a1abf9a29e55c7de7d3c1b5aed5a65861} 
+{\bfseries \+\_\+\+\_\+construct} (callable \$class\+Loader)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_a37dc52388739bf49bc13661db4bc898a}\label{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_a37dc52388739bf49bc13661db4bc898a} 
+{\bfseries get\+Class\+Loader} ()
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_afc8e8f5d5268a996d157dbabf82e3ccd}\label{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_afc8e8f5d5268a996d157dbabf82e3ccd} 
+{\bfseries find\+File} (string \$class)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_a93955f2b3abce6df3dd7d30e970b4e90}{load\+Class}} (string \$class)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_a0d1138df2b29043e56b1831550f83c9a}\label{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_a0d1138df2b29043e56b1831550f83c9a} 
+{\bfseries check\+Annotations} (\textbackslash{}Reflection\+Class \$refl, string \$class)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_a4a08f91ff798934c7f910290d6a4e34b}\label{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_a4a08f91ff798934c7f910290d6a4e34b} 
+{\bfseries check\+Case} (\textbackslash{}Reflection\+Class \$refl, string \$file, string \$class)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_ac79ffe5767bc06d9d1394fc0be841bb5}{enable}} ()
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_a09a867c43a91818035dbd002f69d2094}{disable}} ()
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_a627d0db266228c862b254344288f1907}\label{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_a627d0db266228c862b254344288f1907} 
+static {\bfseries check\+Classes} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Autoloader checking if the class is really defined in the file found.
+
+The Class\+Loader will wrap all registered autoloaders and will throw an exception if a file is found but does not declare the class.
+
+It can also patch classes to turn docblocks into actual return types. This behavior is controlled by the SYMFONY\+\_\+\+PATCH\+\_\+\+TYPE\+\_\+\+DECLARATIONS env var, which is a url-\/encoded array with the follow parameters\+:
+\begin{DoxyItemize}
+\item "{}force"{}\+: any value enables deprecation notices -\/ can be any of\+:
+\begin{DoxyItemize}
+\item "{}phpdoc"{} to patch only docblock annotations
+\item "{}2"{} to add all possible return types
+\item "{}1"{} to add return types but only to tests/final/internal/private methods
+\end{DoxyItemize}
+\item "{}php"{}\+: the target version of PHP -\/ e.\+g. "{}7.\+1"{} doesn\textquotesingle{}t generate "{}object"{} types
+\item "{}deprecations"{}\+: "{}1"{} to trigger a deprecation notice when a child class misses a return type while the parent declares an "{}@return"{} annotation
+\end{DoxyItemize}
+
+Note that patching doesn\textquotesingle{}t care about any coding style so you\textquotesingle{}d better to run php-\/cs-\/fixer after, with rules "{}phpdoc\+\_\+trim\+\_\+consecutive\+\_\+blank\+\_\+line\+\_\+separation"{} and "{}no\+\_\+superfluous\+\_\+phpdoc\+\_\+tags"{} enabled typically.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+
+Christophe Coevoet \href{mailto:stof@notk.org}{\texttt{ stof@notk.\+org}} 
+
+Nicolas Grekas \href{mailto:p@tchwork.com}{\texttt{ p@tchwork.\+com}} 
+
+Guilhem Niot \href{mailto:guilhem.niot@gmail.com}{\texttt{ guilhem.\+niot@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_a09a867c43a91818035dbd002f69d2094}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}DebugClassLoader@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}DebugClassLoader}!disable@{disable}}
+\index{disable@{disable}!Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}DebugClassLoader@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}DebugClassLoader}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_a09a867c43a91818035dbd002f69d2094} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Debug\+Class\+Loader\+::disable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Disables the wrapping. \Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_ac79ffe5767bc06d9d1394fc0be841bb5}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}DebugClassLoader@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}DebugClassLoader}!enable@{enable}}
+\index{enable@{enable}!Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}DebugClassLoader@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}DebugClassLoader}}
+\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_ac79ffe5767bc06d9d1394fc0be841bb5} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Debug\+Class\+Loader\+::enable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Wraps all autoloaders. \Hypertarget{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_a93955f2b3abce6df3dd7d30e970b4e90}\index{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}DebugClassLoader@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}DebugClassLoader}!loadClass@{loadClass}}
+\index{loadClass@{loadClass}!Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}DebugClassLoader@{Symfony\textbackslash{}Component\textbackslash{}ErrorHandler\textbackslash{}DebugClassLoader}}
+\doxysubsubsection{\texorpdfstring{loadClass()}{loadClass()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_error_handler_1_1_debug_class_loader_a93955f2b3abce6df3dd7d30e970b4e90} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Error\+Handler\textbackslash{}\+Debug\+Class\+Loader\+::load\+Class (\begin{DoxyParamCaption}\item[{string}]{\$class}{}\end{DoxyParamCaption})}
+
+Loads the given class or interface.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/error-\/handler/Debug\+Class\+Loader.\+php\end{DoxyCompactItemize}

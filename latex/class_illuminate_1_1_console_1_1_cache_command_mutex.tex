@@ -1,0 +1,169 @@
+\doxysection{Illuminate\textbackslash{}Console\textbackslash{}Cache\+Command\+Mutex Class Reference}
+\hypertarget{class_illuminate_1_1_console_1_1_cache_command_mutex}{}\label{class_illuminate_1_1_console_1_1_cache_command_mutex}\index{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex@{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex}}
+Inheritance diagram for Illuminate\textbackslash{}Console\textbackslash{}Cache\+Command\+Mutex\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_console_1_1_cache_command_mutex}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_cache_command_mutex_a218ffd289200e06e84b766aad98e778f}{\+\_\+\+\_\+construct}} (Cache \$cache)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_cache_command_mutex_aa88bd722f2276cbd91bfc724a7d1865d}{create}} (\$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_cache_command_mutex_a349c0c1eae97849df17d704217288a54}{exists}} (\$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_cache_command_mutex_ae85c437b91d0c98588fde4e783a9fc3a}{forget}} (\$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_cache_command_mutex_a11a645a4c1a8afad13793c44eafc20e1}{use\+Store}} (\$store)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_console_1_1_cache_command_mutex_a1615da3f2b3a848df5eff1c8880239d9}\label{class_illuminate_1_1_console_1_1_cache_command_mutex_a1615da3f2b3a848df5eff1c8880239d9} 
+{\bfseries \$cache}
+\item 
+\Hypertarget{class_illuminate_1_1_console_1_1_cache_command_mutex_a49166a62804a76458fee592f1dfb64e1}\label{class_illuminate_1_1_console_1_1_cache_command_mutex_a49166a62804a76458fee592f1dfb64e1} 
+{\bfseries \$store} = null
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_cache_command_mutex_ab9f1f5c621ca64dada20dbc497fd33ef}{command\+Mutex\+Name}} (\$command)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_console_1_1_cache_command_mutex_a6d31bfc2cb8a44d163fd5b21126a86e3}{should\+Use\+Locks}} (\$store)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_console_1_1_cache_command_mutex_a218ffd289200e06e84b766aad98e778f}\index{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex@{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex@{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_cache_command_mutex_a218ffd289200e06e84b766aad98e778f} 
+Illuminate\textbackslash{}\+Console\textbackslash{}\+Cache\+Command\+Mutex\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Cache}]{\$cache}{}\end{DoxyParamCaption})}
+
+Create a new command mutex.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Factory & {\em \$cache} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_console_1_1_cache_command_mutex_ab9f1f5c621ca64dada20dbc497fd33ef}\index{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex@{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex}!commandMutexName@{commandMutexName}}
+\index{commandMutexName@{commandMutexName}!Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex@{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex}}
+\doxysubsubsection{\texorpdfstring{commandMutexName()}{commandMutexName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_cache_command_mutex_ab9f1f5c621ca64dada20dbc497fd33ef} 
+Illuminate\textbackslash{}\+Console\textbackslash{}\+Cache\+Command\+Mutex\+::command\+Mutex\+Name (\begin{DoxyParamCaption}\item[{}]{\$command}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the isolatable command mutex name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Console\textbackslash{}\+Command & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_cache_command_mutex_aa88bd722f2276cbd91bfc724a7d1865d}\index{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex@{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex}!create@{create}}
+\index{create@{create}!Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex@{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_cache_command_mutex_aa88bd722f2276cbd91bfc724a7d1865d} 
+Illuminate\textbackslash{}\+Console\textbackslash{}\+Cache\+Command\+Mutex\+::create (\begin{DoxyParamCaption}\item[{}]{\$command}{}\end{DoxyParamCaption})}
+
+Attempt to obtain a command mutex for the given command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Console\textbackslash{}\+Command & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_console_1_1_command_mutex_ae566219311780ed43d16ba6e582e93ae}{Illuminate\textbackslash{}\+Console\textbackslash{}\+Command\+Mutex}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_cache_command_mutex_a349c0c1eae97849df17d704217288a54}\index{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex@{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex}!exists@{exists}}
+\index{exists@{exists}!Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex@{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_cache_command_mutex_a349c0c1eae97849df17d704217288a54} 
+Illuminate\textbackslash{}\+Console\textbackslash{}\+Cache\+Command\+Mutex\+::exists (\begin{DoxyParamCaption}\item[{}]{\$command}{}\end{DoxyParamCaption})}
+
+Determine if a command mutex exists for the given command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Console\textbackslash{}\+Command & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_console_1_1_command_mutex_ab61ba433867597c21b4dea77edee5263}{Illuminate\textbackslash{}\+Console\textbackslash{}\+Command\+Mutex}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_cache_command_mutex_ae85c437b91d0c98588fde4e783a9fc3a}\index{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex@{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex}!forget@{forget}}
+\index{forget@{forget}!Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex@{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex}}
+\doxysubsubsection{\texorpdfstring{forget()}{forget()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_cache_command_mutex_ae85c437b91d0c98588fde4e783a9fc3a} 
+Illuminate\textbackslash{}\+Console\textbackslash{}\+Cache\+Command\+Mutex\+::forget (\begin{DoxyParamCaption}\item[{}]{\$command}{}\end{DoxyParamCaption})}
+
+Release the mutex for the given command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Console\textbackslash{}\+Command & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_console_1_1_command_mutex_aa011cc70e4fff6e1c21b9b30d5a390a5}{Illuminate\textbackslash{}\+Console\textbackslash{}\+Command\+Mutex}}.
+
+\Hypertarget{class_illuminate_1_1_console_1_1_cache_command_mutex_a6d31bfc2cb8a44d163fd5b21126a86e3}\index{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex@{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex}!shouldUseLocks@{shouldUseLocks}}
+\index{shouldUseLocks@{shouldUseLocks}!Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex@{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex}}
+\doxysubsubsection{\texorpdfstring{shouldUseLocks()}{shouldUseLocks()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_cache_command_mutex_a6d31bfc2cb8a44d163fd5b21126a86e3} 
+Illuminate\textbackslash{}\+Console\textbackslash{}\+Cache\+Command\+Mutex\+::should\+Use\+Locks (\begin{DoxyParamCaption}\item[{}]{\$store}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the given store should use locks for command mutexes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store & {\em \$store} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_cache_command_mutex_a11a645a4c1a8afad13793c44eafc20e1}\index{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex@{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex}!useStore@{useStore}}
+\index{useStore@{useStore}!Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex@{Illuminate\textbackslash{}Console\textbackslash{}CacheCommandMutex}}
+\doxysubsubsection{\texorpdfstring{useStore()}{useStore()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_cache_command_mutex_a11a645a4c1a8afad13793c44eafc20e1} 
+Illuminate\textbackslash{}\+Console\textbackslash{}\+Cache\+Command\+Mutex\+::use\+Store (\begin{DoxyParamCaption}\item[{}]{\$store}{}\end{DoxyParamCaption})}
+
+Specify the cache store that should be used.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$store} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Console/Cache\+Command\+Mutex.\+php\end{DoxyCompactItemize}

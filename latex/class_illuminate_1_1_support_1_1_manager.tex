@@ -1,0 +1,244 @@
+\doxysection{Illuminate\textbackslash{}Support\textbackslash{}Manager Class Reference}
+\hypertarget{class_illuminate_1_1_support_1_1_manager}{}\label{class_illuminate_1_1_support_1_1_manager}\index{Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}}
+Inheritance diagram for Illuminate\textbackslash{}Support\textbackslash{}Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.936455cm]{class_illuminate_1_1_support_1_1_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_manager_a0d24bcee0d0b9d7bc899dd60831296ac}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_container_1_1_container}{Container}} \$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_manager_afc2c2ddc263784bf5375d89ac8f571ef}{get\+Default\+Driver}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_manager_a6591ead66627e3a99f3023005a4d92c6}{driver}} (\$driver=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_manager_a187c7410910dfed84b0c9936eced86da}{extend}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_manager_a6591ead66627e3a99f3023005a4d92c6}{driver}}, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_manager_a5dfb117a526eb322f1f9449624bed4c3}{get\+Drivers}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_manager_ac2445c66b7d8b2d2d6d2e58aeed6f463}{get\+Container}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_manager_a6b64e8bc4c200ec2bc75cf939890ab9a}{set\+Container}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_container_1_1_container}{Container}} \$container)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_manager_abdc5922c44e07ea42ceb4b26ea2df22d}{forget\+Drivers}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_manager_a9b4f60548c4b5de1ddbebaa5e1bdac36}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_manager_a7e346e902a5a0e78c1fd324956a69416}{create\+Driver}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_manager_a6591ead66627e3a99f3023005a4d92c6}{driver}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_manager_a8e13c61b54abc20210279be44cae89c3}{call\+Custom\+Creator}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_manager_a6591ead66627e3a99f3023005a4d92c6}{driver}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_support_1_1_manager_a9a5a927ed483c089d5198439ae9ee0fb}\label{class_illuminate_1_1_support_1_1_manager_a9a5a927ed483c089d5198439ae9ee0fb} 
+{\bfseries \$container}
+\item 
+\Hypertarget{class_illuminate_1_1_support_1_1_manager_a4fd7fcaf9331e306e8b3da9ca472efd3}\label{class_illuminate_1_1_support_1_1_manager_a4fd7fcaf9331e306e8b3da9ca472efd3} 
+{\bfseries \$config}
+\item 
+\Hypertarget{class_illuminate_1_1_support_1_1_manager_a0e7d3c0748d62f886cf894440bd257c7}\label{class_illuminate_1_1_support_1_1_manager_a0e7d3c0748d62f886cf894440bd257c7} 
+{\bfseries \$custom\+Creators} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_support_1_1_manager_ab42320abd79d503def21f8dd7bfa6989}\label{class_illuminate_1_1_support_1_1_manager_ab42320abd79d503def21f8dd7bfa6989} 
+{\bfseries \$drivers} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_manager_a0d24bcee0d0b9d7bc899dd60831296ac}\index{Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_manager_a0d24bcee0d0b9d7bc899dd60831296ac} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Manager\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_container_1_1_container}{Container}}}]{\$container}{}\end{DoxyParamCaption})}
+
+Create a new manager instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_manager_a9b4f60548c4b5de1ddbebaa5e1bdac36}\index{Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_manager_a9b4f60548c4b5de1ddbebaa5e1bdac36} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Manager\+::\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Dynamically call the default driver instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_manager_a8e13c61b54abc20210279be44cae89c3}\index{Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}!callCustomCreator@{callCustomCreator}}
+\index{callCustomCreator@{callCustomCreator}!Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{callCustomCreator()}{callCustomCreator()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_manager_a8e13c61b54abc20210279be44cae89c3} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Manager\+::call\+Custom\+Creator (\begin{DoxyParamCaption}\item[{}]{\$driver}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Call a custom driver creator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$driver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_session_1_1_session_manager_ac942c5d23879f3ce58213308923305b1}{Illuminate\textbackslash{}\+Session\textbackslash{}\+Session\+Manager}}.
+
+\Hypertarget{class_illuminate_1_1_support_1_1_manager_a7e346e902a5a0e78c1fd324956a69416}\index{Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}!createDriver@{createDriver}}
+\index{createDriver@{createDriver}!Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{createDriver()}{createDriver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_manager_a7e346e902a5a0e78c1fd324956a69416} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Manager\+::create\+Driver (\begin{DoxyParamCaption}\item[{}]{\$driver}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new driver instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$driver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception 
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channel_manager_a5c6192be86a963b138d1122d1b4ba48d}{Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channel\+Manager}}.
+
+\Hypertarget{class_illuminate_1_1_support_1_1_manager_a6591ead66627e3a99f3023005a4d92c6}\index{Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}!driver@{driver}}
+\index{driver@{driver}!Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{driver()}{driver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_manager_a6591ead66627e3a99f3023005a4d92c6} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Manager\+::driver (\begin{DoxyParamCaption}\item[{}]{\$driver}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a driver instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$driver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_support_1_1_manager_a187c7410910dfed84b0c9936eced86da}\index{Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}!extend@{extend}}
+\index{extend@{extend}!Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{extend()}{extend()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_manager_a187c7410910dfed84b0c9936eced86da} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Manager\+::extend (\begin{DoxyParamCaption}\item[{}]{\$driver}{, }\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a custom driver creator Closure.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$driver} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_manager_abdc5922c44e07ea42ceb4b26ea2df22d}\index{Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}!forgetDrivers@{forgetDrivers}}
+\index{forgetDrivers@{forgetDrivers}!Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{forgetDrivers()}{forgetDrivers()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_manager_abdc5922c44e07ea42ceb4b26ea2df22d} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Manager\+::forget\+Drivers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Forget all of the resolved driver instances.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_manager_ac2445c66b7d8b2d2d6d2e58aeed6f463}\index{Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}!getContainer@{getContainer}}
+\index{getContainer@{getContainer}!Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{getContainer()}{getContainer()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_manager_ac2445c66b7d8b2d2d6d2e58aeed6f463} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Manager\+::get\+Container (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the container instance used by the manager.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_manager_afc2c2ddc263784bf5375d89ac8f571ef}\index{Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}!getDefaultDriver@{getDefaultDriver}}
+\index{getDefaultDriver@{getDefaultDriver}!Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{getDefaultDriver()}{getDefaultDriver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_manager_afc2c2ddc263784bf5375d89ac8f571ef} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Manager\+::get\+Default\+Driver (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get the default driver name.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_foundation_1_1_maintenance_mode_manager_aa09637093128fbde49d881217fd9b566}{Illuminate\textbackslash{}\+Foundation\textbackslash{}\+Maintenance\+Mode\+Manager}}, \mbox{\hyperlink{class_illuminate_1_1_hashing_1_1_hash_manager_a59e41f9c79591c8b798cdd0a4ddd92ad}{Illuminate\textbackslash{}\+Hashing\textbackslash{}\+Hash\+Manager}}, \mbox{\hyperlink{class_illuminate_1_1_notifications_1_1_channel_manager_ad2867f3001e510c5fb0182227594a20a}{Illuminate\textbackslash{}\+Notifications\textbackslash{}\+Channel\+Manager}}, and \mbox{\hyperlink{class_illuminate_1_1_session_1_1_session_manager_afaba41b40ca075afc7998d6718926b75}{Illuminate\textbackslash{}\+Session\textbackslash{}\+Session\+Manager}}.
+
+\Hypertarget{class_illuminate_1_1_support_1_1_manager_a5dfb117a526eb322f1f9449624bed4c3}\index{Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}!getDrivers@{getDrivers}}
+\index{getDrivers@{getDrivers}!Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{getDrivers()}{getDrivers()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_manager_a5dfb117a526eb322f1f9449624bed4c3} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Manager\+::get\+Drivers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all of the created "{}drivers"{}.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_manager_a6b64e8bc4c200ec2bc75cf939890ab9a}\index{Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}!setContainer@{setContainer}}
+\index{setContainer@{setContainer}!Illuminate\textbackslash{}Support\textbackslash{}Manager@{Illuminate\textbackslash{}Support\textbackslash{}Manager}}
+\doxysubsubsection{\texorpdfstring{setContainer()}{setContainer()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_manager_a6b64e8bc4c200ec2bc75cf939890ab9a} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Manager\+::set\+Container (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_container_1_1_container}{Container}}}]{\$container}{}\end{DoxyParamCaption})}
+
+Set the container instance used by the manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Container\textbackslash{}\+Container & {\em \$container} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Support/Manager.\+php\end{DoxyCompactItemize}

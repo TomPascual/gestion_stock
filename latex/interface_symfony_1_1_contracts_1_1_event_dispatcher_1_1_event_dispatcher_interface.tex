@@ -1,0 +1,44 @@
+\doxysection{Symfony\textbackslash{}Contracts\textbackslash{}Event\+Dispatcher\textbackslash{}Event\+Dispatcher\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_dispatcher_interface}{}\label{interface_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_dispatcher_interface}\index{Symfony\textbackslash{}Contracts\textbackslash{}EventDispatcher\textbackslash{}EventDispatcherInterface@{Symfony\textbackslash{}Contracts\textbackslash{}EventDispatcher\textbackslash{}EventDispatcherInterface}}
+Inheritance diagram for Symfony\textbackslash{}Contracts\textbackslash{}Event\+Dispatcher\textbackslash{}Event\+Dispatcher\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_dispatcher_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_dispatcher_interface_af38efc348fa210a68c20ccaedcf67c45}{dispatch}} (object \$event, ?string \$event\+Name=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Allows providing hooks on domain-\/specific lifecycles by dispatching events. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_dispatcher_interface_af38efc348fa210a68c20ccaedcf67c45}\index{Symfony\textbackslash{}Contracts\textbackslash{}EventDispatcher\textbackslash{}EventDispatcherInterface@{Symfony\textbackslash{}Contracts\textbackslash{}EventDispatcher\textbackslash{}EventDispatcherInterface}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!Symfony\textbackslash{}Contracts\textbackslash{}EventDispatcher\textbackslash{}EventDispatcherInterface@{Symfony\textbackslash{}Contracts\textbackslash{}EventDispatcher\textbackslash{}EventDispatcherInterface}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_contracts_1_1_event_dispatcher_1_1_event_dispatcher_interface_af38efc348fa210a68c20ccaedcf67c45} 
+Symfony\textbackslash{}\+Contracts\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event\+Dispatcher\+Interface\+::dispatch (\begin{DoxyParamCaption}\item[{object}]{\$event}{, }\item[{?string}]{\$event\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Dispatches an event to all registered listeners.
+
+@template T of object
+
+
+\begin{DoxyParams}[1]{Parameters}
+T & {\em \$event} & The event to pass to the event handlers/listeners \\
+\hline
+string | null & {\em \$event\+Name} & The name of the event to dispatch. If not supplied, the class of \$event should be used instead.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T The passed \$event MUST be returned 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/event-\/dispatcher-\/contracts/Event\+Dispatcher\+Interface.\+php\end{DoxyCompactItemize}

@@ -1,3 +1,10 @@
+{{-- 
+    Vue : produits/create.blade.php
+    Description : Formulaire de création d’un nouveau produit.
+    Action du formulaire :
+        - POST vers la route 'produits.store'
+--}}
+
 @extends('layouts.app')
 
 @section('content')
@@ -26,6 +33,7 @@
         <div class="card-body">
             <form method="POST" action="{{ route('produits.store') }}">
                 @csrf
+
                 <div class="mb-3">
                     <label for="nom" class="form-label">Nom du produit</label>
                     <input type="text" name="nom" class="form-control" required>
@@ -50,6 +58,7 @@
                         @endforeach
                     </select>
                 </div>
+
                 <div class="mb-3">
                     <label for="fournisseur_id" class="form-label">Fournisseur</label>
                     <select name="fournisseur_id" class="form-control">
@@ -58,9 +67,7 @@
                             <option value="{{ $fournisseur->id }}">{{ $fournisseur->nom }}</option>
                         @endforeach
                     </select>
-                </div>      
-
-
+                </div>
 
                 <button type="submit" class="btn btn-success">✅ Ajouter le produit</button>
             </form>

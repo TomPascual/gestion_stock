@@ -1,0 +1,86 @@
+\doxysection{Whoops\textbackslash{}Util\textbackslash{}Misc Class Reference}
+\hypertarget{class_whoops_1_1_util_1_1_misc}{}\label{class_whoops_1_1_util_1_1_misc}\index{Whoops\textbackslash{}Util\textbackslash{}Misc@{Whoops\textbackslash{}Util\textbackslash{}Misc}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_whoops_1_1_util_1_1_misc_ac6885649e9a27ee4ed3f37ae46bfaa3c}{can\+Send\+Headers}} ()
+\item 
+\Hypertarget{class_whoops_1_1_util_1_1_misc_a18407daf464580abcfd8687c243f1fee}\label{class_whoops_1_1_util_1_1_misc_a18407daf464580abcfd8687c243f1fee} 
+static {\bfseries is\+Ajax\+Request} ()
+\item 
+static \mbox{\hyperlink{class_whoops_1_1_util_1_1_misc_a6e1f0ba62be121ac7814dae562db83dd}{is\+Command\+Line}} ()
+\item 
+static \mbox{\hyperlink{class_whoops_1_1_util_1_1_misc_adfaf7c8145f6d703b692137089c8c322}{translate\+Error\+Code}} (\$error\+\_\+code)
+\item 
+static \mbox{\hyperlink{class_whoops_1_1_util_1_1_misc_a71698de0893d79dde1fc562d7459a734}{is\+Level\+Fatal}} (\$level)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_c_1_2_users_2tomys_2gestion_stock_2vendor_2filp_2whoops_2src_2_whoops_2_handler_2_pretty_page_handler_8php-example}{C\+:/\+Users/tomys/gestion\+\_\+stock/vendor/filp/whoops/src/\+Whoops/\+Handler/\+Pretty\+Page\+Handler.\+php}}.\end{Desc}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_whoops_1_1_util_1_1_misc_ac6885649e9a27ee4ed3f37ae46bfaa3c}\index{Whoops\textbackslash{}Util\textbackslash{}Misc@{Whoops\textbackslash{}Util\textbackslash{}Misc}!canSendHeaders@{canSendHeaders}}
+\index{canSendHeaders@{canSendHeaders}!Whoops\textbackslash{}Util\textbackslash{}Misc@{Whoops\textbackslash{}Util\textbackslash{}Misc}}
+\doxysubsubsection{\texorpdfstring{canSendHeaders()}{canSendHeaders()}}
+{\footnotesize\ttfamily \label{class_whoops_1_1_util_1_1_misc_ac6885649e9a27ee4ed3f37ae46bfaa3c} 
+static Whoops\textbackslash{}\+Util\textbackslash{}\+Misc\+::can\+Send\+Headers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Can we at this point in time send HTTP headers?
+
+Currently this checks if we are even serving an HTTP request, as opposed to running from a command line.
+
+If we are serving an HTTP request, we check if it\textquotesingle{}s not too late.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_whoops_1_1_util_1_1_misc_a6e1f0ba62be121ac7814dae562db83dd}\index{Whoops\textbackslash{}Util\textbackslash{}Misc@{Whoops\textbackslash{}Util\textbackslash{}Misc}!isCommandLine@{isCommandLine}}
+\index{isCommandLine@{isCommandLine}!Whoops\textbackslash{}Util\textbackslash{}Misc@{Whoops\textbackslash{}Util\textbackslash{}Misc}}
+\doxysubsubsection{\texorpdfstring{isCommandLine()}{isCommandLine()}}
+{\footnotesize\ttfamily \label{class_whoops_1_1_util_1_1_misc_a6e1f0ba62be121ac7814dae562db83dd} 
+static Whoops\textbackslash{}\+Util\textbackslash{}\+Misc\+::is\+Command\+Line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check, if possible, that this execution was triggered by a command line. \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_whoops_1_1_util_1_1_misc_a71698de0893d79dde1fc562d7459a734}\index{Whoops\textbackslash{}Util\textbackslash{}Misc@{Whoops\textbackslash{}Util\textbackslash{}Misc}!isLevelFatal@{isLevelFatal}}
+\index{isLevelFatal@{isLevelFatal}!Whoops\textbackslash{}Util\textbackslash{}Misc@{Whoops\textbackslash{}Util\textbackslash{}Misc}}
+\doxysubsubsection{\texorpdfstring{isLevelFatal()}{isLevelFatal()}}
+{\footnotesize\ttfamily \label{class_whoops_1_1_util_1_1_misc_a71698de0893d79dde1fc562d7459a734} 
+static Whoops\textbackslash{}\+Util\textbackslash{}\+Misc\+::is\+Level\+Fatal (\begin{DoxyParamCaption}\item[{}]{\$level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determine if an error level is fatal (halts execution)
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$level} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_whoops_1_1_util_1_1_misc_adfaf7c8145f6d703b692137089c8c322}\index{Whoops\textbackslash{}Util\textbackslash{}Misc@{Whoops\textbackslash{}Util\textbackslash{}Misc}!translateErrorCode@{translateErrorCode}}
+\index{translateErrorCode@{translateErrorCode}!Whoops\textbackslash{}Util\textbackslash{}Misc@{Whoops\textbackslash{}Util\textbackslash{}Misc}}
+\doxysubsubsection{\texorpdfstring{translateErrorCode()}{translateErrorCode()}}
+{\footnotesize\ttfamily \label{class_whoops_1_1_util_1_1_misc_adfaf7c8145f6d703b692137089c8c322} 
+static Whoops\textbackslash{}\+Util\textbackslash{}\+Misc\+::translate\+Error\+Code (\begin{DoxyParamCaption}\item[{}]{\$error\+\_\+code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Translate Error\+Exception code into the represented constant.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$error\+\_\+code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/filp/whoops/src/\+Whoops/\+Util/Misc.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,28 @@
+var class_illuminate_1_1_database_1_1_database_manager =
+[
+    [ "__construct", "class_illuminate_1_1_database_1_1_database_manager.html#a6482bb2150a5eb0a0d370b07df9eaea8", null ],
+    [ "__call", "class_illuminate_1_1_database_1_1_database_manager.html#a669cab618d79eb46b1f0eadc47aa620d", null ],
+    [ "availableDrivers", "class_illuminate_1_1_database_1_1_database_manager.html#abe2c61c466f42892ddb66a8beaee1ad4", null ],
+    [ "build", "class_illuminate_1_1_database_1_1_database_manager.html#a3211bece825e027eb544b521e95b8636", null ],
+    [ "configuration", "class_illuminate_1_1_database_1_1_database_manager.html#ab99f65dcf49fad519f8ecb885f172378", null ],
+    [ "configure", "class_illuminate_1_1_database_1_1_database_manager.html#adee8bf48ead050fcfeead0d044a0d674", null ],
+    [ "connection", "class_illuminate_1_1_database_1_1_database_manager.html#ac5b537209bfd0b25b3474b4a7f37d568", null ],
+    [ "connectUsing", "class_illuminate_1_1_database_1_1_database_manager.html#ae15427c01d911f2b031b476e270fb06c", null ],
+    [ "disconnect", "class_illuminate_1_1_database_1_1_database_manager.html#aac8fd2c8675bb0e56349156eb24c48ae", null ],
+    [ "dispatchConnectionEstablishedEvent", "class_illuminate_1_1_database_1_1_database_manager.html#a296c627f2838bb9a482f1a7d77acb28f", null ],
+    [ "extend", "class_illuminate_1_1_database_1_1_database_manager.html#afe53b0404130b3a8bd14c8dc1dfd2a1e", null ],
+    [ "forgetExtension", "class_illuminate_1_1_database_1_1_database_manager.html#a288fbd0abb06c820d7ba1e42487c5b43", null ],
+    [ "getConnections", "class_illuminate_1_1_database_1_1_database_manager.html#a0c324f755c771048708366220cfcf8a9", null ],
+    [ "getDefaultConnection", "class_illuminate_1_1_database_1_1_database_manager.html#a9c85087a4b03982dcffd45006c626b47", null ],
+    [ "makeConnection", "class_illuminate_1_1_database_1_1_database_manager.html#a92717efc78f2f59c2ff85e4aee62fdf6", null ],
+    [ "parseConnectionName", "class_illuminate_1_1_database_1_1_database_manager.html#a98610c9774b86aeba5e5eb70e2c3eb1b", null ],
+    [ "purge", "class_illuminate_1_1_database_1_1_database_manager.html#a5769b552314e23eeb0e49f16f02afea2", null ],
+    [ "reconnect", "class_illuminate_1_1_database_1_1_database_manager.html#af6a911bf733de3ad9d22f2e689e74ce0", null ],
+    [ "refreshPdoConnections", "class_illuminate_1_1_database_1_1_database_manager.html#a2c12a79d9b01b9c53d721433e3687d0f", null ],
+    [ "setApplication", "class_illuminate_1_1_database_1_1_database_manager.html#ab4f461f9d1ebb1966457f227a25c07a6", null ],
+    [ "setDefaultConnection", "class_illuminate_1_1_database_1_1_database_manager.html#a7b446a406c4ce4d03b4e38f067e24d08", null ],
+    [ "setPdoForType", "class_illuminate_1_1_database_1_1_database_manager.html#a7bbcd939e4988fe44750fc59fda42d3d", null ],
+    [ "setReconnector", "class_illuminate_1_1_database_1_1_database_manager.html#a4041fc6a33d073bca61e4642a42cfa20", null ],
+    [ "supportedDrivers", "class_illuminate_1_1_database_1_1_database_manager.html#a02ac14c288a2aa6dffe038e315274f56", null ],
+    [ "usingConnection", "class_illuminate_1_1_database_1_1_database_manager.html#a3dc1f706f467172a6deeb705e0f5df05", null ]
+];

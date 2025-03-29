@@ -1,0 +1,133 @@
+\doxysection{Illuminate\textbackslash{}Process\textbackslash{}Pool Class Reference}
+\hypertarget{class_illuminate_1_1_process_1_1_pool}{}\label{class_illuminate_1_1_process_1_1_pool}\index{Illuminate\textbackslash{}Process\textbackslash{}Pool@{Illuminate\textbackslash{}Process\textbackslash{}Pool}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_pool_a43580945df35861d627a57fa7950f2fa}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory}{Factory}} \$factory, callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_pool_a98310069de9de61679c006b3dfba0b59}{as}} (string \$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_pool_a9421ffa6c07520a94fbb41d287201dc9}{start}} (?callable \$output=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_pool_a0a1b711748a1dd51cb642b3a8f5e5415}{run}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_pool_a17c8d3f9a05b538e134a41cccede8994}{wait}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_process_1_1_pool_ad6e73fc3451e7fec08ff7e521050aff0}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_process_1_1_pool_a796ad142a3bd3027a2cc57ece6df02b5}\label{class_illuminate_1_1_process_1_1_pool_a796ad142a3bd3027a2cc57ece6df02b5} 
+{\bfseries \$factory}
+\item 
+\Hypertarget{class_illuminate_1_1_process_1_1_pool_a0602aeabd7cf9d79ea7f125b851eb9cc}\label{class_illuminate_1_1_process_1_1_pool_a0602aeabd7cf9d79ea7f125b851eb9cc} 
+{\bfseries \$callback}
+\item 
+\Hypertarget{class_illuminate_1_1_process_1_1_pool_a8cd43a0b55388b252582b8c6eff1e442}\label{class_illuminate_1_1_process_1_1_pool_a8cd43a0b55388b252582b8c6eff1e442} 
+{\bfseries \$pending\+Processes} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@mixin \textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory @mixin \textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pending\+Process 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_process_1_1_pool_a43580945df35861d627a57fa7950f2fa}\index{Illuminate\textbackslash{}Process\textbackslash{}Pool@{Illuminate\textbackslash{}Process\textbackslash{}Pool}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Process\textbackslash{}Pool@{Illuminate\textbackslash{}Process\textbackslash{}Pool}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_pool_a43580945df35861d627a57fa7950f2fa} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pool\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_process_1_1_factory}{Factory}}}]{\$factory}{, }\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Create a new process pool.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Factory & {\em \$factory} & \\
+\hline
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_process_1_1_pool_ad6e73fc3451e7fec08ff7e521050aff0}\index{Illuminate\textbackslash{}Process\textbackslash{}Pool@{Illuminate\textbackslash{}Process\textbackslash{}Pool}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!Illuminate\textbackslash{}Process\textbackslash{}Pool@{Illuminate\textbackslash{}Process\textbackslash{}Pool}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_pool_ad6e73fc3451e7fec08ff7e521050aff0} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pool\+::\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Dynamically proxy methods calls to a new pending process.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pending\+Process 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_pool_a98310069de9de61679c006b3dfba0b59}\index{Illuminate\textbackslash{}Process\textbackslash{}Pool@{Illuminate\textbackslash{}Process\textbackslash{}Pool}!as@{as}}
+\index{as@{as}!Illuminate\textbackslash{}Process\textbackslash{}Pool@{Illuminate\textbackslash{}Process\textbackslash{}Pool}}
+\doxysubsubsection{\texorpdfstring{as()}{as()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_pool_a98310069de9de61679c006b3dfba0b59} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pool\+::as (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Add a process to the pool with a key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pending\+Process 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_pool_a0a1b711748a1dd51cb642b3a8f5e5415}\index{Illuminate\textbackslash{}Process\textbackslash{}Pool@{Illuminate\textbackslash{}Process\textbackslash{}Pool}!run@{run}}
+\index{run@{run}!Illuminate\textbackslash{}Process\textbackslash{}Pool@{Illuminate\textbackslash{}Process\textbackslash{}Pool}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_pool_a0a1b711748a1dd51cb642b3a8f5e5415} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pool\+::run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Start and wait for the processes to finish.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Process\+Pool\+Results 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_pool_a9421ffa6c07520a94fbb41d287201dc9}\index{Illuminate\textbackslash{}Process\textbackslash{}Pool@{Illuminate\textbackslash{}Process\textbackslash{}Pool}!start@{start}}
+\index{start@{start}!Illuminate\textbackslash{}Process\textbackslash{}Pool@{Illuminate\textbackslash{}Process\textbackslash{}Pool}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_pool_a9421ffa6c07520a94fbb41d287201dc9} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pool\+::start (\begin{DoxyParamCaption}\item[{?callable}]{\$output}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Start all of the processes in the pool.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable | null & {\em \$output} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Invoked\+Process\+Pool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_process_1_1_pool_a17c8d3f9a05b538e134a41cccede8994}\index{Illuminate\textbackslash{}Process\textbackslash{}Pool@{Illuminate\textbackslash{}Process\textbackslash{}Pool}!wait@{wait}}
+\index{wait@{wait}!Illuminate\textbackslash{}Process\textbackslash{}Pool@{Illuminate\textbackslash{}Process\textbackslash{}Pool}}
+\doxysubsubsection{\texorpdfstring{wait()}{wait()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_process_1_1_pool_a17c8d3f9a05b538e134a41cccede8994} 
+Illuminate\textbackslash{}\+Process\textbackslash{}\+Pool\+::wait (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Start and wait for the processes to finish.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Process\textbackslash{}\+Process\+Pool\+Results 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Process/Pool.\+php\end{DoxyCompactItemize}

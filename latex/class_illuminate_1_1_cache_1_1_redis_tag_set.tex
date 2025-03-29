@@ -1,0 +1,178 @@
+\doxysection{Illuminate\textbackslash{}Cache\textbackslash{}Redis\+Tag\+Set Class Reference}
+\hypertarget{class_illuminate_1_1_cache_1_1_redis_tag_set}{}\label{class_illuminate_1_1_cache_1_1_redis_tag_set}\index{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet@{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet}}
+Inheritance diagram for Illuminate\textbackslash{}Cache\textbackslash{}Redis\+Tag\+Set\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_cache_1_1_redis_tag_set}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_redis_tag_set_aa9d65599e929b6574f38e6884480a2dd}{add\+Entry}} (string \$key, ?int \$ttl=null, \$update\+When=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_redis_tag_set_abd74fc7ceb46f98578067f0ce931efb2}{entries}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_redis_tag_set_abffa77e20ff1f5d0a63596ea6e3a775a}{flush\+Stale\+Entries}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_redis_tag_set_a9173f06d0c08d244b65bdd497d9579a6}{flush\+Tag}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_redis_tag_set_a0e09b1eb4ebf32821f2e19c8420b1379}{reset\+Tag}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_redis_tag_set_aacc14c05450d74c7ad5011b3d90d902d}{tag\+Id}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_redis_tag_set_ac38e82d1513b3df76b96706cfe28d55e}{tag\+Key}} (\$name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_tag_set}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Tag\+Set}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_tag_set_a77f31e394cf3009b9aa2dd632d329407}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_store}{Store}} \$store, array \$names=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_tag_set_ae3db33ab278a5dd374b649b3a0426f78}{reset}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_tag_set_a7e1520554f312a934c4c8f75661b2b14}{flush}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_tag_set_ab64dc89d0f36c8e78c1ebfa494854c96}{get\+Namespace}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_tag_set_a8ea158bb890bab0d5498dbe9d0175fa1}{get\+Names}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_tag_set}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Tag\+Set}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_tag_set_a9ee244647a72801b296008093df4cea3}{tag\+Ids}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_tag_set}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Tag\+Set}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$store}
+\item 
+{\bfseries \$names} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_redis_tag_set_aa9d65599e929b6574f38e6884480a2dd}\index{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet@{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet}!addEntry@{addEntry}}
+\index{addEntry@{addEntry}!Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet@{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet}}
+\doxysubsubsection{\texorpdfstring{addEntry()}{addEntry()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_redis_tag_set_aa9d65599e929b6574f38e6884480a2dd} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Redis\+Tag\+Set\+::add\+Entry (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{?int}]{\$ttl}{ = {\ttfamily null}, }\item[{}]{\$update\+When}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add a reference entry to the tag set\textquotesingle{}s underlying sorted set.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+int | null & {\em \$ttl} & \\
+\hline
+string & {\em \$update\+When} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_redis_tag_set_abd74fc7ceb46f98578067f0ce931efb2}\index{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet@{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet}!entries@{entries}}
+\index{entries@{entries}!Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet@{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet}}
+\doxysubsubsection{\texorpdfstring{entries()}{entries()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_redis_tag_set_abd74fc7ceb46f98578067f0ce931efb2} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Redis\+Tag\+Set\+::entries (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all of the cache entry keys for the tag set.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Lazy\+Collection 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_redis_tag_set_abffa77e20ff1f5d0a63596ea6e3a775a}\index{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet@{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet}!flushStaleEntries@{flushStaleEntries}}
+\index{flushStaleEntries@{flushStaleEntries}!Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet@{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet}}
+\doxysubsubsection{\texorpdfstring{flushStaleEntries()}{flushStaleEntries()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_redis_tag_set_abffa77e20ff1f5d0a63596ea6e3a775a} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Redis\+Tag\+Set\+::flush\+Stale\+Entries (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Remove the stale entries from the tag set.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cache_1_1_redis_tag_set_a9173f06d0c08d244b65bdd497d9579a6}\index{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet@{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet}!flushTag@{flushTag}}
+\index{flushTag@{flushTag}!Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet@{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet}}
+\doxysubsubsection{\texorpdfstring{flushTag()}{flushTag()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_redis_tag_set_a9173f06d0c08d244b65bdd497d9579a6} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Redis\+Tag\+Set\+::flush\+Tag (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Flush the tag from the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_tag_set_a01b90fce1314bd0a95d6c39945584fd2}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Tag\+Set}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_redis_tag_set_a0e09b1eb4ebf32821f2e19c8420b1379}\index{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet@{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet}!resetTag@{resetTag}}
+\index{resetTag@{resetTag}!Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet@{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet}}
+\doxysubsubsection{\texorpdfstring{resetTag()}{resetTag()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_redis_tag_set_a0e09b1eb4ebf32821f2e19c8420b1379} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Redis\+Tag\+Set\+::reset\+Tag (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Reset the tag and return the new tag identifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_tag_set_a2d4ba5983c3108c96f48ad2144f85c4e}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Tag\+Set}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_redis_tag_set_aacc14c05450d74c7ad5011b3d90d902d}\index{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet@{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet}!tagId@{tagId}}
+\index{tagId@{tagId}!Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet@{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet}}
+\doxysubsubsection{\texorpdfstring{tagId()}{tagId()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_redis_tag_set_aacc14c05450d74c7ad5011b3d90d902d} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Redis\+Tag\+Set\+::tag\+Id (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Get the unique tag identifier for a given tag.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_tag_set_a7d9564b0c4d2ba26c09ef4b9e71bf069}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Tag\+Set}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_redis_tag_set_ac38e82d1513b3df76b96706cfe28d55e}\index{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet@{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet}!tagKey@{tagKey}}
+\index{tagKey@{tagKey}!Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet@{Illuminate\textbackslash{}Cache\textbackslash{}RedisTagSet}}
+\doxysubsubsection{\texorpdfstring{tagKey()}{tagKey()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_redis_tag_set_ac38e82d1513b3df76b96706cfe28d55e} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Redis\+Tag\+Set\+::tag\+Key (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Get the tag identifier key for a given tag.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_tag_set_af6cd8cfa1efb4e8f0ec32e4fd9678d3c}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Tag\+Set}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Cache/Redis\+Tag\+Set.\+php\end{DoxyCompactItemize}

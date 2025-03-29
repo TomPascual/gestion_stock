@@ -1,0 +1,178 @@
+\doxysection{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_connector}{}\label{class_illuminate_1_1_database_1_1_connectors_1_1_connector}\index{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector@{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector}}
+Inheritance diagram for Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.324921cm]{class_illuminate_1_1_database_1_1_connectors_1_1_connector}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_ab5db414909755dfeaa18853faf5a95f7}{create\+Connection}} (\$dsn, array \$config, array \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a5ce276755d4581bef321fa5d6bd383c2}{get\+Options}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a40557da6dadf0607060db244344a90bd}{get\+Default\+Options}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_aafa568a6b4daa82ff335f90ff349cc58}{set\+Default\+Options}} (array \$options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a632dbd5e8eea859453d2f8921cd37c72}{create\+Pdo\+Connection}} (\$dsn, \$username, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$password, \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a4890323f1a97a8e7c52bb167d7be7b17}{try\+Again\+If\+Caused\+By\+Lost\+Connection}} (Throwable \$e, \$dsn, \$username, \#\mbox{[}\textbackslash{}Sensitive\+Parameter\mbox{]} \$password, \$options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a8bb3e405383f8c2ae7104a430d669b13}{\$options}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_connector_ab5db414909755dfeaa18853faf5a95f7}\index{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector@{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector}!createConnection@{createConnection}}
+\index{createConnection@{createConnection}!Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector@{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector}}
+\doxysubsubsection{\texorpdfstring{createConnection()}{createConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_connector_ab5db414909755dfeaa18853faf5a95f7} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connectors\textbackslash{}\+Connector\+::create\+Connection (\begin{DoxyParamCaption}\item[{}]{\$dsn}{, }\item[{array}]{\$config}{, }\item[{array}]{\$options}{}\end{DoxyParamCaption})}
+
+Create a new PDO connection.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dsn} & \\
+\hline
+array & {\em \$config} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+PDO
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception \Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a632dbd5e8eea859453d2f8921cd37c72}\index{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector@{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector}!createPdoConnection@{createPdoConnection}}
+\index{createPdoConnection@{createPdoConnection}!Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector@{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector}}
+\doxysubsubsection{\texorpdfstring{createPdoConnection()}{createPdoConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a632dbd5e8eea859453d2f8921cd37c72} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connectors\textbackslash{}\+Connector\+::create\+Pdo\+Connection (\begin{DoxyParamCaption}\item[{}]{\$dsn}{, }\item[{}]{\$username}{, }\item[{\#}]{\$password}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{}]{\$options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a new PDO connection instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dsn} & \\
+\hline
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+PDO 
+\end{DoxyReturn}
+@phpstan-\/ignore static\+Method.\+not\+Found (PHP 8.\+4)\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a40557da6dadf0607060db244344a90bd}\index{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector@{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector}!getDefaultOptions@{getDefaultOptions}}
+\index{getDefaultOptions@{getDefaultOptions}!Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector@{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector}}
+\doxysubsubsection{\texorpdfstring{getDefaultOptions()}{getDefaultOptions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a40557da6dadf0607060db244344a90bd} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connectors\textbackslash{}\+Connector\+::get\+Default\+Options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the default PDO connection options.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a5ce276755d4581bef321fa5d6bd383c2}\index{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector@{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector}!getOptions@{getOptions}}
+\index{getOptions@{getOptions}!Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector@{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector}}
+\doxysubsubsection{\texorpdfstring{getOptions()}{getOptions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a5ce276755d4581bef321fa5d6bd383c2} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connectors\textbackslash{}\+Connector\+::get\+Options (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})}
+
+Get the PDO options based on the configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_connector_aafa568a6b4daa82ff335f90ff349cc58}\index{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector@{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector}!setDefaultOptions@{setDefaultOptions}}
+\index{setDefaultOptions@{setDefaultOptions}!Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector@{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector}}
+\doxysubsubsection{\texorpdfstring{setDefaultOptions()}{setDefaultOptions()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_connector_aafa568a6b4daa82ff335f90ff349cc58} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connectors\textbackslash{}\+Connector\+::set\+Default\+Options (\begin{DoxyParamCaption}\item[{array}]{\$options}{}\end{DoxyParamCaption})}
+
+Set the default PDO connection options.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a4890323f1a97a8e7c52bb167d7be7b17}\index{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector@{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector}!tryAgainIfCausedByLostConnection@{tryAgainIfCausedByLostConnection}}
+\index{tryAgainIfCausedByLostConnection@{tryAgainIfCausedByLostConnection}!Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector@{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector}}
+\doxysubsubsection{\texorpdfstring{tryAgainIfCausedByLostConnection()}{tryAgainIfCausedByLostConnection()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a4890323f1a97a8e7c52bb167d7be7b17} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connectors\textbackslash{}\+Connector\+::try\+Again\+If\+Caused\+By\+Lost\+Connection (\begin{DoxyParamCaption}\item[{Throwable}]{\$e}{, }\item[{}]{\$dsn}{, }\item[{}]{\$username}{, }\item[{\#}]{\$password}{\mbox{[}\textbackslash{}\+Sensitive\+Parameter\mbox{]}, }\item[{}]{\$options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Handle an exception that occurred during connect execution.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Throwable & {\em \$e} & \\
+\hline
+string & {\em \$dsn} & \\
+\hline
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+PDO
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Throwable 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a8bb3e405383f8c2ae7104a430d669b13}\index{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector@{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector}!\$options@{\$options}}
+\index{\$options@{\$options}!Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector@{Illuminate\textbackslash{}Database\textbackslash{}Connectors\textbackslash{}Connector}}
+\doxysubsubsection{\texorpdfstring{\$options}{\$options}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_connectors_1_1_connector_a8bb3e405383f8c2ae7104a430d669b13} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connectors\textbackslash{}\+Connector\+::\$options\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ PDO::ATTR\_CASE\ =>\ PDO::CASE\_NATURAL,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ PDO::ATTR\_ERRMODE\ =>\ PDO::ERRMODE\_EXCEPTION,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ PDO::ATTR\_ORACLE\_NULLS\ =>\ PDO::NULL\_NATURAL,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ PDO::ATTR\_STRINGIFY\_FETCHES\ =>\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ PDO::ATTR\_EMULATE\_PREPARES\ =>\ \textcolor{keyword}{false},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Database/\+Connectors/Connector.\+php\end{DoxyCompactItemize}

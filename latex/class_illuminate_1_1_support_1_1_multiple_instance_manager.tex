@@ -1,0 +1,298 @@
+\doxysection{Illuminate\textbackslash{}Support\textbackslash{}Multiple\+Instance\+Manager Class Reference}
+\hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager}{}\label{class_illuminate_1_1_support_1_1_multiple_instance_manager}\index{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}}
+Inheritance diagram for Illuminate\textbackslash{}Support\textbackslash{}Multiple\+Instance\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_support_1_1_multiple_instance_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_af66324d5c5ddc8d94441355ed868b0a1}{\+\_\+\+\_\+construct}} (\$app)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a39168ef9d529a94bba0f4e4a1c7dc793}{get\+Default\+Instance}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a8b1cfe495130e2bc17d68422a71edd3e}{set\+Default\+Instance}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_adc433dfc960d104f20003776784736a7}{get\+Instance\+Config}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a7b4404c4e9caeb9afa0b3c51f081d111}{instance}} (\$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a1fe5131a1fec9cbc2554fc2895234888}{forget\+Instance}} (\$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a27f3d94a9b21dc7576fa997031cdfb47}{purge}} (\$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a90b64d819d4991d3b1df404e324b656a}{extend}} (\$name, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_acb27da9050a90e7ffbdb2d8477dfddc9}{set\+Application}} (\$app)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a79363a4140f5fcc289828c6ac2da589c}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a7996548eda2c6d3732fde5be3d8beec9}{get}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a1144222c1bad4e9356d9b7ae098fc28e}{resolve}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a831b8ec50f3c5e3150b0a06f6dbbbf5c}{call\+Custom\+Creator}} (array \$config)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_aadc14cc434ef1587c1285b40b92b6580}\label{class_illuminate_1_1_support_1_1_multiple_instance_manager_aadc14cc434ef1587c1285b40b92b6580} 
+{\bfseries \$app}
+\item 
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_a9b9384ea9ff5a90b001aef5b9523b297}\label{class_illuminate_1_1_support_1_1_multiple_instance_manager_a9b9384ea9ff5a90b001aef5b9523b297} 
+{\bfseries \$config}
+\item 
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_a3717fd3917884b8c98b8cd90a7488aac}\label{class_illuminate_1_1_support_1_1_multiple_instance_manager_a3717fd3917884b8c98b8cd90a7488aac} 
+{\bfseries \$instances} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_a22bc53e8b3c228a55f3c3888a13959c6}\label{class_illuminate_1_1_support_1_1_multiple_instance_manager_a22bc53e8b3c228a55f3c3888a13959c6} 
+{\bfseries \$custom\+Creators} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_a92c3c2e6aadb8d442ec3d92eac80bcac}\label{class_illuminate_1_1_support_1_1_multiple_instance_manager_a92c3c2e6aadb8d442ec3d92eac80bcac} 
+{\bfseries \$driver\+Key} = \textquotesingle{}driver\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_af66324d5c5ddc8d94441355ed868b0a1}\index{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_multiple_instance_manager_af66324d5c5ddc8d94441355ed868b0a1} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$app}{}\end{DoxyParamCaption})}
+
+Create a new manager instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Foundation\textbackslash{}\+Application & {\em \$app} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_a79363a4140f5fcc289828c6ac2da589c}\index{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_multiple_instance_manager_a79363a4140f5fcc289828c6ac2da589c} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager\+::\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Dynamically call the default instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$method} & \\
+\hline
+array & {\em \$parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_a831b8ec50f3c5e3150b0a06f6dbbbf5c}\index{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}!callCustomCreator@{callCustomCreator}}
+\index{callCustomCreator@{callCustomCreator}!Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}}
+\doxysubsubsection{\texorpdfstring{callCustomCreator()}{callCustomCreator()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_multiple_instance_manager_a831b8ec50f3c5e3150b0a06f6dbbbf5c} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager\+::call\+Custom\+Creator (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Call a custom instance creator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_a90b64d819d4991d3b1df404e324b656a}\index{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}!extend@{extend}}
+\index{extend@{extend}!Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}}
+\doxysubsubsection{\texorpdfstring{extend()}{extend()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_multiple_instance_manager_a90b64d819d4991d3b1df404e324b656a} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager\+::extend (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{Closure}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a custom instance creator Closure.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_a1fe5131a1fec9cbc2554fc2895234888}\index{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}!forgetInstance@{forgetInstance}}
+\index{forgetInstance@{forgetInstance}!Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}}
+\doxysubsubsection{\texorpdfstring{forgetInstance()}{forgetInstance()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_multiple_instance_manager_a1fe5131a1fec9cbc2554fc2895234888} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager\+::forget\+Instance (\begin{DoxyParamCaption}\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Unset the given instances.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_a7996548eda2c6d3732fde5be3d8beec9}\index{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}!get@{get}}
+\index{get@{get}!Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_multiple_instance_manager_a7996548eda2c6d3732fde5be3d8beec9} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager\+::get (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Attempt to get an instance from the local cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_a39168ef9d529a94bba0f4e4a1c7dc793}\index{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}!getDefaultInstance@{getDefaultInstance}}
+\index{getDefaultInstance@{getDefaultInstance}!Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}}
+\doxysubsubsection{\texorpdfstring{getDefaultInstance()}{getDefaultInstance()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_multiple_instance_manager_a39168ef9d529a94bba0f4e4a1c7dc793} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager\+::get\+Default\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get the default instance name.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_concurrency_manager_ac91b6155caa4cd65cf7e6de5dded3738}{Illuminate\textbackslash{}\+Concurrency\textbackslash{}\+Concurrency\+Manager}}.
+
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_adc433dfc960d104f20003776784736a7}\index{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}!getInstanceConfig@{getInstanceConfig}}
+\index{getInstanceConfig@{getInstanceConfig}!Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}}
+\doxysubsubsection{\texorpdfstring{getInstanceConfig()}{getInstanceConfig()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_multiple_instance_manager_adc433dfc960d104f20003776784736a7} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager\+::get\+Instance\+Config (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Get the instance specific configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_concurrency_manager_a45939f63db895d6ff562f5a4c5590b81}{Illuminate\textbackslash{}\+Concurrency\textbackslash{}\+Concurrency\+Manager}}.
+
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_a7b4404c4e9caeb9afa0b3c51f081d111}\index{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}!instance@{instance}}
+\index{instance@{instance}!Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_multiple_instance_manager_a7b4404c4e9caeb9afa0b3c51f081d111} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager\+::instance (\begin{DoxyParamCaption}\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get an instance by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_a27f3d94a9b21dc7576fa997031cdfb47}\index{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}!purge@{purge}}
+\index{purge@{purge}!Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}}
+\doxysubsubsection{\texorpdfstring{purge()}{purge()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_multiple_instance_manager_a27f3d94a9b21dc7576fa997031cdfb47} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager\+::purge (\begin{DoxyParamCaption}\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Disconnect the given instance and remove from local cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_a1144222c1bad4e9356d9b7ae098fc28e}\index{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}!resolve@{resolve}}
+\index{resolve@{resolve}!Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_multiple_instance_manager_a1144222c1bad4e9356d9b7ae098fc28e} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager\+::resolve (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Resolve the given instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_acb27da9050a90e7ffbdb2d8477dfddc9}\index{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}!setApplication@{setApplication}}
+\index{setApplication@{setApplication}!Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}}
+\doxysubsubsection{\texorpdfstring{setApplication()}{setApplication()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_multiple_instance_manager_acb27da9050a90e7ffbdb2d8477dfddc9} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager\+::set\+Application (\begin{DoxyParamCaption}\item[{}]{\$app}{}\end{DoxyParamCaption})}
+
+Set the application instance used by the manager.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Foundation\textbackslash{}\+Application & {\em \$app} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_multiple_instance_manager_a8b1cfe495130e2bc17d68422a71edd3e}\index{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}!setDefaultInstance@{setDefaultInstance}}
+\index{setDefaultInstance@{setDefaultInstance}!Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager@{Illuminate\textbackslash{}Support\textbackslash{}MultipleInstanceManager}}
+\doxysubsubsection{\texorpdfstring{setDefaultInstance()}{setDefaultInstance()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_multiple_instance_manager_a8b1cfe495130e2bc17d68422a71edd3e} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager\+::set\+Default\+Instance (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Set the default instance name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_concurrency_manager_a5f5c27d17efc5b453d2bd3a0948031d4}{Illuminate\textbackslash{}\+Concurrency\textbackslash{}\+Concurrency\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Support/Multiple\+Instance\+Manager.\+php\end{DoxyCompactItemize}

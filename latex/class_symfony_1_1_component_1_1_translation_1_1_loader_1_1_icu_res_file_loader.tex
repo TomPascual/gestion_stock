@@ -1,0 +1,78 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}Icu\+Res\+File\+Loader Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_icu_res_file_loader}{}\label{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_icu_res_file_loader}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}IcuResFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}IcuResFileLoader}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}Icu\+Res\+File\+Loader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_icu_res_file_loader}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_icu_res_file_loader_a32fa176c6f724d21e7e2d7212092b7e2}{load}} (mixed \$resource, string \$locale, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_icu_res_file_loader_a77633b12b8d44e380bf8e0a5548f64af}{flatten}} (\textbackslash{}Resource\+Bundle \$rb, array \&\$messages=\mbox{[}$\,$\mbox{]}, ?string \$path=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Icu\+Res\+File\+Loader loads translations from a resource bundle.
+
+\begin{DoxyAuthor}{Author}
+stealth35 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_icu_res_file_loader_a77633b12b8d44e380bf8e0a5548f64af}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}IcuResFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}IcuResFileLoader}!flatten@{flatten}}
+\index{flatten@{flatten}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}IcuResFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}IcuResFileLoader}}
+\doxysubsubsection{\texorpdfstring{flatten()}{flatten()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_icu_res_file_loader_a77633b12b8d44e380bf8e0a5548f64af} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Loader\textbackslash{}\+Icu\+Res\+File\+Loader\+::flatten (\begin{DoxyParamCaption}\item[{\textbackslash{}Resource\+Bundle}]{\$rb}{, }\item[{array \&}]{\$messages}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?string}]{\$path}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Flattens an Resource\+Bundle.
+
+The scheme used is\+: key \{ key2 \{ key3 \{ "{}value"{} \} \} \} Becomes\+: \textquotesingle{}key.\+key2.\+key3\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}value\textquotesingle{}
+
+This function takes an array by reference and will modify it
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Resource\+Bundle & {\em \$rb} & The Resource\+Bundle that will be flattened \\
+\hline
+array & {\em \$messages} & Used internally for recursive calls \\
+\hline
+string | null & {\em \$path} & Current path being parsed, used internally for recursive calls \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_icu_res_file_loader_a32fa176c6f724d21e7e2d7212092b7e2}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}IcuResFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}IcuResFileLoader}!load@{load}}
+\index{load@{load}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}IcuResFileLoader@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Loader\textbackslash{}IcuResFileLoader}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_icu_res_file_loader_a32fa176c6f724d21e7e2d7212092b7e2} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Loader\textbackslash{}\+Icu\+Res\+File\+Loader\+::load (\begin{DoxyParamCaption}\item[{mixed}]{\$resource}{, }\item[{string}]{\$locale}{, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}messages\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Loads a locale.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Found\+Resource\+Exception} & when the resource cannot be found \\
+\hline
+{\em Invalid\+Resource\+Exception} & when the resource cannot be loaded \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_loader_1_1_loader_interface_a9a76e60ce6b2585112162886c134b324}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Loader\textbackslash{}\+Loader\+Interface}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_loader_1_1_icu_dat_file_loader_aed73833329bf000f710308ce26d629a3}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Loader\textbackslash{}\+Icu\+Dat\+File\+Loader}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/translation/\+Loader/Icu\+Res\+File\+Loader.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,140 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Foundation\textbackslash{}Header\+Utils Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils}{}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_a42ebac07724c36949e33ea8ef4d615ff}{split}} (string \$header, string \$separators)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_a760bb152415681a4f2b52dc7c07e8d6e}{combine}} (array \$parts)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_aede38506d65a83771b9d0523a6087598}{to\+String}} (array \$assoc, string \$separator)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_aff864b46bd8d1e611400f98559cf68e3}{quote}} (string \$s)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_ab42299c04d15c7bbc6a12555b57cbc5d}{unquote}} (string \$s)
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_a5daddd19e46cd997306c4dc113edb091}{make\+Disposition}} (string \$disposition, string \$filename, string \$filename\+Fallback=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_aa8d232bbfa1b0e0228957ae7db3d8b1b}{parse\+Query}} (string \$query, bool \$ignore\+Brackets=false, string \$separator=\textquotesingle{}\&\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_aef4650f99888dceff503fe52a35bf2b7}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_aef4650f99888dceff503fe52a35bf2b7} 
+const {\bfseries DISPOSITION\+\_\+\+ATTACHMENT} = \textquotesingle{}attachment\textquotesingle{}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_a972d61dd5361cc12192b6b9c5361cce1}\label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_a972d61dd5361cc12192b6b9c5361cce1} 
+const {\bfseries DISPOSITION\+\_\+\+INLINE} = \textquotesingle{}inline\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+HTTP header utility functions.
+
+\begin{DoxyAuthor}{Author}
+Christian Schmidt \href{mailto:github@chsc.dk}{\texttt{ github@chsc.\+dk}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_a760bb152415681a4f2b52dc7c07e8d6e}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils}!combine@{combine}}
+\index{combine@{combine}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils}}
+\doxysubsubsection{\texorpdfstring{combine()}{combine()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_a760bb152415681a4f2b52dc7c07e8d6e} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Header\+Utils\+::combine (\begin{DoxyParamCaption}\item[{array}]{\$parts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Combines an array of arrays into one associative array.
+
+Each of the nested arrays should have one or two elements. The first value will be used as the keys in the associative array, and the second will be used as the values, or true if the nested array only contains one element. Array keys are lowercased.
+
+Example\+: \begin{DoxyVerb}HeaderUtils::combine([['foo', 'abc'], ['bar']])
+// => ['foo' => 'abc', 'bar' => true]
+\end{DoxyVerb}
+ \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_a5daddd19e46cd997306c4dc113edb091}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils}!makeDisposition@{makeDisposition}}
+\index{makeDisposition@{makeDisposition}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils}}
+\doxysubsubsection{\texorpdfstring{makeDisposition()}{makeDisposition()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_a5daddd19e46cd997306c4dc113edb091} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Header\+Utils\+::make\+Disposition (\begin{DoxyParamCaption}\item[{string}]{\$disposition}{, }\item[{string}]{\$filename}{, }\item[{string}]{\$filename\+Fallback}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generates an HTTP Content-\/\+Disposition field-\/value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$disposition} & One of "{}inline"{} or "{}attachment"{} \\
+\hline
+string & {\em \$filename} & A unicode string \\
+\hline
+string & {\em \$filename\+Fallback} & A string containing only ASCII characters that is semantically equivalent to \$filename. If the filename is already ASCII, it can be omitted, or just copied from \$filename\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception
+
+\begin{DoxySeeAlso}{See also}
+RFC 6266 
+\end{DoxySeeAlso}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_aa8d232bbfa1b0e0228957ae7db3d8b1b}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils}!parseQuery@{parseQuery}}
+\index{parseQuery@{parseQuery}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils}}
+\doxysubsubsection{\texorpdfstring{parseQuery()}{parseQuery()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_aa8d232bbfa1b0e0228957ae7db3d8b1b} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Header\+Utils\+::parse\+Query (\begin{DoxyParamCaption}\item[{string}]{\$query}{, }\item[{bool}]{\$ignore\+Brackets}{ = {\ttfamily false}, }\item[{string}]{\$separator}{ = {\ttfamily \textquotesingle{}\&\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Like parse\+\_\+str(), but preserves dots in variable names. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_aff864b46bd8d1e611400f98559cf68e3}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils}!quote@{quote}}
+\index{quote@{quote}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils}}
+\doxysubsubsection{\texorpdfstring{quote()}{quote()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_aff864b46bd8d1e611400f98559cf68e3} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Header\+Utils\+::quote (\begin{DoxyParamCaption}\item[{string}]{\$s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Encodes a string as a quoted string, if necessary.
+
+If a string contains characters not allowed by the "{}token"{} construct in the HTTP specification, it is backslash-\/escaped and enclosed in quotes to match the "{}quoted-\/string"{} construct. \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_a42ebac07724c36949e33ea8ef4d615ff}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils}!split@{split}}
+\index{split@{split}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_a42ebac07724c36949e33ea8ef4d615ff} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Header\+Utils\+::split (\begin{DoxyParamCaption}\item[{string}]{\$header}{, }\item[{string}]{\$separators}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Splits an HTTP header by one or more separators.
+
+Example\+: \begin{DoxyVerb}HeaderUtils::split('da, en-gb;q=0.8', ',;')
+# returns [['da'], ['en-gb', 'q=0.8']]
+\end{DoxyVerb}
+
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$separators} & List of characters to split on, ordered by precedence, e.\+g. \textquotesingle{},\textquotesingle{}, \textquotesingle{};=\textquotesingle{}, or \textquotesingle{},;=\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Nested array with as many levels as there are characters in \$separators 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_aede38506d65a83771b9d0523a6087598}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils}!toString@{toString}}
+\index{toString@{toString}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_aede38506d65a83771b9d0523a6087598} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Header\+Utils\+::to\+String (\begin{DoxyParamCaption}\item[{array}]{\$assoc}{, }\item[{string}]{\$separator}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Joins an associative array into a string for use in an HTTP header.
+
+The key and value of each entry are joined with \textquotesingle{}=\textquotesingle{}, and all entries are joined with the specified separator and an additional space (for readability). Values are quoted if necessary.
+
+Example\+: \begin{DoxyVerb}HeaderUtils::toString(['foo' => 'abc', 'bar' => true, 'baz' => 'a b c'], ',')
+// => 'foo=abc, bar, baz="a b c"'
+\end{DoxyVerb}
+ \Hypertarget{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_ab42299c04d15c7bbc6a12555b57cbc5d}\index{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils}!unquote@{unquote}}
+\index{unquote@{unquote}!Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils@{Symfony\textbackslash{}Component\textbackslash{}HttpFoundation\textbackslash{}HeaderUtils}}
+\doxysubsubsection{\texorpdfstring{unquote()}{unquote()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_foundation_1_1_header_utils_ab42299c04d15c7bbc6a12555b57cbc5d} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Header\+Utils\+::unquote (\begin{DoxyParamCaption}\item[{string}]{\$s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Decodes a quoted string.
+
+If passed an unquoted string that matches the "{}token"{} construct (as defined in the HTTP specification), it is passed through verbatim. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/foundation/Header\+Utils.\+php\end{DoxyCompactItemize}

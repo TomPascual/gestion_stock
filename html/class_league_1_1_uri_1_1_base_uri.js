@@ -1,0 +1,25 @@
+var class_league_1_1_uri_1_1_base_uri =
+[
+    [ "__construct", "class_league_1_1_uri_1_1_base_uri.html#a5bbede44157ac30ce9340d26b5b1ea10", null ],
+    [ "canNotBeRelativize", "class_league_1_1_uri_1_1_base_uri.html#a08a5dd2f75aad862c6bf6c1416adefa4", null ],
+    [ "componentEquals", "class_league_1_1_uri_1_1_base_uri.html#a3a2458d014ddfd90b4fb8d46f3854cf4", null ],
+    [ "getUriString", "class_league_1_1_uri_1_1_base_uri.html#abae2d77dae6754c914aaf49bef0bdb25", null ],
+    [ "hasIdn", "class_league_1_1_uri_1_1_base_uri.html#a25196402409aea3a51860866bc4d3247", null ],
+    [ "hasIPv4", "class_league_1_1_uri_1_1_base_uri.html#acbb8f065d0b7250f6228d71378521bde", null ],
+    [ "isAbsolute", "class_league_1_1_uri_1_1_base_uri.html#a5e3f3b52e1d4186d52246ebce09584a8", null ],
+    [ "isAbsolutePath", "class_league_1_1_uri_1_1_base_uri.html#ab4bf41275291c0a4f3743747cd660eb7", null ],
+    [ "isCrossOrigin", "class_league_1_1_uri_1_1_base_uri.html#af3450d687fb3e92953130c7b172efdf1", null ],
+    [ "isLocalFile", "class_league_1_1_uri_1_1_base_uri.html#a7dc27679320595baed997fd46aaf6eb4", null ],
+    [ "isNetworkPath", "class_league_1_1_uri_1_1_base_uri.html#a6c2c75a9cec0600afebebb06b19a432e", null ],
+    [ "isOpaque", "class_league_1_1_uri_1_1_base_uri.html#a3f36a545f9b26415acfc5d004a814197", null ],
+    [ "isRelativePath", "class_league_1_1_uri_1_1_base_uri.html#a2109ab5404c6637673061c079cb87b39", null ],
+    [ "isSameDocument", "class_league_1_1_uri_1_1_base_uri.html#a0c46e73de262649ed701265505a1acb5", null ],
+    [ "normalize", "class_league_1_1_uri_1_1_base_uri.html#a5b184129db993094b18ec8f159a4994f", null ],
+    [ "relativize", "class_league_1_1_uri_1_1_base_uri.html#a63768f6e4f31c34a88be2139fcd36fed", null ],
+    [ "removeDotSegments", "class_league_1_1_uri_1_1_base_uri.html#a47544780dd95f064d91e403b7f8e6f35", null ],
+    [ "resolve", "class_league_1_1_uri_1_1_base_uri.html#a125b1044746684dd37297d9176ab039a", null ],
+    [ "resolvePathAndQuery", "class_league_1_1_uri_1_1_base_uri.html#a1371d2ce71753fe625bbc7ccd88898ed", null ],
+    [ "toRfc8089", "class_league_1_1_uri_1_1_base_uri.html#a3890a3381a5758df64f7fe31563d9eda", null ],
+    [ "unixPath", "class_league_1_1_uri_1_1_base_uri.html#a850a218134747b4a0e439d2a35a85434", null ],
+    [ "windowsPath", "class_league_1_1_uri_1_1_base_uri.html#af938618a4e49e2bc9d528b325e858d8b", null ]
+];

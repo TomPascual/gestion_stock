@@ -1,0 +1,4 @@
+var class_symfony_1_1_component_1_1_http_kernel_1_1_dependency_injection_1_1_merge_extension_configuration_pass =
+[
+    [ "__construct", "class_symfony_1_1_component_1_1_http_kernel_1_1_dependency_injection_1_1_merge_extension_configuration_pass.html#acd3b6fc4a20d5ebaf30d1909200ca4a0", null ]
+];

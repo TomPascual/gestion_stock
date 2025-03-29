@@ -1,0 +1,72 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\+Metadata\+Aware\+Interface Interface Reference}
+\hypertarget{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_metadata_aware_interface}{}\label{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_metadata_aware_interface}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}CatalogueMetadataAwareInterface@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}CatalogueMetadataAwareInterface}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\+Metadata\+Aware\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_metadata_aware_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_metadata_aware_interface_ae9cc3ec8f722767c389d0a9a01e4771e}{get\+Catalogue\+Metadata}} (string \$key=\textquotesingle{}\textquotesingle{}, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_metadata_aware_interface_a7e0892779273a08478f297ff2f5238d8}{set\+Catalogue\+Metadata}} (string \$key, mixed \$value, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\item 
+\mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_metadata_aware_interface_ae027a3c77e277f111a171a8f6518570b}{delete\+Catalogue\+Metadata}} (string \$key=\textquotesingle{}\textquotesingle{}, string \$domain=\textquotesingle{}messages\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This interface is used to get, set, and delete metadata about the Catalogue.
+
+\begin{DoxyAuthor}{Author}
+Hugo Alliaume \href{mailto:hugo@alliau.me}{\texttt{ hugo@alliau.\+me}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_metadata_aware_interface_ae027a3c77e277f111a171a8f6518570b}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}CatalogueMetadataAwareInterface@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}CatalogueMetadataAwareInterface}!deleteCatalogueMetadata@{deleteCatalogueMetadata}}
+\index{deleteCatalogueMetadata@{deleteCatalogueMetadata}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}CatalogueMetadataAwareInterface@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}CatalogueMetadataAwareInterface}}
+\doxysubsubsection{\texorpdfstring{deleteCatalogueMetadata()}{deleteCatalogueMetadata()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_metadata_aware_interface_ae027a3c77e277f111a171a8f6518570b} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\+Metadata\+Aware\+Interface\+::delete\+Catalogue\+Metadata (\begin{DoxyParamCaption}\item[{string}]{\$key}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}messages\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Deletes catalogue metadata for the given key and domain.
+
+Passing an empty domain will delete all catalogue metadata. Passing an empty key will delete all metadata for the given domain. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a6dcd7296cd7789e85bcdb4042a21a1b9}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Message\+Catalogue}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_metadata_aware_interface_ae9cc3ec8f722767c389d0a9a01e4771e}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}CatalogueMetadataAwareInterface@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}CatalogueMetadataAwareInterface}!getCatalogueMetadata@{getCatalogueMetadata}}
+\index{getCatalogueMetadata@{getCatalogueMetadata}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}CatalogueMetadataAwareInterface@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}CatalogueMetadataAwareInterface}}
+\doxysubsubsection{\texorpdfstring{getCatalogueMetadata()}{getCatalogueMetadata()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_metadata_aware_interface_ae9cc3ec8f722767c389d0a9a01e4771e} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\+Metadata\+Aware\+Interface\+::get\+Catalogue\+Metadata (\begin{DoxyParamCaption}\item[{string}]{\$key}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}messages\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Gets catalogue metadata for the given domain and key.
+
+Passing an empty domain will return an array with all catalogue metadata indexed by domain and then by key. Passing an empty key will return an array with all catalogue metadata for the given domain.
+
+\begin{DoxyReturn}{Returns}
+mixed The value that was set or an array with the domains/keys or null 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a61347915b67db97db61ce64d943112ed}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Message\+Catalogue}}.
+
+\Hypertarget{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_metadata_aware_interface_a7e0892779273a08478f297ff2f5238d8}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}CatalogueMetadataAwareInterface@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}CatalogueMetadataAwareInterface}!setCatalogueMetadata@{setCatalogueMetadata}}
+\index{setCatalogueMetadata@{setCatalogueMetadata}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}CatalogueMetadataAwareInterface@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}CatalogueMetadataAwareInterface}}
+\doxysubsubsection{\texorpdfstring{setCatalogueMetadata()}{setCatalogueMetadata()}}
+{\footnotesize\ttfamily \label{interface_symfony_1_1_component_1_1_translation_1_1_catalogue_metadata_aware_interface_a7e0892779273a08478f297ff2f5238d8} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\+Metadata\+Aware\+Interface\+::set\+Catalogue\+Metadata (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{mixed}]{\$value}{, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}messages\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Adds catalogue metadata to a message domain. 
+
+Implemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue_a86eab0e63b839d2f453edbeb0bb1cdaf}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Message\+Catalogue}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/translation/Catalogue\+Metadata\+Aware\+Interface.\+php\end{DoxyCompactItemize}

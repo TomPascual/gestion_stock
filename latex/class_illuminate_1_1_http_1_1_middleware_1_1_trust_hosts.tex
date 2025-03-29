@@ -1,0 +1,147 @@
+\doxysection{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}Trust\+Hosts Class Reference}
+\hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts}{}\label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts}\index{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts@{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a626843c340d0f587d31694bf2b203a8c}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_foundation_1_1_application}{Application}} \$app)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_ac705aac7e0302d08ff17a6e96c4c3926}{hosts}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a93320563c278de667abc43f09cf3c334}{handle}} (\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}} \$request, \$next)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a16ce3461421462335391ec9e540844a8}{at}} (array\texorpdfstring{$\vert$}{|}callable \$\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_ac705aac7e0302d08ff17a6e96c4c3926}{hosts}}, bool \$subdomains=true)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a233c0a81d867d345a2df1661c9c3e37a}{flush\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a34c9a4cd80653fba0d460ac341aa11bc}{should\+Specify\+Trusted\+Hosts}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_ae993034518500420795b008ef03a5157}{all\+Subdomains\+Of\+Application\+Url}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_afe9d1f8890afc6867e0ed7f834fc6cef}\label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_afe9d1f8890afc6867e0ed7f834fc6cef} 
+{\bfseries \$app}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a6dc6ad255a61b91019920fd526675f81}\label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a6dc6ad255a61b91019920fd526675f81} 
+static {\bfseries \$always\+Trust}
+\item 
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a39c1ed96e7003c70e4226265b2155c49}\label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a39c1ed96e7003c70e4226265b2155c49} 
+static {\bfseries \$subdomains}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a626843c340d0f587d31694bf2b203a8c}\index{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts@{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts@{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a626843c340d0f587d31694bf2b203a8c} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Trust\+Hosts\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_foundation_1_1_application}{Application}}}]{\$app}{}\end{DoxyParamCaption})}
+
+Create a new middleware instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Foundation\textbackslash{}\+Application & {\em \$app} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_ae993034518500420795b008ef03a5157}\index{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts@{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts}!allSubdomainsOfApplicationUrl@{allSubdomainsOfApplicationUrl}}
+\index{allSubdomainsOfApplicationUrl@{allSubdomainsOfApplicationUrl}!Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts@{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts}}
+\doxysubsubsection{\texorpdfstring{allSubdomainsOfApplicationUrl()}{allSubdomainsOfApplicationUrl()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_ae993034518500420795b008ef03a5157} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Trust\+Hosts\+::all\+Subdomains\+Of\+Application\+Url (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get a regular expression matching the application URL and all of its subdomains.
+
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a16ce3461421462335391ec9e540844a8}\index{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts@{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts}!at@{at}}
+\index{at@{at}!Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts@{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a16ce3461421462335391ec9e540844a8} 
+static Illuminate\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Trust\+Hosts\+::at (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}callable}]{\$hosts}{, }\item[{bool}]{\$subdomains}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Specify the hosts that should always be trusted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em array$<$int,string$>$\texorpdfstring{$\vert$}{|}(callable()} & array$<$int, string$>$) \$hosts \\
+\hline
+bool & {\em \$subdomains} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a233c0a81d867d345a2df1661c9c3e37a}\index{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts@{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts}!flushState@{flushState}}
+\index{flushState@{flushState}!Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts@{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts}}
+\doxysubsubsection{\texorpdfstring{flushState()}{flushState()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a233c0a81d867d345a2df1661c9c3e37a} 
+static Illuminate\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Trust\+Hosts\+::flush\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Flush the state of the middleware.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a93320563c278de667abc43f09cf3c334}\index{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts@{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts}!handle@{handle}}
+\index{handle@{handle}!Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts@{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a93320563c278de667abc43f09cf3c334} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Trust\+Hosts\+::handle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_http_1_1_request}{Request}}}]{\$request}{, }\item[{}]{\$next}{}\end{DoxyParamCaption})}
+
+Handle the incoming request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$next} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_ac705aac7e0302d08ff17a6e96c4c3926}\index{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts@{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts}!hosts@{hosts}}
+\index{hosts@{hosts}!Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts@{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts}}
+\doxysubsubsection{\texorpdfstring{hosts()}{hosts()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_ac705aac7e0302d08ff17a6e96c4c3926} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Trust\+Hosts\+::hosts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the host patterns that should be trusted.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a34c9a4cd80653fba0d460ac341aa11bc}\index{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts@{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts}!shouldSpecifyTrustedHosts@{shouldSpecifyTrustedHosts}}
+\index{shouldSpecifyTrustedHosts@{shouldSpecifyTrustedHosts}!Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts@{Illuminate\textbackslash{}Http\textbackslash{}Middleware\textbackslash{}TrustHosts}}
+\doxysubsubsection{\texorpdfstring{shouldSpecifyTrustedHosts()}{shouldSpecifyTrustedHosts()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_http_1_1_middleware_1_1_trust_hosts_a34c9a4cd80653fba0d460ac341aa11bc} 
+Illuminate\textbackslash{}\+Http\textbackslash{}\+Middleware\textbackslash{}\+Trust\+Hosts\+::should\+Specify\+Trusted\+Hosts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if the application should specify trusted hosts.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Http/\+Middleware/Trust\+Hosts.\+php\end{DoxyCompactItemize}

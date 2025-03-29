@@ -1,0 +1,25 @@
+var class_brick_1_1_math_1_1_big_number =
+[
+    [ "__toString", "class_brick_1_1_math_1_1_big_number.html#ad359a3412477c06d56810b217a14017f", null ],
+    [ "compareTo", "class_brick_1_1_math_1_1_big_number.html#afd18577e487bdc63b1a3cb84393dc2a1", null ],
+    [ "getSign", "class_brick_1_1_math_1_1_big_number.html#a1b6aaabed62e18387baf3138c6d56237", null ],
+    [ "isEqualTo", "class_brick_1_1_math_1_1_big_number.html#a1517c646e6db39b646a9a7fa46382c70", null ],
+    [ "isGreaterThan", "class_brick_1_1_math_1_1_big_number.html#aabdbe40b7d7b52baaa9192cf6088eba4", null ],
+    [ "isGreaterThanOrEqualTo", "class_brick_1_1_math_1_1_big_number.html#a8008625a6fc46e6a8626b3ab8f8a9c58", null ],
+    [ "isLessThan", "class_brick_1_1_math_1_1_big_number.html#a49bf7617fd6173423c0e3d19c80cb3b9", null ],
+    [ "isLessThanOrEqualTo", "class_brick_1_1_math_1_1_big_number.html#ae50b10e7992df1502db25761e5e7d75b", null ],
+    [ "isNegative", "class_brick_1_1_math_1_1_big_number.html#a9f5098ba20286bb33db56e4152058930", null ],
+    [ "isNegativeOrZero", "class_brick_1_1_math_1_1_big_number.html#adc32c5393f198f24e5bda9f2fe4fe5b4", null ],
+    [ "isPositive", "class_brick_1_1_math_1_1_big_number.html#a8e8c35d2afa97888c2141a6b8fdf0280", null ],
+    [ "isPositiveOrZero", "class_brick_1_1_math_1_1_big_number.html#a1515f305cfdd764c3d1aaf0c13838950", null ],
+    [ "isZero", "class_brick_1_1_math_1_1_big_number.html#a613daaa62edf7647fb0109d7d9337bd5", null ],
+    [ "newBigDecimal", "class_brick_1_1_math_1_1_big_number.html#a588f027972199ad125bc2fafa6626306", null ],
+    [ "newBigInteger", "class_brick_1_1_math_1_1_big_number.html#ac1e824867105ea58469e31c7d4e9d995", null ],
+    [ "newBigRational", "class_brick_1_1_math_1_1_big_number.html#ac37b57b666f49d59c548bcd32e8a7616", null ],
+    [ "toBigDecimal", "class_brick_1_1_math_1_1_big_number.html#aee67d428edb5d1e581e417c3f062533b", null ],
+    [ "toBigInteger", "class_brick_1_1_math_1_1_big_number.html#aa8b7d16b98a8c8dcd7bdb891f5631b94", null ],
+    [ "toBigRational", "class_brick_1_1_math_1_1_big_number.html#a23aaa080dbcad7d16298af69376c1a26", null ],
+    [ "toFloat", "class_brick_1_1_math_1_1_big_number.html#ae386b8e8c168e6d2d9fdc5b7c40e58e9", null ],
+    [ "toInt", "class_brick_1_1_math_1_1_big_number.html#a57367466a8250c489e002fa9fae736e9", null ],
+    [ "toScale", "class_brick_1_1_math_1_1_big_number.html#a9b41883914fec4c00c063b5a07418a6d", null ]
+];

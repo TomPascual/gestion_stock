@@ -1,0 +1,104 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Event\+Listener\textbackslash{}Profiler\+Listener Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Event\+Listener\textbackslash{}Profiler\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener_a64390ab8a099ec3081c37820a41bb625}{\+\_\+\+\_\+construct}} (private \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler}{Profiler}} \$profiler, private \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack}{Request\+Stack}} \$request\+Stack, private ?\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_request_matcher_interface}{Request\+Matcher\+Interface}} \$matcher=null, private bool \$only\+Exception=false, private bool \$only\+Main\+Requests=false, private ?string \$collect\+Parameter=null,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener_ace07a26c8cbf86fea565e59777dcf009}{on\+Kernel\+Exception}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_exception_event}{Exception\+Event}} \$event)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener_aa03ea0dc9fe5a2e802c244cc80329911}{on\+Kernel\+Response}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_response_event}{Response\+Event}} \$event)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener_adceb57ca8456097b180722f72ae59525}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener_adceb57ca8456097b180722f72ae59525} 
+{\bfseries on\+Kernel\+Terminate} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_terminate_event}{Terminate\+Event}} \$event)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener_a26e80bf7f1adb2e6aa48a7db19c4d3fd}{get\+Subscribed\+Events}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Profiler\+Listener collects data for the current request by listening to the kernel events.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}}
+\end{DoxyAuthor}
+@final 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener_a64390ab8a099ec3081c37820a41bb625}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener_a64390ab8a099ec3081c37820a41bb625} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Profiler\+Listener\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{private \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_profiler_1_1_profiler}{Profiler}}}]{\$profiler}{, }\item[{private \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request_stack}{Request\+Stack}}}]{\$request\+Stack}{, }\item[{private ?\mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_foundation_1_1_request_matcher_interface}{Request\+Matcher\+Interface}}}]{\$matcher}{ = {\ttfamily null}, }\item[{private bool}]{\$only\+Exception}{ = {\ttfamily false}, }\item[{private bool}]{\$only\+Main\+Requests}{ = {\ttfamily false}, }\item[{private ?string}]{\$collect\+Parameter}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$only\+Exception} & True if the profiler only collects data when an exception occurs, false otherwise \\
+\hline
+bool & {\em \$only\+Main\+Requests} & True if the profiler only collects data when the request is the main request, false otherwise \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener_a26e80bf7f1adb2e6aa48a7db19c4d3fd}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener}!getSubscribedEvents@{getSubscribedEvents}}
+\index{getSubscribedEvents@{getSubscribedEvents}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener}}
+\doxysubsubsection{\texorpdfstring{getSubscribedEvents()}{getSubscribedEvents()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener_a26e80bf7f1adb2e6aa48a7db19c4d3fd} 
+static Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Profiler\+Listener\+::get\+Subscribed\+Events (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns an array of event names this subscriber wants to listen to.
+
+The array keys are event names and the value can be\+:
+
+
+\begin{DoxyItemize}
+\item The method name to call (priority defaults to 0)
+\item An array composed of the method name to call and the priority
+\item An array of arrays composed of the method names to call and respective priorities, or 0 if unset
+\end{DoxyItemize}
+
+For instance\+:
+
+
+\begin{DoxyItemize}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}method\+Name\textquotesingle{}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\textquotesingle{}method\+Name\textquotesingle{}, \$priority\mbox{]}\mbox{]}
+\item \mbox{[}\textquotesingle{}event\+Name\textquotesingle{} =\texorpdfstring{$>$}{>} \mbox{[}\mbox{[}\textquotesingle{}method\+Name1\textquotesingle{}, \$priority\mbox{]}, \mbox{[}\textquotesingle{}method\+Name2\textquotesingle{}\mbox{]}\mbox{]}\mbox{]}
+\end{DoxyItemize}
+
+The code must not depend on runtime state as it will only be called at compile time. All logic depending on runtime state must be put into the individual methods handling the events.
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, string\texorpdfstring{$\vert$}{|}array\{0\+: string, 1\+: int\}\texorpdfstring{$\vert$}{|}list\texorpdfstring{$<$}{<}array\{0\+: string, 1?\+: int\}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_event_dispatcher_1_1_event_subscriber_interface_a1f40b93f2c531f690bb4cd5bc5764c73}{Symfony\textbackslash{}\+Component\textbackslash{}\+Event\+Dispatcher\textbackslash{}\+Event\+Subscriber\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener_ace07a26c8cbf86fea565e59777dcf009}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener}!onKernelException@{onKernelException}}
+\index{onKernelException@{onKernelException}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener}}
+\doxysubsubsection{\texorpdfstring{onKernelException()}{onKernelException()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener_ace07a26c8cbf86fea565e59777dcf009} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Profiler\+Listener\+::on\+Kernel\+Exception (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_exception_event}{Exception\+Event}}}]{\$event}{}\end{DoxyParamCaption})}
+
+Handles the on\+Kernel\+Exception event. \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener_aa03ea0dc9fe5a2e802c244cc80329911}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener}!onKernelResponse@{onKernelResponse}}
+\index{onKernelResponse@{onKernelResponse}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}EventListener\textbackslash{}ProfilerListener}}
+\doxysubsubsection{\texorpdfstring{onKernelResponse()}{onKernelResponse()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_event_listener_1_1_profiler_listener_aa03ea0dc9fe5a2e802c244cc80329911} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Event\+Listener\textbackslash{}\+Profiler\+Listener\+::on\+Kernel\+Response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_event_1_1_response_event}{Response\+Event}}}]{\$event}{}\end{DoxyParamCaption})}
+
+Handles the on\+Kernel\+Response event. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/kernel/\+Event\+Listener/Profiler\+Listener.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,117 @@
+\doxysection{Php\+Parser\textbackslash{}Pretty\+Printer Interface Reference}
+\hypertarget{interface_php_parser_1_1_pretty_printer}{}\label{interface_php_parser_1_1_pretty_printer}\index{PhpParser\textbackslash{}PrettyPrinter@{PhpParser\textbackslash{}PrettyPrinter}}
+Inheritance diagram for Php\+Parser\textbackslash{}Pretty\+Printer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_php_parser_1_1_pretty_printer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_pretty_printer_a19c5a67ff248dcb8e66136663c811e8c}{pretty\+Print}} (array \$stmts)
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_pretty_printer_a40cee16fba8e53a7fbf13eda5539ccb0}{pretty\+Print\+Expr}} (Expr \$node)
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_pretty_printer_a6eed5805ea262ec6578da244d069481c}{pretty\+Print\+File}} (array \$stmts)
+\item 
+\mbox{\hyperlink{interface_php_parser_1_1_pretty_printer_ab9b0c63141d6462e419d6dbfb8053b0a}{print\+Format\+Preserving}} (array \$stmts, array \$orig\+Stmts, array \$orig\+Tokens)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_php_parser_1_1_pretty_printer_a19c5a67ff248dcb8e66136663c811e8c}\index{PhpParser\textbackslash{}PrettyPrinter@{PhpParser\textbackslash{}PrettyPrinter}!prettyPrint@{prettyPrint}}
+\index{prettyPrint@{prettyPrint}!PhpParser\textbackslash{}PrettyPrinter@{PhpParser\textbackslash{}PrettyPrinter}}
+\doxysubsubsection{\texorpdfstring{prettyPrint()}{prettyPrint()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_pretty_printer_a19c5a67ff248dcb8e66136663c811e8c} 
+Php\+Parser\textbackslash{}\+Pretty\+Printer\+::pretty\+Print (\begin{DoxyParamCaption}\item[{array}]{\$stmts}{}\end{DoxyParamCaption})}
+
+Pretty prints an array of statements.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$stmts} & Array of statements\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Pretty printed statements 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a66b1428b163de2816905d70b78e4bd88}{Php\+Parser\textbackslash{}\+Pretty\+Printer\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_pretty_printer_a40cee16fba8e53a7fbf13eda5539ccb0}\index{PhpParser\textbackslash{}PrettyPrinter@{PhpParser\textbackslash{}PrettyPrinter}!prettyPrintExpr@{prettyPrintExpr}}
+\index{prettyPrintExpr@{prettyPrintExpr}!PhpParser\textbackslash{}PrettyPrinter@{PhpParser\textbackslash{}PrettyPrinter}}
+\doxysubsubsection{\texorpdfstring{prettyPrintExpr()}{prettyPrintExpr()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_pretty_printer_a40cee16fba8e53a7fbf13eda5539ccb0} 
+Php\+Parser\textbackslash{}\+Pretty\+Printer\+::pretty\+Print\+Expr (\begin{DoxyParamCaption}\item[{Expr}]{\$node}{}\end{DoxyParamCaption})}
+
+Pretty prints an expression.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Expr & {\em \$node} & Expression node\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Pretty printed node 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_aa15cf5dae04e4a8a6371b529d2d7feae}{Php\+Parser\textbackslash{}\+Pretty\+Printer\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_pretty_printer_a6eed5805ea262ec6578da244d069481c}\index{PhpParser\textbackslash{}PrettyPrinter@{PhpParser\textbackslash{}PrettyPrinter}!prettyPrintFile@{prettyPrintFile}}
+\index{prettyPrintFile@{prettyPrintFile}!PhpParser\textbackslash{}PrettyPrinter@{PhpParser\textbackslash{}PrettyPrinter}}
+\doxysubsubsection{\texorpdfstring{prettyPrintFile()}{prettyPrintFile()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_pretty_printer_a6eed5805ea262ec6578da244d069481c} 
+Php\+Parser\textbackslash{}\+Pretty\+Printer\+::pretty\+Print\+File (\begin{DoxyParamCaption}\item[{array}]{\$stmts}{}\end{DoxyParamCaption})}
+
+Pretty prints a file of statements (includes the opening \texorpdfstring{$<$}{<}?php tag if it is required).
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$stmts} & Array of statements\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Pretty printed statements 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a98762601cd86a51dac0f00bbbf8b25e4}{Php\+Parser\textbackslash{}\+Pretty\+Printer\+Abstract}}.
+
+\Hypertarget{interface_php_parser_1_1_pretty_printer_ab9b0c63141d6462e419d6dbfb8053b0a}\index{PhpParser\textbackslash{}PrettyPrinter@{PhpParser\textbackslash{}PrettyPrinter}!printFormatPreserving@{printFormatPreserving}}
+\index{printFormatPreserving@{printFormatPreserving}!PhpParser\textbackslash{}PrettyPrinter@{PhpParser\textbackslash{}PrettyPrinter}}
+\doxysubsubsection{\texorpdfstring{printFormatPreserving()}{printFormatPreserving()}}
+{\footnotesize\ttfamily \label{interface_php_parser_1_1_pretty_printer_ab9b0c63141d6462e419d6dbfb8053b0a} 
+Php\+Parser\textbackslash{}\+Pretty\+Printer\+::print\+Format\+Preserving (\begin{DoxyParamCaption}\item[{array}]{\$stmts}{, }\item[{array}]{\$orig\+Stmts}{, }\item[{array}]{\$orig\+Tokens}{}\end{DoxyParamCaption})}
+
+Perform a format-\/preserving pretty print of an AST.
+
+The format preservation is best effort. For some changes to the AST the formatting will not be preserved (at least not locally).
+
+In order to use this method a number of prerequisites must be satisfied\+:
+\begin{DoxyItemize}
+\item The start\+Token\+Pos and end\+Token\+Pos attributes in the lexer must be enabled.
+\item The Cloning\+Visitor must be run on the AST prior to modification.
+\item The original tokens must be provided, using the get\+Tokens() method on the lexer.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\mbox{[}$\,$\mbox{]} & {\em \$stmts} & Modified AST with links to original AST \\
+\hline
+Node\mbox{[}$\,$\mbox{]} & {\em \$orig\+Stmts} & Original AST with token offset information \\
+\hline
+Token\mbox{[}$\,$\mbox{]} & {\em \$orig\+Tokens} & Tokens of the original code \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_php_parser_1_1_pretty_printer_abstract_a954d65cbbf50331a235bd75aa4e67417}{Php\+Parser\textbackslash{}\+Pretty\+Printer\+Abstract}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/nikic/php-\/parser/lib/\+Php\+Parser/Pretty\+Printer.\+php\end{DoxyCompactItemize}

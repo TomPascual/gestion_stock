@@ -1,0 +1,73 @@
+\doxysection{Illuminate\textbackslash{}Support\textbackslash{}Benchmark Class Reference}
+\hypertarget{class_illuminate_1_1_support_1_1_benchmark}{}\label{class_illuminate_1_1_support_1_1_benchmark}\index{Illuminate\textbackslash{}Support\textbackslash{}Benchmark@{Illuminate\textbackslash{}Support\textbackslash{}Benchmark}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_benchmark_a324d97304d3931f58e4ba257630ac1ed}{measure}} (Closure\texorpdfstring{$\vert$}{|}array \$benchmarkables, int \$iterations=1)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_benchmark_aea8ff7b1e6e90c3d7da11365c217ae83}{value}} (callable \$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_support_1_1_benchmark_ac8d5d850633ccb8bbcc3a28593b73b0d}{dd}} (Closure\texorpdfstring{$\vert$}{|}array \$benchmarkables, int \$iterations=1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_benchmark_ac8d5d850633ccb8bbcc3a28593b73b0d}\index{Illuminate\textbackslash{}Support\textbackslash{}Benchmark@{Illuminate\textbackslash{}Support\textbackslash{}Benchmark}!dd@{dd}}
+\index{dd@{dd}!Illuminate\textbackslash{}Support\textbackslash{}Benchmark@{Illuminate\textbackslash{}Support\textbackslash{}Benchmark}}
+\doxysubsubsection{\texorpdfstring{dd()}{dd()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_benchmark_ac8d5d850633ccb8bbcc3a28593b73b0d} 
+static Illuminate\textbackslash{}\+Support\textbackslash{}\+Benchmark\+::dd (\begin{DoxyParamCaption}\item[{Closure\texorpdfstring{$\vert$}{|}array}]{\$benchmarkables}{, }\item[{int}]{\$iterations}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Measure a callable or array of callables over the given number of iterations, then dump and die.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | array & {\em \$benchmarkables} & \\
+\hline
+int & {\em \$iterations} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+never 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_benchmark_a324d97304d3931f58e4ba257630ac1ed}\index{Illuminate\textbackslash{}Support\textbackslash{}Benchmark@{Illuminate\textbackslash{}Support\textbackslash{}Benchmark}!measure@{measure}}
+\index{measure@{measure}!Illuminate\textbackslash{}Support\textbackslash{}Benchmark@{Illuminate\textbackslash{}Support\textbackslash{}Benchmark}}
+\doxysubsubsection{\texorpdfstring{measure()}{measure()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_benchmark_a324d97304d3931f58e4ba257630ac1ed} 
+static Illuminate\textbackslash{}\+Support\textbackslash{}\+Benchmark\+::measure (\begin{DoxyParamCaption}\item[{Closure\texorpdfstring{$\vert$}{|}array}]{\$benchmarkables}{, }\item[{int}]{\$iterations}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Measure a callable or array of callables over the given number of iterations.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | array & {\em \$benchmarkables} & \\
+\hline
+int & {\em \$iterations} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}float 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_benchmark_aea8ff7b1e6e90c3d7da11365c217ae83}\index{Illuminate\textbackslash{}Support\textbackslash{}Benchmark@{Illuminate\textbackslash{}Support\textbackslash{}Benchmark}!value@{value}}
+\index{value@{value}!Illuminate\textbackslash{}Support\textbackslash{}Benchmark@{Illuminate\textbackslash{}Support\textbackslash{}Benchmark}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_benchmark_aea8ff7b1e6e90c3d7da11365c217ae83} 
+static Illuminate\textbackslash{}\+Support\textbackslash{}\+Benchmark\+::value (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Measure a callable once and return the duration and result.
+
+@template TReturn of mixed
+
+
+\begin{DoxyParams}{Parameters}
+{\em (callable()} & TReturn) \$callback \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\{0\+: TReturn, 1\+: float\} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Support/Benchmark.\+php\end{DoxyCompactItemize}

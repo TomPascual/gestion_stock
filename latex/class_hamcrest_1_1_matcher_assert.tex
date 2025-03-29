@@ -1,0 +1,58 @@
+\doxysection{Hamcrest\textbackslash{}Matcher\+Assert Class Reference}
+\hypertarget{class_hamcrest_1_1_matcher_assert}{}\label{class_hamcrest_1_1_matcher_assert}\index{Hamcrest\textbackslash{}MatcherAssert@{Hamcrest\textbackslash{}MatcherAssert}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_matcher_assert_a919c9c3d78a7dda7f8def1c6615b723e}{assert\+That}} ()
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_matcher_assert_add5cef7df26d9c98dfede503ea0925b8}{get\+Count}} ()
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_matcher_assert_ab566b3a5742eca100ebdac11b3c8f0cf}{reset\+Count}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hamcrest_1_1_matcher_assert_a919c9c3d78a7dda7f8def1c6615b723e}\index{Hamcrest\textbackslash{}MatcherAssert@{Hamcrest\textbackslash{}MatcherAssert}!assertThat@{assertThat}}
+\index{assertThat@{assertThat}!Hamcrest\textbackslash{}MatcherAssert@{Hamcrest\textbackslash{}MatcherAssert}}
+\doxysubsubsection{\texorpdfstring{assertThat()}{assertThat()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_matcher_assert_a919c9c3d78a7dda7f8def1c6615b723e} 
+static Hamcrest\textbackslash{}\+Matcher\+Assert\+::assert\+That (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Make an assertion and throw {\ttfamily \doxylink{}{Hamcrest\textbackslash{}\+Assertion\+Error}} if it fails.
+
+The first parameter may optionally be a string identifying the assertion to be included in the failure message.
+
+If the third parameter is not a matcher it is passed to {\ttfamily \doxylink{}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is\+Equal\#equal\+To}} to create one.
+
+Example\+: 
+\begin{DoxyPre}
+// With an identifier
+assertThat("{}apple flavour"{}, \$apple-\/>flavour(), equalTo("{}tasty"{}));
+// Without an identifier
+assertThat(\$apple-\/>flavour(), equalTo("{}tasty"{}));
+// Evaluating a boolean expression
+assertThat("{}some error"{}, \$a > \$b);
+assertThat(\$a > \$b);
+\end{DoxyPre}
+ \Hypertarget{class_hamcrest_1_1_matcher_assert_add5cef7df26d9c98dfede503ea0925b8}\index{Hamcrest\textbackslash{}MatcherAssert@{Hamcrest\textbackslash{}MatcherAssert}!getCount@{getCount}}
+\index{getCount@{getCount}!Hamcrest\textbackslash{}MatcherAssert@{Hamcrest\textbackslash{}MatcherAssert}}
+\doxysubsubsection{\texorpdfstring{getCount()}{getCount()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_matcher_assert_add5cef7df26d9c98dfede503ea0925b8} 
+static Hamcrest\textbackslash{}\+Matcher\+Assert\+::get\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the number of assertions performed.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_hamcrest_1_1_matcher_assert_ab566b3a5742eca100ebdac11b3c8f0cf}\index{Hamcrest\textbackslash{}MatcherAssert@{Hamcrest\textbackslash{}MatcherAssert}!resetCount@{resetCount}}
+\index{resetCount@{resetCount}!Hamcrest\textbackslash{}MatcherAssert@{Hamcrest\textbackslash{}MatcherAssert}}
+\doxysubsubsection{\texorpdfstring{resetCount()}{resetCount()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_matcher_assert_ab566b3a5742eca100ebdac11b3c8f0cf} 
+static Hamcrest\textbackslash{}\+Matcher\+Assert\+::reset\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Resets the number of assertions performed to zero. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/hamcrest/hamcrest-\/php/hamcrest/\+Hamcrest/Matcher\+Assert.\+php\end{DoxyCompactItemize}

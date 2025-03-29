@@ -1,0 +1,62 @@
+\doxysection{League\textbackslash{}Common\+Mark\textbackslash{}Normalizer\textbackslash{}Slug\+Normalizer Class Reference}
+\hypertarget{class_league_1_1_common_mark_1_1_normalizer_1_1_slug_normalizer}{}\label{class_league_1_1_common_mark_1_1_normalizer_1_1_slug_normalizer}\index{League\textbackslash{}CommonMark\textbackslash{}Normalizer\textbackslash{}SlugNormalizer@{League\textbackslash{}CommonMark\textbackslash{}Normalizer\textbackslash{}SlugNormalizer}}
+Inheritance diagram for League\textbackslash{}Common\+Mark\textbackslash{}Normalizer\textbackslash{}Slug\+Normalizer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.618497cm]{class_league_1_1_common_mark_1_1_normalizer_1_1_slug_normalizer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_league_1_1_common_mark_1_1_normalizer_1_1_slug_normalizer_a01a6bcc765717818cbe9e1869958e0e2}{set\+Configuration}} (\mbox{\hyperlink{interface_league_1_1_config_1_1_configuration_interface}{Configuration\+Interface}} \$configuration)
+\item 
+\mbox{\hyperlink{class_league_1_1_common_mark_1_1_normalizer_1_1_slug_normalizer_a1a6cae1fd58037c3a89170d282456d09}{normalize}} (string \$text, array \$context=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates URL-\/friendly strings based on the given string input 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_league_1_1_common_mark_1_1_normalizer_1_1_slug_normalizer_a1a6cae1fd58037c3a89170d282456d09}\index{League\textbackslash{}CommonMark\textbackslash{}Normalizer\textbackslash{}SlugNormalizer@{League\textbackslash{}CommonMark\textbackslash{}Normalizer\textbackslash{}SlugNormalizer}!normalize@{normalize}}
+\index{normalize@{normalize}!League\textbackslash{}CommonMark\textbackslash{}Normalizer\textbackslash{}SlugNormalizer@{League\textbackslash{}CommonMark\textbackslash{}Normalizer\textbackslash{}SlugNormalizer}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_normalizer_1_1_slug_normalizer_a1a6cae1fd58037c3a89170d282456d09} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Normalizer\textbackslash{}\+Slug\+Normalizer\+::normalize (\begin{DoxyParamCaption}\item[{string}]{\$text}{, }\item[{array}]{\$context}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & The text to normalize \\
+\hline
+ & {\em array$<$string,mixed$>$} & \$context Additional context about the text being normalized (optional)\\
+\hline
+\end{DoxyParams}
+\$context may include (but is not required to include) the following\+:
+\begin{DoxyItemize}
+\item {\ttfamily prefix} -\/ A string prefix to prepend to each normalized result
+\item {\ttfamily length} -\/ The requested maximum length
+\item {\ttfamily node} -\/ The node we\textquotesingle{}re normalizing text for
+\end{DoxyItemize}
+
+Implementations do not have to use or respect any information within that \$context
+
+@psalm-\/immutable 
+
+Implements \mbox{\hyperlink{interface_league_1_1_common_mark_1_1_normalizer_1_1_text_normalizer_interface_adf9d11357c79fdaf6a3b7cc0f190b3ff}{League\textbackslash{}\+Common\+Mark\textbackslash{}\+Normalizer\textbackslash{}\+Text\+Normalizer\+Interface}}.
+
+\Hypertarget{class_league_1_1_common_mark_1_1_normalizer_1_1_slug_normalizer_a01a6bcc765717818cbe9e1869958e0e2}\index{League\textbackslash{}CommonMark\textbackslash{}Normalizer\textbackslash{}SlugNormalizer@{League\textbackslash{}CommonMark\textbackslash{}Normalizer\textbackslash{}SlugNormalizer}!setConfiguration@{setConfiguration}}
+\index{setConfiguration@{setConfiguration}!League\textbackslash{}CommonMark\textbackslash{}Normalizer\textbackslash{}SlugNormalizer@{League\textbackslash{}CommonMark\textbackslash{}Normalizer\textbackslash{}SlugNormalizer}}
+\doxysubsubsection{\texorpdfstring{setConfiguration()}{setConfiguration()}}
+{\footnotesize\ttfamily \label{class_league_1_1_common_mark_1_1_normalizer_1_1_slug_normalizer_a01a6bcc765717818cbe9e1869958e0e2} 
+League\textbackslash{}\+Common\+Mark\textbackslash{}\+Normalizer\textbackslash{}\+Slug\+Normalizer\+::set\+Configuration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_league_1_1_config_1_1_configuration_interface}{Configuration\+Interface}}}]{\$configuration}{}\end{DoxyParamCaption})}
+
+
+
+Implements \mbox{\hyperlink{interface_league_1_1_config_1_1_configuration_aware_interface}{League\textbackslash{}\+Config\textbackslash{}\+Configuration\+Aware\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/league/commonmark/src/\+Normalizer/Slug\+Normalizer.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,26 @@
+var class_whoops_1_1_run =
+[
+    [ "addFrameFilter", "class_whoops_1_1_run.html#ac7db3c5c6aa8ee3526bc32f283d182d6", null ],
+    [ "allowQuit", "class_whoops_1_1_run.html#a7c0e2e586bda357fa333423c64cbd22c", null ],
+    [ "appendHandler", "class_whoops_1_1_run.html#adf7ae3cc7a1d3c3fbbb9bc9e53806a81", null ],
+    [ "clearFrameFilters", "class_whoops_1_1_run.html#a02f092e36f08b21f937e84afc6dde898", null ],
+    [ "clearHandlers", "class_whoops_1_1_run.html#a41549e22650cb568832ae95d968030c1", null ],
+    [ "getFrameFilters", "class_whoops_1_1_run.html#aa749027e7b422622419cc18b8ad9214a", null ],
+    [ "getHandlers", "class_whoops_1_1_run.html#aa6bdaf5e38c874c9d6a0a13a52381946", null ],
+    [ "getSilenceErrorsInPaths", "class_whoops_1_1_run.html#ab2a27184893f68bb708765b0f8c9c47a", null ],
+    [ "handleError", "class_whoops_1_1_run.html#adbe5654e0484d5d30c0198e357aab1f8", null ],
+    [ "handleException", "class_whoops_1_1_run.html#aae08f6eba3e9d573a1d75f4ebd7a166d", null ],
+    [ "handleShutdown", "class_whoops_1_1_run.html#a7c5678723a4d46c72fd18ba9bdd4e9e4", null ],
+    [ "popHandler", "class_whoops_1_1_run.html#ae650d73e16dfca9eccb5dceb659da3ec", null ],
+    [ "prependHandler", "class_whoops_1_1_run.html#adf56352e31968442a918de578ec1408c", null ],
+    [ "pushHandler", "class_whoops_1_1_run.html#acd8cff47cf1030705a4be6e42d409e49", null ],
+    [ "register", "class_whoops_1_1_run.html#ac8e471d48b96395624cc02f962ee7801", null ],
+    [ "removeFirstHandler", "class_whoops_1_1_run.html#afc6e70b44029203ba5287a6668cf85a7", null ],
+    [ "removeLastHandler", "class_whoops_1_1_run.html#a04575b4f6c3dbb6a4084fb6b513ea2d9", null ],
+    [ "sendExitCode", "class_whoops_1_1_run.html#af99a2092f34de00e335c550964d6a426", null ],
+    [ "sendHttpCode", "class_whoops_1_1_run.html#af903acfb5ec0aae4ccef412fcac9026b", null ],
+    [ "setInspectorFactory", "class_whoops_1_1_run.html#aafeffd14ba931db9c00f3f6b0eb80816", null ],
+    [ "silenceErrorsInPaths", "class_whoops_1_1_run.html#a56de55c1a9c7b32485a8c9ddb9ff1051", null ],
+    [ "unregister", "class_whoops_1_1_run.html#a24646fbd3594994d3cae6c3ce8ab6c22", null ],
+    [ "writeToOutput", "class_whoops_1_1_run.html#a1626b99f26e3e8187cdb754f3895b03b", null ]
+];

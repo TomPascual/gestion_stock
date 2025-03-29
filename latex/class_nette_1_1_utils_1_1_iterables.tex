@@ -1,0 +1,184 @@
+\doxysection{Nette\textbackslash{}Utils\textbackslash{}Iterables Class Reference}
+\hypertarget{class_nette_1_1_utils_1_1_iterables}{}\label{class_nette_1_1_utils_1_1_iterables}\index{Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_iterables_a7aa5a73d3490b24e5847a3eb5604a5a0}{contains}} (iterable \$iterable, mixed \$value)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_iterables_aaa3380196328b369c9e1a76e4a3ad33e}{contains\+Key}} (iterable \$iterable, mixed \$key)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_iterables_a629a2a7f6e1dc0c19aa567ff047dc7d6}{first}} (iterable \$iterable, ?callable \$predicate=null, ?callable \$else=null)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_iterables_ac40b7fa259e602d5a548102a5730d6af}{first\+Key}} (iterable \$iterable, ?callable \$predicate=null, ?callable \$else=null)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_iterables_ae9b46386ce9b8c438d067e2e3a0f29ad}{some}} (iterable \$iterable, callable \$predicate)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_iterables_aa987005c67614e431ac171f37de31faa}{every}} (iterable \$iterable, callable \$predicate)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_iterables_a66c752f487849b6d8cc3c72600871188}{filter}} (iterable \$iterable, callable \$predicate)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_iterables_a360498e623c8315fd1b6715f1b30817b}{map}} (iterable \$iterable, callable \$transformer)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_iterables_afef39d8efc15b6353479743f2dd56282}{map\+With\+Keys}} (iterable \$iterable, callable \$transformer)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_iterables_a6398ffd79aba00301d93bb6c796062db}{memoize}} (iterable \$iterable)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_iterables_a501109813bf5fc86828c5ef2e1d39bfe}{to\+Iterator}} (iterable \$iterable)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utilities for iterables. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_nette_1_1_utils_1_1_iterables_a7aa5a73d3490b24e5847a3eb5604a5a0}\index{Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}!contains@{contains}}
+\index{contains@{contains}!Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_iterables_a7aa5a73d3490b24e5847a3eb5604a5a0} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Iterables\+::contains (\begin{DoxyParamCaption}\item[{iterable}]{\$iterable}{, }\item[{mixed}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\doxylink{namespace_tests}{Tests} for the presence of value. \Hypertarget{class_nette_1_1_utils_1_1_iterables_aaa3380196328b369c9e1a76e4a3ad33e}\index{Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}!containsKey@{containsKey}}
+\index{containsKey@{containsKey}!Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}}
+\doxysubsubsection{\texorpdfstring{containsKey()}{containsKey()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_iterables_aaa3380196328b369c9e1a76e4a3ad33e} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Iterables\+::contains\+Key (\begin{DoxyParamCaption}\item[{iterable}]{\$iterable}{, }\item[{mixed}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\doxylink{namespace_tests}{Tests} for the presence of key. \Hypertarget{class_nette_1_1_utils_1_1_iterables_aa987005c67614e431ac171f37de31faa}\index{Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}!every@{every}}
+\index{every@{every}!Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}}
+\doxysubsubsection{\texorpdfstring{every()}{every()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_iterables_aa987005c67614e431ac171f37de31faa} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Iterables\+::every (\begin{DoxyParamCaption}\item[{iterable}]{\$iterable}{, }\item[{callable}]{\$predicate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\doxylink{namespace_tests}{Tests} whether all elements in the iterator pass the test implemented by the provided function. @template K @template V 
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$K,V$>$} & \$iterable \\
+\hline
+{\em callable(V,K,iterable$<$K,V$>$)} & bool \$predicate \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_nette_1_1_utils_1_1_iterables_a66c752f487849b6d8cc3c72600871188}\index{Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}!filter@{filter}}
+\index{filter@{filter}!Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_iterables_a66c752f487849b6d8cc3c72600871188} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Iterables\+::filter (\begin{DoxyParamCaption}\item[{iterable}]{\$iterable}{, }\item[{callable}]{\$predicate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Iterator that filters elements according to a given \$predicate. Maintains original keys. @template K @template V 
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$K,V$>$} & \$iterable \\
+\hline
+{\em callable(V,K,iterable$<$K,V$>$)} & bool \$predicate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Generator\texorpdfstring{$<$}{<}K, V\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_iterables_a629a2a7f6e1dc0c19aa567ff047dc7d6}\index{Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}!first@{first}}
+\index{first@{first}!Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_iterables_a629a2a7f6e1dc0c19aa567ff047dc7d6} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Iterables\+::first (\begin{DoxyParamCaption}\item[{iterable}]{\$iterable}{, }\item[{?callable}]{\$predicate}{ = {\ttfamily null}, }\item[{?callable}]{\$else}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the first item (matching the specified predicate if given). If there is no such item, it returns result of invoking \$else or null. @template K @template V 
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$K,V$>$} & \$iterable \\
+\hline
+{\em ?callable(V,K,iterable$<$K,V$>$)} & bool \$predicate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+?V 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_iterables_ac40b7fa259e602d5a548102a5730d6af}\index{Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}!firstKey@{firstKey}}
+\index{firstKey@{firstKey}!Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}}
+\doxysubsubsection{\texorpdfstring{firstKey()}{firstKey()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_iterables_ac40b7fa259e602d5a548102a5730d6af} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Iterables\+::first\+Key (\begin{DoxyParamCaption}\item[{iterable}]{\$iterable}{, }\item[{?callable}]{\$predicate}{ = {\ttfamily null}, }\item[{?callable}]{\$else}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the key of first item (matching the specified predicate if given). If there is no such item, it returns result of invoking \$else or null. @template K @template V 
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$K,V$>$} & \$iterable \\
+\hline
+{\em ?callable(V,K,iterable$<$K,V$>$)} & bool \$predicate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+?K 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_iterables_a360498e623c8315fd1b6715f1b30817b}\index{Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}!map@{map}}
+\index{map@{map}!Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_iterables_a360498e623c8315fd1b6715f1b30817b} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Iterables\+::map (\begin{DoxyParamCaption}\item[{iterable}]{\$iterable}{, }\item[{callable}]{\$transformer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Iterator that transforms values by calling \$transformer. Maintains original keys. @template K @template V @template R 
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$K,V$>$} & \$iterable \\
+\hline
+{\em callable(V,K,iterable$<$K,V$>$)} & R \$transformer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Generator\texorpdfstring{$<$}{<}K, R\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_iterables_afef39d8efc15b6353479743f2dd56282}\index{Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}!mapWithKeys@{mapWithKeys}}
+\index{mapWithKeys@{mapWithKeys}!Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}}
+\doxysubsubsection{\texorpdfstring{mapWithKeys()}{mapWithKeys()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_iterables_afef39d8efc15b6353479743f2dd56282} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Iterables\+::map\+With\+Keys (\begin{DoxyParamCaption}\item[{iterable}]{\$iterable}{, }\item[{callable}]{\$transformer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Iterator that transforms keys and values by calling \$transformer. If it returns null, the element is skipped. @template K @template V @template ResV @template ResK 
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$K,V$>$} & \$iterable \\
+\hline
+{\em callable(V,K,iterable$<$K,V$>$)} & ?array\{ResV, ResK\} \$transformer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Generator\texorpdfstring{$<$}{<}ResV, ResK\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_iterables_a6398ffd79aba00301d93bb6c796062db}\index{Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}!memoize@{memoize}}
+\index{memoize@{memoize}!Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}}
+\doxysubsubsection{\texorpdfstring{memoize()}{memoize()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_iterables_a6398ffd79aba00301d93bb6c796062db} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Iterables\+::memoize (\begin{DoxyParamCaption}\item[{iterable}]{\$iterable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Wraps around iterator and caches its keys and values during iteration. This allows the data to be re-\/iterated multiple times. @template K @template V 
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$K,V$>$} & \$iterable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Iterator\+Aggregate\texorpdfstring{$<$}{<}K, V\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_iterables_ae9b46386ce9b8c438d067e2e3a0f29ad}\index{Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}!some@{some}}
+\index{some@{some}!Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}}
+\doxysubsubsection{\texorpdfstring{some()}{some()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_iterables_ae9b46386ce9b8c438d067e2e3a0f29ad} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Iterables\+::some (\begin{DoxyParamCaption}\item[{iterable}]{\$iterable}{, }\item[{callable}]{\$predicate}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\doxylink{namespace_tests}{Tests} whether at least one element in the iterator passes the test implemented by the provided function. @template K @template V 
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$K,V$>$} & \$iterable \\
+\hline
+{\em callable(V,K,iterable$<$K,V$>$)} & bool \$predicate \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_nette_1_1_utils_1_1_iterables_a501109813bf5fc86828c5ef2e1d39bfe}\index{Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}!toIterator@{toIterator}}
+\index{toIterator@{toIterator}!Nette\textbackslash{}Utils\textbackslash{}Iterables@{Nette\textbackslash{}Utils\textbackslash{}Iterables}}
+\doxysubsubsection{\texorpdfstring{toIterator()}{toIterator()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_iterables_a501109813bf5fc86828c5ef2e1d39bfe} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Iterables\+::to\+Iterator (\begin{DoxyParamCaption}\item[{iterable}]{\$iterable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates an iterator from anything that is iterable. @template K @template V 
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$K,V$>$} & \$iterable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Iterator\texorpdfstring{$<$}{<}K, V\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/nette/utils/src/\+Utils/Iterables.\+php\end{DoxyCompactItemize}

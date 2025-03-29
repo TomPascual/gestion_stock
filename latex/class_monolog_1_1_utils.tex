@@ -1,0 +1,137 @@
+\doxysection{Monolog\textbackslash{}Utils Class Reference}
+\hypertarget{class_monolog_1_1_utils}{}\label{class_monolog_1_1_utils}\index{Monolog\textbackslash{}Utils@{Monolog\textbackslash{}Utils}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_monolog_1_1_utils_a1acdcb1e6e8e610bb5feff6578fe20c1}\label{class_monolog_1_1_utils_a1acdcb1e6e8e610bb5feff6578fe20c1} 
+static {\bfseries get\+Class} (object \$object)
+\item 
+\Hypertarget{class_monolog_1_1_utils_aafc49265c9c26c635d32b49f7b710765}\label{class_monolog_1_1_utils_aafc49265c9c26c635d32b49f7b710765} 
+static {\bfseries substr} (string \$string, int \$start, ?int \$length=null)
+\item 
+static \mbox{\hyperlink{class_monolog_1_1_utils_a47166cbb0630764e585cd9df1b4c36b8}{canonicalize\+Path}} (string \$stream\+Url)
+\item 
+static \mbox{\hyperlink{class_monolog_1_1_utils_a622c864f326cb0e9c85f87c755638764}{json\+Encode}} (\$data, ?int \$encode\+Flags=null, bool \$ignore\+Errors=false)
+\item 
+static \mbox{\hyperlink{class_monolog_1_1_utils_a8b2862eca4d1fbb858c31baea39d691a}{handle\+Json\+Error}} (int \$code, \$data, ?int \$encode\+Flags=null)
+\item 
+static \mbox{\hyperlink{class_monolog_1_1_utils_a1704bb4bf78bc88b985ee560a11dd580}{expand\+Ini\+Shorthand\+Bytes}} (\$val)
+\item 
+\Hypertarget{class_monolog_1_1_utils_af3de792b4e90ad756a59a36ba64ca91a}\label{class_monolog_1_1_utils_af3de792b4e90ad756a59a36ba64ca91a} 
+static {\bfseries get\+Record\+Message\+For\+Exception} (\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}} \$record)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_monolog_1_1_utils_a664fa14ec0bbfd305d318bf3684a22f8}\label{class_monolog_1_1_utils_a664fa14ec0bbfd305d318bf3684a22f8} 
+const {\bfseries DEFAULT\+\_\+\+JSON\+\_\+\+FLAGS} = JSON\+\_\+\+UNESCAPED\+\_\+\+SLASHES \texorpdfstring{$\vert$}{|} JSON\+\_\+\+UNESCAPED\+\_\+\+UNICODE \texorpdfstring{$\vert$}{|} JSON\+\_\+\+PRESERVE\+\_\+\+ZERO\+\_\+\+FRACTION \texorpdfstring{$\vert$}{|} JSON\+\_\+\+INVALID\+\_\+\+UTF8\+\_\+\+SUBSTITUTE \texorpdfstring{$\vert$}{|} JSON\+\_\+\+PARTIAL\+\_\+\+OUTPUT\+\_\+\+ON\+\_\+\+ERROR
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_monolog_1_1_utils_a47166cbb0630764e585cd9df1b4c36b8}\index{Monolog\textbackslash{}Utils@{Monolog\textbackslash{}Utils}!canonicalizePath@{canonicalizePath}}
+\index{canonicalizePath@{canonicalizePath}!Monolog\textbackslash{}Utils@{Monolog\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{canonicalizePath()}{canonicalizePath()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_utils_a47166cbb0630764e585cd9df1b4c36b8} 
+static Monolog\textbackslash{}\+Utils\+::canonicalize\+Path (\begin{DoxyParamCaption}\item[{string}]{\$stream\+Url}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Makes sure if a relative path is passed in it is turned into an absolute path
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$stream\+Url} & stream URL or path without protocol \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_monolog_1_1_utils_a1704bb4bf78bc88b985ee560a11dd580}\index{Monolog\textbackslash{}Utils@{Monolog\textbackslash{}Utils}!expandIniShorthandBytes@{expandIniShorthandBytes}}
+\index{expandIniShorthandBytes@{expandIniShorthandBytes}!Monolog\textbackslash{}Utils@{Monolog\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{expandIniShorthandBytes()}{expandIniShorthandBytes()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_utils_a1704bb4bf78bc88b985ee560a11dd580} 
+static Monolog\textbackslash{}\+Utils\+::expand\+Ini\+Shorthand\+Bytes (\begin{DoxyParamCaption}\item[{}]{\$val}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts a string with a valid \textquotesingle{}memory\+\_\+limit\textquotesingle{} format, to bytes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | false & {\em \$val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}false Returns an integer representing bytes. Returns FALSE in case of error. 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_utils_a8b2862eca4d1fbb858c31baea39d691a}\index{Monolog\textbackslash{}Utils@{Monolog\textbackslash{}Utils}!handleJsonError@{handleJsonError}}
+\index{handleJsonError@{handleJsonError}!Monolog\textbackslash{}Utils@{Monolog\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{handleJsonError()}{handleJsonError()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_utils_a8b2862eca4d1fbb858c31baea39d691a} 
+static Monolog\textbackslash{}\+Utils\+::handle\+Json\+Error (\begin{DoxyParamCaption}\item[{int}]{\$code}{, }\item[{}]{\$data}{, }\item[{?int}]{\$encode\+Flags}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Handle a json\+\_\+encode failure.
+
+If the failure is due to invalid string encoding, try to clean the input and encode again. If the second encoding attempt fails, the initial error is not encoding related or the input can\textquotesingle{}t be cleaned then raise a descriptive exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$code} & return code of json\+\_\+last\+\_\+error function \\
+\hline
+mixed & {\em \$data} & data that was meant to be encoded \\
+\hline
+int & {\em \$encode\+Flags} & flags to pass to json encode, defaults to JSON\+\_\+\+UNESCAPED\+\_\+\+SLASHES \texorpdfstring{$\vert$}{|} JSON\+\_\+\+UNESCAPED\+\_\+\+UNICODE \texorpdfstring{$\vert$}{|} JSON\+\_\+\+PRESERVE\+\_\+\+ZERO\+\_\+\+FRACTION \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception if failure can\textquotesingle{}t be corrected \begin{DoxyReturn}{Returns}
+string JSON encoded data after error correction 
+\end{DoxyReturn}
+\Hypertarget{class_monolog_1_1_utils_a622c864f326cb0e9c85f87c755638764}\index{Monolog\textbackslash{}Utils@{Monolog\textbackslash{}Utils}!jsonEncode@{jsonEncode}}
+\index{jsonEncode@{jsonEncode}!Monolog\textbackslash{}Utils@{Monolog\textbackslash{}Utils}}
+\doxysubsubsection{\texorpdfstring{jsonEncode()}{jsonEncode()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_utils_a622c864f326cb0e9c85f87c755638764} 
+static Monolog\textbackslash{}\+Utils\+::json\+Encode (\begin{DoxyParamCaption}\item[{}]{\$data}{, }\item[{?int}]{\$encode\+Flags}{ = {\ttfamily null}, }\item[{bool}]{\$ignore\+Errors}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return the JSON representation of a value
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$data} & \\
+\hline
+int & {\em \$encode\+Flags} & flags to pass to json encode, defaults to DEFAULT\+\_\+\+JSON\+\_\+\+FLAGS \\
+\hline
+bool & {\em \$ignore\+Errors} & whether to ignore encoding errors or to throw on error, when ignored and the encoding fails, "{}null"{} is returned which is valid json for null \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception if encoding fails and errors are not ignored \begin{DoxyReturn}{Returns}
+string when errors are ignored and the encoding fails, "{}null"{} is returned which is valid json for null
+\end{DoxyReturn}
+Wrapper for JSON encoding that throws when an error occurs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & The value being encoded \\
+\hline
+int & {\em \$options} & JSON encode option bitmask \\
+\hline
+int & {\em \$depth} & Set the maximum depth. Must be greater than zero.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & if the JSON cannot be encoded.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.php.net/manual/en/function.json-encode.php}{\texttt{ https\+://www.\+php.\+net/manual/en/function.\+json-\/encode.\+php}} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+vendor/monolog/monolog/src/\+Monolog/Utils.\+php\item 
+vendor/guzzlehttp/guzzle/src/Utils.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\doxysection{Psy\textbackslash{}Util\textbackslash{}Str Class Reference}
+\hypertarget{class_psy_1_1_util_1_1_str}{}\label{class_psy_1_1_util_1_1_str}\index{Psy\textbackslash{}Util\textbackslash{}Str@{Psy\textbackslash{}Util\textbackslash{}Str}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_util_1_1_str_a4ce5adc547d468912ba28d460195a414}{unvis}} (string \$input)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_psy_1_1_util_1_1_str_a20f0d1cd4b09acf8f398e731b5bb5672}\label{class_psy_1_1_util_1_1_str_a20f0d1cd4b09acf8f398e731b5bb5672} 
+const {\bfseries UNVIS\+\_\+\+RX} =
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_psy_1_1_util_1_1_str_a1bcd01cd1df934b75a409fb2e6e11870}{unvis\+Replace}} (array \$match)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+String utility methods.
+
+\begin{DoxyAuthor}{Author}
+ju1ius 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_util_1_1_str_a4ce5adc547d468912ba28d460195a414}\index{Psy\textbackslash{}Util\textbackslash{}Str@{Psy\textbackslash{}Util\textbackslash{}Str}!unvis@{unvis}}
+\index{unvis@{unvis}!Psy\textbackslash{}Util\textbackslash{}Str@{Psy\textbackslash{}Util\textbackslash{}Str}}
+\doxysubsubsection{\texorpdfstring{unvis()}{unvis()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_util_1_1_str_a4ce5adc547d468912ba28d460195a414} 
+static Psy\textbackslash{}\+Util\textbackslash{}\+Str\+::unvis (\begin{DoxyParamCaption}\item[{string}]{\$input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Decodes a string encoded by libsd\textquotesingle{}s strvis.
+
+From {\ttfamily man 3 vis}\+:
+
+Use an ‘\+M’ to represent meta characters (characters with the 8th bit set), and use a caret ‘\texorpdfstring{$^\wedge$}{\string^}’ to represent control characters (see iscntrl(3)). The following formats are used\+: \begin{DoxyVerb} \040    Represents ASCII space.
+
+ \240    Represents Meta-space (&nbsp in HTML).
+
+ \M-C    Represents character ‘C’ with the 8th bit set.
+         Spans characters ‘\241’ through ‘\376’.
+
+ \M^C    Represents control character ‘C’ with the 8th bit set.
+         Spans characters ‘\200’ through ‘\237’, and ‘\377’ (as ‘\M^?’).
+
+ \^C     Represents the control character ‘C’.
+         Spans characters ‘\000’ through ‘\037’, and ‘\177’ (as ‘\^?’).
+\end{DoxyVerb}
+
+
+The other formats are supported by PHP\textquotesingle{}s stripcslashes, except for the \textbackslash{}s sequence (ASCII space).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$input} & The string to decode \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_psy_1_1_util_1_1_str_a1bcd01cd1df934b75a409fb2e6e11870}\index{Psy\textbackslash{}Util\textbackslash{}Str@{Psy\textbackslash{}Util\textbackslash{}Str}!unvisReplace@{unvisReplace}}
+\index{unvisReplace@{unvisReplace}!Psy\textbackslash{}Util\textbackslash{}Str@{Psy\textbackslash{}Util\textbackslash{}Str}}
+\doxysubsubsection{\texorpdfstring{unvisReplace()}{unvisReplace()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_util_1_1_str_a1bcd01cd1df934b75a409fb2e6e11870} 
+static Psy\textbackslash{}\+Util\textbackslash{}\+Str\+::unvis\+Replace (\begin{DoxyParamCaption}\item[{array}]{\$match}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Callback for Str\+::unvis.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$match} & The matches passed by preg\+\_\+replace\+\_\+callback \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Util/Str.\+php\end{DoxyCompactItemize}

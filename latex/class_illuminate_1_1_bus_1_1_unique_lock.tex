@@ -1,0 +1,97 @@
+\doxysection{Illuminate\textbackslash{}Bus\textbackslash{}Unique\+Lock Class Reference}
+\hypertarget{class_illuminate_1_1_bus_1_1_unique_lock}{}\label{class_illuminate_1_1_bus_1_1_unique_lock}\index{Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock@{Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_unique_lock_a13c0a489f9c7956efabd5537d2dc476c}{\+\_\+\+\_\+construct}} (Cache \$cache)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_unique_lock_a9c5b2b2f327d8ca5d3971c5100210a4a}{acquire}} (\$job)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_unique_lock_a29ba423420e2c228e3091eab4b5b98d3}{release}} (\$job)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_unique_lock_a5f2bbd11ee9efda5a79ed0c502ef8ade}{get\+Key}} (\$job)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_bus_1_1_unique_lock_a8cd8d61c9e0c94e189dfdb009e4b0f85}\label{class_illuminate_1_1_bus_1_1_unique_lock_a8cd8d61c9e0c94e189dfdb009e4b0f85} 
+{\bfseries \$cache}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_bus_1_1_unique_lock_a13c0a489f9c7956efabd5537d2dc476c}\index{Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock@{Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock@{Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_unique_lock_a13c0a489f9c7956efabd5537d2dc476c} 
+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Unique\+Lock\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Cache}]{\$cache}{}\end{DoxyParamCaption})}
+
+Create a new unique lock manager instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Repository & {\em \$cache} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_bus_1_1_unique_lock_a9c5b2b2f327d8ca5d3971c5100210a4a}\index{Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock@{Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock}!acquire@{acquire}}
+\index{acquire@{acquire}!Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock@{Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock}}
+\doxysubsubsection{\texorpdfstring{acquire()}{acquire()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_unique_lock_a9c5b2b2f327d8ca5d3971c5100210a4a} 
+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Unique\+Lock\+::acquire (\begin{DoxyParamCaption}\item[{}]{\$job}{}\end{DoxyParamCaption})}
+
+Attempt to acquire a lock for the given job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_unique_lock_a5f2bbd11ee9efda5a79ed0c502ef8ade}\index{Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock@{Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock}!getKey@{getKey}}
+\index{getKey@{getKey}!Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock@{Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock}}
+\doxysubsubsection{\texorpdfstring{getKey()}{getKey()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_unique_lock_a5f2bbd11ee9efda5a79ed0c502ef8ade} 
+static Illuminate\textbackslash{}\+Bus\textbackslash{}\+Unique\+Lock\+::get\+Key (\begin{DoxyParamCaption}\item[{}]{\$job}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generate the lock key for the given job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_bus_1_1_unique_lock_a29ba423420e2c228e3091eab4b5b98d3}\index{Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock@{Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock}!release@{release}}
+\index{release@{release}!Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock@{Illuminate\textbackslash{}Bus\textbackslash{}UniqueLock}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_bus_1_1_unique_lock_a29ba423420e2c228e3091eab4b5b98d3} 
+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Unique\+Lock\+::release (\begin{DoxyParamCaption}\item[{}]{\$job}{}\end{DoxyParamCaption})}
+
+Release the lock for the given job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Bus/Unique\+Lock.\+php\end{DoxyCompactItemize}

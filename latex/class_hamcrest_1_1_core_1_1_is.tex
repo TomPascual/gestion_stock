@@ -1,0 +1,117 @@
+\doxysection{Hamcrest\textbackslash{}Core\textbackslash{}Is Class Reference}
+\hypertarget{class_hamcrest_1_1_core_1_1_is}{}\label{class_hamcrest_1_1_core_1_1_is}\index{Hamcrest\textbackslash{}Core\textbackslash{}Is@{Hamcrest\textbackslash{}Core\textbackslash{}Is}}
+Inheritance diagram for Hamcrest\textbackslash{}Core\textbackslash{}Is\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_hamcrest_1_1_core_1_1_is}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_hamcrest_1_1_core_1_1_is_aff481e17d197cfc2423dce0215b2b1ae}\label{class_hamcrest_1_1_core_1_1_is_aff481e17d197cfc2423dce0215b2b1ae} 
+{\bfseries \+\_\+\+\_\+construct} (\mbox{\hyperlink{interface_hamcrest_1_1_matcher}{Matcher}} \$matcher)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_core_1_1_is_aebdf18f5365ad2e26a2661250febd4bf}{matches}} (\$arg)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_core_1_1_is_a0dab557ab9b7b973071c90a70824188e}{describe\+To}} (\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$description)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_core_1_1_is_a019a517face7ca8a6362c1df1d82186b}{describe\+Mismatch}} (\$item, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$mismatch\+Description)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hamcrest_1_1_base_matcher}{Hamcrest\textbackslash{}\+Base\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+to\+String} ()
+\item 
+{\bfseries \+\_\+\+\_\+invoke} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_is_ad3bf3a2f08e3f766792823d15963852d}{is}} (\$value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Decorates another Matcher, retaining the behavior but allowing tests to be slightly more expressive.
+
+For example\+: assert\+That(\$cheese, equal\+To(\$smelly)) vs. assert\+That(\$cheese, is(equal\+To(\$smelly))) 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hamcrest_1_1_core_1_1_is_a019a517face7ca8a6362c1df1d82186b}\index{Hamcrest\textbackslash{}Core\textbackslash{}Is@{Hamcrest\textbackslash{}Core\textbackslash{}Is}!describeMismatch@{describeMismatch}}
+\index{describeMismatch@{describeMismatch}!Hamcrest\textbackslash{}Core\textbackslash{}Is@{Hamcrest\textbackslash{}Core\textbackslash{}Is}}
+\doxysubsubsection{\texorpdfstring{describeMismatch()}{describeMismatch()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_is_a019a517face7ca8a6362c1df1d82186b} 
+Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is\+::describe\+Mismatch (\begin{DoxyParamCaption}\item[{}]{\$item}{, }\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$description}{}\end{DoxyParamCaption})}
+
+Generate a description of why the matcher has not accepted the item. The description will be part of a larger description of why a matching failed, so it should be concise. This method assumes that {\ttfamily matches(\$item)} is false, but will not check this.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$item} & The item that the Matcher has rejected. \\
+\hline
+Description & {\em \$description} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_hamcrest_1_1_base_matcher_ae071961005d0f24d2ee1b3c62d9fe660}{Hamcrest\textbackslash{}\+Base\+Matcher}}.
+
+\Hypertarget{class_hamcrest_1_1_core_1_1_is_a0dab557ab9b7b973071c90a70824188e}\index{Hamcrest\textbackslash{}Core\textbackslash{}Is@{Hamcrest\textbackslash{}Core\textbackslash{}Is}!describeTo@{describeTo}}
+\index{describeTo@{describeTo}!Hamcrest\textbackslash{}Core\textbackslash{}Is@{Hamcrest\textbackslash{}Core\textbackslash{}Is}}
+\doxysubsubsection{\texorpdfstring{describeTo()}{describeTo()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_is_a0dab557ab9b7b973071c90a70824188e} 
+Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is\+::describe\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$description}{}\end{DoxyParamCaption})}
+
+Generates a description of the object. The description may be part of a description of a larger object of which this is just a component, so it should be worded appropriately.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Hamcrest\textbackslash{}\+Description & {\em \$description} & The description to be built or appended to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hamcrest_1_1_self_describing_a5358337d01bd2b3a048fa446f9e901d2}{Hamcrest\textbackslash{}\+Self\+Describing}}.
+
+\Hypertarget{class_hamcrest_1_1_core_1_1_is_ad3bf3a2f08e3f766792823d15963852d}\index{Hamcrest\textbackslash{}Core\textbackslash{}Is@{Hamcrest\textbackslash{}Core\textbackslash{}Is}!is@{is}}
+\index{is@{is}!Hamcrest\textbackslash{}Core\textbackslash{}Is@{Hamcrest\textbackslash{}Core\textbackslash{}Is}}
+\doxysubsubsection{\texorpdfstring{is()}{is()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_is_ad3bf3a2f08e3f766792823d15963852d} 
+static Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is\+::is (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Decorates another Matcher, retaining the behavior but allowing tests to be slightly more expressive.
+
+For example\+: assert\+That(\$cheese, equal\+To(\$smelly)) vs. assert\+That(\$cheese, is(equal\+To(\$smelly)))
+
+@factory \Hypertarget{class_hamcrest_1_1_core_1_1_is_aebdf18f5365ad2e26a2661250febd4bf}\index{Hamcrest\textbackslash{}Core\textbackslash{}Is@{Hamcrest\textbackslash{}Core\textbackslash{}Is}!matches@{matches}}
+\index{matches@{matches}!Hamcrest\textbackslash{}Core\textbackslash{}Is@{Hamcrest\textbackslash{}Core\textbackslash{}Is}}
+\doxysubsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_is_aebdf18f5365ad2e26a2661250febd4bf} 
+Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is\+::matches (\begin{DoxyParamCaption}\item[{}]{\$item}{}\end{DoxyParamCaption})}
+
+Evaluates the matcher for argument {\itshape \$item}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$item} & the object against which the matcher is evaluated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean {\ttfamily true} if {\itshape \$item} matches, otherwise {\ttfamily false}.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Hamcrest\textbackslash{}\+Base\+Matcher 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interface_hamcrest_1_1_matcher_a11ade9b98c2cf2e1871c2bb0e6d0de94}{Hamcrest\textbackslash{}\+Matcher}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/hamcrest/hamcrest-\/php/hamcrest/\+Hamcrest/\+Core/Is.\+php\end{DoxyCompactItemize}

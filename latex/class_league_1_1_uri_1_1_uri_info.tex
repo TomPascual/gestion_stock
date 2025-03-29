@@ -1,0 +1,87 @@
+\doxysection{League\textbackslash{}Uri\textbackslash{}Uri\+Info Class Reference}
+\hypertarget{class_league_1_1_uri_1_1_uri_info}{}\label{class_league_1_1_uri_1_1_uri_info}\index{League\textbackslash{}Uri\textbackslash{}UriInfo@{League\textbackslash{}Uri\textbackslash{}UriInfo}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_uri_info_ab6d41adbc454504f180a392e4fbb1ed5}{is\+Absolute}} (Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}} \$uri)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_uri_info_a668dfd2763071c971844e28c4906e5ec}{is\+Network\+Path}} (Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}} \$uri)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_uri_info_a9df9c7984fbdea968499e29cb85fe1a5}{is\+Absolute\+Path}} (Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}} \$uri)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_uri_info_adb2bb6b7d0bde4fae85c7974fcb9e61e}{is\+Relative\+Path}} (Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}} \$uri)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_uri_info_ab3281ae5e4ec7132f4d041ed86f9c8c8}{is\+Same\+Document}} (Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}} \$uri, Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}} \$base\+Uri)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_uri_info_a59a2f719cfeea77a0095eb44b2f39aa4}{get\+Origin}} (Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}} \$uri)
+\item 
+static \mbox{\hyperlink{class_league_1_1_uri_1_1_uri_info_a00d75bf4a31525196320560d8e44a587}{is\+Cross\+Origin}} (Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}} \$uri, Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}} \$base\+Uri)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000098}{Deprecated}}]since version 7.\+0.\+0 @code\+Coverage\+Ignore \end{DoxyRefDesc}
+\begin{DoxySeeAlso}{See also}
+Base\+Uri 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_league_1_1_uri_1_1_uri_info_a59a2f719cfeea77a0095eb44b2f39aa4}\index{League\textbackslash{}Uri\textbackslash{}UriInfo@{League\textbackslash{}Uri\textbackslash{}UriInfo}!getOrigin@{getOrigin}}
+\index{getOrigin@{getOrigin}!League\textbackslash{}Uri\textbackslash{}UriInfo@{League\textbackslash{}Uri\textbackslash{}UriInfo}}
+\doxysubsubsection{\texorpdfstring{getOrigin()}{getOrigin()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_info_a59a2f719cfeea77a0095eb44b2f39aa4} 
+static League\textbackslash{}\+Uri\textbackslash{}\+Uri\+Info\+::get\+Origin (\begin{DoxyParamCaption}\item[{Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}}}]{\$uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the URI origin property as defined by WHATWG URL living standard.
+
+\{\begin{DoxySeeAlso}{See also}
+\href{https://url.spec.whatwg.org/\#origin}{\texttt{ https\+://url.\+spec.\+whatwg.\+org/\#origin}}\}
+\end{DoxySeeAlso}
+For URI without a special scheme the method returns null For URI with the file scheme the method will return null (as this is left to the implementation decision) For URI with a special scheme the method returns the scheme followed by its authority (without the userinfo part) \Hypertarget{class_league_1_1_uri_1_1_uri_info_ab6d41adbc454504f180a392e4fbb1ed5}\index{League\textbackslash{}Uri\textbackslash{}UriInfo@{League\textbackslash{}Uri\textbackslash{}UriInfo}!isAbsolute@{isAbsolute}}
+\index{isAbsolute@{isAbsolute}!League\textbackslash{}Uri\textbackslash{}UriInfo@{League\textbackslash{}Uri\textbackslash{}UriInfo}}
+\doxysubsubsection{\texorpdfstring{isAbsolute()}{isAbsolute()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_info_ab6d41adbc454504f180a392e4fbb1ed5} 
+static League\textbackslash{}\+Uri\textbackslash{}\+Uri\+Info\+::is\+Absolute (\begin{DoxyParamCaption}\item[{Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}}}]{\$uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Tells whether the URI represents an absolute URI. \Hypertarget{class_league_1_1_uri_1_1_uri_info_a9df9c7984fbdea968499e29cb85fe1a5}\index{League\textbackslash{}Uri\textbackslash{}UriInfo@{League\textbackslash{}Uri\textbackslash{}UriInfo}!isAbsolutePath@{isAbsolutePath}}
+\index{isAbsolutePath@{isAbsolutePath}!League\textbackslash{}Uri\textbackslash{}UriInfo@{League\textbackslash{}Uri\textbackslash{}UriInfo}}
+\doxysubsubsection{\texorpdfstring{isAbsolutePath()}{isAbsolutePath()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_info_a9df9c7984fbdea968499e29cb85fe1a5} 
+static League\textbackslash{}\+Uri\textbackslash{}\+Uri\+Info\+::is\+Absolute\+Path (\begin{DoxyParamCaption}\item[{Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}}}]{\$uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Tells whether the URI represents an absolute path. \Hypertarget{class_league_1_1_uri_1_1_uri_info_a00d75bf4a31525196320560d8e44a587}\index{League\textbackslash{}Uri\textbackslash{}UriInfo@{League\textbackslash{}Uri\textbackslash{}UriInfo}!isCrossOrigin@{isCrossOrigin}}
+\index{isCrossOrigin@{isCrossOrigin}!League\textbackslash{}Uri\textbackslash{}UriInfo@{League\textbackslash{}Uri\textbackslash{}UriInfo}}
+\doxysubsubsection{\texorpdfstring{isCrossOrigin()}{isCrossOrigin()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_info_a00d75bf4a31525196320560d8e44a587} 
+static League\textbackslash{}\+Uri\textbackslash{}\+Uri\+Info\+::is\+Cross\+Origin (\begin{DoxyParamCaption}\item[{Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}}}]{\$uri}{, }\item[{Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}}}]{\$base\+Uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Tells whether two URI do not share the same origin.
+
+\begin{DoxySeeAlso}{See also}
+Uri\+Info\+::get\+Origin() 
+\end{DoxySeeAlso}
+\Hypertarget{class_league_1_1_uri_1_1_uri_info_a668dfd2763071c971844e28c4906e5ec}\index{League\textbackslash{}Uri\textbackslash{}UriInfo@{League\textbackslash{}Uri\textbackslash{}UriInfo}!isNetworkPath@{isNetworkPath}}
+\index{isNetworkPath@{isNetworkPath}!League\textbackslash{}Uri\textbackslash{}UriInfo@{League\textbackslash{}Uri\textbackslash{}UriInfo}}
+\doxysubsubsection{\texorpdfstring{isNetworkPath()}{isNetworkPath()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_info_a668dfd2763071c971844e28c4906e5ec} 
+static League\textbackslash{}\+Uri\textbackslash{}\+Uri\+Info\+::is\+Network\+Path (\begin{DoxyParamCaption}\item[{Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}}}]{\$uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Tell whether the URI represents a network path. \Hypertarget{class_league_1_1_uri_1_1_uri_info_adb2bb6b7d0bde4fae85c7974fcb9e61e}\index{League\textbackslash{}Uri\textbackslash{}UriInfo@{League\textbackslash{}Uri\textbackslash{}UriInfo}!isRelativePath@{isRelativePath}}
+\index{isRelativePath@{isRelativePath}!League\textbackslash{}Uri\textbackslash{}UriInfo@{League\textbackslash{}Uri\textbackslash{}UriInfo}}
+\doxysubsubsection{\texorpdfstring{isRelativePath()}{isRelativePath()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_info_adb2bb6b7d0bde4fae85c7974fcb9e61e} 
+static League\textbackslash{}\+Uri\textbackslash{}\+Uri\+Info\+::is\+Relative\+Path (\begin{DoxyParamCaption}\item[{Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}}}]{\$uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Tell whether the URI represents a relative path. \Hypertarget{class_league_1_1_uri_1_1_uri_info_ab3281ae5e4ec7132f4d041ed86f9c8c8}\index{League\textbackslash{}Uri\textbackslash{}UriInfo@{League\textbackslash{}Uri\textbackslash{}UriInfo}!isSameDocument@{isSameDocument}}
+\index{isSameDocument@{isSameDocument}!League\textbackslash{}Uri\textbackslash{}UriInfo@{League\textbackslash{}Uri\textbackslash{}UriInfo}}
+\doxysubsubsection{\texorpdfstring{isSameDocument()}{isSameDocument()}}
+{\footnotesize\ttfamily \label{class_league_1_1_uri_1_1_uri_info_ab3281ae5e4ec7132f4d041ed86f9c8c8} 
+static League\textbackslash{}\+Uri\textbackslash{}\+Uri\+Info\+::is\+Same\+Document (\begin{DoxyParamCaption}\item[{Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}}}]{\$uri}{, }\item[{Psr7\+Uri\+Interface\texorpdfstring{$\vert$}{|}\mbox{\hyperlink{interface_league_1_1_uri_1_1_contracts_1_1_uri_interface}{Uri\+Interface}}}]{\$base\+Uri}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Tells whether both URI refers to the same document. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/league/uri/Uri\+Info.\+php\end{DoxyCompactItemize}

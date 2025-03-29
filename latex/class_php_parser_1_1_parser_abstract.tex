@@ -1,0 +1,583 @@
+\doxysection{Php\+Parser\textbackslash{}Parser\+Abstract Class Reference}
+\hypertarget{class_php_parser_1_1_parser_abstract}{}\label{class_php_parser_1_1_parser_abstract}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+Inheritance diagram for Php\+Parser\textbackslash{}Parser\+Abstract\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_php_parser_1_1_parser_abstract}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a2b6502ab53a2d630fdd29f78e2062e80}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_php_parser_1_1_lexer}{Lexer}} \$lexer, ?\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}} \$php\+Version=null)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_add03c7678ba0545bddb502945706dff2}{parse}} (string \$code, ?\mbox{\hyperlink{interface_php_parser_1_1_error_handler}{Error\+Handler}} \$error\+Handler=null)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a9e8bd6d5f7236c3e7ca2f501328b93a9}{get\+Tokens}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a5c8fe46c7ada254b45c2ce6306700fad}{init\+Reduce\+Callbacks}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_af4773269de94f622f51a53a6b5c0f809}{do\+Parse}} ()
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a045f8b37b26383d665a7973179bf6c1a}\label{class_php_parser_1_1_parser_abstract_a045f8b37b26383d665a7973179bf6c1a} 
+{\bfseries emit\+Error} (\mbox{\hyperlink{class_php_parser_1_1_error}{Error}} \$error)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a5c0baf3737418e26e8156baf9367b3de}{get\+Error\+Message}} (int \$symbol, int \$state)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_af908f8c201aa8ec103c777ddb93a60dd}{get\+Expected\+Tokens}} (int \$state)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_aac340e372787b6c53da17cb29069d994}{get\+Attributes}} (int \$token\+Start\+Pos, int \$token\+End\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a784f37d00ade93483e53c882a51312c9}{get\+Attributes\+For\+Token}} (int \$token\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ab5b146c5c1862ef841c689ee1479e1ed}{handle\+Namespaces}} (array \$stmts)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_aa07c93df27b13a2b013e4a1d58905848}{handle\+Builtin\+Types}} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_name}{Name}} \$name)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a843fd223db9f72289e22531e1238daee}{get\+Attributes\+At}} (int \$stack\+Pos)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a850ef6f096facf600e1168132cf9b2ba}\label{class_php_parser_1_1_parser_abstract_a850ef6f096facf600e1168132cf9b2ba} 
+{\bfseries get\+Float\+Cast\+Kind} (string \$cast)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a7014d40f57938a2cffd1ff80f1aff8a2}{parse\+LNumber}} (string \$str, array \$attributes, bool \$allow\+Invalid\+Octal=false)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ab30bbd7d718474c40640d05551679690}{parse\+Num\+String}} (string \$str, array \$attributes)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_acf6a31d6c001ea0faf1760d7677995ef}{strip\+Indentation}} (string \$string, int \$indent\+Len, string \$indent\+Char, bool \$newline\+At\+Start, bool \$newline\+At\+End, array \$attributes)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_abd7f45d5bab4be23179a9dab0a5b5b6c}{parse\+Doc\+String}} (string \$start\+Token, \$contents, string \$end\+Token, array \$attributes, array \$end\+Token\+Attributes, bool \$parse\+Unicode\+Escape)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a717d7475ab203f5e9c69e2d8ee9f6b92}\label{class_php_parser_1_1_parser_abstract_a717d7475ab203f5e9c69e2d8ee9f6b92} 
+{\bfseries create\+Comment\+From\+Token} (\mbox{\hyperlink{class_php_parser_1_1_token}{Token}} \$token, int \$token\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a0b512ab06ab542be6ae952206b53daa6}{get\+Comment\+Before\+Token}} (int \$token\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a37a497d820cf55eec9d5fc195d3a5662}{maybe\+Create\+Zero\+Length\+Nop}} (int \$token\+Pos)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a067365af930961c88ab4dcd64cda9294}\label{class_php_parser_1_1_parser_abstract_a067365af930961c88ab4dcd64cda9294} 
+{\bfseries maybe\+Create\+Nop} (int \$token\+Start\+Pos, int \$token\+End\+Pos)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_abf21ff2377595136739edbd6b226da23}\label{class_php_parser_1_1_parser_abstract_abf21ff2377595136739edbd6b226da23} 
+{\bfseries handle\+Halt\+Compiler} ()
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a55e37f87f4640e292ed24dd6ca69c959}\label{class_php_parser_1_1_parser_abstract_a55e37f87f4640e292ed24dd6ca69c959} 
+{\bfseries inline\+Html\+Has\+Leading\+Newline} (int \$stack\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a4a7fd2481682d6523b4c53d4a7b2cad1}{create\+Empty\+Elem\+Attributes}} (int \$token\+Pos)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_ab342772c6d18d73b0253aa152e6730c4}\label{class_php_parser_1_1_parser_abstract_ab342772c6d18d73b0253aa152e6730c4} 
+{\bfseries fixup\+Array\+Destructuring} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_array__}{Array\+\_\+}} \$node)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_ab3820254952046b6b34cb7c293b37ada}\label{class_php_parser_1_1_parser_abstract_ab3820254952046b6b34cb7c293b37ada} 
+{\bfseries postprocess\+List} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_expr_1_1_list__}{Expr\textbackslash{}\+List\+\_\+}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a6e9284a87fbc08699f6330b9e0c7ca5d}{fixup\+Alternative\+Else}} (\$node)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_abcad9433a88e8e0b470cf98c93fbcb73}\label{class_php_parser_1_1_parser_abstract_abcad9433a88e8e0b470cf98c93fbcb73} 
+{\bfseries check\+Class\+Modifier} (int \$a, int \$b, int \$modifier\+Pos)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a8e07472bc96754d63b3b2b4758abc82d}\label{class_php_parser_1_1_parser_abstract_a8e07472bc96754d63b3b2b4758abc82d} 
+{\bfseries check\+Modifier} (int \$a, int \$b, int \$modifier\+Pos)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a70a6a7ffb4d5b3edc31d698abf32c667}\label{class_php_parser_1_1_parser_abstract_a70a6a7ffb4d5b3edc31d698abf32c667} 
+{\bfseries check\+Param} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_param}{Param}} \$node)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a6ae9c4bda5b31c58c5b3d7f54577b456}\label{class_php_parser_1_1_parser_abstract_a6ae9c4bda5b31c58c5b3d7f54577b456} 
+{\bfseries check\+Try\+Catch} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_try_catch}{Try\+Catch}} \$node)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_ad1b2cd9afce6e1c3e8494c31c36b6194}\label{class_php_parser_1_1_parser_abstract_ad1b2cd9afce6e1c3e8494c31c36b6194} 
+{\bfseries check\+Namespace} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_namespace__}{Namespace\+\_\+}} \$node)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a7852dc4baad772117bae4b9bab5d7ade}\label{class_php_parser_1_1_parser_abstract_a7852dc4baad772117bae4b9bab5d7ade} 
+{\bfseries check\+Class} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class__}{Class\+\_\+}} \$node, int \$name\+Pos)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_accc3fba5dd91f24fefc77797161b4341}\label{class_php_parser_1_1_parser_abstract_accc3fba5dd91f24fefc77797161b4341} 
+{\bfseries check\+Interface} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_interface__}{Interface\+\_\+}} \$node, int \$name\+Pos)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a30deb50afe092327708e583228443437}\label{class_php_parser_1_1_parser_abstract_a30deb50afe092327708e583228443437} 
+{\bfseries check\+Enum} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_enum__}{Enum\+\_\+}} \$node, int \$name\+Pos)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_ad32a99ec2d29929141f85b219353a3f6}\label{class_php_parser_1_1_parser_abstract_ad32a99ec2d29929141f85b219353a3f6} 
+{\bfseries check\+Class\+Method} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class_method}{Class\+Method}} \$node, int \$modifier\+Pos)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a590ecba36c50d77ae63dff610c01b372}\label{class_php_parser_1_1_parser_abstract_a590ecba36c50d77ae63dff610c01b372} 
+{\bfseries check\+Class\+Const} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_class_const}{Class\+Const}} \$node, int \$modifier\+Pos)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a60a3ab3fa388bd80c2c1fa194c3a2c0c}\label{class_php_parser_1_1_parser_abstract_a60a3ab3fa388bd80c2c1fa194c3a2c0c} 
+{\bfseries check\+Use\+Use} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_use_item}{Use\+Item}} \$node, int \$name\+Pos)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_ac30ed3fc383a05ec28c6416409181672}\label{class_php_parser_1_1_parser_abstract_ac30ed3fc383a05ec28c6416409181672} 
+{\bfseries check\+Property\+Hooks\+For\+Multi\+Property} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_stmt_1_1_property}{Property}} \$property, int \$hook\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_ae711ba06a03acc106402d0581b47c1fd}{check\+Empty\+Property\+Hook\+List}} (array \$hooks, int \$hook\+Pos)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_aed73e21167c11125fe4d20cdf5388306}\label{class_php_parser_1_1_parser_abstract_aed73e21167c11125fe4d20cdf5388306} 
+{\bfseries check\+Property\+Hook} (\mbox{\hyperlink{class_php_parser_1_1_node_1_1_property_hook}{Property\+Hook}} \$hook, ?int \$param\+List\+Pos)
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_adcd4daefcbe881f701c96ca4d3f5b497}\label{class_php_parser_1_1_parser_abstract_adcd4daefcbe881f701c96ca4d3f5b497} 
+{\bfseries check\+Property\+Hook\+Modifiers} (int \$a, int \$b, int \$modifier\+Pos)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a874c7b0d2e23eefe34170bbce6320585}{add\+Property\+Name\+To\+Hooks}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_acf3dbbdc02bb2a1ca5fdd6d58482dd23}{create\+Exit\+Expr}} (string \$name, int \$name\+Pos, array \$args, array \$attrs)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a49d832968d47764f6114cec6a27af6c5}{create\+Token\+Map}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_ab1f4395c4d06febd87da5fbef5487005}\label{class_php_parser_1_1_parser_abstract_ab1f4395c4d06febd87da5fbef5487005} 
+\mbox{\hyperlink{class_php_parser_1_1_lexer}{Lexer}} {\bfseries \$lexer}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a71856407071820e1adb7eeb32039bfc4}\label{class_php_parser_1_1_parser_abstract_a71856407071820e1adb7eeb32039bfc4} 
+\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}} {\bfseries \$php\+Version}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a87e03802a440dd24abea4a9efa05fe18}\label{class_php_parser_1_1_parser_abstract_a87e03802a440dd24abea4a9efa05fe18} 
+int {\bfseries \$token\+To\+Symbol\+Map\+Size}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_af676b61e6a124857f2487310265449a5}\label{class_php_parser_1_1_parser_abstract_af676b61e6a124857f2487310265449a5} 
+int {\bfseries \$action\+Table\+Size}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_ae959790a78543933b594b2adff7bb4c6}\label{class_php_parser_1_1_parser_abstract_ae959790a78543933b594b2adff7bb4c6} 
+int {\bfseries \$goto\+Table\+Size}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a230ade722cf38ed7bcc0ddd7f29b5260}\label{class_php_parser_1_1_parser_abstract_a230ade722cf38ed7bcc0ddd7f29b5260} 
+int {\bfseries \$invalid\+Symbol}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a6acf9578efc66ab2d1d8e4b832e36d88}\label{class_php_parser_1_1_parser_abstract_a6acf9578efc66ab2d1d8e4b832e36d88} 
+int {\bfseries \$error\+Symbol}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a76128d5dfbd5f314aebc6f4f73976490}\label{class_php_parser_1_1_parser_abstract_a76128d5dfbd5f314aebc6f4f73976490} 
+int {\bfseries \$default\+Action}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a8be372808f3f56d3509de57c3d2a0354}\label{class_php_parser_1_1_parser_abstract_a8be372808f3f56d3509de57c3d2a0354} 
+int {\bfseries \$unexpected\+Token\+Rule}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a98d635dac2bbf814e4c5633006c2e8ff}\label{class_php_parser_1_1_parser_abstract_a98d635dac2bbf814e4c5633006c2e8ff} 
+int {\bfseries \$\+YY2\+TBLSTATE}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_aba77cc335b2968545c79786ac0aca35d}\label{class_php_parser_1_1_parser_abstract_aba77cc335b2968545c79786ac0aca35d} 
+int {\bfseries \$num\+Non\+Leaf\+States}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a44e2d785664d9c3ba7343eacb8e7f5ec}\label{class_php_parser_1_1_parser_abstract_a44e2d785664d9c3ba7343eacb8e7f5ec} 
+array {\bfseries \$php\+Token\+To\+Symbol}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a24a49524dd637b6bffef2455f392d644}\label{class_php_parser_1_1_parser_abstract_a24a49524dd637b6bffef2455f392d644} 
+array {\bfseries \$drop\+Tokens}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_acc0572449cb668ef08db2d486d42faf3}\label{class_php_parser_1_1_parser_abstract_acc0572449cb668ef08db2d486d42faf3} 
+array {\bfseries \$token\+To\+Symbol}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a82bed7df51d2f39eb6092bc169f40d3e}\label{class_php_parser_1_1_parser_abstract_a82bed7df51d2f39eb6092bc169f40d3e} 
+array {\bfseries \$symbol\+To\+Name}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a82e8f5cbb6bb0a78ce81af98bbff9c8f}\label{class_php_parser_1_1_parser_abstract_a82e8f5cbb6bb0a78ce81af98bbff9c8f} 
+array {\bfseries \$productions}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a1987dd13cf5e417c092e6ceaddada3d5}\label{class_php_parser_1_1_parser_abstract_a1987dd13cf5e417c092e6ceaddada3d5} 
+array {\bfseries \$action\+Base}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a87829b65b9fda643ebce0b848da00942}\label{class_php_parser_1_1_parser_abstract_a87829b65b9fda643ebce0b848da00942} 
+array {\bfseries \$action}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a4195149a3da7bfd8605b456ba1db2922}{\$action\+Check}}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_aa1b04ada7f6838c9223075e32e2c64ff}\label{class_php_parser_1_1_parser_abstract_aa1b04ada7f6838c9223075e32e2c64ff} 
+array {\bfseries \$action\+Default}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a30be68256573ad56d13f65eeec1a88ec}\label{class_php_parser_1_1_parser_abstract_a30be68256573ad56d13f65eeec1a88ec} 
+array {\bfseries \$reduce\+Callbacks}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a68d644b8d14bc017690615a0ef8ac3c4}\label{class_php_parser_1_1_parser_abstract_a68d644b8d14bc017690615a0ef8ac3c4} 
+array {\bfseries \$goto\+Base}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_abb76f8bfd484f646cfcf7d235860c844}\label{class_php_parser_1_1_parser_abstract_abb76f8bfd484f646cfcf7d235860c844} 
+array {\bfseries \$goto}
+\item 
+array \mbox{\hyperlink{class_php_parser_1_1_parser_abstract_a8ce0efb0739c305b7d0802d6b79c5b75}{\$goto\+Check}}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a4c9f91aef25c8c8960157d6894104e86}\label{class_php_parser_1_1_parser_abstract_a4c9f91aef25c8c8960157d6894104e86} 
+array {\bfseries \$goto\+Default}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a6209180daa37394a53d9acb1a6423349}\label{class_php_parser_1_1_parser_abstract_a6209180daa37394a53d9acb1a6423349} 
+array {\bfseries \$rule\+To\+Non\+Terminal}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a5047b3a92fe23febf854a773dbc791bd}\label{class_php_parser_1_1_parser_abstract_a5047b3a92fe23febf854a773dbc791bd} 
+array {\bfseries \$rule\+To\+Length}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a6f1f1e39173ced5afbf4d429620da788}\label{class_php_parser_1_1_parser_abstract_a6f1f1e39173ced5afbf4d429620da788} 
+{\bfseries \$sem\+Value}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a5b964f3cc58e0a19b57573daa27b3aee}\label{class_php_parser_1_1_parser_abstract_a5b964f3cc58e0a19b57573daa27b3aee} 
+array {\bfseries \$sem\+Stack}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a87dfb8fe6cb28c27c653a891dfe84002}\label{class_php_parser_1_1_parser_abstract_a87dfb8fe6cb28c27c653a891dfe84002} 
+array {\bfseries \$token\+Start\+Stack}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a4ad0f817bc3ba05b72ccf643e0a6cf5d}\label{class_php_parser_1_1_parser_abstract_a4ad0f817bc3ba05b72ccf643e0a6cf5d} 
+array {\bfseries \$token\+End\+Stack}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a7c3176a04535b4751420a06f1fcf7dc1}\label{class_php_parser_1_1_parser_abstract_a7c3176a04535b4751420a06f1fcf7dc1} 
+\mbox{\hyperlink{interface_php_parser_1_1_error_handler}{Error\+Handler}} {\bfseries \$error\+Handler}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_aea4597c2e2bffaba2d0460e75e4468db}\label{class_php_parser_1_1_parser_abstract_aea4597c2e2bffaba2d0460e75e4468db} 
+int {\bfseries \$error\+State}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a4ccba948c44db0cbd89a19c388b39d87}\label{class_php_parser_1_1_parser_abstract_a4ccba948c44db0cbd89a19c388b39d87} 
+Spl\+Object\+Storage {\bfseries \$created\+Arrays}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_a816ebb17a8af4a51e42e11bc87681afe}\label{class_php_parser_1_1_parser_abstract_a816ebb17a8af4a51e42e11bc87681afe} 
+array {\bfseries \$tokens}
+\item 
+\Hypertarget{class_php_parser_1_1_parser_abstract_ab97bf7c2d05f68579b206e89f2064895}\label{class_php_parser_1_1_parser_abstract_ab97bf7c2d05f68579b206e89f2064895} 
+int {\bfseries \$token\+Pos}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_parser_abstract_a2b6502ab53a2d630fdd29f78e2062e80}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_a2b6502ab53a2d630fdd29f78e2062e80} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_lexer}{Lexer}}}]{\$lexer}{, }\item[{?\mbox{\hyperlink{class_php_parser_1_1_php_version}{Php\+Version}}}]{\$php\+Version}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Creates a parser instance.
+
+Options\+:
+\begin{DoxyItemize}
+\item php\+Version\+: ?Php\+Version,
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Lexer & {\em \$lexer} & A lexer \\
+\hline
+Php\+Version & {\em \$php\+Version} & PHP version to target, defaults to latest supported. This option is best-\/effort\+: Even if specified, parsing will generally assume the latest supported version and only adjust behavior in minor ways, for example by omitting errors in older versions and interpreting type hints as a name or identifier depending on version. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_parser_abstract_a874c7b0d2e23eefe34170bbce6320585}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!addPropertyNameToHooks@{addPropertyNameToHooks}}
+\index{addPropertyNameToHooks@{addPropertyNameToHooks}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{addPropertyNameToHooks()}{addPropertyNameToHooks()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_a874c7b0d2e23eefe34170bbce6320585} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::add\+Property\+Name\+To\+Hooks (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}}}]{\$node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Property | Param & {\em \$node} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_parser_abstract_ae711ba06a03acc106402d0581b47c1fd}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!checkEmptyPropertyHookList@{checkEmptyPropertyHookList}}
+\index{checkEmptyPropertyHookList@{checkEmptyPropertyHookList}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{checkEmptyPropertyHookList()}{checkEmptyPropertyHookList()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_ae711ba06a03acc106402d0581b47c1fd} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::check\+Empty\+Property\+Hook\+List (\begin{DoxyParamCaption}\item[{array}]{\$hooks}{, }\item[{int}]{\$hook\+Pos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Property\+Hook\mbox{[}$\,$\mbox{]} & {\em \$hooks} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_parser_abstract_a4a7fd2481682d6523b4c53d4a7b2cad1}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!createEmptyElemAttributes@{createEmptyElemAttributes}}
+\index{createEmptyElemAttributes@{createEmptyElemAttributes}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{createEmptyElemAttributes()}{createEmptyElemAttributes()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_a4a7fd2481682d6523b4c53d4a7b2cad1} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::create\+Empty\+Elem\+Attributes (\begin{DoxyParamCaption}\item[{int}]{\$token\+Pos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_parser_abstract_acf3dbbdc02bb2a1ca5fdd6d58482dd23}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!createExitExpr@{createExitExpr}}
+\index{createExitExpr@{createExitExpr}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{createExitExpr()}{createExitExpr()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_acf3dbbdc02bb2a1ca5fdd6d58482dd23} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::create\+Exit\+Expr (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{int}]{\$name\+Pos}{, }\item[{array}]{\$args}{, }\item[{array}]{\$attrs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$\+Node} & \\
+\hline
+\end{DoxyParams}
+Arg\texorpdfstring{$\vert$}{|}\+Node\textbackslash{}\+Variadic\+Placeholder\texorpdfstring{$>$}{>} \$args 
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$attrs \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_parser_abstract_a49d832968d47764f6114cec6a27af6c5}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!createTokenMap@{createTokenMap}}
+\index{createTokenMap@{createTokenMap}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{createTokenMap()}{createTokenMap()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_a49d832968d47764f6114cec6a27af6c5} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::create\+Token\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Creates the token map.
+
+The token map maps the PHP internal token identifiers to the identifiers used by the Parser. Additionally it maps T\+\_\+\+OPEN\+\_\+\+TAG\+\_\+\+WITH\+\_\+\+ECHO to T\+\_\+\+ECHO and T\+\_\+\+CLOSE\+\_\+\+TAG to \textquotesingle{};\textquotesingle{}.
+
+\begin{DoxyReturn}{Returns}
+array$<$int, int$>$ The token map 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_parser_abstract_af4773269de94f622f51a53a6b5c0f809}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!doParse@{doParse}}
+\index{doParse@{doParse}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{doParse()}{doParse()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_af4773269de94f622f51a53a6b5c0f809} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::do\+Parse (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+Stmt\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_parser_abstract_a6e9284a87fbc08699f6330b9e0c7ca5d}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!fixupAlternativeElse@{fixupAlternativeElse}}
+\index{fixupAlternativeElse@{fixupAlternativeElse}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{fixupAlternativeElse()}{fixupAlternativeElse()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_a6e9284a87fbc08699f6330b9e0c7ca5d} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::fixup\+Alternative\+Else (\begin{DoxyParamCaption}\item[{}]{\$node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Else\+If\+\_\+ | Else\+\_\+ & {\em \$node} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_parser_abstract_aac340e372787b6c53da17cb29069d994}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!getAttributes@{getAttributes}}
+\index{getAttributes@{getAttributes}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{getAttributes()}{getAttributes()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_aac340e372787b6c53da17cb29069d994} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::get\+Attributes (\begin{DoxyParamCaption}\item[{int}]{\$token\+Start\+Pos}{, }\item[{int}]{\$token\+End\+Pos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get attributes for a node with the given start and end token positions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$token\+Start\+Pos} & Token position the node starts at \\
+\hline
+int & {\em \$token\+End\+Pos} & Token position the node ends at \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ Attributes 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_parser_abstract_a843fd223db9f72289e22531e1238daee}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!getAttributesAt@{getAttributesAt}}
+\index{getAttributesAt@{getAttributesAt}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{getAttributesAt()}{getAttributesAt()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_a843fd223db9f72289e22531e1238daee} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::get\+Attributes\+At (\begin{DoxyParamCaption}\item[{int}]{\$stack\+Pos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get combined start and end attributes at a stack location
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$stack\+Pos} & Stack location\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ Combined start and end attributes 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_parser_abstract_a784f37d00ade93483e53c882a51312c9}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!getAttributesForToken@{getAttributesForToken}}
+\index{getAttributesForToken@{getAttributesForToken}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{getAttributesForToken()}{getAttributesForToken()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_a784f37d00ade93483e53c882a51312c9} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::get\+Attributes\+For\+Token (\begin{DoxyParamCaption}\item[{int}]{\$token\+Pos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get attributes for a single token at the given token position.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, mixed$>$ Attributes 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_parser_abstract_a0b512ab06ab542be6ae952206b53daa6}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!getCommentBeforeToken@{getCommentBeforeToken}}
+\index{getCommentBeforeToken@{getCommentBeforeToken}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{getCommentBeforeToken()}{getCommentBeforeToken()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_a0b512ab06ab542be6ae952206b53daa6} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::get\+Comment\+Before\+Token (\begin{DoxyParamCaption}\item[{int}]{\$token\+Pos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get last comment before the given token position, if any \Hypertarget{class_php_parser_1_1_parser_abstract_a5c0baf3737418e26e8156baf9367b3de}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!getErrorMessage@{getErrorMessage}}
+\index{getErrorMessage@{getErrorMessage}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{getErrorMessage()}{getErrorMessage()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_a5c0baf3737418e26e8156baf9367b3de} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::get\+Error\+Message (\begin{DoxyParamCaption}\item[{int}]{\$symbol}{, }\item[{int}]{\$state}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Format error message including expected tokens.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$symbol} & Unexpected symbol \\
+\hline
+int & {\em \$state} & State at time of error\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Formatted error message 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_parser_abstract_af908f8c201aa8ec103c777ddb93a60dd}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!getExpectedTokens@{getExpectedTokens}}
+\index{getExpectedTokens@{getExpectedTokens}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{getExpectedTokens()}{getExpectedTokens()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_af908f8c201aa8ec103c777ddb93a60dd} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::get\+Expected\+Tokens (\begin{DoxyParamCaption}\item[{int}]{\$state}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get limited number of expected tokens in given state.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$state} & State\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} Expected tokens. If too many, an empty array is returned. 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_parser_abstract_a9e8bd6d5f7236c3e7ca2f501328b93a9}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!getTokens@{getTokens}}
+\index{getTokens@{getTokens}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{getTokens()}{getTokens()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_a9e8bd6d5f7236c3e7ca2f501328b93a9} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::get\+Tokens (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return tokens for the last parse.
+
+\begin{DoxyReturn}{Returns}
+Token\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_parser_aedf108f190cd693632069845360e0a4f}{Php\+Parser\textbackslash{}\+Parser}}.
+
+\Hypertarget{class_php_parser_1_1_parser_abstract_aa07c93df27b13a2b013e4a1d58905848}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!handleBuiltinTypes@{handleBuiltinTypes}}
+\index{handleBuiltinTypes@{handleBuiltinTypes}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{handleBuiltinTypes()}{handleBuiltinTypes()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_aa07c93df27b13a2b013e4a1d58905848} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::handle\+Builtin\+Types (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_php_parser_1_1_node_1_1_name}{Name}}}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyReturn}{Returns}
+Name\texorpdfstring{$\vert$}{|}\+Identifier 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_parser_abstract_ab5b146c5c1862ef841c689ee1479e1ed}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!handleNamespaces@{handleNamespaces}}
+\index{handleNamespaces@{handleNamespaces}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{handleNamespaces()}{handleNamespaces()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_ab5b146c5c1862ef841c689ee1479e1ed} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::handle\+Namespaces (\begin{DoxyParamCaption}\item[{array}]{\$stmts}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Moves statements of semicolon-\/style namespaces into \$ns-\/\texorpdfstring{$>$}{>}stmts and checks various error conditions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Node\textbackslash{}\+Stmt\mbox{[}$\,$\mbox{]} & {\em \$stmts} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node\textbackslash{}\+Stmt\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_parser_abstract_a5c8fe46c7ada254b45c2ce6306700fad}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!initReduceCallbacks@{initReduceCallbacks}}
+\index{initReduceCallbacks@{initReduceCallbacks}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{initReduceCallbacks()}{initReduceCallbacks()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_a5c8fe46c7ada254b45c2ce6306700fad} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::init\+Reduce\+Callbacks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Initialize \$reduce\+Callbacks map. 
+
+Reimplemented in \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php7_a4ccb7e18d0f9d9498d0cd0448c1fee12}{Php\+Parser\textbackslash{}\+Parser\textbackslash{}\+Php7}}, and \mbox{\hyperlink{class_php_parser_1_1_parser_1_1_php8_a4bc20d5bc005f699d31d04ff7cfe7805}{Php\+Parser\textbackslash{}\+Parser\textbackslash{}\+Php8}}.
+
+\Hypertarget{class_php_parser_1_1_parser_abstract_a37a497d820cf55eec9d5fc195d3a5662}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!maybeCreateZeroLengthNop@{maybeCreateZeroLengthNop}}
+\index{maybeCreateZeroLengthNop@{maybeCreateZeroLengthNop}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{maybeCreateZeroLengthNop()}{maybeCreateZeroLengthNop()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_a37a497d820cf55eec9d5fc195d3a5662} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::maybe\+Create\+Zero\+Length\+Nop (\begin{DoxyParamCaption}\item[{int}]{\$token\+Pos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create a zero-\/length nop to capture preceding comments, if any. \Hypertarget{class_php_parser_1_1_parser_abstract_add03c7678ba0545bddb502945706dff2}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!parse@{parse}}
+\index{parse@{parse}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_add03c7678ba0545bddb502945706dff2} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::parse (\begin{DoxyParamCaption}\item[{string}]{\$code}{, }\item[{?\mbox{\hyperlink{interface_php_parser_1_1_error_handler}{Error\+Handler}}}]{\$error\+Handler}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Parses PHP code into a node tree.
+
+If a non-\/throwing error handler is used, the parser will continue parsing after an error occurred and attempt to build a partial AST.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$code} & The source code to parse \\
+\hline
+Error\+Handler | null & {\em \$error\+Handler} & Error handler to use for lexer/parser errors, defaults to Error\+Handler\textbackslash{}\+Throwing.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node\textbackslash{}\+Stmt\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null Array of statements (or null non-\/throwing error handler is used and the parser was unable to recover from an error). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_php_parser_1_1_parser_a1b7c3b10ad786e7ef0b127be24a9c8d3}{Php\+Parser\textbackslash{}\+Parser}}.
+
+\Hypertarget{class_php_parser_1_1_parser_abstract_abd7f45d5bab4be23179a9dab0a5b5b6c}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!parseDocString@{parseDocString}}
+\index{parseDocString@{parseDocString}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{parseDocString()}{parseDocString()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_abd7f45d5bab4be23179a9dab0a5b5b6c} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::parse\+Doc\+String (\begin{DoxyParamCaption}\item[{string}]{\$start\+Token}{, }\item[{}]{\$contents}{, }\item[{string}]{\$end\+Token}{, }\item[{array}]{\$attributes}{, }\item[{array}]{\$end\+Token\+Attributes}{, }\item[{bool}]{\$parse\+Unicode\+Escape}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\texorpdfstring{$\vert$}{|}(\+Expr\texorpdfstring{$\vert$}{|}\+Interpolated\+String\+Part)\mbox{[}$\,$\mbox{]}} & \$contents \\
+\hline
+{\em array$<$string,mixed$>$} & \$attributes \\
+\hline
+{\em array$<$string,mixed$>$} & \$end\+Token\+Attributes \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_parser_abstract_a7014d40f57938a2cffd1ff80f1aff8a2}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!parseLNumber@{parseLNumber}}
+\index{parseLNumber@{parseLNumber}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{parseLNumber()}{parseLNumber()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_a7014d40f57938a2cffd1ff80f1aff8a2} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::parse\+LNumber (\begin{DoxyParamCaption}\item[{string}]{\$str}{, }\item[{array}]{\$attributes}{, }\item[{bool}]{\$allow\+Invalid\+Octal}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$attributes \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_parser_abstract_ab30bbd7d718474c40640d05551679690}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!parseNumString@{parseNumString}}
+\index{parseNumString@{parseNumString}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{parseNumString()}{parseNumString()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_ab30bbd7d718474c40640d05551679690} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::parse\+Num\+String (\begin{DoxyParamCaption}\item[{string}]{\$str}{, }\item[{array}]{\$attributes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parse a T\+\_\+\+NUM\+\_\+\+STRING token into either an integer or string node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$str} & Number string \\
+\hline
+ & {\em array$<$string,mixed$>$} & \$attributes Attributes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Int\+\_\+\texorpdfstring{$\vert$}{|}\+String\+\_\+ Integer or string node. 
+\end{DoxyReturn}
+\Hypertarget{class_php_parser_1_1_parser_abstract_acf6a31d6c001ea0faf1760d7677995ef}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!stripIndentation@{stripIndentation}}
+\index{stripIndentation@{stripIndentation}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{stripIndentation()}{stripIndentation()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_acf6a31d6c001ea0faf1760d7677995ef} 
+Php\+Parser\textbackslash{}\+Parser\+Abstract\+::strip\+Indentation (\begin{DoxyParamCaption}\item[{string}]{\$string}{, }\item[{int}]{\$indent\+Len}{, }\item[{string}]{\$indent\+Char}{, }\item[{bool}]{\$newline\+At\+Start}{, }\item[{bool}]{\$newline\+At\+End}{, }\item[{array}]{\$attributes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$string,mixed$>$} & \$attributes \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_php_parser_1_1_parser_abstract_a4195149a3da7bfd8605b456ba1db2922}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!\$actionCheck@{\$actionCheck}}
+\index{\$actionCheck@{\$actionCheck}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{\$actionCheck}{\$actionCheck}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_a4195149a3da7bfd8605b456ba1db2922} 
+array Php\+Parser\textbackslash{}\+Parser\+Abstract\+::\$action\+Check\hspace{0.3cm}{\ttfamily [protected]}}
+
+then the action is defaulted, i.\+e. \$action\+Default\mbox{[}\$state\mbox{]} should be used instead. \Hypertarget{class_php_parser_1_1_parser_abstract_a8ce0efb0739c305b7d0802d6b79c5b75}\index{PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}!\$gotoCheck@{\$gotoCheck}}
+\index{\$gotoCheck@{\$gotoCheck}!PhpParser\textbackslash{}ParserAbstract@{PhpParser\textbackslash{}ParserAbstract}}
+\doxysubsubsection{\texorpdfstring{\$gotoCheck}{\$gotoCheck}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_parser_abstract_a8ce0efb0739c305b7d0802d6b79c5b75} 
+array Php\+Parser\textbackslash{}\+Parser\+Abstract\+::\$goto\+Check\hspace{0.3cm}{\ttfamily [protected]}}
+
+then the goto state is defaulted, i.\+e. \$goto\+Default\mbox{[}\$non\+Terminal\mbox{]} should be used. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/nikic/php-\/parser/lib/\+Php\+Parser/Parser\+Abstract.\+php\end{DoxyCompactItemize}

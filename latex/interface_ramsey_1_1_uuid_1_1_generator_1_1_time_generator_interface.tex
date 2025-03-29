@@ -1,0 +1,46 @@
+\doxysection{Ramsey\textbackslash{}Uuid\textbackslash{}Generator\textbackslash{}Time\+Generator\+Interface Interface Reference}
+\hypertarget{interface_ramsey_1_1_uuid_1_1_generator_1_1_time_generator_interface}{}\label{interface_ramsey_1_1_uuid_1_1_generator_1_1_time_generator_interface}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Generator\textbackslash{}TimeGeneratorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Generator\textbackslash{}TimeGeneratorInterface}}
+Inheritance diagram for Ramsey\textbackslash{}Uuid\textbackslash{}Generator\textbackslash{}Time\+Generator\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.282932cm]{interface_ramsey_1_1_uuid_1_1_generator_1_1_time_generator_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_generator_1_1_time_generator_interface_a1decf6809a01800c56750bdc303e8841}{generate}} (\$node=null, ?int \$clock\+Seq=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A time generator generates strings of binary data based on a node ID, clock sequence, and the current time 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_ramsey_1_1_uuid_1_1_generator_1_1_time_generator_interface_a1decf6809a01800c56750bdc303e8841}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Generator\textbackslash{}TimeGeneratorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Generator\textbackslash{}TimeGeneratorInterface}!generate@{generate}}
+\index{generate@{generate}!Ramsey\textbackslash{}Uuid\textbackslash{}Generator\textbackslash{}TimeGeneratorInterface@{Ramsey\textbackslash{}Uuid\textbackslash{}Generator\textbackslash{}TimeGeneratorInterface}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_uuid_1_1_generator_1_1_time_generator_interface_a1decf6809a01800c56750bdc303e8841} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Generator\textbackslash{}\+Time\+Generator\+Interface\+::generate (\begin{DoxyParamCaption}\item[{}]{\$node}{ = {\ttfamily null}, }\item[{?int}]{\$clock\+Seq}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Generate a binary string from a node ID, clock sequence, and current time
+
+
+\begin{DoxyParams}[1]{Parameters}
+Hexadecimal | int | string | null & {\em \$node} & A 48-\/bit number representing the hardware address; this number may be represented as an integer or a hexadecimal string \\
+\hline
+int | null & {\em \$clock\+Seq} & A 14-\/bit number used to help avoid duplicates that could arise when the clock is set backwards in time or if the node ID changes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string A binary string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_generator_1_1_default_time_generator_ad3e72c9c061e5f129446008fa7bc64fe}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Generator\textbackslash{}\+Default\+Time\+Generator}}, and \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_generator_1_1_pecl_uuid_time_generator_ae5ae2bc01b3f345a5b7e350b117dd24c}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Generator\textbackslash{}\+Pecl\+Uuid\+Time\+Generator}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/ramsey/uuid/src/\+Generator/Time\+Generator\+Interface.\+php\end{DoxyCompactItemize}

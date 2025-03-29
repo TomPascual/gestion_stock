@@ -1,0 +1,63 @@
+\doxysection{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}Timestamp\+Last\+Comb\+Codec Class Reference}
+\hypertarget{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_last_comb_codec}{}\label{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_last_comb_codec}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampLastCombCodec@{Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}TimestampLastCombCodec}}
+Inheritance diagram for Ramsey\textbackslash{}Uuid\textbackslash{}Codec\textbackslash{}Timestamp\+Last\+Comb\+Codec\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_ramsey_1_1_uuid_1_1_codec_1_1_timestamp_last_comb_codec}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_string_codec}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Codec\textbackslash{}\+String\+Codec}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_string_codec_ab7df9cd376f688428bdd9a579184e7ab}{\+\_\+\+\_\+construct}} (private \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_builder_1_1_uuid_builder_interface}{Uuid\+Builder\+Interface}} \$builder)
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_string_codec_ae93ccae0e491356617d4c5ee1e54658d}{encode\+Binary}} (\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_interface}{Uuid\+Interface}} \$uuid)
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_string_codec_afd3d8a5321240d900b743593236bec7b}{decode}} (string \$encoded\+Uuid)
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_string_codec_a51b1d75bcb3feae071c206e804e45eed}{decode\+Bytes}} (string \$bytes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_codec_1_1_codec_interface}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Codec\textbackslash{}\+Codec\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_codec_1_1_codec_interface_a8c97b70970cf2f9cb55cfb8fbbcbe767}{encode}} (\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_uuid_interface}{Uuid\+Interface}} \$uuid)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_string_codec}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Codec\textbackslash{}\+String\+Codec}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_string_codec_afc7d4896d6a9c932c6c127a3eed1a887}{get\+Builder}} ()
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_codec_1_1_string_codec_afb69fa2766000fce22ce7d44c374f5ec}{get\+Bytes}} (string \$encoded\+Uuid)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Timestamp\+Last\+Comb\+Codec encodes and decodes COMBs, with the timestamp as the last 48 bits
+
+The Comb\+Generator when used with the String\+Codec (and, by proxy, the Timestamp\+Last\+Comb\+Codec) adds the timestamp to the last 48 bits of the COMB. The Timestamp\+Last\+Comb\+Codec is provided for the sake of consistency. In practice, it is identical to the standard String\+Codec but, it may be used with the Comb\+Generator for additional context when reading code.
+
+Consider the following code. By default, the codec used by Uuid\+Factory is the String\+Codec, but here, we explicitly set the Timestamp\+Last\+Comb\+Codec. It is redundant, but it is clear that we intend this COMB to be generated with the timestamp appearing at the end.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{php}
+\DoxyCodeLine{\ \ \$factory\ =\ \textcolor{keyword}{new}\ UuidFactory();}
+\DoxyCodeLine{\ }
+\DoxyCodeLine{\ \ \$factory-\/>setCodec(\textcolor{keyword}{new}\ TimestampLastCombCodec(\$factory-\/>getUuidBuilder()));}
+\DoxyCodeLine{\ }
+\DoxyCodeLine{\ \ \$factory-\/>setRandomGenerator(\textcolor{keyword}{new}\ CombGenerator(}
+\DoxyCodeLine{\ \ \ \ \ \ \$factory-\/>getRandomGenerator(),}
+\DoxyCodeLine{\ \ \ \ \ \ \$factory-\/>getNumberConverter()}
+\DoxyCodeLine{\ \ ));}
+\DoxyCodeLine{\ }
+\DoxyCodeLine{\ \ \$timestampLastComb\ =\ \$factory-\/>uuid4();}
+
+\end{DoxyCode}
+
+
+\doxylink{}{The Cost of GUIDs as Primary Keys  -\/immutable }
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/ramsey/uuid/src/\+Codec/Timestamp\+Last\+Comb\+Codec.\+php\end{DoxyCompactItemize}

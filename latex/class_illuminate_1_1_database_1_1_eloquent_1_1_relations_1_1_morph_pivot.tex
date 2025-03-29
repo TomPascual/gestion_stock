@@ -1,0 +1,828 @@
+\doxysection{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}Morph\+Pivot Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot}{}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}}
+Inheritance diagram for Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}Morph\+Pivot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.008043cm]{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_acb5c7b0ac7ca69254c02f2db656daca0}{delete}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a5e45963d72d1096d10b2480c6d01fe9a}{get\+Morph\+Type}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a1f40535a7b4cf6ebd0cb7ee7a6d576e0}{set\+Morph\+Type}} (\$morph\+Type)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a9774b0ec81938a3c43b469a2e4798fff}{set\+Morph\+Class}} (\$morph\+Class)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_aa84c717f16108bb2cdafd4f096f0f944}{get\+Queueable\+Id}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a22071dc93c69d48a0c7701938fc9d675}{new\+Query\+For\+Restoration}} (\$ids)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a97b40831545a88941868d5db3f53d06c}{\+\_\+\+\_\+construct}} (array \$attributes=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a52f835c7ee60c7dc4961114b1ab0106f}{fill}} (array \$attributes)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a3d1c1a8f1d58a4c5702f42c5e98b57f1}{force\+Fill}} (array \$attributes)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a8dc5e913fd2f91629ec3236fb8dc60fb}{qualify\+Column}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a72f8dfa458c97e9bb5d270faec154c54}{qualify\+Columns}} (\$columns)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a900384642adf2837230510ffbefcd939}{new\+Instance}} (\$attributes=\mbox{[}$\,$\mbox{]}, \$exists=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a4e8328211be67fcd6ce4ebc2e09a89a8}{new\+From\+Builder}} (\$attributes=\mbox{[}$\,$\mbox{]}, \$connection=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ada22151c81f2430d51aea812830caf29}{load}} (\$relations)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_aea6ec98541cba32b01371cb6628af9a4}{load\+Morph}} (\$relation, \$relations)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ae70d25af0d6d6e11782adb0596dd75d6}{load\+Missing}} (\$relations)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a8b9128c2776ea074b8549319aa2fca27}{load\+Aggregate}} (\$relations, \$column, \$function=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a2785483d3e2b5f78e7ffc088142f573d}{load\+Count}} (\$relations)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ae7ed6f9b82c68d99c5198a455ff3c552}{load\+Max}} (\$relations, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a10882648be12bf29e14a6384ef0183ac}{load\+Min}} (\$relations, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ab6decd288e72c5429f75f7e54e31af65}{load\+Sum}} (\$relations, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a2363a7462dfaa8751e18e25869ade04b}{load\+Avg}} (\$relations, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_aaffdfd1efa1ad38e2c9a65a9c836549e}{load\+Exists}} (\$relations)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a4e7c829e4e669557b601a856e2ed50aa}{load\+Morph\+Aggregate}} (\$relation, \$relations, \$column, \$function=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a7a64f1b8fedd5ca7fee6ce855156b74c}{load\+Morph\+Count}} (\$relation, \$relations)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ab92369cd51c2058dd236e4c951b0ae39}{load\+Morph\+Max}} (\$relation, \$relations, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_afd16c9df8b9c556fc296b85e4c76ee17}{load\+Morph\+Min}} (\$relation, \$relations, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a129e146d264fe7ede6f063d36648f7a8}{load\+Morph\+Sum}} (\$relation, \$relations, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a74dc48e7b1b87375a64535e016151a65}{load\+Morph\+Avg}} (\$relation, \$relations, \$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a6706ef4720e5f20d8fa8391a173aa4be}{update}} (array \$attributes=\mbox{[}$\,$\mbox{]}, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a7addf98fa5198f0786dd7adc12561c40}{update\+Or\+Fail}} (array \$attributes=\mbox{[}$\,$\mbox{]}, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a74e8df19839bab481f3d0d45a32fa027}{update\+Quietly}} (array \$attributes=\mbox{[}$\,$\mbox{]}, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_af780bde813ac92f0a5e7b52d2b3bd53d}{push}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ada232dde3598b3f74d3877c70b17da8d}{push\+Quietly}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ab97e69cf6331ec9a014b750e0dd02afe}{save\+Quietly}} (array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a4d38a1f2db58046b915ed78841fd76a4}{save}} (array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a11e6417839d2f8a3a37b7cbbb56119c7}{save\+Or\+Fail}} (array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_aa184be48758cf6d835c4d58d5097a8d5}{delete\+Quietly}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a63b4a0b5bf8756399dba7e384bfbeaea}{delete\+Or\+Fail}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_afd29b7ff643017f8d7dbee2848650617}{force\+Delete}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ad6136559ad409ff8395e8216d453f883}{new\+Query}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a36fc08cbf5e43cd90554a1742f04935e}{new\+Model\+Query}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a635700fc4ca6f1971e422d9174fa275d}{new\+Query\+Without\+Relationships}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_aece8ba28c04973f641508924229fc62b}{register\+Global\+Scopes}} (\$builder)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a347d3cc8d3d6e2ebc588e6a8a372368c}{new\+Query\+Without\+Scopes}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ae151ae9485b3a80007c772d9f573d9f4}{new\+Query\+Without\+Scope}} (\$scope)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ac28f9fce262e362ca2a20fc24f2f1d18}{new\+Eloquent\+Builder}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ae610d5d8d5f6f4e8f41a83210f6df5d0}{query}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ad6ef44b5576025efd821f328a4b178d6}{new\+Pivot}} (self \$parent, array \$attributes, \$table, \$exists, \$using=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a8ce90089d2f69bc81afe477e86fc5703}{has\+Named\+Scope}} (\$scope)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a30edf80d3b0628fb10c479a929752b35}{call\+Named\+Scope}} (\$scope, array \$parameters=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ad6ba822a5daf0daeb0fc8efd5bc4ffdd}{to\+Array}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a95b416b0f2ccef0721f98cf998d619de}{to\+Json}} (\$options=0)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a447899d6f0c809c425a3456c9e5bca57}{json\+Serialize}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_abed3331dc4b4d1dcc7197d7f108f50d6}{fresh}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ae4b922740b71cd232f62919db692faac}{with}}=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a77203218ab887a3f4a70efc8fb014510}{refresh}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a8a3c4dc1a2a2bf0a038ae92de9646da6}{replicate}} (?array \$except=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_af5c911d81e6a23efbafa00ec327e9d73}{replicate\+Quietly}} (?array \$except=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ad270cb357eb7825a726866f6c9b6940d}{is}} (\$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a768985eef70330452396133df2f1338c}{is\+Not}} (\$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ab1c572242d73a5f78bc67b9b49c87b69}{get\+Connection}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_afb10d3c47357c0f8261076a83b29f39b}{get\+Connection\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_aecb27fa48a6de0e139a44e413b01f909}{set\+Connection}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_acec3db2721d166c58134fb0baae4faa9}{get\+Table}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a8cd60ce241dd3026f75b3c8d0ccd9c75}{set\+Table}} (\$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a7fde42c73a89efe402eecffd6a754681}{get\+Key\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a22cad2f817daede1b86faf218dc29265}{set\+Key\+Name}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a37d2c52928b6fe3730b636e8878a6e14}{get\+Qualified\+Key\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_afb210088881d29aa1e2ff07d35ea86e3}{get\+Key\+Type}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a50f23b4866f574cba768924e10036e60}{set\+Key\+Type}} (\$type)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a3ab00b260adc86d26dffda17f48c98dc}{get\+Incrementing}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a257ccf3138d08b5ffbb2f23efaa8e56c}{set\+Incrementing}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_acf5b46d9f7bab88ae2f006885f7e2860}{get\+Key}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a08f64b4fd4635929bb781c15ace3d33a}{get\+Queueable\+Relations}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a0b6933ac4b6ebfb16a9e00d6587d5c0a}{get\+Queueable\+Connection}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a5a64d1e1c7b126db9a6dee1d29e5efcc}{get\+Route\+Key}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_aa6cb1e7c7338b8aa22718bd8eee9b9f5}{get\+Route\+Key\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_af309b858fbda9ac3259677e528d26c17}{resolve\+Route\+Binding}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}}, \$field=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a19cf9fbfe336fbd42d08d3c07aed11ea}{resolve\+Soft\+Deletable\+Route\+Binding}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}}, \$field=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_afe6bb9490ead2fb740840e89855ca651}{resolve\+Child\+Route\+Binding}} (\$child\+Type, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}}, \$field)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a3775232c15f886f63850e43524d59436}{resolve\+Soft\+Deletable\+Child\+Route\+Binding}} (\$child\+Type, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}}, \$field)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a12826f01d6929e09dd540fc5c8130ad0}{resolve\+Route\+Binding\+Query}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ae610d5d8d5f6f4e8f41a83210f6df5d0}{query}}, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}}, \$field=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_aaf9cad9533de2ca4828f595ff0fcdaef}{get\+Foreign\+Key}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_afb361bf815eb2c814f72a8adb06ed264}{get\+Per\+Page}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a2bf180c07e1e7be7d125a03886b284fe}{set\+Per\+Page}} (\$per\+Page)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_aacf6d72c774febf492e856e9896feecd}{broadcast\+Channel\+Route}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_aa1b43c4fcbc0dbe5e385e2c49af893c0}{broadcast\+Channel}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a20f52c6f32b038af23adbbeb727ccde5}{\+\_\+\+\_\+get}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a880e909f544477d8ecdfb12d3528e556}{\+\_\+\+\_\+set}} (\$key, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_aedecbe3b2a8c8fe62bcc4a6ca93d6050}{offset\+Exists}} (\$offset)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ad88bd2adcef7cc11bfd2a726b8df4fa3}{offset\+Get}} (\$offset)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a4fff842704b0a699d436364de2f649ef}{offset\+Set}} (\$offset, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a5590fb36fa21794b44bc604fe3f62cc4}{offset\+Unset}} (\$offset)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a06f8ebc214925e9a274774a4ec505b91}{\+\_\+\+\_\+isset}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_aecf15c4cae81519bc960cb6fab83a45d}{\+\_\+\+\_\+unset}} (\$key)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a16f80fe761c5da9fb0adb1fe1367c739}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a1a0230184a034d0007832f778799f968}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a53ba830b33984ec53d085f4a8c59714e}{escape\+When\+Casting\+To\+String}} (\$escape=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a383eefd20a4e6179b57ab785d1f25a68}{\+\_\+\+\_\+sleep}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_aa2912c7cee894068665c6fde6104b56e}{\+\_\+\+\_\+wakeup}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Stringable}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a72f7eb12d269e5cc998a4bb90d3ef790}{\+\_\+\+\_\+construct}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}}=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_afa982186aa5172143bd6755f9945871a}{after}} (\$search)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a5b10074463c823f03244d93597e8ef76}{after\+Last}} (\$search)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ab7325702d5f83e81d51e1c7c5cee7a07}{append}} (... \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ae0e36298e5fda05839d6e90450543d76}{new\+Line}} (\$count=1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a9c8590ee32315087b6dac919dcb3f085}{ascii}} (\$language=\textquotesingle{}en\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a61931478e2d3a25dc14f845e5ca18dcd}{basename}} (\$suffix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a930546d7c812db798668fb786abed83a}{char\+At}} (\$index)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_aac1f9a802378adaa5aba5cb70657699b}{chop\+Start}} (\$needle)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_aa59cd400474eec0cdee4292e5b65e808}{chop\+End}} (\$needle)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a785a9b83b4de80a754b2d10c33c446c1}{class\+Basename}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ad6681ef4c82a84717bc9e891da0af5de}{before}} (\$search)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a04a3cb6dfc746b43ba51e6b19999082b}{before\+Last}} (\$search)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_aec1295031aef2b91919aa9af63c4e4cb}{between}} (\$from, \$to)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_aab693f1920d42fdf69e49ef8b41602bc}{between\+First}} (\$from, \$to)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a4117ae007ed558f554d069236d75c7ac}{camel}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a5ba6e718be57fd046ff7f9c43a958b3c}{contains}} (\$needles, \$ignore\+Case=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a636e72fe7bb96e7e766fc17bb7cfb400}{contains\+All}} (\$needles, \$ignore\+Case=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a34fc3738fbc70d8a39404cd438424c02}{convert\+Case}} (int \$mode=MB\+\_\+\+CASE\+\_\+\+FOLD, ?string \$encoding=\textquotesingle{}UTF-\/8\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a73041e346984b17f2191b476ccc86e6c}{deduplicate}} (string \$character=\textquotesingle{} \textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ac8e1d8523e48a99a5ebb140025f55b88}{dirname}} (\$levels=1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a49b3a4041e61bef0fd8022399ee92ca3}{ends\+With}} (\$needles)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_aaf666d3847151f8e754933f8e296d936}{exactly}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a0071f2d7b10c6cc2846cabfac1642a1e}{excerpt}} (\$phrase=\textquotesingle{}\textquotesingle{}, \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a0006967749a588532ac78db37672e4ae}{explode}} (\$delimiter, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a19f3403bc259dee4d7ff83fc787e6e7b}{limit}}=PHP\+\_\+\+INT\+\_\+\+MAX)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_accfbea71b0d056b46b0d55ec00292aef}{split}} (\$pattern, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a19f3403bc259dee4d7ff83fc787e6e7b}{limit}}=-\/1, \$flags=0)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a5bb5134ff673e5ba3718a91e2fb0a944}{finish}} (\$cap)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a848f04a0588f631c89d2f9ffdfbda4dd}{is}} (\$pattern, \$ignore\+Case=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_abc746a3ef4cf707aeae98a269371e447}{is\+Ascii}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a37ad594f1b1ae924fcf2e44412c7c31f}{is\+Json}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_acdfbf2544f9a431788d183aee27b57d4}{is\+Url}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_abb94e103ccb3cc1438b2924f95f97b1b}{is\+Uuid}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_aad315ea41b7d3a167909c6c3727af6fb}{is\+Ulid}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a9bf3443fe037fc24419a2a604398c93b}{is\+Empty}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_acada217fa73373cf0914e5bc801eabf5}{is\+Not\+Empty}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a5b276e583bc61031a664c03499e4f963}{kebab}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a4bb705744acee7f85d53120c0b4ec6c2}{length}} (\$encoding=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a19f3403bc259dee4d7ff83fc787e6e7b}{limit}} (\$limit=100, \$end=\textquotesingle{}...\textquotesingle{}, \$preserve\+Words=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8ab54d74b6d6430baa03928a44596bef}{lower}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ad8e8d9cf5dede43be0d331e5f5606dd9}{markdown}} (array \$options=\mbox{[}$\,$\mbox{]}, array \$extensions=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a451fdecbcb941856e438caeb0208088a}{inline\+Markdown}} (array \$options=\mbox{[}$\,$\mbox{]}, array \$extensions=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ad96f1b9d490c48edde7f4cbb486abff2}{mask}} (\$character, \$index, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a4bb705744acee7f85d53120c0b4ec6c2}{length}}=null, \$encoding=\textquotesingle{}UTF-\/8\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_aba666f99e06250c7ebe885bf638ed5ed}{match}} (\$pattern)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ae295dd5449729c4c5fa47366f79571ce}{is\+Match}} (\$pattern)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a3b658b3fdf1e6792429d350b8799f7fb}{match\+All}} (\$pattern)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ade09d9618fbc70a5863c2659be47444d}{test}} (\$pattern)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a554be037b0e1cafac1f29ccb775cbe9e}{numbers}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a81d477c7595ed58955863b70c8f959a0}{pad\+Both}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a4bb705744acee7f85d53120c0b4ec6c2}{length}}, \$pad=\textquotesingle{} \textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a17fd95f51d87d191d49b676592850ba6}{pad\+Left}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a4bb705744acee7f85d53120c0b4ec6c2}{length}}, \$pad=\textquotesingle{} \textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a1933af0402b2445df760c03a3ddc9180}{pad\+Right}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a4bb705744acee7f85d53120c0b4ec6c2}{length}}, \$pad=\textquotesingle{} \textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a0ea1038412702a84fdad196f4e0a8829}{parse\+Callback}} (\$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a96fabe85cc4a6da106cbd8a95e62de64}{pipe}} (callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_aa6618cb35a591aa26c016782ecd6695d}{plural}} (\$count=2)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ae4c40e9b13f52e3d788a840a3813df0b}{plural\+Studly}} (\$count=2)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8cb6f0cec707f3c456d730c0b504cbb7}{plural\+Pascal}} (\$count=2)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a242bcd8ddf5c111c903002f6c337a872}{position}} (\$needle, \$offset=0, \$encoding=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a980898cb0dfcfce476e4ac58855d00aa}{prepend}} (... \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a1e510e3642da86a640b7de50886c6001}{remove}} (\$search, \$case\+Sensitive=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a85dd89cc8e4ec31df49bc5a884fc1fcc}{reverse}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_aba634a43d750ff56db6dd48efbe3440e}{repeat}} (int \$times)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ae34ffccc2eccb763030efba9c80fc0d7}{replace}} (\$search, \$replace, \$case\+Sensitive=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a1994b0c17a1e8923513111fee30c7579}{replace\+Array}} (\$search, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ae34ffccc2eccb763030efba9c80fc0d7}{replace}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a230665a200f72d89ac0fe961325bdc6d}{replace\+First}} (\$search, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ae34ffccc2eccb763030efba9c80fc0d7}{replace}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a35f2aa839144630cb7c9046a1fb07207}{replace\+Start}} (\$search, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ae34ffccc2eccb763030efba9c80fc0d7}{replace}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ad6c2b4e437cb5193d2faf8f42fc2ebc2}{replace\+Last}} (\$search, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ae34ffccc2eccb763030efba9c80fc0d7}{replace}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a7b30634def21b00dde1cb626badf0636}{replace\+End}} (\$search, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ae34ffccc2eccb763030efba9c80fc0d7}{replace}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_abb98c11497b675308ea63bc4b72ed8be}{replace\+Matches}} (\$pattern, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ae34ffccc2eccb763030efba9c80fc0d7}{replace}}, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a19f3403bc259dee4d7ff83fc787e6e7b}{limit}}=-\/1)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_af1e4f73eb7f7da5eac3e99681d6d4d4a}{scan}} (\$format)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a87bc76a7b8b3187dacea4b032e16a999}{squish}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a566af40cd8b218f27074ece9c584b09a}{start}} (\$prefix)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a9d1948c03ebe242a33cefb879fd67930}{strip\+Tags}} (\$allowed\+Tags=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ab4548c15dea5f97e0c4693961b7f05e7}{upper}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a0989a2c060853d7f1185f4d5afe91d83}{title}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_afe7c96d95e628255ce2ed6d8828addf9}{headline}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a7c5b0a457b433232e161275a18f3801a}{apa}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_aa154f887cc592fbeb0b7b357db3f036d}{transliterate}} (\$unknown=\textquotesingle{}?\textquotesingle{}, \$strict=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_aaf5570f7216f4d17e9156ba5a7a8b4c8}{singular}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a98e4ac0d9db27d85b354091d09a397f3}{slug}} (\$separator=\textquotesingle{}-\/\textquotesingle{}, \$language=\textquotesingle{}en\textquotesingle{}, \$dictionary=\mbox{[}\textquotesingle{}@\textquotesingle{}=$>$ \textquotesingle{}at\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a43ee282c2b41104917074380f32209c4}{snake}} (\$delimiter=\textquotesingle{}\+\_\+\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ad504792bce7b83250b37f012b31a8efa}{starts\+With}} (\$needles)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ad6669bfe17a261631958e954d2afbca1}{studly}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ab5a7825d452ecc954294f811edd556b4}{pascal}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_aeaa91bf78b56a5e1df7866aeb221ce1d}{substr}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a566af40cd8b218f27074ece9c584b09a}{start}}, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a4bb705744acee7f85d53120c0b4ec6c2}{length}}=null, \$encoding=\textquotesingle{}UTF-\/8\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a30ace4487b830fc3ff54bcd0380b8834}{substr\+Count}} (\$needle, \$offset=0, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a4bb705744acee7f85d53120c0b4ec6c2}{length}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a46f7b33191948679a8afb7bf0feefd0f}{substr\+Replace}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ae34ffccc2eccb763030efba9c80fc0d7}{replace}}, \$offset=0, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a4bb705744acee7f85d53120c0b4ec6c2}{length}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a2040aa55721b74701531f895ac704c96}{swap}} (array \$map)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a2370975954e4db7d789383e01ef2eebe}{take}} (int \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a19f3403bc259dee4d7ff83fc787e6e7b}{limit}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ab03babf42a124df24521fadd870f974a}{trim}} (\$characters=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a3199579fb6b21c01fd8aa96528087690}{ltrim}} (\$characters=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a3a107f2dac3ed3665d284bc9936d98c2}{rtrim}} (\$characters=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a49d9699a965ab274963db9479f25d4f5}{lcfirst}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_af6908718897888d852b01e1e583b7294}{ucfirst}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a1831f2ada4f5567908deae58717dc6da}{ucsplit}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a58f925412bb22129d0336f584e544d34}{when\+Contains}} (\$needles, \$callback, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_aa3dbff2eb8536c0e5f1bf60a7284d0e0}{when\+Contains\+All}} (array \$needles, \$callback, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a1196ef0d3297278c5b5d0437c6c5ac8f}{when\+Empty}} (\$callback, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a974d9f75be513815fd968ded89515bc0}{when\+Not\+Empty}} (\$callback, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_abc80ed3e516443948462508c943ebf59}{when\+Ends\+With}} (\$needles, \$callback, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a042c3ffefc0f50946d50683465909133}{when\+Exactly}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}}, \$callback, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8f6646eeefe0eb049fe158067ab1771f}{when\+Not\+Exactly}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}}, \$callback, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a34c627a8f4d007c25232eb8dd6de318c}{when\+Is}} (\$pattern, \$callback, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a683a7d4ac1f6efc8389a8f8c094c0b3a}{when\+Is\+Ascii}} (\$callback, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_aee406196b6828e1c983877b8b72081db}{when\+Is\+Uuid}} (\$callback, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ac7657cfddfdaaf7a280ab04add486e41}{when\+Is\+Ulid}} (\$callback, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a6bcee58f8b8943800614d4a0f858c286}{when\+Starts\+With}} (\$needles, \$callback, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a3eb4babc601480c504ced407318a0b90}{when\+Test}} (\$pattern, \$callback, \$default=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a558ce469e5711b48cd93141cf45ae733}{words}} (\$words=100, \$end=\textquotesingle{}...\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a5f39e2f6c0a211f5ae9708514ac12211}{word\+Count}} (\$characters=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a03810ca1cb6b725cd0e1275d51b5e003}{word\+Wrap}} (\$characters=75, \$break="{}\textbackslash{}n"{}, \$cut\+Long\+Words=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a72ce798498c20854c9269f473bcae9bd}{wrap}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ad6681ef4c82a84717bc9e891da0af5de}{before}}, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_afa982186aa5172143bd6755f9945871a}{after}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8677fe477757afb705171c83e413a95d}{unwrap}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ad6681ef4c82a84717bc9e891da0af5de}{before}}, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_afa982186aa5172143bd6755f9945871a}{after}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a40a4b0f917d2889c1cfe51e6ec0dc436}{to\+Html\+String}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a7256d086f23a04421b8336d0cd47df14}{to\+Base64}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_af3c1601f988e6d259c655da1873a596a}{from\+Base64}} (\$strict=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a801881397896da9f719dcf40bd8592be}{dump}} (... \$args)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a2d1c24cb81c6a97df06261967a9f1d6f}{to\+String}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_abf97b40f229d6c287420dad0ba9dc7b6}{to\+Integer}} (\$base=10)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_ab9b5f5c83a0ce60bb195d3ff0e1dfd57}{to\+Float}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a9978ae1a3cce923b03df9e1e31db3441}{to\+Boolean}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a615b9076673a01cfccaa23e6f8db4ed3}{to\+Date}} (\$format=null, \$tz=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a91a38e7a7b8242bfc457a5fb23c10a6a}{offset\+Exists}} (mixed \$offset)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a4a6e8552f0965ee4bd986261cef6bb92}{offset\+Get}} (mixed \$offset)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a47cf9a6c53cae757da2e07a26505af7f}{offset\+Set}} (mixed \$offset, mixed \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8f7ffa0ebfedbf6734e0fd87562f2a56}{offset\+Unset}} (mixed \$offset)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a60c436b0a093d40d3b03ac5fea9f26e7}{set\+Keys\+For\+Save\+Query}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ae610d5d8d5f6f4e8f41a83210f6df5d0}{query}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_aa5e73ba83581781d99539a6c7a282b73}{set\+Keys\+For\+Select\+Query}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ae610d5d8d5f6f4e8f41a83210f6df5d0}{query}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a90a8adab6471f6ff8859608924070649}{new\+Query\+For\+Collection\+Restoration}} (array \$ids)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a5fd57bae71ec484e7737ceca0389e970}{boot\+If\+Not\+Booted}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a533354a7f9cda86ab5b66e63fb30a13c}{initialize\+Traits}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_af8901d50796b22053fb08b64108e812d}{increment}} (\$column, \$amount=1, array \$extra=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a5450a36631d8c603cd97a3594c3995c6}{decrement}} (\$column, \$amount=1, array \$extra=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a9429d0d27f1ff4abe2db071f7c6e6790}{increment\+Or\+Decrement}} (\$column, \$amount, \$extra, \$method)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a112e847ace48ca4dcfd91c290ee76126}{increment\+Quietly}} (\$column, \$amount=1, array \$extra=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a66e4c26fa101c32fc50575ea8e21d0fc}{decrement\+Quietly}} (\$column, \$amount=1, array \$extra=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a3006c0ba8865ca2e25f24d4c8c49ec8f}{finish\+Save}} (array \$options)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a4e0acfad4c969e597e28507ed1d3eb75}{perform\+Update}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}} \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ae610d5d8d5f6f4e8f41a83210f6df5d0}{query}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a6c0cfed79659f92b7e19e259b61bd4fd}{get\+Key\+For\+Select\+Query}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_afb66e664efeacfea450075bc57484b62}{get\+Key\+For\+Save\+Query}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a20fbc91af12f5942d816b810702f3fad}{perform\+Insert}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}} \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ae610d5d8d5f6f4e8f41a83210f6df5d0}{query}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a3dce8f2f08d03a84e8e9da2a21b75efa}{insert\+And\+Set\+Id}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}} \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ae610d5d8d5f6f4e8f41a83210f6df5d0}{query}}, \$attributes)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a2b5db50a50fdc6f1ba3a790b3b3ffdd9}{perform\+Delete\+On\+Model}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_aebf24435019079dd7e79b289cae917a9}{new\+Base\+Query\+Builder}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_af4e7b372ed4677a0af2e88827b544c87}{resolve\+Child\+Route\+Binding\+Query}} (\$child\+Type, \$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}}, \$field)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_aec92bab649702cd24d19d5c1fdce7a32}{child\+Route\+Binding\+Relationship\+Name}} (\$child\+Type)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_aa1bd4b74490b2b4fdd700beba04d8cac}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_aa1bd4b74490b2b4fdd700beba04d8cac} 
+{\bfseries \$morph\+Type}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_ab3193d82ec99b4b7f17a3a804c98e937}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_ab3193d82ec99b4b7f17a3a804c98e937} 
+{\bfseries \$morph\+Class}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_pivot}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Pivot}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$guarded} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$connection}
+\item 
+{\bfseries \$table}
+\item 
+{\bfseries \$primary\+Key} = \textquotesingle{}id\textquotesingle{}
+\item 
+{\bfseries \$key\+Type} = \textquotesingle{}int\textquotesingle{}
+\item 
+{\bfseries \$with} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$with\+Count} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$per\+Page} = 15
+\item 
+{\bfseries \$escape\+When\+Casting\+To\+String} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Stringable}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$value}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_af90790549d2f4258e076e644a0033097}{clear\+Booted\+Models}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a4b1e4e4447161d90c606a321c7aa7ca4}{without\+Touching}} (callable \$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a816a0de81d196a7eee974fe41251a104}{without\+Touching\+On}} (array \$models, callable \$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ac4c5c5ca963196fd3f6136e0488e8fdb}{is\+Ignoring\+Touch}} (\$class=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ae34927e7f2e85bc8772ab92ed0bf9e2d}{should\+Be\+Strict}} (bool \$should\+Be\+Strict=true)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a72e20f374b3118fbbe69ab432895be84}{prevent\+Lazy\+Loading}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}}=true)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_afeb322c05e2305fefd68ff769c67cb3f}{handle\+Lazy\+Loading\+Violation\+Using}} (?callable \$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_af31e0a93a894818a198e2399c0279b01}{prevent\+Silently\+Discarding\+Attributes}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}}=true)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a9e32e0c2747c6f7f093aecddb4a44702}{handle\+Discarded\+Attribute\+Violation\+Using}} (?callable \$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_afa91c1ffb5850dca8c6a4fb3df5f741d}{prevent\+Accessing\+Missing\+Attributes}} (\$\mbox{\hyperlink{class_illuminate_1_1_support_1_1_stringable_a8a11ff9702f9b813db10d6f5dd1a8664}{value}}=true)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_aefe780ad6b252b3427a022f493da91d0}{handle\+Missing\+Attribute\+Violation\+Using}} (?callable \$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a05866e6d2ca594e6d47cd41bdde9acfd}{without\+Broadcasting}} (callable \$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a0003eb8a09caad6f03d993481b1da0a4}{on}} (\$connection=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_af6f8b0e64f85a4b9af23f485609659f7}{on\+Write\+Connection}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a66b6f0ccefa7c966419aeeb66dc1f752}{all}} (\$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ae4b922740b71cd232f62919db692faac}{with}} (\$relations)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a8d8ca393622d137d72c7e92d439db7d0}{destroy}} (\$ids)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a9748dc134e3b9be3144e59f990c0dda0}{force\+Destroy}} (\$ids)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ae610d5d8d5f6f4e8f41a83210f6df5d0}{query}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a6df1735b02b5dd656cea7f0637bb8e11}{resolve\+Connection}} (\$connection=null)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_abffad12124e89aebb84f364c34b25295}{get\+Connection\+Resolver}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a82ba2e3bf9ecdb4eafeab3884268df04}{set\+Connection\+Resolver}} (Resolver \$resolver)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_adb0a3d96d1a349f48c37053772891996}{unset\+Connection\+Resolver}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a544223cc2637db9a2dcae6ca688a5947}{prevents\+Lazy\+Loading}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a180c11f8e09b56cc963f4040249cdb70}{prevents\+Silently\+Discarding\+Attributes}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_af88dba5a7837aeaa2a2882908018d720}{prevents\+Accessing\+Missing\+Attributes}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ac0f19da655177c70cbcf148ff5a0e4e4}{\+\_\+\+\_\+call\+Static}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_pivot}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Pivot}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$incrementing} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$incrementing} = true
+\item 
+{\bfseries \$prevents\+Lazy\+Loading} = false
+\item 
+{\bfseries \$exists} = false
+\item 
+{\bfseries \$was\+Recently\+Created} = false
+\item 
+const {\bfseries CREATED\+\_\+\+AT} = \textquotesingle{}created\+\_\+at\textquotesingle{}
+\item 
+const {\bfseries UPDATED\+\_\+\+AT} = \textquotesingle{}updated\+\_\+at\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a354a6a85a212203026041cf5a440de43}{booting}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a0edbc8e32680078161b2593abd26917b}{boot}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_aa691e58635307b040b45508303f7406b}{boot\+Traits}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_afcb2b0a20a1fc233b3cbe377f117c6cc}{booted}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$resolver}
+\item 
+static {\bfseries \$dispatcher}
+\item 
+static {\bfseries \$booted} = \mbox{[}$\,$\mbox{]}
+\item 
+static {\bfseries \$trait\+Initializers} = \mbox{[}$\,$\mbox{]}
+\item 
+static {\bfseries \$global\+Scopes} = \mbox{[}$\,$\mbox{]}
+\item 
+static {\bfseries \$ignore\+On\+Touch} = \mbox{[}$\,$\mbox{]}
+\item 
+static {\bfseries \$models\+Should\+Prevent\+Lazy\+Loading} = false
+\item 
+static {\bfseries \$lazy\+Loading\+Violation\+Callback}
+\item 
+static {\bfseries \$models\+Should\+Prevent\+Silently\+Discarding\+Attributes} = false
+\item 
+static {\bfseries \$discarded\+Attribute\+Violation\+Callback}
+\item 
+static {\bfseries \$models\+Should\+Prevent\+Accessing\+Missing\+Attributes} = false
+\item 
+static {\bfseries \$missing\+Attribute\+Violation\+Callback}
+\item 
+static {\bfseries \$is\+Broadcasting} = true
+\item 
+static string {\bfseries \$builder} = Builder\+::class
+\item 
+static string {\bfseries \$collection\+Class} = Collection\+::class
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_acb5c7b0ac7ca69254c02f2db656daca0}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}!delete@{delete}}
+\index{delete@{delete}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_acb5c7b0ac7ca69254c02f2db656daca0} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Morph\+Pivot\+::delete (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Delete the pivot model record from the database.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a636c5284ee67be144b8121bf228f463c}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a5e45963d72d1096d10b2480c6d01fe9a}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}!getMorphType@{getMorphType}}
+\index{getMorphType@{getMorphType}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}}
+\doxysubsubsection{\texorpdfstring{getMorphType()}{getMorphType()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a5e45963d72d1096d10b2480c6d01fe9a} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Morph\+Pivot\+::get\+Morph\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the morph type for the pivot.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_aa84c717f16108bb2cdafd4f096f0f944}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}!getQueueableId@{getQueueableId}}
+\index{getQueueableId@{getQueueableId}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}}
+\doxysubsubsection{\texorpdfstring{getQueueableId()}{getQueueableId()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_aa84c717f16108bb2cdafd4f096f0f944} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Morph\+Pivot\+::get\+Queueable\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the queueable identity for the entity.
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a279e1d386b4f10adbdbf4980fad451d5}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a90a8adab6471f6ff8859608924070649}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}!newQueryForCollectionRestoration@{newQueryForCollectionRestoration}}
+\index{newQueryForCollectionRestoration@{newQueryForCollectionRestoration}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}}
+\doxysubsubsection{\texorpdfstring{newQueryForCollectionRestoration()}{newQueryForCollectionRestoration()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a90a8adab6471f6ff8859608924070649} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Morph\+Pivot\+::new\+Query\+For\+Collection\+Restoration (\begin{DoxyParamCaption}\item[{array}]{\$ids}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get a new query to restore multiple models by their queueable IDs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$ids} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder$<$static$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a22071dc93c69d48a0c7701938fc9d675}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}!newQueryForRestoration@{newQueryForRestoration}}
+\index{newQueryForRestoration@{newQueryForRestoration}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}}
+\doxysubsubsection{\texorpdfstring{newQueryForRestoration()}{newQueryForRestoration()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a22071dc93c69d48a0c7701938fc9d675} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Morph\+Pivot\+::new\+Query\+For\+Restoration (\begin{DoxyParamCaption}\item[{}]{\$ids}{}\end{DoxyParamCaption})}
+
+Get a new query to restore one or more models by their queueable IDs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | int & {\em \$ids} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder$<$static$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_ab0cd5a0b5ca255dad3e14b446c7ca1c0}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a60c436b0a093d40d3b03ac5fea9f26e7}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}!setKeysForSaveQuery@{setKeysForSaveQuery}}
+\index{setKeysForSaveQuery@{setKeysForSaveQuery}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}}
+\doxysubsubsection{\texorpdfstring{setKeysForSaveQuery()}{setKeysForSaveQuery()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a60c436b0a093d40d3b03ac5fea9f26e7} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Morph\+Pivot\+::set\+Keys\+For\+Save\+Query (\begin{DoxyParamCaption}\item[{}]{\$query}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set the keys for a save update query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder$<$static$>$ \$query \begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder$<$static$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a76ca5ba289b77c029c99500f4a6fbc7a}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_aa5e73ba83581781d99539a6c7a282b73}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}!setKeysForSelectQuery@{setKeysForSelectQuery}}
+\index{setKeysForSelectQuery@{setKeysForSelectQuery}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}}
+\doxysubsubsection{\texorpdfstring{setKeysForSelectQuery()}{setKeysForSelectQuery()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_aa5e73ba83581781d99539a6c7a282b73} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Morph\+Pivot\+::set\+Keys\+For\+Select\+Query (\begin{DoxyParamCaption}\item[{}]{\$query}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set the keys for a select query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder$<$static$>$ \$query \begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder$<$static$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model_a024a1411c57e1dae552adabb842810ba}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a9774b0ec81938a3c43b469a2e4798fff}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}!setMorphClass@{setMorphClass}}
+\index{setMorphClass@{setMorphClass}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}}
+\doxysubsubsection{\texorpdfstring{setMorphClass()}{setMorphClass()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a9774b0ec81938a3c43b469a2e4798fff} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Morph\+Pivot\+::set\+Morph\+Class (\begin{DoxyParamCaption}\item[{}]{\$morph\+Class}{}\end{DoxyParamCaption})}
+
+Set the morph class for the pivot.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$morph\+Class} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Morph\+Pivot 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a1f40535a7b4cf6ebd0cb7ee7a6d576e0}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}!setMorphType@{setMorphType}}
+\index{setMorphType@{setMorphType}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}MorphPivot}}
+\doxysubsubsection{\texorpdfstring{setMorphType()}{setMorphType()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_pivot_a1f40535a7b4cf6ebd0cb7ee7a6d576e0} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Morph\+Pivot\+::set\+Morph\+Type (\begin{DoxyParamCaption}\item[{}]{\$morph\+Type}{}\end{DoxyParamCaption})}
+
+Set the morph type for the pivot.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$morph\+Type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Database/\+Eloquent/\+Relations/Morph\+Pivot.\+php\end{DoxyCompactItemize}

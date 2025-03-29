@@ -6,10 +6,28 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Categorie;
 use App\Models\Fournisseur;
 
+/**
+ * Class ProduitFactory
+ *
+ * Factory pour générer des produits factices avec des noms réalistes,
+ * une quantité en stock, un prix, et des relations avec catégorie et fournisseur.
+ *
+ * @package Database\Factories
+ */
 class ProduitFactory extends Factory
 {
+    /**
+     * Localisation du faker utilisée (français).
+     *
+     * @var string|null
+     */
     protected static ?string $locale = 'fr_FR';
 
+    /**
+     * Définit les valeurs par défaut pour le modèle Produit.
+     *
+     * @return array<string, mixed>
+     */
     public function definition(): array
     {
         $noms = [

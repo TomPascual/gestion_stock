@@ -1,0 +1,97 @@
+\doxysection{Nette\textbackslash{}Utils\textbackslash{}Reflection Class Reference}
+\hypertarget{class_nette_1_1_utils_1_1_reflection}{}\label{class_nette_1_1_utils_1_1_reflection}\index{Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_reflection_a2a6bf5fd8311789d0138c124fd17341d}{is\+Builtin\+Type}} (string \$type)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_reflection_ae56a1d2cb8afd3964a9b92799d607ec2}{is\+Class\+Keyword}} (string \$name)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_reflection_a50ea686702421edb7c8c326a8c0c8b80}{get\+Parameter\+Default\+Value}} (\textbackslash{}Reflection\+Parameter \$param)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_reflection_ad43e5c9c3ffe1e8722c858804b9f6c8d}{get\+Property\+Declaring\+Class}} (\textbackslash{}Reflection\+Property \$prop)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_reflection_a95fe5f3cb4af70ed47b11b288b56c4ac}{get\+Method\+Declaring\+Method}} (\textbackslash{}\mbox{\hyperlink{class_nette_1_1_utils_1_1_reflection_method}{Reflection\+Method}} \$method)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_reflection_aaffe0cc4babb9b11e391c4b4ca612448}{are\+Comments\+Available}} ()
+\item 
+\Hypertarget{class_nette_1_1_utils_1_1_reflection_ab455f19f7448c1a51cb0a427919ba474}\label{class_nette_1_1_utils_1_1_reflection_ab455f19f7448c1a51cb0a427919ba474} 
+static {\bfseries to\+String} (\textbackslash{}Reflector \$ref)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_reflection_afdf7c65bd9b8e3480f0cbce8eca609a7}{expand\+Class\+Name}} (string \$name, \textbackslash{}Reflection\+Class \$context)
+\item 
+static \mbox{\hyperlink{class_nette_1_1_utils_1_1_reflection_ab81fca43dc70ed5c9a986fb323c06ccb}{get\+Use\+Statements}} (\textbackslash{}Reflection\+Class \$class)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+PHP reflection helpers. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_nette_1_1_utils_1_1_reflection_aaffe0cc4babb9b11e391c4b4ca612448}\index{Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}!areCommentsAvailable@{areCommentsAvailable}}
+\index{areCommentsAvailable@{areCommentsAvailable}!Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}}
+\doxysubsubsection{\texorpdfstring{areCommentsAvailable()}{areCommentsAvailable()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_reflection_aaffe0cc4babb9b11e391c4b4ca612448} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Reflection\+::are\+Comments\+Available (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Finds out if reflection has access to PHPdoc comments. Comments may not be available due to the opcode cache. \Hypertarget{class_nette_1_1_utils_1_1_reflection_afdf7c65bd9b8e3480f0cbce8eca609a7}\index{Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}!expandClassName@{expandClassName}}
+\index{expandClassName@{expandClassName}!Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}}
+\doxysubsubsection{\texorpdfstring{expandClassName()}{expandClassName()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_reflection_afdf7c65bd9b8e3480f0cbce8eca609a7} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Reflection\+::expand\+Class\+Name (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{\textbackslash{}Reflection\+Class}]{\$context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Expands the name of the class to full name in the given context of given class. Thus, it returns how the PHP parser would understand \$name if it were written in the body of the class \$context. 
+\begin{DoxyExceptions}{Exceptions}
+{\em Nette} & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_nette_1_1_utils_1_1_reflection_a95fe5f3cb4af70ed47b11b288b56c4ac}\index{Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}!getMethodDeclaringMethod@{getMethodDeclaringMethod}}
+\index{getMethodDeclaringMethod@{getMethodDeclaringMethod}!Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}}
+\doxysubsubsection{\texorpdfstring{getMethodDeclaringMethod()}{getMethodDeclaringMethod()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_reflection_a95fe5f3cb4af70ed47b11b288b56c4ac} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Reflection\+::get\+Method\+Declaring\+Method (\begin{DoxyParamCaption}\item[{\textbackslash{}\mbox{\hyperlink{class_nette_1_1_utils_1_1_reflection_method}{Reflection\+Method}}}]{\$method}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a reflection of a method that contains a declaration of \$method. Usually, each method is its own declaration, but the body of the method can also be in the trait and under a different name. \Hypertarget{class_nette_1_1_utils_1_1_reflection_a50ea686702421edb7c8c326a8c0c8b80}\index{Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}!getParameterDefaultValue@{getParameterDefaultValue}}
+\index{getParameterDefaultValue@{getParameterDefaultValue}!Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}}
+\doxysubsubsection{\texorpdfstring{getParameterDefaultValue()}{getParameterDefaultValue()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_reflection_a50ea686702421edb7c8c326a8c0c8b80} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Reflection\+::get\+Parameter\+Default\+Value (\begin{DoxyParamCaption}\item[{\textbackslash{}Reflection\+Parameter}]{\$param}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000187}{Deprecated}}]use native Reflection\+Parameter\+::get\+Default\+Value() \end{DoxyRefDesc}
+\Hypertarget{class_nette_1_1_utils_1_1_reflection_ad43e5c9c3ffe1e8722c858804b9f6c8d}\index{Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}!getPropertyDeclaringClass@{getPropertyDeclaringClass}}
+\index{getPropertyDeclaringClass@{getPropertyDeclaringClass}!Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}}
+\doxysubsubsection{\texorpdfstring{getPropertyDeclaringClass()}{getPropertyDeclaringClass()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_reflection_ad43e5c9c3ffe1e8722c858804b9f6c8d} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Reflection\+::get\+Property\+Declaring\+Class (\begin{DoxyParamCaption}\item[{\textbackslash{}Reflection\+Property}]{\$prop}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a reflection of a class or trait that contains a declaration of given property. Property can also be declared in the trait. \Hypertarget{class_nette_1_1_utils_1_1_reflection_ab81fca43dc70ed5c9a986fb323c06ccb}\index{Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}!getUseStatements@{getUseStatements}}
+\index{getUseStatements@{getUseStatements}!Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}}
+\doxysubsubsection{\texorpdfstring{getUseStatements()}{getUseStatements()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_reflection_ab81fca43dc70ed5c9a986fb323c06ccb} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Reflection\+::get\+Use\+Statements (\begin{DoxyParamCaption}\item[{\textbackslash{}Reflection\+Class}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$<$}{<}string, class-\/string\texorpdfstring{$>$}{>} of \mbox{[}alias =\texorpdfstring{$>$}{>} class\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_nette_1_1_utils_1_1_reflection_a2a6bf5fd8311789d0138c124fd17341d}\index{Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}!isBuiltinType@{isBuiltinType}}
+\index{isBuiltinType@{isBuiltinType}!Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}}
+\doxysubsubsection{\texorpdfstring{isBuiltinType()}{isBuiltinType()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_reflection_a2a6bf5fd8311789d0138c124fd17341d} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Reflection\+::is\+Builtin\+Type (\begin{DoxyParamCaption}\item[{string}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000185}{Deprecated}}]use Nette\textbackslash{}\+Utils\textbackslash{}\+Validator\+::is\+Builtin\+Type() \end{DoxyRefDesc}
+\Hypertarget{class_nette_1_1_utils_1_1_reflection_ae56a1d2cb8afd3964a9b92799d607ec2}\index{Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}!isClassKeyword@{isClassKeyword}}
+\index{isClassKeyword@{isClassKeyword}!Nette\textbackslash{}Utils\textbackslash{}Reflection@{Nette\textbackslash{}Utils\textbackslash{}Reflection}}
+\doxysubsubsection{\texorpdfstring{isClassKeyword()}{isClassKeyword()}}
+{\footnotesize\ttfamily \label{class_nette_1_1_utils_1_1_reflection_ae56a1d2cb8afd3964a9b92799d607ec2} 
+static Nette\textbackslash{}\+Utils\textbackslash{}\+Reflection\+::is\+Class\+Keyword (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000186}{Deprecated}}]use Nette\textbackslash{}\+Utils\textbackslash{}\+Validator\+::is\+Class\+Keyword() \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/nette/utils/src/\+Utils/Reflection.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,175 @@
+\doxysection{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory Interface Reference}
+\hypertarget{interface_illuminate_1_1_contracts_1_1_view_1_1_factory}{}\label{interface_illuminate_1_1_contracts_1_1_view_1_1_factory}\index{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_a365e4fa72d1383b4a88253b56d7bb847}{exists}} (\$view)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_ae12de4b0a0e7471b249f90379bc6ede0}{file}} (\$path, \$data=\mbox{[}$\,$\mbox{]}, \$merge\+Data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_a90c2d07e6ef06b56ed4cde07db9fc0b1}{make}} (\$view, \$data=\mbox{[}$\,$\mbox{]}, \$merge\+Data=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_a10f97524023cc34a2a6389a4df549714}{share}} (\$key, \$value=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_acc962b3603b5c59ebd4fd52dfd897850}{composer}} (\$views, \$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_acd1719e165b0d34675a61bbd983ea343}{creator}} (\$views, \$callback)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_af4d0bcfc233a7fea959863dd6a51eb54}{add\+Namespace}} (\$namespace, \$hints)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_a60bce65b7706a98ffbe12abc6d3aa8c9}{replace\+Namespace}} (\$namespace, \$hints)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_af4d0bcfc233a7fea959863dd6a51eb54}\index{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}!addNamespace@{addNamespace}}
+\index{addNamespace@{addNamespace}!Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{addNamespace()}{addNamespace()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_af4d0bcfc233a7fea959863dd6a51eb54} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+Factory\+::add\+Namespace (\begin{DoxyParamCaption}\item[{}]{\$namespace}{, }\item[{}]{\$hints}{}\end{DoxyParamCaption})}
+
+Add a new namespace to the loader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$namespace} & \\
+\hline
+string | array & {\em \$hints} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_acc962b3603b5c59ebd4fd52dfd897850}\index{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}!composer@{composer}}
+\index{composer@{composer}!Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{composer()}{composer()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_acc962b3603b5c59ebd4fd52dfd897850} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+Factory\+::composer (\begin{DoxyParamCaption}\item[{}]{\$views}{, }\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a view composer event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$views} & \\
+\hline
+\textbackslash{}\+Closure | string & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_acd1719e165b0d34675a61bbd983ea343}\index{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}!creator@{creator}}
+\index{creator@{creator}!Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{creator()}{creator()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_acd1719e165b0d34675a61bbd983ea343} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+Factory\+::creator (\begin{DoxyParamCaption}\item[{}]{\$views}{, }\item[{}]{\$callback}{}\end{DoxyParamCaption})}
+
+Register a view creator event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$views} & \\
+\hline
+\textbackslash{}\+Closure | string & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_a365e4fa72d1383b4a88253b56d7bb847}\index{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}!exists@{exists}}
+\index{exists@{exists}!Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_a365e4fa72d1383b4a88253b56d7bb847} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+Factory\+::exists (\begin{DoxyParamCaption}\item[{}]{\$view}{}\end{DoxyParamCaption})}
+
+Determine if a given view exists.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$view} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_ae12de4b0a0e7471b249f90379bc6ede0}\index{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}!file@{file}}
+\index{file@{file}!Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{file()}{file()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_ae12de4b0a0e7471b249f90379bc6ede0} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+Factory\+::file (\begin{DoxyParamCaption}\item[{}]{\$path}{, }\item[{}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$merge\+Data}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Get the evaluated view contents for the given path.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Support\textbackslash{}\+Arrayable | array & {\em \$data} & \\
+\hline
+array & {\em \$merge\+Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+View 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_a90c2d07e6ef06b56ed4cde07db9fc0b1}\index{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}!make@{make}}
+\index{make@{make}!Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{make()}{make()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_a90c2d07e6ef06b56ed4cde07db9fc0b1} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+Factory\+::make (\begin{DoxyParamCaption}\item[{}]{\$view}{, }\item[{}]{\$data}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$merge\+Data}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Get the evaluated view contents for the given view.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$view} & \\
+\hline
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Support\textbackslash{}\+Arrayable | array & {\em \$data} & \\
+\hline
+array & {\em \$merge\+Data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+View 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_a60bce65b7706a98ffbe12abc6d3aa8c9}\index{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}!replaceNamespace@{replaceNamespace}}
+\index{replaceNamespace@{replaceNamespace}!Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{replaceNamespace()}{replaceNamespace()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_a60bce65b7706a98ffbe12abc6d3aa8c9} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+Factory\+::replace\+Namespace (\begin{DoxyParamCaption}\item[{}]{\$namespace}{, }\item[{}]{\$hints}{}\end{DoxyParamCaption})}
+
+Replace the namespace hints for the given namespace.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$namespace} & \\
+\hline
+string | array & {\em \$hints} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_a10f97524023cc34a2a6389a4df549714}\index{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}!share@{share}}
+\index{share@{share}!Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}View\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{share()}{share()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_view_1_1_factory_a10f97524023cc34a2a6389a4df549714} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+Factory\+::share (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Add a piece of shared data to the environment.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$key} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Contracts/\+View/Factory.\+php\end{DoxyCompactItemize}

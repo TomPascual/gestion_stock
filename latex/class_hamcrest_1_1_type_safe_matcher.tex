@@ -1,0 +1,139 @@
+\doxysection{Hamcrest\textbackslash{}Type\+Safe\+Matcher Class Reference}
+\hypertarget{class_hamcrest_1_1_type_safe_matcher}{}\label{class_hamcrest_1_1_type_safe_matcher}\index{Hamcrest\textbackslash{}TypeSafeMatcher@{Hamcrest\textbackslash{}TypeSafeMatcher}}
+Inheritance diagram for Hamcrest\textbackslash{}Type\+Safe\+Matcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_hamcrest_1_1_type_safe_matcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_hamcrest_1_1_type_safe_matcher_a1dc28559bc30098056cab8912bda5c3a}\label{class_hamcrest_1_1_type_safe_matcher_a1dc28559bc30098056cab8912bda5c3a} 
+{\bfseries \+\_\+\+\_\+construct} (\$expected\+Type, \$expected\+Subtype=null)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_type_safe_matcher_a3b478b57cc6f0f3fc8b6e313bae224ba}{matches}} (\$item)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_type_safe_matcher_aa81354a42b826cf3fec764da1e02c1af}{describe\+Mismatch}} (\$item, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$mismatch\+Description)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hamcrest_1_1_base_matcher}{Hamcrest\textbackslash{}\+Base\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+to\+String} ()
+\item 
+{\bfseries \+\_\+\+\_\+invoke} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_hamcrest_1_1_self_describing}{Hamcrest\textbackslash{}\+Self\+Describing}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_hamcrest_1_1_self_describing_a5358337d01bd2b3a048fa446f9e901d2}{describe\+To}} (\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$description)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_hamcrest_1_1_type_safe_matcher_a10849c192e72916a16771f4d511c3d0b}\label{class_hamcrest_1_1_type_safe_matcher_a10849c192e72916a16771f4d511c3d0b} 
+const {\bfseries TYPE\+\_\+\+ANY} = 0
+\item 
+\Hypertarget{class_hamcrest_1_1_type_safe_matcher_a6afb58b6f2d9551f63757c146e6eb636}\label{class_hamcrest_1_1_type_safe_matcher_a6afb58b6f2d9551f63757c146e6eb636} 
+const {\bfseries TYPE\+\_\+\+STRING} = 1
+\item 
+\Hypertarget{class_hamcrest_1_1_type_safe_matcher_abcc7d97fb3a04dcb2d011c0ed0ed0642}\label{class_hamcrest_1_1_type_safe_matcher_abcc7d97fb3a04dcb2d011c0ed0ed0642} 
+const {\bfseries TYPE\+\_\+\+NUMERIC} = 2
+\item 
+\Hypertarget{class_hamcrest_1_1_type_safe_matcher_abe4f45308b7ba3738ffebb15003ee017}\label{class_hamcrest_1_1_type_safe_matcher_abe4f45308b7ba3738ffebb15003ee017} 
+const {\bfseries TYPE\+\_\+\+ARRAY} = 3
+\item 
+\Hypertarget{class_hamcrest_1_1_type_safe_matcher_a36875f1075bc63db877eb4db787d21b9}\label{class_hamcrest_1_1_type_safe_matcher_a36875f1075bc63db877eb4db787d21b9} 
+const {\bfseries TYPE\+\_\+\+OBJECT} = 4
+\item 
+\Hypertarget{class_hamcrest_1_1_type_safe_matcher_af4a4fe76a95d36d857ab0b39b722f62d}\label{class_hamcrest_1_1_type_safe_matcher_af4a4fe76a95d36d857ab0b39b722f62d} 
+const {\bfseries TYPE\+\_\+\+RESOURCE} = 5
+\item 
+\Hypertarget{class_hamcrest_1_1_type_safe_matcher_a12ee68378c7eba2f91da5479fa14eb02}\label{class_hamcrest_1_1_type_safe_matcher_a12ee68378c7eba2f91da5479fa14eb02} 
+const {\bfseries TYPE\+\_\+\+BOOLEAN} = 6
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_type_safe_matcher_a0caff8d0faaffa8c3a5072cd0679a1a1}{matches\+Safely}} (\$item)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_type_safe_matcher_a3fee22a8e831cbdba8720ff833e8c6cf}{describe\+Mismatch\+Safely}} (\$item, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$mismatch\+Description)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Convenient base class for Matchers that require a value of a specific type. This simply checks the type.
+
+While it may seem a useless exercise to have this in PHP, objects cannot be cast to certain data types such as numerics (or even strings if \+\_\+\+\_\+to\+String() has not be defined). 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hamcrest_1_1_type_safe_matcher_aa81354a42b826cf3fec764da1e02c1af}\index{Hamcrest\textbackslash{}TypeSafeMatcher@{Hamcrest\textbackslash{}TypeSafeMatcher}!describeMismatch@{describeMismatch}}
+\index{describeMismatch@{describeMismatch}!Hamcrest\textbackslash{}TypeSafeMatcher@{Hamcrest\textbackslash{}TypeSafeMatcher}}
+\doxysubsubsection{\texorpdfstring{describeMismatch()}{describeMismatch()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_type_safe_matcher_aa81354a42b826cf3fec764da1e02c1af} 
+Hamcrest\textbackslash{}\+Type\+Safe\+Matcher\+::describe\+Mismatch (\begin{DoxyParamCaption}\item[{}]{\$item}{, }\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$description}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+Generate a description of why the matcher has not accepted the item. The description will be part of a larger description of why a matching failed, so it should be concise. This method assumes that {\ttfamily matches(\$item)} is false, but will not check this.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$item} & The item that the Matcher has rejected. \\
+\hline
+Description & {\em \$description} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_hamcrest_1_1_base_matcher_ae071961005d0f24d2ee1b3c62d9fe660}{Hamcrest\textbackslash{}\+Base\+Matcher}}.
+
+\Hypertarget{class_hamcrest_1_1_type_safe_matcher_a3fee22a8e831cbdba8720ff833e8c6cf}\index{Hamcrest\textbackslash{}TypeSafeMatcher@{Hamcrest\textbackslash{}TypeSafeMatcher}!describeMismatchSafely@{describeMismatchSafely}}
+\index{describeMismatchSafely@{describeMismatchSafely}!Hamcrest\textbackslash{}TypeSafeMatcher@{Hamcrest\textbackslash{}TypeSafeMatcher}}
+\doxysubsubsection{\texorpdfstring{describeMismatchSafely()}{describeMismatchSafely()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_type_safe_matcher_a3fee22a8e831cbdba8720ff833e8c6cf} 
+Hamcrest\textbackslash{}\+Type\+Safe\+Matcher\+::describe\+Mismatch\+Safely (\begin{DoxyParamCaption}\item[{}]{\$item}{, }\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$mismatch\+Description}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+The item will already have been checked for the specific type and subtype. 
+
+Reimplemented in \mbox{\hyperlink{class_hamcrest_1_1_arrays_1_1_is_array_containing_a447c0cbdad71ccaf2f662b047aabe60d}{Hamcrest\textbackslash{}\+Arrays\textbackslash{}\+Is\+Array\+Containing}}, \mbox{\hyperlink{class_hamcrest_1_1_arrays_1_1_is_array_containing_key_a6d41b45adaf7fb596e4adc4cdd4128ea}{Hamcrest\textbackslash{}\+Arrays\textbackslash{}\+Is\+Array\+Containing\+Key}}, \mbox{\hyperlink{class_hamcrest_1_1_arrays_1_1_is_array_containing_key_value_pair_aff1c5b78957d454982289605328ca5da}{Hamcrest\textbackslash{}\+Arrays\textbackslash{}\+Is\+Array\+Containing\+Key\+Value\+Pair}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_is_collection_containing_a3daa38b3a964caf2e6c25ab8c1558e91}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is\+Collection\+Containing}}, \mbox{\hyperlink{class_hamcrest_1_1_number_1_1_is_close_to_a09e70a7624c2faf1db0947dfee287de9}{Hamcrest\textbackslash{}\+Number\textbackslash{}\+Is\+Close\+To}}, \mbox{\hyperlink{class_hamcrest_1_1_number_1_1_ordering_comparison_a11fcffa122c9c98b208e145a4ec738a3}{Hamcrest\textbackslash{}\+Number\textbackslash{}\+Ordering\+Comparison}}, \mbox{\hyperlink{class_hamcrest_1_1_text_1_1_is_equal_ignoring_case_a7e9434c5ab90efdec998164603d93098}{Hamcrest\textbackslash{}\+Text\textbackslash{}\+Is\+Equal\+Ignoring\+Case}}, \mbox{\hyperlink{class_hamcrest_1_1_text_1_1_is_equal_ignoring_white_space_afe6d1c9e020804459647cf89468fe330}{Hamcrest\textbackslash{}\+Text\textbackslash{}\+Is\+Equal\+Ignoring\+White\+Space}}, \mbox{\hyperlink{class_hamcrest_1_1_text_1_1_string_contains_in_order_a387fc577f4bc3af158cb94848f1dddf4}{Hamcrest\textbackslash{}\+Text\textbackslash{}\+String\+Contains\+In\+Order}}, \mbox{\hyperlink{class_hamcrest_1_1_text_1_1_substring_matcher_a8d51511ac801c028524341126daa728b}{Hamcrest\textbackslash{}\+Text\textbackslash{}\+Substring\+Matcher}}, and \mbox{\hyperlink{class_hamcrest_1_1_type_safe_diagnosing_matcher_a6aa6571c29b2b4c27437e9054e8bbf21}{Hamcrest\textbackslash{}\+Type\+Safe\+Diagnosing\+Matcher}}.
+
+\Hypertarget{class_hamcrest_1_1_type_safe_matcher_a3b478b57cc6f0f3fc8b6e313bae224ba}\index{Hamcrest\textbackslash{}TypeSafeMatcher@{Hamcrest\textbackslash{}TypeSafeMatcher}!matches@{matches}}
+\index{matches@{matches}!Hamcrest\textbackslash{}TypeSafeMatcher@{Hamcrest\textbackslash{}TypeSafeMatcher}}
+\doxysubsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_type_safe_matcher_a3b478b57cc6f0f3fc8b6e313bae224ba} 
+Hamcrest\textbackslash{}\+Type\+Safe\+Matcher\+::matches (\begin{DoxyParamCaption}\item[{}]{\$item}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+Evaluates the matcher for argument {\itshape \$item}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$item} & the object against which the matcher is evaluated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean {\ttfamily true} if {\itshape \$item} matches, otherwise {\ttfamily false}.
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Hamcrest\textbackslash{}\+Base\+Matcher 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interface_hamcrest_1_1_matcher_a11ade9b98c2cf2e1871c2bb0e6d0de94}{Hamcrest\textbackslash{}\+Matcher}}.
+
+\Hypertarget{class_hamcrest_1_1_type_safe_matcher_a0caff8d0faaffa8c3a5072cd0679a1a1}\index{Hamcrest\textbackslash{}TypeSafeMatcher@{Hamcrest\textbackslash{}TypeSafeMatcher}!matchesSafely@{matchesSafely}}
+\index{matchesSafely@{matchesSafely}!Hamcrest\textbackslash{}TypeSafeMatcher@{Hamcrest\textbackslash{}TypeSafeMatcher}}
+\doxysubsubsection{\texorpdfstring{matchesSafely()}{matchesSafely()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_type_safe_matcher_a0caff8d0faaffa8c3a5072cd0679a1a1} 
+Hamcrest\textbackslash{}\+Type\+Safe\+Matcher\+::matches\+Safely (\begin{DoxyParamCaption}\item[{}]{\$item}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+The item will already have been checked for the specific type and subtype. 
+
+Reimplemented in \mbox{\hyperlink{class_hamcrest_1_1_arrays_1_1_is_array_containing_a808bb1623a12376a475b98624e2ca383}{Hamcrest\textbackslash{}\+Arrays\textbackslash{}\+Is\+Array\+Containing}}, \mbox{\hyperlink{class_hamcrest_1_1_arrays_1_1_is_array_containing_key_a016542ea2b2d1da6438b40aa3656026e}{Hamcrest\textbackslash{}\+Arrays\textbackslash{}\+Is\+Array\+Containing\+Key}}, \mbox{\hyperlink{class_hamcrest_1_1_arrays_1_1_is_array_containing_key_value_pair_a94c595c685cb0e9b7dfd27765717f828}{Hamcrest\textbackslash{}\+Arrays\textbackslash{}\+Is\+Array\+Containing\+Key\+Value\+Pair}}, \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_is_collection_containing_aa851ab5efb16dccf3ffe75ce006c4fe1}{Hamcrest\textbackslash{}\+Core\textbackslash{}\+Is\+Collection\+Containing}}, \mbox{\hyperlink{class_hamcrest_1_1_number_1_1_is_close_to_abb62fc2484218f8397ff2bbb3958c1a3}{Hamcrest\textbackslash{}\+Number\textbackslash{}\+Is\+Close\+To}}, \mbox{\hyperlink{class_hamcrest_1_1_number_1_1_ordering_comparison_afba13e8bc45a3312693fab26ebff1728}{Hamcrest\textbackslash{}\+Number\textbackslash{}\+Ordering\+Comparison}}, \mbox{\hyperlink{class_hamcrest_1_1_text_1_1_is_equal_ignoring_case_a80697511c429c46639db08aa77a9ae67}{Hamcrest\textbackslash{}\+Text\textbackslash{}\+Is\+Equal\+Ignoring\+Case}}, \mbox{\hyperlink{class_hamcrest_1_1_text_1_1_is_equal_ignoring_white_space_a8e621046c3a800b108733775aaf2238c}{Hamcrest\textbackslash{}\+Text\textbackslash{}\+Is\+Equal\+Ignoring\+White\+Space}}, \mbox{\hyperlink{class_hamcrest_1_1_text_1_1_string_contains_in_order_aee83bf426961b8135a22c669be11ccd5}{Hamcrest\textbackslash{}\+Text\textbackslash{}\+String\+Contains\+In\+Order}}, \mbox{\hyperlink{class_hamcrest_1_1_text_1_1_substring_matcher_a38a0ffdc88f9c082e7f5d1951ad60176}{Hamcrest\textbackslash{}\+Text\textbackslash{}\+Substring\+Matcher}}, and \mbox{\hyperlink{class_hamcrest_1_1_type_safe_diagnosing_matcher_a0be90012ab772b44906e1a31c6a09ba1}{Hamcrest\textbackslash{}\+Type\+Safe\+Diagnosing\+Matcher}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/hamcrest/hamcrest-\/php/hamcrest/\+Hamcrest/Type\+Safe\+Matcher.\+php\end{DoxyCompactItemize}

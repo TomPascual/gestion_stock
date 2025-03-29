@@ -1,0 +1,78 @@
+\doxysection{League\textbackslash{}Config\textbackslash{}Configuration\+Interface Interface Reference}
+\hypertarget{interface_league_1_1_config_1_1_configuration_interface}{}\label{interface_league_1_1_config_1_1_configuration_interface}\index{League\textbackslash{}Config\textbackslash{}ConfigurationInterface@{League\textbackslash{}Config\textbackslash{}ConfigurationInterface}}
+Inheritance diagram for League\textbackslash{}Config\textbackslash{}Configuration\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_league_1_1_config_1_1_configuration_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_league_1_1_config_1_1_configuration_interface_a021700e5296fbf977e101221ea46ef6d}{get}} (string \$key)
+\item 
+\mbox{\hyperlink{interface_league_1_1_config_1_1_configuration_interface_a1dcfb1e85602e9dd68b2a3f4a5a7a0cb}{exists}} (string \$key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for reading configuration values 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_league_1_1_config_1_1_configuration_interface_a1dcfb1e85602e9dd68b2a3f4a5a7a0cb}\index{League\textbackslash{}Config\textbackslash{}ConfigurationInterface@{League\textbackslash{}Config\textbackslash{}ConfigurationInterface}!exists@{exists}}
+\index{exists@{exists}!League\textbackslash{}Config\textbackslash{}ConfigurationInterface@{League\textbackslash{}Config\textbackslash{}ConfigurationInterface}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_config_1_1_configuration_interface_a1dcfb1e85602e9dd68b2a3f4a5a7a0cb} 
+League\textbackslash{}\+Config\textbackslash{}\+Configuration\+Interface\+::exists (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Configuration option path/key\\
+\hline
+\end{DoxyParams}
+@psalm-\/param non-\/empty-\/string \$key
+
+\begin{DoxyReturn}{Returns}
+bool Whether the given option exists
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Validation\+Exception} & if the schema failed to validate the given input \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_config_1_1_configuration_a3664c1c0b5182d878d90944974227d11}{League\textbackslash{}\+Config\textbackslash{}\+Configuration}}, and \mbox{\hyperlink{class_league_1_1_config_1_1_read_only_configuration_a6dc9c4fc17406ab55a459c82377528bd}{League\textbackslash{}\+Config\textbackslash{}\+Read\+Only\+Configuration}}.
+
+\Hypertarget{interface_league_1_1_config_1_1_configuration_interface_a021700e5296fbf977e101221ea46ef6d}\index{League\textbackslash{}Config\textbackslash{}ConfigurationInterface@{League\textbackslash{}Config\textbackslash{}ConfigurationInterface}!get@{get}}
+\index{get@{get}!League\textbackslash{}Config\textbackslash{}ConfigurationInterface@{League\textbackslash{}Config\textbackslash{}ConfigurationInterface}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{interface_league_1_1_config_1_1_configuration_interface_a021700e5296fbf977e101221ea46ef6d} 
+League\textbackslash{}\+Config\textbackslash{}\+Configuration\+Interface\+::get (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Configuration option path/key\\
+\hline
+\end{DoxyParams}
+@psalm-\/param non-\/empty-\/string \$key
+
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Validation\+Exception} & if the schema failed to validate the given input \\
+\hline
+{\em Unknown\+Option\+Exception} & if the requested key does not exist or is malformed \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_league_1_1_config_1_1_configuration_a455c7e20e50566fb0a19c3b67b1a316a}{League\textbackslash{}\+Config\textbackslash{}\+Configuration}}, and \mbox{\hyperlink{class_league_1_1_config_1_1_read_only_configuration_a5869fb2a1b7ab15acca62b64bb313b0b}{League\textbackslash{}\+Config\textbackslash{}\+Read\+Only\+Configuration}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/league/config/src/Configuration\+Interface.\+php\end{DoxyCompactItemize}

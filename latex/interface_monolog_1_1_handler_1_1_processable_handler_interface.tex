@@ -1,0 +1,75 @@
+\doxysection{Monolog\textbackslash{}Handler\textbackslash{}Processable\+Handler\+Interface Interface Reference}
+\hypertarget{interface_monolog_1_1_handler_1_1_processable_handler_interface}{}\label{interface_monolog_1_1_handler_1_1_processable_handler_interface}\index{Monolog\textbackslash{}Handler\textbackslash{}ProcessableHandlerInterface@{Monolog\textbackslash{}Handler\textbackslash{}ProcessableHandlerInterface}}
+Inheritance diagram for Monolog\textbackslash{}Handler\textbackslash{}Processable\+Handler\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.804878cm]{interface_monolog_1_1_handler_1_1_processable_handler_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_monolog_1_1_handler_1_1_processable_handler_interface_a53a4d8869fec50c20d98ffc48b3c7965}{push\+Processor}} (callable \$callback)
+\item 
+\mbox{\hyperlink{interface_monolog_1_1_handler_1_1_processable_handler_interface_a42e02d07c11a9a32101e1c626e48b80b}{pop\+Processor}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface to describe loggers that have processors
+
+\begin{DoxyAuthor}{Author}
+Jordi Boggiano \href{mailto:j.boggiano@seld.be}{\texttt{ j.\+boggiano@seld.\+be}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_monolog_1_1_handler_1_1_processable_handler_interface_a42e02d07c11a9a32101e1c626e48b80b}\index{Monolog\textbackslash{}Handler\textbackslash{}ProcessableHandlerInterface@{Monolog\textbackslash{}Handler\textbackslash{}ProcessableHandlerInterface}!popProcessor@{popProcessor}}
+\index{popProcessor@{popProcessor}!Monolog\textbackslash{}Handler\textbackslash{}ProcessableHandlerInterface@{Monolog\textbackslash{}Handler\textbackslash{}ProcessableHandlerInterface}}
+\doxysubsubsection{\texorpdfstring{popProcessor()}{popProcessor()}}
+{\footnotesize\ttfamily \label{interface_monolog_1_1_handler_1_1_processable_handler_interface_a42e02d07c11a9a32101e1c626e48b80b} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Processable\+Handler\+Interface\+::pop\+Processor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Removes the processor on top of the stack and returns it.
+
+@phpstan-\/return Processor\+Interface\texorpdfstring{$\vert$}{|}(callable(\+Log\+Record)\+: Log\+Record) \$callback
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception In case the processor stack is empty \begin{DoxyReturn}{Returns}
+callable\texorpdfstring{$\vert$}{|}\+Processor\+Interface 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler_wrapper_a7e20a333d96868ad73b70dc6c4371a3f}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Wrapper}}.
+
+\Hypertarget{interface_monolog_1_1_handler_1_1_processable_handler_interface_a53a4d8869fec50c20d98ffc48b3c7965}\index{Monolog\textbackslash{}Handler\textbackslash{}ProcessableHandlerInterface@{Monolog\textbackslash{}Handler\textbackslash{}ProcessableHandlerInterface}!pushProcessor@{pushProcessor}}
+\index{pushProcessor@{pushProcessor}!Monolog\textbackslash{}Handler\textbackslash{}ProcessableHandlerInterface@{Monolog\textbackslash{}Handler\textbackslash{}ProcessableHandlerInterface}}
+\doxysubsubsection{\texorpdfstring{pushProcessor()}{pushProcessor()}}
+{\footnotesize\ttfamily \label{interface_monolog_1_1_handler_1_1_processable_handler_interface_a53a4d8869fec50c20d98ffc48b3c7965} 
+Monolog\textbackslash{}\+Handler\textbackslash{}\+Processable\+Handler\+Interface\+::push\+Processor (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Adds a processor in the stack.
+
+@phpstan-\/param Processor\+Interface\texorpdfstring{$\vert$}{|}(callable(\+Log\+Record)\+: Log\+Record) \$callback
+
+
+\begin{DoxyParams}[1]{Parameters}
+Processor\+Interface | callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Handler\+Interface self 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_monolog_1_1_handler_1_1_handler_wrapper_a8013dc13da954a5159f84cd57c12d51d}{Monolog\textbackslash{}\+Handler\textbackslash{}\+Handler\+Wrapper}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/monolog/monolog/src/\+Monolog/\+Handler/Processable\+Handler\+Interface.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\doxysection{Illuminate\textbackslash{}Contracts\textbackslash{}Cache\textbackslash{}Lock\+Provider Interface Reference}
+\hypertarget{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_provider}{}\label{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_provider}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Cache\textbackslash{}LockProvider@{Illuminate\textbackslash{}Contracts\textbackslash{}Cache\textbackslash{}LockProvider}}
+Inheritance diagram for Illuminate\textbackslash{}Contracts\textbackslash{}Cache\textbackslash{}Lock\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.637450cm]{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_provider_a401c9363d4bed96466eae103e293f442}{lock}} (\$name, \$seconds=0, \$owner=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_provider_af4d5f5cf5f39cf69a9aaa1096686cbbf}{restore\+Lock}} (\$name, \$owner)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_provider_a401c9363d4bed96466eae103e293f442}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Cache\textbackslash{}LockProvider@{Illuminate\textbackslash{}Contracts\textbackslash{}Cache\textbackslash{}LockProvider}!lock@{lock}}
+\index{lock@{lock}!Illuminate\textbackslash{}Contracts\textbackslash{}Cache\textbackslash{}LockProvider@{Illuminate\textbackslash{}Contracts\textbackslash{}Cache\textbackslash{}LockProvider}}
+\doxysubsubsection{\texorpdfstring{lock()}{lock()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_provider_a401c9363d4bed96466eae103e293f442} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock\+Provider\+::lock (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$seconds}{ = {\ttfamily 0}, }\item[{}]{\$owner}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a lock instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+string | null & {\em \$owner} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_array_store_a364719533786387948607d40f1389628}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Array\+Store}}, \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_database_store_add3ae1b14c2ac1604b1838cc7d0dca62}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Database\+Store}}, \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_ae14f2f878da47ba3993e28b5749dae72}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store}}, \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_a4e4c041d740287e2f92a4423ebe3ea54}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store}}, \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_a43dcccd0b1c8e644243fcb107b1746c7}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store}}, \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_null_store_a306a06d28866c830fbf97bd572ca2778}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Null\+Store}}, and \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_redis_store_a3173e88da92fc1ed892dd3f03b94128c}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Redis\+Store}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_provider_af4d5f5cf5f39cf69a9aaa1096686cbbf}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Cache\textbackslash{}LockProvider@{Illuminate\textbackslash{}Contracts\textbackslash{}Cache\textbackslash{}LockProvider}!restoreLock@{restoreLock}}
+\index{restoreLock@{restoreLock}!Illuminate\textbackslash{}Contracts\textbackslash{}Cache\textbackslash{}LockProvider@{Illuminate\textbackslash{}Contracts\textbackslash{}Cache\textbackslash{}LockProvider}}
+\doxysubsubsection{\texorpdfstring{restoreLock()}{restoreLock()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_provider_af4d5f5cf5f39cf69a9aaa1096686cbbf} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock\+Provider\+::restore\+Lock (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$owner}{}\end{DoxyParamCaption})}
+
+Restore a lock instance using the owner identifier.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$owner} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_array_store_adb97fee36c54aba64e01d454c50b4be4}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Array\+Store}}, \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_database_store_a0afbc83c778a6f989f0d4754116da907}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Database\+Store}}, \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_dynamo_db_store_a46b7961e9229342b1f67cb740918bb6f}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Dynamo\+Db\+Store}}, \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_store_adca182bb359b678b71d38ae9165b6ced}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Store}}, \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_memcached_store_ac5b64c02b0aa80ee022b969073bec676}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Memcached\+Store}}, \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_null_store_a875c706d877b076dfdf73ccdd716888b}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Null\+Store}}, and \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_redis_store_a4c89e9e8eb70c60893822d5507620e1d}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Redis\+Store}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Contracts/\+Cache/Lock\+Provider.\+php\end{DoxyCompactItemize}

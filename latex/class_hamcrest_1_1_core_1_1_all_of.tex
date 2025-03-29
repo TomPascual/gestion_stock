@@ -1,0 +1,77 @@
+\doxysection{Hamcrest\textbackslash{}Core\textbackslash{}All\+Of Class Reference}
+\hypertarget{class_hamcrest_1_1_core_1_1_all_of}{}\label{class_hamcrest_1_1_core_1_1_all_of}\index{Hamcrest\textbackslash{}Core\textbackslash{}AllOf@{Hamcrest\textbackslash{}Core\textbackslash{}AllOf}}
+Inheritance diagram for Hamcrest\textbackslash{}Core\textbackslash{}All\+Of\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_hamcrest_1_1_core_1_1_all_of}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_hamcrest_1_1_core_1_1_all_of_a60591eef30da300044f118703d92bb09}\label{class_hamcrest_1_1_core_1_1_all_of_a60591eef30da300044f118703d92bb09} 
+{\bfseries \+\_\+\+\_\+construct} (array \$matchers)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_core_1_1_all_of_af4e60666b89a65b301db4a0fbc6c7c81}{describe\+To}} (\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$description)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hamcrest_1_1_diagnosing_matcher}{Hamcrest\textbackslash{}\+Diagnosing\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_diagnosing_matcher_a65babc0264e96bd2256652f4b8f3332a}{matches}} (\$item)
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_diagnosing_matcher_a558c787ed9062e6f6aa283fd9754176c}{describe\+Mismatch}} (\$item, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$mismatch\+Description)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_hamcrest_1_1_base_matcher}{Hamcrest\textbackslash{}\+Base\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+to\+String} ()
+\item 
+{\bfseries \+\_\+\+\_\+invoke} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hamcrest_1_1_core_1_1_all_of_ab73ef3b5e9e092a9543e45298c0bba85}{all\+Of}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_hamcrest_1_1_diagnosing_matcher}{Hamcrest\textbackslash{}\+Diagnosing\+Matcher}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hamcrest_1_1_diagnosing_matcher_ac9c63ce066e6cd9db786887799f7ab6b}{matches\+With\+Diagnostic\+Description}} (\$item, \mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}} \$mismatch\+Description)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Calculates the logical conjunction of multiple matchers. Evaluation is shortcut, so subsequent matchers are not called if an earlier matcher returns {\ttfamily false}. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hamcrest_1_1_core_1_1_all_of_ab73ef3b5e9e092a9543e45298c0bba85}\index{Hamcrest\textbackslash{}Core\textbackslash{}AllOf@{Hamcrest\textbackslash{}Core\textbackslash{}AllOf}!allOf@{allOf}}
+\index{allOf@{allOf}!Hamcrest\textbackslash{}Core\textbackslash{}AllOf@{Hamcrest\textbackslash{}Core\textbackslash{}AllOf}}
+\doxysubsubsection{\texorpdfstring{allOf()}{allOf()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_all_of_ab73ef3b5e9e092a9543e45298c0bba85} 
+static Hamcrest\textbackslash{}\+Core\textbackslash{}\+All\+Of\+::all\+Of (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Evaluates to true only if ALL of the passed in matchers evaluate to true.
+
+@factory ... \Hypertarget{class_hamcrest_1_1_core_1_1_all_of_af4e60666b89a65b301db4a0fbc6c7c81}\index{Hamcrest\textbackslash{}Core\textbackslash{}AllOf@{Hamcrest\textbackslash{}Core\textbackslash{}AllOf}!describeTo@{describeTo}}
+\index{describeTo@{describeTo}!Hamcrest\textbackslash{}Core\textbackslash{}AllOf@{Hamcrest\textbackslash{}Core\textbackslash{}AllOf}}
+\doxysubsubsection{\texorpdfstring{describeTo()}{describeTo()}}
+{\footnotesize\ttfamily \label{class_hamcrest_1_1_core_1_1_all_of_af4e60666b89a65b301db4a0fbc6c7c81} 
+Hamcrest\textbackslash{}\+Core\textbackslash{}\+All\+Of\+::describe\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_hamcrest_1_1_description}{Description}}}]{\$description}{}\end{DoxyParamCaption})}
+
+Generates a description of the object. The description may be part of a description of a larger object of which this is just a component, so it should be worded appropriately.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Hamcrest\textbackslash{}\+Description & {\em \$description} & The description to be built or appended to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_hamcrest_1_1_self_describing_a5358337d01bd2b3a048fa446f9e901d2}{Hamcrest\textbackslash{}\+Self\+Describing}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/hamcrest/hamcrest-\/php/hamcrest/\+Hamcrest/\+Core/All\+Of.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,87 @@
+\doxysection{Psy\textbackslash{}Input\textbackslash{}Code\+Argument Class Reference}
+\hypertarget{class_psy_1_1_input_1_1_code_argument}{}\label{class_psy_1_1_input_1_1_code_argument}\index{Psy\textbackslash{}Input\textbackslash{}CodeArgument@{Psy\textbackslash{}Input\textbackslash{}CodeArgument}}
+Inheritance diagram for Psy\textbackslash{}Input\textbackslash{}Code\+Argument\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_psy_1_1_input_1_1_code_argument}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_input_1_1_code_argument_a860c5fb29e77e722eb18a8442be5de4c}{\+\_\+\+\_\+construct}} (string \$name, ?int \$mode=null, string \$description=\textquotesingle{}\textquotesingle{}, \$default=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Input\textbackslash{}\+Input\+Argument}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a84b21128bbcf5101d87ce3ddf96e1403}{\+\_\+\+\_\+construct}} (private string \$name, ?int \$mode=null, private string \$description=\textquotesingle{}\textquotesingle{}, string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null \$default=null, private \textbackslash{}Closure\texorpdfstring{$\vert$}{|}array \$suggested\+Values=\mbox{[}$\,$\mbox{]},)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a08934309360d30c9d851e48c8c44d373}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a95dccd21764d1f45b68005a62688a005}{is\+Required}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a6943d609684d15ec011c142c34dff163}{is\+Array}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a95b715b7041dc9d8d7abe941058e81c9}{set\+Default}} (string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null \$default)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a92d3ea93a0e51085e8a5ccb0da96354c}{get\+Default}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_abd1f14e66e64edf4eca9507092b00b65}{has\+Completion}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_aaf4a84dbf82a63bdec277ebe5123ff0b}{complete}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_completion_1_1_completion_input}{Completion\+Input}} \$input, \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_completion_1_1_completion_suggestions}{Completion\+Suggestions}} \$suggestions)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a2b7bc2146531c849142f0639d119e435}{get\+Description}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument}{Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Input\textbackslash{}\+Input\+Argument}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_aec4236680540623fb72b72ec101c05bd}{REQUIRED}} = 1
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a0ccdf234dda9316a2b03078a547d4e13}{OPTIONAL}} = 2
+\item 
+const \mbox{\hyperlink{class_symfony_1_1_component_1_1_console_1_1_input_1_1_input_argument_a42d6326aa2d81ba284544b7cf9cf906c}{IS\+\_\+\+ARRAY}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An input argument for code.
+
+A Code\+Argument must be the final argument of the command. Once all options and other arguments are used, any remaining input until the end of the string is considered part of a single Code\+Argument, regardless of spaces, quoting, escaping, etc.
+
+This means commands can support crazy input like \begin{DoxyVerb}parse function() { return "wheee\n"; }
+\end{DoxyVerb}
+
+
+... without having to put the code in a quoted string and escape everything. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_psy_1_1_input_1_1_code_argument_a860c5fb29e77e722eb18a8442be5de4c}\index{Psy\textbackslash{}Input\textbackslash{}CodeArgument@{Psy\textbackslash{}Input\textbackslash{}CodeArgument}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Psy\textbackslash{}Input\textbackslash{}CodeArgument@{Psy\textbackslash{}Input\textbackslash{}CodeArgument}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_input_1_1_code_argument_a860c5fb29e77e722eb18a8442be5de4c} 
+Psy\textbackslash{}\+Input\textbackslash{}\+Code\+Argument\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{?int}]{\$mode}{ = {\ttfamily null}, }\item[{string}]{\$description}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The argument name \\
+\hline
+int & {\em \$mode} & The argument mode\+: self\+::\+REQUIRED or self\+::\+OPTIONAL \\
+\hline
+string & {\em \$description} & A description text \\
+\hline
+mixed & {\em \$default} & The default value (for self\+::\+OPTIONAL mode only)\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception When argument mode is not valid 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Input/Code\+Argument.\+php\end{DoxyCompactItemize}

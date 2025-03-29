@@ -1,0 +1,66 @@
+\doxysection{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Time\textbackslash{}Php\+Time\+Converter Class Reference}
+\hypertarget{class_ramsey_1_1_uuid_1_1_converter_1_1_time_1_1_php_time_converter}{}\label{class_ramsey_1_1_uuid_1_1_converter_1_1_time_1_1_php_time_converter}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Time\textbackslash{}PhpTimeConverter@{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Time\textbackslash{}PhpTimeConverter}}
+Inheritance diagram for Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Time\textbackslash{}Php\+Time\+Converter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_ramsey_1_1_uuid_1_1_converter_1_1_time_1_1_php_time_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_ramsey_1_1_uuid_1_1_converter_1_1_time_1_1_php_time_converter_a94e3c34a15adb40009a575b53a0d57c8}\label{class_ramsey_1_1_uuid_1_1_converter_1_1_time_1_1_php_time_converter_a94e3c34a15adb40009a575b53a0d57c8} 
+{\bfseries \+\_\+\+\_\+construct} (?\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_math_1_1_calculator_interface}{Calculator\+Interface}} \$calculator=null, ?\mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_converter_1_1_time_converter_interface}{Time\+Converter\+Interface}} \$fallback\+Converter=null)
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_converter_1_1_time_1_1_php_time_converter_a1490673bbffc1629e9334559a3e7465f}{calculate\+Time}} (string \$seconds, string \$microseconds)
+\item 
+\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_converter_1_1_time_1_1_php_time_converter_a31571672af3fb09df9e474e498225aed}{convert\+Time}} (\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_type_1_1_hexadecimal}{Hexadecimal}} \$uuid\+Timestamp)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Php\+Time\+Converter uses built-\/in PHP functions and standard math operations available to the PHP programming language to provide facilities for converting parts of time into representations that may be used in UUIDs
+
+@psalm-\/immutable 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ramsey_1_1_uuid_1_1_converter_1_1_time_1_1_php_time_converter_a1490673bbffc1629e9334559a3e7465f}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Time\textbackslash{}PhpTimeConverter@{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Time\textbackslash{}PhpTimeConverter}!calculateTime@{calculateTime}}
+\index{calculateTime@{calculateTime}!Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Time\textbackslash{}PhpTimeConverter@{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Time\textbackslash{}PhpTimeConverter}}
+\doxysubsubsection{\texorpdfstring{calculateTime()}{calculateTime()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_converter_1_1_time_1_1_php_time_converter_a1490673bbffc1629e9334559a3e7465f} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Converter\textbackslash{}\+Time\textbackslash{}\+Php\+Time\+Converter\+::calculate\+Time (\begin{DoxyParamCaption}\item[{string}]{\$seconds}{, }\item[{string}]{\$microseconds}{}\end{DoxyParamCaption})}
+
+Uses the provided seconds and micro-\/seconds to calculate the count of 100-\/nanosecond intervals since UTC 00\+:00\+:00.\+00, 15 October 1582, for RFC 4122 variant UUIDs
+
+\doxylink{}{RFC 4122, § 4.\+2.\+2\+: Generation Details  string \$seconds A string representation of the number of seconds since the Unix epoch for the time to calculate  string \$microseconds A string representation of the micro-\/seconds associated with the time to calculate  Hexadecimal The full UUID timestamp as a Hexadecimal value -\/pure }@psalm-\/suppress Redundant\+Condition
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_converter_1_1_time_converter_interface_a034fc0082c79589bb42f61be75d760e1}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Converter\textbackslash{}\+Time\+Converter\+Interface}}.
+
+\Hypertarget{class_ramsey_1_1_uuid_1_1_converter_1_1_time_1_1_php_time_converter_a31571672af3fb09df9e474e498225aed}\index{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Time\textbackslash{}PhpTimeConverter@{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Time\textbackslash{}PhpTimeConverter}!convertTime@{convertTime}}
+\index{convertTime@{convertTime}!Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Time\textbackslash{}PhpTimeConverter@{Ramsey\textbackslash{}Uuid\textbackslash{}Converter\textbackslash{}Time\textbackslash{}PhpTimeConverter}}
+\doxysubsubsection{\texorpdfstring{convertTime()}{convertTime()}}
+{\footnotesize\ttfamily \label{class_ramsey_1_1_uuid_1_1_converter_1_1_time_1_1_php_time_converter_a31571672af3fb09df9e474e498225aed} 
+Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Converter\textbackslash{}\+Time\textbackslash{}\+Php\+Time\+Converter\+::convert\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_type_1_1_hexadecimal}{Hexadecimal}}}]{\$uuid\+Timestamp}{}\end{DoxyParamCaption})}
+
+Converts a timestamp extracted from a UUID to a Unix timestamp
+
+
+\begin{DoxyParams}[1]{Parameters}
+Hexadecimal & {\em \$uuid\+Timestamp} & A hexadecimal representation of a UUID timestamp; a UUID timestamp is a count of 100-\/nanosecond intervals since UTC 00\+:00\+:00.\+00, 15 October 1582.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Time An instance of \{
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Time\}
+\end{DoxySeeAlso}
+@psalm-\/pure 
+
+Implements \mbox{\hyperlink{interface_ramsey_1_1_uuid_1_1_converter_1_1_time_converter_interface_a86a2ecbf052a2296837f8d130dd3fce2}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Converter\textbackslash{}\+Time\+Converter\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/ramsey/uuid/src/\+Converter/\+Time/Php\+Time\+Converter.\+php\end{DoxyCompactItemize}

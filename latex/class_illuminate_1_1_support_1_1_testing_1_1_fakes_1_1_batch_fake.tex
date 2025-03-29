@@ -1,0 +1,314 @@
+\doxysection{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}Batch\+Fake Class Reference}
+\hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake}{}\label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake}\index{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}}
+Inheritance diagram for Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}Batch\+Fake\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_afd098e7c04e8a04dd299b285661dac03}{\+\_\+\+\_\+construct}} (string \$id, string \$name, int \$total\+Jobs, int \$pending\+Jobs, int \$failed\+Jobs, array \$failed\+Job\+Ids, array \$options, \mbox{\hyperlink{class_carbon_1_1_carbon_immutable}{Carbon\+Immutable}} \$created\+At, ?\mbox{\hyperlink{class_carbon_1_1_carbon_immutable}{Carbon\+Immutable}} \$cancelled\+At=null, ?\mbox{\hyperlink{class_carbon_1_1_carbon_immutable}{Carbon\+Immutable}} \$finished\+At=null,)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_ad310a23198d2c6e530fcbc1fb4c37d91}{fresh}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a670b04f74e151952abd605b7ba28db06}{add}} (\$jobs)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_ac1cd3fdd63c6a4e32574789d0bb7d7a0}{record\+Successful\+Job}} (string \$job\+Id)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a3fca3b33bb37472680cfc2065c65c1da}{decrement\+Pending\+Jobs}} (string \$job\+Id)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a73052005b1cb876ccf707744e9de3b67}{record\+Failed\+Job}} (string \$job\+Id, \$e)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a27055de1cfcc09223e08edf26ba5789e}{increment\+Failed\+Jobs}} (string \$job\+Id)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a2ef96532af08f196af15c96e1769c95d}{cancel}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a23c7e7f5b7fe3ca7896eb62192d5f422}{delete}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_ae3681acd938fd6f971759d222502928c}{deleted}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_a3aeec8e283fed017344b400ccf32d76c}{\+\_\+\+\_\+construct}} (Queue\+Factory \$queue, \mbox{\hyperlink{interface_illuminate_1_1_bus_1_1_batch_repository}{Batch\+Repository}} \$repository, string \$id, string \$name, int \$total\+Jobs, int \$pending\+Jobs, int \$failed\+Jobs, array \$failed\+Job\+Ids, array \$options, \mbox{\hyperlink{class_carbon_1_1_carbon_immutable}{Carbon\+Immutable}} \$created\+At, ?\mbox{\hyperlink{class_carbon_1_1_carbon_immutable}{Carbon\+Immutable}} \$cancelled\+At=null, ?\mbox{\hyperlink{class_carbon_1_1_carbon_immutable}{Carbon\+Immutable}} \$finished\+At=null,)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_a87a55e657c5e093286ba372adbb24609}{processed\+Jobs}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_a28bce509951b00ecc9485aba888cd0e0}{progress}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_a4b2eb76c8f5524a6493729c5d5cf0137}{finished}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_af3d8752b21cc8499d2707883d7a35ab4}{has\+Progress\+Callbacks}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_a55543c9cd5536254ae6f2106a10ac0dd}{has\+Then\+Callbacks}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_ae3bb9501dc4d80d41295257925d2e629}{allows\+Failures}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_ab791c9a52c00f5e6cc92976e6b9622ae}{has\+Failures}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_a412e0e665e52b7ec4dcfdc3f32a4d394}{has\+Catch\+Callbacks}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_a638e452a176afb80c7ff50f07b263ff8}{has\+Finally\+Callbacks}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_a926d57680945c920a03d297407e6b420}{canceled}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_a9480f6b9b440c19c879e65dac6bcf6ea}{cancelled}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_aaa55f6315aeacb0875c291a3885106b0}{to\+Array}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_a28b0592ec3fc793ae93b4e74f6dae90b}{json\+Serialize}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_ad64f061b9757be33fc72213f286ea476}{\+\_\+\+\_\+get}} (\$key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_aa12c87dd507a5486bcd6895b85cdb319}\label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_aa12c87dd507a5486bcd6895b85cdb319} 
+{\bfseries \$added} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_aa5330d315c68ab00e68c2eebf97d8ed3}\label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_aa5330d315c68ab00e68c2eebf97d8ed3} 
+{\bfseries \$deleted} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$id}
+\item 
+{\bfseries \$name}
+\item 
+{\bfseries \$total\+Jobs}
+\item 
+{\bfseries \$pending\+Jobs}
+\item 
+{\bfseries \$failed\+Jobs}
+\item 
+{\bfseries \$failed\+Job\+Ids}
+\item 
+{\bfseries \$options}
+\item 
+{\bfseries \$created\+At}
+\item 
+{\bfseries \$cancelled\+At}
+\item 
+{\bfseries \$finished\+At}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_ae49512dbb65614d973d2c5c1657986d8}{prepare\+Batched\+Chain}} (array \$chain)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_a17203cff2a4159067b5f14f17c7239b5}{invoke\+Handler\+Callback}} (\$handler, \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch}{Batch}} \$batch, ?Throwable \$e=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$queue}
+\item 
+{\bfseries \$repository}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_afd098e7c04e8a04dd299b285661dac03}\index{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_afd098e7c04e8a04dd299b285661dac03} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Fake\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$id}{, }\item[{string}]{\$name}{, }\item[{int}]{\$total\+Jobs}{, }\item[{int}]{\$pending\+Jobs}{, }\item[{int}]{\$failed\+Jobs}{, }\item[{array}]{\$failed\+Job\+Ids}{, }\item[{array}]{\$options}{, }\item[{\mbox{\hyperlink{class_carbon_1_1_carbon_immutable}{Carbon\+Immutable}}}]{\$created\+At}{, }\item[{?\mbox{\hyperlink{class_carbon_1_1_carbon_immutable}{Carbon\+Immutable}}}]{\$cancelled\+At}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{class_carbon_1_1_carbon_immutable}{Carbon\+Immutable}}}]{\$finished\+At}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new batch instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$id} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+int & {\em \$total\+Jobs} & \\
+\hline
+int & {\em \$pending\+Jobs} & \\
+\hline
+int & {\em \$failed\+Jobs} & \\
+\hline
+array & {\em \$failed\+Job\+Ids} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\textbackslash{}\+Carbon\textbackslash{}\+Carbon\+Immutable & {\em \$created\+At} & \\
+\hline
+\textbackslash{}\+Carbon\textbackslash{}\+Carbon\+Immutable | null & {\em \$cancelled\+At} & \\
+\hline
+\textbackslash{}\+Carbon\textbackslash{}\+Carbon\+Immutable | null & {\em \$finished\+At} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a670b04f74e151952abd605b7ba28db06}\index{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}!add@{add}}
+\index{add@{add}!Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a670b04f74e151952abd605b7ba28db06} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Fake\+::add (\begin{DoxyParamCaption}\item[{}]{\$jobs}{}\end{DoxyParamCaption})}
+
+Add additional jobs to the batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Enumerable | object | array & {\em \$jobs} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_a045a1c9da6192c5fff15adede33a302c}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch}}.
+
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a2ef96532af08f196af15c96e1769c95d}\index{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}!cancel@{cancel}}
+\index{cancel@{cancel}!Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}}
+\doxysubsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a2ef96532af08f196af15c96e1769c95d} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Fake\+::cancel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Cancel the batch.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_a61006dc3c4e2b29955b65483df850717}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch}}.
+
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a3fca3b33bb37472680cfc2065c65c1da}\index{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}!decrementPendingJobs@{decrementPendingJobs}}
+\index{decrementPendingJobs@{decrementPendingJobs}!Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}}
+\doxysubsubsection{\texorpdfstring{decrementPendingJobs()}{decrementPendingJobs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a3fca3b33bb37472680cfc2065c65c1da} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Fake\+::decrement\+Pending\+Jobs (\begin{DoxyParamCaption}\item[{string}]{\$job\+Id}{}\end{DoxyParamCaption})}
+
+Decrement the pending jobs for the batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$job\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Updated\+Batch\+Job\+Counts 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_af60a327238553adbe56e793ff7f893c8}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch}}.
+
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a23c7e7f5b7fe3ca7896eb62192d5f422}\index{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}!delete@{delete}}
+\index{delete@{delete}!Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a23c7e7f5b7fe3ca7896eb62192d5f422} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Fake\+::delete (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Delete the batch from storage.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_aa0acbf55442016317e76fa24ceadafa6}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch}}.
+
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_ae3681acd938fd6f971759d222502928c}\index{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}!deleted@{deleted}}
+\index{deleted@{deleted}!Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}}
+\doxysubsubsection{\texorpdfstring{deleted()}{deleted()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_ae3681acd938fd6f971759d222502928c} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Fake\+::deleted (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Determine if the batch has been deleted.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_ad310a23198d2c6e530fcbc1fb4c37d91}\index{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}!fresh@{fresh}}
+\index{fresh@{fresh}!Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}}
+\doxysubsubsection{\texorpdfstring{fresh()}{fresh()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_ad310a23198d2c6e530fcbc1fb4c37d91} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Fake\+::fresh (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get a fresh instance of the batch represented by this ID.
+
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_aa146fea26a3ab81e8fea6b63b616ff4a}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch}}.
+
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a27055de1cfcc09223e08edf26ba5789e}\index{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}!incrementFailedJobs@{incrementFailedJobs}}
+\index{incrementFailedJobs@{incrementFailedJobs}!Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}}
+\doxysubsubsection{\texorpdfstring{incrementFailedJobs()}{incrementFailedJobs()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a27055de1cfcc09223e08edf26ba5789e} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Fake\+::increment\+Failed\+Jobs (\begin{DoxyParamCaption}\item[{string}]{\$job\+Id}{}\end{DoxyParamCaption})}
+
+Increment the failed jobs for the batch.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$job\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Bus\textbackslash{}\+Updated\+Batch\+Job\+Counts 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_ad011f99ca67ee917df633c2c949b3160}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch}}.
+
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a73052005b1cb876ccf707744e9de3b67}\index{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}!recordFailedJob@{recordFailedJob}}
+\index{recordFailedJob@{recordFailedJob}!Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}}
+\doxysubsubsection{\texorpdfstring{recordFailedJob()}{recordFailedJob()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_a73052005b1cb876ccf707744e9de3b67} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Fake\+::record\+Failed\+Job (\begin{DoxyParamCaption}\item[{string}]{\$job\+Id}{, }\item[{}]{\$e}{}\end{DoxyParamCaption})}
+
+Record that a job within the batch failed to finish successfully, executing any callbacks if necessary.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$job\+Id} & \\
+\hline
+\textbackslash{}\+Throwable & {\em \$e} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_a09c5508345058af1cdc40dda4d73d696}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch}}.
+
+\Hypertarget{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_ac1cd3fdd63c6a4e32574789d0bb7d7a0}\index{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}!recordSuccessfulJob@{recordSuccessfulJob}}
+\index{recordSuccessfulJob@{recordSuccessfulJob}!Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake@{Illuminate\textbackslash{}Support\textbackslash{}Testing\textbackslash{}Fakes\textbackslash{}BatchFake}}
+\doxysubsubsection{\texorpdfstring{recordSuccessfulJob()}{recordSuccessfulJob()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_batch_fake_ac1cd3fdd63c6a4e32574789d0bb7d7a0} 
+Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Batch\+Fake\+::record\+Successful\+Job (\begin{DoxyParamCaption}\item[{string}]{\$job\+Id}{}\end{DoxyParamCaption})}
+
+Record that a job within the batch finished successfully, executing any callbacks if necessary.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$job\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_batch_a1e977cb002fb565d782594abcaca2bea}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Batch}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Support/\+Testing/\+Fakes/Batch\+Fake.\+php\end{DoxyCompactItemize}

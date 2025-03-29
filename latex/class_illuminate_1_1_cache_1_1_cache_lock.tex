@@ -1,0 +1,155 @@
+\doxysection{Illuminate\textbackslash{}Cache\textbackslash{}Cache\+Lock Class Reference}
+\hypertarget{class_illuminate_1_1_cache_1_1_cache_lock}{}\label{class_illuminate_1_1_cache_1_1_cache_lock}\index{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock@{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock}}
+Inheritance diagram for Illuminate\textbackslash{}Cache\textbackslash{}Cache\+Lock\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_illuminate_1_1_cache_1_1_cache_lock}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_cache_lock_ae6f841cb1a00ee1f20f8e380933b9706}{\+\_\+\+\_\+construct}} (\$store, \$name, \$seconds, \$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_cache_lock_aa3a825b859ca0a4e4fe2de6773be685c}{acquire}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_cache_lock_a98605a7fd9f331664c17bef4b8bf7758}{release}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_cache_lock_a80fcf3bc39bd318cdfbb98d907cee076}{force\+Release}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a5a673e886da30fb119a806d893714e28}{\+\_\+\+\_\+construct}} (\$name, \$seconds, \$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_adbb7043056ffa08ae70ac55a99aee0fc}{get}} (\$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_aed6219de240abd5f817b91e9f9d695ee}{block}} (\$seconds, \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a78af018332d21c9300867728619ee758}{is\+Owned\+By\+Current\+Process}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a5246eab1e8daf252b65fde2a261ba759}{is\+Owned\+By}} (\$\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_ad156b82575b58d13c427eed5e3c4c626}{owner}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a0e0b2dc71964911fb5e1dc2be72c6980}{between\+Blocked\+Attempts\+Sleep\+For}} (\$milliseconds)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cache_1_1_cache_lock_ac16b6a9a004627b4e23d495b9943cd35}{get\+Current\+Owner}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_cache_1_1_cache_lock_a198f8821f1b71910b2d328cba8ef6b55}\label{class_illuminate_1_1_cache_1_1_cache_lock_a198f8821f1b71910b2d328cba8ef6b55} 
+{\bfseries \$store}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$name}
+\item 
+{\bfseries \$seconds}
+\item 
+{\bfseries \$owner}
+\item 
+{\bfseries \$sleep\+Milliseconds} = 250
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_cache_lock_ae6f841cb1a00ee1f20f8e380933b9706}\index{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock@{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Cache\textbackslash{}CacheLock@{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_cache_lock_ae6f841cb1a00ee1f20f8e380933b9706} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Cache\+Lock\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$store}{, }\item[{}]{\$name}{, }\item[{}]{\$seconds}{, }\item[{}]{\$owner}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new lock instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Store & {\em \$store} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+int & {\em \$seconds} & \\
+\hline
+string | null & {\em \$owner} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_cache_1_1_cache_lock_aa3a825b859ca0a4e4fe2de6773be685c}\index{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock@{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock}!acquire@{acquire}}
+\index{acquire@{acquire}!Illuminate\textbackslash{}Cache\textbackslash{}CacheLock@{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock}}
+\doxysubsubsection{\texorpdfstring{acquire()}{acquire()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_cache_lock_aa3a825b859ca0a4e4fe2de6773be685c} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Cache\+Lock\+::acquire (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Attempt to acquire the lock.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a3e02d90803c0e5e6b7bdf4fc17ea8857}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_file_lock_abb274e5f1985fcfd90a89aeef3ecd3cd}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+File\+Lock}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_cache_lock_a80fcf3bc39bd318cdfbb98d907cee076}\index{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock@{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock}!forceRelease@{forceRelease}}
+\index{forceRelease@{forceRelease}!Illuminate\textbackslash{}Cache\textbackslash{}CacheLock@{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock}}
+\doxysubsubsection{\texorpdfstring{forceRelease()}{forceRelease()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_cache_lock_a80fcf3bc39bd318cdfbb98d907cee076} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Cache\+Lock\+::force\+Release (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Releases this lock regardless of ownership.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_cache_1_1_lock_aebc99079ee6e82c29cc0e35460a95c85}{Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_cache_lock_ac16b6a9a004627b4e23d495b9943cd35}\index{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock@{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock}!getCurrentOwner@{getCurrentOwner}}
+\index{getCurrentOwner@{getCurrentOwner}!Illuminate\textbackslash{}Cache\textbackslash{}CacheLock@{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock}}
+\doxysubsubsection{\texorpdfstring{getCurrentOwner()}{getCurrentOwner()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_cache_lock_ac16b6a9a004627b4e23d495b9943cd35} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Cache\+Lock\+::get\+Current\+Owner (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the owner value written into the driver for this lock.
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a334cff7e658bcc2ede6d9fb0e27d252b}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+\Hypertarget{class_illuminate_1_1_cache_1_1_cache_lock_a98605a7fd9f331664c17bef4b8bf7758}\index{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock@{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock}!release@{release}}
+\index{release@{release}!Illuminate\textbackslash{}Cache\textbackslash{}CacheLock@{Illuminate\textbackslash{}Cache\textbackslash{}CacheLock}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cache_1_1_cache_lock_a98605a7fd9f331664c17bef4b8bf7758} 
+Illuminate\textbackslash{}\+Cache\textbackslash{}\+Cache\+Lock\+::release (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Release the lock.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_cache_1_1_lock_a6b0d063e5c735c23e9a56aa18b6b7d88}{Illuminate\textbackslash{}\+Cache\textbackslash{}\+Lock}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Cache/Cache\+Lock.\+php\end{DoxyCompactItemize}

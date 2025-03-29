@@ -1,0 +1,205 @@
+\doxysection{Psr\textbackslash{}Simple\+Cache\textbackslash{}Cache\+Interface Interface Reference}
+\hypertarget{interface_psr_1_1_simple_cache_1_1_cache_interface}{}\label{interface_psr_1_1_simple_cache_1_1_cache_interface}\index{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}}
+Inheritance diagram for Psr\textbackslash{}Simple\+Cache\textbackslash{}Cache\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_psr_1_1_simple_cache_1_1_cache_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_psr_1_1_simple_cache_1_1_cache_interface_ae61dffe46139387cb4b100e0a423c4c3}{get}} (string \$key, mixed \$default=null)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_simple_cache_1_1_cache_interface_a82d0e029df92781946d9ffd42b3c2f75}{set}} (string \$key, mixed \$value, null\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}\textbackslash{}Date\+Interval \$ttl=null)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_simple_cache_1_1_cache_interface_a07bb17442d9b0bed1720221f33648e0a}{delete}} (string \$key)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_simple_cache_1_1_cache_interface_a933233e4967fef8b75883225895b0812}{clear}} ()
+\item 
+\mbox{\hyperlink{interface_psr_1_1_simple_cache_1_1_cache_interface_af65028304570d818fe0bf276ec1eb74f}{get\+Multiple}} (iterable \$keys, mixed \$default=null)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_simple_cache_1_1_cache_interface_a92be1b89c753e8f48da35b5424519887}{set\+Multiple}} (iterable \$values, null\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}\textbackslash{}Date\+Interval \$ttl=null)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_simple_cache_1_1_cache_interface_af4509aefc123f195c2f93e56b823e46e}{delete\+Multiple}} (iterable \$keys)
+\item 
+\mbox{\hyperlink{interface_psr_1_1_simple_cache_1_1_cache_interface_a2a36afca71719dedc9ca21747bf5aaee}{has}} (string \$key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_psr_1_1_simple_cache_1_1_cache_interface_a933233e4967fef8b75883225895b0812}\index{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}!clear@{clear}}
+\index{clear@{clear}!Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_simple_cache_1_1_cache_interface_a933233e4967fef8b75883225895b0812} 
+Psr\textbackslash{}\+Simple\+Cache\textbackslash{}\+Cache\+Interface\+::clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Wipes clean the entire cache\textquotesingle{}s keys.
+
+\begin{DoxyReturn}{Returns}
+bool True on success and false on failure. 
+\end{DoxyReturn}
+\Hypertarget{interface_psr_1_1_simple_cache_1_1_cache_interface_a07bb17442d9b0bed1720221f33648e0a}\index{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}!delete@{delete}}
+\index{delete@{delete}!Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_simple_cache_1_1_cache_interface_a07bb17442d9b0bed1720221f33648e0a} 
+Psr\textbackslash{}\+Simple\+Cache\textbackslash{}\+Cache\+Interface\+::delete (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Delete an item from the cache by its unique key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The unique cache key of the item to delete.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the item was successfully removed. False if there was an error.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Psr\textbackslash{}\+Simple\+Cache\textbackslash{}\+Invalid\+Argument\+Exception MUST be thrown if the \$key string is not a legal value. \Hypertarget{interface_psr_1_1_simple_cache_1_1_cache_interface_af4509aefc123f195c2f93e56b823e46e}\index{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}!deleteMultiple@{deleteMultiple}}
+\index{deleteMultiple@{deleteMultiple}!Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{deleteMultiple()}{deleteMultiple()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_simple_cache_1_1_cache_interface_af4509aefc123f195c2f93e56b823e46e} 
+Psr\textbackslash{}\+Simple\+Cache\textbackslash{}\+Cache\+Interface\+::delete\+Multiple (\begin{DoxyParamCaption}\item[{iterable}]{\$keys}{}\end{DoxyParamCaption})}
+
+Deletes multiple cache items in a single operation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em iterable$<$string$>$} & \$keys A list of string-\/based keys to be deleted.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the items were successfully removed. False if there was an error.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Psr\textbackslash{}\+Simple\+Cache\textbackslash{}\+Invalid\+Argument\+Exception MUST be thrown if \$keys is neither an array nor a Traversable, or if any of the \$keys are not a legal value. \Hypertarget{interface_psr_1_1_simple_cache_1_1_cache_interface_ae61dffe46139387cb4b100e0a423c4c3}\index{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}!get@{get}}
+\index{get@{get}!Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_simple_cache_1_1_cache_interface_ae61dffe46139387cb4b100e0a423c4c3} 
+Psr\textbackslash{}\+Simple\+Cache\textbackslash{}\+Cache\+Interface\+::get (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{mixed}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Fetches a value from the cache.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The unique key of this item in the cache. \\
+\hline
+mixed & {\em \$default} & Default value to return if the key does not exist.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The value of the item from the cache, or \$default in case of cache miss.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Psr\textbackslash{}\+Simple\+Cache\textbackslash{}\+Invalid\+Argument\+Exception MUST be thrown if the \$key string is not a legal value. \Hypertarget{interface_psr_1_1_simple_cache_1_1_cache_interface_af65028304570d818fe0bf276ec1eb74f}\index{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}!getMultiple@{getMultiple}}
+\index{getMultiple@{getMultiple}!Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{getMultiple()}{getMultiple()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_simple_cache_1_1_cache_interface_af65028304570d818fe0bf276ec1eb74f} 
+Psr\textbackslash{}\+Simple\+Cache\textbackslash{}\+Cache\+Interface\+::get\+Multiple (\begin{DoxyParamCaption}\item[{iterable}]{\$keys}{, }\item[{mixed}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Obtains multiple cache items by their unique keys.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em iterable$<$string$>$} & \$keys A list of keys that can be obtained in a single operation. \\
+\hline
+mixed & {\em \$default} & Default value to return for keys that do not exist.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+iterable$<$string, mixed$>$ A list of key =\texorpdfstring{$>$}{>} value pairs. Cache keys that do not exist or are stale will have \$default as value.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Psr\textbackslash{}\+Simple\+Cache\textbackslash{}\+Invalid\+Argument\+Exception MUST be thrown if \$keys is neither an array nor a Traversable, or if any of the \$keys are not a legal value. \Hypertarget{interface_psr_1_1_simple_cache_1_1_cache_interface_a2a36afca71719dedc9ca21747bf5aaee}\index{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}!has@{has}}
+\index{has@{has}!Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_simple_cache_1_1_cache_interface_a2a36afca71719dedc9ca21747bf5aaee} 
+Psr\textbackslash{}\+Simple\+Cache\textbackslash{}\+Cache\+Interface\+::has (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})}
+
+Determines whether an item is present in the cache.
+
+NOTE\+: It is recommended that has() is only to be used for cache warming type purposes and not to be used within your live applications operations for get/set, as this method is subject to a race condition where your has() will return true and immediately after, another script can remove it making the state of your app out of date.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The cache item key.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Psr\textbackslash{}\+Simple\+Cache\textbackslash{}\+Invalid\+Argument\+Exception MUST be thrown if the \$key string is not a legal value. \Hypertarget{interface_psr_1_1_simple_cache_1_1_cache_interface_a82d0e029df92781946d9ffd42b3c2f75}\index{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}!set@{set}}
+\index{set@{set}!Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_simple_cache_1_1_cache_interface_a82d0e029df92781946d9ffd42b3c2f75} 
+Psr\textbackslash{}\+Simple\+Cache\textbackslash{}\+Cache\+Interface\+::set (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{mixed}]{\$value}{, }\item[{null\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}\textbackslash{}Date\+Interval}]{\$ttl}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Persists data in the cache, uniquely referenced by a key with an optional expiration TTL time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & The key of the item to store. \\
+\hline
+mixed & {\em \$value} & The value of the item to store, must be serializable. \\
+\hline
+null | int | \textbackslash{}\+Date\+Interval & {\em \$ttl} & Optional. The TTL value of this item. If no value is sent and the driver supports TTL then the library may set a default value for it or let the driver take care of that.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True on success and false on failure.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Psr\textbackslash{}\+Simple\+Cache\textbackslash{}\+Invalid\+Argument\+Exception MUST be thrown if the \$key string is not a legal value. \Hypertarget{interface_psr_1_1_simple_cache_1_1_cache_interface_a92be1b89c753e8f48da35b5424519887}\index{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}!setMultiple@{setMultiple}}
+\index{setMultiple@{setMultiple}!Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface@{Psr\textbackslash{}SimpleCache\textbackslash{}CacheInterface}}
+\doxysubsubsection{\texorpdfstring{setMultiple()}{setMultiple()}}
+{\footnotesize\ttfamily \label{interface_psr_1_1_simple_cache_1_1_cache_interface_a92be1b89c753e8f48da35b5424519887} 
+Psr\textbackslash{}\+Simple\+Cache\textbackslash{}\+Cache\+Interface\+::set\+Multiple (\begin{DoxyParamCaption}\item[{iterable}]{\$values}{, }\item[{null\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}\textbackslash{}Date\+Interval}]{\$ttl}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Persists a set of key =\texorpdfstring{$>$}{>} value pairs in the cache, with an optional TTL.
+
+
+\begin{DoxyParams}[1]{Parameters}
+iterable & {\em \$values} & A list of key =\texorpdfstring{$>$}{>} value pairs for a multiple-\/set operation. \\
+\hline
+null | int | \textbackslash{}\+Date\+Interval & {\em \$ttl} & Optional. The TTL value of this item. If no value is sent and the driver supports TTL then the library may set a default value for it or let the driver take care of that.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True on success and false on failure.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Psr\textbackslash{}\+Simple\+Cache\textbackslash{}\+Invalid\+Argument\+Exception MUST be thrown if \$values is neither an array nor a Traversable, or if any of the \$values are not a legal value. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psr/simple-\/cache/src/Cache\+Interface.\+php\end{DoxyCompactItemize}

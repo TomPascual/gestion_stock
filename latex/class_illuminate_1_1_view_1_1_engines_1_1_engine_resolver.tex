@@ -1,0 +1,85 @@
+\doxysection{Illuminate\textbackslash{}View\textbackslash{}Engines\textbackslash{}Engine\+Resolver Class Reference}
+\hypertarget{class_illuminate_1_1_view_1_1_engines_1_1_engine_resolver}{}\label{class_illuminate_1_1_view_1_1_engines_1_1_engine_resolver}\index{Illuminate\textbackslash{}View\textbackslash{}Engines\textbackslash{}EngineResolver@{Illuminate\textbackslash{}View\textbackslash{}Engines\textbackslash{}EngineResolver}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_engines_1_1_engine_resolver_ad74e2d6795728d25b084ce2016ba89da}{register}} (\$engine, Closure \$resolver)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_engines_1_1_engine_resolver_a30015f01a491fe3da304ff047e1c1758}{resolve}} (\$engine)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_view_1_1_engines_1_1_engine_resolver_a544952cd6ac2962d3e83f8ac598030cd}{forget}} (\$engine)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_view_1_1_engines_1_1_engine_resolver_aa3f5a196df358041825e470327c64770}\label{class_illuminate_1_1_view_1_1_engines_1_1_engine_resolver_aa3f5a196df358041825e470327c64770} 
+{\bfseries \$resolvers} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_view_1_1_engines_1_1_engine_resolver_a906ca32b4130f6f4b5da20242b0c383c}\label{class_illuminate_1_1_view_1_1_engines_1_1_engine_resolver_a906ca32b4130f6f4b5da20242b0c383c} 
+{\bfseries \$resolved} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_view_1_1_engines_1_1_engine_resolver_a544952cd6ac2962d3e83f8ac598030cd}\index{Illuminate\textbackslash{}View\textbackslash{}Engines\textbackslash{}EngineResolver@{Illuminate\textbackslash{}View\textbackslash{}Engines\textbackslash{}EngineResolver}!forget@{forget}}
+\index{forget@{forget}!Illuminate\textbackslash{}View\textbackslash{}Engines\textbackslash{}EngineResolver@{Illuminate\textbackslash{}View\textbackslash{}Engines\textbackslash{}EngineResolver}}
+\doxysubsubsection{\texorpdfstring{forget()}{forget()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_engines_1_1_engine_resolver_a544952cd6ac2962d3e83f8ac598030cd} 
+Illuminate\textbackslash{}\+View\textbackslash{}\+Engines\textbackslash{}\+Engine\+Resolver\+::forget (\begin{DoxyParamCaption}\item[{}]{\$engine}{}\end{DoxyParamCaption})}
+
+Remove a resolved engine.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$engine} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_engines_1_1_engine_resolver_ad74e2d6795728d25b084ce2016ba89da}\index{Illuminate\textbackslash{}View\textbackslash{}Engines\textbackslash{}EngineResolver@{Illuminate\textbackslash{}View\textbackslash{}Engines\textbackslash{}EngineResolver}!register@{register}}
+\index{register@{register}!Illuminate\textbackslash{}View\textbackslash{}Engines\textbackslash{}EngineResolver@{Illuminate\textbackslash{}View\textbackslash{}Engines\textbackslash{}EngineResolver}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_engines_1_1_engine_resolver_ad74e2d6795728d25b084ce2016ba89da} 
+Illuminate\textbackslash{}\+View\textbackslash{}\+Engines\textbackslash{}\+Engine\+Resolver\+::register (\begin{DoxyParamCaption}\item[{}]{\$engine}{, }\item[{Closure}]{\$resolver}{}\end{DoxyParamCaption})}
+
+Register a new engine resolver.
+
+The engine string typically corresponds to a file extension.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$engine} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$resolver} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_view_1_1_engines_1_1_engine_resolver_a30015f01a491fe3da304ff047e1c1758}\index{Illuminate\textbackslash{}View\textbackslash{}Engines\textbackslash{}EngineResolver@{Illuminate\textbackslash{}View\textbackslash{}Engines\textbackslash{}EngineResolver}!resolve@{resolve}}
+\index{resolve@{resolve}!Illuminate\textbackslash{}View\textbackslash{}Engines\textbackslash{}EngineResolver@{Illuminate\textbackslash{}View\textbackslash{}Engines\textbackslash{}EngineResolver}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_view_1_1_engines_1_1_engine_resolver_a30015f01a491fe3da304ff047e1c1758} 
+Illuminate\textbackslash{}\+View\textbackslash{}\+Engines\textbackslash{}\+Engine\+Resolver\+::resolve (\begin{DoxyParamCaption}\item[{}]{\$engine}{}\end{DoxyParamCaption})}
+
+Resolve an engine instance by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$engine} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+View\textbackslash{}\+Engine
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+View/\+Engines/Engine\+Resolver.\+php\end{DoxyCompactItemize}

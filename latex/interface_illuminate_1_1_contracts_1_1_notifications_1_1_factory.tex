@@ -1,0 +1,85 @@
+\doxysection{Illuminate\textbackslash{}Contracts\textbackslash{}Notifications\textbackslash{}Factory Interface Reference}
+\hypertarget{interface_illuminate_1_1_contracts_1_1_notifications_1_1_factory}{}\label{interface_illuminate_1_1_contracts_1_1_notifications_1_1_factory}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Notifications\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}Notifications\textbackslash{}Factory}}
+Inheritance diagram for Illuminate\textbackslash{}Contracts\textbackslash{}Notifications\textbackslash{}Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_illuminate_1_1_contracts_1_1_notifications_1_1_factory}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_notifications_1_1_factory_a9c1e31fde042077e2e7112ad926b0afd}{channel}} (\$name=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_notifications_1_1_factory_ac371c39d9c5d9876e4889deb995d75e6}{send}} (\$notifiables, \$notification)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_notifications_1_1_factory_ac59663ebec40312a10a7d4eefbb1fee5}{send\+Now}} (\$notifiables, \$notification)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_notifications_1_1_factory_a9c1e31fde042077e2e7112ad926b0afd}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Notifications\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}Notifications\textbackslash{}Factory}!channel@{channel}}
+\index{channel@{channel}!Illuminate\textbackslash{}Contracts\textbackslash{}Notifications\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}Notifications\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{channel()}{channel()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_notifications_1_1_factory_a9c1e31fde042077e2e7112ad926b0afd} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Notifications\textbackslash{}\+Factory\+::channel (\begin{DoxyParamCaption}\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a channel instance by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_ab302b89ca6ef014b2c0232cc98d2a921}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Notification\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_notifications_1_1_factory_ac371c39d9c5d9876e4889deb995d75e6}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Notifications\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}Notifications\textbackslash{}Factory}!send@{send}}
+\index{send@{send}!Illuminate\textbackslash{}Contracts\textbackslash{}Notifications\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}Notifications\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_notifications_1_1_factory_ac371c39d9c5d9876e4889deb995d75e6} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Notifications\textbackslash{}\+Factory\+::send (\begin{DoxyParamCaption}\item[{}]{\$notifiables}{, }\item[{}]{\$notification}{}\end{DoxyParamCaption})}
+
+Send the given notification to the given notifiable entities.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection | array | mixed & {\em \$notifiables} & \\
+\hline
+mixed & {\em \$notification} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_notification_fake_a8fbc381862e95d8405845ee2c7ffe238}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Notification\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_notifications_1_1_factory_ac59663ebec40312a10a7d4eefbb1fee5}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Notifications\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}Notifications\textbackslash{}Factory}!sendNow@{sendNow}}
+\index{sendNow@{sendNow}!Illuminate\textbackslash{}Contracts\textbackslash{}Notifications\textbackslash{}Factory@{Illuminate\textbackslash{}Contracts\textbackslash{}Notifications\textbackslash{}Factory}}
+\doxysubsubsection{\texorpdfstring{sendNow()}{sendNow()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_notifications_1_1_factory_ac59663ebec40312a10a7d4eefbb1fee5} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Notifications\textbackslash{}\+Factory\+::send\+Now (\begin{DoxyParamCaption}\item[{}]{\$notifiables}{, }\item[{}]{\$notification}{}\end{DoxyParamCaption})}
+
+Send the given notification immediately.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection | array | mixed & {\em \$notifiables} & \\
+\hline
+mixed & {\em \$notification} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Contracts/\+Notifications/Factory.\+php\end{DoxyCompactItemize}

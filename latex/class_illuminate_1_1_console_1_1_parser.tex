@@ -1,0 +1,134 @@
+\doxysection{Illuminate\textbackslash{}Console\textbackslash{}Parser Class Reference}
+\hypertarget{class_illuminate_1_1_console_1_1_parser}{}\label{class_illuminate_1_1_console_1_1_parser}\index{Illuminate\textbackslash{}Console\textbackslash{}Parser@{Illuminate\textbackslash{}Console\textbackslash{}Parser}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_console_1_1_parser_a8c9468af43e3aebf55ad88b9a7f1170a}{parse}} (string \$expression)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_console_1_1_parser_a7e86e2c1ffb2a3f051b275472425c0eb}{name}} (string \$expression)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_console_1_1_parser_aaec0908b92925026175c39315483a192}{parameters}} (array \$tokens)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_console_1_1_parser_a05a20c568c81fad48083a05722623b31}{parse\+Argument}} (string \$token)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_console_1_1_parser_a79cd488577399ff773ca3d834fdf4ed6}{parse\+Option}} (string \$token)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_console_1_1_parser_ac26a7e1c2899fcda73c2b5e2f14a9c31}{extract\+Description}} (string \$token)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_console_1_1_parser_ac26a7e1c2899fcda73c2b5e2f14a9c31}\index{Illuminate\textbackslash{}Console\textbackslash{}Parser@{Illuminate\textbackslash{}Console\textbackslash{}Parser}!extractDescription@{extractDescription}}
+\index{extractDescription@{extractDescription}!Illuminate\textbackslash{}Console\textbackslash{}Parser@{Illuminate\textbackslash{}Console\textbackslash{}Parser}}
+\doxysubsubsection{\texorpdfstring{extractDescription()}{extractDescription()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_parser_ac26a7e1c2899fcda73c2b5e2f14a9c31} 
+static Illuminate\textbackslash{}\+Console\textbackslash{}\+Parser\+::extract\+Description (\begin{DoxyParamCaption}\item[{string}]{\$token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Parse the token into its token and description segments.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$token} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_parser_a7e86e2c1ffb2a3f051b275472425c0eb}\index{Illuminate\textbackslash{}Console\textbackslash{}Parser@{Illuminate\textbackslash{}Console\textbackslash{}Parser}!name@{name}}
+\index{name@{name}!Illuminate\textbackslash{}Console\textbackslash{}Parser@{Illuminate\textbackslash{}Console\textbackslash{}Parser}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_parser_a7e86e2c1ffb2a3f051b275472425c0eb} 
+static Illuminate\textbackslash{}\+Console\textbackslash{}\+Parser\+::name (\begin{DoxyParamCaption}\item[{string}]{\$expression}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Extract the name of the command from the expression.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expression} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_console_1_1_parser_aaec0908b92925026175c39315483a192}\index{Illuminate\textbackslash{}Console\textbackslash{}Parser@{Illuminate\textbackslash{}Console\textbackslash{}Parser}!parameters@{parameters}}
+\index{parameters@{parameters}!Illuminate\textbackslash{}Console\textbackslash{}Parser@{Illuminate\textbackslash{}Console\textbackslash{}Parser}}
+\doxysubsubsection{\texorpdfstring{parameters()}{parameters()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_parser_aaec0908b92925026175c39315483a192} 
+static Illuminate\textbackslash{}\+Console\textbackslash{}\+Parser\+::parameters (\begin{DoxyParamCaption}\item[{array}]{\$tokens}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Extract all parameters from the tokens.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$tokens} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_parser_a8c9468af43e3aebf55ad88b9a7f1170a}\index{Illuminate\textbackslash{}Console\textbackslash{}Parser@{Illuminate\textbackslash{}Console\textbackslash{}Parser}!parse@{parse}}
+\index{parse@{parse}!Illuminate\textbackslash{}Console\textbackslash{}Parser@{Illuminate\textbackslash{}Console\textbackslash{}Parser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_parser_a8c9468af43e3aebf55ad88b9a7f1170a} 
+static Illuminate\textbackslash{}\+Console\textbackslash{}\+Parser\+::parse (\begin{DoxyParamCaption}\item[{string}]{\$expression}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parse the given console command definition into an array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expression} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_console_1_1_parser_a05a20c568c81fad48083a05722623b31}\index{Illuminate\textbackslash{}Console\textbackslash{}Parser@{Illuminate\textbackslash{}Console\textbackslash{}Parser}!parseArgument@{parseArgument}}
+\index{parseArgument@{parseArgument}!Illuminate\textbackslash{}Console\textbackslash{}Parser@{Illuminate\textbackslash{}Console\textbackslash{}Parser}}
+\doxysubsubsection{\texorpdfstring{parseArgument()}{parseArgument()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_parser_a05a20c568c81fad48083a05722623b31} 
+static Illuminate\textbackslash{}\+Console\textbackslash{}\+Parser\+::parse\+Argument (\begin{DoxyParamCaption}\item[{string}]{\$token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Parse an argument expression.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$token} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Input\textbackslash{}\+Input\+Argument 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_console_1_1_parser_a79cd488577399ff773ca3d834fdf4ed6}\index{Illuminate\textbackslash{}Console\textbackslash{}Parser@{Illuminate\textbackslash{}Console\textbackslash{}Parser}!parseOption@{parseOption}}
+\index{parseOption@{parseOption}!Illuminate\textbackslash{}Console\textbackslash{}Parser@{Illuminate\textbackslash{}Console\textbackslash{}Parser}}
+\doxysubsubsection{\texorpdfstring{parseOption()}{parseOption()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_console_1_1_parser_a79cd488577399ff773ca3d834fdf4ed6} 
+static Illuminate\textbackslash{}\+Console\textbackslash{}\+Parser\+::parse\+Option (\begin{DoxyParamCaption}\item[{string}]{\$token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Parse an option expression.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$token} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Console\textbackslash{}\+Input\textbackslash{}\+Input\+Option 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Console/Parser.\+php\end{DoxyCompactItemize}

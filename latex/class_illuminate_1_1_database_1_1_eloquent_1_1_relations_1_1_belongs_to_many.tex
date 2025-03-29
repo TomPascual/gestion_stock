@@ -1,0 +1,1979 @@
+\doxysection{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}Belongs\+To\+Many Class Reference}
+\hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many}{}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+Inheritance diagram for Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}Belongs\+To\+Many\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.229608cm]{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aae2346d10c0480413a7a330d249be28a}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}} \$query, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}} \$parent, \$table, \$foreign\+Pivot\+Key, \$related\+Pivot\+Key, \$parent\+Key, \$related\+Key, \$relation\+Name=null,)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0009aeb9f4bd6aefebd67ce9717129fb}{add\+Constraints}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a7ebfd2ed296831e7843d3a67bd72fb4c}{add\+Eager\+Constraints}} (array \$models)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab7ae7d0d4666b9393d973899f93cd089}{init\+Relation}} (array \$models, \$relation)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a2712c0bdc65415c30bba90bec879e5e9}{match}} (array \$models, Eloquent\+Collection \$results, \$relation)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a59be679a7fa5b5622695eec2e6784336}{get\+Pivot\+Class}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a6274906efdfc3ea958570fa23b6ab592}{using}} (\$class)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_adb7b6018c5c5d3c3c6d64aff223d97b2}{as}} (\$accessor)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab85e99313577edc7d73143b71a4f1018}{where\+Pivot}} (\$column, \$operator=null, \$value=null, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a9e1c5dbec68f0022dcb7416cd6b19bdf}{where\+Pivot\+Between}} (\$column, array \$values, \$boolean=\textquotesingle{}and\textquotesingle{}, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa1e78a6342c7757e70fd290d591280c3}{or\+Where\+Pivot\+Between}} (\$column, array \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ad412890d56a5fdcbbf34f3b5f86c9d91}{where\+Pivot\+Not\+Between}} (\$column, array \$values, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a8bda869e8e5116a574c139ce469b79ad}{or\+Where\+Pivot\+Not\+Between}} (\$column, array \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab1d2e3ef95d65dd408fef2690e0080eb}{where\+Pivot\+In}} (\$column, \$values, \$boolean=\textquotesingle{}and\textquotesingle{}, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a396de21f6a4bcf13583c03a8aae30f77}{or\+Where\+Pivot}} (\$column, \$operator=null, \$value=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ad274db371718f5b12d8f13a5654ae30b}{with\+Pivot\+Value}} (\$column, \$value=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a237eb1ff31d7068cfb2e492c146cbb9b}{or\+Where\+Pivot\+In}} (\$column, \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aaa180e4fb345e817b2facc76d085e383}{where\+Pivot\+Not\+In}} (\$column, \$values, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a6b906dde336644c40765d72cc94181d6}{or\+Where\+Pivot\+Not\+In}} (\$column, \$values)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab19a2913ed6ad9489c238ff9679de851}{where\+Pivot\+Null}} (\$column, \$boolean=\textquotesingle{}and\textquotesingle{}, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a5841f95d8475e63db6ac39e25aaa5745}{where\+Pivot\+Not\+Null}} (\$column, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ac559931e04f7c5f71677e8ced89cdeb0}{or\+Where\+Pivot\+Null}} (\$column, \$not=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ada2ae09333bc5ee2a05bb0318efac05c}{or\+Where\+Pivot\+Not\+Null}} (\$column)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_af78205624b8a8bf286b5c5b55ca5de74}{order\+By\+Pivot}} (\$column, \$direction=\textquotesingle{}asc\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aaa50007e4b9fcd85a72369baa0027dd3}{find\+Or\+New}} (\$id, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae25532b56f9a0dc4c4a86cb512031e5c}{first\+Or\+New}} (array \$attributes=\mbox{[}$\,$\mbox{]}, array \$values=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a3f3246e409d977a86865f3b0174adad3}{first\+Or\+Create}} (array \$attributes=\mbox{[}$\,$\mbox{]}, array \$values=\mbox{[}$\,$\mbox{]}, array \$joining=\mbox{[}$\,$\mbox{]}, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae4205fa09dab4950d3e734f8e725a2b1}{touch}}=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a65983f31abadafc3d6bfef412b21e4f1}{create\+Or\+First}} (array \$attributes=\mbox{[}$\,$\mbox{]}, array \$values=\mbox{[}$\,$\mbox{]}, array \$joining=\mbox{[}$\,$\mbox{]}, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae4205fa09dab4950d3e734f8e725a2b1}{touch}}=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_addad0ce6e4349dca6b3da9a1c11a1a61}{update\+Or\+Create}} (array \$attributes, array \$values=\mbox{[}$\,$\mbox{]}, array \$joining=\mbox{[}$\,$\mbox{]}, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae4205fa09dab4950d3e734f8e725a2b1}{touch}}=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a150841fdd4599e84384904182cd610b8}{find}} (\$id, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a104bb1d85df791e169d36841a122486e}{find\+Sole}} (\$id, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a5650114650471c895e1f4752dfa84fb7}{find\+Many}} (\$ids, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a55c47488193ee406429b8c8d09145c39}{find\+Or\+Fail}} (\$id, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa3f426b032827b7aa08687c33add863f}{find\+Or}} (\$id, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}, ?Closure \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae945948079780418a9fa150fb876bb3b}{first\+Where}} (\$column, \$operator=null, \$value=null, \$boolean=\textquotesingle{}and\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a5772c0c488ded32b7f2d397b6c26ebb7}{first}} (\$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ac3adc50f8d049dd819e54300a00f520b}{first\+Or\+Fail}} (\$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0628e441a0cc3e622e86f3962b9af6db}{first\+Or}} (\$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}, ?Closure \$callback=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa9175327fd49e689532a110aaa782e41}{get\+Results}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a05e6e29b25b7e5e40d98ddbb7afa31bc}{get}} (\$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a46d52dbfcc852009f1edeb449f4ab8d8}{paginate}} (\$per\+Page=null, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}, \$page\+Name=\textquotesingle{}page\textquotesingle{}, \$page=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a63134b44e95b927082906b35f64814f5}{simple\+Paginate}} (\$per\+Page=null, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}, \$page\+Name=\textquotesingle{}page\textquotesingle{}, \$page=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a2aba209e6588e3c85727739921893d95}{cursor\+Paginate}} (\$per\+Page=null, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}, \$cursor\+Name=\textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a2d5ed28053d49979f0b866d9c039b535}{cursor}}\textquotesingle{}, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a2d5ed28053d49979f0b866d9c039b535}{cursor}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a79fccfdf53300e5281140f24ffea0d43}{chunk}} (\$count, callable \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a66705a4d0396a71b3408ba898b181568}{chunk\+By\+Id}} (\$count, callable \$callback, \$column=null, \$alias=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_acff70388d277eb97f4dcf7bda45c2bc8}{chunk\+By\+Id\+Desc}} (\$count, callable \$callback, \$column=null, \$alias=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a6799158a6128b28be257655258359611}{each\+By\+Id}} (callable \$callback, \$count=1000, \$column=null, \$alias=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aadd159cac875fd964ec764dd5437caf5}{ordered\+Chunk\+By\+Id}} (\$count, callable \$callback, \$column=null, \$alias=null, \$descending=false)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0c4ebf9fcaeb0749125a0f85e14b57ff}{each}} (callable \$callback, \$count=1000)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a683e31b0b527202e742b8f3dff8e1d28}{lazy}} (\$chunk\+Size=1000)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a8113cbf14b64d24a1cb571d1e54e2aa6}{lazy\+By\+Id}} (\$chunk\+Size=1000, \$column=null, \$alias=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae6d4e84f574dce16ef51104cb6f8c974}{lazy\+By\+Id\+Desc}} (\$chunk\+Size=1000, \$column=null, \$alias=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a2d5ed28053d49979f0b866d9c039b535}{cursor}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa0c291d443c45d6447bc4d32f2b4477b}{touch\+If\+Touching}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae4205fa09dab4950d3e734f8e725a2b1}{touch}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aad2f1936a68b783ce5bc9f63040332ec}{all\+Related\+Ids}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a6cebf0c0f716e44dfd85e0fbd007d6f3}{save}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}} \$model, array \$pivot\+Attributes=\mbox{[}$\,$\mbox{]}, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae4205fa09dab4950d3e734f8e725a2b1}{touch}}=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a027e32775e13212f122f538e6a95e049}{save\+Quietly}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}} \$model, array \$pivot\+Attributes=\mbox{[}$\,$\mbox{]}, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae4205fa09dab4950d3e734f8e725a2b1}{touch}}=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a5feaf6c6b7006b93c74f78d6bac3a474}{save\+Many}} (\$models, array \$pivot\+Attributes=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab4c2b9fb1e96b179f6ff79d4643b00d0}{save\+Many\+Quietly}} (\$models, array \$pivot\+Attributes=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a38049c1ecca8b18b88249b48c0a7e5d9}{create}} (array \$attributes=\mbox{[}$\,$\mbox{]}, array \$joining=\mbox{[}$\,$\mbox{]}, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae4205fa09dab4950d3e734f8e725a2b1}{touch}}=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a9d060cac59127d684e25417cadc12729}{create\+Many}} (iterable \$records, array \$joinings=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a83508d465c7c279cd5ff54aeaef08f95}{get\+Relation\+Existence\+Query}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}} \$query, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}} \$parent\+Query, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a18781d9af867b6a6cad3f4f1dcf72190}{get\+Relation\+Existence\+Query\+For\+Self\+Join}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}} \$query, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}} \$parent\+Query, \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a524ccc8c642cd0ec6fbcca3d909dfaa3}{take}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa34691ba07d201ac501adf0ca4fb7ab3}{limit}} (\$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0914ab735f240b9fe59e05a431d92a6d}{get\+Existence\+Compare\+Key}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aef1121571f61ad047c344a07bed08a2f}{with\+Timestamps}} (\$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a74a36a354f3d7264c2c2d3605690e314}{created\+At}}=null, \$\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa737d0ec4b97eaee492972303c609020}{updated\+At}}=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a74a36a354f3d7264c2c2d3605690e314}{created\+At}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa737d0ec4b97eaee492972303c609020}{updated\+At}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0d2fc137b899e4a78d98c231f549fee7}{get\+Foreign\+Pivot\+Key\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a215f40c73c5cfe518d316cb2cb8a3b2a}{get\+Qualified\+Foreign\+Pivot\+Key\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a8ca27d5d75695c2effe226bae1aa9b7f}{get\+Related\+Pivot\+Key\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ad9cdec35c9bbbc1d436df9b4dfeb0942}{get\+Qualified\+Related\+Pivot\+Key\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a016c5f469bfd42de2bf73df8154b4e1c}{get\+Parent\+Key\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a04cda49e48d1141cebbc227558b9d0fa}{get\+Qualified\+Parent\+Key\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a4ff177e0c95d5b0ac711986b1dddf565}{get\+Related\+Key\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae74bf3121327a74e5d62d7bcf89e61e8}{get\+Qualified\+Related\+Key\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_acd381828bf10a2ad326fe5a06a8c9024}{get\+Table}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a68ef0984c8f0cfb4f276597038903a90}{get\+Relation\+Name}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a91b8b15e1e41413971d698ee8bb42d7d}{get\+Pivot\+Accessor}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a3dfa2884475cb1fae86f39018c0f0787}{get\+Pivot\+Columns}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae7fb6abb38670429fc5c7fea1c26a361}{qualify\+Pivot\+Column}} (\$column)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a9867f06daa81b1fdf2e101709cb306cb}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}} \$query, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}} \$parent)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a2c448e1b2bfbf8d02c460ed9c5115fe7}{get\+Eager}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a4e325d1aa0fd96f080b85688208c5617}{sole}} (\$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a325e6911efd6e4f56271fe5170a4569f}{raw\+Update}} (array \$attributes=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a7f32ba9f85f595bed1e1df3b84854408}{get\+Relation\+Existence\+Count\+Query}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}} \$query, \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}} \$parent\+Query)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_aaf2a4a0e4fb3758c86611b4840bff92f}{get\+Relation\+Count\+Hash}} (\$increment\+Join\+Count=true)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a46b801580a2b1784440dca67e8e853ce}{get\+Query}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_ab047130dd63f1b214cd80fcaaf2fbf18}{get\+Base\+Query}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a4cb46c12903cd35581d77e7eecb963d0}{to\+Base}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a4df67ad9904edb8160f6dc2e10ebf0c5}{get\+Parent}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a36169080b75af8009e7afa78c15bf0fb}{get\+Related}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a3dd18eaa25e82d71c8fea37a85ff627b}{related\+Updated\+At}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a4374daf35ae986a6341ff4120d7bed39}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a8ffe9db3973ce5121e75b5da191efc83}{\+\_\+\+\_\+clone}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a1ba3adf7276dc7e1a72be943e05edcfe}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a1ba3adf7276dc7e1a72be943e05edcfe} 
+{\bfseries \$with\+Timestamps} = false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0f45c06fd1a41d55cb3ae4502ada642c}{resolve\+Table\+Name}} (\$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ac865f156cacb10b67675c3586ab6ee13}{perform\+Join}} (\$query=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa4ba7f4f85e3805b072fd080ed67b929}{add\+Where\+Constraints}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a96d8da98c0a854cf615a5a435b67f238}{build\+Dictionary}} (Eloquent\+Collection \$results)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a64227291d613c5894d29c93dcf0b49c1}{should\+Select}} (array \$columns=\mbox{[}\textquotesingle{} \texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a8128997829c035253e7c580593392762}{aliased\+Pivot\+Columns}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a57a222779e0b5db6b4c395cd791d6c5f}{prepare\+Query\+Builder}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ac6b8fb1b1106fbf4e5a1bf2d305711f0}{hydrate\+Pivot\+Relation}} (array \$models)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ad1a691dea143a3821a495b0d0228e8ed}{migrate\+Pivot\+Attributes}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}} \$model)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a440c789a184d7ec262f8a4ba1fc74bce}{touching\+Parent}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a2ef53ae234f4d5b96bd82ea1a57fb763}{guess\+Inverse\+Relation}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a7127e38636345295200b879365079b3f}{get\+Keys}} (array \$models, \$key=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a59653fb30217b4a1a9353debd9acd534}{get\+Relation\+Query}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_ab6e9dd31de880a00ece6f6b5d4f43a01}{where\+In\+Eager}} (string \$where\+In, string \$key, array \$model\+Keys, ?\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}} \$query=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a7ebcc0da1e520641396f2154c93b70e2}{where\+In\+Method}} (\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}} \$model, \$key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a4ba3d2c537257527311e1eb424630de1}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a4ba3d2c537257527311e1eb424630de1} 
+{\bfseries \$table}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a8ed66a452519c58455d49fcd417f451f}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a8ed66a452519c58455d49fcd417f451f} 
+{\bfseries \$foreign\+Pivot\+Key}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae95c7b73d6173647aa8c392c9bcfebeb}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae95c7b73d6173647aa8c392c9bcfebeb} 
+{\bfseries \$related\+Pivot\+Key}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab1a867a7e63917389e726093e8a900c4}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab1a867a7e63917389e726093e8a900c4} 
+{\bfseries \$parent\+Key}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0598d682bf5ca9cc7a7820524440c71d}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0598d682bf5ca9cc7a7820524440c71d} 
+{\bfseries \$related\+Key}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ac5d29e74dd3f5f11b1596d75edbcf7bd}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ac5d29e74dd3f5f11b1596d75edbcf7bd} 
+{\bfseries \$relation\+Name}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aef45742231bb84f0e3ef0ce472ca115a}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aef45742231bb84f0e3ef0ce472ca115a} 
+{\bfseries \$pivot\+Columns} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a737bb1385ca32a1e1f9416c49c1d708d}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a737bb1385ca32a1e1f9416c49c1d708d} 
+{\bfseries \$pivot\+Wheres} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a7e266534af58f06153d68df522c04dc2}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a7e266534af58f06153d68df522c04dc2} 
+{\bfseries \$pivot\+Where\+Ins} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a95e07b86a36379530dab074cc326f860}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a95e07b86a36379530dab074cc326f860} 
+{\bfseries \$pivot\+Where\+Nulls} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ad1b4a0e018ba7b54057b34cb74d88f43}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ad1b4a0e018ba7b54057b34cb74d88f43} 
+{\bfseries \$pivot\+Values} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ad7b15140a350be4b21154a5225b5d77e}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ad7b15140a350be4b21154a5225b5d77e} 
+{\bfseries \$pivot\+Created\+At}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a3355abeb86c02cfb5f7498758a3623a7}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a3355abeb86c02cfb5f7498758a3623a7} 
+{\bfseries \$pivot\+Updated\+At}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a95a805606f8c134dd1fd1b343b59bae1}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a95a805606f8c134dd1fd1b343b59bae1} 
+{\bfseries \$using}
+\item 
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a11b9519f550d7a4e35e2d042961e1b67}\label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a11b9519f550d7a4e35e2d042961e1b67} 
+{\bfseries \$accessor} = \textquotesingle{}pivot\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$query}
+\item 
+{\bfseries \$parent}
+\item 
+{\bfseries \$related}
+\item 
+{\bfseries \$eager\+Keys\+Were\+Empty} = false
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a2a3a7b5e862e599a2ece28a355f06c1f}{no\+Constraints}} (Closure \$callback)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a0fdc345704d433d3dcc42376832c57e1}{require\+Morph\+Map}} (\$require\+Morph\+Map=true)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_afd291d625576d83324492375d15d1da7}{requires\+Morph\+Map}} ()
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a67d61636fbf2a038580afe1606523af5}{enforce\+Morph\+Map}} (array \$map, \$merge=true)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_abd17444c99746700ce53ee904e48bde4}{morph\+Map}} (?array \$map=null, \$merge=true)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_af76fe63e74982e75a8d381ccde57a01f}{get\+Morphed\+Model}} (\$alias)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_ae71d0f10dab8b81102fd80ef4f6df03d}{get\+Morph\+Alias}} (string \$class\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$morph\+Map} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_aceb496af37b55a2396c848192c21d04a}{build\+Morph\+Map\+From\+Models}} (?array \$models=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$constraints} = true
+\item 
+static {\bfseries \$require\+Morph\+Map} = false
+\item 
+static {\bfseries \$self\+Join\+Count} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@template TRelated\+Model of \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model @template TDeclaring\+Model of \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model
+
+\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation\texorpdfstring{$<$}{<}TRelated\+Model, TDeclaring\+Model, \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, TRelated\+Model\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aae2346d10c0480413a7a330d249be28a}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aae2346d10c0480413a7a330d249be28a} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}}}]{\$query}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}}}]{\$parent}{, }\item[{}]{\$table}{, }\item[{}]{\$foreign\+Pivot\+Key}{, }\item[{}]{\$related\+Pivot\+Key}{, }\item[{}]{\$parent\+Key}{, }\item[{}]{\$related\+Key}{, }\item[{}]{\$relation\+Name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new belongs to many relationship instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder$<$\+TRelated\+Model$>$ \$query 
+\begin{DoxyParams}[1]{Parameters}
+TDeclaring\+Model & {\em \$parent} & \\
+\hline
+ & {\em string\texorpdfstring{$\vert$}{|}class-\/string$<$\+TRelated\+Model$>$} & \$table \\
+\hline
+string & {\em \$foreign\+Pivot\+Key} & \\
+\hline
+string & {\em \$related\+Pivot\+Key} & \\
+\hline
+string & {\em \$parent\+Key} & \\
+\hline
+string & {\em \$related\+Key} & \\
+\hline
+string | null & {\em \$relation\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0009aeb9f4bd6aefebd67ce9717129fb}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!addConstraints@{addConstraints}}
+\index{addConstraints@{addConstraints}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{addConstraints()}{addConstraints()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0009aeb9f4bd6aefebd67ce9717129fb} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::add\+Constraints (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Set the base constraints on the relation query.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_ae9c76b09e3ccbd518b037bb662954113}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a7ebfd2ed296831e7843d3a67bd72fb4c}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!addEagerConstraints@{addEagerConstraints}}
+\index{addEagerConstraints@{addEagerConstraints}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{addEagerConstraints()}{addEagerConstraints()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a7ebfd2ed296831e7843d3a67bd72fb4c} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::add\+Eager\+Constraints (\begin{DoxyParamCaption}\item[{array}]{\$models}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a8bf7e2832ffd5bf109b286127a1379f8}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_to_many_ae45d0dc8a0848e9e5c87f96136c3365c}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Morph\+To\+Many}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa4ba7f4f85e3805b072fd080ed67b929}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!addWhereConstraints@{addWhereConstraints}}
+\index{addWhereConstraints@{addWhereConstraints}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{addWhereConstraints()}{addWhereConstraints()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa4ba7f4f85e3805b072fd080ed67b929} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::add\+Where\+Constraints (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set the where clause for the relation query.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_to_many_a9e20fe0972e72f8ed6ef14cd1af290fb}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Morph\+To\+Many}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a8128997829c035253e7c580593392762}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!aliasedPivotColumns@{aliasedPivotColumns}}
+\index{aliasedPivotColumns@{aliasedPivotColumns}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{aliasedPivotColumns()}{aliasedPivotColumns()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a8128997829c035253e7c580593392762} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::aliased\+Pivot\+Columns (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the pivot columns for the relation.
+
+"{}pivot\+\_\+"{} is prefixed at each column for easy removal later.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_to_many_a597676b0418f0e5315f97e6fa5eff7b8}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Morph\+To\+Many}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aad2f1936a68b783ce5bc9f63040332ec}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!allRelatedIds@{allRelatedIds}}
+\index{allRelatedIds@{allRelatedIds}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{allRelatedIds()}{allRelatedIds()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aad2f1936a68b783ce5bc9f63040332ec} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::all\+Related\+Ids (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get all of the IDs for the related models.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_adb7b6018c5c5d3c3c6d64aff223d97b2}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!as@{as}}
+\index{as@{as}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{as()}{as()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_adb7b6018c5c5d3c3c6d64aff223d97b2} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::as (\begin{DoxyParamCaption}\item[{}]{\$accessor}{}\end{DoxyParamCaption})}
+
+Specify the custom pivot accessor to use for the relationship.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$accessor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a96d8da98c0a854cf615a5a435b67f238}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!buildDictionary@{buildDictionary}}
+\index{buildDictionary@{buildDictionary}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{buildDictionary()}{buildDictionary()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a96d8da98c0a854cf615a5a435b67f238} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::build\+Dictionary (\begin{DoxyParamCaption}\item[{Eloquent\+Collection}]{\$results}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Build model dictionary keyed by the relation\textquotesingle{}s foreign key.
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, TRelated\+Model\texorpdfstring{$>$}{>} \$results \begin{DoxyReturn}{Returns}
+array$<$array$<$string, TRelated\+Model$>$$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a79fccfdf53300e5281140f24ffea0d43}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!chunk@{chunk}}
+\index{chunk@{chunk}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{chunk()}{chunk()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a79fccfdf53300e5281140f24ffea0d43} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::chunk (\begin{DoxyParamCaption}\item[{}]{\$count}{, }\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Chunk the results of the query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$count} & \\
+\hline
+callable & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a66705a4d0396a71b3408ba898b181568}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!chunkById@{chunkById}}
+\index{chunkById@{chunkById}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{chunkById()}{chunkById()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a66705a4d0396a71b3408ba898b181568} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::chunk\+By\+Id (\begin{DoxyParamCaption}\item[{}]{\$count}{, }\item[{callable}]{\$callback}{, }\item[{}]{\$column}{ = {\ttfamily null}, }\item[{}]{\$alias}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Chunk the results of a query by comparing numeric IDs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$count} & \\
+\hline
+callable & {\em \$callback} & \\
+\hline
+string | null & {\em \$column} & \\
+\hline
+string | null & {\em \$alias} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_acff70388d277eb97f4dcf7bda45c2bc8}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!chunkByIdDesc@{chunkByIdDesc}}
+\index{chunkByIdDesc@{chunkByIdDesc}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{chunkByIdDesc()}{chunkByIdDesc()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_acff70388d277eb97f4dcf7bda45c2bc8} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::chunk\+By\+Id\+Desc (\begin{DoxyParamCaption}\item[{}]{\$count}{, }\item[{callable}]{\$callback}{, }\item[{}]{\$column}{ = {\ttfamily null}, }\item[{}]{\$alias}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Chunk the results of a query by comparing IDs in descending order.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$count} & \\
+\hline
+callable & {\em \$callback} & \\
+\hline
+string | null & {\em \$column} & \\
+\hline
+string | null & {\em \$alias} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a38049c1ecca8b18b88249b48c0a7e5d9}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!create@{create}}
+\index{create@{create}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a38049c1ecca8b18b88249b48c0a7e5d9} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::create (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$joining}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$touch}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Create a new instance of the related model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & \\
+\hline
+array & {\em \$joining} & \\
+\hline
+bool & {\em \$touch} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRelated\+Model 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a74a36a354f3d7264c2c2d3605690e314}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!createdAt@{createdAt}}
+\index{createdAt@{createdAt}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{createdAt()}{createdAt()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a74a36a354f3d7264c2c2d3605690e314} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::created\+At (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of the "{}created at"{} column.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a6d1b7d503d487ce80d0463e82511d3e4}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a9d060cac59127d684e25417cadc12729}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!createMany@{createMany}}
+\index{createMany@{createMany}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{createMany()}{createMany()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a9d060cac59127d684e25417cadc12729} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::create\+Many (\begin{DoxyParamCaption}\item[{iterable}]{\$records}{, }\item[{array}]{\$joinings}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Create an array of new instances of the related models.
+
+
+\begin{DoxyParams}[1]{Parameters}
+iterable & {\em \$records} & \\
+\hline
+array & {\em \$joinings} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$int, TRelated\+Model$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a65983f31abadafc3d6bfef412b21e4f1}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!createOrFirst@{createOrFirst}}
+\index{createOrFirst@{createOrFirst}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{createOrFirst()}{createOrFirst()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a65983f31abadafc3d6bfef412b21e4f1} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::create\+Or\+First (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$values}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$joining}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$touch}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Attempt to create the record. If a unique constraint violation occurs, attempt to find the matching record.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & \\
+\hline
+array & {\em \$values} & \\
+\hline
+array & {\em \$joining} & \\
+\hline
+bool & {\em \$touch} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRelated\+Model 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a2d5ed28053d49979f0b866d9c039b535}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!cursor@{cursor}}
+\index{cursor@{cursor}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{cursor()}{cursor()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a2d5ed28053d49979f0b866d9c039b535} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::cursor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get a lazy collection for the given query.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Lazy\+Collection\texorpdfstring{$<$}{<}int, TRelated\+Model\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a2aba209e6588e3c85727739921893d95}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!cursorPaginate@{cursorPaginate}}
+\index{cursorPaginate@{cursorPaginate}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{cursorPaginate()}{cursorPaginate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a2aba209e6588e3c85727739921893d95} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::cursor\+Paginate (\begin{DoxyParamCaption}\item[{}]{\$per\+Page}{ = {\ttfamily null}, }\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}, }\item[{}]{\$cursor\+Name}{ = {\ttfamily \textquotesingle{}\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a2d5ed28053d49979f0b866d9c039b535}{cursor}}\textquotesingle{}}, }\item[{}]{\$cursor}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Paginate the given query into a cursor paginator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$per\+Page} & \\
+\hline
+array & {\em \$columns} & \\
+\hline
+string & {\em \$cursor\+Name} & \\
+\hline
+string | null & {\em \$cursor} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Cursor\+Paginator 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0c4ebf9fcaeb0749125a0f85e14b57ff}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!each@{each}}
+\index{each@{each}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{each()}{each()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0c4ebf9fcaeb0749125a0f85e14b57ff} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::each (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{, }\item[{}]{\$count}{ = {\ttfamily 1000}}\end{DoxyParamCaption})}
+
+Execute a callback over each item while chunking.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+int & {\em \$count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a6799158a6128b28be257655258359611}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!eachById@{eachById}}
+\index{eachById@{eachById}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{eachById()}{eachById()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a6799158a6128b28be257655258359611} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::each\+By\+Id (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{, }\item[{}]{\$count}{ = {\ttfamily 1000}, }\item[{}]{\$column}{ = {\ttfamily null}, }\item[{}]{\$alias}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Execute a callback over each item while chunking by ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+callable & {\em \$callback} & \\
+\hline
+int & {\em \$count} & \\
+\hline
+string | null & {\em \$column} & \\
+\hline
+string | null & {\em \$alias} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a150841fdd4599e84384904182cd610b8}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!find@{find}}
+\index{find@{find}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a150841fdd4599e84384904182cd610b8} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::find (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+Find a related model by its primary key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$id} & \\
+\hline
+array & {\em \$columns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\$id is (\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Support\textbackslash{}\+Arrayable\texorpdfstring{$<$}{<}array-\/key, mixed\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}array$<$mixed$>$) ? \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, TRelated\+Model\texorpdfstring{$>$}{>} \+: TRelated\+Model\texorpdfstring{$\vert$}{|}null) 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a5650114650471c895e1f4752dfa84fb7}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!findMany@{findMany}}
+\index{findMany@{findMany}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{findMany()}{findMany()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a5650114650471c895e1f4752dfa84fb7} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::find\+Many (\begin{DoxyParamCaption}\item[{}]{\$ids}{, }\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+Find multiple related models by their primary keys.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Support\textbackslash{}\+Arrayable | array & {\em \$ids} & \\
+\hline
+array & {\em \$columns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, TRelated\+Model\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa3f426b032827b7aa08687c33add863f}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!findOr@{findOr}}
+\index{findOr@{findOr}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{findOr()}{findOr()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa3f426b032827b7aa08687c33add863f} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::find\+Or (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}, }\item[{?Closure}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Find a related model by its primary key or call a callback.
+
+@template TValue
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$id} & \\
+\hline
+ & {\em (} & \\
+\hline
+\end{DoxyParams}
+Closure()\+: TValue)\texorpdfstring{$\vert$}{|}list$<$string$>$\texorpdfstring{$\vert$}{|}string \$columns 
+\begin{DoxyParams}{Parameters}
+{\em (} & \\
+\hline
+\end{DoxyParams}
+Closure()\+: TValue)\texorpdfstring{$\vert$}{|}null \$callback \begin{DoxyReturn}{Returns}
+( \$id is (\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Support\textbackslash{}\+Arrayable\texorpdfstring{$<$}{<}array-\/key, mixed\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}array$<$mixed$>$) ? \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, TRelated\+Model\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}\+TValue \+: TRelated\+Model\texorpdfstring{$\vert$}{|}\+TValue ) 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a55c47488193ee406429b8c8d09145c39}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!findOrFail@{findOrFail}}
+\index{findOrFail@{findOrFail}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{findOrFail()}{findOrFail()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a55c47488193ee406429b8c8d09145c39} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::find\+Or\+Fail (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+Find a related model by its primary key or throw an exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$id} & \\
+\hline
+array & {\em \$columns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\$id is (\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Support\textbackslash{}\+Arrayable\texorpdfstring{$<$}{<}array-\/key, mixed\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}array$<$mixed$>$) ? \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, TRelated\+Model\texorpdfstring{$>$}{>} \+: TRelated\+Model)
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model\+Not\+Found\+Exception$<$\+TRelated\+Model$>$ \Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aaa50007e4b9fcd85a72369baa0027dd3}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!findOrNew@{findOrNew}}
+\index{findOrNew@{findOrNew}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{findOrNew()}{findOrNew()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aaa50007e4b9fcd85a72369baa0027dd3} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::find\+Or\+New (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+Find a related model by its primary key or return a new instance of the related model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$id} & \\
+\hline
+array & {\em \$columns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(\$id is (\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Support\textbackslash{}\+Arrayable\texorpdfstring{$<$}{<}array-\/key, mixed\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}array$<$mixed$>$) ? \textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Collection\texorpdfstring{$<$}{<}int, TRelated\+Model\texorpdfstring{$>$}{>} \+: TRelated\+Model) 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a104bb1d85df791e169d36841a122486e}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!findSole@{findSole}}
+\index{findSole@{findSole}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{findSole()}{findSole()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a104bb1d85df791e169d36841a122486e} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::find\+Sole (\begin{DoxyParamCaption}\item[{}]{\$id}{, }\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+Find a sole related model by its primary key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$id} & \\
+\hline
+array & {\em \$columns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRelated\+Model
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model\+Not\+Found\+Exception$<$\+TRelated\+Model$>$ 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Multiple\+Records\+Found\+Exception \Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a5772c0c488ded32b7f2d397b6c26ebb7}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!first@{first}}
+\index{first@{first}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a5772c0c488ded32b7f2d397b6c26ebb7} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::first (\begin{DoxyParamCaption}\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+Execute the query and get the first result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$columns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRelated\+Model\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0628e441a0cc3e622e86f3962b9af6db}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!firstOr@{firstOr}}
+\index{firstOr@{firstOr}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{firstOr()}{firstOr()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0628e441a0cc3e622e86f3962b9af6db} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::first\+Or (\begin{DoxyParamCaption}\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}, }\item[{?Closure}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Execute the query and get the first result or call a callback.
+
+@template TValue
+
+
+\begin{DoxyParams}{Parameters}
+{\em (} & \\
+\hline
+\end{DoxyParams}
+Closure()\+: TValue)\texorpdfstring{$\vert$}{|}list$<$string$>$ \$columns 
+\begin{DoxyParams}{Parameters}
+{\em (} & \\
+\hline
+\end{DoxyParams}
+Closure()\+: TValue)\texorpdfstring{$\vert$}{|}null \$callback \begin{DoxyReturn}{Returns}
+TRelated\+Model\texorpdfstring{$\vert$}{|}\+TValue 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a3f3246e409d977a86865f3b0174adad3}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!firstOrCreate@{firstOrCreate}}
+\index{firstOrCreate@{firstOrCreate}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{firstOrCreate()}{firstOrCreate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a3f3246e409d977a86865f3b0174adad3} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::first\+Or\+Create (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$values}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$joining}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$touch}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Get the first record matching the attributes. If the record is not found, create it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & \\
+\hline
+array & {\em \$values} & \\
+\hline
+array & {\em \$joining} & \\
+\hline
+bool & {\em \$touch} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRelated\+Model 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ac3adc50f8d049dd819e54300a00f520b}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!firstOrFail@{firstOrFail}}
+\index{firstOrFail@{firstOrFail}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{firstOrFail()}{firstOrFail()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ac3adc50f8d049dd819e54300a00f520b} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::first\+Or\+Fail (\begin{DoxyParamCaption}\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+Execute the query and get the first result or throw an exception.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$columns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRelated\+Model
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Model\+Not\+Found\+Exception$<$\+TRelated\+Model$>$ \Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae25532b56f9a0dc4c4a86cb512031e5c}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!firstOrNew@{firstOrNew}}
+\index{firstOrNew@{firstOrNew}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{firstOrNew()}{firstOrNew()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae25532b56f9a0dc4c4a86cb512031e5c} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::first\+Or\+New (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$values}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Get the first related model record matching the attributes or instantiate it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & \\
+\hline
+array & {\em \$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRelated\+Model 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae945948079780418a9fa150fb876bb3b}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!firstWhere@{firstWhere}}
+\index{firstWhere@{firstWhere}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{firstWhere()}{firstWhere()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae945948079780418a9fa150fb876bb3b} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::first\+Where (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$operator}{ = {\ttfamily null}, }\item[{}]{\$value}{ = {\ttfamily null}, }\item[{}]{\$boolean}{ = {\ttfamily \textquotesingle{}and\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Add a basic where clause to the query, and return the first result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Closure | string | array & {\em \$column} & \\
+\hline
+mixed & {\em \$operator} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+string & {\em \$boolean} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRelated\+Model\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a05e6e29b25b7e5e40d98ddbb7afa31bc}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!get@{get}}
+\index{get@{get}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a05e6e29b25b7e5e40d98ddbb7afa31bc} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get (\begin{DoxyParamCaption}\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a444a52b2204063dbb8b15c804720800d}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0914ab735f240b9fe59e05a431d92a6d}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getExistenceCompareKey@{getExistenceCompareKey}}
+\index{getExistenceCompareKey@{getExistenceCompareKey}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getExistenceCompareKey()}{getExistenceCompareKey()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0914ab735f240b9fe59e05a431d92a6d} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Existence\+Compare\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the key for comparing against the parent key in "{}has"{} query.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0d2fc137b899e4a78d98c231f549fee7}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getForeignPivotKeyName@{getForeignPivotKeyName}}
+\index{getForeignPivotKeyName@{getForeignPivotKeyName}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getForeignPivotKeyName()}{getForeignPivotKeyName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0d2fc137b899e4a78d98c231f549fee7} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Foreign\+Pivot\+Key\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the foreign key for the relation.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a016c5f469bfd42de2bf73df8154b4e1c}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getParentKeyName@{getParentKeyName}}
+\index{getParentKeyName@{getParentKeyName}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getParentKeyName()}{getParentKeyName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a016c5f469bfd42de2bf73df8154b4e1c} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Parent\+Key\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the parent key for the relationship.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a91b8b15e1e41413971d698ee8bb42d7d}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getPivotAccessor@{getPivotAccessor}}
+\index{getPivotAccessor@{getPivotAccessor}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getPivotAccessor()}{getPivotAccessor()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a91b8b15e1e41413971d698ee8bb42d7d} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Pivot\+Accessor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of the pivot accessor for this relationship.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a59be679a7fa5b5622695eec2e6784336}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getPivotClass@{getPivotClass}}
+\index{getPivotClass@{getPivotClass}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getPivotClass()}{getPivotClass()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a59be679a7fa5b5622695eec2e6784336} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Pivot\+Class (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the class being used for pivot models.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a3dfa2884475cb1fae86f39018c0f0787}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getPivotColumns@{getPivotColumns}}
+\index{getPivotColumns@{getPivotColumns}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getPivotColumns()}{getPivotColumns()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a3dfa2884475cb1fae86f39018c0f0787} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Pivot\+Columns (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the pivot columns for this relationship.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a215f40c73c5cfe518d316cb2cb8a3b2a}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getQualifiedForeignPivotKeyName@{getQualifiedForeignPivotKeyName}}
+\index{getQualifiedForeignPivotKeyName@{getQualifiedForeignPivotKeyName}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getQualifiedForeignPivotKeyName()}{getQualifiedForeignPivotKeyName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a215f40c73c5cfe518d316cb2cb8a3b2a} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Qualified\+Foreign\+Pivot\+Key\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the fully qualified foreign key for the relation.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a04cda49e48d1141cebbc227558b9d0fa}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getQualifiedParentKeyName@{getQualifiedParentKeyName}}
+\index{getQualifiedParentKeyName@{getQualifiedParentKeyName}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getQualifiedParentKeyName()}{getQualifiedParentKeyName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a04cda49e48d1141cebbc227558b9d0fa} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Qualified\+Parent\+Key\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the fully qualified parent key name for the relation.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a5bd268711cd751a56ab1e2eb0a16980f}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae74bf3121327a74e5d62d7bcf89e61e8}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getQualifiedRelatedKeyName@{getQualifiedRelatedKeyName}}
+\index{getQualifiedRelatedKeyName@{getQualifiedRelatedKeyName}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getQualifiedRelatedKeyName()}{getQualifiedRelatedKeyName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae74bf3121327a74e5d62d7bcf89e61e8} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Qualified\+Related\+Key\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the fully qualified related key name for the relation.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ad9cdec35c9bbbc1d436df9b4dfeb0942}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getQualifiedRelatedPivotKeyName@{getQualifiedRelatedPivotKeyName}}
+\index{getQualifiedRelatedPivotKeyName@{getQualifiedRelatedPivotKeyName}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getQualifiedRelatedPivotKeyName()}{getQualifiedRelatedPivotKeyName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ad9cdec35c9bbbc1d436df9b4dfeb0942} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Qualified\+Related\+Pivot\+Key\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the fully qualified "{}related key"{} for the relation.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a4ff177e0c95d5b0ac711986b1dddf565}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getRelatedKeyName@{getRelatedKeyName}}
+\index{getRelatedKeyName@{getRelatedKeyName}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getRelatedKeyName()}{getRelatedKeyName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a4ff177e0c95d5b0ac711986b1dddf565} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Related\+Key\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the related key for the relationship.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a8ca27d5d75695c2effe226bae1aa9b7f}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getRelatedPivotKeyName@{getRelatedPivotKeyName}}
+\index{getRelatedPivotKeyName@{getRelatedPivotKeyName}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getRelatedPivotKeyName()}{getRelatedPivotKeyName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a8ca27d5d75695c2effe226bae1aa9b7f} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Related\+Pivot\+Key\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the "{}related key"{} for the relation.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a83508d465c7c279cd5ff54aeaef08f95}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getRelationExistenceQuery@{getRelationExistenceQuery}}
+\index{getRelationExistenceQuery@{getRelationExistenceQuery}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getRelationExistenceQuery()}{getRelationExistenceQuery()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a83508d465c7c279cd5ff54aeaef08f95} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Relation\+Existence\+Query (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}}}]{\$query}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}}}]{\$parent\+Query}{, }\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a95ba24487b8615b6b7565ac3df9028d5}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_morph_to_many_a0eca8543e8fc264b16345f2c2913dc80}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Morph\+To\+Many}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a18781d9af867b6a6cad3f4f1dcf72190}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getRelationExistenceQueryForSelfJoin@{getRelationExistenceQueryForSelfJoin}}
+\index{getRelationExistenceQueryForSelfJoin@{getRelationExistenceQueryForSelfJoin}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getRelationExistenceQueryForSelfJoin()}{getRelationExistenceQueryForSelfJoin()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a18781d9af867b6a6cad3f4f1dcf72190} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Relation\+Existence\+Query\+For\+Self\+Join (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}}}]{\$query}{, }\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_builder}{Builder}}}]{\$parent\+Query}{, }\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})}
+
+Add the constraints for a relationship query on the same table.
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder$<$\+TRelated\+Model$>$ \$query 
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder$<$\+TDeclaring\+Model$>$ \$parent\+Query 
+\begin{DoxyParams}[1]{Parameters}
+array | mixed & {\em \$columns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder$<$\+TRelated\+Model$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a68ef0984c8f0cfb4f276597038903a90}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getRelationName@{getRelationName}}
+\index{getRelationName@{getRelationName}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getRelationName()}{getRelationName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a68ef0984c8f0cfb4f276597038903a90} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Relation\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the relationship name for the relationship.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa9175327fd49e689532a110aaa782e41}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getResults@{getResults}}
+\index{getResults@{getResults}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getResults()}{getResults()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa9175327fd49e689532a110aaa782e41} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Results (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a8ec87d751c3643e27ae6e6eabc35ce71}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_acd381828bf10a2ad326fe5a06a8c9024}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!getTable@{getTable}}
+\index{getTable@{getTable}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{getTable()}{getTable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_acd381828bf10a2ad326fe5a06a8c9024} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::get\+Table (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the intermediate table for the relationship.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a2ef53ae234f4d5b96bd82ea1a57fb763}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!guessInverseRelation@{guessInverseRelation}}
+\index{guessInverseRelation@{guessInverseRelation}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{guessInverseRelation()}{guessInverseRelation()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a2ef53ae234f4d5b96bd82ea1a57fb763} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::guess\+Inverse\+Relation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Attempt to guess the name of the inverse of the relation.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ac6b8fb1b1106fbf4e5a1bf2d305711f0}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!hydratePivotRelation@{hydratePivotRelation}}
+\index{hydratePivotRelation@{hydratePivotRelation}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{hydratePivotRelation()}{hydratePivotRelation()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ac6b8fb1b1106fbf4e5a1bf2d305711f0} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::hydrate\+Pivot\+Relation (\begin{DoxyParamCaption}\item[{array}]{\$models}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Hydrate the pivot table relationship on the models.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$int,TRelated\+Model$>$} & \$models \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab7ae7d0d4666b9393d973899f93cd089}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!initRelation@{initRelation}}
+\index{initRelation@{initRelation}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{initRelation()}{initRelation()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab7ae7d0d4666b9393d973899f93cd089} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::init\+Relation (\begin{DoxyParamCaption}\item[{array}]{\$models}{, }\item[{}]{\$relation}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a77de559af36ce6af9bb07c65f60b0c6e}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a683e31b0b527202e742b8f3dff8e1d28}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!lazy@{lazy}}
+\index{lazy@{lazy}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{lazy()}{lazy()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a683e31b0b527202e742b8f3dff8e1d28} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::lazy (\begin{DoxyParamCaption}\item[{}]{\$chunk\+Size}{ = {\ttfamily 1000}}\end{DoxyParamCaption})}
+
+Query lazily, by chunks of the given size.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$chunk\+Size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Lazy\+Collection\texorpdfstring{$<$}{<}int, TRelated\+Model\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a8113cbf14b64d24a1cb571d1e54e2aa6}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!lazyById@{lazyById}}
+\index{lazyById@{lazyById}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{lazyById()}{lazyById()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a8113cbf14b64d24a1cb571d1e54e2aa6} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::lazy\+By\+Id (\begin{DoxyParamCaption}\item[{}]{\$chunk\+Size}{ = {\ttfamily 1000}, }\item[{}]{\$column}{ = {\ttfamily null}, }\item[{}]{\$alias}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Query lazily, by chunking the results of a query by comparing IDs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$chunk\+Size} & \\
+\hline
+string | null & {\em \$column} & \\
+\hline
+string | null & {\em \$alias} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Lazy\+Collection\texorpdfstring{$<$}{<}int, TRelated\+Model\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae6d4e84f574dce16ef51104cb6f8c974}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!lazyByIdDesc@{lazyByIdDesc}}
+\index{lazyByIdDesc@{lazyByIdDesc}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{lazyByIdDesc()}{lazyByIdDesc()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae6d4e84f574dce16ef51104cb6f8c974} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::lazy\+By\+Id\+Desc (\begin{DoxyParamCaption}\item[{}]{\$chunk\+Size}{ = {\ttfamily 1000}, }\item[{}]{\$column}{ = {\ttfamily null}, }\item[{}]{\$alias}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Query lazily, by chunking the results of a query by comparing IDs in descending order.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$chunk\+Size} & \\
+\hline
+string | null & {\em \$column} & \\
+\hline
+string | null & {\em \$alias} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Lazy\+Collection\texorpdfstring{$<$}{<}int, TRelated\+Model\texorpdfstring{$>$}{>} 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa34691ba07d201ac501adf0ca4fb7ab3}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!limit@{limit}}
+\index{limit@{limit}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{limit()}{limit()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa34691ba07d201ac501adf0ca4fb7ab3} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::limit (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Set the "{}limit"{} value of the query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a2712c0bdc65415c30bba90bec879e5e9}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!match@{match}}
+\index{match@{match}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a2712c0bdc65415c30bba90bec879e5e9} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::match (\begin{DoxyParamCaption}\item[{array}]{\$models}{, }\item[{Eloquent\+Collection}]{\$results}{, }\item[{}]{\$relation}{}\end{DoxyParamCaption})}
+
+@inherit\+Doc 
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_a7ed77e10f6fe08f3840b47179f7dcdd9}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ad1a691dea143a3821a495b0d0228e8ed}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!migratePivotAttributes@{migratePivotAttributes}}
+\index{migratePivotAttributes@{migratePivotAttributes}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{migratePivotAttributes()}{migratePivotAttributes()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ad1a691dea143a3821a495b0d0228e8ed} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::migrate\+Pivot\+Attributes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}}}]{\$model}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the pivot attributes from a model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+TRelated\+Model & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_af78205624b8a8bf286b5c5b55ca5de74}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!orderByPivot@{orderByPivot}}
+\index{orderByPivot@{orderByPivot}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{orderByPivot()}{orderByPivot()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_af78205624b8a8bf286b5c5b55ca5de74} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::order\+By\+Pivot (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$direction}{ = {\ttfamily \textquotesingle{}asc\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Add an "{}order by"{} clause for a pivot table column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression & {\em \$column} & \\
+\hline
+string & {\em \$direction} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aadd159cac875fd964ec764dd5437caf5}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!orderedChunkById@{orderedChunkById}}
+\index{orderedChunkById@{orderedChunkById}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{orderedChunkById()}{orderedChunkById()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aadd159cac875fd964ec764dd5437caf5} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::ordered\+Chunk\+By\+Id (\begin{DoxyParamCaption}\item[{}]{\$count}{, }\item[{callable}]{\$callback}{, }\item[{}]{\$column}{ = {\ttfamily null}, }\item[{}]{\$alias}{ = {\ttfamily null}, }\item[{}]{\$descending}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Chunk the results of a query by comparing IDs in a given order.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$count} & \\
+\hline
+callable & {\em \$callback} & \\
+\hline
+string | null & {\em \$column} & \\
+\hline
+string | null & {\em \$alias} & \\
+\hline
+bool & {\em \$descending} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a396de21f6a4bcf13583c03a8aae30f77}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!orWherePivot@{orWherePivot}}
+\index{orWherePivot@{orWherePivot}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{orWherePivot()}{orWherePivot()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a396de21f6a4bcf13583c03a8aae30f77} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::or\+Where\+Pivot (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$operator}{ = {\ttfamily null}, }\item[{}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set an "{}or where"{} clause for a pivot table column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression & {\em \$column} & \\
+\hline
+mixed & {\em \$operator} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa1e78a6342c7757e70fd290d591280c3}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!orWherePivotBetween@{orWherePivotBetween}}
+\index{orWherePivotBetween@{orWherePivotBetween}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{orWherePivotBetween()}{orWherePivotBetween()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa1e78a6342c7757e70fd290d591280c3} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::or\+Where\+Pivot\+Between (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{array}]{\$values}{}\end{DoxyParamCaption})}
+
+Set a "{}or where between"{} clause for a pivot table column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression & {\em \$column} & \\
+\hline
+array & {\em \$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a237eb1ff31d7068cfb2e492c146cbb9b}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!orWherePivotIn@{orWherePivotIn}}
+\index{orWherePivotIn@{orWherePivotIn}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{orWherePivotIn()}{orWherePivotIn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a237eb1ff31d7068cfb2e492c146cbb9b} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::or\+Where\+Pivot\+In (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$values}{}\end{DoxyParamCaption})}
+
+Set an "{}or where in"{} clause for a pivot table column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+mixed & {\em \$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a8bda869e8e5116a574c139ce469b79ad}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!orWherePivotNotBetween@{orWherePivotNotBetween}}
+\index{orWherePivotNotBetween@{orWherePivotNotBetween}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{orWherePivotNotBetween()}{orWherePivotNotBetween()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a8bda869e8e5116a574c139ce469b79ad} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::or\+Where\+Pivot\+Not\+Between (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{array}]{\$values}{}\end{DoxyParamCaption})}
+
+Set a "{}or where not between"{} clause for a pivot table column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression & {\em \$column} & \\
+\hline
+array & {\em \$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a6b906dde336644c40765d72cc94181d6}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!orWherePivotNotIn@{orWherePivotNotIn}}
+\index{orWherePivotNotIn@{orWherePivotNotIn}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{orWherePivotNotIn()}{orWherePivotNotIn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a6b906dde336644c40765d72cc94181d6} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::or\+Where\+Pivot\+Not\+In (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$values}{}\end{DoxyParamCaption})}
+
+Set an "{}or where not in"{} clause for a pivot table column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+mixed & {\em \$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ada2ae09333bc5ee2a05bb0318efac05c}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!orWherePivotNotNull@{orWherePivotNotNull}}
+\index{orWherePivotNotNull@{orWherePivotNotNull}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{orWherePivotNotNull()}{orWherePivotNotNull()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ada2ae09333bc5ee2a05bb0318efac05c} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::or\+Where\+Pivot\+Not\+Null (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Set a "{}or where not null"{} clause for a pivot table column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ac559931e04f7c5f71677e8ced89cdeb0}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!orWherePivotNull@{orWherePivotNull}}
+\index{orWherePivotNull@{orWherePivotNull}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{orWherePivotNull()}{orWherePivotNull()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ac559931e04f7c5f71677e8ced89cdeb0} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::or\+Where\+Pivot\+Null (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$not}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Set a "{}or where null"{} clause for a pivot table column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression & {\em \$column} & \\
+\hline
+bool & {\em \$not} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a46d52dbfcc852009f1edeb449f4ab8d8}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!paginate@{paginate}}
+\index{paginate@{paginate}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{paginate()}{paginate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a46d52dbfcc852009f1edeb449f4ab8d8} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::paginate (\begin{DoxyParamCaption}\item[{}]{\$per\+Page}{ = {\ttfamily null}, }\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}, }\item[{}]{\$page\+Name}{ = {\ttfamily \textquotesingle{}page\textquotesingle{}}, }\item[{}]{\$page}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a paginator for the "{}select"{} statement.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$per\+Page} & \\
+\hline
+array & {\em \$columns} & \\
+\hline
+string & {\em \$page\+Name} & \\
+\hline
+int | null & {\em \$page} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Length\+Aware\+Paginator 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ac865f156cacb10b67675c3586ab6ee13}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!performJoin@{performJoin}}
+\index{performJoin@{performJoin}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{performJoin()}{performJoin()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ac865f156cacb10b67675c3586ab6ee13} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::perform\+Join (\begin{DoxyParamCaption}\item[{}]{\$query}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Set the join clause for the relation query.
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder$<$\+TRelated\+Model$>$\texorpdfstring{$\vert$}{|}null \$query \begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a57a222779e0b5db6b4c395cd791d6c5f}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!prepareQueryBuilder@{prepareQueryBuilder}}
+\index{prepareQueryBuilder@{prepareQueryBuilder}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{prepareQueryBuilder()}{prepareQueryBuilder()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a57a222779e0b5db6b4c395cd791d6c5f} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::prepare\+Query\+Builder (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Prepare the query builder for query execution.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Builder$<$\+TRelated\+Model$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae7fb6abb38670429fc5c7fea1c26a361}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!qualifyPivotColumn@{qualifyPivotColumn}}
+\index{qualifyPivotColumn@{qualifyPivotColumn}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{qualifyPivotColumn()}{qualifyPivotColumn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae7fb6abb38670429fc5c7fea1c26a361} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::qualify\+Pivot\+Column (\begin{DoxyParamCaption}\item[{}]{\$column}{}\end{DoxyParamCaption})}
+
+Qualify the given column name by the pivot table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression & {\em \$column} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0f45c06fd1a41d55cb3ae4502ada642c}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!resolveTableName@{resolveTableName}}
+\index{resolveTableName@{resolveTableName}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{resolveTableName()}{resolveTableName()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a0f45c06fd1a41d55cb3ae4502ada642c} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::resolve\+Table\+Name (\begin{DoxyParamCaption}\item[{}]{\$table}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Attempt to resolve the intermediate table name from the given string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a6cebf0c0f716e44dfd85e0fbd007d6f3}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!save@{save}}
+\index{save@{save}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a6cebf0c0f716e44dfd85e0fbd007d6f3} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::save (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}}}]{\$model}{, }\item[{array}]{\$pivot\+Attributes}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$touch}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Save a new model and attach it to the parent model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+TRelated\+Model & {\em \$model} & \\
+\hline
+array & {\em \$pivot\+Attributes} & \\
+\hline
+bool & {\em \$touch} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRelated\+Model 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a5feaf6c6b7006b93c74f78d6bac3a474}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!saveMany@{saveMany}}
+\index{saveMany@{saveMany}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{saveMany()}{saveMany()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a5feaf6c6b7006b93c74f78d6bac3a474} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::save\+Many (\begin{DoxyParamCaption}\item[{}]{\$models}{, }\item[{array}]{\$pivot\+Attributes}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Save an array of new models and attach them to the parent model.
+
+@template TContainer of \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}array-\/key, TRelated\+Model\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}array\texorpdfstring{$<$}{<}array-\/key, TRelated\+Model\texorpdfstring{$>$}{>}
+
+
+\begin{DoxyParams}[1]{Parameters}
+TContainer & {\em \$models} & \\
+\hline
+array & {\em \$pivot\+Attributes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TContainer 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab4c2b9fb1e96b179f6ff79d4643b00d0}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!saveManyQuietly@{saveManyQuietly}}
+\index{saveManyQuietly@{saveManyQuietly}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{saveManyQuietly()}{saveManyQuietly()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab4c2b9fb1e96b179f6ff79d4643b00d0} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::save\+Many\+Quietly (\begin{DoxyParamCaption}\item[{}]{\$models}{, }\item[{array}]{\$pivot\+Attributes}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Save an array of new models without raising any events and attach them to the parent model.
+
+@template TContainer of \textbackslash{}\+Illuminate\textbackslash{}\+Support\textbackslash{}\+Collection\texorpdfstring{$<$}{<}array-\/key, TRelated\+Model\texorpdfstring{$>$}{>}\texorpdfstring{$\vert$}{|}array\texorpdfstring{$<$}{<}array-\/key, TRelated\+Model\texorpdfstring{$>$}{>}
+
+
+\begin{DoxyParams}[1]{Parameters}
+TContainer & {\em \$models} & \\
+\hline
+array & {\em \$pivot\+Attributes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TContainer 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a027e32775e13212f122f538e6a95e049}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!saveQuietly@{saveQuietly}}
+\index{saveQuietly@{saveQuietly}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{saveQuietly()}{saveQuietly()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a027e32775e13212f122f538e6a95e049} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::save\+Quietly (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_model}{Model}}}]{\$model}{, }\item[{array}]{\$pivot\+Attributes}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$touch}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Save a new model without raising any events and attach it to the parent model.
+
+
+\begin{DoxyParams}[1]{Parameters}
+TRelated\+Model & {\em \$model} & \\
+\hline
+array & {\em \$pivot\+Attributes} & \\
+\hline
+bool & {\em \$touch} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRelated\+Model 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a64227291d613c5894d29c93dcf0b49c1}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!shouldSelect@{shouldSelect}}
+\index{shouldSelect@{shouldSelect}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{shouldSelect()}{shouldSelect()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a64227291d613c5894d29c93dcf0b49c1} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::should\+Select (\begin{DoxyParamCaption}\item[{array}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the select columns for the relation query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$columns} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a63134b44e95b927082906b35f64814f5}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!simplePaginate@{simplePaginate}}
+\index{simplePaginate@{simplePaginate}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{simplePaginate()}{simplePaginate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a63134b44e95b927082906b35f64814f5} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::simple\+Paginate (\begin{DoxyParamCaption}\item[{}]{\$per\+Page}{ = {\ttfamily null}, }\item[{}]{\$columns}{ = {\ttfamily \mbox{[}\textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}\mbox{]}}, }\item[{}]{\$page\+Name}{ = {\ttfamily \textquotesingle{}page\textquotesingle{}}, }\item[{}]{\$page}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Paginate the given query into a simple paginator.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$per\+Page} & \\
+\hline
+array & {\em \$columns} & \\
+\hline
+string & {\em \$page\+Name} & \\
+\hline
+int | null & {\em \$page} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Pagination\textbackslash{}\+Paginator 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a524ccc8c642cd0ec6fbcca3d909dfaa3}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!take@{take}}
+\index{take@{take}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{take()}{take()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a524ccc8c642cd0ec6fbcca3d909dfaa3} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::take (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Alias to set the "{}limit"{} value of the query.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae4205fa09dab4950d3e734f8e725a2b1}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!touch@{touch}}
+\index{touch@{touch}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{touch()}{touch()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ae4205fa09dab4950d3e734f8e725a2b1} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::touch (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Touch all of the related models for the relationship.
+
+E.\+g.\+: Touch all roles associated with this user.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_ac3504b9136a985a0503a5367ef97f8a7}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa0c291d443c45d6447bc4d32f2b4477b}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!touchIfTouching@{touchIfTouching}}
+\index{touchIfTouching@{touchIfTouching}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{touchIfTouching()}{touchIfTouching()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa0c291d443c45d6447bc4d32f2b4477b} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::touch\+If\+Touching (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+If we\textquotesingle{}re touching the parent model, touch.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a440c789a184d7ec262f8a4ba1fc74bce}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!touchingParent@{touchingParent}}
+\index{touchingParent@{touchingParent}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{touchingParent()}{touchingParent()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a440c789a184d7ec262f8a4ba1fc74bce} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::touching\+Parent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine if we should touch the parent on sync.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa737d0ec4b97eaee492972303c609020}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!updatedAt@{updatedAt}}
+\index{updatedAt@{updatedAt}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{updatedAt()}{updatedAt()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aa737d0ec4b97eaee492972303c609020} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::updated\+At (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of the "{}updated at"{} column.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_relation_acc223a46e21e50d6426638ffa412dc59}{Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Relation}}.
+
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_addad0ce6e4349dca6b3da9a1c11a1a61}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!updateOrCreate@{updateOrCreate}}
+\index{updateOrCreate@{updateOrCreate}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{updateOrCreate()}{updateOrCreate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_addad0ce6e4349dca6b3da9a1c11a1a61} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::update\+Or\+Create (\begin{DoxyParamCaption}\item[{array}]{\$attributes}{, }\item[{array}]{\$values}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$joining}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$touch}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Create or update a related record matching the attributes, and fill it with values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$attributes} & \\
+\hline
+array & {\em \$values} & \\
+\hline
+array & {\em \$joining} & \\
+\hline
+bool & {\em \$touch} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TRelated\+Model 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a6274906efdfc3ea958570fa23b6ab592}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!using@{using}}
+\index{using@{using}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{using()}{using()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a6274906efdfc3ea958570fa23b6ab592} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::using (\begin{DoxyParamCaption}\item[{}]{\$class}{}\end{DoxyParamCaption})}
+
+Specify the custom pivot model to use for the relationship.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab85e99313577edc7d73143b71a4f1018}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!wherePivot@{wherePivot}}
+\index{wherePivot@{wherePivot}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{wherePivot()}{wherePivot()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab85e99313577edc7d73143b71a4f1018} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::where\+Pivot (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$operator}{ = {\ttfamily null}, }\item[{}]{\$value}{ = {\ttfamily null}, }\item[{}]{\$boolean}{ = {\ttfamily \textquotesingle{}and\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Set a where clause for a pivot table column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression & {\em \$column} & \\
+\hline
+mixed & {\em \$operator} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+string & {\em \$boolean} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a9e1c5dbec68f0022dcb7416cd6b19bdf}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!wherePivotBetween@{wherePivotBetween}}
+\index{wherePivotBetween@{wherePivotBetween}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{wherePivotBetween()}{wherePivotBetween()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a9e1c5dbec68f0022dcb7416cd6b19bdf} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::where\+Pivot\+Between (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{array}]{\$values}{, }\item[{}]{\$boolean}{ = {\ttfamily \textquotesingle{}and\textquotesingle{}}, }\item[{}]{\$not}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Set a "{}where between"{} clause for a pivot table column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression & {\em \$column} & \\
+\hline
+array & {\em \$values} & \\
+\hline
+string & {\em \$boolean} & \\
+\hline
+bool & {\em \$not} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab1d2e3ef95d65dd408fef2690e0080eb}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!wherePivotIn@{wherePivotIn}}
+\index{wherePivotIn@{wherePivotIn}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{wherePivotIn()}{wherePivotIn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab1d2e3ef95d65dd408fef2690e0080eb} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::where\+Pivot\+In (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$values}{, }\item[{}]{\$boolean}{ = {\ttfamily \textquotesingle{}and\textquotesingle{}}, }\item[{}]{\$not}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Set a "{}where in"{} clause for a pivot table column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression & {\em \$column} & \\
+\hline
+mixed & {\em \$values} & \\
+\hline
+string & {\em \$boolean} & \\
+\hline
+bool & {\em \$not} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ad412890d56a5fdcbbf34f3b5f86c9d91}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!wherePivotNotBetween@{wherePivotNotBetween}}
+\index{wherePivotNotBetween@{wherePivotNotBetween}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{wherePivotNotBetween()}{wherePivotNotBetween()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ad412890d56a5fdcbbf34f3b5f86c9d91} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::where\+Pivot\+Not\+Between (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{array}]{\$values}{, }\item[{}]{\$boolean}{ = {\ttfamily \textquotesingle{}and\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Set a "{}where pivot not between"{} clause for a pivot table column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression & {\em \$column} & \\
+\hline
+array & {\em \$values} & \\
+\hline
+string & {\em \$boolean} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aaa180e4fb345e817b2facc76d085e383}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!wherePivotNotIn@{wherePivotNotIn}}
+\index{wherePivotNotIn@{wherePivotNotIn}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{wherePivotNotIn()}{wherePivotNotIn()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aaa180e4fb345e817b2facc76d085e383} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::where\+Pivot\+Not\+In (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$values}{, }\item[{}]{\$boolean}{ = {\ttfamily \textquotesingle{}and\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Set a "{}where not in"{} clause for a pivot table column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression & {\em \$column} & \\
+\hline
+mixed & {\em \$values} & \\
+\hline
+string & {\em \$boolean} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a5841f95d8475e63db6ac39e25aaa5745}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!wherePivotNotNull@{wherePivotNotNull}}
+\index{wherePivotNotNull@{wherePivotNotNull}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{wherePivotNotNull()}{wherePivotNotNull()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_a5841f95d8475e63db6ac39e25aaa5745} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::where\+Pivot\+Not\+Null (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$boolean}{ = {\ttfamily \textquotesingle{}and\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Set a "{}where not null"{} clause for a pivot table column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression & {\em \$column} & \\
+\hline
+string & {\em \$boolean} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab19a2913ed6ad9489c238ff9679de851}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!wherePivotNull@{wherePivotNull}}
+\index{wherePivotNull@{wherePivotNull}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{wherePivotNull()}{wherePivotNull()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ab19a2913ed6ad9489c238ff9679de851} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::where\+Pivot\+Null (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$boolean}{ = {\ttfamily \textquotesingle{}and\textquotesingle{}}, }\item[{}]{\$not}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Set a "{}where null"{} clause for a pivot table column.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression & {\em \$column} & \\
+\hline
+string & {\em \$boolean} & \\
+\hline
+bool & {\em \$not} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ad274db371718f5b12d8f13a5654ae30b}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!withPivotValue@{withPivotValue}}
+\index{withPivotValue@{withPivotValue}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{withPivotValue()}{withPivotValue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_ad274db371718f5b12d8f13a5654ae30b} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::with\+Pivot\+Value (\begin{DoxyParamCaption}\item[{}]{\$column}{, }\item[{}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set a where clause for a pivot table column.
+
+In addition, new pivot records will receive this value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\texorpdfstring{$\vert$}{|}} & \\
+\hline
+\end{DoxyParams}
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Expression\texorpdfstring{$\vert$}{|}array\texorpdfstring{$<$}{<}string, string\texorpdfstring{$>$}{>} \$column 
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \Hypertarget{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aef1121571f61ad047c344a07bed08a2f}\index{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}!withTimestamps@{withTimestamps}}
+\index{withTimestamps@{withTimestamps}!Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany@{Illuminate\textbackslash{}Database\textbackslash{}Eloquent\textbackslash{}Relations\textbackslash{}BelongsToMany}}
+\doxysubsubsection{\texorpdfstring{withTimestamps()}{withTimestamps()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_database_1_1_eloquent_1_1_relations_1_1_belongs_to_many_aef1121571f61ad047c344a07bed08a2f} 
+Illuminate\textbackslash{}\+Database\textbackslash{}\+Eloquent\textbackslash{}\+Relations\textbackslash{}\+Belongs\+To\+Many\+::with\+Timestamps (\begin{DoxyParamCaption}\item[{}]{\$created\+At}{ = {\ttfamily null}, }\item[{}]{\$updated\+At}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Specify that the pivot table has creation and update timestamps.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$created\+At} & \\
+\hline
+mixed & {\em \$updated\+At} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Database/\+Eloquent/\+Relations/Belongs\+To\+Many.\+php\end{DoxyCompactItemize}

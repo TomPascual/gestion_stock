@@ -1,0 +1,247 @@
+\doxysection{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}Database\+Failed\+Job\+Provider Class Reference}
+\hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider}{}\label{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider}\index{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}}
+Inheritance diagram for Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}Database\+Failed\+Job\+Provider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.170324cm]{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_a1f9ff4b651e700213706808639fc9ba4}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connection_resolver_interface}{Connection\+Resolver\+Interface}} \$resolver, \$database, \$table)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_a8f529513f2de72dcb4c3e7a080047774}{log}} (\$connection, \$queue, \$payload, \$exception)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_ad5224c72f86f17534c0a9b15ba1916b0}{ids}} (\$queue=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_ae5636a1fc4eb8f03ad52d8196a93cca5}{all}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_ac1d3f9f7180f134a27f009d48e74d1f8}{find}} (\$id)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_acf6985dce0237095682caa941501e9bb}{forget}} (\$id)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_a2c41f068e95759ed92d6be7b4192d436}{flush}} (\$hours=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_a40698b07337a7657f223cd64cfcac503}{prune}} (Date\+Time\+Interface \$before)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_ab97aff698f1e099ea4f4a1f4cf4e8117}{count}} (\$connection=null, \$queue=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_aa9a4910c9b2783d37d186d880cd3c683}{get\+Table}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_a69b1b8ea8e68b1ea1e3a327037139314}\label{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_a69b1b8ea8e68b1ea1e3a327037139314} 
+{\bfseries \$resolver}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_af59da570e4484b1669056ed658e5f43c}\label{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_af59da570e4484b1669056ed658e5f43c} 
+{\bfseries \$database}
+\item 
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_a46fb709e34052e53092baedf7449e28b}\label{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_a46fb709e34052e53092baedf7449e28b} 
+{\bfseries \$table}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_a1f9ff4b651e700213706808639fc9ba4}\index{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_a1f9ff4b651e700213706808639fc9ba4} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Database\+Failed\+Job\+Provider\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_illuminate_1_1_database_1_1_connection_resolver_interface}{Connection\+Resolver\+Interface}}}]{\$resolver}{, }\item[{}]{\$database}{, }\item[{}]{\$table}{}\end{DoxyParamCaption})}
+
+Create a new database failed job provider.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Connection\+Resolver\+Interface & {\em \$resolver} & \\
+\hline
+string & {\em \$database} & \\
+\hline
+string & {\em \$table} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_ae5636a1fc4eb8f03ad52d8196a93cca5}\index{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}!all@{all}}
+\index{all@{all}!Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{all()}{all()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_ae5636a1fc4eb8f03ad52d8196a93cca5} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Database\+Failed\+Job\+Provider\+::all (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get a list of all of the failed jobs.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_queue_1_1_failed_1_1_failed_job_provider_interface_af220898a38fad59d9989e0bcb66fc97e}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Failed\+Job\+Provider\+Interface}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_ab97aff698f1e099ea4f4a1f4cf4e8117}\index{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}!count@{count}}
+\index{count@{count}!Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_ab97aff698f1e099ea4f4a1f4cf4e8117} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Database\+Failed\+Job\+Provider\+::count (\begin{DoxyParamCaption}\item[{}]{\$connection}{ = {\ttfamily null}, }\item[{}]{\$queue}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Count the failed jobs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$connection} & \\
+\hline
+string | null & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_queue_1_1_failed_1_1_countable_failed_job_provider_a63b152f5cb7b063c7745ed9cb22a77a6}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Countable\+Failed\+Job\+Provider}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_ac1d3f9f7180f134a27f009d48e74d1f8}\index{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}!find@{find}}
+\index{find@{find}!Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_ac1d3f9f7180f134a27f009d48e74d1f8} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Database\+Failed\+Job\+Provider\+::find (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Get a single failed job.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_queue_1_1_failed_1_1_failed_job_provider_interface_a6ce87a898b13cbb1245cb685aaa5d4a2}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Failed\+Job\+Provider\+Interface}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_a2c41f068e95759ed92d6be7b4192d436}\index{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}!flush@{flush}}
+\index{flush@{flush}!Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_a2c41f068e95759ed92d6be7b4192d436} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Database\+Failed\+Job\+Provider\+::flush (\begin{DoxyParamCaption}\item[{}]{\$hours}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Flush all of the failed jobs from storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$hours} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_queue_1_1_failed_1_1_failed_job_provider_interface_a7e2bcee3222ed0564685097066758261}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Failed\+Job\+Provider\+Interface}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_acf6985dce0237095682caa941501e9bb}\index{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}!forget@{forget}}
+\index{forget@{forget}!Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{forget()}{forget()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_acf6985dce0237095682caa941501e9bb} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Database\+Failed\+Job\+Provider\+::forget (\begin{DoxyParamCaption}\item[{}]{\$id}{}\end{DoxyParamCaption})}
+
+Delete a single failed job from storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_queue_1_1_failed_1_1_failed_job_provider_interface_a4cd61d8fa6cfa42ff849f45f4c07b1e8}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Failed\+Job\+Provider\+Interface}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_aa9a4910c9b2783d37d186d880cd3c683}\index{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}!getTable@{getTable}}
+\index{getTable@{getTable}!Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{getTable()}{getTable()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_aa9a4910c9b2783d37d186d880cd3c683} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Database\+Failed\+Job\+Provider\+::get\+Table (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get a new query builder instance for the table.
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Database\textbackslash{}\+Query\textbackslash{}\+Builder 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_ad5224c72f86f17534c0a9b15ba1916b0}\index{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}!ids@{ids}}
+\index{ids@{ids}!Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{ids()}{ids()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_ad5224c72f86f17534c0a9b15ba1916b0} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Database\+Failed\+Job\+Provider\+::ids (\begin{DoxyParamCaption}\item[{}]{\$queue}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get the IDs of all of the failed jobs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$queue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_a8f529513f2de72dcb4c3e7a080047774}\index{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}!log@{log}}
+\index{log@{log}!Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_a8f529513f2de72dcb4c3e7a080047774} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Database\+Failed\+Job\+Provider\+::log (\begin{DoxyParamCaption}\item[{}]{\$connection}{, }\item[{}]{\$queue}{, }\item[{}]{\$payload}{, }\item[{}]{\$exception}{}\end{DoxyParamCaption})}
+
+Log a failed job into storage.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$connection} & \\
+\hline
+string & {\em \$queue} & \\
+\hline
+string & {\em \$payload} & \\
+\hline
+\textbackslash{}\+Throwable & {\em \$exception} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_queue_1_1_failed_1_1_failed_job_provider_interface_a2971afdf1230072d090f31751bf10792}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Failed\+Job\+Provider\+Interface}}.
+
+\Hypertarget{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_a40698b07337a7657f223cd64cfcac503}\index{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}!prune@{prune}}
+\index{prune@{prune}!Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider@{Illuminate\textbackslash{}Queue\textbackslash{}Failed\textbackslash{}DatabaseFailedJobProvider}}
+\doxysubsubsection{\texorpdfstring{prune()}{prune()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_queue_1_1_failed_1_1_database_failed_job_provider_a40698b07337a7657f223cd64cfcac503} 
+Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Database\+Failed\+Job\+Provider\+::prune (\begin{DoxyParamCaption}\item[{Date\+Time\+Interface}]{\$before}{}\end{DoxyParamCaption})}
+
+Prune all of the entries older than the given date.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Date\+Time\+Interface & {\em \$before} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_illuminate_1_1_queue_1_1_failed_1_1_prunable_failed_job_provider_ac6d181026461a11cc81fdf1465d50009}{Illuminate\textbackslash{}\+Queue\textbackslash{}\+Failed\textbackslash{}\+Prunable\+Failed\+Job\+Provider}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Queue/\+Failed/Database\+Failed\+Job\+Provider.\+php\end{DoxyCompactItemize}

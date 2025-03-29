@@ -1,0 +1,80 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}Target\+Operation Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_target_operation}{}\label{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_target_operation}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}TargetOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}TargetOperation}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}Target\+Operation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_target_operation}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_target_operation_a4308ee561b1a8b7af5047f34674d31c4}{process\+Domain}} (string \$domain)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Abstract\+Operation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a1576ed173592b14d4c43441089fd607f}{\+\_\+\+\_\+construct}} (protected \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface}{Message\+Catalogue\+Interface}} \$source, protected \mbox{\hyperlink{interface_symfony_1_1_component_1_1_translation_1_1_message_catalogue_interface}{Message\+Catalogue\+Interface}} \$target,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a8a79b9587e04c8331361ff7978576c41}{get\+Domains}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_acd819fea99593e4a3ad7428e8f01a779}{get\+Messages}} (string \$domain)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a37894e62ea52ab52afc39499daff7c09}{get\+New\+Messages}} (string \$domain)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a159bdc2912b03a345af7602caa98f668}{get\+Obsolete\+Messages}} (string \$domain)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_abdb77e6f83bf612ac41415125e0dc43e}{get\+Result}} ()
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a39fdc06c1c68f78d0833022657900c53}{move\+Messages\+To\+Intl\+Domains\+If\+Possible}} (string \$batch=self\+::\+ALL\+\_\+\+BATCH)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Abstract\+Operation}}}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries OBSOLETE\+\_\+\+BATCH} = \textquotesingle{}obsolete\textquotesingle{}
+\item 
+const {\bfseries NEW\+\_\+\+BATCH} = \textquotesingle{}new\textquotesingle{}
+\item 
+const {\bfseries ALL\+\_\+\+BATCH} = \textquotesingle{}all\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Abstract\+Operation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_message_catalogue}{Message\+Catalogue}} {\bfseries \$result}
+\item 
+array {\bfseries \$messages}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Target operation between two catalogues\+: intersection = source ∩ target = \{x\+: x ∈ source ∧ x ∈ target\} all = intersection ∪ (target ∖ intersection) = target new = all ∖ source = \{x\+: x ∈ target ∧ x ∉ source\} obsolete = source ∖ all = source ∖ target = \{x\+: x ∈ source ∧ x ∉ target\} Basically, the result contains messages from the target catalogue.
+
+\begin{DoxyAuthor}{Author}
+Michael Lee \href{mailto:michael.lee@zerustech.com}{\texttt{ michael.\+lee@zerustech.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_target_operation_a4308ee561b1a8b7af5047f34674d31c4}\index{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}TargetOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}TargetOperation}!processDomain@{processDomain}}
+\index{processDomain@{processDomain}!Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}TargetOperation@{Symfony\textbackslash{}Component\textbackslash{}Translation\textbackslash{}Catalogue\textbackslash{}TargetOperation}}
+\doxysubsubsection{\texorpdfstring{processDomain()}{processDomain()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_target_operation_a4308ee561b1a8b7af5047f34674d31c4} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Target\+Operation\+::process\+Domain (\begin{DoxyParamCaption}\item[{string}]{\$domain}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Performs operation on source and target catalogues for the given domain and stores the results.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$domain} & The domain which the operation will be performed for \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_translation_1_1_catalogue_1_1_abstract_operation_a139f974aee58a58b1aa7d7d3396611fe}{Symfony\textbackslash{}\+Component\textbackslash{}\+Translation\textbackslash{}\+Catalogue\textbackslash{}\+Abstract\+Operation}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/translation/\+Catalogue/Target\+Operation.\+php\end{DoxyCompactItemize}

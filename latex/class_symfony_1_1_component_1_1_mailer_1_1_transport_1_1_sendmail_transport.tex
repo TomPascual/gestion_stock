@@ -1,0 +1,105 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}Sendmail\+Transport Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_sendmail_transport}{}\label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_sendmail_transport}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}SendmailTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}SendmailTransport}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}Sendmail\+Transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_sendmail_transport}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_sendmail_transport_aaa73155c1772812f534046c718132e3b}{\+\_\+\+\_\+construct}} (?string \$command=null, ?\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}} \$dispatcher=null, ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_sendmail_transport_a23544e7b46babaa804d7aba5e4153f41}{send}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_raw_message}{Raw\+Message}} \$message, ?\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope}{Envelope}} \$envelope=null)
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_sendmail_transport_a71b0db64dcaec248e2f6c7303b9d4d97}\label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_sendmail_transport_a71b0db64dcaec248e2f6c7303b9d4d97} 
+{\bfseries \+\_\+\+\_\+to\+String} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Abstract\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \+\_\+\+\_\+construct} (private ?\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}} \$dispatcher=null, ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a417c8f476ba1b664dd6e7155b83969ad}{set\+Max\+Per\+Second}} (float \$rate)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_sendmail_transport_a13f0b76cb636c9d1216e4dc81f938519}{do\+Send}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_sent_message}{Sent\+Message}} \$message)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Abstract\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_a1ad4fb2a9e2e169961b9df4ba4b30645}{stringify\+Addresses}} (array \$addresses)
+\item 
+{\bfseries get\+Logger} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sendmail\+Transport for sending mail through a Sendmail/\+Postfix (etc..) binary.
+
+Transport can be instantiated through Sendmail\+Transport\+Factory or Native\+Transport\+Factory\+:
+
+
+\begin{DoxyItemize}
+\item Sendmail\+Transport\+Factory to use most common sendmail path and recommended options
+\item Native\+Transport\+Factory when configuration is set via php.\+ini
+\end{DoxyItemize}
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_sendmail_transport_aaa73155c1772812f534046c718132e3b}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}SendmailTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}SendmailTransport}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}SendmailTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}SendmailTransport}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_sendmail_transport_aaa73155c1772812f534046c718132e3b} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Sendmail\+Transport\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{?string}]{\$command}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{interface_psr_1_1_event_dispatcher_1_1_event_dispatcher_interface}{Event\+Dispatcher\+Interface}}}]{\$dispatcher}{ = {\ttfamily null}, }\item[{?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}}}]{\$logger}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Constructor.
+
+Supported modes are -\/bs and -\/t, with any additional flags desired.
+
+The recommended mode is "{}-\/bs"{} since it is interactive and failure notifications are hence possible. Note that the -\/t mode does not support error reporting and does not support Bcc properly (the Bcc headers are not removed).
+
+If using -\/t mode, you are strongly advised to include -\/oi or -\/i in the flags (like /usr/sbin/sendmail -\/oi -\/t)
+
+-\/f$<$sender$>$ flag will be appended automatically if one is not present. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_sendmail_transport_a13f0b76cb636c9d1216e4dc81f938519}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}SendmailTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}SendmailTransport}!doSend@{doSend}}
+\index{doSend@{doSend}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}SendmailTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}SendmailTransport}}
+\doxysubsubsection{\texorpdfstring{doSend()}{doSend()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_sendmail_transport_a13f0b76cb636c9d1216e4dc81f938519} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Sendmail\+Transport\+::do\+Send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_sent_message}{Sent\+Message}}}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Abstract\+Transport}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_sendmail_transport_a23544e7b46babaa804d7aba5e4153f41}\index{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}SendmailTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}SendmailTransport}!send@{send}}
+\index{send@{send}!Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}SendmailTransport@{Symfony\textbackslash{}Component\textbackslash{}Mailer\textbackslash{}Transport\textbackslash{}SendmailTransport}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_sendmail_transport_a23544e7b46babaa804d7aba5e4153f41} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Sendmail\+Transport\+::send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_mime_1_1_raw_message}{Raw\+Message}}}]{\$message}{, }\item[{?\mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_envelope}{Envelope}}}]{\$envelope}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Transport\+Exception\+Interface} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{class_symfony_1_1_component_1_1_mailer_1_1_transport_1_1_abstract_transport_ab4f6125bd3143823535c10c3d9633ce7}{Symfony\textbackslash{}\+Component\textbackslash{}\+Mailer\textbackslash{}\+Transport\textbackslash{}\+Abstract\+Transport}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/mailer/\+Transport/Sendmail\+Transport.\+php\end{DoxyCompactItemize}

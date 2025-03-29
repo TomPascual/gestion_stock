@@ -1,0 +1,179 @@
+\doxysection{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher Interface Reference}
+\hypertarget{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher}{}\label{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher}}
+Inheritance diagram for Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_a96f5dfc2138533d86be92b6320070931}{dispatch}} (\$command)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_a7b21ec6e3d2d9042cf3c34d5a5783aad}{dispatch\+Sync}} (\$command, \$handler=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_ae518a6f8a59d78e46e88afce81d34868}{dispatch\+Now}} (\$command, \$handler=null)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_afff1b2ee3b0d4570e7c43809afca521c}{has\+Command\+Handler}} (\$command)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_a840e1f0b6fc46bdf0f7df260ae2c1cc0}{get\+Command\+Handler}} (\$command)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_ab90dd1000363ba516059c5d5ba354e5a}{pipe\+Through}} (array \$pipes)
+\item 
+\mbox{\hyperlink{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_af5584241bfd28a25c4cda85493feff2a}{map}} (array \$map)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_a96f5dfc2138533d86be92b6320070931}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_a96f5dfc2138533d86be92b6320070931} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Bus\textbackslash{}\+Dispatcher\+::dispatch (\begin{DoxyParamCaption}\item[{}]{\$command}{}\end{DoxyParamCaption})}
+
+Dispatch a command to its appropriate handler.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dispatcher_a399bdc4d75f053e43f392cb2a04ccff5}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dispatcher}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_bus_fake_a232c0bfe36816c78ac8e07caba7b819f}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Bus\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_ae518a6f8a59d78e46e88afce81d34868}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher}!dispatchNow@{dispatchNow}}
+\index{dispatchNow@{dispatchNow}!Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{dispatchNow()}{dispatchNow()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_ae518a6f8a59d78e46e88afce81d34868} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Bus\textbackslash{}\+Dispatcher\+::dispatch\+Now (\begin{DoxyParamCaption}\item[{}]{\$command}{, }\item[{}]{\$handler}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Dispatch a command to its appropriate handler in the current process.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$command} & \\
+\hline
+mixed & {\em \$handler} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dispatcher_a6ccf1497432a04389abc9d774ad12550}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dispatcher}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_bus_fake_a23667110cdeab223df7da930ff189287}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Bus\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_a7b21ec6e3d2d9042cf3c34d5a5783aad}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher}!dispatchSync@{dispatchSync}}
+\index{dispatchSync@{dispatchSync}!Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{dispatchSync()}{dispatchSync()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_a7b21ec6e3d2d9042cf3c34d5a5783aad} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Bus\textbackslash{}\+Dispatcher\+::dispatch\+Sync (\begin{DoxyParamCaption}\item[{}]{\$command}{, }\item[{}]{\$handler}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Dispatch a command to its appropriate handler in the current process.
+
+Queueable jobs will be dispatched to the "{}sync"{} queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$command} & \\
+\hline
+mixed & {\em \$handler} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dispatcher_a869fcb47102eec783f8fdbf91de2aa55}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dispatcher}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_bus_fake_a446440c5030850e33dfec9c3a28bed73}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Bus\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_a840e1f0b6fc46bdf0f7df260ae2c1cc0}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher}!getCommandHandler@{getCommandHandler}}
+\index{getCommandHandler@{getCommandHandler}!Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{getCommandHandler()}{getCommandHandler()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_a840e1f0b6fc46bdf0f7df260ae2c1cc0} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Bus\textbackslash{}\+Dispatcher\+::get\+Command\+Handler (\begin{DoxyParamCaption}\item[{}]{\$command}{}\end{DoxyParamCaption})}
+
+Retrieve the handler for a command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}mixed 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dispatcher_a8576f35976b21cd3f96e83885e98b9b3}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dispatcher}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_bus_fake_ac9c4bb3cec1caef05bd745411b6f2d06}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Bus\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_afff1b2ee3b0d4570e7c43809afca521c}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher}!hasCommandHandler@{hasCommandHandler}}
+\index{hasCommandHandler@{hasCommandHandler}!Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{hasCommandHandler()}{hasCommandHandler()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_afff1b2ee3b0d4570e7c43809afca521c} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Bus\textbackslash{}\+Dispatcher\+::has\+Command\+Handler (\begin{DoxyParamCaption}\item[{}]{\$command}{}\end{DoxyParamCaption})}
+
+Determine if the given command has a handler.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$command} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dispatcher_a5fe98bbe3434a55117ebef4d0ff59d6a}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dispatcher}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_bus_fake_a790ed55e91f91e53cb41e8974ebf3b88}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Bus\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_af5584241bfd28a25c4cda85493feff2a}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher}!map@{map}}
+\index{map@{map}!Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_af5584241bfd28a25c4cda85493feff2a} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Bus\textbackslash{}\+Dispatcher\+::map (\begin{DoxyParamCaption}\item[{array}]{\$map}{}\end{DoxyParamCaption})}
+
+Map a command to a handler.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$map} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dispatcher_a71b0972b92320247bd30c1b48e9b832c}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dispatcher}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_bus_fake_abdacdf5ef857038f3f6c4ea1c021549d}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Bus\+Fake}}.
+
+\Hypertarget{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_ab90dd1000363ba516059c5d5ba354e5a}\index{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher}!pipeThrough@{pipeThrough}}
+\index{pipeThrough@{pipeThrough}!Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher@{Illuminate\textbackslash{}Contracts\textbackslash{}Bus\textbackslash{}Dispatcher}}
+\doxysubsubsection{\texorpdfstring{pipeThrough()}{pipeThrough()}}
+{\footnotesize\ttfamily \label{interface_illuminate_1_1_contracts_1_1_bus_1_1_dispatcher_ab90dd1000363ba516059c5d5ba354e5a} 
+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Bus\textbackslash{}\+Dispatcher\+::pipe\+Through (\begin{DoxyParamCaption}\item[{array}]{\$pipes}{}\end{DoxyParamCaption})}
+
+Set the pipes commands should be piped through before dispatching.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$pipes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_illuminate_1_1_bus_1_1_dispatcher_aae5959ee05fd577e5b83edb303a571e2}{Illuminate\textbackslash{}\+Bus\textbackslash{}\+Dispatcher}}, and \mbox{\hyperlink{class_illuminate_1_1_support_1_1_testing_1_1_fakes_1_1_bus_fake_a0387fe266e7012f9f509dee88aad832c}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Testing\textbackslash{}\+Fakes\textbackslash{}\+Bus\+Fake}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Contracts/\+Bus/Dispatcher.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,200 @@
+\doxysection{Illuminate\textbackslash{}Concurrency\textbackslash{}Concurrency\+Manager Class Reference}
+\hypertarget{class_illuminate_1_1_concurrency_1_1_concurrency_manager}{}\label{class_illuminate_1_1_concurrency_1_1_concurrency_manager}\index{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager@{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager}}
+Inheritance diagram for Illuminate\textbackslash{}Concurrency\textbackslash{}Concurrency\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_illuminate_1_1_concurrency_1_1_concurrency_manager}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_concurrency_manager_a3ee781d24e30585ed4f363c6bd9c3187}{driver}} (\$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_concurrency_manager_ad907edecb12f7192061b577293be17dd}{create\+Process\+Driver}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_concurrency_manager_acabb334003a95387083a643bb678a13b}{create\+Fork\+Driver}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_concurrency_manager_aa1e7ef7db6b22a2a54f447785d9aad6c}{create\+Sync\+Driver}} (array \$config)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_concurrency_manager_ac91b6155caa4cd65cf7e6de5dded3738}{get\+Default\+Instance}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_concurrency_manager_a5f5c27d17efc5b453d2bd3a0948031d4}{set\+Default\+Instance}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_concurrency_1_1_concurrency_manager_a45939f63db895d6ff562f5a4c5590b81}{get\+Instance\+Config}} (\$name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_af66324d5c5ddc8d94441355ed868b0a1}{\+\_\+\+\_\+construct}} (\$app)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a7b4404c4e9caeb9afa0b3c51f081d111}{instance}} (\$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a1fe5131a1fec9cbc2554fc2895234888}{forget\+Instance}} (\$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a27f3d94a9b21dc7576fa997031cdfb47}{purge}} (\$name=null)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a90b64d819d4991d3b1df404e324b656a}{extend}} (\$name, Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_acb27da9050a90e7ffbdb2d8477dfddc9}{set\+Application}} (\$app)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a79363a4140f5fcc289828c6ac2da589c}{\+\_\+\+\_\+call}} (\$method, \$parameters)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a7996548eda2c6d3732fde5be3d8beec9}{get}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a1144222c1bad4e9356d9b7ae098fc28e}{resolve}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a831b8ec50f3c5e3150b0a06f6dbbbf5c}{call\+Custom\+Creator}} (array \$config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$app}
+\item 
+{\bfseries \$config}
+\item 
+{\bfseries \$instances} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$custom\+Creators} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$driver\+Key} = \textquotesingle{}driver\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@mixin \textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Concurrency\textbackslash{}\+Driver 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_concurrency_1_1_concurrency_manager_acabb334003a95387083a643bb678a13b}\index{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager@{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager}!createForkDriver@{createForkDriver}}
+\index{createForkDriver@{createForkDriver}!Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager@{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager}}
+\doxysubsubsection{\texorpdfstring{createForkDriver()}{createForkDriver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_concurrency_1_1_concurrency_manager_acabb334003a95387083a643bb678a13b} 
+Illuminate\textbackslash{}\+Concurrency\textbackslash{}\+Concurrency\+Manager\+::create\+Fork\+Driver (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})}
+
+Create an instance of the fork concurrency driver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Concurrency\textbackslash{}\+Fork\+Driver
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception \Hypertarget{class_illuminate_1_1_concurrency_1_1_concurrency_manager_ad907edecb12f7192061b577293be17dd}\index{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager@{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager}!createProcessDriver@{createProcessDriver}}
+\index{createProcessDriver@{createProcessDriver}!Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager@{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager}}
+\doxysubsubsection{\texorpdfstring{createProcessDriver()}{createProcessDriver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_concurrency_1_1_concurrency_manager_ad907edecb12f7192061b577293be17dd} 
+Illuminate\textbackslash{}\+Concurrency\textbackslash{}\+Concurrency\+Manager\+::create\+Process\+Driver (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})}
+
+Create an instance of the process concurrency driver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Concurrency\textbackslash{}\+Process\+Driver 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_concurrency_1_1_concurrency_manager_aa1e7ef7db6b22a2a54f447785d9aad6c}\index{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager@{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager}!createSyncDriver@{createSyncDriver}}
+\index{createSyncDriver@{createSyncDriver}!Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager@{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager}}
+\doxysubsubsection{\texorpdfstring{createSyncDriver()}{createSyncDriver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_concurrency_1_1_concurrency_manager_aa1e7ef7db6b22a2a54f447785d9aad6c} 
+Illuminate\textbackslash{}\+Concurrency\textbackslash{}\+Concurrency\+Manager\+::create\+Sync\+Driver (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})}
+
+Create an instance of the sync concurrency driver.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Illuminate\textbackslash{}\+Concurrency\textbackslash{}\+Sync\+Driver 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_concurrency_1_1_concurrency_manager_a3ee781d24e30585ed4f363c6bd9c3187}\index{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager@{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager}!driver@{driver}}
+\index{driver@{driver}!Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager@{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager}}
+\doxysubsubsection{\texorpdfstring{driver()}{driver()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_concurrency_1_1_concurrency_manager_a3ee781d24e30585ed4f363c6bd9c3187} 
+Illuminate\textbackslash{}\+Concurrency\textbackslash{}\+Concurrency\+Manager\+::driver (\begin{DoxyParamCaption}\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a driver instance by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_concurrency_1_1_concurrency_manager_ac91b6155caa4cd65cf7e6de5dded3738}\index{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager@{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager}!getDefaultInstance@{getDefaultInstance}}
+\index{getDefaultInstance@{getDefaultInstance}!Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager@{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager}}
+\doxysubsubsection{\texorpdfstring{getDefaultInstance()}{getDefaultInstance()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_concurrency_1_1_concurrency_manager_ac91b6155caa4cd65cf7e6de5dded3738} 
+Illuminate\textbackslash{}\+Concurrency\textbackslash{}\+Concurrency\+Manager\+::get\+Default\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the default instance name.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a39168ef9d529a94bba0f4e4a1c7dc793}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager}}.
+
+\Hypertarget{class_illuminate_1_1_concurrency_1_1_concurrency_manager_a45939f63db895d6ff562f5a4c5590b81}\index{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager@{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager}!getInstanceConfig@{getInstanceConfig}}
+\index{getInstanceConfig@{getInstanceConfig}!Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager@{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager}}
+\doxysubsubsection{\texorpdfstring{getInstanceConfig()}{getInstanceConfig()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_concurrency_1_1_concurrency_manager_a45939f63db895d6ff562f5a4c5590b81} 
+Illuminate\textbackslash{}\+Concurrency\textbackslash{}\+Concurrency\+Manager\+::get\+Instance\+Config (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Get the instance specific configuration.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_adc433dfc960d104f20003776784736a7}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager}}.
+
+\Hypertarget{class_illuminate_1_1_concurrency_1_1_concurrency_manager_a5f5c27d17efc5b453d2bd3a0948031d4}\index{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager@{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager}!setDefaultInstance@{setDefaultInstance}}
+\index{setDefaultInstance@{setDefaultInstance}!Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager@{Illuminate\textbackslash{}Concurrency\textbackslash{}ConcurrencyManager}}
+\doxysubsubsection{\texorpdfstring{setDefaultInstance()}{setDefaultInstance()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_concurrency_1_1_concurrency_manager_a5f5c27d17efc5b453d2bd3a0948031d4} 
+Illuminate\textbackslash{}\+Concurrency\textbackslash{}\+Concurrency\+Manager\+::set\+Default\+Instance (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Set the default instance name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_support_1_1_multiple_instance_manager_a8b1cfe495130e2bc17d68422a71edd3e}{Illuminate\textbackslash{}\+Support\textbackslash{}\+Multiple\+Instance\+Manager}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Concurrency/Concurrency\+Manager.\+php\end{DoxyCompactItemize}

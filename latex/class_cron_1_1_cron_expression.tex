@@ -1,0 +1,511 @@
+\doxysection{Cron\textbackslash{}Cron\+Expression Class Reference}
+\hypertarget{class_cron_1_1_cron_expression}{}\label{class_cron_1_1_cron_expression}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cron_1_1_cron_expression_ac55cc04636cf5411474666b9d1348c13}{\+\_\+\+\_\+construct}} (string \$expression, ?\mbox{\hyperlink{interface_cron_1_1_field_factory_interface}{Field\+Factory\+Interface}} \$field\+Factory=null)
+\item 
+\mbox{\hyperlink{class_cron_1_1_cron_expression_a6bf91883076bcdcd42ed461b1c12f12d}{set\+Expression}} (string \$value)
+\item 
+\mbox{\hyperlink{class_cron_1_1_cron_expression_ad79307e16035660504ecf3a69568a99f}{set\+Part}} (int \$position, string \$value)
+\item 
+\mbox{\hyperlink{class_cron_1_1_cron_expression_a4b3dd3b7afa4c48c2f777e670ca39c27}{set\+Max\+Iteration\+Count}} (int \$max\+Iteration\+Count)
+\item 
+\mbox{\hyperlink{class_cron_1_1_cron_expression_a665e25b8eafd9a0a489b15ecea8ba92d}{get\+Next\+Run\+Date}} (\$current\+Time=\textquotesingle{}now\textquotesingle{}, int \$nth=0, bool \$allow\+Current\+Date=false, \$time\+Zone=null)
+\item 
+\mbox{\hyperlink{class_cron_1_1_cron_expression_a2e6f9fc3a2e3ba7c7d6acdb3aa267f97}{get\+Previous\+Run\+Date}} (\$current\+Time=\textquotesingle{}now\textquotesingle{}, int \$nth=0, bool \$allow\+Current\+Date=false, \$time\+Zone=null)
+\item 
+\mbox{\hyperlink{class_cron_1_1_cron_expression_a6d48f4ec3bb1bc62e2019fbd52d90275}{get\+Multiple\+Run\+Dates}} (int \$total, \$current\+Time=\textquotesingle{}now\textquotesingle{}, bool \$invert=false, bool \$allow\+Current\+Date=false, \$time\+Zone=null)
+\item 
+\mbox{\hyperlink{class_cron_1_1_cron_expression_ae41e5199dbca8d812dd0e85bc51f1af5}{get\+Expression}} (\$part=null)
+\item 
+\mbox{\hyperlink{class_cron_1_1_cron_expression_aa487abd76b89235b6ea6b4005ecdb754}{get\+Parts}} ()
+\item 
+\mbox{\hyperlink{class_cron_1_1_cron_expression_a9e983b6913c74b92376cbc03d75bd5e5}{\+\_\+\+\_\+to\+String}} ()
+\item 
+\mbox{\hyperlink{class_cron_1_1_cron_expression_a874003f1ba35f26bc85b0a60fc5c0a44}{is\+Due}} (\$current\+Time=\textquotesingle{}now\textquotesingle{}, \$time\+Zone=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_cron_1_1_cron_expression_aef5c04a08906465f4c5121f83ee9d687}{register\+Alias}} (string \$alias, string \$expression)
+\item 
+static \mbox{\hyperlink{class_cron_1_1_cron_expression_a1c5181df19ed9c9884aa9107b2387691}{unregister\+Alias}} (string \$alias)
+\item 
+static \mbox{\hyperlink{class_cron_1_1_cron_expression_afc4d2916349a621471a6a9244031b7ea}{supports\+Alias}} (string \$alias)
+\item 
+static \mbox{\hyperlink{class_cron_1_1_cron_expression_af6eeb388ac266ffc71d012e363b51160}{get\+Aliases}} ()
+\item 
+static \mbox{\hyperlink{class_cron_1_1_cron_expression_a20d1a6bb582a486fc44bc1de684496a1}{factory}} (string \$expression, ?\mbox{\hyperlink{interface_cron_1_1_field_factory_interface}{Field\+Factory\+Interface}} \$field\+Factory=null)
+\item 
+static \mbox{\hyperlink{class_cron_1_1_cron_expression_a15c874eeb525f5ff384607a3954df946}{is\+Valid\+Expression}} (string \$expression)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_cron_1_1_cron_expression_ae81590ef12725ffeaf45d4a144391ae7}\label{class_cron_1_1_cron_expression_ae81590ef12725ffeaf45d4a144391ae7} 
+const {\bfseries MINUTE} = 0
+\item 
+\Hypertarget{class_cron_1_1_cron_expression_a6a130fb4730e7f0dfdc2d26ea8cfbd77}\label{class_cron_1_1_cron_expression_a6a130fb4730e7f0dfdc2d26ea8cfbd77} 
+const {\bfseries HOUR} = 1
+\item 
+\Hypertarget{class_cron_1_1_cron_expression_a64a3d09f1f5af5e02a6794f90b6ff6f7}\label{class_cron_1_1_cron_expression_a64a3d09f1f5af5e02a6794f90b6ff6f7} 
+const {\bfseries DAY} = 2
+\item 
+\Hypertarget{class_cron_1_1_cron_expression_a949b8f183bcc002cc5c459818ad7701a}\label{class_cron_1_1_cron_expression_a949b8f183bcc002cc5c459818ad7701a} 
+const {\bfseries MONTH} = 3
+\item 
+\Hypertarget{class_cron_1_1_cron_expression_a8c52d8f4e3a9c6609cb381445126311c}\label{class_cron_1_1_cron_expression_a8c52d8f4e3a9c6609cb381445126311c} 
+const {\bfseries WEEKDAY} = 4
+\item 
+const \mbox{\hyperlink{class_cron_1_1_cron_expression_a793ba54d32ff10407653dd9ece004d34}{YEAR}} = 5
+\item 
+const \mbox{\hyperlink{class_cron_1_1_cron_expression_a06487b281d24520ba44aaf520d7103b7}{MAPPINGS}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cron_1_1_cron_expression_a0832714472ae73b1012238dec03e0589}{get\+Run\+Date}} (\$current\+Time=null, int \$nth=0, bool \$invert=false, bool \$allow\+Current\+Date=false, \$time\+Zone=null)
+\item 
+\mbox{\hyperlink{class_cron_1_1_cron_expression_a4329b9f9c809a2442322013b2adc8cf1}{determine\+Time\+Zone}} (\$current\+Time, ?string \$time\+Zone)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_cron_1_1_cron_expression_af33a4ec7331e03b595e5d3190508bda0}\label{class_cron_1_1_cron_expression_af33a4ec7331e03b595e5d3190508bda0} 
+{\bfseries \$cron\+Parts}
+\item 
+\Hypertarget{class_cron_1_1_cron_expression_ac2f492bd2499fa38c5fc99228c90dc05}\label{class_cron_1_1_cron_expression_ac2f492bd2499fa38c5fc99228c90dc05} 
+{\bfseries \$field\+Factory}
+\item 
+\Hypertarget{class_cron_1_1_cron_expression_a336263682573c1ff876ebd5e72a0922e}\label{class_cron_1_1_cron_expression_a336263682573c1ff876ebd5e72a0922e} 
+{\bfseries \$max\+Iteration\+Count} = 1000
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_cron_1_1_cron_expression_a12f99f26c3fc0433ad275715d39e5ea9}{\$order}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+CRON expression parser that can determine whether or not a CRON expression is due to run, the next run date and previous run date of a CRON expression. The determinations made by this class are accurate if checked run once per minute (seconds are dropped from date time comparisons).
+
+Schedule parts must map to\+: minute \mbox{[}0-\/59\mbox{]}, hour \mbox{[}0-\/23\mbox{]}, day of month, month \mbox{[}1-\/12\texorpdfstring{$\vert$}{|}\+JAN-\/\+DEC\mbox{]}, day of week \mbox{[}1-\/7\texorpdfstring{$\vert$}{|}\+MON-\/\+SUN\mbox{]}, and an optional year.
+
+\begin{DoxySeeAlso}{See also}
+\href{http://en.wikipedia.org/wiki/Cron}{\texttt{ http\+://en.\+wikipedia.\+org/wiki/\+Cron}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_cron_1_1_cron_expression_ac55cc04636cf5411474666b9d1348c13}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_ac55cc04636cf5411474666b9d1348c13} 
+Cron\textbackslash{}\+Cron\+Expression\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$expression}{, }\item[{?\mbox{\hyperlink{interface_cron_1_1_field_factory_interface}{Field\+Factory\+Interface}}}]{\$field\+Factory}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Parse a CRON expression.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expression} & CRON expression (e.\+g. \textquotesingle{}8 \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*}\textquotesingle{}) \\
+\hline
+null | Field\+Factory\+Interface & {\em \$field\+Factory} & Factory to create cron fields \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cron_1_1_cron_expression_a9e983b6913c74b92376cbc03d75bd5e5}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_a9e983b6913c74b92376cbc03d75bd5e5} 
+Cron\textbackslash{}\+Cron\+Expression\+::\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Helper method to output the full expression.
+
+\begin{DoxyReturn}{Returns}
+string Full CRON expression 
+\end{DoxyReturn}
+\Hypertarget{class_cron_1_1_cron_expression_a4329b9f9c809a2442322013b2adc8cf1}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!determineTimeZone@{determineTimeZone}}
+\index{determineTimeZone@{determineTimeZone}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{determineTimeZone()}{determineTimeZone()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_a4329b9f9c809a2442322013b2adc8cf1} 
+Cron\textbackslash{}\+Cron\+Expression\+::determine\+Time\+Zone (\begin{DoxyParamCaption}\item[{}]{\$current\+Time}{, }\item[{?string}]{\$time\+Zone}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Workout what time\+Zone should be used.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Date\+Time\+Interface | null & {\em \$current\+Time} & Relative calculation date \\
+\hline
+string | null & {\em \$time\+Zone} & Time\+Zone to use instead of the system default\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_cron_1_1_cron_expression_a20d1a6bb582a486fc44bc1de684496a1}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!factory@{factory}}
+\index{factory@{factory}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{factory()}{factory()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_a20d1a6bb582a486fc44bc1de684496a1} 
+static Cron\textbackslash{}\+Cron\+Expression\+::factory (\begin{DoxyParamCaption}\item[{string}]{\$expression}{, }\item[{?\mbox{\hyperlink{interface_cron_1_1_field_factory_interface}{Field\+Factory\+Interface}}}]{\$field\+Factory}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000003}{Deprecated}}]since version 3.\+0.\+2, use \+\_\+\+\_\+construct instead. \end{DoxyRefDesc}
+@phpstan-\/ignore-\/next-\/line\Hypertarget{class_cron_1_1_cron_expression_af6eeb388ac266ffc71d012e363b51160}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!getAliases@{getAliases}}
+\index{getAliases@{getAliases}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{getAliases()}{getAliases()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_af6eeb388ac266ffc71d012e363b51160} 
+static Cron\textbackslash{}\+Cron\+Expression\+::get\+Aliases (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns all registered aliases as an associated array where the aliases are the key and their associated expressions are the values.
+
+\begin{DoxyReturn}{Returns}
+array$<$string, string$>$ 
+\end{DoxyReturn}
+\Hypertarget{class_cron_1_1_cron_expression_ae41e5199dbca8d812dd0e85bc51f1af5}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!getExpression@{getExpression}}
+\index{getExpression@{getExpression}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{getExpression()}{getExpression()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_ae41e5199dbca8d812dd0e85bc51f1af5} 
+Cron\textbackslash{}\+Cron\+Expression\+::get\+Expression (\begin{DoxyParamCaption}\item[{}]{\$part}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get all or part of the CRON expression.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | string | null & {\em \$part} & specify the part to retrieve or NULL to get the full cron schedule string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string Returns the CRON expression, a part of the CRON expression, or NULL if the part was specified but not found 
+\end{DoxyReturn}
+\Hypertarget{class_cron_1_1_cron_expression_a6d48f4ec3bb1bc62e2019fbd52d90275}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!getMultipleRunDates@{getMultipleRunDates}}
+\index{getMultipleRunDates@{getMultipleRunDates}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{getMultipleRunDates()}{getMultipleRunDates()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_a6d48f4ec3bb1bc62e2019fbd52d90275} 
+Cron\textbackslash{}\+Cron\+Expression\+::get\+Multiple\+Run\+Dates (\begin{DoxyParamCaption}\item[{int}]{\$total}{, }\item[{}]{\$current\+Time}{ = {\ttfamily \textquotesingle{}now\textquotesingle{}}, }\item[{bool}]{\$invert}{ = {\ttfamily false}, }\item[{bool}]{\$allow\+Current\+Date}{ = {\ttfamily false}, }\item[{}]{\$time\+Zone}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get multiple run dates starting at the current date or a specific date.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$total} & Set the total number of dates to calculate \\
+\hline
+string | \textbackslash{}\+Date\+Time\+Interface | null & {\em \$current\+Time} & Relative calculation date \\
+\hline
+bool & {\em \$invert} & Set to TRUE to retrieve previous dates \\
+\hline
+bool & {\em \$allow\+Current\+Date} & Set to TRUE to return the current date if it matches the cron expression \\
+\hline
+null | string & {\em \$time\+Zone} & Time\+Zone to use instead of the system default\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Date\+Time\mbox{[}\mbox{]} Returns an array of run dates 
+\end{DoxyReturn}
+\Hypertarget{class_cron_1_1_cron_expression_a665e25b8eafd9a0a489b15ecea8ba92d}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!getNextRunDate@{getNextRunDate}}
+\index{getNextRunDate@{getNextRunDate}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{getNextRunDate()}{getNextRunDate()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_a665e25b8eafd9a0a489b15ecea8ba92d} 
+Cron\textbackslash{}\+Cron\+Expression\+::get\+Next\+Run\+Date (\begin{DoxyParamCaption}\item[{}]{\$current\+Time}{ = {\ttfamily \textquotesingle{}now\textquotesingle{}}, }\item[{int}]{\$nth}{ = {\ttfamily 0}, }\item[{bool}]{\$allow\+Current\+Date}{ = {\ttfamily false}, }\item[{}]{\$time\+Zone}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a next run date relative to the current date or a specific date
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Date\+Time\+Interface & {\em \$current\+Time} & Relative calculation date \\
+\hline
+int & {\em \$nth} & Number of matches to skip before returning a matching next run date. 0, the default, will return the current date and time if the next run date falls on the current date and time. Setting this value to 1 will skip the first match and go to the second match. Setting this value to 2 will skip the first 2 matches and so on. \\
+\hline
+bool & {\em \$allow\+Current\+Date} & Set to TRUE to return the current date if it matches the cron expression. \\
+\hline
+null | string & {\em \$time\+Zone} & Time\+Zone to use instead of the system default\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception on too many iterations 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Date\+Time 
+\end{DoxyReturn}
+\Hypertarget{class_cron_1_1_cron_expression_aa487abd76b89235b6ea6b4005ecdb754}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!getParts@{getParts}}
+\index{getParts@{getParts}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{getParts()}{getParts()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_aa487abd76b89235b6ea6b4005ecdb754} 
+Cron\textbackslash{}\+Cron\+Expression\+::get\+Parts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the parts of the cron expression as an array.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} The array of parts that make up this expression. 
+\end{DoxyReturn}
+\Hypertarget{class_cron_1_1_cron_expression_a2e6f9fc3a2e3ba7c7d6acdb3aa267f97}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!getPreviousRunDate@{getPreviousRunDate}}
+\index{getPreviousRunDate@{getPreviousRunDate}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{getPreviousRunDate()}{getPreviousRunDate()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_a2e6f9fc3a2e3ba7c7d6acdb3aa267f97} 
+Cron\textbackslash{}\+Cron\+Expression\+::get\+Previous\+Run\+Date (\begin{DoxyParamCaption}\item[{}]{\$current\+Time}{ = {\ttfamily \textquotesingle{}now\textquotesingle{}}, }\item[{int}]{\$nth}{ = {\ttfamily 0}, }\item[{bool}]{\$allow\+Current\+Date}{ = {\ttfamily false}, }\item[{}]{\$time\+Zone}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Get a previous run date relative to the current date or a specific date.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Date\+Time\+Interface & {\em \$current\+Time} & Relative calculation date \\
+\hline
+int & {\em \$nth} & Number of matches to skip before returning \\
+\hline
+bool & {\em \$allow\+Current\+Date} & Set to TRUE to return the current date if it matches the cron expression \\
+\hline
+null | string & {\em \$time\+Zone} & Time\+Zone to use instead of the system default\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception on too many iterations 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception
+
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Date\+Time
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\textbackslash{}\+Cron\textbackslash{}\+Cron\+Expression\+::get\+Next\+Run\+Date 
+\end{DoxySeeAlso}
+\Hypertarget{class_cron_1_1_cron_expression_a0832714472ae73b1012238dec03e0589}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!getRunDate@{getRunDate}}
+\index{getRunDate@{getRunDate}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{getRunDate()}{getRunDate()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_a0832714472ae73b1012238dec03e0589} 
+Cron\textbackslash{}\+Cron\+Expression\+::get\+Run\+Date (\begin{DoxyParamCaption}\item[{}]{\$current\+Time}{ = {\ttfamily null}, }\item[{int}]{\$nth}{ = {\ttfamily 0}, }\item[{bool}]{\$invert}{ = {\ttfamily false}, }\item[{bool}]{\$allow\+Current\+Date}{ = {\ttfamily false}, }\item[{}]{\$time\+Zone}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the next or previous run date of the expression relative to a date.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Date\+Time\+Interface | null & {\em \$current\+Time} & Relative calculation date \\
+\hline
+int & {\em \$nth} & Number of matches to skip before returning \\
+\hline
+bool & {\em \$invert} & Set to TRUE to go backwards in time \\
+\hline
+bool & {\em \$allow\+Current\+Date} & Set to TRUE to return the current date if it matches the cron expression \\
+\hline
+string | null & {\em \$time\+Zone} & Time\+Zone to use instead of the system default\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception on too many iterations 
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Date\+Time 
+\end{DoxyReturn}
+\Hypertarget{class_cron_1_1_cron_expression_a874003f1ba35f26bc85b0a60fc5c0a44}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!isDue@{isDue}}
+\index{isDue@{isDue}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{isDue()}{isDue()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_a874003f1ba35f26bc85b0a60fc5c0a44} 
+Cron\textbackslash{}\+Cron\+Expression\+::is\+Due (\begin{DoxyParamCaption}\item[{}]{\$current\+Time}{ = {\ttfamily \textquotesingle{}now\textquotesingle{}}, }\item[{}]{\$time\+Zone}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Determine if the cron is due to run based on the current date or a specific date. This method assumes that the current number of seconds are irrelevant, and should be called once per minute.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \textbackslash{}\+Date\+Time\+Interface & {\em \$current\+Time} & Relative calculation date \\
+\hline
+null | string & {\em \$time\+Zone} & Time\+Zone to use instead of the system default\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Returns TRUE if the cron is due to run or FALSE if not 
+\end{DoxyReturn}
+\Hypertarget{class_cron_1_1_cron_expression_a15c874eeb525f5ff384607a3954df946}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!isValidExpression@{isValidExpression}}
+\index{isValidExpression@{isValidExpression}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{isValidExpression()}{isValidExpression()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_a15c874eeb525f5ff384607a3954df946} 
+static Cron\textbackslash{}\+Cron\+Expression\+::is\+Valid\+Expression (\begin{DoxyParamCaption}\item[{string}]{\$expression}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Validate a Cron\+Expression.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$expression} & the CRON expression to validate\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if a valid CRON expression was passed. False if not. 
+\end{DoxyReturn}
+\Hypertarget{class_cron_1_1_cron_expression_aef5c04a08906465f4c5121f83ee9d687}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!registerAlias@{registerAlias}}
+\index{registerAlias@{registerAlias}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{registerAlias()}{registerAlias()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_aef5c04a08906465f4c5121f83ee9d687} 
+static Cron\textbackslash{}\+Cron\+Expression\+::register\+Alias (\begin{DoxyParamCaption}\item[{string}]{\$alias}{, }\item[{string}]{\$expression}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registered a user defined CRON Expression Alias.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Logic\+Exception} & If the expression or the alias name are invalid or if the alias is already registered. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_cron_1_1_cron_expression_a6bf91883076bcdcd42ed461b1c12f12d}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!setExpression@{setExpression}}
+\index{setExpression@{setExpression}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{setExpression()}{setExpression()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_a6bf91883076bcdcd42ed461b1c12f12d} 
+Cron\textbackslash{}\+Cron\+Expression\+::set\+Expression (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Set or change the CRON expression.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & CRON expression (e.\+g. 8 \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*} \texorpdfstring{$\ast$}{*})\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception if not a valid CRON expression
+
+\begin{DoxyReturn}{Returns}
+Cron\+Expression 
+\end{DoxyReturn}
+\Hypertarget{class_cron_1_1_cron_expression_a4b3dd3b7afa4c48c2f777e670ca39c27}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!setMaxIterationCount@{setMaxIterationCount}}
+\index{setMaxIterationCount@{setMaxIterationCount}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{setMaxIterationCount()}{setMaxIterationCount()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_a4b3dd3b7afa4c48c2f777e670ca39c27} 
+Cron\textbackslash{}\+Cron\+Expression\+::set\+Max\+Iteration\+Count (\begin{DoxyParamCaption}\item[{int}]{\$max\+Iteration\+Count}{}\end{DoxyParamCaption})}
+
+Set max iteration count for searching next run dates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$max\+Iteration\+Count} & Max iteration count when searching for next run date\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Cron\+Expression 
+\end{DoxyReturn}
+\Hypertarget{class_cron_1_1_cron_expression_ad79307e16035660504ecf3a69568a99f}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!setPart@{setPart}}
+\index{setPart@{setPart}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{setPart()}{setPart()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_ad79307e16035660504ecf3a69568a99f} 
+Cron\textbackslash{}\+Cron\+Expression\+::set\+Part (\begin{DoxyParamCaption}\item[{int}]{\$position}{, }\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Set part of the CRON expression.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$position} & The position of the CRON expression to set \\
+\hline
+string & {\em \$value} & The value to set\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception if the value is not valid for the part
+
+\begin{DoxyReturn}{Returns}
+Cron\+Expression 
+\end{DoxyReturn}
+\Hypertarget{class_cron_1_1_cron_expression_afc4d2916349a621471a6a9244031b7ea}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!supportsAlias@{supportsAlias}}
+\index{supportsAlias@{supportsAlias}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{supportsAlias()}{supportsAlias()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_afc4d2916349a621471a6a9244031b7ea} 
+static Cron\textbackslash{}\+Cron\+Expression\+::supports\+Alias (\begin{DoxyParamCaption}\item[{string}]{\$alias}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Tells whether a CRON Expression alias is registered. \Hypertarget{class_cron_1_1_cron_expression_a1c5181df19ed9c9884aa9107b2387691}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!unregisterAlias@{unregisterAlias}}
+\index{unregisterAlias@{unregisterAlias}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{unregisterAlias()}{unregisterAlias()}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_a1c5181df19ed9c9884aa9107b2387691} 
+static Cron\textbackslash{}\+Cron\+Expression\+::unregister\+Alias (\begin{DoxyParamCaption}\item[{string}]{\$alias}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Unregistered a user defined CRON Expression Alias.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Logic\+Exception} & If the user tries to unregister a built-\/in alias \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_cron_1_1_cron_expression_a12f99f26c3fc0433ad275715d39e5ea9}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!\$order@{\$order}}
+\index{\$order@{\$order}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{\$order}{\$order}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_a12f99f26c3fc0433ad275715d39e5ea9} 
+Cron\textbackslash{}\+Cron\+Expression\+::\$order\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::YEAR,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::MONTH,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::DAY,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::WEEKDAY,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::HOUR,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::MINUTE,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_cron_1_1_cron_expression_a06487b281d24520ba44aaf520d7103b7}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!MAPPINGS@{MAPPINGS}}
+\index{MAPPINGS@{MAPPINGS}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{MAPPINGS}{MAPPINGS}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_a06487b281d24520ba44aaf520d7103b7} 
+const Cron\textbackslash{}\+Cron\+Expression\+::\+MAPPINGS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'@yearly'}\ =>\ \textcolor{stringliteral}{'0\ 0\ 1\ 1\ *'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'@annually'}\ =>\ \textcolor{stringliteral}{'0\ 0\ 1\ 1\ *'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'@monthly'}\ =>\ \textcolor{stringliteral}{'0\ 0\ 1\ *\ *'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'@weekly'}\ =>\ \textcolor{stringliteral}{'0\ 0\ *\ *\ 0'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'@daily'}\ =>\ \textcolor{stringliteral}{'0\ 0\ *\ *\ *'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'@midnight'}\ =>\ \textcolor{stringliteral}{'0\ 0\ *\ *\ *'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'@hourly'}\ =>\ \textcolor{stringliteral}{'0\ *\ *\ *\ *'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{class_cron_1_1_cron_expression_a793ba54d32ff10407653dd9ece004d34}\index{Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}!YEAR@{YEAR}}
+\index{YEAR@{YEAR}!Cron\textbackslash{}CronExpression@{Cron\textbackslash{}CronExpression}}
+\doxysubsubsection{\texorpdfstring{YEAR}{YEAR}}
+{\footnotesize\ttfamily \label{class_cron_1_1_cron_expression_a793ba54d32ff10407653dd9ece004d34} 
+const Cron\textbackslash{}\+Cron\+Expression\+::\+YEAR = 5}
+
+\begin{DoxyRefDesc}{Deprecated}
+\item[\mbox{\hyperlink{deprecated__deprecated000002}{Deprecated}}]\end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/dragonmantank/cron-\/expression/src/\+Cron/Cron\+Expression.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,219 @@
+\doxysection{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}Redis\+Broadcaster Class Reference}
+\hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster}{}\label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster}}
+Inheritance diagram for Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}Redis\+Broadcaster\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_aec7ec7627ebfbcfdaa1b01c169820d50}{\+\_\+\+\_\+construct}} (Redis \$redis, \$connection=null, \$prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_a58bb3342f71e4e26ed23ee357f371ec8}{auth}} (\$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_aab65d54bd2281a0be76a451509a67ff4}{valid\+Authentication\+Response}} (\$request, \$result)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_a619efc2c46e843f50cd48d8c4f4da2d6}{broadcast}} (array \$channels, \$event, array \$payload=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster}{Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Broadcaster}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_ab760374f58dff6c5eaa736f2a2de5be8}{resolve\+Authenticated\+User}} (\$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a2d580b15b9d128ce7b6e671d7008bbeb}{resolve\+Authenticated\+User\+Using}} (Closure \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a8284a1f754004127a4d8d6cfe79ee98f}{channel}} (\$channel, \$callback, \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_aac63e523888a3e524293bc7bcc148ec8}{get\+Channels}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_a7d99c1f848ab50b5d21dbc18d8cc67e0}{broadcast\+Multiple\+Channels\+Script}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_a4a35974b4e078e7ca33e618c7fb3b012}{format\+Channels}} (array \$channels)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster}{Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Broadcaster}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_affbf1c1c80f06f0a9a3954a354a05333}{verify\+User\+Can\+Access\+Channel}} (\$request, \$\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a8284a1f754004127a4d8d6cfe79ee98f}{channel}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_af6aa6551bf7818037da3171b30496402}{extract\+Auth\+Parameters}} (\$pattern, \$\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a8284a1f754004127a4d8d6cfe79ee98f}{channel}}, \$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_af5a1c457ce5fd206bd9992dc62f60722}{extract\+Parameters}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a1916a52104fc68d48f9c6b5b3c45c383}{extract\+Parameters\+From\+Class}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a02e8c3e1d39f4bd7146b701b77dad62f}{extract\+Channel\+Keys}} (\$pattern, \$\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a8284a1f754004127a4d8d6cfe79ee98f}{channel}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_ae64d1af9ccbc2927b850e646090661ae}{resolve\+Binding}} (\$key, \$value, \$callback\+Parameters)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a6c47de19e06464e673ec30e746392c18}{resolve\+Explicit\+Binding\+If\+Possible}} (\$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_aadda10517f9646c4657ae67f61ae0a31}{resolve\+Implicit\+Binding\+If\+Possible}} (\$key, \$value, \$callback\+Parameters)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a0b04332c91de2e9ce9740148ec954c27}{is\+Implicitly\+Bindable}} (\$key, \$parameter)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a084f33612c2e58d913d061f897ce470a}{binder}} ()
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a1defb506bf29bff8c1a64278814ed158}{normalize\+Channel\+Handler\+To\+Callable}} (\$callback)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a19fb44a6bb9e93728ad92459540669c4}{retrieve\+User}} (\$request, \$\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a8284a1f754004127a4d8d6cfe79ee98f}{channel}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a49d7ad416088e63c8c651c066c8299c0}{retrieve\+Channel\+Options}} (\$\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a8284a1f754004127a4d8d6cfe79ee98f}{channel}})
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a3199664189fde1bf4033f91cd45410cd}{channel\+Name\+Matches\+Pattern}} (\$\mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_a8284a1f754004127a4d8d6cfe79ee98f}{channel}}, \$pattern)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_a0b979289d08dac46cf140adaf37c5f6d}\label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_a0b979289d08dac46cf140adaf37c5f6d} 
+{\bfseries \$redis}
+\item 
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_a5ddab746bef8c1311153d1211c6db288}\label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_a5ddab746bef8c1311153d1211c6db288} 
+{\bfseries \$connection} = null
+\item 
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_aa620c61a7d92b6e8e4ac048950c5f741}\label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_aa620c61a7d92b6e8e4ac048950c5f741} 
+{\bfseries \$prefix} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster}{Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Broadcaster}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$authenticated\+User\+Callback} = null
+\item 
+{\bfseries \$channels} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$channel\+Options} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$binding\+Registrar}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_aec7ec7627ebfbcfdaa1b01c169820d50}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_aec7ec7627ebfbcfdaa1b01c169820d50} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Redis\+Broadcaster\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Redis}]{\$redis}{, }\item[{}]{\$connection}{ = {\ttfamily null}, }\item[{}]{\$prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a new broadcaster instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Redis\textbackslash{}\+Factory & {\em \$redis} & \\
+\hline
+string | null & {\em \$connection} & \\
+\hline
+string & {\em \$prefix} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_a58bb3342f71e4e26ed23ee357f371ec8}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster}!auth@{auth}}
+\index{auth@{auth}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster}}
+\doxysubsubsection{\texorpdfstring{auth()}{auth()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_a58bb3342f71e4e26ed23ee357f371ec8} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Redis\+Broadcaster\+::auth (\begin{DoxyParamCaption}\item[{}]{\$request}{}\end{DoxyParamCaption})}
+
+Authenticate the incoming request for a given channel.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Exception\textbackslash{}\+Access\+Denied\+Http\+Exception \Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_a619efc2c46e843f50cd48d8c4f4da2d6}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster}!broadcast@{broadcast}}
+\index{broadcast@{broadcast}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster}}
+\doxysubsubsection{\texorpdfstring{broadcast()}{broadcast()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_a619efc2c46e843f50cd48d8c4f4da2d6} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Redis\+Broadcaster\+::broadcast (\begin{DoxyParamCaption}\item[{array}]{\$channels}{, }\item[{}]{\$event}{, }\item[{array}]{\$payload}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Broadcast the given event.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$channels} & \\
+\hline
+string & {\em \$event} & \\
+\hline
+array & {\em \$payload} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcast\+Exception \Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_a7d99c1f848ab50b5d21dbc18d8cc67e0}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster}!broadcastMultipleChannelsScript@{broadcastMultipleChannelsScript}}
+\index{broadcastMultipleChannelsScript@{broadcastMultipleChannelsScript}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster}}
+\doxysubsubsection{\texorpdfstring{broadcastMultipleChannelsScript()}{broadcastMultipleChannelsScript()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_a7d99c1f848ab50b5d21dbc18d8cc67e0} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Redis\+Broadcaster\+::broadcast\+Multiple\+Channels\+Script (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the Lua script for broadcasting to multiple channels.
+
+ARGV\mbox{[}1\mbox{]} -\/ The payload ARGV\mbox{[}2...\mbox{]} -\/ The channels
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_a4a35974b4e078e7ca33e618c7fb3b012}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster}!formatChannels@{formatChannels}}
+\index{formatChannels@{formatChannels}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster}}
+\doxysubsubsection{\texorpdfstring{formatChannels()}{formatChannels()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_a4a35974b4e078e7ca33e618c7fb3b012} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Redis\+Broadcaster\+::format\+Channels (\begin{DoxyParamCaption}\item[{array}]{\$channels}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Format the channel array into an array of strings.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$channels} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_broadcaster_af21eedf86aca04897cb59085a22ce943}{Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Broadcaster}}.
+
+\Hypertarget{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_aab65d54bd2281a0be76a451509a67ff4}\index{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster}!validAuthenticationResponse@{validAuthenticationResponse}}
+\index{validAuthenticationResponse@{validAuthenticationResponse}!Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster@{Illuminate\textbackslash{}Broadcasting\textbackslash{}Broadcasters\textbackslash{}RedisBroadcaster}}
+\doxysubsubsection{\texorpdfstring{validAuthenticationResponse()}{validAuthenticationResponse()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_broadcasting_1_1_broadcasters_1_1_redis_broadcaster_aab65d54bd2281a0be76a451509a67ff4} 
+Illuminate\textbackslash{}\+Broadcasting\textbackslash{}\+Broadcasters\textbackslash{}\+Redis\+Broadcaster\+::valid\+Authentication\+Response (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{}]{\$result}{}\end{DoxyParamCaption})}
+
+Return the valid authentication response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+mixed & {\em \$result} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Broadcasting/\+Broadcasters/Redis\+Broadcaster.\+php\end{DoxyCompactItemize}

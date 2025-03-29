@@ -1,0 +1,399 @@
+\doxysection{Ramsey\textbackslash{}Collection\textbackslash{}Collection\+Interface Interface Reference}
+\hypertarget{interface_ramsey_1_1_collection_1_1_collection_interface}{}\label{interface_ramsey_1_1_collection_1_1_collection_interface}\index{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}}
+Inheritance diagram for Ramsey\textbackslash{}Collection\textbackslash{}Collection\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=7.021944cm]{interface_ramsey_1_1_collection_1_1_collection_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface_a0815bbe70c2f9f45830e7edc8b8a5ddf}{add}} (mixed \$element)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface_a418bf74833bac11fc4a0fff431d65d43}{contains}} (mixed \$element, bool \$strict=true)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface_aa266495d0a212e9ee1d380289b70e755}{get\+Type}} ()
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface_ab66ba5875dbd5175842741d0fb8281be}{remove}} (mixed \$element)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface_ace986ad8967a228f4159f79cde5dab79}{column}} (string \$property\+Or\+Method)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface_ae83e9101bafa26c5d561f12643238d3a}{first}} ()
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface_a1e682e36a395c4f66daf406aa6a95cbe}{last}} ()
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface_a7c8684ea72da247596355408965aa8a2}{sort}} (?string \$property\+Or\+Method=null, Sort \$order=Sort\+::\+Ascending)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface_a2f9f12bb33b7746b09b9e9b8f89dfd2c}{filter}} (callable \$callback)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface_a1564f909091138ab9d4508a908ca419d}{where}} (?string \$property\+Or\+Method, mixed \$value)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface_aa13812656b42929805def9bf4561264c}{map}} (callable \$callback)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface_a4c317dc70d8c558e566b9b08b9fae310}{reduce}} (callable \$callback, mixed \$initial)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface_a0acfe9722dd1118740a4ca01d3d1fdd2}{diff}} (\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface}{Collection\+Interface}} \$other)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface_a56eccdf17e4d37c376fa0434610bc891}{intersect}} (\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface}{Collection\+Interface}} \$other)
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface_aee64dd5de537250017579b32b0ab5ffa}{merge}} (\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface}{Collection\+Interface}} ... \$collections)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_array_interface}{Ramsey\textbackslash{}\+Collection\textbackslash{}\+Array\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_array_interface_a09ad6610d885ef46c32cd8fc3778c6ee}{clear}} ()
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_array_interface_a5fcff902b122565e4a4240e8ba4809a5}{to\+Array}} ()
+\item 
+\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_array_interface_a9f8b3c642cc50f713d9aab642e25e084}{is\+Empty}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A collection represents a group of values, known as its elements.
+
+Some collections allow duplicate elements and others do not. Some are ordered and others unordered.
+
+@template T $<$\+T$>$ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_ramsey_1_1_collection_1_1_collection_interface_a0815bbe70c2f9f45830e7edc8b8a5ddf}\index{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}!add@{add}}
+\index{add@{add}!Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_collection_1_1_collection_interface_a0815bbe70c2f9f45830e7edc8b8a5ddf} 
+Ramsey\textbackslash{}\+Collection\textbackslash{}\+Collection\+Interface\+::add (\begin{DoxyParamCaption}\item[{mixed}]{\$element}{}\end{DoxyParamCaption})}
+
+Ensures that this collection contains the specified element (optional operation).
+
+Returns {\ttfamily true} if this collection changed as a result of the call. (Returns {\ttfamily false} if this collection does not permit duplicates and already contains the specified element.)
+
+Collections that support this operation may place limitations on what elements may be added to this collection. In particular, some collections will refuse to add {\ttfamily null} elements, and others will impose restrictions on the type of elements that may be added. Collection classes should clearly specify in their documentation any restrictions on what elements may be added.
+
+If a collection refuses to add a particular element for any reason other than that it already contains the element, it must throw an exception (rather than returning {\ttfamily false}). This preserves the invariant that a collection always contains the specified element after this call returns.
+
+
+\begin{DoxyParams}[1]{Parameters}
+T & {\em \$element} & The element to add to the collection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\ttfamily true} if this collection changed as a result of the call.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Argument\+Exception} & if the collection refuses to add the \$element for any reason other than that it already contains the element. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_collection_1_1_abstract_collection_ab9036c5aebcd329e44eefc3f8e91234f}{Ramsey\textbackslash{}\+Collection\textbackslash{}\+Abstract\+Collection}}, and \mbox{\hyperlink{class_ramsey_1_1_collection_1_1_abstract_set_a3e730157a7ee75c05acaef28413bc3b2}{Ramsey\textbackslash{}\+Collection\textbackslash{}\+Abstract\+Set}}.
+
+\Hypertarget{interface_ramsey_1_1_collection_1_1_collection_interface_ace986ad8967a228f4159f79cde5dab79}\index{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}!column@{column}}
+\index{column@{column}!Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}}
+\doxysubsubsection{\texorpdfstring{column()}{column()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_collection_1_1_collection_interface_ace986ad8967a228f4159f79cde5dab79} 
+Ramsey\textbackslash{}\+Collection\textbackslash{}\+Collection\+Interface\+::column (\begin{DoxyParamCaption}\item[{string}]{\$property\+Or\+Method}{}\end{DoxyParamCaption})}
+
+Returns the values from the given property, method, or array key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$property\+Or\+Method} & The name of the property, method, or array key to evaluate and return.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array$<$int, mixed$>$
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Property\+Or\+Method} & if the \$property\+Or\+Method does not exist on the elements in this collection. \\
+\hline
+{\em Unsupported\+Operation\+Exception} & if unable to call column() on this collection. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_collection_1_1_abstract_collection_a716fd614ce98ec537ab71fa4b27297b8}{Ramsey\textbackslash{}\+Collection\textbackslash{}\+Abstract\+Collection}}.
+
+\Hypertarget{interface_ramsey_1_1_collection_1_1_collection_interface_a418bf74833bac11fc4a0fff431d65d43}\index{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}!contains@{contains}}
+\index{contains@{contains}!Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_collection_1_1_collection_interface_a418bf74833bac11fc4a0fff431d65d43} 
+Ramsey\textbackslash{}\+Collection\textbackslash{}\+Collection\+Interface\+::contains (\begin{DoxyParamCaption}\item[{mixed}]{\$element}{, }\item[{bool}]{\$strict}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Returns {\ttfamily true} if this collection contains the specified element.
+
+
+\begin{DoxyParams}[1]{Parameters}
+T & {\em \$element} & The element to check whether the collection contains. \\
+\hline
+bool & {\em \$strict} & Whether to perform a strict type check on the value. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_collection_1_1_abstract_collection_a91f6ae961bc9332e4c59b38abdebe164}{Ramsey\textbackslash{}\+Collection\textbackslash{}\+Abstract\+Collection}}.
+
+\Hypertarget{interface_ramsey_1_1_collection_1_1_collection_interface_a0acfe9722dd1118740a4ca01d3d1fdd2}\index{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}!diff@{diff}}
+\index{diff@{diff}!Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}}
+\doxysubsubsection{\texorpdfstring{diff()}{diff()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_collection_1_1_collection_interface_a0acfe9722dd1118740a4ca01d3d1fdd2} 
+Ramsey\textbackslash{}\+Collection\textbackslash{}\+Collection\+Interface\+::diff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface}{Collection\+Interface}}}]{\$other}{}\end{DoxyParamCaption})}
+
+Create a new collection with divergent items between current and given collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Collection\+Interface$<$\+T$>$} & \$other The collection to check for divergent items.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Collection\+Interface$<$\+T$>$
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Collection\+Mismatch\+Exception} & if the compared collections are of differing types. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{interface_ramsey_1_1_collection_1_1_collection_interface_a2f9f12bb33b7746b09b9e9b8f89dfd2c}\index{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}!filter@{filter}}
+\index{filter@{filter}!Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_collection_1_1_collection_interface_a2f9f12bb33b7746b09b9e9b8f89dfd2c} 
+Ramsey\textbackslash{}\+Collection\textbackslash{}\+Collection\+Interface\+::filter (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Filter out items of the collection which don\textquotesingle{}t match the criteria of given callback.
+
+This will always leave the original collection untouched and will return a new one.
+
+See the {\ttfamily \doxylink{}{PHP array\+\_\+filter() documentation}} for examples of how the {\ttfamily \$callback} parameter works.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+T)} & bool \$callback A callable to use for filtering elements.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Collection\+Interface$<$\+T$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_collection_1_1_abstract_collection_ade95ffbfa40e895556113ec6dd6fb375}{Ramsey\textbackslash{}\+Collection\textbackslash{}\+Abstract\+Collection}}.
+
+\Hypertarget{interface_ramsey_1_1_collection_1_1_collection_interface_ae83e9101bafa26c5d561f12643238d3a}\index{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}!first@{first}}
+\index{first@{first}!Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_collection_1_1_collection_interface_ae83e9101bafa26c5d561f12643238d3a} 
+Ramsey\textbackslash{}\+Collection\textbackslash{}\+Collection\+Interface\+::first (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the first item of the collection.
+
+\begin{DoxyReturn}{Returns}
+T
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em No\+Such\+Element\+Exception} & if this collection is empty. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_collection_1_1_abstract_collection_a70615c9bcdd9264a1f98d7db642bef3a}{Ramsey\textbackslash{}\+Collection\textbackslash{}\+Abstract\+Collection}}.
+
+\Hypertarget{interface_ramsey_1_1_collection_1_1_collection_interface_aa266495d0a212e9ee1d380289b70e755}\index{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}!getType@{getType}}
+\index{getType@{getType}!Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_collection_1_1_collection_interface_aa266495d0a212e9ee1d380289b70e755} 
+Ramsey\textbackslash{}\+Collection\textbackslash{}\+Collection\+Interface\+::get\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the type associated with this collection. 
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_collection_1_1_collection_a3fe27e79975cd9d1372ef652c86f6b0d}{Ramsey\textbackslash{}\+Collection\textbackslash{}\+Collection}}, \mbox{\hyperlink{class_ramsey_1_1_collection_1_1_set_a8371c2ef2590c4144f3371a96b8f8745}{Ramsey\textbackslash{}\+Collection\textbackslash{}\+Set}}, \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_builder_1_1_builder_collection_a2335d1b761d47a5dc4fd13002f80604a}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Builder\textbackslash{}\+Builder\+Collection}}, and \mbox{\hyperlink{class_ramsey_1_1_uuid_1_1_provider_1_1_node_1_1_node_provider_collection_ae46e3f16dd781d0d34912df751ffde89}{Ramsey\textbackslash{}\+Uuid\textbackslash{}\+Provider\textbackslash{}\+Node\textbackslash{}\+Node\+Provider\+Collection}}.
+
+\Hypertarget{interface_ramsey_1_1_collection_1_1_collection_interface_a56eccdf17e4d37c376fa0434610bc891}\index{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}!intersect@{intersect}}
+\index{intersect@{intersect}!Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}}
+\doxysubsubsection{\texorpdfstring{intersect()}{intersect()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_collection_1_1_collection_interface_a56eccdf17e4d37c376fa0434610bc891} 
+Ramsey\textbackslash{}\+Collection\textbackslash{}\+Collection\+Interface\+::intersect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface}{Collection\+Interface}}}]{\$other}{}\end{DoxyParamCaption})}
+
+Create a new collection with intersecting item between current and given collection.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Collection\+Interface$<$\+T$>$} & \$other The collection to check for intersecting items.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Collection\+Interface$<$\+T$>$
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Collection\+Mismatch\+Exception} & if the compared collections are of differing types. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{interface_ramsey_1_1_collection_1_1_collection_interface_a1e682e36a395c4f66daf406aa6a95cbe}\index{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}!last@{last}}
+\index{last@{last}!Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}}
+\doxysubsubsection{\texorpdfstring{last()}{last()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_collection_1_1_collection_interface_a1e682e36a395c4f66daf406aa6a95cbe} 
+Ramsey\textbackslash{}\+Collection\textbackslash{}\+Collection\+Interface\+::last (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the last item of the collection.
+
+\begin{DoxyReturn}{Returns}
+T
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em No\+Such\+Element\+Exception} & if this collection is empty. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_collection_1_1_abstract_collection_ac095736da3393cc8c5c68a93ad17af85}{Ramsey\textbackslash{}\+Collection\textbackslash{}\+Abstract\+Collection}}.
+
+\Hypertarget{interface_ramsey_1_1_collection_1_1_collection_interface_aa13812656b42929805def9bf4561264c}\index{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}!map@{map}}
+\index{map@{map}!Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}}
+\doxysubsubsection{\texorpdfstring{map()}{map()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_collection_1_1_collection_interface_aa13812656b42929805def9bf4561264c} 
+Ramsey\textbackslash{}\+Collection\textbackslash{}\+Collection\+Interface\+::map (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{}\end{DoxyParamCaption})}
+
+Apply a given callback method on each item of the collection.
+
+This will always leave the original collection untouched. The new collection is created by mapping the callback to each item of the original collection.
+
+See the {\ttfamily \doxylink{}{PHP array\+\_\+map() documentation}} for examples of how the {\ttfamily \$callback} parameter works.
+
+
+\begin{DoxyParams}{Parameters}
+{\em callable(\+T)} & TCallback\+Return \$callback A callable to apply to each item of the collection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Collection\+Interface$<$\+TCallback\+Return$>$
+\end{DoxyReturn}
+@template TCallback\+Return \Hypertarget{interface_ramsey_1_1_collection_1_1_collection_interface_aee64dd5de537250017579b32b0ab5ffa}\index{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}!merge@{merge}}
+\index{merge@{merge}!Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}}
+\doxysubsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_collection_1_1_collection_interface_aee64dd5de537250017579b32b0ab5ffa} 
+Ramsey\textbackslash{}\+Collection\textbackslash{}\+Collection\+Interface\+::merge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_ramsey_1_1_collection_1_1_collection_interface}{Collection\+Interface}} ...}]{\$collections}{}\end{DoxyParamCaption})}
+
+Merge current items and items of given collections into a new one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Collection\+Interface$<$\+T$>$} & ...\$collections The collections to merge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Collection\+Interface$<$\+T$>$
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Collection\+Mismatch\+Exception} & if unable to merge any of the given collections or items within the given collections due to type mismatch errors. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_collection_1_1_abstract_collection_a9b01a03e3776e3d3cf821719e67c60d3}{Ramsey\textbackslash{}\+Collection\textbackslash{}\+Abstract\+Collection}}.
+
+\Hypertarget{interface_ramsey_1_1_collection_1_1_collection_interface_a4c317dc70d8c558e566b9b08b9fae310}\index{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}!reduce@{reduce}}
+\index{reduce@{reduce}!Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}}
+\doxysubsubsection{\texorpdfstring{reduce()}{reduce()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_collection_1_1_collection_interface_a4c317dc70d8c558e566b9b08b9fae310} 
+Ramsey\textbackslash{}\+Collection\textbackslash{}\+Collection\+Interface\+::reduce (\begin{DoxyParamCaption}\item[{callable}]{\$callback}{, }\item[{mixed}]{\$initial}{}\end{DoxyParamCaption})}
+
+Apply a given callback method on each item of the collection to reduce it to a single value.
+
+See the {\ttfamily \doxylink{}{PHP array\+\_\+reduce() documentation}} for examples of how the {\ttfamily \$callback} and {\ttfamily \$initial} parameters work.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em callable(\+TCarry,T)} & TCarry \$callback A callable to apply to each item of the collection to reduce it to a single value. \\
+\hline
+TCarry & {\em \$initial} & This is the initial value provided to the callback.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+TCarry
+\end{DoxyReturn}
+@template TCarry \Hypertarget{interface_ramsey_1_1_collection_1_1_collection_interface_ab66ba5875dbd5175842741d0fb8281be}\index{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}!remove@{remove}}
+\index{remove@{remove}!Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_collection_1_1_collection_interface_ab66ba5875dbd5175842741d0fb8281be} 
+Ramsey\textbackslash{}\+Collection\textbackslash{}\+Collection\+Interface\+::remove (\begin{DoxyParamCaption}\item[{mixed}]{\$element}{}\end{DoxyParamCaption})}
+
+Removes a single instance of the specified element from this collection, if it is present.
+
+
+\begin{DoxyParams}[1]{Parameters}
+T & {\em \$element} & The element to remove from the collection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool {\ttfamily true} if an element was removed as a result of this call. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_ramsey_1_1_collection_1_1_abstract_collection_a255246b62aaf28b862db7dc0a9d2b66d}{Ramsey\textbackslash{}\+Collection\textbackslash{}\+Abstract\+Collection}}.
+
+\Hypertarget{interface_ramsey_1_1_collection_1_1_collection_interface_a7c8684ea72da247596355408965aa8a2}\index{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}!sort@{sort}}
+\index{sort@{sort}!Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}}
+\doxysubsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_collection_1_1_collection_interface_a7c8684ea72da247596355408965aa8a2} 
+Ramsey\textbackslash{}\+Collection\textbackslash{}\+Collection\+Interface\+::sort (\begin{DoxyParamCaption}\item[{?string}]{\$property\+Or\+Method}{ = {\ttfamily null}, }\item[{Sort}]{\$order}{ = {\ttfamily Sort\+:\+:Ascending}}\end{DoxyParamCaption})}
+
+Sort the collection by a property, method, or array key with the given sort order.
+
+If \$property\+Or\+Method is {\ttfamily null}, this will sort by comparing each element.
+
+This will always leave the original collection untouched and will return a new one.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string  |  null & {\em \$property\+Or\+Method} & The property, method, or array key to sort by. \\
+\hline
+Sort & {\em \$order} & The sort order for the resulting collection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Collection\+Interface$<$\+T$>$
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Property\+Or\+Method} & if the \$property\+Or\+Method does not exist on the elements in this collection. \\
+\hline
+{\em Unsupported\+Operation\+Exception} & if unable to call sort() on this collection. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{interface_ramsey_1_1_collection_1_1_collection_interface_a1564f909091138ab9d4508a908ca419d}\index{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}!where@{where}}
+\index{where@{where}!Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface@{Ramsey\textbackslash{}Collection\textbackslash{}CollectionInterface}}
+\doxysubsubsection{\texorpdfstring{where()}{where()}}
+{\footnotesize\ttfamily \label{interface_ramsey_1_1_collection_1_1_collection_interface_a1564f909091138ab9d4508a908ca419d} 
+Ramsey\textbackslash{}\+Collection\textbackslash{}\+Collection\+Interface\+::where (\begin{DoxyParamCaption}\item[{?string}]{\$property\+Or\+Method}{, }\item[{mixed}]{\$value}{}\end{DoxyParamCaption})}
+
+Create a new collection where the result of the given property, method, or array key of each item in the collection equals the given value.
+
+This will always leave the original collection untouched and will return a new one.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string  |  null & {\em \$property\+Or\+Method} & The property, method, or array key to evaluate. If {\ttfamily null}, the element itself is compared to \$value. \\
+\hline
+mixed & {\em \$value} & The value to match.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Collection\+Interface$<$\+T$>$
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Property\+Or\+Method} & if the \$property\+Or\+Method does not exist on the elements in this collection. \\
+\hline
+{\em Unsupported\+Operation\+Exception} & if unable to call where() on this collection. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/ramsey/collection/src/Collection\+Interface.\+php\end{DoxyCompactItemize}

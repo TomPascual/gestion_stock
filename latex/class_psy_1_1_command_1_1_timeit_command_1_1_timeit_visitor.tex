@@ -1,0 +1,137 @@
+\doxysection{Psy\textbackslash{}Command\textbackslash{}Timeit\+Command\textbackslash{}Timeit\+Visitor Class Reference}
+\hypertarget{class_psy_1_1_command_1_1_timeit_command_1_1_timeit_visitor}{}\label{class_psy_1_1_command_1_1_timeit_command_1_1_timeit_visitor}\index{Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor@{Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor}}
+Inheritance diagram for Psy\textbackslash{}Command\textbackslash{}Timeit\+Command\textbackslash{}Timeit\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_psy_1_1_command_1_1_timeit_command_1_1_timeit_visitor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_timeit_command_1_1_timeit_visitor_a6fff53f05d20414cbda6da47cbd27750}{before\+Traverse}} (array \$nodes)
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_timeit_command_1_1_timeit_visitor_ad9666ac2d131009fd397f693642ef872}{enter\+Node}} (Node \$node)
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_timeit_command_1_1_timeit_visitor_a67ba216c2948fd8c1bba83ae53bf69c5}{leave\+Node}} (Node \$node)
+\item 
+\mbox{\hyperlink{class_psy_1_1_command_1_1_timeit_command_1_1_timeit_visitor_a8798251c3ce1d114869118817039b5a9}{after\+Traverse}} (array \$nodes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract}{Php\+Parser\textbackslash{}\+Node\+Visitor\+Abstract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a6c1080f13e6d76c6fce2efb215f01ca4}{enter\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a6e35e5184f39630acbbd8d56199ff7b1}{leave\+Node}} (\mbox{\hyperlink{interface_php_parser_1_1_node}{Node}} \$node)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{interface_php_parser_1_1_node_visitor}{Php\+Parser\textbackslash{}\+Node\+Visitor}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a887575c3e31ed3393701f45525ee3403}{DONT\+\_\+\+TRAVERSE\+\_\+\+CHILDREN}} = 1
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_abdf2a418a92016759f92f437e8524bb5}{STOP\+\_\+\+TRAVERSAL}} = 2
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a85715cad6ab20ff6dc425402594ebc11}{REMOVE\+\_\+\+NODE}} = 3
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a81c5b825c6250cbf0955f42596aa29ad}{DONT\+\_\+\+TRAVERSE\+\_\+\+CURRENT\+\_\+\+AND\+\_\+\+CHILDREN}} = 4
+\item 
+const \mbox{\hyperlink{interface_php_parser_1_1_node_visitor_a05e5a1e3853d3ac056f09eb77b844498}{REPLACE\+\_\+\+WITH\+\_\+\+NULL}} = 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A node visitor for instrumenting code to be executed by the {\ttfamily timeit} command.
+
+Injects {\ttfamily Timeit\+Command\+::mark\+Start()} at the start of code to be executed, and {\ttfamily Timeit\+Command\+::mark\+End()} at the end, and on top-\/level return statements. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_psy_1_1_command_1_1_timeit_command_1_1_timeit_visitor_a8798251c3ce1d114869118817039b5a9}\index{Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor@{Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor}!afterTraverse@{afterTraverse}}
+\index{afterTraverse@{afterTraverse}!Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor@{Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor}}
+\doxysubsubsection{\texorpdfstring{afterTraverse()}{afterTraverse()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_command_1_1_timeit_command_1_1_timeit_visitor_a8798251c3ce1d114869118817039b5a9} 
+Psy\textbackslash{}\+Command\textbackslash{}\+Timeit\+Command\textbackslash{}\+Timeit\+Visitor\+::after\+Traverse (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})}
+
+\{Called once after traversal.
+
+Return value semantics\+:
+\begin{DoxyItemize}
+\item null\+: \$nodes stays as-\/is
+\item otherwise\+: \$nodes is set to the return value
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{interface_php_parser_1_1_node}{Node}\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Array of nodes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}\+Node\mbox{[}\mbox{]} Array of nodes
+\end{DoxyReturn}
+\}
+
+\begin{DoxyReturn}{Returns}
+Node\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null Array of nodes 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_ae48a95d82fe66c1e9bf4b580ab63dc6e}{Php\+Parser\textbackslash{}\+Node\+Visitor\+Abstract}}.
+
+\Hypertarget{class_psy_1_1_command_1_1_timeit_command_1_1_timeit_visitor_a6fff53f05d20414cbda6da47cbd27750}\index{Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor@{Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor}!beforeTraverse@{beforeTraverse}}
+\index{beforeTraverse@{beforeTraverse}!Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor@{Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor}}
+\doxysubsubsection{\texorpdfstring{beforeTraverse()}{beforeTraverse()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_command_1_1_timeit_command_1_1_timeit_visitor_a6fff53f05d20414cbda6da47cbd27750} 
+Psy\textbackslash{}\+Command\textbackslash{}\+Timeit\+Command\textbackslash{}\+Timeit\+Visitor\+::before\+Traverse (\begin{DoxyParamCaption}\item[{array}]{\$nodes}{}\end{DoxyParamCaption})}
+
+\{Called once before traversal.
+
+Return value semantics\+:
+\begin{DoxyItemize}
+\item null\+: \$nodes stays as-\/is
+\item otherwise\+: \$nodes is set to the return value
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{interface_php_parser_1_1_node}{Node}\mbox{[}$\,$\mbox{]} & {\em \$nodes} & Array of nodes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}\+Node\mbox{[}\mbox{]} Array of nodes
+\end{DoxyReturn}
+\}
+
+\begin{DoxyReturn}{Returns}
+Node\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null Array of nodes 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_php_parser_1_1_node_visitor_abstract_a985911777b785443a39d03e6337fa297}{Php\+Parser\textbackslash{}\+Node\+Visitor\+Abstract}}.
+
+\Hypertarget{class_psy_1_1_command_1_1_timeit_command_1_1_timeit_visitor_ad9666ac2d131009fd397f693642ef872}\index{Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor@{Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor}!enterNode@{enterNode}}
+\index{enterNode@{enterNode}!Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor@{Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor}}
+\doxysubsubsection{\texorpdfstring{enterNode()}{enterNode()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_command_1_1_timeit_command_1_1_timeit_visitor_ad9666ac2d131009fd397f693642ef872} 
+Psy\textbackslash{}\+Command\textbackslash{}\+Timeit\+Command\textbackslash{}\+Timeit\+Visitor\+::enter\+Node (\begin{DoxyParamCaption}\item[{Node}]{\$node}{}\end{DoxyParamCaption})}
+
+\{\}
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}\+Node\texorpdfstring{$\vert$}{|}null Replacement node (or special return value) 
+\end{DoxyReturn}
+\Hypertarget{class_psy_1_1_command_1_1_timeit_command_1_1_timeit_visitor_a67ba216c2948fd8c1bba83ae53bf69c5}\index{Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor@{Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor}!leaveNode@{leaveNode}}
+\index{leaveNode@{leaveNode}!Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor@{Psy\textbackslash{}Command\textbackslash{}TimeitCommand\textbackslash{}TimeitVisitor}}
+\doxysubsubsection{\texorpdfstring{leaveNode()}{leaveNode()}}
+{\footnotesize\ttfamily \label{class_psy_1_1_command_1_1_timeit_command_1_1_timeit_visitor_a67ba216c2948fd8c1bba83ae53bf69c5} 
+Psy\textbackslash{}\+Command\textbackslash{}\+Timeit\+Command\textbackslash{}\+Timeit\+Visitor\+::leave\+Node (\begin{DoxyParamCaption}\item[{Node}]{\$node}{}\end{DoxyParamCaption})}
+
+\{\}
+
+\begin{DoxyReturn}{Returns}
+int\texorpdfstring{$\vert$}{|}\+Node\texorpdfstring{$\vert$}{|}\+Node\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null Replacement node (or special return value) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/psy/psysh/src/\+Command/\+Timeit\+Command/Timeit\+Visitor.\+php\end{DoxyCompactItemize}

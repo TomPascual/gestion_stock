@@ -1,0 +1,77 @@
+\doxysection{Monolog\textbackslash{}Processor\textbackslash{}Load\+Average\+Processor Class Reference}
+\hypertarget{class_monolog_1_1_processor_1_1_load_average_processor}{}\label{class_monolog_1_1_processor_1_1_load_average_processor}\index{Monolog\textbackslash{}Processor\textbackslash{}LoadAverageProcessor@{Monolog\textbackslash{}Processor\textbackslash{}LoadAverageProcessor}}
+Inheritance diagram for Monolog\textbackslash{}Processor\textbackslash{}Load\+Average\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_monolog_1_1_processor_1_1_load_average_processor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monolog_1_1_processor_1_1_load_average_processor_afbf15ead05a6138e81935b33d523592c}{\+\_\+\+\_\+construct}} (int \$avg\+System\+Load=self\+::\+LOAD\+\_\+1\+\_\+\+MINUTE)
+\item 
+\mbox{\hyperlink{class_monolog_1_1_processor_1_1_load_average_processor_a956d1284e3d6cfb985d663cf2ac5211d}{\+\_\+\+\_\+invoke}} (\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}} \$record)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_monolog_1_1_processor_1_1_load_average_processor_ad7c059015c394c44da60010971b69ae2}\label{class_monolog_1_1_processor_1_1_load_average_processor_ad7c059015c394c44da60010971b69ae2} 
+const {\bfseries LOAD\+\_\+1\+\_\+\+MINUTE} = 0
+\item 
+\Hypertarget{class_monolog_1_1_processor_1_1_load_average_processor_a055bd6a4235d7e828e5f1a8d92f30756}\label{class_monolog_1_1_processor_1_1_load_average_processor_a055bd6a4235d7e828e5f1a8d92f30756} 
+const {\bfseries LOAD\+\_\+5\+\_\+\+MINUTE} = 1
+\item 
+\Hypertarget{class_monolog_1_1_processor_1_1_load_average_processor_ac8cf6cfb56db3fa985fa568f8238ef51}\label{class_monolog_1_1_processor_1_1_load_average_processor_ac8cf6cfb56db3fa985fa568f8238ef51} 
+const {\bfseries LOAD\+\_\+15\+\_\+\+MINUTE} = 2
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_monolog_1_1_processor_1_1_load_average_processor_ad03cceb59d76e7e87e645b29dea57928}\label{class_monolog_1_1_processor_1_1_load_average_processor_ad03cceb59d76e7e87e645b29dea57928} 
+{\bfseries \$avg\+System\+Load}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Injects sys\+\_\+getloadavg in all records \begin{DoxySeeAlso}{See also}
+\href{https://www.php.net/manual/en/function.sys-getloadavg.php}{\texttt{ https\+://www.\+php.\+net/manual/en/function.\+sys-\/getloadavg.\+php}}
+\end{DoxySeeAlso}
+\begin{DoxyAuthor}{Author}
+Johan Vlaar \href{mailto:johan.vlaar.1994@gmail.com}{\texttt{ johan.\+vlaar.\+1994@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_monolog_1_1_processor_1_1_load_average_processor_afbf15ead05a6138e81935b33d523592c}\index{Monolog\textbackslash{}Processor\textbackslash{}LoadAverageProcessor@{Monolog\textbackslash{}Processor\textbackslash{}LoadAverageProcessor}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Monolog\textbackslash{}Processor\textbackslash{}LoadAverageProcessor@{Monolog\textbackslash{}Processor\textbackslash{}LoadAverageProcessor}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_processor_1_1_load_average_processor_afbf15ead05a6138e81935b33d523592c} 
+Monolog\textbackslash{}\+Processor\textbackslash{}\+Load\+Average\+Processor\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{int}]{\$avg\+System\+Load}{ = {\ttfamily self\+:\+:LOAD\+\_\+1\+\_\+MINUTE}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em self\+::\+LOAD\+\_\+\texorpdfstring{$\ast$}{*}} & \$avg\+System\+Load \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_monolog_1_1_processor_1_1_load_average_processor_a956d1284e3d6cfb985d663cf2ac5211d}\index{Monolog\textbackslash{}Processor\textbackslash{}LoadAverageProcessor@{Monolog\textbackslash{}Processor\textbackslash{}LoadAverageProcessor}!\_\_invoke@{\_\_invoke}}
+\index{\_\_invoke@{\_\_invoke}!Monolog\textbackslash{}Processor\textbackslash{}LoadAverageProcessor@{Monolog\textbackslash{}Processor\textbackslash{}LoadAverageProcessor}}
+\doxysubsubsection{\texorpdfstring{\_\_invoke()}{\_\_invoke()}}
+{\footnotesize\ttfamily \label{class_monolog_1_1_processor_1_1_load_average_processor_a956d1284e3d6cfb985d663cf2ac5211d} 
+Monolog\textbackslash{}\+Processor\textbackslash{}\+Load\+Average\+Processor\+::\+\_\+\+\_\+invoke (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_monolog_1_1_log_record}{Log\+Record}}}]{\$record}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_monolog_1_1_log_record}{Log\+Record} The processed record
+\end{DoxyReturn}
+ 
+
+Implements \mbox{\hyperlink{interface_monolog_1_1_processor_1_1_processor_interface_ab269cbd743464f92846036dfa68d3cf8}{Monolog\textbackslash{}\+Processor\textbackslash{}\+Processor\+Interface}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/monolog/monolog/src/\+Monolog/\+Processor/Load\+Average\+Processor.\+php\end{DoxyCompactItemize}

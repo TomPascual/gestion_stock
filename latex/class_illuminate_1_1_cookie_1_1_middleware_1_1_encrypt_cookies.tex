@@ -1,0 +1,297 @@
+\doxysection{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}Encrypt\+Cookies Class Reference}
+\hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies}{}\label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies}\index{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a19db42976f286bbc7e1c7151f7757a20}{\+\_\+\+\_\+construct}} (Encrypter\+Contract \$encrypter)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_ae8f5a6d50410eb51df174009e59391c9}{disable\+For}} (\$name)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_aad41524e01942e83b4195154df4b7e88}{handle}} (\$request, Closure \$next)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a374b6cdc32207e2c9402c97e32c5ed4c}{is\+Disabled}} (\$name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_ad2996335ecdd2544e4ad378f816997d6}{except}} (\$cookies)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a71c49e010c796b044a1ae32b74e202f0}{serialized}} (\$name)
+\item 
+static \mbox{\hyperlink{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a3b168d581f1c361df7b59cb05fbaf9cc}{flush\+State}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a201c286358cd86650459f74c26681bd6}{decrypt}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a7b9c4699bb70083eb18da974ce0dbf2f}{validate\+Value}} (string \$key, \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a048b8dd0da2988407aff2146ce16ea3e}{validate\+Array}} (string \$key, array \$value)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a4532a3177f29f7c2296edbcfb5297bb8}{decrypt\+Cookie}} (\$name, \$cookie)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a9d58d9b405fd8a9a4115e877c624c170}{decrypt\+Array}} (array \$cookie)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a9f8f26823a53c9bddc0dd8ae4e70640c}{encrypt}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}} \$response)
+\item 
+\mbox{\hyperlink{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_aa0100c58c7e1e8a168a822e87fe4a2e0}{duplicate}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_cookie}{Cookie}} \$cookie, \$value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a2faa96aec026e089ba0758d4c76775c9}\label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a2faa96aec026e089ba0758d4c76775c9} 
+{\bfseries \$encrypter}
+\item 
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a66e7f7162e709e1ca988d403c7ce9d4e}\label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a66e7f7162e709e1ca988d403c7ce9d4e} 
+{\bfseries \$except} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_afe591e2b805af84c2d0ca1607cc688c9}\label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_afe591e2b805af84c2d0ca1607cc688c9} 
+static {\bfseries \$never\+Encrypt} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_abb53f9d9292ed2f4a4ce5f0909ec9388}\label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_abb53f9d9292ed2f4a4ce5f0909ec9388} 
+static {\bfseries \$serialize} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a19db42976f286bbc7e1c7151f7757a20}\index{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a19db42976f286bbc7e1c7151f7757a20} 
+Illuminate\textbackslash{}\+Cookie\textbackslash{}\+Middleware\textbackslash{}\+Encrypt\+Cookies\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{Encrypter\+Contract}]{\$encrypter}{}\end{DoxyParamCaption})}
+
+Create a new Cookie\+Guard instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Contracts\textbackslash{}\+Encryption\textbackslash{}\+Encrypter & {\em \$encrypter} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a201c286358cd86650459f74c26681bd6}\index{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a201c286358cd86650459f74c26681bd6} 
+Illuminate\textbackslash{}\+Cookie\textbackslash{}\+Middleware\textbackslash{}\+Encrypt\+Cookies\+::decrypt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Decrypt the cookies on the request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Request 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a9d58d9b405fd8a9a4115e877c624c170}\index{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}!decryptArray@{decryptArray}}
+\index{decryptArray@{decryptArray}!Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}}
+\doxysubsubsection{\texorpdfstring{decryptArray()}{decryptArray()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a9d58d9b405fd8a9a4115e877c624c170} 
+Illuminate\textbackslash{}\+Cookie\textbackslash{}\+Middleware\textbackslash{}\+Encrypt\+Cookies\+::decrypt\+Array (\begin{DoxyParamCaption}\item[{array}]{\$cookie}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Decrypt an array based cookie.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$cookie} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a4532a3177f29f7c2296edbcfb5297bb8}\index{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}!decryptCookie@{decryptCookie}}
+\index{decryptCookie@{decryptCookie}!Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}}
+\doxysubsubsection{\texorpdfstring{decryptCookie()}{decryptCookie()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a4532a3177f29f7c2296edbcfb5297bb8} 
+Illuminate\textbackslash{}\+Cookie\textbackslash{}\+Middleware\textbackslash{}\+Encrypt\+Cookies\+::decrypt\+Cookie (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$cookie}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Decrypt the given cookie and return the value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string | array & {\em \$cookie} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_ae8f5a6d50410eb51df174009e59391c9}\index{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}!disableFor@{disableFor}}
+\index{disableFor@{disableFor}!Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}}
+\doxysubsubsection{\texorpdfstring{disableFor()}{disableFor()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_ae8f5a6d50410eb51df174009e59391c9} 
+Illuminate\textbackslash{}\+Cookie\textbackslash{}\+Middleware\textbackslash{}\+Encrypt\+Cookies\+::disable\+For (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Disable encryption for the given cookie name(s).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_aa0100c58c7e1e8a168a822e87fe4a2e0}\index{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}!duplicate@{duplicate}}
+\index{duplicate@{duplicate}!Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}}
+\doxysubsubsection{\texorpdfstring{duplicate()}{duplicate()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_aa0100c58c7e1e8a168a822e87fe4a2e0} 
+Illuminate\textbackslash{}\+Cookie\textbackslash{}\+Middleware\textbackslash{}\+Encrypt\+Cookies\+::duplicate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_cookie}{Cookie}}}]{\$cookie}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Duplicate a cookie with a new value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Cookie & {\em \$cookie} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Cookie 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a9f8f26823a53c9bddc0dd8ae4e70640c}\index{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a9f8f26823a53c9bddc0dd8ae4e70640c} 
+Illuminate\textbackslash{}\+Cookie\textbackslash{}\+Middleware\textbackslash{}\+Encrypt\+Cookies\+::encrypt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_response}{Response}}}]{\$response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Encrypt the cookies on an outgoing response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Response & {\em \$response} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_ad2996335ecdd2544e4ad378f816997d6}\index{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}!except@{except}}
+\index{except@{except}!Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}}
+\doxysubsubsection{\texorpdfstring{except()}{except()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_ad2996335ecdd2544e4ad378f816997d6} 
+static Illuminate\textbackslash{}\+Cookie\textbackslash{}\+Middleware\textbackslash{}\+Encrypt\+Cookies\+::except (\begin{DoxyParamCaption}\item[{}]{\$cookies}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Indicate that the given cookies should never be encrypted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$cookies} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a3b168d581f1c361df7b59cb05fbaf9cc}\index{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}!flushState@{flushState}}
+\index{flushState@{flushState}!Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}}
+\doxysubsubsection{\texorpdfstring{flushState()}{flushState()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a3b168d581f1c361df7b59cb05fbaf9cc} 
+static Illuminate\textbackslash{}\+Cookie\textbackslash{}\+Middleware\textbackslash{}\+Encrypt\+Cookies\+::flush\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Flush the middleware\textquotesingle{}s global state.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_aad41524e01942e83b4195154df4b7e88}\index{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}!handle@{handle}}
+\index{handle@{handle}!Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_aad41524e01942e83b4195154df4b7e88} 
+Illuminate\textbackslash{}\+Cookie\textbackslash{}\+Middleware\textbackslash{}\+Encrypt\+Cookies\+::handle (\begin{DoxyParamCaption}\item[{}]{\$request}{, }\item[{Closure}]{\$next}{}\end{DoxyParamCaption})}
+
+Handle an incoming request.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Illuminate\textbackslash{}\+Http\textbackslash{}\+Request & {\em \$request} & \\
+\hline
+\textbackslash{}\+Closure & {\em \$next} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Foundation\textbackslash{}\+Response 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a374b6cdc32207e2c9402c97e32c5ed4c}\index{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}!isDisabled@{isDisabled}}
+\index{isDisabled@{isDisabled}!Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}}
+\doxysubsubsection{\texorpdfstring{isDisabled()}{isDisabled()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a374b6cdc32207e2c9402c97e32c5ed4c} 
+Illuminate\textbackslash{}\+Cookie\textbackslash{}\+Middleware\textbackslash{}\+Encrypt\+Cookies\+::is\+Disabled (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})}
+
+Determine whether encryption has been disabled for the given cookie.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a71c49e010c796b044a1ae32b74e202f0}\index{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}!serialized@{serialized}}
+\index{serialized@{serialized}!Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}}
+\doxysubsubsection{\texorpdfstring{serialized()}{serialized()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a71c49e010c796b044a1ae32b74e202f0} 
+static Illuminate\textbackslash{}\+Cookie\textbackslash{}\+Middleware\textbackslash{}\+Encrypt\+Cookies\+::serialized (\begin{DoxyParamCaption}\item[{}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Determine if the cookie contents should be serialized.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a048b8dd0da2988407aff2146ce16ea3e}\index{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}!validateArray@{validateArray}}
+\index{validateArray@{validateArray}!Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}}
+\doxysubsubsection{\texorpdfstring{validateArray()}{validateArray()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a048b8dd0da2988407aff2146ce16ea3e} 
+Illuminate\textbackslash{}\+Cookie\textbackslash{}\+Middleware\textbackslash{}\+Encrypt\+Cookies\+::validate\+Array (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{array}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validate and remove the cookie value prefix from all values of an array.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+array & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a7b9c4699bb70083eb18da974ce0dbf2f}\index{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}!validateValue@{validateValue}}
+\index{validateValue@{validateValue}!Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies@{Illuminate\textbackslash{}Cookie\textbackslash{}Middleware\textbackslash{}EncryptCookies}}
+\doxysubsubsection{\texorpdfstring{validateValue()}{validateValue()}}
+{\footnotesize\ttfamily \label{class_illuminate_1_1_cookie_1_1_middleware_1_1_encrypt_cookies_a7b9c4699bb70083eb18da974ce0dbf2f} 
+Illuminate\textbackslash{}\+Cookie\textbackslash{}\+Middleware\textbackslash{}\+Encrypt\+Cookies\+::validate\+Value (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Validate and remove the cookie value prefix from the value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}array\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/laravel/framework/src/\+Illuminate/\+Cookie/\+Middleware/Encrypt\+Cookies.\+php\end{DoxyCompactItemize}

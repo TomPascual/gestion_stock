@@ -1,0 +1,110 @@
+\doxysection{Php\+Parser\textbackslash{}Internal\textbackslash{}Token\+Polyfill Class Reference}
+\hypertarget{class_php_parser_1_1_internal_1_1_token_polyfill}{}\label{class_php_parser_1_1_internal_1_1_token_polyfill}\index{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill@{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill}}
+Inheritance diagram for Php\+Parser\textbackslash{}Internal\textbackslash{}Token\+Polyfill\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_php_parser_1_1_internal_1_1_token_polyfill}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill_adf601f185cd0ea80688b05b624355083}{\+\_\+\+\_\+construct}} (int \$id, string \$text, int \$line=-\/1, int \$pos=-\/1)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill_ae43a1ddde735924a598655db1e1fdef2}{get\+Token\+Name}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill_a95e9bd8189b9fc758f3000023fdda3f0}{is}} (\$kind)
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill_a889d1618a41725228bd5cd65ea5be805}{is\+Ignorable}} ()
+\item 
+\mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill_acd3894cf2a1fd1256640985737232df3}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_php_parser_1_1_internal_1_1_token_polyfill_a3e7aeb32b9b05847c9d6d3c5c4ef4013}{tokenize}} (string \$code, int \$flags=0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_polyfill_acbe9b73373965871f299504ccc7b5753}\label{class_php_parser_1_1_internal_1_1_token_polyfill_acbe9b73373965871f299504ccc7b5753} 
+int {\bfseries \$id}
+\item 
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_polyfill_aeac434969f101df44fda89d392ad0297}\label{class_php_parser_1_1_internal_1_1_token_polyfill_aeac434969f101df44fda89d392ad0297} 
+string {\bfseries \$text}
+\item 
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_polyfill_a97a9ea0418c7a9f7e9e2819917b81050}\label{class_php_parser_1_1_internal_1_1_token_polyfill_a97a9ea0418c7a9f7e9e2819917b81050} 
+int {\bfseries \$line}
+\item 
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_polyfill_aa49cc9760f9f8acc0d173640357966b0}\label{class_php_parser_1_1_internal_1_1_token_polyfill_aa49cc9760f9f8acc0d173640357966b0} 
+int {\bfseries \$pos}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is a polyfill for the Php\+Token class introduced in PHP 8.\+0. We do not actually polyfill Php\+Token, because composer might end up picking a different polyfill implementation, which does not meet our requirements. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_polyfill_adf601f185cd0ea80688b05b624355083}\index{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill@{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill@{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_polyfill_adf601f185cd0ea80688b05b624355083} 
+Php\+Parser\textbackslash{}\+Internal\textbackslash{}\+Token\+Polyfill\+::\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{int}]{\$id}{, }\item[{string}]{\$text}{, }\item[{int}]{\$line}{ = {\ttfamily -\/1}, }\item[{int}]{\$pos}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}}
+
+Create a Token with the given ID and text, as well optional line and position information. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_polyfill_acd3894cf2a1fd1256640985737232df3}\index{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill@{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill}!\_\_toString@{\_\_toString}}
+\index{\_\_toString@{\_\_toString}!PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill@{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill}}
+\doxysubsubsection{\texorpdfstring{\_\_toString()}{\_\_toString()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_polyfill_acd3894cf2a1fd1256640985737232df3} 
+Php\+Parser\textbackslash{}\+Internal\textbackslash{}\+Token\+Polyfill\+::\+\_\+\+\_\+to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return the textual content of the token. \Hypertarget{class_php_parser_1_1_internal_1_1_token_polyfill_ae43a1ddde735924a598655db1e1fdef2}\index{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill@{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill}!getTokenName@{getTokenName}}
+\index{getTokenName@{getTokenName}!PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill@{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill}}
+\doxysubsubsection{\texorpdfstring{getTokenName()}{getTokenName()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_polyfill_ae43a1ddde735924a598655db1e1fdef2} 
+Php\+Parser\textbackslash{}\+Internal\textbackslash{}\+Token\+Polyfill\+::get\+Token\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of the token. For single-\/char tokens this will be the token character. Otherwise it will be a T\+\_\+\texorpdfstring{$\ast$}{*} style name, or null if the token ID is unknown. \Hypertarget{class_php_parser_1_1_internal_1_1_token_polyfill_a95e9bd8189b9fc758f3000023fdda3f0}\index{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill@{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill}!is@{is}}
+\index{is@{is}!PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill@{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill}}
+\doxysubsubsection{\texorpdfstring{is()}{is()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_polyfill_a95e9bd8189b9fc758f3000023fdda3f0} 
+Php\+Parser\textbackslash{}\+Internal\textbackslash{}\+Token\+Polyfill\+::is (\begin{DoxyParamCaption}\item[{}]{\$kind}{}\end{DoxyParamCaption})}
+
+Check whether the token is of the given kind. The kind may be either an integer that matches the token ID, a string that matches the token text, or an array of integers/strings. In the latter case, the function returns true if any of the kinds in the array match.
+
+
+\begin{DoxyParams}{Parameters}
+{\em int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}(int\texorpdfstring{$\vert$}{|}string)\mbox{[}$\,$\mbox{]}} & \$kind \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_php_parser_1_1_internal_1_1_token_polyfill_a889d1618a41725228bd5cd65ea5be805}\index{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill@{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill}!isIgnorable@{isIgnorable}}
+\index{isIgnorable@{isIgnorable}!PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill@{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill}}
+\doxysubsubsection{\texorpdfstring{isIgnorable()}{isIgnorable()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_polyfill_a889d1618a41725228bd5cd65ea5be805} 
+Php\+Parser\textbackslash{}\+Internal\textbackslash{}\+Token\+Polyfill\+::is\+Ignorable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Check whether this token would be ignored by the PHP parser. Returns true for T\+\_\+\+WHITESPACE, T\+\_\+\+COMMENT, T\+\_\+\+DOC\+\_\+\+COMMENT and T\+\_\+\+OPEN\+\_\+\+TAG, and false for everything else. \Hypertarget{class_php_parser_1_1_internal_1_1_token_polyfill_a3e7aeb32b9b05847c9d6d3c5c4ef4013}\index{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill@{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill@{PhpParser\textbackslash{}Internal\textbackslash{}TokenPolyfill}}
+\doxysubsubsection{\texorpdfstring{tokenize()}{tokenize()}}
+{\footnotesize\ttfamily \label{class_php_parser_1_1_internal_1_1_token_polyfill_a3e7aeb32b9b05847c9d6d3c5c4ef4013} 
+static Php\+Parser\textbackslash{}\+Internal\textbackslash{}\+Token\+Polyfill\+::tokenize (\begin{DoxyParamCaption}\item[{string}]{\$code}{, }\item[{int}]{\$flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Tokenize the given source code and return an array of tokens.
+
+This performs certain canonicalizations to match the PHP 8.\+0 token format\+:
+\begin{DoxyItemize}
+\item Bad characters are represented using T\+\_\+\+BAD\+\_\+\+CHARACTER rather than omitted.
+\item T\+\_\+\+COMMENT does not include trailing newlines, instead the newline is part of a following T\+\_\+\+WHITESPACE token.
+\item Namespaced names are represented using T\+\_\+\+NAME\+\_\+\texorpdfstring{$\ast$}{*} tokens.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+static\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/nikic/php-\/parser/lib/\+Php\+Parser/\+Internal/Token\+Polyfill.\+php\end{DoxyCompactItemize}

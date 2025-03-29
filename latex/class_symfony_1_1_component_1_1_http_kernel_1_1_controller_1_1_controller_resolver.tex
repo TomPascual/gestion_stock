@@ -1,0 +1,94 @@
+\doxysection{Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Controller\textbackslash{}Controller\+Resolver Class Reference}
+\hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver}{}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver}}
+Inheritance diagram for Symfony\textbackslash{}Component\textbackslash{}Http\+Kernel\textbackslash{}Controller\textbackslash{}Controller\+Resolver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_a9bb714971e40a22a44363231b510038e}\label{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_a9bb714971e40a22a44363231b510038e} 
+{\bfseries \+\_\+\+\_\+construct} (private ?\mbox{\hyperlink{interface_psr_1_1_log_1_1_logger_interface}{Logger\+Interface}} \$logger=null,)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_ab35332de01b610dca7e48c0c8de3ff43}{allow\+Controllers}} (array \$types=\mbox{[}$\,$\mbox{]}, array \$attributes=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_a8e45b92d6771adaac568a28cb9bbc0f5}{get\+Controller}} (\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}} \$request)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_a84f2b7c00f0486b9a5b7d23ed9175a71}{create\+Controller}} (string \$controller)
+\item 
+\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_a10cf57f0da81e50bb7e455fbc4b46fa9}{instantiate\+Controller}} (string \$class)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This implementation uses the \textquotesingle{}\+\_\+controller\textquotesingle{} request attribute to determine the controller to execute.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\texttt{ fabien@symfony.\+com}} 
+
+Tobias Schultze \href{http://tobion.de}{\texttt{ http\+://tobion.\+de}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_ab35332de01b610dca7e48c0c8de3ff43}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver}!allowControllers@{allowControllers}}
+\index{allowControllers@{allowControllers}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver}}
+\doxysubsubsection{\texorpdfstring{allowControllers()}{allowControllers()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_ab35332de01b610dca7e48c0c8de3ff43} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Controller\textbackslash{}\+Controller\+Resolver\+::allow\+Controllers (\begin{DoxyParamCaption}\item[{array}]{\$types}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{array}]{\$attributes}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em array$<$class-\/string$>$} & \$types \\
+\hline
+{\em array$<$class-\/string$>$} & \$attributes \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_a84f2b7c00f0486b9a5b7d23ed9175a71}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver}!createController@{createController}}
+\index{createController@{createController}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver}}
+\doxysubsubsection{\texorpdfstring{createController()}{createController()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_a84f2b7c00f0486b9a5b7d23ed9175a71} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Controller\textbackslash{}\+Controller\+Resolver\+::create\+Controller (\begin{DoxyParamCaption}\item[{string}]{\$controller}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns a callable for the given controller.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception When the controller cannot be created \Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_a8e45b92d6771adaac568a28cb9bbc0f5}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver}!getController@{getController}}
+\index{getController@{getController}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver}}
+\doxysubsubsection{\texorpdfstring{getController()}{getController()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_a8e45b92d6771adaac568a28cb9bbc0f5} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Controller\textbackslash{}\+Controller\+Resolver\+::get\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_symfony_1_1_component_1_1_http_foundation_1_1_request}{Request}}}]{\$request}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Bad\+Request\+Exception} & when the request has attribute "{}\+\_\+check\+\_\+controller\+\_\+is\+\_\+allowed"{} set to true and the controller is not allowed \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_interface_a8203651adc2c2314fffaa946cc36a61b}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Controller\textbackslash{}\+Controller\+Resolver\+Interface}}.
+
+\Hypertarget{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_a10cf57f0da81e50bb7e455fbc4b46fa9}\index{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver}!instantiateController@{instantiateController}}
+\index{instantiateController@{instantiateController}!Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver@{Symfony\textbackslash{}Component\textbackslash{}HttpKernel\textbackslash{}Controller\textbackslash{}ControllerResolver}}
+\doxysubsubsection{\texorpdfstring{instantiateController()}{instantiateController()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_controller_resolver_a10cf57f0da81e50bb7e455fbc4b46fa9} 
+Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Controller\textbackslash{}\+Controller\+Resolver\+::instantiate\+Controller (\begin{DoxyParamCaption}\item[{string}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns an instantiated controller. 
+
+Reimplemented in \mbox{\hyperlink{class_symfony_1_1_component_1_1_http_kernel_1_1_controller_1_1_container_controller_resolver_ad8513f934fd7cb7889416ada66157348}{Symfony\textbackslash{}\+Component\textbackslash{}\+Http\+Kernel\textbackslash{}\+Controller\textbackslash{}\+Container\+Controller\+Resolver}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/symfony/http-\/kernel/\+Controller/Controller\+Resolver.\+php\end{DoxyCompactItemize}

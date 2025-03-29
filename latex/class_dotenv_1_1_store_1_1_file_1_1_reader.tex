@@ -1,0 +1,44 @@
+\doxysection{Dotenv\textbackslash{}Store\textbackslash{}File\textbackslash{}Reader Class Reference}
+\hypertarget{class_dotenv_1_1_store_1_1_file_1_1_reader}{}\label{class_dotenv_1_1_store_1_1_file_1_1_reader}\index{Dotenv\textbackslash{}Store\textbackslash{}File\textbackslash{}Reader@{Dotenv\textbackslash{}Store\textbackslash{}File\textbackslash{}Reader}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_dotenv_1_1_store_1_1_file_1_1_reader_a328060f63cc98a0559cf8b353cc15eb6}{read}} (array \$file\+Paths, bool \$short\+Circuit=true, ?string \$file\+Encoding=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dotenv_1_1_store_1_1_file_1_1_reader_a328060f63cc98a0559cf8b353cc15eb6}\index{Dotenv\textbackslash{}Store\textbackslash{}File\textbackslash{}Reader@{Dotenv\textbackslash{}Store\textbackslash{}File\textbackslash{}Reader}!read@{read}}
+\index{read@{read}!Dotenv\textbackslash{}Store\textbackslash{}File\textbackslash{}Reader@{Dotenv\textbackslash{}Store\textbackslash{}File\textbackslash{}Reader}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_dotenv_1_1_store_1_1_file_1_1_reader_a328060f63cc98a0559cf8b353cc15eb6} 
+static Dotenv\textbackslash{}\+Store\textbackslash{}\+File\textbackslash{}\+Reader\+::read (\begin{DoxyParamCaption}\item[{array}]{\$file\+Paths}{, }\item[{bool}]{\$short\+Circuit}{ = {\ttfamily true}, }\item[{?string}]{\$file\+Encoding}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Read the file(s), and return their raw content.
+
+We provide the file path as the key, and its content as the value. If short circuit mode is enabled, then the returned array with have length at most one. File paths that couldn\textquotesingle{}t be read are omitted entirely.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$file\+Paths} & \\
+\hline
+bool & {\em \$short\+Circuit} & \\
+\hline
+string | null & {\em \$file\+Encoding} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Dotenv\textbackslash{}\+Exception\textbackslash{}\+Invalid\+Encoding\+Exception
+
+\begin{DoxyReturn}{Returns}
+array$<$string,string$>$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+vendor/vlucas/phpdotenv/src/\+Store/\+File/Reader.\+php\end{DoxyCompactItemize}

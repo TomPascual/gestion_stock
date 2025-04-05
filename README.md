@@ -1,5 +1,8 @@
 # Gestion de Stock 
 
+https://gestionstock.tompascual.site:50281/
+
+
 ## 📦 Description
 
 Ce projet est une application web de gestion de stock développée avec Laravel.  

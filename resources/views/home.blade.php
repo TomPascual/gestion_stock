@@ -39,5 +39,7 @@
         </div>
     </div>
 
+    <a href="https://glpi.tompascual.site:50281" class="btn btn-glpi" target="_blank">GLPI</a>
+
 </body>
 </html>

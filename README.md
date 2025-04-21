@@ -2,6 +2,10 @@
 
 https://gestionstock.tompascual.site:50281/
 
+## GLPI
+user/user
+
+
 
 ## 📦 Description
 
